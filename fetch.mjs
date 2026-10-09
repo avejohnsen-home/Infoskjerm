@@ -12,28 +12,35 @@ const pad = n => String(n).padStart(2, "0");
 let old = {};
 try { old = JSON.parse(fs.readFileSync("data.json", "utf8")); } catch {}
 
-// ---------- robots.txt: hopp over sider nettstedet ber roboter holde seg unna ----------
+// ---------- robots.txt: følg reglene nettstedet har satt for roboter ----------
+// Standard tolkning: lengste treff vinner, Allow vinner ved likt, * er jokertegn og $ betyr slutt.
 const robots = {};
-async function allowed(url) {
+const toRx = p => new RegExp("^" + p.replace(/[.+?^{}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*").replace(/\$$/, "$") + (p.endsWith("$") ? "" : ""));
+async function robotsRule(url) {
   const u = new URL(url);
   if (!(u.origin in robots)) {
     try { const r = await fetch(u.origin + "/robots.txt", { headers: H }); robots[u.origin] = r.ok ? await r.text() : ""; }
     catch { robots[u.origin] = ""; }
   }
-  let applies = false; const dis = [];
+  let applies = false; const rules = [];
   for (const line of robots[u.origin].split(/\r?\n/)) {
     const i = line.indexOf(":"); if (i < 0) continue;
     const key = line.slice(0, i).trim().toLowerCase(), val = line.slice(i + 1).replace(/#.*/, "").trim();
     if (key === "user-agent") applies = val === "*";
-    else if (applies && key === "disallow" && val) dis.push(val.replace(/\*.*$/, ""));
+    else if (applies && (key === "allow" || key === "disallow") && val) rules.push({ allow: key === "allow", path: val });
   }
-  return !dis.some(p => p && u.pathname.startsWith(p));
+  const target = u.pathname + u.search;
+  let best = null;
+  for (const r of rules) {
+    if (!toRx(r.path).test(target)) continue;
+    const len = r.path.replace(/[*$]/g, "").length;
+    if (!best || len > best.len || (len === best.len && r.allow)) best = { ...r, len };
+  }
+  return best;
 }
 async function getHtml(url) {
-  if (!(await allowed(url))) {
-    const rules = robots[new URL(url).origin].split(/\r?\n/).filter(l => /^\s*(user-agent|disallow|allow)/i.test(l)).slice(0, 40).join(" | ");
-    throw new Error("robots.txt tillater ikke " + url + "\n  Regler: " + rules);
-  }
+  const rule = await robotsRule(url);
+  if (rule && !rule.allow) throw new Error(`robots.txt tillater ikke ${url} (regel: Disallow: ${rule.path})`);
   const r = await fetch(url, { headers: H });
   if (!r.ok) throw new Error(url + " svarte " + r.status);
   return cheerio.load(await r.text());
