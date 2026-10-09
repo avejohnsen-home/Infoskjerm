@@ -30,7 +30,10 @@ async function allowed(url) {
   return !dis.some(p => p && u.pathname.startsWith(p));
 }
 async function getHtml(url) {
-  if (!(await allowed(url))) throw new Error("robots.txt tillater ikke " + url);
+  if (!(await allowed(url))) {
+    const rules = robots[new URL(url).origin].split(/\r?\n/).filter(l => /^\s*(user-agent|disallow|allow)/i.test(l)).slice(0, 40).join(" | ");
+    throw new Error("robots.txt tillater ikke " + url + "\n  Regler: " + rules);
+  }
   const r = await fetch(url, { headers: H });
   if (!r.ok) throw new Error(url + " svarte " + r.status);
   return cheerio.load(await r.text());
@@ -107,15 +110,24 @@ async function christiania() {
 async function nationaltheatret() {
   const base = "https://www.nationaltheatret.no/program/forestillinger";
   const $ = await getHtml(base);
-  const out = [];
+  const out = [], seen = new Set();
   const mi = m => MONTHS.indexOf(m.toLowerCase()) + 1;
-  $('h2 a[href*="/forestillinger/"]').each((_, a) => {
-    const title = $(a).text().trim();
-    const card = cardAround($, a, c => c.is("li") || c.find("img").length > 0);
+  const norm = h => abs(h, base).split("#")[0].replace(/\/$/, "");
+  const hasDate = t => /\d{1,2}\.\s\p{L}+\s\d{4}/u.test(t);
+  const links = $('a[href*="/forestillinger/"]');
+  links.each((_, a) => {
+    const href = norm($(a).attr("href"));
+    if (seen.has(href) || !/\/forestillinger\/[^/]+$/.test(href)) return;
+    // gå opp til minste blokk som har en dato og bare handler om denne ene forestillingen
+    const card = cardAround($, a, c => {
+      const own = new Set(c.find('a[href*="/forestillinger/"]').map((_, x) => norm($(x).attr("href"))).get());
+      return own.size === 1 && hasDate(c.text().replace(/\s+/g, " "));
+    });
     const text = card.text().replace(/\s+/g, " ");
+    if (!hasDate(text)) return;
     let from, to;
     const r = text.match(/Fra (\d{1,2})\. (\p{L}+)(?: (\d{4}))? til (\d{1,2})\. (\p{L}+) (\d{4})/u);
-    if (r) {
+    if (r && mi(r[2]) && mi(r[5])) {
       const ty = Number(r[6]), fm = mi(r[2]);
       const fy = r[3] ? Number(r[3]) : (fm > mi(r[5]) ? ty - 1 : ty);
       from = `${fy}-${pad(fm)}-${pad(r[1])}`; to = `${ty}-${pad(mi(r[5]))}-${pad(r[4])}`;
@@ -123,13 +135,16 @@ async function nationaltheatret() {
       const s = text.match(/(\d{1,2})\. (\p{L}+) (\d{4})/u);
       if (s && mi(s[2])) from = to = `${s[3]}-${pad(mi(s[2]))}-${pad(s[1])}`;
     }
+    const title = (card.find("h2,h3").first().text() || $(a).text()).trim();
     if (!title || !from) return;
+    seen.add(href);
     out.push({
       title, venue: "Nationaltheatret, " + (card.find('a[href*="vare-scener"]').first().text().trim() || "scene ukjent"),
-      url: abs($(a).attr("href"), base), img: imgOf(card, base), from, to,
+      url: href, img: imgOf(card, base), from, to,
       about: card.find("p").first().text().trim().slice(0, 220)
     });
   });
+  if (!out.length) console.log("  Diagnose Nationaltheatret: lenker funnet:", links.length, "| tekst:", $("main").text().replace(/\s+/g, " ").slice(0, 300) || $("body").text().replace(/\s+/g, " ").slice(0, 300));
   return out;
 }
 
