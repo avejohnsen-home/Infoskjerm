@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Infoskjerm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E6ECEF; --surface:#F7FAFB; --ink:#17222C; --muted:#5B6873;
+  --tram:#2C64A8; --signal:#E9B437; --line:#CBD5DB;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121B23; --surface:#1B2731; --ink:#E7EEF2; --muted:#9AA8B3;
+    --tram:#6FA3E0; --signal:#F0C352; --line:#2C3A46;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121B23; --surface:#1B2731; --ink:#E7EEF2; --muted:#9AA8B3;
+  --tram:#6FA3E0; --signal:#F0C352; --line:#2C3A46;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:560px;margin:0 auto;padding:18px 18px 28px}
+
+/* Header: klokke + vær */
+.top{display:grid;grid-template-columns:1fr auto;align-items:end;gap:8px}
+.clock{font-size:clamp(64px,22vw,104px);font-weight:800;line-height:.9;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.date{font-size:17px;color:var(--muted);margin-top:6px}
+.now{text-align:right}
+.now .temp{font-size:44px;font-weight:600;line-height:1}
+.now .cond{font-size:15px;color:var(--muted)}
+.place{font-size:13px;color:var(--muted);margin-top:2px}
+.hours{display:flex;gap:6px;margin:16px 0 4px;overflow-x:auto;padding-bottom:4px}
+.hour{flex:1 0 52px;background:var(--surface);border-radius:12px;padding:8px 4px;text-align:center}
+.hour b{display:block;font-size:13px;font-weight:600;color:var(--muted)}
+.hour span{display:block;font-size:20px;margin:2px 0}
+.hour i{font-style:normal;font-size:15px;font-weight:600}
+.hour small{display:block;font-size:11px;color:var(--tram)}
+.days{display:flex;gap:6px;margin:16px 0 4px;overflow-x:auto;padding-bottom:4px}
+.day{appearance:none;border:0;font:inherit;color:inherit;flex:1 0 62px;background:var(--surface);border-radius:12px;padding:8px 4px;text-align:center;cursor:pointer}
+.day b{display:block;font-size:13px;font-weight:600;color:var(--muted)}
+.day span{display:block;font-size:22px;margin:2px 0}
+.day i{font-style:normal;font-size:15px;font-weight:600}
+.day i small{color:var(--muted);font-weight:400}
+.day .rain{display:block;font-size:11px;color:var(--tram);min-height:1.3em}
+.whead{padding:16px 16px 6px}
+.whead h2{margin:0;font-size:24px;font-weight:800;letter-spacing:-.02em}
+.whead p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.wlist{max-height:58vh;overflow:auto;padding:0 16px}
+.wrow{display:grid;grid-template-columns:44px 30px 44px 1fr auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.wrow .t{color:var(--muted);font-variant-numeric:tabular-nums}
+.wrow .c{font-weight:600}
+.wrow .r{color:var(--tram);font-size:13px}
+.wrow .w{color:var(--muted);font-size:13px;text-align:right}
+
+.demo{margin:14px 0 0;font-size:13px;color:var(--muted);background:var(--surface);border-left:4px solid var(--signal);padding:8px 10px;border-radius:6px}
+
+/* Rotasjon */
+.nav{display:flex;align-items:center;gap:8px;margin:22px 0 10px}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:17px;font-weight:600;padding:6px 2px;cursor:pointer;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--tram)}
+.tab:focus-visible,button:focus-visible{outline:2px solid var(--tram);outline-offset:2px}
+.status{margin-left:auto;font-size:12px;color:var(--muted)}
+.bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:16px}
+.bar>div{height:100%;width:0;background:var(--tram)}
+.slide{display:none}
+.slide.on{display:block;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Kultur */
+.posters{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.poster{appearance:none;border:0;padding:0;background:none;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.art{aspect-ratio:2/3;border-radius:6px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:#fff}
+.art h3{margin:0;font-size:22px;font-weight:800;line-height:1;letter-spacing:-.02em;position:relative}
+.art .shape{position:absolute;inset:0}
+.art img,.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.art .kind{z-index:1}
+.meta{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.3}
+.meta b{color:var(--ink);font-weight:600;display:block;font-size:14px}
+.kind{display:inline-block;font-size:11px;font-weight:600;background:rgba(255,255,255,.88);color:#17222C;border-radius:4px;padding:2px 6px;position:absolute;top:10px;left:10px}
+
+/* Tilbud */
+.store{margin-bottom:16px}
+.store h3{font-size:20px;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.store h3 span{width:12px;height:12px;border-radius:50%}
+.deal{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+.deal em{font-style:normal;font-weight:800;color:var(--tram);white-space:nowrap}
+.deal s{color:var(--muted);font-size:13px;margin-left:6px}
+
+/* Vin */
+.wine{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.bottle{width:20px;height:64px;margin:0 auto;border-radius:6px 6px 4px 4px;position:relative}
+.bottle::before{content:"";position:absolute;top:-14px;left:6px;width:8px;height:16px;border-radius:2px;background:inherit}
+.wine h3{margin:0;font-size:17px}
+.wine p{margin:2px 0 0;font-size:14px;color:var(--muted);line-height:1.35}
+.wine .price{font-weight:800;font-size:17px;white-space:nowrap}
+
+.src{font-size:12px;color:var(--muted);margin:14px 0 0;line-height:1.4}
+.film{appearance:none;border:0;background:none;color:inherit;font:inherit;text-align:left;width:100%;display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.thumb{aspect-ratio:2/3;border-radius:4px;position:relative;overflow:hidden}
+.film h3{margin:0;font-size:17px;line-height:1.2}
+.film p{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.link{display:block;text-align:center;margin:0 0 10px;padding:11px;border-radius:10px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+.link:focus-visible{outline:2px solid var(--tram);outline-offset:2px}
+footer{margin-top:26px;display:flex;gap:16px;align-items:center;font-size:13px;color:var(--muted)}
+footer button{appearance:none;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 10px;border-radius:8px;cursor:pointer}
+
+/* Modal */
+dialog{border:0;border-radius:14px;padding:0;max-width:min(92vw,440px);width:100%;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(10,16,22,.6)}
+.mhead{height:120px;display:flex;align-items:flex-end;padding:14px;color:#fff;position:relative;overflow:hidden}
+.mhead h2{margin:0;font-size:28px;font-weight:800;letter-spacing:-.02em;position:relative}
+.mbody{padding:14px 16px 18px}
+.mbody p{margin:0 0 12px;line-height:1.45}
+.dates{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
+.dates li{background:var(--bg);border-radius:8px;padding:6px 9px;font-size:14px}
+.close{width:100%;appearance:none;border:0;background:var(--tram);color:#fff;font:inherit;font-weight:600;font-size:16px;padding:12px;border-radius:10px;cursor:pointer}
+
+/* Skjermsparer */
+.saver{position:fixed;inset:0;z-index:50;display:none;cursor:pointer;
+  background:
+   radial-gradient(60% 40% at 70% 28%, #F6C66B 0%, rgba(246,198,107,0) 70%),
+   radial-gradient(90% 55% at 20% 75%, #2E5E7E 0%, rgba(46,94,126,0) 70%),
+   linear-gradient(175deg,#E58A4E 0%,#C2554A 32%,#4D3E6B 58%,#1E3550 100%);}
+.saver.on{display:block;animation:fade 1.2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.saver .hill{position:absolute;left:-10%;right:-10%;bottom:-8%;height:42%;background:#14263A;border-radius:50% 50% 0 0;opacity:.9}
+.saver .sclock{position:absolute;left:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.saver .cap{position:absolute;right:20px;bottom:calc(36px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.8);font-size:13px;max-width:45%;text-align:right}
+
+@media (prefers-reduced-motion:reduce){
+  .slide.on,.saver.on{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="clock" id="clock">--:--</div>
+      <div class="date" id="date"></div>
+    </div>
+    <div class="now">
+      <div class="temp" id="nowTemp">–°</div>
+      <div class="cond" id="nowCond">Henter vær …</div>
+      <div class="place">Grünerløkka</div>
+    </div>
+  </header>
+  <div class="days" id="days"></div>
+
+  <p class="demo" id="banner">Tilbud og vin er fortsatt eksempeldata.</p>
+
+  <nav class="nav" role="tablist" aria-label="Innhold">
+    <button class="tab" role="tab" data-i="0">Teater</button>
+    <button class="tab" role="tab" data-i="1">Kino</button>
+    <button class="tab" role="tab" data-i="2">Tilbud</button>
+    <button class="tab" role="tab" data-i="3">Vin</button>
+    <span class="status" id="status">Bytter hvert 20. sek</span>
+  </nav>
+  <div class="bar"><div id="prog"></div></div>
+
+  <section class="slide" id="s0">
+    <div class="posters" id="posters"></div>
+    <p class="src" id="srcT"></p>
+  </section>
+
+  <section class="slide" id="s1">
+    <div id="films"></div>
+    <p class="src" id="srcK"></p>
+  </section>
+
+  <section class="slide" id="s2"></section>
+
+  <section class="slide" id="s3"></section>
+
+  <footer>
+    <button id="testSaver">Vis skjermsparer</button>
+    <span id="updated">Skjermsparer etter 5 min uten berøring</span>
+  </footer>
+</div>
+
+<dialog id="modal">
+  <div class="mhead" id="mhead"><h2 id="mtitle"></h2></div>
+  <div class="mbody">
+    <p id="mdesc"></p>
+    <ul class="dates" id="mdates"></ul>
+    <a class="link" id="mlink" target="_blank" rel="noopener">Se mer og kjøp billetter</a>
+    <button class="close" id="mclose">Lukk</button>
+  </div>
+</dialog>
+
+<dialog id="wmodal">
+  <div class="whead"><h2 id="wtitle"></h2><p id="wsum"></p></div>
+  <div class="wlist" id="wlist"></div>
+  <div class="mbody"><button class="close" id="wclose">Lukk</button></div>
+</dialog>
+
+<div class="saver" id="saver" role="button" aria-label="Trykk for å gå tilbake">
+  <div class="hill"></div>
+  <div class="sclock" id="sclock"></div>
+  <div class="cap">Her kommer ekte malerier, for eksempel Munch eller Monet</div>
+</div>
+
+<script>
+// ---------- Hjelpere ----------
+const mon=["jan","feb","mar","apr","mai","jun","jul","aug","sep","okt","nov","des"];
+const wd=["søn","man","tir","ons","tor","fre","lør"];
+const days=["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"];
+const months=["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
+const cap=t=>t[0].toUpperCase()+t.slice(1);
+const fmtD=d=>`${wd[d.getDay()]} ${d.getDate()}. ${mon[d.getMonth()]}`;
+const fmtDT=d=>`${fmtD(d)} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
+const fmtDay=d=>`${d.getDate()}. ${mon[d.getMonth()]}${d.getFullYear()!==new Date().getFullYear()?" "+d.getFullYear():""}`;
+const fmtMm=n=>n?String(n).replace(".",",")+" mm":"";
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
+function sym(c=""){const n=c.includes("night");
+  if(c.startsWith("clearsky"))return n?"🌙":"☀️"; if(c.startsWith("fair"))return n?"🌙":"🌤"; if(c.startsWith("partlycloudy"))return "⛅";
+  if(c.startsWith("cloudy"))return "☁️"; if(c.includes("thunder"))return "⛈"; if(c.includes("snow")||c.includes("sleet"))return "🌨";
+  if(c.startsWith("fog"))return "🌫"; if(c.includes("showers"))return "🌦"; if(c.includes("rain"))return "🌧"; return "☁️"}
+function symText(c=""){
+  if(c.startsWith("clearsky"))return "Klarvær"; if(c.startsWith("fair"))return "Lettskyet"; if(c.startsWith("partlycloudy"))return "Delvis skyet";
+  if(c.startsWith("cloudy"))return "Skyet"; if(c.includes("thunder"))return "Torden"; if(c.includes("sleet"))return "Sludd"; if(c.includes("snow"))return "Snø";
+  if(c.startsWith("fog"))return "Tåke"; if(c.includes("showers"))return "Regnbyger"; if(c.startsWith("light"))return "Lett regn"; if(c.includes("rain"))return "Regn"; return ""}
+
+// ---------- Tegnede reserveplakater (brukes hvis bilde mangler) ----------
+const palettes=[["#1F3A5F","#E9B437"],["#8C2F39","#F3D9C4"],["#2E5E4E","#BFE3D0"],["#3B2E5A","#C9B8F0"],["#C2554A","#FBE3A1"],["#163A4C","#7FD3C4"],["#4A3B2A","#E8C9A0"],["#2B2D42","#EF8354"]];
+const shapes=["circle","stripes","arc","split","dots"];
+function hash(t){let h=0;for(const c of t)h=(h*31+c.charCodeAt(0))>>>0;return h}
+function shapeBg(s,[a,b]){switch(s){
+  case "circle":return `background:radial-gradient(circle at 65% 32%, ${b} 0 28%, transparent 29%), ${a}`;
+  case "stripes":return `background:repeating-linear-gradient(135deg, ${a} 0 18px, ${b}33 18px 36px), ${a}`;
+  case "arc":return `background:radial-gradient(120% 70% at 50% 110%, ${b} 0 40%, transparent 41%), ${a}`;
+  case "split":return `background:linear-gradient(160deg, ${b} 0 38%, ${a} 38%)`;
+  case "dots":return `background:radial-gradient(${b} 18%, transparent 19%) 0 0/26px 26px, ${a}`;}}
+const styleFor=t=>{const h=hash(t);return shapeBg(shapes[h%shapes.length],palettes[(h>>>3)%palettes.length])};
+const imgTag=src=>src?`<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:"";
+const headStyle=(t,img)=>img?`background:#222 url('${encodeURI(img)}') center/cover`:styleFor(t);
+
+// ---------- Klokke ----------
+function tick(){const d=new Date(),t=String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+  document.getElementById("clock").textContent=t;document.getElementById("sclock").textContent=t;
+  document.getElementById("date").textContent=`${cap(days[d.getDay()])} ${d.getDate()}. ${months[d.getMonth()]}`;}
+tick();setInterval(tick,1000);
+
+// ---------- Eksempeldata: tilbud og vin ----------
+const stores=[
+  {name:"Kiwi",color:"#4CA64C",deals:[["Kyllingfilet, 400 g","79,90","99,90"],["Bananer, per kg","19,90","26,90"]]},
+  {name:"Meny",color:"#D3343A",deals:[["Laksefilet, 4 stk","119,-","149,-"],["Brie, 200 g","39,90","52,90"]]},
+  {name:"Coop Extra",color:"#E6A619",deals:[["Pasta, 1 kg","24,90","32,90"]]},
+  {name:"Joker",color:"#C81F2D",deals:[["Brød, grovt","29,90","38,90"]]}];
+const wines=[
+  {name:"Barbera d'Asti",info:"Rødvin, Piemonte. Saftig og frisk.",price:"ca. 200 kr",color:"#5A1A2A"},
+  {name:"Riesling, Mosel",info:"Hvitvin, Tyskland. Lett sødme, frisk syre.",price:"ca. 180 kr",color:"#C9B45A"}];
+document.getElementById("s2").innerHTML=`<p class="src" style="margin:0 0 10px">Eksempeldata. Kobles til Kassalapp senere.</p>`+stores.map(st=>`
+  <div class="store"><h3><span style="background:${st.color}"></span>${st.name}</h3>
+  ${st.deals.map(d=>`<div class="deal"><span>${d[0]}</span><span><em>${d[1]}</em><s>${d[2]}</s></span></div>`).join("")}</div>`).join("");
+document.getElementById("s3").innerHTML=`<p class="src" style="margin:0 0 10px">Eksempeldata. Kobles til Vinmonopolet senere.</p>`+wines.map(w=>`
+  <div class="wine"><div class="bottle" style="background:${w.color}"></div><div><h3>${w.name}</h3><p>${w.info}</p></div><div class="price">${w.price}</div></div>`).join("");
+
+// ---------- Rendering av ekte data ----------
+let DATA=null;
+function renderWeather(w){
+  if(!w)return;
+  document.getElementById("nowTemp").textContent=w.now.temp+"°";
+  document.getElementById("nowCond").textContent=`${sym(w.now.sym)} ${symText(w.now.sym)}`;
+  const el=document.getElementById("days"); el.innerHTML="";
+  w.days.forEach((d,k)=>{const dt=new Date(d.date+"T12:00");
+    const b=document.createElement("button");b.className="day";
+    b.innerHTML=`<b>${k===0?"I dag":cap(wd[dt.getDay()])}</b><span>${sym(d.sym)}</span><i>${d.max}° <small>${d.min}°</small></i><em class="rain" style="font-style:normal">${fmtMm(d.rain)}</em>`;
+    b.addEventListener("click",()=>openDay(d,k));el.appendChild(b);});
+}
+function renderTheatre(){
+  const T=today(), list=[];
+  (DATA.christiania||[]).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:"Christiania"})});
+  (DATA.nationaltheatret||[]).forEach(s=>{const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
+    const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label:"Nationaltheatret"})});
+  list.sort((a,b)=>a.key-b.key);
+  const el=document.getElementById("posters");el.innerHTML="";
+  list.forEach(s=>{const b=document.createElement("button");b.className="poster";
+    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img)}<span class="kind">${s.label}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
+  document.getElementById("srcT").textContent=list.length?`Kilde: Christiania Teater og Nationaltheatret. ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
+}
+function renderFilms(){
+  const el=document.getElementById("films");el.innerHTML="";
+  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="film";
+    b.innerHTML=`<div class="thumb" style="${styleFor(f.title)}">${imgTag(f.img)}</div><div><h3>${esc(f.title)}</h3><p>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</p></div>`;
+    b.addEventListener("click",()=>openFilm(f));el.appendChild(b);});
+  document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for kinoer og visningstider.":"Fant ingen filmer ennå.";
+}
+async function load(){
+  try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
+  catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
+  renderWeather(DATA.weather);renderTheatre();renderFilms();
+  const u=new Date(DATA.updated);
+  document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
+  document.getElementById("banner").textContent=(DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data. ":"")+"Tilbud og vin er fortsatt eksempeldata.";
+}
+load();setInterval(load,30*60*1000);
+
+// ---------- Rotasjon ----------
+const ROTATE=20000,RESUME=45000;
+const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3].map(i=>document.getElementById("s"+i));
+const prog=document.getElementById("prog"),status=document.getElementById("status");
+let cur=0,start=Date.now(),paused=false,lastTouch=0;
+function show(i){cur=i;start=Date.now();slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach((t,j)=>t.setAttribute("aria-selected",j===i));}
+tabs.forEach(t=>t.addEventListener("click",()=>{pause();show(+t.dataset.i)}));
+function pause(){paused=true;lastTouch=Date.now();status.textContent="Pauset, fortsetter snart"}
+setInterval(()=>{
+  if(paused){prog.style.width="0";if(Date.now()-lastTouch>RESUME&&!modal.open&&!wmodal.open){paused=false;status.textContent="Bytter hvert 20. sek";show(cur)}return}
+  const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%4);},200);
+show(0);
+
+// ---------- Vinduer ----------
+const modal=document.getElementById("modal"),wmodal=document.getElementById("wmodal");
+function fill(title,style,desc,dates,url,linkText){pause();
+  document.getElementById("mhead").setAttribute("style",style);document.getElementById("mtitle").textContent=title;
+  document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
+  const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
+function openShow(s){
+  if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
+  else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${esc(s.about)}<br><br>${s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
+function openFilm(f){fill(f.title,headStyle(f.title,f.img),`<b>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</b><br><br>Går på disse Oslo-kinoene:`,f.cinemas,f.url,"Se visningstider på nfkino.no");}
+function openDay(d,k){pause();const dt=new Date(d.date+"T12:00");
+  document.getElementById("wtitle").textContent=k===0?"I dag":`${cap(days[dt.getDay()])} ${dt.getDate()}. ${months[dt.getMonth()]}`;
+  document.getElementById("wsum").textContent=`${symText(d.sym)}. ${d.max}° / ${d.min}°${d.rain?", "+fmtMm(d.rain):""}. Grünerløkka.`;
+  document.getElementById("wlist").innerHTML=d.hours.map(r=>`<div class="wrow"><span class="t">${String(r.h).padStart(2,"0")}:00</span><span>${sym(r.sym)}</span><span class="c">${r.temp}°</span><span class="r">${fmtMm(r.rain)}</span><span class="w">${r.wind} m/s</span></div>`).join("");
+  wmodal.showModal();}
+[["mclose",modal],["wclose",wmodal]].forEach(([id,m])=>{document.getElementById(id).addEventListener("click",()=>m.close());m.addEventListener("click",e=>{if(e.target===m)m.close()})});
+
+// ---------- Skjermsparer ----------
+const SAVER=5*60*1000,saver=document.getElementById("saver");let idle=Date.now();
+["pointerdown","touchstart","scroll","keydown"].forEach(ev=>addEventListener(ev,()=>{idle=Date.now();if(ev==="pointerdown"&&!saver.classList.contains("on"))pause()},{passive:true}));
+saver.addEventListener("pointerdown",e=>{e.stopPropagation();saver.classList.remove("on");idle=Date.now()});
+document.getElementById("testSaver").addEventListener("click",e=>{e.stopPropagation();saver.classList.add("on")});
+setInterval(()=>{if(Date.now()-idle>SAVER&&!saver.classList.contains("on")){if(modal.open)modal.close();if(wmodal.open)wmodal.close();saver.classList.add("on")}},1000);
+
+</script>
+</body>
+</html>
