@@ -1,13 +1,11 @@
 {
- "updated": "2026-10-09T23:28:12.506Z",
- "errors": [
-  "films: robots.txt tillater ikke https://www.nfkino.no/kinoprogram-oslo\n  Regler: User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? | Allow: /core/*.gif | Allow: /core/*.jpg | Allow: /core/*.jpeg | Allow: /core/*.png | Allow: /core/*.svg | Allow: /profiles/*.css$ | Allow: /profiles/*.css? | Allow: /profiles/*.js$ | Allow: /profiles/*.js? | Allow: /profiles/*.gif | Allow: /profiles/*.jpg | Allow: /profiles/*.jpeg | Allow: /profiles/*.png | Allow: /profiles/*.svg | Disallow: /core/ | Disallow: /profiles/ | Disallow: /README.md | Disallow: /composer/Metapackage/README.txt | Disallow: /composer/Plugin/ProjectMessage/README.md | Disallow: /composer/Plugin/Scaffold/README.md | Disallow: /composer/Plugin/VendorHardening/README.txt | Disallow: /composer/Template/README.txt | Disallow: /modules/README.txt | Disallow: /sites/README.txt | Disallow: /themes/README.txt | Disallow: /web.config | Disallow: /admin/ | Disallow: /comment/reply/ | Disallow: /filter/tips | Disallow: /node/add/ | Disallow: /search/ | Disallow: /user/register | Disallow: /user/password | Disallow: /user/login | Disallow: /user/logout"
- ],
+ "updated": "2026-10-09T23:30:55.748Z",
+ "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-10",
-   "h": 0,
-   "temp": 8,
+   "h": 1,
+   "temp": 7,
    "wind": 4,
    "sym": "cloudy",
    "rain": 0,
@@ -17,15 +15,6 @@
    {
     "date": "2026-10-10",
     "hours": [
-     {
-      "date": "2026-10-10",
-      "h": 0,
-      "temp": 8,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-10",
       "h": 1,
@@ -56,7 +45,7 @@
      {
       "date": "2026-10-10",
       "h": 4,
-      "temp": 6,
+      "temp": 7,
       "wind": 4,
       "sym": "rain",
       "rain": 0.3,
@@ -182,7 +171,7 @@
      {
       "date": "2026-10-10",
       "h": 18,
-      "temp": 4,
+      "temp": 5,
       "wind": 5,
       "sym": "rain",
       "rain": 0.6,
@@ -191,7 +180,7 @@
      {
       "date": "2026-10-10",
       "h": 19,
-      "temp": 4,
+      "temp": 5,
       "wind": 5,
       "sym": "rain",
       "rain": 0.6,
@@ -227,14 +216,14 @@
      {
       "date": "2026-10-10",
       "h": 23,
-      "temp": 4,
+      "temp": 5,
       "wind": 6,
       "sym": "rain",
       "rain": 0.5,
       "span": 1
      }
     ],
-    "max": 8,
+    "max": 7,
     "min": 4,
     "rain": 16.6,
     "sym": "heavyrain"
@@ -245,7 +234,7 @@
      {
       "date": "2026-10-11",
       "h": 0,
-      "temp": 4,
+      "temp": 5,
       "wind": 6,
       "sym": "rain",
       "rain": 0.5,
@@ -254,7 +243,7 @@
      {
       "date": "2026-10-11",
       "h": 1,
-      "temp": 4,
+      "temp": 5,
       "wind": 6,
       "sym": "rain",
       "rain": 0.4,
@@ -263,7 +252,7 @@
      {
       "date": "2026-10-11",
       "h": 2,
-      "temp": 4,
+      "temp": 5,
       "wind": 6,
       "sym": "rain",
       "rain": 0.4,
@@ -460,7 +449,7 @@
      }
     ],
     "max": 6,
-    "min": 4,
+    "min": 5,
     "rain": 4.6,
     "sym": "lightrain"
    },
@@ -1053,5 +1042,168 @@
    "about": "Liv Gulbrandsen byr på en halsbrekkende morsom, nær og inderlig fortelling om Henrik Ibsen og sin egen bestemor."
   }
  ],
- "films": null
+ "films": [
+  {
+   "title": "Suser avgårde",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
+   "img": "",
+   "len": "1 time 45 min",
+   "age": "9 år",
+   "cinemas": [
+    "Colosseum",
+    "Gimle",
+    "Klingenberg",
+    "Ringen",
+    "Saga",
+    "Symra",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Sense and Sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
+   "img": "",
+   "len": "2 timer 12 min",
+   "age": "Alle",
+   "cinemas": [
+    "Colosseum",
+    "Gimle",
+    "Klingenberg",
+    "Ringen",
+    "Symra",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Drapet på Benjamin Hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "img": "",
+   "len": "1 time 36 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Klingenberg",
+    "Ringen",
+    "Saga",
+    "Symra"
+   ]
+  },
+  {
+   "title": "Verity",
+   "url": "https://www.nfkino.no/film/verity",
+   "img": "",
+   "len": "1 time 57 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga",
+    "Symra",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Sauen Shaun - Gårdens fårbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "img": "",
+   "len": "1 time 21 min",
+   "age": "Alle",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga",
+    "Symra",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Avengers: Doomsday",
+   "url": "https://www.nfkino.no/film/avengers-doomsday",
+   "img": "",
+   "len": "2 timer 45 min",
+   "age": "TBC",
+   "cinemas": [
+    "Colosseum",
+    "Klingenberg",
+    "Ringen",
+    "Saga",
+    "Symra"
+   ]
+  },
+  {
+   "title": "Digger",
+   "url": "https://www.nfkino.no/film/digger",
+   "img": "",
+   "len": "2 timer 9 min",
+   "age": "12 år",
+   "cinemas": [
+    "Gimle",
+    "Klingenberg",
+    "Ringen",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Glemselens øy",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
+   "img": "",
+   "len": "1 time 49 min",
+   "age": "9 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga",
+    "Symra",
+    "Vika"
+   ]
+  },
+  {
+   "title": "Other Mommy",
+   "url": "https://www.nfkino.no/film/other-mommy",
+   "img": "",
+   "len": "1 time 31 min",
+   "age": "15 år",
+   "cinemas": [
+    "Ringen",
+    "Saga",
+    "Symra"
+   ]
+  },
+  {
+   "title": "The Social Reckoning",
+   "url": "https://www.nfkino.no/film/social-reckoning",
+   "img": "",
+   "len": "1 time 52 min",
+   "age": "12 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga",
+    "Symra"
+   ]
+  },
+  {
+   "title": "Monsterfabrikken",
+   "url": "https://www.nfkino.no/film/monsterfabrikken",
+   "img": "",
+   "len": "1 time 31 min",
+   "age": "6 år",
+   "cinemas": [
+    "Ringen",
+    "Saga",
+    "Symra"
+   ]
+  },
+  {
+   "title": "Dune: Part Three",
+   "url": "https://www.nfkino.no/film/dune-part-three",
+   "img": "",
+   "len": "2 timer 30 min",
+   "age": "TBC",
+   "cinemas": [
+    "Colosseum",
+    "Ringen"
+   ]
+  }
+ ]
 }
