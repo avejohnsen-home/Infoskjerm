@@ -331,7 +331,8 @@ function renderTheatre(){
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
 const dayLabel=d=>{const t=today(),x=new Date(d+"T00:00"),diff=Math.round((x-t)/864e5);return diff===0?"I dag":diff===1?"I morgen":cap(wd[x.getDay()])+" "+x.getDate()+". "+mon[x.getMonth()]};
-function nextShow(f){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now)}
+const FAV_KINO="Ringen"; // nærmeste kino: vises alltid først når filmen går der
+function nextShow(f,kino){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now&&(!kino||x.c===kino))}
 let filmFilter="Alle";
 function renderFilms(){
   const films=DATA.films||[], counts={};
@@ -342,7 +343,7 @@ function renderFilms(){
   if(gs.length>1)gs.forEach(g=>{const b=document.createElement("button");b.className="chip";b.textContent=g==="Alle"?`Alle (${films.length})`:`${g} (${counts[g]})`;
     b.setAttribute("aria-pressed",g===filmFilter);b.addEventListener("click",()=>{filmFilter=g;pause();renderFilms()});fe.appendChild(b)});
   const el=document.getElementById("films");el.innerHTML="";
-  films.filter(f=>filmFilter==="Alle"||(f.genres||[]).includes(filmFilter)).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f);
+  films.filter(f=>filmFilter==="Alle"||(f.genres||[]).includes(filmFilter)).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f,FAV_KINO)||nextShow(f);
     const cins=(f.cinemas||[]);const where=cins.length>2?`${cins.slice(0,2).join(", ")} +${cins.length-2}`:cins.join(", ");
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(f.title)}"></div><h3>${esc(f.title)}</h3>${imgTag(f.img)}${f.age?`<span class="kind">${esc(f.age)}</span>`:""}</div>
       <div class="meta"><b>${esc(f.title)}</b>${n?`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`:"Ingen flere visninger"}<span class="where">${esc(n?n.c+(cins.length>1?` (+${cins.length-1} ${cins.length-1===1?"kino":"kinoer"})`:""):where)}</span></div>`;
@@ -389,7 +390,7 @@ function openFilm(f){
   const box=document.getElementById("mdates");
   function showDay(d){
     box.innerHTML=`<div class="fdays">${days.map(x=>`<button class="chip" data-d="${x}" aria-pressed="${x===d}">${dayLabel(x)}</button>`).join("")}</div>`+
-      [...new Set(shows.filter(x=>x.d===d).map(x=>x.c))].map(c=>`<div class="cin"><b>${esc(c)}</b><div class="times">${shows.filter(x=>x.d===d&&x.c===c).map(x=>`<a class="time" href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.v)}">${x.t}<small>sal ${esc(x.r)}</small></a>`).join("")}</div></div>`).join("");
+      [...new Set(shows.filter(x=>x.d===d).map(x=>x.c))].sort((a,b)=>(b===FAV_KINO)-(a===FAV_KINO)).map(c=>`<div class="cin"><b>${esc(c)}</b><div class="times">${shows.filter(x=>x.d===d&&x.c===c).map(x=>`<a class="time" href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.v)}">${x.t}<small>sal ${esc(x.r)}</small></a>`).join("")}</div></div>`).join("");
     box.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>showDay(b.dataset.d)));
   }
   if(days.length)showDay(days[0]);else box.innerHTML="<li>Ingen flere visninger denne uken.</li>";
