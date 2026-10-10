@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-10T08:29:19.547Z",
+ "updated": "2026-10-10T09:28:41.931Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-10",
-   "h": 10,
+   "h": 11,
    "temp": 4,
-   "wind": 5,
+   "wind": 6,
    "sym": "heavyrain",
-   "rain": 1.4,
+   "rain": 1.2,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-10",
     "hours": [
-     {
-      "date": "2026-10-10",
-      "h": 10,
-      "temp": 4,
-      "wind": 5,
-      "sym": "heavyrain",
-      "rain": 1.4,
-      "span": 1
-     },
      {
       "date": "2026-10-10",
       "h": 11,
@@ -144,7 +135,7 @@
     ],
     "max": 5,
     "min": 4,
-    "rain": 11.3,
+    "rain": 9.9,
     "sym": "heavyrain"
    },
    {
@@ -396,7 +387,7 @@
      {
       "date": "2026-10-12",
       "h": 2,
-      "temp": 4,
+      "temp": 5,
       "wind": 4,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -486,7 +477,7 @@
      {
       "date": "2026-10-12",
       "h": 12,
-      "temp": 6,
+      "temp": 7,
       "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
@@ -540,10 +531,10 @@
      {
       "date": "2026-10-13",
       "h": 8,
-      "temp": 7,
-      "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "temp": 8,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 2.5,
       "span": 6
      },
      {
@@ -552,7 +543,7 @@
       "temp": 9,
       "wind": 6,
       "sym": "rain",
-      "rain": 3.9,
+      "rain": 3.3,
       "span": 6
      },
      {
@@ -561,13 +552,13 @@
       "temp": 12,
       "wind": 6,
       "sym": "rain",
-      "rain": 4.8,
+      "rain": 5.2,
       "span": 6
      }
     ],
     "max": 12,
     "min": 6,
-    "rain": 8.7,
+    "rain": 11,
     "sym": "rain"
    },
    {
@@ -586,34 +577,34 @@
       "date": "2026-10-14",
       "h": 8,
       "temp": 8,
-      "wind": 2,
-      "sym": "partlycloudy_day",
+      "wind": 3,
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-14",
       "h": 14,
-      "temp": 13,
-      "wind": 5,
-      "sym": "cloudy",
+      "temp": 14,
+      "wind": 4,
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-14",
       "h": 20,
-      "temp": 13,
-      "wind": 6,
-      "sym": "cloudy",
+      "temp": 11,
+      "wind": 3,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 13,
+    "max": 14,
     "min": 8,
     "rain": 0,
-    "sym": "cloudy"
+    "sym": "fair_day"
    },
    {
     "date": "2026-10-15",
@@ -621,16 +612,16 @@
      {
       "date": "2026-10-15",
       "h": 2,
-      "temp": 12,
-      "wind": 5,
-      "sym": "cloudy",
+      "temp": 11,
+      "wind": 4,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-15",
       "h": 8,
-      "temp": 13,
+      "temp": 11,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
@@ -640,7 +631,7 @@
       "date": "2026-10-15",
       "h": 14,
       "temp": 14,
-      "wind": 7,
+      "wind": 6,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -651,13 +642,13 @@
       "temp": 14,
       "wind": 6,
       "sym": "cloudy",
-      "rain": 2.4,
+      "rain": 0,
       "span": 6
      }
     ],
     "max": 14,
-    "min": 12,
-    "rain": 2.4,
+    "min": 11,
+    "rain": 0,
     "sym": "cloudy"
    },
    {
@@ -667,18 +658,18 @@
       "date": "2026-10-16",
       "h": 2,
       "temp": 13,
-      "wind": 4,
-      "sym": "cloudy",
+      "wind": 3,
+      "sym": "rainshowers_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-16",
       "h": 8,
-      "temp": 10,
-      "wind": 4,
-      "sym": "partlycloudy_day",
-      "rain": 0,
+      "temp": 11,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 2.6,
       "span": 6
      },
      {
@@ -693,16 +684,16 @@
      {
       "date": "2026-10-16",
       "h": 20,
-      "temp": 10,
+      "temp": 11,
       "wind": 3,
-      "sym": "clearsky_night",
-      "rain": 0,
+      "sym": "rainshowers_night",
+      "rain": 2.6,
       "span": 6
      }
     ],
     "max": 13,
-    "min": 10,
-    "rain": 0,
+    "min": 11,
+    "rain": 5.2,
     "sym": "cloudy"
    }
   ]
@@ -1009,7 +1000,7 @@
  "films": [
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
    "img": "",
    "len": "1 time 45 min",
    "age": "9 år",
@@ -1025,7 +1016,7 @@
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
    "img": "",
    "len": "2 timer 12 min",
    "age": "Alle",
@@ -1040,7 +1031,7 @@
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
    "img": "",
    "len": "1 time 36 min",
    "age": "15 år",
@@ -1054,7 +1045,7 @@
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "url": "https://www.nfkino.no/film/verity",
    "img": "",
    "len": "1 time 57 min",
    "age": "15 år",
@@ -1068,7 +1059,7 @@
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
    "img": "",
    "len": "1 time 21 min",
    "age": "Alle",
@@ -1082,7 +1073,7 @@
   },
   {
    "title": "Avengers: Doomsday",
-   "url": "https://www.nfkino.no/film/avengers-doomsday?city=oslo",
+   "url": "https://www.nfkino.no/film/avengers-doomsday",
    "img": "",
    "len": "2 timer 45 min",
    "age": "TBC",
@@ -1096,7 +1087,7 @@
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "url": "https://www.nfkino.no/film/digger",
    "img": "",
    "len": "2 timer 9 min",
    "age": "12 år",
@@ -1109,7 +1100,7 @@
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
    "img": "",
    "len": "1 time 49 min",
    "age": "9 år",
@@ -1123,7 +1114,7 @@
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
+   "url": "https://www.nfkino.no/film/other-mommy",
    "img": "",
    "len": "1 time 31 min",
    "age": "15 år",
@@ -1135,7 +1126,7 @@
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
+   "url": "https://www.nfkino.no/film/social-reckoning",
    "img": "",
    "len": "1 time 52 min",
    "age": "12 år",
@@ -1147,26 +1138,27 @@
    ]
   },
   {
-   "title": "Monsterfabrikken",
-   "url": "https://www.nfkino.no/film/monsterfabrikken?city=oslo",
-   "img": "",
-   "len": "1 time 31 min",
-   "age": "6 år",
-   "cinemas": [
-    "Ringen",
-    "Saga",
-    "Symra"
-   ]
-  },
-  {
    "title": "Dune: Part Three",
-   "url": "https://www.nfkino.no/film/dune-part-three?city=oslo",
+   "url": "https://www.nfkino.no/film/dune-part-three",
    "img": "",
    "len": "2 timer 30 min",
    "age": "TBC",
    "cinemas": [
     "Colosseum",
     "Ringen"
+   ]
+  },
+  {
+   "title": "En nasjon i sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "img": "",
+   "len": "1 time 55 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Gimle",
+    "Saga",
+    "Symra"
    ]
   }
  ]
