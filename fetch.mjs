@@ -166,6 +166,9 @@ function posterOf($, card, base) {
       for (const part of v.split(",")) { const u = part.trim().split(/\s+/)[0]; if (u) c.push(u); }
     }
   });
+  card.find("[style*='url(']").addBack("[style*='url(']").each((_, e) => {
+    const m = ($(e).attr("style") || "").match(/url\(\s*['"]?([^'")]+)/); if (m) c.push(m[1]);
+  });
   const ok = c.map(u => { try { const x = new URL(u, base); if (x.pathname.includes("/_next/image") && x.searchParams.get("url")) return x.searchParams.get("url"); return x.href; } catch { return ""; } })
     .filter(u => u && !u.startsWith("data:") && !/\.svg(\?|$)/i.test(u) && !/placeholder|blank|spacer|logo/i.test(u));
   return { best: ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "", all: c.slice(0, 8) };
@@ -199,8 +202,17 @@ async function nfkino() {
     const text = cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " "); // tekst med mellomrom mellom elementene
     const head = text.split(/\d+ timer?|\d+ min/)[0];           // teksten før lengden: tittel + sjangre
     const genres = GENRES.filter(g => new RegExp("(^|[^\\p{L}])" + g + "($|[^\\p{L}])", "iu").test(head));
-    const p = posterOf($, card, base);
-    if (!out.length) console.log("  Kino-bilde (første film): valgt=" + (p.best || "ingen") + " | kandidater: " + p.all.join(" "));
+    // plakaten kan ligge utenfor blokken med visninger: gå oppover så lenge vi bare har denne ene filmen
+    let p = posterOf($, card, base), box = card;
+    for (let k = 0; k < 4 && !p.best; k++) {
+      box = box.parent(); if (!box.length || box.find('h2 a[href*="/film/"]').length > 1) break;
+      p = posterOf($, box, base);
+    }
+    if (!p.best) { const prev = card.prevAll().first(); if (prev.length) p = posterOf($, prev, base); }
+    if (!out.length) {
+      console.log("  Kino-bilde (første film): valgt=" + (p.best || "ingen") + " | kandidater: " + p.all.join(" "));
+      if (!p.best) console.log("  Diagnose kino-bilde: " + $.html(card.parent()).replace(/\s+/g, " ").replace(/<li class="js-screening[\s\S]*/, "…").slice(0, 1200));
+    }
     out.push({
       title, url: abs($(a).attr("href"), base), img: p.best, genres,
       len: (text.match(/\d+ timer? \d+ min|\d+ timer?|\d+ min/) || [""])[0],
