@@ -191,6 +191,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   </section>
 
   <section class="slide" id="s1">
+    <div class="filters" id="fgenres" role="group" aria-label="Filtrer filmer"></div>
     <div class="posters" id="films"></div>
     <p class="src" id="srcK"></p>
   </section>
@@ -331,9 +332,17 @@ function renderTheatre(){
 }
 const dayLabel=d=>{const t=today(),x=new Date(d+"T00:00"),diff=Math.round((x-t)/864e5);return diff===0?"I dag":diff===1?"I morgen":cap(wd[x.getDay()])+" "+x.getDate()+". "+mon[x.getMonth()]};
 function nextShow(f){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now)}
+let filmFilter="Alle";
 function renderFilms(){
+  const films=DATA.films||[], counts={};
+  films.forEach(f=>(f.genres||[]).forEach(g=>counts[g]=(counts[g]||0)+1));
+  const gs=["Alle",...Object.keys(counts).sort((a,b)=>counts[b]-counts[a])];
+  if(!gs.includes(filmFilter))filmFilter="Alle";
+  const fe=document.getElementById("fgenres");fe.innerHTML="";
+  if(gs.length>1)gs.forEach(g=>{const b=document.createElement("button");b.className="chip";b.textContent=g==="Alle"?`Alle (${films.length})`:`${g} (${counts[g]})`;
+    b.setAttribute("aria-pressed",g===filmFilter);b.addEventListener("click",()=>{filmFilter=g;pause();renderFilms()});fe.appendChild(b)});
   const el=document.getElementById("films");el.innerHTML="";
-  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f);
+  films.filter(f=>filmFilter==="Alle"||(f.genres||[]).includes(filmFilter)).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f);
     const cins=(f.cinemas||[]);const where=cins.length>2?`${cins.slice(0,2).join(", ")} +${cins.length-2}`:cins.join(", ");
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(f.title)}"></div><h3>${esc(f.title)}</h3>${imgTag(f.img)}${f.age?`<span class="kind">${esc(f.age)}</span>`:""}</div>
       <div class="meta"><b>${esc(f.title)}</b>${n?`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`:"Ingen flere visninger"}<span class="where">${esc(n?n.c+(cins.length>1?` (+${cins.length-1} ${cins.length-1===1?"kino":"kinoer"})`:""):where)}</span></div>`;

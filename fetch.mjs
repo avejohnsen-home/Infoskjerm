@@ -156,6 +156,22 @@ async function nationaltheatret() {
   return out;
 }
 
+// Finn beste bilde i et kort (tåler «lazy loading» der bildet ligger i data-src/srcset)
+function posterOf($, card, base) {
+  const c = [];
+  card.find("img, source").each((_, e) => {
+    const el = $(e);
+    for (const at of ["data-src", "data-lazy-src", "data-original", "src", "data-srcset", "srcset"]) {
+      const v = el.attr(at); if (!v) continue;
+      for (const part of v.split(",")) { const u = part.trim().split(/\s+/)[0]; if (u) c.push(u); }
+    }
+  });
+  const ok = c.map(u => { try { const x = new URL(u, base); if (x.pathname.includes("/_next/image") && x.searchParams.get("url")) return x.searchParams.get("url"); return x.href; } catch { return ""; } })
+    .filter(u => u && !u.startsWith("data:") && !/\.svg(\?|$)/i.test(u) && !/placeholder|blank|spacer|logo/i.test(u));
+  return { best: ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "", all: c.slice(0, 8) };
+}
+const GENRES = ["Drama","Komedie","Action","Thriller","Skrekk","Grøsser","Romantikk","Familiefilm","Animasjon","Eventyr","Fantasy","Science fiction","Sci-fi","Krim","Dokumentar","Musikkfilm","Musikal","Superhelt","Biografi","Historisk","Krig","Western","Mysterium","Barnefilm","Ungdom"];
+
 // ---------- NF Kino, Oslo ----------
 async function nfkino() {
   const base = "https://www.nfkino.no/kinoprogram-oslo";
@@ -180,9 +196,13 @@ async function nfkino() {
     });
     if (!title || !shows.length) return;
     shows.sort((x, y) => (x.d + x.t).localeCompare(y.d + y.t));
-    const text = card.text().replace(/\s+/g, " ");
+    const text = cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " "); // tekst med mellomrom mellom elementene
+    const head = text.split(/\d+ timer?|\d+ min/)[0];           // teksten før lengden: tittel + sjangre
+    const genres = GENRES.filter(g => new RegExp("(^|[^\\p{L}])" + g + "($|[^\\p{L}])", "iu").test(head));
+    const p = posterOf($, card, base);
+    if (!out.length) console.log("  Kino-bilde (første film): valgt=" + (p.best || "ingen") + " | kandidater: " + p.all.join(" "));
     out.push({
-      title, url: abs($(a).attr("href"), base), img: imgOf(card, base),
+      title, url: abs($(a).attr("href"), base), img: p.best, genres,
       len: (text.match(/\d+ timer? \d+ min|\d+ timer?|\d+ min/) || [""])[0],
       age: card.find('a[href*="taxonomy/term"]').first().text().trim(),
       cinemas: OSLO_KINO.filter(k => shows.some(x => x.c === k)),
