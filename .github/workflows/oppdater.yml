@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - run: npx playwright install --with-deps chromium
       - run: node fetch.mjs
         env:
           TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
