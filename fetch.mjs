@@ -173,7 +173,7 @@ function posterOf($, card, base) {
     .filter(u => u && !u.startsWith("data:") && !/\.svg(\?|$)/i.test(u) && !/placeholder|blank|spacer|logo/i.test(u));
   return { best: ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "", all: c.slice(0, 8) };
 }
-const GENRES = ["Drama","Komedie","Action","Thriller","Skrekk","Grøsser","Romantikk","Familiefilm","Animasjon","Eventyr","Fantasy","Science fiction","Sci-fi","Krim","Dokumentar","Musikkfilm","Musikal","Superhelt","Biografi","Historisk","Krig","Western","Mysterium","Barnefilm","Ungdom"];
+const GENRES = ["Drama","Komedie","Action","Thriller","Horror","Skrekk","Grøsser","Romantikk","Familiefilm","Animasjon","Eventyr","Fantasy","Science fiction","Sci-fi","Krim","Dokumentar","Musikkfilm","Musikal","Superhelt","Biografi","Historisk","Krig","Western","Mysterium","Barnefilm","Ungdom","Sport","Konsert","Opera","Ballett","Kortfilm","Romantisk komedie"];
 
 // ---------- NF Kino, Oslo ----------
 async function nfkino() {
@@ -209,10 +209,6 @@ async function nfkino() {
       p = posterOf($, box, base);
     }
     if (!p.best) { const prev = card.prevAll().first(); if (prev.length) p = posterOf($, prev, base); }
-    if (!out.length) {
-      console.log("  Kino-bilde (første film): valgt=" + (p.best || "ingen") + " | kandidater: " + p.all.join(" "));
-      if (!p.best) console.log("  Diagnose kino-bilde: " + $.html(card.parent()).replace(/\s+/g, " ").replace(/<li class="js-screening[\s\S]*/, "…").slice(0, 1200));
-    }
     out.push({
       title, url: abs($(a).attr("href"), base), img: p.best, genres,
       len: (text.match(/\d+ timer? \d+ min|\d+ timer?|\d+ min/) || [""])[0],
@@ -367,7 +363,6 @@ async function operaen() {
   if (!r.ok) throw new Error("Operaen svarte " + r.status);
   const list = await r.json();
   const items = Array.isArray(list) ? list : (list.items || list.productions || list.data || []);
-  console.log("  Operaen API: " + items.length + " produksjoner. Eksempel: " + JSON.stringify(items[0]).slice(0, 700));
   const today = new Date().toISOString().slice(0, 10);
   const out = [];
   for (const it of items) {
