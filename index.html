@@ -307,17 +307,18 @@ function catOf(s){
 }
 function renderTheatre(){
   const T=today();let list=[];
-  ["christiania","oslonye","nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).filter(s=>s.times).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
-  ["nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).filter(s=>!s.times).forEach(s=>{
+  const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
+  ALL.filter(s=>s.times).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
+  ALL.filter(s=>!s.times).forEach(s=>{
     const label=s.venue.split(",")[0];
     if(s.next){const n=new Date(s.next);if(n<T)return;list.push({...s,key:n,status:"Neste: "+fmtDT(n),label});return}
     if(!s.from){list.push({...s,key:new Date(8.64e15),status:"Se datoer på nettsiden",label});return}
-    const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
+    const f=new Date(s.from+"T00:00"),t=s.to?new Date(s.to+"T23:59"):new Date(8.64e15);if(t<T)return;
     const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label})});
   list.forEach(s=>{s.cat=catOf(s);s.city=s.city||"Oslo"});
   list.sort((a,b)=>a.key-b.key);
   const byCity={};list.forEach(s=>byCity[s.city]=(byCity[s.city]||0)+1);
-  const cities=Object.keys(byCity).sort();
+  const HOME_CITY="Oslo";const cities=Object.keys(byCity).sort((a,b)=>(b===HOME_CITY)-(a===HOME_CITY)||a.localeCompare(b,"nb"));
   if(!cities.includes(cityFilter))cityFilter=cities[0]||"Oslo";
   const ce=document.getElementById("cities");ce.innerHTML="";
   cities.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=`${c} (${byCity[c]})`;
@@ -389,7 +390,7 @@ function fill(title,style,desc,dates,url,linkText){pause();
 function openShow(s){
   if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
   else if(s.next) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}, ${esc(s.cat.toLowerCase())}</b><br>${s.about?esc(s.about)+"<br><br>":""}Neste forestilling: ${fmtDT(new Date(s.next))}. Alle datoer finner du på Operaens side.`,[],s.url,"Se datoer og kjøp billetter");
-  else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${!s.from?"Se datoer og billetter på teaterets side":s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
+  else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${!s.from?"Se datoer og billetter på teaterets side":!s.to?"Spilles fra "+fmtDay(s.f)+". Se alle datoer på teaterets side":s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
 function openFilm(f){
   const now=new Date(),shows=(f.shows||[]).filter(x=>new Date(x.d+"T"+x.t)>=now);
   const days=[...new Set(shows.map(x=>x.d))];
