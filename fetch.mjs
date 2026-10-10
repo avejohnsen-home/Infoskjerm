@@ -386,7 +386,6 @@ async function chatnoirApi() {
   if (!r.ok) throw new Error("Chat Noir svarte " + r.status);
   const j = await r.json();
   const items = Array.isArray(j) ? j : (j.events || j.data || j.items || []);
-  console.log("  Chat Noir API: " + items.length + " oppføringer. Eksempel: " + JSON.stringify(items[0]).slice(0, 900));
   const now = new Date().toISOString().slice(0, 16);
   const shows = new Map();
   for (const it of items) {
@@ -395,14 +394,24 @@ async function chatnoirApi() {
     const title = String(it.name || it.title || pick(/^(name|title|heading)$/i) || "").trim();
     if (!title) continue;
     // tidspunkt: første ISO-dato med klokkeslett, helst fra et felt som heter noe med start/dato
-    const isoOf = v => { const m = String(v).match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2})/); return m ? `${m[1]}T${m[2]}` : null; };
+    // tider oppgis i UTC (slutter på Z) – gjør om til norsk tid
+    const osloFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Oslo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false });
+    const isoOf = v => {
+      const str = String(v); if (!/^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/.test(str)) return null;
+      if (!/(Z|[+-]\d{2}:?\d{2})$/.test(str)) return str.slice(0, 10) + "T" + str.slice(11, 16);
+      const p = Object.fromEntries(osloFmt.formatToParts(new Date(str)).map(x => [x.type, x.value]));
+      return `${p.year}-${p.month}-${p.day}T${p.hour === "24" ? "00" : p.hour}:${p.minute}`;
+    };
     const when = isoOf(pick(/start|date|dato|time/i) || "") || strs.map(([, v]) => isoOf(v)).find(Boolean);
     if (!when || when < now) continue;
     const img = (strs.find(([k, v]) => (/image|img|picture|photo|poster/i.test(k) && /^(https?:)?\/\//.test(v)) || /\.(jpe?g|png|webp|avif)(\?|$)/i.test(v)) || [])[1] || "";
-    const slug = it.slug || pick(/^slug$/i), id = it.id || it._id || pick(/^(id|eventId)$/i);
+    const slugify = t => t.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const id = it.id || it._id || pick(/^(id|eventId)$/i), slug = it.slug || pick(/^slug$/i) || (id ? slugify(title) : "");
     const link = strs.map(([, v]) => v).find(v => /ticketmaster\.no\/(event|artist)/i.test(v))
       || (slug && id ? `https://www.chatnoir.no/events/${slug}/${id}` : "https://www.chatnoir.no/program");
-    if (!shows.has(title)) shows.set(title, { title, venue: "Chat Noir", url: link, img: abs(img, "https://www.chatnoir.no/"), times: [] });
+    const tags = (it.tags || []).join(" ");
+    const about = String(it.details || "").replace(/^[^\n]*\n+/, "").replace(/\s+/g, " ").trim().slice(0, 220);
+    if (!shows.has(title)) shows.set(title, { title, venue: "Chat Noir", url: link, img: abs(img, "https://www.chatnoir.no/"), times: [], hint: tags, about });
     const s = shows.get(title); if (!s.times.includes(when)) s.times.push(when);
   }
   return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));

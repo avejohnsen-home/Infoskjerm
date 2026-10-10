@@ -380,7 +380,7 @@ function fill(title,style,desc,dates,url,linkText){pause();
   document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
 function openShow(s){
-  if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
+  if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
   else if(s.next) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}, ${esc(s.cat.toLowerCase())}</b><br>${s.about?esc(s.about)+"<br><br>":""}Neste forestilling: ${fmtDT(new Date(s.next))}. Alle datoer finner du på Operaens side.`,[],s.url,"Se datoer og kjøp billetter");
   else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${!s.from?"Se datoer og billetter på teaterets side":s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
 function openFilm(f){
