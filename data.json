@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-10T10:15:23.852Z",
+ "updated": "2026-10-10T10:26:35.727Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-10",
-   "h": 11,
+   "h": 12,
    "temp": 4,
    "wind": 6,
    "sym": "rain",
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-10",
     "hours": [
-     {
-      "date": "2026-10-10",
-      "h": 11,
-      "temp": 4,
-      "wind": 6,
-      "sym": "rain",
-      "rain": 0.9,
-      "span": 1
-     },
      {
       "date": "2026-10-10",
       "h": 12,
@@ -135,7 +126,7 @@
     ],
     "max": 5,
     "min": 4,
-    "rain": 8.2,
+    "rain": 7.3,
     "sym": "rain"
    },
    {
@@ -1045,7 +1036,7 @@
  "films": [
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde",
+   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
    "img": "",
    "len": "1 time 45 min",
    "age": "9 år",
@@ -1061,7 +1052,7 @@
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
    "img": "",
    "len": "2 timer 12 min",
    "age": "Alle",
@@ -1076,7 +1067,7 @@
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
    "img": "",
    "len": "1 time 36 min",
    "age": "15 år",
@@ -1090,7 +1081,7 @@
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity",
+   "url": "https://www.nfkino.no/film/verity?city=oslo",
    "img": "",
    "len": "1 time 57 min",
    "age": "15 år",
@@ -1104,7 +1095,7 @@
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
    "img": "",
    "len": "1 time 21 min",
    "age": "Alle",
@@ -1118,7 +1109,7 @@
   },
   {
    "title": "Avengers: Doomsday",
-   "url": "https://www.nfkino.no/film/avengers-doomsday",
+   "url": "https://www.nfkino.no/film/avengers-doomsday?city=oslo",
    "img": "",
    "len": "2 timer 45 min",
    "age": "TBC",
@@ -1132,7 +1123,7 @@
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger",
+   "url": "https://www.nfkino.no/film/digger?city=oslo",
    "img": "",
    "len": "2 timer 9 min",
    "age": "12 år",
@@ -1145,7 +1136,7 @@
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy",
+   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
    "img": "",
    "len": "1 time 49 min",
    "age": "9 år",
@@ -1159,7 +1150,7 @@
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
+   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
    "img": "",
    "len": "1 time 31 min",
    "age": "15 år",
@@ -1171,7 +1162,7 @@
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning",
+   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
    "img": "",
    "len": "1 time 52 min",
    "age": "12 år",
@@ -1184,7 +1175,7 @@
   },
   {
    "title": "Dune: Part Three",
-   "url": "https://www.nfkino.no/film/dune-part-three",
+   "url": "https://www.nfkino.no/film/dune-part-three?city=oslo",
    "img": "",
    "len": "2 timer 30 min",
    "age": "TBC",
@@ -1195,7 +1186,7 @@
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
    "img": "",
    "len": "1 time 55 min",
    "age": "15 år",
@@ -1233,8 +1224,13 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operamysteriet-formidling/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/operamysteriet/img_6982-kopi.jpg",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
+   "next": "2026-10-10T14:00",
+   "genres": [
+    "opera",
+    "formidling"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1242,8 +1238,13 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/knut-reiersrud-og-geir-sundstol-spiller-purcell-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/reiersrud-sundstol/reiersrud-sundstol-r-2.jpg",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
+   "next": "2026-10-10T18:00",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1251,8 +1252,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/erika-fatland-ukraina-en-vinterreise-bokbad/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/erika-fatland/erika-fatland7_foto-alex-babenko.jpg",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
+   "next": "2026-10-10T18:30",
+   "genres": [
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1260,35 +1265,52 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/leon-lightfoot/salle-de-danse-foto-erik-berg-operaen.no-1600x1200px.jpg",
-   "from": "2026-10-11",
-   "to": "2026-10-11",
-   "about": ""
+   "next": "2026-10-11T15:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "León & Lightfoot:"
   },
   {
    "title": "Formiddagsarien: La bohème",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/formiddagsarien-la-boheme-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/la-boheme/la-boheme-foto-adam-olsson-operaen.no-1600x1200px.jpg",
-   "from": "2026-10-15",
-   "to": "2026-10-15",
-   "about": ""
+   "next": "2026-10-15T13:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Formiddagsarien:"
   },
   {
    "title": "Alan Lucien Øyen: Vildanden",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-vildanden/wild-duck-17-10-24-coronet-theatre-1913.jpg",
-   "from": "2026-10-15",
-   "to": "2026-10-15",
-   "about": ""
+   "next": "2026-10-15T19:30",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Alan Lucien Øyen: "
   },
   {
    "title": "Lørdagsdans",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/lordagsdans-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/lordagsdans/dansestund_i_operaen.jpg",
-   "from": "2026-10-17",
-   "to": "2026-10-17",
+   "next": "2026-10-17T11:00",
+   "genres": [
+    "ballett",
+    "formidling"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1296,17 +1318,27 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/opera-for-alle-lordagssang/",
    "img": "https://www.operaen.no/globalassets/forestillinger/24-25/opera/lordagssang/img_7862-copy.jpg",
-   "from": "2026-10-17",
-   "to": "2026-10-17",
-   "about": ""
+   "next": "2026-10-17T12:00",
+   "genres": [
+    "opera",
+    "formidling",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Opera for alle:"
   },
   {
    "title": "Operahøgskolens balkongkonsert",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operahogskolens-balkongkonsert-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/operahogskolen/operahogskolen-2026-1-av-1.jpg",
-   "from": "2026-10-18",
-   "to": "2026-10-18",
+   "next": "2026-10-18T14:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1314,17 +1346,26 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operaorkestrets-kammerserie-rytmer-og-dagdrommer-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/operaorkestrets-kammerserie/operaorkestret-foto-erik-berg-2614-1140x1080.jpg",
-   "from": "2026-10-24",
-   "to": "2026-10-24",
-   "about": ""
+   "next": "2026-10-24T14:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Operaorkestrets kammerserie:"
   },
   {
    "title": "Odd Nordstoga",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/odd-nordstoga-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/odd-nordstoga/odd_n_2026_marthe_a_vannebo.jpg",
-   "from": "2026-10-25",
-   "to": "2026-10-25",
+   "next": "2026-10-25T17:00",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1332,8 +1373,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/soran-lind-saksofonens-gullalder-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/soran-lind/soran-lind-foto_richtig_grosse.jpg",
-   "from": "2026-10-25",
-   "to": "2026-10-25",
+   "next": "2026-10-25T18:30",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1341,8 +1386,13 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/min-forste-operastund-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/operastund/barsel-opera-2024-foto-erik-berg-0280.jpg",
-   "from": "2026-10-30",
-   "to": "2026-10-30",
+   "next": "2026-10-30T12:00",
+   "genres": [
+    "opera",
+    "formidling"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1350,17 +1400,26 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operastund-for-alle-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/operastund/relax02.jpg",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
-   "about": ""
+   "next": "2026-10-31T12:00",
+   "genres": [
+    "opera",
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Relæxt:"
   },
   {
    "title": "La bohème",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/la-boheme-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/la-boheme/la-boheme-foto-adam-olsson-operaen.no-1600x1200px.jpg",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
+   "next": "2026-10-31T18:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1368,17 +1427,25 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operaorkestrets-kammerserie-messing-i-smeltedigelen-konsert/",
    "img": "https://www.operaen.no/globalassets/annet/generiske-bilder/konsert/orkestret-foto-erik-berg-2570-1440x1080.jpg",
-   "from": "2026-11-01",
-   "to": "2026-11-01",
-   "about": ""
+   "next": "2026-11-01T13:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Operaorkestrets kammerserie:"
   },
   {
    "title": "Anna Karenina",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/anna-karenina-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/anna-karenina/anna-karenina-foto-erik-berg-operaen.no-1600x1200px.jpg",
-   "from": "2026-11-06",
-   "to": "2026-11-06",
+   "next": "2026-11-06T19:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1386,8 +1453,13 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/ingebjorg-bratland-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/ingebjorg-bratland/foto--marthe-vannebo.jpg",
-   "from": "2026-11-08",
-   "to": "2026-11-08",
+   "next": "2026-11-08T17:00",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1395,17 +1467,26 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/pa-sangens-spor-med-operaens-barnekor-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/25-26/konserter/operaens-barnekor/for-en-stemme-2024-foto-erik-berg-0733.jpg",
-   "from": "2026-11-14",
-   "to": "2026-11-14",
-   "about": ""
+   "next": "2026-11-14T14:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Operaens barnekor:"
   },
   {
    "title": "Maria Mena i Operaen",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/maria-mena-i-operaen-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/maria-mena/idabjorvik_maria_mena.jpg",
-   "from": "2026-11-15",
-   "to": "2026-11-15",
+   "next": "2026-11-15T17:00",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1413,17 +1494,25 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/jo-stromgren-kompani-auksjonen-samtidsdans-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/jsk-auksjonen/auksjonen-2026-foto.-erik-berg-0516-1-1.jpg",
-   "from": "2026-11-19",
-   "to": "2026-11-19",
-   "about": ""
+   "next": "2026-11-19T19:30",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Jo Strømgren Kompani: "
   },
   {
    "title": "Orfeus i underverdenen",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/orfeus-i-underverdenen-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/orfeus-i-underverdenen/orfeus-i-underverdenen-foto-agnete-bruun-operaen.no-1600x1200px.jpg",
-   "from": "2026-11-20",
-   "to": "2026-11-20",
+   "next": "2026-11-20T19:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1431,17 +1520,25 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/formiddagsarien-orfeus-i-underverdenen-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/23-24/opera/orfeus-i-underverdenen/orfeus-forestillingsbilde-foto-agnete-brun-operaen.no-1440x1080px.jpg",
-   "from": "2026-11-26",
-   "to": "2026-11-26",
-   "about": ""
+   "next": "2026-11-26T13:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Formiddagsarien:"
   },
   {
    "title": "Nøtteknekkeren",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/notteknekkeren-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/notteknekkeren/notteknekkeren-2019-foto-erik-berg-1714-operaen.no-1600x1200px.jpg",
-   "from": "2026-11-28",
-   "to": "2026-11-28",
+   "next": "2026-11-28T18:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1449,8 +1546,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/samisk-jul-med-kajsa-balto-og-frode-fjellheim-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/samisk-jul-med-kajsa-balto/hovedbilde-kajsa-balto_foto-julia-nagles.jpg",
-   "from": "2026-11-29",
-   "to": "2026-11-29",
+   "next": "2026-11-29T18:30",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1458,8 +1559,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/geneva-camerata-dance-of-the-sun-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/geneva-camerata/la9b9878--yannick-perrin.jpg",
-   "from": "2026-11-29",
-   "to": "2026-11-29",
+   "next": "2026-11-29T19:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1467,8 +1572,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/obos-julegalla-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/obos-julegalla/croppa-igjen.jpg",
-   "from": "2026-12-06",
-   "to": "2026-12-06",
+   "next": "2026-12-06T16:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1476,8 +1585,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/gerald-finley-i-operaen-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/gerald-finley/den-flyvende--hollender-2024-foto-erik-berg-0494.jpg",
-   "from": "2026-12-19",
-   "to": "2026-12-19",
+   "next": "2026-12-19T18:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1485,26 +1598,40 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/ina-wroldsen---the-business-of-christmas-2026-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/ina-wroldsen/ina-wroldsen.jpg",
-   "from": "2026-12-20",
-   "to": "2026-12-20",
-   "about": ""
+   "next": "2026-12-20T16:30",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Ina Wroldsen:"
   },
   {
    "title": "Dissimilis: Du og Jeg og Livet",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/dissimilis-du-og-jeg-og-livet-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/dissimilis/duogjegoglivet_foto_martine_rieck-1.jpg",
-   "from": "2027-01-07",
-   "to": "2027-01-07",
-   "about": ""
+   "next": "2027-01-07T18:00",
+   "genres": [
+    "opera",
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Dissimilis:"
   },
   {
    "title": "Ragnhild Hemsing: VETRA",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/ragnhild-hemsing-vetra-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/ragnhild-hemsing/ragnhild-hemsing-vetra-highres-v2_01_6902-foto-alf-simensen.jpg",
-   "from": "2027-01-10",
-   "to": "2027-01-10",
+   "next": "2027-01-10T18:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1512,8 +1639,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/olafur-arnalds-falling-apart-together-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/olafur-arnalds/oa_fallingaparttogetherdigital_creditannamaggy.jpg",
-   "from": "2027-01-17",
-   "to": "2027-01-17",
+   "next": "2027-01-17T17:30",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1521,8 +1652,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/rhingullet-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/rhingullet/rhingullet_anti_operaen.no-1600x1200px.jpg",
-   "from": "2027-01-22",
-   "to": "2027-01-22",
+   "next": "2027-01-22T19:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1530,8 +1665,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/nattfolket-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/nattfolket/nattfolket_illustrasjon-lukas-hauge-klemsdal-1-1.jpg",
-   "from": "2027-01-23",
-   "to": "2027-01-23",
+   "next": "2027-01-23T14:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1539,8 +1678,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/en-kveld-med-fazil-say-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/fazil-say/fazilsay07_cmarcoborggreve.jpg",
-   "from": "2027-01-23",
-   "to": "2027-01-23",
+   "next": "2027-01-23T18:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1548,17 +1691,25 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/balanchine-jewels-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/balanchine-jewels/jewels-foto-erik-berg-operaen.no-1200x1500px.jpg",
-   "from": "2027-01-29",
-   "to": "2027-01-29",
-   "about": ""
+   "next": "2027-01-29T19:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Balanchine: "
   },
   {
    "title": "Tungrodd – Rahcamus – Raataminen",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/tungrodd-rahcamus-raataminen-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/25-26/ballett/tungrodd/tungrodd_some.jpg",
-   "from": "2027-02-04",
-   "to": "2027-02-04",
+   "next": "2027-02-04T18:30",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1566,8 +1717,12 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/otello-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/otello/otello-foto-erik-berg-operaen.no-1200x1500px.jpg",
-   "from": "2027-02-13",
-   "to": "2027-02-13",
+   "next": "2027-02-13T18:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1575,17 +1730,25 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/woys-cosi-fan-tutte-opera/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/woys-cosi/cosi-fan-tutte-woys-2025-foto-erik-berg-1357.jpg",
-   "from": "2027-02-19",
-   "to": "2027-02-19",
-   "about": ""
+   "next": "2027-02-19T18:00",
+   "genres": [
+    "opera"
+   ],
+   "from": null,
+   "to": null,
+   "about": "WOYS: "
   },
   {
    "title": "Gautier Capuçon: Beethoven-sonater",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/gautier-capucon-beethoven-sonater-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/gautier-capucon/gautier_capucon_08_0925-foto-nikos-aliagas-.jpg",
-   "from": "2027-02-21",
-   "to": "2027-02-21",
+   "next": "2027-02-21T18:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1593,17 +1756,26 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-inquiet-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-inquiet/inquiet-foto-erik-berg-1600x1200px.jpg",
-   "from": "2027-02-25",
-   "to": "2027-02-25",
-   "about": ""
+   "next": "2027-02-25T20:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Alan Lucien Øyen:"
   },
   {
    "title": "Staysman i Operaen",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/staysman-i-operaen-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/staysman/staysmanioperaen_wide_v1_clean.jpg",
-   "from": "2027-02-28",
-   "to": "2027-02-28",
+   "next": "2027-02-28T17:00",
+   "genres": [
+    "konsert",
+    "annet"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   },
   {
@@ -1611,38 +1783,51 @@
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/crystal-pite-light-of-passage-ballett/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/crystal-pite/light-of-passage-foto-erik-berg-operaen.no-1600x1200px.jpg",
-   "from": "2027-03-05",
-   "to": "2027-03-05",
-   "about": ""
+   "next": "2027-03-05T19:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Crystal Pite: "
   },
   {
    "title": "La Voix humaine: Hannigan og Göteborgs Symfoniker",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/la-voix-humaine-hannigan-og-goteborg-symfoniker-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/la-voix-humaine/barbarahannigan_l_fotocometz.jpg",
-   "from": "2027-03-07",
-   "to": "2027-03-07",
-   "about": ""
+   "next": "2027-03-07T19:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
+   "about": "La Voix Humaine:"
   },
   {
    "title": "Verdis Requiem",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/verdis-requiem-konsert/",
    "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert/verdis-requiem/2024mahlers_2__foto_joerg-wiesner_431-operaen.no-1600x1200px.jpg",
-   "from": "2027-03-18",
-   "to": "2027-03-18",
+   "next": "2027-03-18T19:00",
+   "genres": [
+    "konsert"
+   ],
+   "from": null,
+   "to": null,
    "about": ""
   }
  ],
  "chatnoir": [
   {
-   "title": "Nyhetsbrev",
+   "title": "Sparebanken Øst Logo",
    "venue": "Chat Noir",
    "url": "https://www.chatnoir.no/personvern-og-cookies",
-   "img": "https://www.chatnoir.no/images/low-res-logo-inverse.png",
+   "img": "https://www.chatnoir.no/images/partners/sparebanken%C3%B8st.svg",
    "from": "2026-10-10",
    "to": "2027-05-29",
-   "about": ""
+   "about": "",
+   "hint": "BilletterGavekortBestill hotellpakkePersonvernChat NoirKlingenberggata 50161 OsloTelefon: 940 22 945 (tlf. åpen kl 16-18 på hverdager) "
   }
  ],
  "detnorske": [
@@ -1653,7 +1838,8 @@
    "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "MUSIKALENCabaretVelkommen til Kit Kat Klub!Kjøp billett"
   },
   {
    "title": "Jule­roser",
@@ -1662,7 +1848,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/juleroser/Uttrykk-Juleroser_uten-tekst.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Jule­roser Julekonsert i desember 2026Kjøp billett"
   },
   {
    "title": "Søstrene",
@@ -1671,7 +1858,8 @@
    "img": "https://detnorsketeatret.imgix.net/small_Sostrene_DetNorskeTeatret2026_LarsOpstad_1296.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5289&fp-y=0.1998&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "SøstreneAftenposten: «Et uforglemmelig mesterverk», terningkast 6Kjøp billett"
   },
   {
    "title": "Dommedaggry",
@@ -1680,7 +1868,8 @@
    "img": "https://detnorsketeatret.imgix.net/EirikMalmo_DNT_Dommedaggry_M5A1999_Utkast_02.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5858&fp-y=0.4002&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "DommedaggryEkorn ville ikkje drøyme om å samle oss inn og legge oss i hole tre om hausten, men er vi likevel verdt å ta vare på?Kjøp billett"
   },
   {
    "title": "Änglagård",
@@ -1689,7 +1878,8 @@
    "img": "https://detnorsketeatret.imgix.net/EirikMalmo_DNT_%C3%84nglag%C3%A5rd_EIMA0446_01-1.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5478&fp-y=0.3614&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "ÄnglagårdColin Nutleys Änglagård, musikalen. Musikk & songtekstar av Fredrik Kempe. Manus av Edward af Sillén & Daniel Réhn.Kjøp billett"
   },
   {
    "title": "Europa­visjonar",
@@ -1698,7 +1888,8 @@
    "img": "https://detnorsketeatret.imgix.net/Europavisjonar-2025-SHS-8.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Europa­visjonarSiste framsyningar!Kjøp billett"
   },
   {
    "title": "FOR BARNPippi på sirkus",
@@ -1707,7 +1898,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/pippi-pa-sirkus/DSC06116.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "FOR BARNPippi på sirkusSuksessen kjem tilbake våren 2027!Kjøp billett"
   },
   {
    "title": "Teater for barn",
@@ -1716,7 +1908,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/teaterforbarn/OBOS-teater-barn.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Teater for barnTa med barna på Det Norske Teatret!Kjøp billett"
   },
   {
    "title": "«Gutta»",
@@ -1725,7 +1918,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/gutta/EirikMalmo_DNT_Gutta_M5A3182_01.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "«Gutta»Ein bekmørk komedie om «gutta» og den nye verdsordenen.Kjøp billett"
   },
   {
    "title": "Ei rosin i sola",
@@ -1734,7 +1928,8 @@
    "img": "https://detnorsketeatret.imgix.net/Ei-rosin-i-sola-uttrykk-16-9.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4717&fp-y=0.387&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Ei rosin i solaEin amerikansk klassikar – for aller første gong på ein norsk scene.Kjøp billett"
   },
   {
    "title": "Husjomfru",
@@ -1743,7 +1938,8 @@
    "img": "https://detnorsketeatret.imgix.net/Liggende-16-9-uten-tittel.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4004&fp-y=0.321&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "HusjomfruOpplev siste romanen i Edvard Hoem si rike slektskrønike som teater.Kjøp billett"
   },
   {
    "title": "2002 ntoro yume",
@@ -1752,7 +1948,8 @@
    "img": "https://detnorsketeatret.imgix.net/ntoro-TV-NEW-no-text.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4993&fp-y=0.4371&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "2002 ntoro yumeAftenposten: «gir håp for både teatret - og verden utenfor», terningkast 5Kjøp billett"
   },
   {
    "title": "Haugtussa",
@@ -1761,7 +1958,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/haugtussa/Ane-Dahl-Torp-i-Haugtussa.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "HaugtussaGarborgs nasjonalepos som suggererande og musikalsk forteljarteater.Kjøp billett"
   },
   {
    "title": "Da vi var yngre",
@@ -1770,7 +1968,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/arv-og-miljo/Da-vi-var-yngre_OHA-19.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.6305&fp-y=0.5132&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Da vi var yngreAftenposten: «en brutalt god forestilling», terningkast 6Kjøp billett"
   },
   {
    "title": "FOR BARNFrankenstein",
@@ -1779,7 +1978,8 @@
    "img": "https://detnorsketeatret.imgix.net/Frankenstein_framsfoto_OHA-3.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.514&fp-y=0.5834&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "FOR BARNFrankensteinAftenposten: «Herlig horror for de største barna», terningkast 5Kjøp billett"
   },
   {
    "title": "For barnDen perfekte premieren",
@@ -1788,7 +1988,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/den-fantastiske-premieren-og-det-som-vart-litt-dumt/EirikMalmo_DNT_DenPerfektePremieren_M5A2813_01.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.573&fp-y=0.3527&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "For barnDen perfekte premieren(og det som vart litt dumt)Kjøp billett"
   },
   {
    "title": "15 år",
@@ -1797,7 +1998,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/15-ar/15%C3%A5r_utvalg1_OHA-35_2026-06-09-120859_kmrj.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "15 årDagsavisen: «en fortelling om samhold og respekt for menneskeverdet», terningkast 5Kjøp billett"
   },
   {
    "title": "For barnUnni og Gunni målar",
@@ -1806,7 +2008,8 @@
    "img": "https://detnorsketeatret.imgix.net/Unni-og-Gunni-ma%CC%8Alar-uttrykk_foto-Monica-Tormassy.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5713&fp-y=0.4124&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "For barnUnni og Gunni målarEi leiken og koseleg stund med Unni og Gunni!Kjøp billett"
   },
   {
    "title": "Lunsj&LyrikkGratis",
@@ -1815,7 +2018,8 @@
    "img": "https://detnorsketeatret.imgix.net/framsyningar/lunsj-og-lyrikk/Lunsj-og-lyrikk.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "Lunsj&LyrikkGratisSjå alle tilgjengelege datoar"
   },
   {
    "title": "InnsiktVorspiel til EuropavisjonarGratis",
@@ -1824,7 +2028,8 @@
    "img": "https://detnorsketeatret.imgix.net/dybdeartiklar/temp_zbvgrnaxtkdbdbsrybepdcgivibawpzsptgh/Europavisjonar_behindthescenes_13_foto-Monica-Tormassy.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "InnsiktVorspiel til EuropavisjonarGratisVelkommen til gratis vorspielSjå alle tilgjengelege datoar"
   },
   {
    "title": "OmvisingSpesialomvising Europavisjonar",
@@ -1833,7 +2038,8 @@
    "img": "https://detnorsketeatret.imgix.net/DSC8424.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4693&fp-y=0.3318&h=203&ixlib=php-3.3.1&w=365",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": "OmvisingSpesialomvising EuropavisjonarVelkommen inn i kulissane!Kjøp billett"
   },
   {
    "title": "Kontakt oss",
@@ -1842,7 +2048,8 @@
    "img": "https://detnorsketeatret.imgix.net/kart/DNT_kart_8K_2024-09-18-111950_sceg.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&ixlib=php-3.3.1&w=375",
    "from": null,
    "to": null,
-   "about": ""
+   "about": "",
+   "hint": " Kontakt oss Telefon billettluke/resepsjon: 22 42 43 44 E-post: hei@detnorsketeatret.no Org.nr: 921 196 164 Besøksadresse og varelevering: Kristian IVs g. 8, 0164 OSLO Postadresse: Postboks 1238 Vika, 0110 OSLO Opningstider Sjå alle våre opningstider Opningstider billettluka og butikken: Måndag: 08."
   }
  ]
 }
