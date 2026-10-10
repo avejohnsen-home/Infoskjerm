@@ -171,7 +171,8 @@ function posterOf($, card, base) {
   });
   const ok = c.map(u => { try { const x = new URL(u, base); if (x.pathname.includes("/_next/image") && x.searchParams.get("url")) return x.searchParams.get("url"); return x.href; } catch { return ""; } })
     .filter(u => u && !u.startsWith("data:") && !/\.svg(\?|$)/i.test(u) && !/placeholder|blank|spacer|logo/i.test(u));
-  return { best: ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "", all: c.slice(0, 8) };
+  const best = ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "";
+  return { best, ok: [...new Set([best, ...ok])].filter(Boolean), all: c.slice(0, 8) };
 }
 const GENRES = ["Drama","Komedie","Action","Thriller","Horror","Skrekk","Grøsser","Romantikk","Familiefilm","Animasjon","Eventyr","Fantasy","Science fiction","Sci-fi","Krim","Dokumentar","Musikkfilm","Musikal","Superhelt","Biografi","Historisk","Krig","Western","Mysterium","Barnefilm","Ungdom","Sport","Konsert","Opera","Ballett","Kortfilm","Romantisk komedie"];
 
@@ -603,8 +604,8 @@ async function nyehjorten(browser) {
 async function trondelagPosters(browser) {
   const list = data.trondelag; if (!Array.isArray(list) || list.every(x => x.img)) return;
   // gjenbruk bare plakater som faktisk er hentet via nettleseren (eldre forsøk ga feil bilder)
-  const known = new Map((old.trondelag || []).filter(x => x.img && x.imgSrc === "nettleser").map(x => [x.url, x.img]));
-  list.forEach(x => { if (known.has(x.url)) { x.img = known.get(x.url); x.imgSrc = "nettleser"; } else if (x.imgSrc !== "nettleser") x.img = ""; });
+  const known = new Map((old.trondelag || []).filter(x => x.img && x.imgSrc === "nettleser2").map(x => [x.url, x]));
+  list.forEach(x => { if (known.has(x.url)) { x.img = known.get(x.url).img; x.imgAlt = known.get(x.url).imgAlt || []; x.imgSrc = "nettleser2"; } else if (x.imgSrc !== "nettleser2") x.img = ""; });
   if (list.every(x => x.img)) { console.log("  Trøndelag-plakater: alle " + list.length + " hentet tidligere"); return; }
   const base = "https://www.trondelag-teater.no/forestillinger";
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO", viewport: { width: 1280, height: 900 } });
@@ -623,9 +624,10 @@ async function trondelagPosters(browser) {
       const card = cardAround($, h, c => /Spilles fra/i.test(c.text()) && c.find('a[href*="/forestillinger/"]').length > 0);
       if (card.find("h3").length !== 1) return;
       const url = abs(card.find('a[href*="/forestillinger/"]').first().attr("href"), base).split("#")[0];
-      const img = posterOf($, card, base).best; if (img) byUrl.set(url, img);
+      const p = posterOf($, card, base); if (p.best) byUrl.set(url, p.ok);
     });
-    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { x.img = byUrl.get(x.url); x.imgSrc = "nettleser"; n++; } });
+    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { const ok = byUrl.get(x.url); x.img = ok[0]; x.imgAlt = ok.slice(1, 4); x.imgSrc = "nettleser2"; n++; } });
+    console.log("  Trøndelag-bilder: " + list.map(x => x.title + " = " + (x.img || "-").replace(/^https?:\/\/[^/]+/, "").slice(0, 70)).join(" | "));
     const missing = list.filter(x => !x.img).length;
     console.log(`  Trøndelag-plakater: ${n} hentet via nettleser, ${missing} mangler` + (missing ? ". Diagnose: " + $.html($(".lazyload-placeholder").first().parent()).replace(/\s+/g, " ").slice(0, 400) : ""));
   } finally { await page.close(); }

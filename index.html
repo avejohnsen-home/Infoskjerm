@@ -266,7 +266,8 @@ function shapeBg(s,[a,b]){switch(s){
   case "split":return `background:linear-gradient(160deg, ${b} 0 38%, ${a} 38%)`;
   case "dots":return `background:radial-gradient(${b} 18%, transparent 19%) 0 0/26px 26px, ${a}`;}}
 const styleFor=t=>{const h=hash(t);return shapeBg(shapes[h%shapes.length],palettes[(h>>>3)%palettes.length])};
-const imgTag=src=>src?`<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:"";
+function imgNext(el){const a=(el.dataset.alt||"").split("|").filter(Boolean);if(a.length){el.dataset.alt=a.slice(1).join("|");el.src=a[0]}else el.remove()}
+const imgTag=(src,alts)=>src?`<img src="${esc(src)}" data-alt="${esc((alts||[]).join("|"))}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgNext(this)">`:"";
 const headStyle=(t,img)=>img?`background:#222 url('${encodeURI(img)}') center/cover`:styleFor(t);
 
 // ---------- Klokke ----------
@@ -334,7 +335,7 @@ function renderTheatre(){
   const shown=list.filter(s=>catFilter==="Alle"||s.cat===catFilter);
   const el=document.getElementById("posters");el.innerHTML="";
   shown.forEach(s=>{const b=document.createElement("button");b.className="poster";
-    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
