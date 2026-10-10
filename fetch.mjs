@@ -241,13 +241,13 @@ function cardsFrom($, base, venue, pathHint, opts = {}) {
     if ((!dates.length && !opts.noDates) || !card.find("img").length) return;
     const title = (card.find("h1,h2,h3,h4").first().text() || card.find("img").first().attr("alt") || $(a).text()).replace(/\s+/g, " ").trim();
     if (!title || title.length > 90) return;
-    const s = shows.get(href) || { title, venue, url: href, img: imgOf(card, base), dates: [] };
+    const s = shows.get(href) || { title, venue, url: href, img: imgOf(card, base), dates: [], hint: card.text().replace(/\s+/g, " ").slice(0, 300) };
     s.dates.push(...dates); shows.set(href, s);
   });
   const today = new Date().toISOString().slice(0, 10);
   return [...shows.values()].map(s => {
     const d = [...new Set(s.dates)].sort();
-    return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0] || null, to: d[d.length - 1] || null, about: "" };
+    return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0] || null, to: d[d.length - 1] || null, about: "", hint: s.hint };
   }).filter(s => !s.to || s.to >= today);
 }
 async function rendered(browser, urls, venue, pathHint, opts) {
@@ -295,18 +295,11 @@ async function operaen() {
   const today = new Date().toISOString().slice(0, 10);
   const out = [];
   for (const it of items) {
-    const strs = deepStrings(it);
-    const pick = re => (strs.find(([k]) => re.test(k)) || [])[1];
-    const title = it.title || it.name || it.heading || pick(/^(title|name|heading)$/i);
-    let link = it.url || it.link || it.href || pick(/^(url|link|href|path)$/i) || (it.slug ? "/forestillinger/" + it.slug + "/" : "");
-    const img = (strs.find(([k, v]) => /image|img|picture|photo/i.test(k) && /^(https?:)?\/\//.test(v) || /\.(jpe?g|png|webp)(\?|$)/i.test(v)) || [])[1];
-    const dates = [...new Set(strs.map(([, v]) => (v.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1]).filter(Boolean))].sort();
-    const cat = pick(/^(category|type|genre|productionType)$/i) || "";
-    if (!title || /arkiv/i.test(link || "")) continue;
-    const future = dates.filter(d => d >= today);
-    if (dates.length && !future.length) continue;
-    out.push({ title: String(title).trim(), venue: "Operaen" + (cat ? ", " + cat : ""), url: abs(link, "https://www.operaen.no/") || "https://www.operaen.no/forestillinger/",
-      img: abs(img, "https://www.operaen.no/"), from: future[0] || null, to: future[future.length - 1] || null, about: "" });
+    const title = it.name || it.title;
+    const next = (it.nextEvent || "").slice(0, 16);
+    if (!title || !next || next.slice(0, 10) < today || /arkiv/i.test(it.url || "")) continue;
+    out.push({ title: String(title).trim(), venue: "Operaen", url: abs(it.url, "https://www.operaen.no/") || "https://www.operaen.no/forestillinger/",
+      img: abs(it.imageUrl, "https://www.operaen.no/"), next, genres: it.genres || [], from: null, to: null, about: it.secondaryTitle || "" });
   }
   return out;
 }
@@ -326,7 +319,7 @@ for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["n
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
 try {
-  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null));
+  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null, { noDates: true }));
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
 } finally { await browser.close(); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));
