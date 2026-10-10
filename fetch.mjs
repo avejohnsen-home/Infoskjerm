@@ -419,6 +419,35 @@ async function chatnoirApi() {
   return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
 }
 
+// ---------- Malerier til skjermspareren (Art Institute of Chicago, kun fri bruk / public domain) ----------
+// Hentes på nytt bare én gang i uken. Bytt kunstnere her om du vil.
+const ARTISTS = ["Claude Monet", "Vincent van Gogh", "Edvard Munch", "Pierre-Auguste Renoir", "Gustave Caillebotte", "Georges Seurat", "Paul Cézanne", "Mary Cassatt", "Katsushika Hokusai", "Johannes Vermeer"];
+async function paintings() {
+  if (old.art && old.art.length && old.artUpdated && Date.now() - new Date(old.artUpdated) < 7 * 864e5) { data.artUpdated = old.artUpdated; return old.art; }
+  const AH = { "AIC-User-Agent": UA, "User-Agent": UA, Accept: "application/json" };
+  const out = [], seen = new Set();
+  for (const name of ARTISTS) {
+    const q = new URLSearchParams({ q: name, limit: "40", fields: "id,title,artist_title,artist_display,date_display,image_id,is_public_domain,artwork_type_title,thumbnail" });
+    q.append("query[term][is_public_domain]", "true");
+    const r = await fetch("https://api.artic.edu/api/v1/artworks/search?" + q, { headers: AH });
+    if (!r.ok) { console.log("  Malerier: " + name + " svarte " + r.status); continue; }
+    const items = (await r.json()).data || [];
+    let n = 0;
+    for (const it of items) {
+      if (!it.is_public_domain || !it.image_id || seen.has(it.id)) continue;
+      if (!/painting/i.test(it.artwork_type_title || "") && !/hokusai/i.test(name)) continue;
+      if (!(it.artist_title || it.artist_display || "").toLowerCase().includes(name.split(" ").pop().toLowerCase())) continue;
+      seen.add(it.id); n++;
+      out.push({ title: it.title, artist: it.artist_title || name, year: it.date_display || "", img: `https://www.artic.edu/iiif/2/${it.image_id}/full/843,/0/default.jpg`, url: `https://www.artic.edu/artworks/${it.id}` });
+      if (n >= 8) break;
+    }
+    await new Promise(res => setTimeout(res, 400));
+  }
+  console.log("  Malerier: " + out.length + " fra " + [...new Set(out.map(o => o.artist))].join(", "));
+  data.artUpdated = new Date().toISOString();
+  return out;
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn) {
   try {
@@ -429,7 +458,7 @@ async function run(key, fn) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings]]) await run(key, fn);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();

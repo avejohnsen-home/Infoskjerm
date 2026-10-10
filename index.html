@@ -151,8 +151,13 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 .saver.on{display:block;animation:fade 1.2s ease}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 .saver .hill{position:absolute;left:-10%;right:-10%;bottom:-8%;height:42%;background:#14263A;border-radius:50% 50% 0 0;opacity:.9}
-.saver .sclock{position:absolute;left:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35)}
-.saver .cap{position:absolute;right:20px;bottom:calc(36px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.8);font-size:13px;max-width:45%;text-align:right}
+.saver .layer{position:absolute;inset:0;opacity:0;transition:opacity 2s ease}
+.saver .layer.show{opacity:1}
+.saver .blur{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(30px) brightness(.45)}
+.saver .pic{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(120px + env(safe-area-inset-bottom,0px))}
+.saver .sclock{position:absolute;left:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35);z-index:2}
+.saver .cap{position:absolute;right:20px;bottom:calc(36px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.85);font-size:13px;max-width:55%;text-align:right;line-height:1.35;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.saver .cap b{display:block;color:#fff;font-size:15px}
 
 @media (prefers-reduced-motion:reduce){
   .slide.on,.saver.on{animation:none}
@@ -223,7 +228,9 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 <div class="saver" id="saver" role="button" aria-label="Trykk for å gå tilbake">
   <div class="hill"></div>
   <div class="sclock" id="sclock"></div>
-  <div class="cap">Her kommer ekte malerier, for eksempel Munch eller Monet</div>
+  <div class="layer" id="artA"><div class="blur"></div><img class="pic" alt=""></div>
+  <div class="layer" id="artB"><div class="blur"></div><img class="pic" alt=""></div>
+  <div class="cap" id="artCap"></div>
 </div>
 
 <script>
@@ -405,9 +412,22 @@ function openDay(d,k){pause();const dt=new Date(d.date+"T12:00");
 // ---------- Skjermsparer ----------
 const SAVER=5*60*1000,saver=document.getElementById("saver");let idle=Date.now();
 ["pointerdown","touchstart","scroll","keydown"].forEach(ev=>addEventListener(ev,()=>{idle=Date.now();if(ev==="pointerdown"&&!saver.classList.contains("on"))pause()},{passive:true}));
-saver.addEventListener("pointerdown",e=>{e.stopPropagation();saver.classList.remove("on");idle=Date.now()});
-document.getElementById("testSaver").addEventListener("click",e=>{e.stopPropagation();saver.classList.add("on")});
-setInterval(()=>{if(Date.now()-idle>SAVER&&!saver.classList.contains("on")){if(modal.open)modal.close();if(wmodal.open)wmodal.close();saver.classList.add("on")}},1000);
+// Malerier: bytter hvert minutt med myk overgang
+const ART_EVERY=60000;let artTimer=null,artFront="artA",artOrder=[],artPos=0;
+function showArt(){
+  const list=(DATA&&DATA.art)||[];if(!list.length)return;
+  if(artPos>=artOrder.length){artOrder=list.map((_,i)=>i).sort(()=>Math.random()-.5);artPos=0}
+  const a=list[artOrder[artPos++]],back=artFront==="artA"?"artB":"artA",el=document.getElementById(back),img=el.querySelector(".pic");
+  img.onload=()=>{el.querySelector(".blur").style.backgroundImage=`url('${encodeURI(a.img)}')`;el.classList.add("show");document.getElementById(artFront).classList.remove("show");artFront=back;
+    document.getElementById("artCap").innerHTML=`<b>${esc(a.title)}</b>${esc(a.artist)}${a.year?", "+esc(a.year):""}`;};
+  img.onerror=()=>{if(artPos<artOrder.length)showArt()};
+  img.src=a.img;
+}
+function startSaver(){if(modal.open)modal.close();if(wmodal.open)wmodal.close();saver.classList.add("on");showArt();clearInterval(artTimer);artTimer=setInterval(showArt,ART_EVERY)}
+function stopSaver(){saver.classList.remove("on");clearInterval(artTimer);idle=Date.now()}
+saver.addEventListener("pointerdown",e=>{e.stopPropagation();stopSaver()});
+document.getElementById("testSaver").addEventListener("click",e=>{e.stopPropagation();startSaver()});
+setInterval(()=>{if(Date.now()-idle>SAVER&&!saver.classList.contains("on"))startSaver()},1000);
 
 </script>
 </body>
