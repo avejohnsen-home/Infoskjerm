@@ -118,6 +118,12 @@ body{
 .thumb{aspect-ratio:2/3;border-radius:4px;position:relative;overflow:hidden}
 .film h3{margin:0;font-size:17px;line-height:1.2}
 .film p{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.fdays{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}
+.cin{margin:0 0 12px}
+.cin b{display:block;font-size:15px;margin-bottom:6px}
+.times{display:flex;flex-wrap:wrap;gap:6px}
+.time{display:inline-block;background:var(--bg);color:var(--ink);text-decoration:none;border-radius:8px;padding:6px 9px;font-size:14px;font-variant-numeric:tabular-nums}
+.time small{color:var(--muted);margin-left:4px}
 .link{display:block;text-align:center;margin:0 0 10px;padding:11px;border-radius:10px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
 .link:focus-visible{outline:2px solid var(--tram);outline-offset:2px}
 footer{margin-top:26px;display:flex;gap:16px;align-items:center;font-size:13px;color:var(--muted)}
@@ -131,6 +137,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 .mbody{padding:14px 16px 18px}
 .mbody p{margin:0 0 12px;line-height:1.45}
 .dates{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
+.dates:has(.fdays){display:block}
 .dates li{background:var(--bg);border-radius:8px;padding:6px 9px;font-size:14px}
 .close{width:100%;appearance:none;border:0;background:var(--tram);color:#fff;font:inherit;font-weight:600;font-size:16px;padding:12px;border-radius:10px;cursor:pointer}
 
@@ -321,12 +328,14 @@ function renderTheatre(){
     b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
+const dayLabel=d=>{const t=today(),x=new Date(d+"T00:00"),diff=Math.round((x-t)/864e5);return diff===0?"I dag":diff===1?"I morgen":cap(wd[x.getDay()])+" "+x.getDate()+". "+mon[x.getMonth()]};
+function nextShow(f){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now)}
 function renderFilms(){
   const el=document.getElementById("films");el.innerHTML="";
-  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="film";
-    b.innerHTML=`<div class="thumb" style="${styleFor(f.title)}">${imgTag(f.img)}</div><div><h3>${esc(f.title)}</h3><p>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</p></div>`;
+  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="film";const n=nextShow(f);
+    b.innerHTML=`<div class="thumb" style="${styleFor(f.title)}">${imgTag(f.img)}</div><div><h3>${esc(f.title)}</h3><p>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</p>${n?`<p>Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}, ${esc(n.c)}</p>`:""}</div>`;
     b.addEventListener("click",()=>openFilm(f));el.appendChild(b);});
-  document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for kinoer og visningstider.":"Fant ingen filmer ennå.";
+  document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for visningstider.":"Fant ingen filmer ennå.";
 }
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
@@ -361,7 +370,18 @@ function openShow(s){
   if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
   else if(s.next) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}, ${esc(s.cat.toLowerCase())}</b><br>${s.about?esc(s.about)+"<br><br>":""}Neste forestilling: ${fmtDT(new Date(s.next))}. Alle datoer finner du på Operaens side.`,[],s.url,"Se datoer og kjøp billetter");
   else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${!s.from?"Se datoer og billetter på teaterets side":s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
-function openFilm(f){fill(f.title,headStyle(f.title,f.img),`<b>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</b><br><br>Går på disse Oslo-kinoene:`,f.cinemas,f.url,"Se visningstider på nfkino.no");}
+function openFilm(f){
+  const now=new Date(),shows=(f.shows||[]).filter(x=>new Date(x.d+"T"+x.t)>=now);
+  const days=[...new Set(shows.map(x=>x.d))];
+  fill(f.title,headStyle(f.title,f.img),`<b>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</b>`,[],f.url,"Se filmen på nfkino.no");
+  const box=document.getElementById("mdates");
+  function showDay(d){
+    box.innerHTML=`<div class="fdays">${days.map(x=>`<button class="chip" data-d="${x}" aria-pressed="${x===d}">${dayLabel(x)}</button>`).join("")}</div>`+
+      [...new Set(shows.filter(x=>x.d===d).map(x=>x.c))].map(c=>`<div class="cin"><b>${esc(c)}</b><div class="times">${shows.filter(x=>x.d===d&&x.c===c).map(x=>`<a class="time" href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.v)}">${x.t}<small>sal ${esc(x.r)}</small></a>`).join("")}</div></div>`).join("");
+    box.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>showDay(b.dataset.d)));
+  }
+  if(days.length)showDay(days[0]);else box.innerHTML="<li>Ingen flere visninger denne uken.</li>";
+}
 function openDay(d,k){pause();const dt=new Date(d.date+"T12:00");
   document.getElementById("wtitle").textContent=k===0?"I dag":`${cap(days[dt.getDay()])} ${dt.getDate()}. ${months[dt.getMonth()]}`;
   document.getElementById("wsum").textContent=`${symText(d.sym)}. ${d.max}° / ${d.min}°${d.rain?", "+fmtMm(d.rain):""}. Grünerløkka.`;

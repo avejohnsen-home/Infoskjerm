@@ -161,35 +161,35 @@ async function nfkino() {
   const base = "https://www.nfkino.no/kinoprogram-oslo";
   const $ = await getHtml(base);
   const out = [];
+  const today = new Date().toISOString().slice(0, 10);
+  const until = new Date(Date.now() + 8 * 864e5).toISOString().slice(0, 10);
   $('h2 a[href*="/film/"]').each((_, a) => {
     const title = $(a).text().trim();
     const card = cardAround($, a, c => c.find('a[href*="/screening/"]').length > 0);
-    const cinemas = new Set();
-    card.find('a[href*="/screening/"]').each((_, s) => {
-      const name = $(s).text().trim().split(/\s+/)[0];
-      if (OSLO_KINO.includes(name)) cinemas.add(name);
+    const shows = [];
+    card.find("li[data-date]").each((_, li) => {
+      const el = $(li), d = el.attr("data-date"), raw = (el.attr("data-time") || "").padStart(4, "0");
+      const room = el.find(".room").text().trim();          // f.eks. «Klingenberg 1»
+      const cinema = room.split(/\s+/)[0];
+      if (!OSLO_KINO.includes(cinema) || !d || d < today || d > until) return;
+      shows.push({
+        d, t: raw.slice(0, 2) + ":" + raw.slice(2), c: cinema, r: room.slice(cinema.length).trim(),
+        v: el.find(".version").text().replace(/\s+/g, " ").trim().replace(/,$/, ""),
+        u: abs(el.find('a[href*="/screening/"]').attr("href"), base)
+      });
     });
-    if (!title || !cinemas.size) return;
+    if (!title || !shows.length) return;
+    shows.sort((x, y) => (x.d + x.t).localeCompare(y.d + y.t));
     const text = card.text().replace(/\s+/g, " ");
     out.push({
       title, url: abs($(a).attr("href"), base), img: imgOf(card, base),
       len: (text.match(/\d+ timer? \d+ min|\d+ timer?|\d+ min/) || [""])[0],
       age: card.find('a[href*="taxonomy/term"]').first().text().trim(),
-      cinemas: OSLO_KINO.filter(k => cinemas.has(k))
+      cinemas: OSLO_KINO.filter(k => shows.some(x => x.c === k)),
+      shows
     });
   });
-  // Diagnose: hvordan er visningstidene og dagene bygget opp på siden?
-  const first = $('a[href*="/screening/"]').first();
-  if (first.length) {
-    console.log("  Diagnose kino: visning-lenke: " + $.html(first).slice(0, 400));
-    console.log("  Diagnose kino: rundt visningene: " + $.html(first.parent().parent()).replace(/\s+/g, " ").slice(0, 1500));
-  }
-  const dayLinks = [...new Set($("a[href]").map((_, a) => $(a).attr("href")).get().filter(h => /date|dato|dag=|day/i.test(h)))].slice(0, 20);
-  console.log("  Diagnose kino: dato-lenker: " + (dayLinks.join(" ") || "ingen"));
-  const dataDates = [...new Set($("[data-date],[data-day],[datetime]").map((_, e) => $(e).attr("data-date") || $(e).attr("data-day") || $(e).attr("datetime")).get())].slice(0, 20);
-  console.log("  Diagnose kino: data-datoer: " + (dataDates.join(" ") || "ingen"));
-  console.log("  Diagnose kino: valgmenyer: " + ($("option").map((_, o) => $(o).attr("value") + "=" + $(o).text().trim()).get().slice(0, 20).join(" | ") || "ingen"));
-  return out.slice(0, 12);
+  return out.slice(0, 16);
 }
 
 // ---------- Oslo Nye Teater via Ticketmaster ----------
