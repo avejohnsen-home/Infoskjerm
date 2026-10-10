@@ -221,6 +221,13 @@ function datesIn(text) {
     if (!m[3] && new Date(y, mo - 1, Number(m[1])) < new Date(now.getFullYear(), now.getMonth() - 2, 1)) y++;
     out.add(`${y}-${pad(mo)}-${pad(m[1])}`);
   }
+  // perioder som «1.—4. september»: ta med startdagen også
+  for (const m of text.matchAll(/(?<![\d.])(\d{1,2})\.?\s?[—–-]\s?\d{1,2}\.?\s+(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember|jan|feb|mar|apr|jun|jul|aug|sept|sep|okt|nov|des)\.?(?:\s+(\d{4}))?/gi)) {
+    const mo = MON[m[2].toLowerCase()];
+    let y = m[3] ? Number(m[3]) : now.getFullYear();
+    if (!m[3] && new Date(y, mo - 1, Number(m[1])) < new Date(now.getFullYear(), now.getMonth() - 2, 1)) y++;
+    out.add(`${y}-${pad(mo)}-${pad(m[1])}`);
+  }
   return [...out].sort();
 }
 function cardsFrom($, base, venue, pathHint, opts = {}) {
@@ -276,6 +283,32 @@ async function rendered(browser, urls, venue, pathHint, opts) {
   } finally { await page.close(); }
 }
 
+// ---------- Chateau Neuf ----------
+// Tar med scenearrangementer, hopper over film, quiz, spillkvelder o.l.
+const NEUF_SKIP = /filmvisning|gratisvisning|quiz|kviss|bingo|magic: the gathering|smash|brettspill|boiler room|jazz!klubb|valgvake|debrif|workshop|spark 20/i;
+async function neuf() {
+  const base = "https://neuf.no/arrangementer";
+  const $ = await getHtml(base);
+  const today = new Date().toISOString().slice(0, 10), out = [], seen = new Set();
+  $('a[href*="/arrangementer/"]').each((_, a) => {
+    const url = abs($(a).attr("href"), base).split("#")[0];
+    if (seen.has(url) || !/\/arrangementer\/[^/]+$/.test(url)) return;
+    const card = cardAround($, a, c => c.find("h1,h2,h3").length > 0 && c.find("img").length > 0);
+    const h = card.find("h1,h2,h3").first();
+    const title = h.text().replace(/\s+/g, " ").trim();
+    const text = card.text().replace(/\s+/g, " ");
+    if (!title || NEUF_SKIP.test(title + " " + text.slice(0, 200))) return;
+    // datoer uten årstall: ligger de før i dag, gjelder de neste år
+    const dates = datesIn(text).map(d => d < today ? (Number(d.slice(0, 4)) + 1) + d.slice(4) : d).sort();
+    if (!dates.length) return;
+    seen.add(url);
+    const more = dates.length > 1 || /\+\d+/.test(text);
+    out.push({ title, venue: "Chateau Neuf", url, img: imgOf(card, base), from: dates[0], to: dates[0],
+      about: more ? "Flere forestillinger. Se alle datoer på nettsiden." : "", hint: text.slice(0, 300) + " " + (card.find("img").attr("alt") || "") });
+  });
+  return out;
+}
+
 // ---------- Operaen: nettsiden henter programmet fra sitt eget kalender-API ----------
 function deepStrings(o, out = [], key = "") {
   if (typeof o === "string") out.push([key, o]);
@@ -314,7 +347,7 @@ async function run(key, fn) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf]]) await run(key, fn);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
@@ -322,4 +355,7 @@ try {
   await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null, { noDates: true }));
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
 } finally { await browser.close(); }
+// Hvilken by hver kilde hører til (nye byer legges til her)
+const CITY = { christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
+for (const [k, city] of Object.entries(CITY)) if (Array.isArray(data[k])) data[k].forEach(x => { x.city = x.city || city; });
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));

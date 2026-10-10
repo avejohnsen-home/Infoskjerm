@@ -92,6 +92,8 @@ body{
 .filters{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--tram);border-color:var(--tram);color:#fff}
+#cities .chip{font-weight:600}
+#cities .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 .meta b{color:var(--ink);font-weight:600;display:block;font-size:14px}
 .kind{display:inline-block;font-size:11px;font-weight:600;background:rgba(255,255,255,.88);color:#17222C;border-radius:4px;padding:2px 6px;position:absolute;top:10px;left:10px}
 
@@ -176,6 +178,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   <div class="bar"><div id="prog"></div></div>
 
   <section class="slide" id="s0">
+    <div class="filters" id="cities" role="group" aria-label="Velg by"></div>
     <div class="filters" id="filters" role="group" aria-label="Filtrer forestillinger"></div>
     <div class="posters" id="posters"></div>
     <p class="src" id="srcT"></p>
@@ -288,28 +291,37 @@ function renderWeather(w){
     b.addEventListener("click",()=>openDay(d,k));el.appendChild(b);});
 }
 const CATS=["Alle","Teater","Musikal","Opera","Ballett","Revy og show","Konsert"];
-let catFilter="Alle";
+let catFilter="Alle", cityFilter="Oslo";
 function catOf(s){
   if(s.genres&&s.genres.length){const g=s.genres.join(" ").toLowerCase();
     if(/ballett|ballet|dans/.test(g))return "Ballett"; if(/konsert|concert/.test(g))return "Konsert"; if(g.includes("opera"))return "Opera";}
   const t=[s.title,s.hint,s.about].join(" ").toLowerCase();
-  if(/musikal/.test(t))return "Musikal";
-  if(/konsert/.test(t))return "Konsert";
+  if(/musikal|musical|saturday night fever|hairspray|chicago/.test(t))return "Musikal";
+  if(/ballett|balett|ballet|on ice/.test(t))return "Ballett";
+  if(/konsert|concert|in concert|tour|jul med|julekonsert/.test(t))return "Konsert";
   if(s.venue==="Chat Noir"||/revy|stand-?up|komedie|show/.test(t))return "Revy og show";
   if(s.venue==="Operaen")return "Opera";
   return "Teater";
 }
 function renderTheatre(){
-  const T=today(), list=[];
+  const T=today();let list=[];
   ["christiania","oslonye"].flatMap(k=>DATA[k]||[]).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
-  ["nationaltheatret","chatnoir","detnorske","operaen"].flatMap(k=>DATA[k]||[]).forEach(s=>{
+  ["nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).forEach(s=>{
     const label=s.venue.split(",")[0];
     if(s.next){const n=new Date(s.next);if(n<T)return;list.push({...s,key:n,status:"Neste: "+fmtDT(n),label});return}
     if(!s.from){list.push({...s,key:new Date(8.64e15),status:"Se datoer på nettsiden",label});return}
     const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
     const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label})});
-  list.forEach(s=>s.cat=catOf(s));
+  list.forEach(s=>{s.cat=catOf(s);s.city=s.city||"Oslo"});
   list.sort((a,b)=>a.key-b.key);
+  const byCity={};list.forEach(s=>byCity[s.city]=(byCity[s.city]||0)+1);
+  const cities=Object.keys(byCity).sort();
+  if(!cities.includes(cityFilter))cityFilter=cities[0]||"Oslo";
+  const ce=document.getElementById("cities");ce.innerHTML="";
+  cities.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=`${c} (${byCity[c]})`;
+    b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";pause();renderTheatre()});ce.appendChild(b)});
+  const all=list;
+  list=all.filter(s=>s.city===cityFilter);
   const counts={};list.forEach(s=>counts[s.cat]=(counts[s.cat]||0)+1);
   const cats=CATS.filter(c=>c==="Alle"||counts[c]);
   if(!cats.includes(catFilter))catFilter="Alle";
