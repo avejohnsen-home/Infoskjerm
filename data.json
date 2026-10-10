@@ -1,29 +1,22 @@
 {
- "updated": "2026-10-10T22:54:12.719Z",
- "errors": [],
+ "updated": "2026-10-10T23:07:08.716Z",
+ "errors": [
+  "dns: fant ingen oppføringer"
+ ],
  "weather": {
   "now": {
    "date": "2026-10-11",
-   "h": 0,
+   "h": 1,
    "temp": 4,
-   "wind": 7,
-   "sym": "rain",
-   "rain": 0.4,
+   "wind": 6,
+   "sym": "lightrain",
+   "rain": 0.1,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-11",
     "hours": [
-     {
-      "date": "2026-10-11",
-      "h": 0,
-      "temp": 4,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.4,
-      "span": 1
-     },
      {
       "date": "2026-10-11",
       "h": 1,
@@ -144,7 +137,7 @@
      {
       "date": "2026-10-11",
       "h": 14,
-      "temp": 7,
+      "temp": 6,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -225,7 +218,7 @@
      {
       "date": "2026-10-11",
       "h": 23,
-      "temp": 5,
+      "temp": 4,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -234,7 +227,7 @@
     ],
     "max": 7,
     "min": 4,
-    "rain": 1.3,
+    "rain": 0.9,
     "sym": "cloudy"
    },
    {
@@ -1068,7 +1061,7 @@
  "films": [
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -1379,7 +1372,7 @@
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002151-1000033270.jpg?itok=S3itZJ3q",
    "genres": [
     "Drama",
@@ -1721,7 +1714,7 @@
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -2189,7 +2182,7 @@
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "url": "https://www.nfkino.no/film/verity",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -2378,7 +2371,7 @@
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -2734,7 +2727,7 @@
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "url": "https://www.nfkino.no/film/digger",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
    "genres": [
     "Drama",
@@ -2874,7 +2867,7 @@
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
    "genres": [],
    "len": "1 time 49 min",
@@ -3068,7 +3061,7 @@
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
+   "url": "https://www.nfkino.no/film/other-mommy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -3270,7 +3263,7 @@
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
+   "url": "https://www.nfkino.no/film/social-reckoning",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002677-1000034219.jpg?itok=qSODOFx2",
    "genres": [
     "Drama",
@@ -3458,7 +3451,7 @@
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -3574,7 +3567,7 @@
   },
   {
    "title": "Heart of the Beast",
-   "url": "https://www.nfkino.no/film/heart-beast?city=oslo",
+   "url": "https://www.nfkino.no/film/heart-beast",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002327-1000031679.jpg?itok=eFGsYId6",
    "genres": [
     "Action"
@@ -3647,7 +3640,7 @@
   },
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
+   "url": "https://www.nfkino.no/film/pensjonskuppet",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -3745,7 +3738,7 @@
   },
   {
    "title": "Resident Evil",
-   "url": "https://www.nfkino.no/film/resident-evil?city=oslo",
+   "url": "https://www.nfkino.no/film/resident-evil",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
    "genres": [
     "Horror",
@@ -3861,7 +3854,7 @@
   },
   {
    "title": "Monsterfabrikken",
-   "url": "https://www.nfkino.no/film/monsterfabrikken?city=oslo",
+   "url": "https://www.nfkino.no/film/monsterfabrikken",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002380-1000031574.jpg?itok=H3q9gcy1",
    "genres": [],
    "len": "1 time 31 min",
@@ -3956,7 +3949,7 @@
   },
   {
    "title": "(NE)TOBULI MELAGIAI",
-   "url": "https://www.nfkino.no/film/netobuli-melagiai?city=oslo",
+   "url": "https://www.nfkino.no/film/netobuli-melagiai",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003140-1000031818.png?itok=ugPcugww",
    "genres": [
     "Drama",
@@ -3981,7 +3974,7 @@
   },
   {
    "title": "The Odyssey",
-   "url": "https://www.nfkino.no/film/odyssey?city=oslo",
+   "url": "https://www.nfkino.no/film/odyssey",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
    "genres": [],
    "len": "2 timer 52 min",
@@ -5598,6 +5591,1768 @@
    "url": "https://www.artic.edu/artworks/3035"
   }
  ],
+ "dns": null,
+ "kilden": [
+  {
+   "title": "Musikalfest med Sølvstrupene og fremadstormende talenter",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46662-musikalfest-med-solvstrupene-og-fremadstormende-talenter/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080-senior2-1.jpg",
+   "times": [
+    "2026-10-13T12:00"
+   ],
+   "hint": "Konsert Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Fra krakk til kamp!",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42807-fra-krakk-til-kamp/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42807%2Fsquare.webp?version=+9ZI6jZyJ0PupjWTcq7Sbw==",
+   "times": [
+    "2026-10-13T19:00",
+    "2026-10-14T19:00",
+    "2026-10-15T19:00",
+    "2026-10-16T19:00",
+    "2026-10-17T18:00"
+   ],
+   "hint": "Teater U30 en teaterforestilling om penger og politikk og svindel og svik!",
+   "about": "en teaterforestilling om penger og politikk og svindel og svik!",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Vær på ville veier - Relæxt!",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48913-vaer-pa-ville-veier-relaext/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48913%2Fsquare.webp?version=lAjWcqIoL/E1FOvbj6Q+7w==",
+   "times": [
+    "2026-10-14T13:00",
+    "2026-10-14T17:30"
+   ],
+   "hint": "Barn Familie Klassisk",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Mnozil Brass",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43763-mnozil-brass/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F43763%2Fsquare.webp?version=nFtuKN/zAyqylZt8ub/yBg==",
+   "times": [
+    "2026-10-14T18:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Unnskyld — et requiem",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43112-unnskyld-et-requiem/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F43112%2Fsquare.webp?version=ahzfJ+TWReS8dV+mkOIdJg==",
+   "times": [
+    "2026-10-15T19:30"
+   ],
+   "hint": "Forestilling Teater med Svein Tindberg og Kjetil Bjerkestrand",
+   "about": "med Svein Tindberg og Kjetil Bjerkestrand",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Mari Boine",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47838-mari-boine/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47838%2Fsquare.webp?version=xn1+w76xaNY1822nbKlOTw==",
+   "times": [
+    "2026-10-16T19:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Barneimpro",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47114-barneimpro/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47114%2Fsquare.webp?version=WnNs06X/L2lKI6NCLepMWg==",
+   "times": [
+    "2026-10-17T13:00"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Hanne Boel",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44514-hanne-boel/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44514%2Fsquare.webp?version=j5riT2I4egBb82KGXvzBnw==",
+   "times": [
+    "2026-10-17T19:30"
+   ],
+   "hint": "Konsert med band",
+   "about": "med band",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Generalprøve Maskefall",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47046-generalprove-maskefall/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47046%2Fsquare.webp?version=Cc46/YQKwS6V+1FvEY6KTg==",
+   "times": [
+    "2026-10-20T12:00"
+   ],
+   "hint": "Kilden Dialog Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Maskefall – ekte historier som berører",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48248-maskefall-ekte-historier-som-berorer/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48248%2Fsquare.webp?version=Cc46/YQKwS6V+1FvEY6KTg==",
+   "times": [
+    "2026-10-20T19:00",
+    "2026-10-21T19:00",
+    "2026-10-22T19:00",
+    "2026-10-23T19:00",
+    "2026-10-24T13:00"
+   ],
+   "hint": "Kilden Dialog Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Latinamerikansk lidenskap med Pacho Flores",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45955-latinamerikansk-lidenskap-med-pacho-flores/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45955%2Fsquare.webp?version=MrpbETQkgK95fNuNKEnCmA==",
+   "times": [
+    "2026-10-22T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Heavy Breathers",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42808-heavy-breathers/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42808%2Fsquare.webp?version=ImpaqZ7xtLHe2W+6X1LyIg==",
+   "times": [
+    "2026-10-23T19:00",
+    "2026-10-24T18:00",
+    "2026-10-27T19:00",
+    "2026-10-28T19:00",
+    "2026-10-29T19:00",
+    "2026-10-30T19:00",
+    "2026-10-31T18:00",
+    "2026-11-03T19:00",
+    "2026-11-04T12:00",
+    "2026-11-05T19:00",
+    "2026-11-06T19:00",
+    "2026-11-07T18:00",
+    "2026-11-10T19:00",
+    "2026-11-11T19:00",
+    "2026-11-12T19:00",
+    "2026-11-13T19:00",
+    "2026-11-14T18:00"
+   ],
+   "hint": "Seniorkilden Teater U30 av Susie Wang",
+   "about": "av Susie Wang",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "En hyllest til Bruce Springsteen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42637-en-hyllest-til-bruce-springsteen/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/hyllest-til-bruce.png",
+   "times": [
+    "2026-10-23T19:30"
+   ],
+   "hint": "Konsert med Askil Holm og Stein Roger Sordal & band",
+   "about": "med Askil Holm og Stein Roger Sordal & band",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Et levende eventyr",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47113-et-levende-eventyr/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47113%2Fsquare.webp?version=GYKb5I9mXkivrLZciLduCA==",
+   "times": [
+    "2026-10-24T13:00",
+    "2026-10-24T14:30"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Thomas Dybdahl",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47619-thomas-dybdahl/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47619%2Fsquare.webp?version=F89CQCQ+5wTKA39YNb3RRA==",
+   "times": [
+    "2026-10-24T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Melancholia II",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46652-melancholia-ii/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46652%2Fsquare.webp?version=568jwqOehX0A6TUVV7pyhg==",
+   "times": [
+    "2026-10-27T12:00"
+   ],
+   "hint": "Seniorkilden Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Melancholia I og II",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46654-melancholia-i-og-ii/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46654%2Fsquare.webp?version=IFljXiAZnyo6jFfqGUsmtQ==",
+   "times": [
+    "2026-10-28T18:00"
+   ],
+   "hint": "Teater Av Jon Fosse",
+   "about": "Av Jon Fosse",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kristiansand – en by i for stor forandring?",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46650-kristiansand-en-by-i-for-stor-forandring/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46650%2Fsquare.webp?version=Yy7Y/cu4P/fveIs6vMVynA==",
+   "times": [
+    "2026-10-29T12:00"
+   ],
+   "hint": "Foredrag Seniorkilden Bildeforedrag ved Olav Breen",
+   "about": "Bildeforedrag ved Olav Breen",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Rachlin og Sjostakovitsj",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45956-rachlin-og-sjostakovitsj/",
+   "img": "https://kilden.com/wp-content/uploads/2026/10/Denis-Kozukhin044-1a.jpg",
+   "times": [
+    "2026-10-29T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Asbjørn Ribe",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47565-asbjorn-ribe/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47565%2Fsquare.webp?version=TyWA+5P0Y1xWP4UfG0M8+Q==",
+   "times": [
+    "2026-10-29T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Bård Tufte Johansen – prøver å være positiv",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44351-bard-tufte-johansen-prover-a-vaere-positiv/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080.jpg",
+   "times": [
+    "2026-10-30T19:00",
+    "2026-10-30T21:00"
+   ],
+   "hint": "Humor Standup",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Ynglingeforeningens Musikkorps",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47457-ynglingeforeningens-musikkorps/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47457%2Fsquare.webp?version=i7pA/yW2nKgtFkcC9eqpNg==",
+   "times": [
+    "2026-10-30T19:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Negative Nils",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46908-negative-nils/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46908%2Fsquare.webp?version=kE9V99L5bTDxzxloBVRmOA==",
+   "times": [
+    "2026-10-31T13:00"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kristiansands Haandverker Sangforening",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/41334-kristiansands-haandverker-sangforening/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F41334%2Fsquare.webp?version=ufZmx2X+MgJEmBCVTVJt/Q==",
+   "times": [
+    "2026-10-31T15:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Før du går",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47567-for-du-gar/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47567%2Fsquare.webp?version=WCvH8tTw6T2yO/m66T967A==",
+   "times": [
+    "2026-10-31T19:00"
+   ],
+   "hint": "Konsert Odd Nordstoga",
+   "about": "Odd Nordstoga",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Riksteatret: Apestjernen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47420-riksteatret-apestjernen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47420%2Fsquare.webp?version=+BK1btSGbn8EmlG6GoMGHg==",
+   "times": [
+    "2026-11-03T18:00"
+   ],
+   "hint": "Barn Familie Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kort og klassisk : En nordisk kveld med Sibelius’ andre",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47209-kort-og-klassisk-en-nordisk-kveld-med-sibelius-andre/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47209%2Fsquare.webp?version=Ez9uqbLVglW8NECI9bf1tw==",
+   "times": [
+    "2026-11-04T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Den fineste fitta i Nordland er mi – Heidi Ruud Ellingsen er S. S. Bjugn",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44635-den-fineste-fitta-i-nordland-er-mi-heidi-ruud-ellingsen-er-s-s-bjugn/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44635%2Fsquare.webp?version=KElZCVVxEt0EaaSfNOISqA==",
+   "times": [
+    "2026-11-04T19:30"
+   ],
+   "hint": "Forestilling",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Under en magisk måne - Peter Pan",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46663-under-en-magisk-mane-peter-pan/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46663%2Fsquare.webp?version=Y6csySfHx0rAIyjLFIU+PA==",
+   "times": [
+    "2026-11-05T18:00",
+    "2026-11-07T11:00",
+    "2026-11-07T13:00"
+   ],
+   "hint": "Familie Lørdagskilden Teater Teater Manu",
+   "about": "Teater Manu",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "En nordisk kveld med Sibelius’ andre",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45957-en-nordisk-kveld-med-sibelius-andre/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45957%2Fsquare.webp?version=eOF9vbk+qHL/I4u8WA7DvQ==",
+   "times": [
+    "2026-11-05T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Under åpen himmel – med Anne Lindmo & Kilden Vokalensemble",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47184-under-apen-himmel-med-anne-lindmo-kilden-vokalensemble/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47184%2Fsquare.webp?version=2P3yE+Yn6hNNzvqWei0RvQ==",
+   "times": [
+    "2026-11-06T19:30"
+   ],
+   "hint": "Konsert Kor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "CC Cowboys",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46624-cc-cowboys/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/CC-1080x1080-1.png",
+   "times": [
+    "2026-11-07T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Bendik Hofseth – Woodlands",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48688-bendik-hofseth-woodlands/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48688%2Fsquare.webp?version=jRG71zUnfPuhYh5H2aLu2Q==",
+   "times": [
+    "2026-11-08T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Gunnar på Mo",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46649-gunnar-pa-mo/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080-senior4.jpg",
+   "times": [
+    "2026-11-10T12:00",
+    "2026-11-10T14:00"
+   ],
+   "hint": "Forestilling Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Lydhør - norbakken/eriksen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47620-lydhor-norbakken-eriksen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47620%2Fsquare.webp?version=PqTlZL9WJv6/peolBKXpSA==",
+   "times": [
+    "2026-11-11T19:00"
+   ],
+   "hint": "Konsert med Maria Haukaas Mittet",
+   "about": "med Maria Haukaas Mittet",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Høyt og lavt – en statusrapport fra Norges rikeste land",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/39092-hoyt-og-lavt-en-statusrapport-fra-norges-rikeste-land/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/Digital-1-1.png",
+   "times": [
+    "2026-11-12T18:00",
+    "2026-11-12T20:30"
+   ],
+   "hint": "Forestilling Humor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Riksteatret: Ubesvart anrop",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47418-riksteatret-ubesvart-anrop/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47418%2Fsquare.webp?version=jvQnzuL+N1F2TN4XRBuCSw==",
+   "times": [
+    "2026-11-13T13:30",
+    "2026-11-14T15:00"
+   ],
+   "hint": "Barn Lørdagskilden relæxt",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Treretters - høstens store humorfest",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47615-treretters-hostens-store-humorfest/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47615%2Fsquare.webp?version=oMM9SqcMgWnIRDRv4zS3Xg==",
+   "times": [
+    "2026-11-13T19:00",
+    "2026-11-13T21:00"
+   ],
+   "hint": "Humor med Kevin Vågenes, Cess og Rasmus Wold",
+   "about": "med Kevin Vågenes, Cess og Rasmus Wold",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Janove – med strykekvartett",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46770-janove-med-strykekvartett/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/janove-1080x1080-1.png",
+   "times": [
+    "2026-11-14T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Peer Gynt med Kåre Conradi",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46647-peer-gynt-med-kare-conradi/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46647%2Fsquare.webp?version=aQ+P/LyQY1LBWPmUlrtWbA==",
+   "times": [
+    "2026-11-17T12:00",
+    "2026-11-17T14:00"
+   ],
+   "hint": "Seniorkilden Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Musikksalongen #20",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47404-musikksalongen-20/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47404%2Fsquare.webp?version=LpoGoBPylaktxm7aISMJkg==",
+   "times": [
+    "2026-11-17T19:00"
+   ],
+   "hint": "Foredrag Musikk «Musikk i truede taktarter» / med Eva Mari Andreasen",
+   "about": "«Musikk i truede taktarter» / med Eva Mari Andreasen",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "«Kukene/Kukane» lest av Erlend Loe",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46008-kukene-kukane-lest-av-erlend-loe/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46008%2Fsquare.webp?version=tKsJ6UZy8kwN3XKHSTB0hA==",
+   "times": [
+    "2026-11-18T18:00"
+   ],
+   "hint": "Forestilling",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Rachlin spiller Alban Berg",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45958-rachlin-spiller-alban-berg/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45958%2Fsquare.webp?version=UVZd02NloTuIwkuiDCOlBg==",
+   "times": [
+    "2026-11-19T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Reisen til Julestjernen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42814-reisen-til-julestjernen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42814%2Fsquare.webp?version=w+dz5o/1lFTYSQdfJAq87A==",
+   "times": [
+    "2026-11-20T17:30",
+    "2026-11-21T17:30",
+    "2026-11-24T17:30",
+    "2026-11-25T17:30",
+    "2026-11-27T17:30",
+    "2026-11-28T14:00",
+    "2026-11-28T17:30",
+    "2026-12-01T17:30",
+    "2026-12-02T17:30",
+    "2026-12-03T17:30",
+    "2026-12-04T17:30",
+    "2026-12-05T14:00",
+    "2026-12-05T17:30",
+    "2026-12-08T17:30",
+    "2026-12-09T17:30",
+    "2026-12-10T17:30",
+    "2026-12-11T17:30",
+    "2026-12-12T14:00",
+    "2026-12-12T17:30",
+    "2026-12-15T17:30",
+    "2026-12-16T17:30",
+    "2026-12-17T17:30",
+    "2026-12-18T17:30",
+    "2026-12-19T14:00",
+    "2026-12-19T17:30",
+    "2026-12-21T17:30",
+    "2026-12-22T17:30"
+   ],
+   "hint": "Familie Jul Teater av Sverre Brandt / musikk av Johan Halvorsen / musikalske arrangement av Per Christian Revholt",
+   "about": "av Sverre Brandt / musikk av Johan Halvorsen / musikalske arrangement av Per Christian Revholt",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Terje Sporsem og John Brungot - Høy og Mørk",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43761-terje-sporsem-og-john-brungot-hoy-og-mork/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F43761%2Fsquare.webp?version=QOors6LSryA++nF+S7la7g==",
+   "times": [
+    "2026-11-20T18:30"
+   ],
+   "hint": "Humor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Snekker Andersen og Julenissen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47131-snekker-andersen-og-julenissen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47131%2Fsquare.webp?version=UpKbJ+MSK0Ukq8LAq1oY0Q==",
+   "times": [
+    "2026-11-21T12:00",
+    "2026-11-21T13:00",
+    "2026-11-21T14:00"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Bjørn & Bjarte, den tøffe & den sarte",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/37504-bjorn-bjarte-den-toffe-den-sarte/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F37504%2Fsquare.webp?version=j9r4ZcNlyfm3FjchVs7dOA==",
+   "times": [
+    "2026-11-21T19:00"
+   ],
+   "hint": "Humor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Ein slags julekonsert med Tønes og Ingvar Hovland",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48141-ein-slags-julekonsert-med-tones-og-ingvar-hovland/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48141%2Fsquare.webp?version=Br5mHq038Q0RcOTwfUMA/A==",
+   "times": [
+    "2026-11-22T18:00"
+   ],
+   "hint": "Julekonsert Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "SONGBOK – VOL. 3 - Askil Holm 25-årsjubileumskonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42754-songbok-vol-3-askil-holm-25-arsjubileumskonsert/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/songbok-vol-3.png",
+   "times": [
+    "2026-11-24T12:00"
+   ],
+   "hint": "Konsert Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "SONGBOK – VOL. 3 - Askil Holm 25-årsjubileumskonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42755-songbok-vol-3-askil-holm-25-arsjubileumskonsert/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/songbok-vol-3.png",
+   "times": [
+    "2026-11-24T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "A CHRISTMAS CAROL",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49784-a-christmas-carol/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49784%2Fsquare.webp?version=oWaYs5HVFMji6HI/+zRPQw==",
+   "times": [
+    "2026-11-26T17:00",
+    "2026-11-26T19:15"
+   ],
+   "hint": "Dans Familie Sharrons Dansestudio",
+   "about": "Sharrons Dansestudio",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Reisen til Julestjernen - Relæxt",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48356-reisen-til-julestjernen-relaext/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48356%2Fsquare.webp?version=Q/wR+32PqSv40wKl28E6Sg==",
+   "times": [
+    "2026-11-26T17:30"
+   ],
+   "hint": "Familie Jul relæxt av Sverre Brandt / musikk av Johan Halvorsen / musikalske arrangement av Per Christian Revholt",
+   "about": "av Sverre Brandt / musikk av Johan Halvorsen / musikalske arrangement av Per Christian Revholt",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "I takknemlighet over Terje Boye Hansen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45959-i-takknemlighet-over-terje-boye-hansen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45959%2Fsquare.webp?version=9HRNfHXmjjKd+NrrFRt9lA==",
+   "times": [
+    "2026-11-26T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "FØKK «Et Vekkelsesmøte»",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46636-fokk-et-vekkelsesmote/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080_Dora_Fokk_1-1440x1440.jpg",
+   "times": [
+    "2026-11-27T18:00",
+    "2026-11-27T20:30"
+   ],
+   "hint": "Humor Dora Thorhallsdottir",
+   "about": "Dora Thorhallsdottir",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Christel Alsos",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44495-christel-alsos/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/Christel-1080x1080-1.png",
+   "times": [
+    "2026-11-27T19:00"
+   ],
+   "hint": "Jul Konsert I den kalde vinter",
+   "about": "I den kalde vinter",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Superbandets Jul – Julesangskatten – Vol. 7",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42760-superbandets-jul-julesangskatten-vol-7/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42760%2Fsquare.webp?version=oa227DySrJgIxHJh940fqw==",
+   "times": [
+    "2026-11-28T12:00",
+    "2026-11-28T13:00",
+    "2026-11-28T14:30",
+    "2026-11-28T15:30"
+   ],
+   "hint": "Familie Konsert Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Maria Mena",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43829-maria-mena/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/Maria-1080x1080-1.png",
+   "times": [
+    "2026-11-28T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Bjøro og Miriam adventskonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/27677-bjoro-og-miriam-adventskonsert/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F27677%2Fsquare.webp?version=preOlzqe/L9/EDHzoprNSA==",
+   "times": [
+    "2026-12-01T12:00",
+    "2026-12-01T14:00"
+   ],
+   "hint": "Jul Konsert Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Nordic Tenors",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43693-nordic-tenors/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080_CWNT-1440x1440.jpg",
+   "times": [
+    "2026-12-01T18:00"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kakemann - Dukkemann",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/15905-kakemann-dukkemann/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F15905%2Fsquare.webp?version=nIpRE1iTF6LCtd63WOaCgA==",
+   "times": [
+    "2026-12-02T10:00",
+    "2026-12-03T10:00",
+    "2026-12-05T13:00",
+    "2026-12-12T13:00",
+    "2026-12-19T13:00"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Adam Douglas",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44000-adam-douglas/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/Adam-1080x1080-1.png",
+   "times": [
+    "2026-12-02T19:00"
+   ],
+   "hint": "Jul Konsert An American Holiday",
+   "about": "An American Holiday",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Oslo Gospel Choir",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44324-oslo-gospel-choir/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44324%2Fsquare.webp?version=0oFBP/rjY885Jz8GqvZnOg==",
+   "times": [
+    "2026-12-03T18:00"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Bachs juleoratorium",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45960-bachs-juleoratorium/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45960%2Fsquare.webp?version=x+YF/NhxAYlXksaudPnP2Q==",
+   "times": [
+    "2026-12-03T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Sissels jul",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44511-sissels-jul/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44511%2Fsquare.webp?version=/r8uPjBhxOMKl+0mpCS4yA==",
+   "times": [
+    "2026-12-04T18:00"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "A very Nashville christmas",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47507-a-very-nashville-christmas/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47507%2Fsquare.webp?version=2batGJO582CDA2r27dmSmw==",
+   "times": [
+    "2026-12-04T18:30",
+    "2026-12-04T20:30"
+   ],
+   "hint": "Jul Konsert med Erlend Gunstveit",
+   "about": "med Erlend Gunstveit",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kakemann - Dukkemann - Relæxt!",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48914-kakemann-dukkemann-relaext/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48914%2Fsquare.webp?version=jf/QM/mmZoaFUpIx6XpGyg==",
+   "times": [
+    "2026-12-05T12:00"
+   ],
+   "hint": "Barn Familie relæxt",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Symfonica",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44498-symfonica/",
+   "img": "https://kilden.com/wp-content/uploads/2026/09/Symfonica-1080x1080-1.png",
+   "times": [
+    "2026-12-05T18:00",
+    "2026-12-05T20:30"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Mellom julebakst og englesang",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/27681-mellom-julebakst-og-englesang/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080-senior5.jpg",
+   "times": [
+    "2026-12-08T12:00"
+   ],
+   "hint": "Jul Konsert Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "The Great Gospel Christmas Celebration",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48447-the-great-gospel-christmas-celebration/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48447%2Fsquare.webp?version=VUsB5UPGuNXjFCZY+z5+Tg==",
+   "times": [
+    "2026-12-08T20:00"
+   ],
+   "hint": "Jul Konsert The Harlem Spirit of Gospel feat. Anthony Morgan, Tom Jarle Istad Kristiansen & Restart Mass Choir",
+   "about": "The Harlem Spirit of Gospel feat. Anthony Morgan, Tom Jarle Istad Kristiansen & Restart Mass Choir",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Julekonsert med Helene Bøksle",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44512-julekonsert-med-helene-boksle/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44512%2Fsquare.webp?version=nbIJI/j/iOZA+kcnTaH2KA==",
+   "times": [
+    "2026-12-09T18:00",
+    "2026-12-09T20:30"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Sacred Night – en unik julekonsert med Secret Garden",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/44521-sacred-night-en-unik-julekonsert-med-secret-garden/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F44521%2Fsquare.webp?version=TRYPBqUx0sz5roRvxNXP5Q==",
+   "times": [
+    "2026-12-10T18:00",
+    "2026-12-10T20:30"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kurt Nilsen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/35456-kurt-nilsen/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/251209-Kurt-Nilsen-bilde-kopi-1440x1396.jpg",
+   "times": [
+    "2026-12-11T18:00",
+    "2026-12-11T20:30",
+    "2026-12-12T17:00",
+    "2026-12-12T19:30"
+   ],
+   "hint": "Julekonsert Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Swingende jul med Christianssand Storband",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47648-swingende-jul-med-christianssand-storband/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47648%2Fsquare.webp?version=oqffSLQt5na3zX46J63OWg==",
+   "times": [
+    "2026-12-11T19:00"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Vår Jul",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/43596-var-jul/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F43596%2Fsquare.webp?version=kwikknQgNAflzwIyWUiNug==",
+   "times": [
+    "2026-12-13T16:00",
+    "2026-12-13T18:30",
+    "2026-12-13T21:00"
+   ],
+   "hint": "Jul Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Julekonsert med Erik Faber og Stein Roger Sordal",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46643-julekonsert-med-erik-faber-og-stein-roger-sordal/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/1080x1080-senior6.jpg",
+   "times": [
+    "2026-12-15T12:00",
+    "2026-12-15T14:00"
+   ],
+   "hint": "Jul Konsert Seniorkilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Musikksalongen #21",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47405-musikksalongen-21/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47405%2Fsquare.webp?version=LpoGoBPylaktxm7aISMJkg==",
+   "times": [
+    "2026-12-15T19:00"
+   ],
+   "hint": "Foredrag Musikk Musikksalongens julespesial",
+   "about": "Musikksalongens julespesial",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Juleevangeliet",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45961-juleevangeliet/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45961%2Fsquare.webp?version=yaPIjxiOsozpYP54uzFiLA==",
+   "times": [
+    "2026-12-17T18:00",
+    "2026-12-17T20:00"
+   ],
+   "hint": "Kilden Dialog Konsert U30",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Ylvis & Calle",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48048-ylvis-calle/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48048%2Fsquare.webp?version=PSdGYpOd5xwqBKexPq4taA==",
+   "times": [
+    "2026-12-19T18:30",
+    "2026-12-19T21:15"
+   ],
+   "hint": "Forestilling Humor Juleshow Et juleshow",
+   "about": "Et juleshow",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Falle til ro – ein julekonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/37095-falle-til-ro-ein-julekonsert/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/SW-EWS-juleturne2026-SOME_img-260310-v13-1440x1440.jpg",
+   "times": [
+    "2026-12-20T19:00"
+   ],
+   "hint": "Jul Konsert Eva Weel Skram",
+   "about": "Eva Weel Skram",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Nyttårskonserten 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45962-nyttarskonserten-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45962%2Fsquare.webp?version=7KFasQxqGk/txbMBpnFkng==",
+   "times": [
+    "2027-01-07T18:30",
+    "2027-01-08T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Barnas nyttårskonsert 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45963-barnas-nyttarskonsert-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45963%2Fsquare.webp?version=ZzKE4ZbmWPCl5QudfTgRUA==",
+   "times": [
+    "2027-01-09T13:00"
+   ],
+   "hint": "Familie Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Tsjaikovskijs fjerde – En kamp mot skjebnen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45972-tsjaikovskijs-fjerde-en-kamp-mot-skjebnen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45972%2Fsquare.webp?version=ZvV1BqVtQq13RzXP4z1mEw==",
+   "times": [
+    "2027-01-14T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Leprous",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49737-leprous/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49737%2Fsquare.webp?version=Id7EfEXB/ywdIOwWNbSrcQ==",
+   "times": [
+    "2027-01-14T19:00"
+   ],
+   "hint": "Konsert Melodies of Atonement Tour",
+   "about": "Melodies of Atonement Tour",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Hakkebakkeskogen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46917-hakkebakkeskogen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46917%2Fsquare.webp?version=GiY0/j/C56AczVwh8YgUBQ==",
+   "times": [
+    "2027-01-16T13:00",
+    "2027-01-16T15:30"
+   ],
+   "hint": "Familie Musikal",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "RELÆXT - Wigums symfonisjov",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47223-relaext-wigums-symfonisjov/",
+   "img": "https://kilden.com/wp-content/uploads/2026/06/Relaext-1080x1080-px.png",
+   "times": [
+    "2027-01-20T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Wigums symfonisjov",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45973-wigums-symfonisjov/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45973%2Fsquare.webp?version=xF5sX2rsxxXdW6iF22vAPQ==",
+   "times": [
+    "2027-01-21T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Nils-Ingar Aadne – Tenk det",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49036-nils-ingar-aadne-tenk-det/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49036%2Fsquare.webp?version=7K6flPLVYTretgyh0KVang==",
+   "times": [
+    "2027-01-22T19:00"
+   ],
+   "hint": "Humor Standup",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "We Will Rock You",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49017-we-will-rock-you/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49017%2Fsquare.webp?version=GiqupyCrl4ZivZVfe/8XsQ==",
+   "times": [
+    "2027-01-22T21:00",
+    "2027-01-23T16:00",
+    "2027-01-23T20:00"
+   ],
+   "hint": "Musikal",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Come Fly With Me",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49711-come-fly-with-me/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49711%2Fsquare.webp?version=FaLYzVOi6edVN1iDMAq3VA==",
+   "times": [
+    "2027-01-23T19:30"
+   ],
+   "hint": "Konsert Christianssand Storband",
+   "about": "Christianssand Storband",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Lydhør - norbakken/eriksen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47627-lydhor-norbakken-eriksen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47627%2Fsquare.webp?version=vX7YdAbMe0BOmxMjltCQZQ==",
+   "times": [
+    "2027-01-27T19:00"
+   ],
+   "hint": "Konsert med Jarle Bernhoft",
+   "about": "med Jarle Bernhoft",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "1001 natt og Tsjaikovskijs fiolinkonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45974-1001-natt-og-tsjaikovskijs-fiolinkonsert/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45974%2Fsquare.webp?version=loqXogN1Vsdbzzu6204w7g==",
+   "times": [
+    "2027-01-28T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "En kveld med Mozart",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45975-en-kveld-med-mozart/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45975%2Fsquare.webp?version=debZjtVUqBYvw6mo4WKnKA==",
+   "times": [
+    "2027-02-04T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Latterlig gøy humorgalla",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49420-latterlig-goy-humorgalla/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49420%2Fsquare.webp?version=1IARzyM5oVmUV9Jpky2RzQ==",
+   "times": [
+    "2027-02-20T18:30"
+   ],
+   "hint": "Humor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Night of famous musicals 2.0",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47038-night-of-famous-musicals-2-0/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47038%2Fsquare.webp?version=RAHwBJGsCp/qKqq9mQSBAw==",
+   "times": [
+    "2027-02-26T19:30"
+   ],
+   "hint": "Konsert Musikal",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Fra folketone til symfoniens kraft",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45976-fra-folketone-til-symfoniens-kraft/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45976%2Fsquare.webp?version=J3+/WtU35/Yep/5j850sCg==",
+   "times": [
+    "2027-03-04T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "The Nordic Floyd Show – Animals + Classics",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49761-the-nordic-floyd-show-animals-classics/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49761%2Fsquare.webp?version=W63U1yJgBbjU4Nva/BUwww==",
+   "times": [
+    "2027-03-05T19:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Martha Argerich og KSO",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45978-martha-argerich-og-kso/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45978%2Fsquare.webp?version=N479NsRO97e7ckwABm3+IQ==",
+   "times": [
+    "2027-03-10T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Manfred Mann's Earth Band",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49778-manfred-manns-earth-band/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49778%2Fsquare.webp?version=48GfO/aZhoXf/AUXKeiAQQ==",
+   "times": [
+    "2027-03-11T19:00"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kristian Valen – Bare VisVas",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45128-kristian-valen-bare-visvas/",
+   "img": "https://kilden.com/wp-content/uploads/2026/04/BareVisvas1080x1080A.jpg",
+   "times": [
+    "2027-03-12T18:30"
+   ],
+   "hint": "Forestilling Humor",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Vilhelm Krag-prisen 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49696-vilhelm-krag-prisen-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49696%2Fsquare.webp?version=DEIrxN2c1zF1F6phyNW57A==",
+   "times": [
+    "2027-03-16T18:00"
+   ],
+   "hint": "Foredrag",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Barokkens storverk – Bachs messe i h‑moll",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45980-barokkens-storverk-bachs-messe-i-h-moll/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45980%2Fsquare.webp?version=u4AXEvnJOtFqEn6D/S3eew==",
+   "times": [
+    "2027-03-18T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Riksteatret: Kakejazz",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47582-riksteatret-kakejazz/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47582%2Fsquare.webp?version=VHqaN0OLr2ahd7W4GrFQUQ==",
+   "times": [
+    "2027-03-31T18:00"
+   ],
+   "hint": "Barn Familie Teater",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Charlie Chaplin: Diktatoren – filmkonsert med KSO",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45981-charlie-chaplin-diktatoren-filmkonsert-med-kso/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45981%2Fsquare.webp?version=NojiOuVM5ST7KlWbUyirzg==",
+   "times": [
+    "2027-04-01T18:30"
+   ],
+   "hint": "Filmkonsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Klang, puls og kraft",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45982-klang-puls-og-kraft/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45982%2Fsquare.webp?version=43NGxpTDBEM1iWkT9iNqiw==",
+   "times": [
+    "2027-04-08T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "«FINN TRE FEIL»",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49038-finn-tre-feil/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49038%2Fsquare.webp?version=+CvK67EBrgyJxYmvnN/vWg==",
+   "times": [
+    "2027-04-09T19:00",
+    "2027-04-10T19:00"
+   ],
+   "hint": "Forestilling Humor med Pernille Sørensen, Live Nelvik og Kristine Riis",
+   "about": "med Pernille Sørensen, Live Nelvik og Kristine Riis",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Sibelius’ fiolinkonsert",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45983-sibelius-fiolinkonsert/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45983%2Fsquare.webp?version=2kmJqLsLbAlHPe1Ltqs/PA==",
+   "times": [
+    "2027-04-15T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Fædrelandsvennens ønskekonsert 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45984-faedrelandsvennens-onskekonsert-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45984%2Fsquare.webp?version=rypokZ1RKqFLF6eebmpxpg==",
+   "times": [
+    "2027-04-22T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Superbandet - en hyllest til Knutsen og Ludvigsen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46987-superbandet-en-hyllest-til-knutsen-og-ludvigsen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46987%2Fsquare.webp?version=KIHzCuWlVFM6+aX+qeouJg==",
+   "times": [
+    "2027-04-24T12:00"
+   ],
+   "hint": "Familie Lørdagskilden",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Nasjonalballettens Mesteraften",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45985-nasjonalballettens-mesteraften/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45985%2Fsquare.webp?version=T7ErqFd0wpVBgs6YuMXnig==",
+   "times": [
+    "2027-04-29T18:00",
+    "2027-04-30T18:00"
+   ],
+   "hint": "ballet Dans",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Helaften med Rachlin og venner",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/46820-helaften-med-rachlin-og-venner/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F46820%2Fsquare.webp?version=8UerjcX/2PpjeJ9QKq7CjA==",
+   "times": [
+    "2027-04-29T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kort og klassisk : Tveitt i ny drakt med Håvard Gimse",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47213-kort-og-klassisk-tveitt-i-ny-drakt-med-havard-gimse/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47213%2Fsquare.webp?version=Ez9uqbLVglW8NECI9bf1tw==",
+   "times": [
+    "2027-05-12T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Tveitt i ny drakt med Håvard Gimse",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45986-tveitt-i-ny-drakt-med-havard-gimse/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45986%2Fsquare.webp?version=Kkn0kRKNfjA5Luev0JK7UQ==",
+   "times": [
+    "2027-05-13T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Festkonsert på nasjonaldagen",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45987-festkonsert-pa-nasjonaldagen/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45987%2Fsquare.webp?version=Cna3bLeSJFAIHWmpBHRksQ==",
+   "times": [
+    "2027-05-17T14:00"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Keep It Country",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49607-keep-it-country/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49607%2Fsquare.webp?version=Cqo3wXJbGczccXjDsuX9IQ==",
+   "times": [
+    "2027-05-22T19:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Barbereren i Sevilla",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45988-barbereren-i-sevilla/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45988%2Fsquare.webp?version=dw/2XXp+XJbAexTtAvnGNw==",
+   "times": [
+    "2027-05-29T19:00",
+    "2027-06-01T19:00",
+    "2027-06-03T19:00",
+    "2027-06-05T19:00"
+   ],
+   "hint": "Klassisk KSO Opera",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Kort og klassisk : Sesongfinale med Rachlin og Ioudenitch",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47216-kort-og-klassisk-sesongfinale-med-rachlin-og-ioudenitch/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47216%2Fsquare.webp?version=Ez9uqbLVglW8NECI9bf1tw==",
+   "times": [
+    "2027-06-09T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Sesongfinale med Rachlin og Ioudenitch",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/45989-sesongfinale-med-rachlin-og-ioudenitch/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F45989%2Fsquare.webp?version=D1SbSgyE4qcVsIRG0SrtRQ==",
+   "times": [
+    "2027-06-10T18:30"
+   ],
+   "hint": "Klassisk Konsert KSO",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Presidentinnene 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/47874-presidentinnene-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47874%2Fsquare.webp?version=xL71oME5/vpbsjzdxhTsjg==",
+   "times": [
+    "2027-08-06T19:00",
+    "2027-08-07T18:00",
+    "2027-08-10T19:00",
+    "2027-08-11T19:00",
+    "2027-08-12T19:00",
+    "2027-08-13T19:00",
+    "2027-08-14T14:00",
+    "2027-08-17T19:00",
+    "2027-08-18T19:00",
+    "2027-08-19T19:00",
+    "2027-08-20T19:00",
+    "2027-08-21T18:00",
+    "2027-08-24T12:00",
+    "2027-08-25T19:00"
+   ],
+   "hint": "Teater U30 av Werner Schwab",
+   "about": "av Werner Schwab",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Verdiløse menn / 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49357-verdilose-menn-2027/",
+   "img": "https://kilden.com/wp-content/uploads/2026/09/Verdilose-menn-1080x1080-1.png",
+   "times": [
+    "2027-09-18T19:30"
+   ],
+   "hint": "Forestilling Musikal",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Brit Floyd – Animals 50",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/49555-brit-floyd-animals-50/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F49555%2Fsquare.webp?version=tZrjMmX+iyyxMrekdLVJeQ==",
+   "times": [
+    "2027-10-01T19:30"
+   ],
+   "hint": "Konsert",
+   "about": "",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Iselin Guttormsen / 2027",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/48932-iselin-guttormsen-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F48932%2Fsquare.webp?version=UKCzlrd+rxZcAtGDyXGRXQ==",
+   "times": [
+    "2026-10-30T18:30"
+   ],
+   "hint": "Humor Kommer - en forestilling om seksualitetens historie",
+   "about": "Kommer - en forestilling om seksualitetens historie",
+   "city": "Kristiansand"
+  }
+ ],
+ "trondelag": [
+  {
+   "title": "Peer Gynt",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/peer-gynt",
+   "img": "",
+   "from": "2026-09-05",
+   "to": null,
+   "about": "av Henrik Ibsen",
+   "hint": "Les merKjøp billett BilletterSpilles fra 05.09.2026Peer Gyntav Henrik Ibsen",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Keplers Et dukkehjem",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/keplers-et-dukkehjem",
+   "img": "",
+   "from": "2026-10-10",
+   "to": null,
+   "about": "Av Arturo Scotti. Inspirert av Henrik Ibsen",
+   "hint": "Les merKjøp billett BilletterSpilles fra 10.10.2026Keplers Et dukkehjemAv Arturo Scotti. Inspirert av Henrik Ibsen",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Fanny og Alexander",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/fanny-og-alexander",
+   "img": "",
+   "from": "2026-10-16",
+   "to": null,
+   "about": "av Ingmar Bergman, Dramatisert av Arne Lygre",
+   "hint": "Les merKjøp billett BilletterSpilles fra 16.10.2026Fanny og Alexanderav Ingmar Bergman, Dramatisert av Arne Lygre",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Kaptein Nemos bibliotek",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/kaptein-nemos-bibliotek",
+   "img": "",
+   "from": "2026-11-04",
+   "to": null,
+   "about": "– av Per Olov Enquist",
+   "hint": "Les merKjøp billett BilletterSpilles fra 04.11.2026Kaptein Nemos bibliotek– av Per Olov Enquist",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Stargate",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/stargate",
+   "img": "",
+   "from": "2026-11-24",
+   "to": null,
+   "about": "En julefortelling av Ingvild H. Rishøi",
+   "hint": "Les merKjøp billett BilletterSpilles fra 24.11.2026StargateEn julefortelling av Ingvild H. Rishøi",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Grounded",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/grounded",
+   "img": "",
+   "from": "2026-10-23",
+   "to": null,
+   "about": "Av George Brant",
+   "hint": "Les merKjøp billett BilletterSpilles fra 23.10.2026GroundedAv George Brant",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Trøndelag Teaters julekonsert",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/trondelag-teaters-julekonsert-2",
+   "img": "",
+   "from": "2026-12-02",
+   "to": null,
+   "about": "",
+   "hint": "Les merKjøp billett BilletterSpilles fra 02.12.2026Trøndelag Teaters julekonsert",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Knutsen & Ludvigsens nyttårskonsert",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/knutsen-ludvigsens-nyttarskonsert",
+   "img": "",
+   "from": "2026-12-30",
+   "to": null,
+   "about": "",
+   "hint": "Les merKjøp billett BilletterSpilles fra 30.12.2026Knutsen & Ludvigsens nyttårskonsert",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Demokratifestivalen 2026",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/demokratifestivalen-2026",
+   "img": "",
+   "from": "2026-11-07",
+   "to": null,
+   "about": "",
+   "hint": "Les mer Les merSpilles fra 07.11.2026Demokratifestivalen 2026",
+   "city": "Trondheim"
+  },
+  {
+   "title": "I ballong över Arktis",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/i-ballong-over-arktis",
+   "img": "",
+   "from": "2026-11-06",
+   "to": null,
+   "about": "Gjestespill av og med Maria Pontén",
+   "hint": "Les merKjøp billett BilletterSpilles fra 06.11.2026I ballong över ArktisGjestespill av og med Maria Pontén",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Peter Pan – Under en magisk måne",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/peter-pan-under-en-magisk-mane",
+   "img": "",
+   "from": "2026-11-09",
+   "to": null,
+   "about": "av Mike Kenny. Tegnspråkteater fra Teater Manu",
+   "hint": "Les merKjøp billett BilletterSpilles fra 09.11.2026Peter Pan – Under en magisk måneav Mike Kenny. Tegnspråkteater fra Teater Manu",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Skitbyen",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/skitbyen",
+   "img": "",
+   "from": "2027-01-22",
+   "to": null,
+   "about": "av Ole Martin Hafsmo",
+   "hint": "Les merKjøp billett BilletterSpilles fra 22.01.2027Skitbyenav Ole Martin Hafsmo",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Änglagård",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/anglagard",
+   "img": "",
+   "from": "2027-03-06",
+   "to": null,
+   "about": "Colin Nutleys Änglagård, musikalen. Musikk og sangtekster av Fredrik Kempe. Manus av Edward af Sillén og Daniel Réhn.",
+   "hint": "Les merKjøp billett BilletterSpilles fra 06.03.2027ÄnglagårdColin Nutleys Änglagård, musikalen. Musikk og sangtekster av Fredrik Kempe. Manus av Edward af Sillén og Daniel Réhn.",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Den knuste krukken",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/den-knuste-krukken",
+   "img": "",
+   "from": "2027-02-19",
+   "to": null,
+   "about": "av Heinrich von Kleist",
+   "hint": "Les merKjøp billett BilletterSpilles fra 19.02.2027Den knuste krukkenav Heinrich von Kleist",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Hamlet",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/hamlet-3",
+   "img": "",
+   "from": "2027-02-05",
+   "to": null,
+   "about": "av William Shakespeare",
+   "hint": "Les merKjøp billett BilletterSpilles fra 05.02.2027Hamletav William Shakespeare",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Karan på brua",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/karan-pa-brua",
+   "img": "",
+   "from": "2026-11-21",
+   "to": null,
+   "about": "",
+   "hint": "Les merKjøp billett BilletterSpilles fra 21.11.2026Karan på brua",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Prison Episodes",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/prison-episodes",
+   "img": "",
+   "from": "2027-04-02",
+   "to": null,
+   "about": "Gjestespill fra Safemuse",
+   "hint": "Les mer Les merSpilles fra 02.04.2027Prison EpisodesGjestespill fra Safemuse",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Idiotiens historie",
+   "venue": "Trøndelag Teater",
+   "url": "https://www.trondelag-teater.no/forestillinger/idiotiens-historie",
+   "img": "",
+   "from": "2027-04-07",
+   "to": null,
+   "about": "Gjestespill fra Sjiraffen Kultur- og kompetansesenter",
+   "hint": "Les merKjøp billett BilletterSpilles fra 07.04.2027Idiotiens historieGjestespill fra Sjiraffen Kultur- og kompetansesenter",
+   "city": "Trondheim"
+  }
+ ],
+ "fjaereheia": [],
  "detnorske": [
   {
    "title": "Du kontrollerer dine egne data",
@@ -5917,6 +7672,217 @@
    "about": "",
    "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #2C622C; /** To change the color of link elements**/ --link-color: #234923; /**To change the color of the text**/ --te",
    "city": "Oslo"
+  }
+ ],
+ "nyehjorten": [
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/retningslinjer-for-informasjonskapsler",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "Nye Hjorten Teater – Program.rmsc{--rmsc-main: #4285f4;--rmsc-hover: #f1f3f5;--rmsc-selected: #e2e6ea;--rmsc-border: #ccc;--rmsc-gray: #aaa;--rmsc-bg: #fff;--rmsc-p: 10px;--rmsc-radius: 4px;--rmsc-h: 38px}.rmsc *{box-sizing:border-box;transition:all .2s ease}.rmsc .gray{color:var(--rmsc-gray)}.rmsc ",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/personvernerklaering",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "Nye Hjorten Teater – Program.rmsc{--rmsc-main: #4285f4;--rmsc-hover: #f1f3f5;--rmsc-selected: #e2e6ea;--rmsc-border: #ccc;--rmsc-gray: #aaa;--rmsc-bg: #fff;--rmsc-p: 10px;--rmsc-radius: 4px;--rmsc-h: 38px}.rmsc *{box-sizing:border-box;transition:all .2s ease}.rmsc .gray{color:var(--rmsc-gray)}.rmsc ",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/om-oss",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/ansatte",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/praktisk-info",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/leie-av-lokaler",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/mat-og-drikke",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/studenttilbud",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/presse",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/ledige-stillinger",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/meld-deg-pa-vart-nyhetsbrev",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Du kontrollerer dine egne data",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/vart-ansvar",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2025-01-15",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #260D0F; /** To change the color of link elements**/ --link-color: #260D0F; /**To change the color of the text**/ --te",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Elling & Kjell Bjarne",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
+   "from": "2026-09-24",
+   "to": "2027-02-13",
+   "about": "",
+   "hint": "Hovedscenen24. september 2026 - 13. februar 2027Elling & Kjell BjarneBilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Evig Ung",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/evig-ung",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/1736d0a56d966da11f23c06e996fb462f49cfe0d-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "from": "2026-08-05",
+   "to": "2026-12-31",
+   "about": "",
+   "hint": "HovedscenenMusikal05. august 2026 - 31. desember 2026Evig UngBilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Nøtteknekkeren 2026",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/notteknekkeren-26",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/4a674981efdbe3084f22d3ac5490cd110b789076-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "from": "2026-11-12",
+   "to": "2026-12-30",
+   "about": "",
+   "hint": "HovedscenenMusikalFamilie12. november 2026 - 30. desember 2026Nøtteknekkeren 2026BilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Nye Hjorten Teaters Spektakulære Juleshow 2026",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/juleshow-26",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/90ae454301adf66cab7c34fa6b5d7e9feef3ddaa-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "from": "2026-11-25",
+   "to": "2026-12-19",
+   "about": "",
+   "hint": "HovedscenenShowMusikk25. november 2026 - 19. desember 2026Nye Hjorten Teaters Spektakulære Juleshow 2026BilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Den store forestillingen om gaming",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/den-store-forestillingen-om-gaming",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/e4cd43ef58633eb67fd1fef93f016ff4b3b41322-2250x2250.jpg?w=2100&fit=max&auto=format",
+   "from": "2027-01-22",
+   "to": "2027-03-19",
+   "about": "",
+   "hint": "HovedscenenFamilie22. januar 2027 - 19. mars 2027Den store forestillingen om gamingBilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Robin Hood – Rai Rai i Sherwood­skogen",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/robin-hood",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/72fe572cf00145ce002513b3057bb9ef3c7c0cb9-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "from": "2027-03-04",
+   "to": "2027-08-21",
+   "about": "",
+   "hint": "HovedscenenMusikal04. mars 2027 - 21. august 2027Robin Hood – Rai Rai i Sherwood­skogenBilletterLes mer",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Den Spanske Flue",
+   "venue": "Nye Hjorten Teater",
+   "url": "https://nyehjortenteater.no/program/den-spanske-flue",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/7eaa16e5868768a344b20ea3e4902979f36fe4a4-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "from": "2027-09-17",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": "HovedscenenVoksenHumor17. september 2027 - 02. oktober 2027Den Spanske FlueBilletterLes mer",
+   "city": "Trondheim"
   }
  ]
 }
