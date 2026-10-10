@@ -1,35 +1,17 @@
 {
- "updated": "2026-10-10T22:16:38.663Z",
+ "updated": "2026-10-10T22:27:52.385Z",
  "errors": [],
  "weather": {
   "now": {
-   "date": "2026-10-10",
-   "h": 23,
+   "date": "2026-10-11",
+   "h": 0,
    "temp": 4,
    "wind": 7,
    "sym": "rain",
-   "rain": 0.6,
+   "rain": 0.4,
    "span": 1
   },
   "days": [
-   {
-    "date": "2026-10-10",
-    "hours": [
-     {
-      "date": "2026-10-10",
-      "h": 23,
-      "temp": 4,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.6,
-      "span": 1
-     }
-    ],
-    "max": 4,
-    "min": 4,
-    "rain": 0.6,
-    "sym": "rain"
-   },
    {
     "date": "2026-10-11",
     "hours": [
@@ -722,20 +704,55 @@
     "min": 11,
     "rain": 0,
     "sym": "cloudy"
+   },
+   {
+    "date": "2026-10-17",
+    "hours": [
+     {
+      "date": "2026-10-17",
+      "h": 2,
+      "temp": 7,
+      "wind": 2,
+      "sym": "clearsky_night",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-10-17",
+      "h": 8,
+      "temp": 5,
+      "wind": 2,
+      "sym": "fair_day",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-10-17",
+      "h": 14,
+      "temp": 11,
+      "wind": 3,
+      "sym": "clearsky_day",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-10-17",
+      "h": 20,
+      "temp": 8,
+      "wind": 2,
+      "sym": "clearsky_night",
+      "rain": 0,
+      "span": 6
+     }
+    ],
+    "max": 11,
+    "min": 5,
+    "rain": 0,
+    "sym": "clearsky_day"
    }
   ]
  },
  "christiania": [
-  {
-   "title": "Isabel Skolmen",
-   "venue": "Christiania Teater",
-   "url": "https://christianiateaterscene.no/isabelskolmen",
-   "img": "https://cdn.sanity.io/images/g24jximr/production/e222ead76aa080e434172ed5a5033b56a53dd0a5-1850x1850.jpg?h=400&auto=format",
-   "times": [
-    "2026-10-10T18:00"
-   ],
-   "city": "Oslo"
-  },
   {
    "title": "TABU - Sesong 2",
    "venue": "Christiania Teater",
@@ -1592,15 +1609,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2439/6e3f39df-1480-4e8c-b29d-93a061cdf0e1"
-    },
-    {
-     "d": "2026-10-14",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Seniorkino",
+     "v": "2D, Eng. tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/6e3f39df-1480-4e8c-b29d-93a061cdf0e1"
     },
     {
@@ -3754,7 +3763,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/a7e10160-1a00-486a-934e-9ad3f3acbd73"
+     "u": "https://wwww.nfkino.no/screening/1002/a7e10160-1a00-486a-934e-9ad3f3acbd73"
     },
     {
      "d": "2026-10-11",
@@ -3762,7 +3771,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/6c66ff31-2875-4db7-bf49-79f5cef15bc6"
+     "u": "https://wwww.nfkino.no/screening/1002/6c66ff31-2875-4db7-bf49-79f5cef15bc6"
     },
     {
      "d": "2026-10-12",
@@ -3770,7 +3779,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/bb3d2296-ed99-4dd2-b313-2ce9890c7e3f"
+     "u": "https://wwww.nfkino.no/screening/1001/bb3d2296-ed99-4dd2-b313-2ce9890c7e3f"
     },
     {
      "d": "2026-10-12",
@@ -3778,7 +3787,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/6119483b-7c45-49e3-afa5-41f18e2f53d9"
+     "u": "https://wwww.nfkino.no/screening/2612/6119483b-7c45-49e3-afa5-41f18e2f53d9"
     },
     {
      "d": "2026-10-12",
@@ -3786,7 +3795,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/142e9962-f79a-4ac4-bfe6-650024914d7d"
+     "u": "https://wwww.nfkino.no/screening/1002/142e9962-f79a-4ac4-bfe6-650024914d7d"
     },
     {
      "d": "2026-10-13",
@@ -3794,7 +3803,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/2b648fe0-bb2a-4e11-b63a-f73132ce3766"
+     "u": "https://wwww.nfkino.no/screening/1001/2b648fe0-bb2a-4e11-b63a-f73132ce3766"
     },
     {
      "d": "2026-10-13",
@@ -3802,7 +3811,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/90480802-15cb-478e-b328-5a9e72ddfd37"
+     "u": "https://wwww.nfkino.no/screening/1002/90480802-15cb-478e-b328-5a9e72ddfd37"
     },
     {
      "d": "2026-10-14",
@@ -3810,7 +3819,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/1001/b6490e81-3288-4331-a241-9d6dcf07b7f2"
+     "u": "https://wwww.nfkino.no/screening/1001/b6490e81-3288-4331-a241-9d6dcf07b7f2"
     },
     {
      "d": "2026-10-14",
@@ -3818,7 +3827,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/97d010dd-2b61-4fea-b4e6-aea8c27486bc"
+     "u": "https://wwww.nfkino.no/screening/2612/97d010dd-2b61-4fea-b4e6-aea8c27486bc"
     },
     {
      "d": "2026-10-14",
@@ -3826,7 +3835,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/9f82874d-cc0d-4fba-9f53-99c75c3f5bfe"
+     "u": "https://wwww.nfkino.no/screening/1002/9f82874d-cc0d-4fba-9f53-99c75c3f5bfe"
     },
     {
      "d": "2026-10-15",
@@ -3834,7 +3843,7 @@
      "c": "Saga",
      "r": "5",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/5f40b227-b54b-48a4-a392-46f92b815a98"
+     "u": "https://wwww.nfkino.no/screening/1001/5f40b227-b54b-48a4-a392-46f92b815a98"
     },
     {
      "d": "2026-10-15",
@@ -3842,7 +3851,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/40339ca6-7cd0-4e03-850f-46bdeb83cac7"
+     "u": "https://wwww.nfkino.no/screening/2439/40339ca6-7cd0-4e03-850f-46bdeb83cac7"
     }
    ],
    "city": "Oslo"
