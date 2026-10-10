@@ -602,9 +602,10 @@ async function nyehjorten(browser) {
 // Trøndelag Teater laster plakatene først når de scrolles inn i bildet: åpne siden i nettleseren og scroll sakte nedover
 async function trondelagPosters(browser) {
   const list = data.trondelag; if (!Array.isArray(list) || list.every(x => x.img)) return;
-  const known = new Map((old.trondelag || []).filter(x => x.img).map(x => [x.url, x.img]));
-  list.forEach(x => { if (!x.img && known.has(x.url)) x.img = known.get(x.url); });
-  if (list.every(x => x.img)) return;
+  // gjenbruk bare plakater som faktisk er hentet via nettleseren (eldre forsøk ga feil bilder)
+  const known = new Map((old.trondelag || []).filter(x => x.img && x.imgSrc === "nettleser").map(x => [x.url, x.img]));
+  list.forEach(x => { if (known.has(x.url)) { x.img = known.get(x.url); x.imgSrc = "nettleser"; } else if (x.imgSrc !== "nettleser") x.img = ""; });
+  if (list.every(x => x.img)) { console.log("  Trøndelag-plakater: alle " + list.length + " hentet tidligere"); return; }
   const base = "https://www.trondelag-teater.no/forestillinger";
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO", viewport: { width: 1280, height: 900 } });
   try {
@@ -619,7 +620,7 @@ async function trondelagPosters(browser) {
       const url = abs(card.find('a[href*="/forestillinger/"]').first().attr("href"), base).split("#")[0];
       const img = posterOf($, card, base).best; if (img) byUrl.set(url, img);
     });
-    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { x.img = byUrl.get(x.url); n++; } });
+    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { x.img = byUrl.get(x.url); x.imgSrc = "nettleser"; n++; } });
     console.log(`  Trøndelag-plakater: ${n} hentet via nettleser` + (n ? "" : ". Diagnose: " + $.html($(".image-wrapper").first()).replace(/\s+/g, " ").slice(0, 500)));
   } finally { await page.close(); }
 }
