@@ -548,19 +548,6 @@ async function trondelag() {
     out.push({ title, venue: "Trøndelag Teater", url, img: p.best,
       from: ddmmyyyy(text.split(/Spilles fra/i)[1] || ""), to: null, about: $(h).next().text().trim().slice(0, 160), hint: text.slice(0, 300) });
   });
-  // Plakatene lastes først når man scroller («lazyload»). Hent i stedet delingsbildet (og:image) fra hver forestillings egen side.
-  // Bilder vi har hentet før, gjenbrukes, så hver side bare besøkes én gang.
-  const known = new Map((old.trondelag || []).filter(x => x.img).map(x => [x.url, x.img]));
-  for (const o of out) {
-    if (o.img) continue;
-    if (known.has(o.url)) { o.img = known.get(o.url); continue; }
-    try {
-      const $d = await getHtml(o.url);
-      o.img = abs($d('meta[property="og:image"]').attr("content") || $d('meta[name="twitter:image"]').attr("content") || "", o.url);
-      if (/logo/i.test(o.img)) o.img = "";
-    } catch {}
-    await new Promise(res => setTimeout(res, 300));
-  }
   return out;
 }
 
@@ -572,12 +559,13 @@ async function nyehjorten(browser) {
   const bodies = [];
   page.on("response", async r => { try { if (/fetch-eventim/.test(r.url())) bodies.push(await r.json()); } catch {} });
   try {
-    await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
+    const byProd = new Map(), bySlug = new Map();
+    for (const pageUrl of [base, "https://nyehjortenteater.no/program"]) {   // «Forestillinger» og «Alle» (med gjestespill/arrangementer)
+    await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
     await page.waitForTimeout(2500);
-    for (let k = 0; k < 4; k++) { await page.mouse.wheel(0, 4000); await page.waitForTimeout(700); }
+    for (let k = 0; k < 12; k++) { await page.mouse.wheel(0, 1200); await page.waitForTimeout(400); }
     const $ = cheerio.load(await page.content());
     // plakat og lenke per produksjon: kortet som har både /program/-lenke og billettlenke med production=NN
-    const byProd = new Map(), bySlug = new Map();
     $('a[href^="/program/"], a[href*="nyehjortenteater.no/program/"]').each((_, a) => {
       const href = abs($(a).attr("href"), base); if (!/\/program\/[^/?#]+$/.test(href)) return;
       const card = cardAround($, a, c => c.find("img").length > 0);
@@ -585,8 +573,9 @@ async function nyehjorten(browser) {
       const info = { url: href, img: posterOf($, card, base).best };
       bySlug.set(href.split("/program/")[1], info);
       const prod = (card.find('a[href*="production="]').attr("href") || "").match(/production=(\d+)/);
-      if (prod) byProd.set(prod[1], info);
+      if (prod && (!byProd.has(prod[1]) || !byProd.get(prod[1]).img)) byProd.set(prod[1], info);
     });
+    }
     const one = v => Array.isArray(v) ? v[0] : v;
     const val = v => { v = one(v); return v && typeof v === "object" ? (v._ ?? "") : (v ?? ""); };
     const items = bodies.flatMap(b => { const d = b.data || b; const w = d.eventiminhouseweb || d; return [].concat(w.veranstaltung || []); });
@@ -610,6 +599,31 @@ async function nyehjorten(browser) {
   } finally { await page.close(); }
 }
 
+// Trøndelag Teater laster plakatene først når de scrolles inn i bildet: åpne siden i nettleseren og scroll sakte nedover
+async function trondelagPosters(browser) {
+  const list = data.trondelag; if (!Array.isArray(list) || list.every(x => x.img)) return;
+  const known = new Map((old.trondelag || []).filter(x => x.img).map(x => [x.url, x.img]));
+  list.forEach(x => { if (!x.img && known.has(x.url)) x.img = known.get(x.url); });
+  if (list.every(x => x.img)) return;
+  const base = "https://www.trondelag-teater.no/forestillinger";
+  const page = await browser.newPage({ userAgent: UA, locale: "nb-NO", viewport: { width: 1280, height: 900 } });
+  try {
+    await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
+    for (let k = 0; k < 30; k++) { await page.mouse.wheel(0, 600); await page.waitForTimeout(350); }
+    await page.waitForTimeout(1500);
+    const $ = cheerio.load(await page.content());
+    const byUrl = new Map();
+    $("h3").each((_, h) => {
+      const card = cardAround($, h, c => /Spilles fra/i.test(c.text()) && c.find('a[href*="/forestillinger/"]').length > 0);
+      if (card.find("h3").length !== 1) return;
+      const url = abs(card.find('a[href*="/forestillinger/"]').first().attr("href"), base).split("#")[0];
+      const img = posterOf($, card, base).best; if (img) byUrl.set(url, img);
+    });
+    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { x.img = byUrl.get(x.url); n++; } });
+    console.log(`  Trøndelag-plakater: ${n} hentet via nettleser` + (n ? "" : ". Diagnose: " + $.html($(".image-wrapper").first()).replace(/\s+/g, " ").slice(0, 500)));
+  } finally { await page.close(); }
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -629,6 +643,7 @@ try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
   await run("dns", () => dns(browser));
   await run("nyehjorten", () => nyehjorten(browser));
+  try { await trondelagPosters(browser); } catch (e) { console.log("  Trøndelag-plakater feilet: " + e.message); }
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
 const CITY = { dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
