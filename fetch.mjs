@@ -181,48 +181,102 @@ async function nfkino() {
   return out.slice(0, 12);
 }
 
-// ---------- Chat Noir via Ticketmaster ----------
-async function chatnoir() {
+// ---------- Oslo Nye Teater via Ticketmaster ----------
+async function oslonye() {
   const key = process.env.TICKETMASTER_KEY;
   if (!key) throw new Error("mangler TICKETMASTER_KEY i GitHub Secrets");
   const B = "https://app.ticketmaster.com/discovery/v2";
-  let vid = old.chatnoirVenue;
-  if (!vid) {
-    const r = await fetch(`${B}/venues.json?keyword=${encodeURIComponent("Chat Noir")}&countryCode=NO&apikey=${key}`);
-    if (!r.ok) throw new Error("Ticketmaster svarte " + r.status);
-    const vs = (await r.json())._embedded?.venues || [];
-    console.log("  Ticketmaster fant steder:", vs.map(v => `${v.name} (${v.city?.name || "?"}) id=${v.id}`).join(" | ") || "ingen");
-    const v = vs.find(v => /chat\s*noir/i.test(v.name));
-    if (!v) {
-      // Diagnose: finnes norske arrangementer i API-et, og finnes Chat Noir under et annet navn?
-      const get = async q => { try { const x = await fetch(`${B}/${q}&apikey=${key}`); return x.ok ? await x.json() : { feil: x.status }; } catch (e) { return { feil: e.message }; } };
-      const no = await get("events.json?countryCode=NO&size=1");
-      console.log("  Diagnose: arrangementer i Norge totalt:", no.page?.totalElements ?? JSON.stringify(no).slice(0, 150));
-      const osl = await get("venues.json?keyword=Oslo&countryCode=NO&size=50");
-      console.log("  Diagnose: steder i Oslo:", (osl._embedded?.venues || []).map(v => v.name).join(" | ") || "ingen");
-      const ev = await get("events.json?keyword=" + encodeURIComponent("Chat Noir") + "&size=5");
-      console.log("  Diagnose: arrangementer med 'Chat Noir':", (ev._embedded?.events || []).map(e => `${e.name} @ ${e._embedded?.venues?.[0]?.name}`).join(" | ") || "ingen");
-      throw new Error("fant ikke Chat Noir hos Ticketmaster");
-    }
-    vid = v.id;
-  }
-  data.chatnoirVenue = vid;
-  const r = await fetch(`${B}/events.json?venueId=${vid}&size=200&sort=date,asc&apikey=${key}`);
+  const r = await fetch(`${B}/venues.json?keyword=${encodeURIComponent("Oslo Nye")}&countryCode=NO&size=20&apikey=${key}`);
   if (!r.ok) throw new Error("Ticketmaster svarte " + r.status);
-  const evs = (await r.json())._embedded?.events || [];
+  const venues = ((await r.json())._embedded?.venues || []).filter(v => /oslo nye/i.test(v.name));
+  console.log("  Ticketmaster-steder:", venues.map(v => v.name).join(" | ") || "ingen");
   const shows = new Map();
-  for (const e of evs) {
-    const d = e.dates?.start; if (!d?.localDate) continue;
-    const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
-    const img = (e.images || []).filter(i => i.ratio !== "16_9" || true).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
-    if (!shows.has(e.name)) shows.set(e.name, { title: e.name, venue: "Chat Noir", url: e.url, img, times: [] });
-    const s = shows.get(e.name); if (!s.times.includes(iso)) s.times.push(iso);
+  for (const v of venues) {
+    const er = await fetch(`${B}/events.json?venueId=${v.id}&size=200&sort=date,asc&apikey=${key}`);
+    if (!er.ok) continue;
+    for (const e of (await er.json())._embedded?.events || []) {
+      const d = e.dates?.start; if (!d?.localDate) continue;
+      const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
+      const img = (e.images || []).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
+      const k = e.name + "|" + v.name;
+      if (!shows.has(k)) shows.set(k, { title: e.name, venue: /kjeller/i.test(v.name) ? "Oslo Nye Teaterkjelleren" : "Oslo Nye Teater", url: e.url, img, times: [] });
+      const s = shows.get(k); if (!s.times.includes(iso)) s.times.push(iso);
+    }
+    await new Promise(res => setTimeout(res, 250)); // skånsom mot API-et
   }
   return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
 }
 
+// ---------- Sider som laster programmet med JavaScript: åpnes i en usynlig nettleser ----------
+const MON = { jan: 1, januar: 1, feb: 2, februar: 2, mar: 3, mars: 3, apr: 4, april: 4, mai: 5, jun: 6, juni: 6, jul: 7, juli: 7, aug: 8, august: 8, sep: 9, sept: 9, september: 9, okt: 10, oktober: 10, nov: 11, november: 11, des: 12, desember: 12 };
+function datesIn(text) {
+  const now = new Date(), out = new Set();
+  for (const m of text.matchAll(/(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{2,4})(?!\d)/g)) {
+    const y = m[3].length === 2 ? 2000 + Number(m[3]) : Number(m[3]);
+    if (Number(m[2]) >= 1 && Number(m[2]) <= 12) out.add(`${y}-${pad(m[2])}-${pad(m[1])}`);
+  }
+  for (const m of text.matchAll(/(?<![\d.])(\d{1,2})\.?\s+(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember|jan|feb|mar|apr|jun|jul|aug|sept|sep|okt|nov|des)\.?(?:\s+(\d{4}))?/gi)) {
+    const mo = MON[m[2].toLowerCase()];
+    let y = m[3] ? Number(m[3]) : now.getFullYear();
+    if (!m[3] && new Date(y, mo - 1, Number(m[1])) < new Date(now.getFullYear(), now.getMonth() - 2, 1)) y++;
+    out.add(`${y}-${pad(mo)}-${pad(m[1])}`);
+  }
+  return [...out].sort();
+}
+function cardsFrom($, base, venue, pathHint) {
+  const origin = new URL(base).origin, listPath = new URL(base).pathname.replace(/\/$/, "");
+  const norm = h => { try { const u = new URL(h, base); u.hash = ""; return u.href.replace(/\/$/, ""); } catch { return ""; } };
+  const shows = new Map();
+  $("a[href]").each((_, a) => {
+    const href = norm($(a).attr("href")); if (!href) return;
+    const u = new URL(href);
+    if (u.origin !== origin || u.pathname.replace(/\/$/, "") === listPath || u.pathname === "/" ) return;
+    if (pathHint && !pathHint.test(u.pathname)) return;
+    const card = cardAround($, a, c => {
+      const own = new Set(c.find("a[href]").map((_, x) => norm($(x).attr("href"))).get().filter(h => h.startsWith(origin) && pathHint ? pathHint.test(new URL(h).pathname) : true));
+      return c.find("img").length > 0 && datesIn(c.text().replace(/\s+/g, " ")).length > 0 && own.size <= 3;
+    });
+    const dates = datesIn(card.text().replace(/\s+/g, " "));
+    if (!dates.length || !card.find("img").length) return;
+    const title = (card.find("h1,h2,h3,h4").first().text() || card.find("img").first().attr("alt") || $(a).text()).replace(/\s+/g, " ").trim();
+    if (!title || title.length > 90) return;
+    const s = shows.get(href) || { title, venue, url: href, img: imgOf(card, base), dates: [] };
+    s.dates.push(...dates); shows.set(href, s);
+  });
+  const today = new Date().toISOString().slice(0, 10);
+  return [...shows.values()].map(s => {
+    const d = [...new Set(s.dates)].sort();
+    return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0], to: d[d.length - 1], about: "" };
+  }).filter(s => s.to >= today);
+}
+async function rendered(browser, urls, venue, pathHint) {
+  const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
+  const json = [];
+  page.on("response", async r => {
+    try { if ((r.headers()["content-type"] || "").includes("json") && json.length < 12) { const b = await r.json(); json.push(`${r.url().slice(0, 140)} [${Array.isArray(b) ? "liste " + b.length : Object.keys(b).slice(0, 6).join(",")}]`); } } catch {}
+  });
+  try {
+    for (const url of urls) {
+      const rule = await robotsRule(url);
+      if (rule && !rule.allow) { console.log(`  ${venue}: robots.txt sperrer ${url} (Disallow: ${rule.path})`); continue; }
+      const res = await page.goto(url, { waitUntil: "networkidle", timeout: 45000 }).catch(e => ({ status: () => "feil: " + e.message.slice(0, 80) }));
+      await page.waitForTimeout(2500);
+      for (let k = 0; k < 4; k++) { await page.mouse.wheel(0, 4000); await page.waitForTimeout(700); } // last inn mer ved scrolling
+      const $ = cheerio.load(await page.content());
+      const out = cardsFrom($, url, venue, pathHint);
+      console.log(`  ${venue}: ${url} -> status ${res?.status?.()} , ${out.length} funnet`);
+      if (out.length) return out;
+      console.log(`  Diagnose ${venue}: JSON-kall: ${json.join(" | ") || "ingen"}`);
+      const links = [...new Set($("a[href]").map((_, a) => $(a).attr("href")).get())].slice(0, 40).join(" ");
+      console.log(`  Diagnose ${venue}: lenker: ${links}`);
+      console.log(`  Diagnose ${venue}: tekst: ${$("main").text().replace(/\s+/g, " ").slice(0, 400) || $("body").text().replace(/\s+/g, " ").slice(0, 400)}`);
+    }
+    return [];
+  } finally { await page.close(); }
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["chatnoir", chatnoir]]) {
+async function run(key, fn) {
   try {
     const v = await fn();
     if (Array.isArray(v) && v.length === 0) throw new Error("fant ingen oppføringer");
@@ -231,4 +285,13 @@ for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["n
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye]]) await run(key, fn);
+
+const { chromium } = await import("playwright");
+const browser = await chromium.launch();
+try {
+  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null));
+  await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", /framsyning/));
+  await run("operaen", () => rendered(browser, ["https://www.operaen.no/forestillinger/", "https://www.operaen.no/kalender/", "https://www.operaen.no/"], "Operaen", null));
+} finally { await browser.close(); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));

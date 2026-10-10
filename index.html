@@ -284,15 +284,15 @@ function renderWeather(w){
 }
 function renderTheatre(){
   const T=today(), list=[];
-  [...(DATA.christiania||[]),...(DATA.chatnoir||[])].forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue==="Chat Noir"?"Chat Noir":"Christiania"})});
-  (DATA.nationaltheatret||[]).forEach(s=>{const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
-    const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label:"Nationaltheatret"})});
+  ["christiania","oslonye"].flatMap(k=>DATA[k]||[]).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
+  ["nationaltheatret","chatnoir","detnorske","operaen"].flatMap(k=>DATA[k]||[]).forEach(s=>{const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
+    const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label:s.venue.split(",")[0]})});
   list.sort((a,b)=>a.key-b.key);
   const el=document.getElementById("posters");el.innerHTML="";
   list.forEach(s=>{const b=document.createElement("button");b.className="poster";
-    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img)}<span class="kind">${s.label}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
-  document.getElementById("srcT").textContent=list.length?`Kilde: Christiania Teater, Nationaltheatret og Chat Noir (via Ticketmaster). ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
+  document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
 function renderFilms(){
   const el=document.getElementById("films");el.innerHTML="";
@@ -332,7 +332,7 @@ function fill(title,style,desc,dates,url,linkText){pause();
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
 function openShow(s){
   if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
-  else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${esc(s.about)}<br><br>${s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
+  else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
 function openFilm(f){fill(f.title,headStyle(f.title,f.img),`<b>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</b><br><br>Går på disse Oslo-kinoene:`,f.cinemas,f.url,"Se visningstider på nfkino.no");}
 function openDay(d,k){pause();const dt=new Date(d.date+"T12:00");
   document.getElementById("wtitle").textContent=k===0?"I dag":`${cap(days[dt.getDay()])} ${dt.getDate()}. ${months[dt.getMonth()]}`;
