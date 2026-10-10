@@ -193,7 +193,17 @@ async function chatnoir() {
     const vs = (await r.json())._embedded?.venues || [];
     console.log("  Ticketmaster fant steder:", vs.map(v => `${v.name} (${v.city?.name || "?"}) id=${v.id}`).join(" | ") || "ingen");
     const v = vs.find(v => /chat\s*noir/i.test(v.name));
-    if (!v) throw new Error("fant ikke Chat Noir hos Ticketmaster");
+    if (!v) {
+      // Diagnose: finnes norske arrangementer i API-et, og finnes Chat Noir under et annet navn?
+      const get = async q => { try { const x = await fetch(`${B}/${q}&apikey=${key}`); return x.ok ? await x.json() : { feil: x.status }; } catch (e) { return { feil: e.message }; } };
+      const no = await get("events.json?countryCode=NO&size=1");
+      console.log("  Diagnose: arrangementer i Norge totalt:", no.page?.totalElements ?? JSON.stringify(no).slice(0, 150));
+      const osl = await get("venues.json?keyword=Oslo&countryCode=NO&size=50");
+      console.log("  Diagnose: steder i Oslo:", (osl._embedded?.venues || []).map(v => v.name).join(" | ") || "ingen");
+      const ev = await get("events.json?keyword=" + encodeURIComponent("Chat Noir") + "&size=5");
+      console.log("  Diagnose: arrangementer med 'Chat Noir':", (ev._embedded?.events || []).map(e => `${e.name} @ ${e._embedded?.venues?.[0]?.name}`).join(" | ") || "ingen");
+      throw new Error("fant ikke Chat Noir hos Ticketmaster");
+    }
     vid = v.id;
   }
   data.chatnoirVenue = vid;
