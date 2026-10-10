@@ -388,6 +388,10 @@ async function chatnoirApi() {
   const items = Array.isArray(j) ? j : (j.events || j.data || j.items || []);
   const now = new Date().toISOString().slice(0, 16);
   const shows = new Map();
+  if (items[0]) {
+    const ex = deepStrings(items[0]).filter(([k, v]) => /image|img|photo|picture|poster|asset|_ref|media|cover|thumb|url|src/i.test(k) || /^https?:|\.(jpe?g|png|webp|avif)/i.test(v));
+    console.log("  Diagnose Chat Noir-bilde: felter: " + Object.keys(items[0]).join(",") + " | bildefelt: " + ex.map(([k, v]) => k + "=" + v.slice(0, 160)).slice(0, 12).join(" | "));
+  }
   for (const it of items) {
     const strs = deepStrings(it);
     const pick = re => (strs.find(([k]) => re.test(k)) || [])[1];
