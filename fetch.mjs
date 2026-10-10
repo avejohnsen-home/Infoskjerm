@@ -455,15 +455,17 @@ const ddmmyyyy = t => { const m = t.match(/(\d{2})\.(\d{2})\.(\d{4})/); return m
 // ---------- Den Nationale Scene (Bergen) ----------
 function parseDns($, base) {
   const out = [], seen = new Set();
-  $('h2 a[href*="/forestillinger/"]').each((_, a) => {
-    const url = abs($(a).attr("href"), base); if (seen.has(url)) return;
-    const title = $(a).text().trim();
-    const card = cardAround($, a, c => c.find("img").length > 0);
+  $("h2").each((_, h2) => {
+    const title = $(h2).text().replace(/\s+/g, " ").trim(); if (!title) return;
+    const card = cardAround($, h2, c => c.find("img").length > 0 && c.find('a[href*="/forestillinger/"]').length > 0);
+    if (card.find("h2").length !== 1) return;
+    const link = $(h2).find("a").attr("href") || $(h2).closest("a").attr("href") || card.find('a[href*="/forestillinger/"]').first().attr("href");
+    const url = abs(link, base); if (!/\/forestillinger\/[^/]+/.test(url) || seen.has(url)) return;
     const text = cheerio.load($.html(card).replace(/<[^>]+>/g, "\n")).text();
     const lines = text.split("\n").map(x => x.trim()).filter(Boolean);
     const iso = (text.match(/(\d{4}-\d{2}-\d{2})-/) || [])[1];
     const ti = lines.indexOf(title);
-    const before = lines.slice(0, ti > 0 ? ti : 2);      // f.eks. «Marinehagen», «Urpremiere 24. oktober»
+    const before = lines.slice(0, ti > 0 ? ti : 2).filter(l => !/kjøp billetter|les mer/i.test(l));
     seen.add(url);
     out.push({ title, venue: "Den Nationale Scene" + (before[0] ? ", " + before[0] : ""), url, img: posterOf($, card, base).best,
       from: iso && !iso.startsWith("9999") ? iso : null, to: null, about: before.slice(1).join(". "), hint: before.join(" ") });
@@ -541,10 +543,59 @@ async function trondelag() {
     if (!/Spilles fra/i.test(text) || card.find("h3").length !== 1) return;   // bare kort med én forestilling (ikke kalenderen øverst)
     const title = $(h).text().trim(), url = abs(card.find('a[href*="/forestillinger/"]').first().attr("href"), base).split("#")[0];
     if (!title || seen.has(url)) return; seen.add(url);
-    out.push({ title, venue: "Trøndelag Teater", url, img: posterOf($, card, base).best,
+    let p = posterOf($, card, base), box = card;
+    for (let k = 0; k < 4 && !p.best; k++) { box = box.parent(); if (!box.length || box.find("h3").length > 1) break; p = posterOf($, box, base); }
+    if (!p.best && !out.length) console.log("  Diagnose Trøndelag-bilde: " + $.html(card.parent()).replace(/\s+/g, " ").slice(0, 900));
+    out.push({ title, venue: "Trøndelag Teater", url, img: p.best,
       from: ddmmyyyy(text.split(/Spilles fra/i)[1] || ""), to: null, about: $(h).next().text().trim().slice(0, 160), hint: text.slice(0, 300) });
   });
   return out;
+}
+
+// ---------- Nye Hjorten Teater (Trondheim): siden henter forestillingene fra et eventim-API ----------
+async function nyehjorten(browser) {
+  const base = "https://nyehjortenteater.no/program?type=productions";
+  const rule = await robotsRule(base); if (rule && !rule.allow) throw new Error("robots.txt sperrer " + base);
+  const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
+  const bodies = [];
+  page.on("response", async r => { try { if (/fetch-eventim/.test(r.url())) bodies.push(await r.json()); } catch {} });
+  try {
+    await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
+    await page.waitForTimeout(2500);
+    for (let k = 0; k < 4; k++) { await page.mouse.wheel(0, 4000); await page.waitForTimeout(700); }
+    const $ = cheerio.load(await page.content());
+    // plakat og lenke per produksjon: kortet som har både /program/-lenke og billettlenke med production=NN
+    const byProd = new Map(), bySlug = new Map();
+    $('a[href^="/program/"], a[href*="nyehjortenteater.no/program/"]').each((_, a) => {
+      const href = abs($(a).attr("href"), base); if (!/\/program\/[^/?#]+$/.test(href)) return;
+      const card = cardAround($, a, c => c.find("img").length > 0);
+      if (new Set(card.find('a[href*="/program/"]').map((_, x) => abs($(x).attr("href"), base)).get()).size > 1) return;
+      const info = { url: href, img: posterOf($, card, base).best };
+      bySlug.set(href.split("/program/")[1], info);
+      const prod = (card.find('a[href*="production="]').attr("href") || "").match(/production=(\d+)/);
+      if (prod) byProd.set(prod[1], info);
+    });
+    const one = v => Array.isArray(v) ? v[0] : v;
+    const val = v => { v = one(v); return v && typeof v === "object" ? (v._ ?? "") : (v ?? ""); };
+    const items = bodies.flatMap(b => { const d = b.data || b; const w = d.eventiminhouseweb || d; return [].concat(w.veranstaltung || []); });
+    const now = new Date().toISOString().slice(0, 16);
+    const slugify = t => t.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const shows = new Map();
+    for (const it of items) {
+      const title = String(val(it.Arrangementstittel)).trim(); if (!title) continue;
+      const d = ddmmyyyy(String(val(it.Arrangementsdato))); const t = String(val(it.Arrangementstid)).padStart(4, "0");
+      if (!d) continue;
+      const iso = `${d}T${t.slice(0, 2)}:${t.slice(2, 4)}`; if (iso < now) continue;
+      const prod = String(val(it.Produksjonsnummer));
+      const sl = slugify(title);
+      const info = byProd.get(prod) || [...bySlug.entries()].find(([k]) => k.startsWith(sl.slice(0, 12)) || sl.startsWith(k.slice(0, 12)))?.[1] || {};
+      const key = prod || title;
+      if (!shows.has(key)) shows.set(key, { title, venue: "Nye Hjorten Teater" + (val(it.Salnavn) ? ", " + val(it.Salnavn) : ""), url: info.url || "https://nyehjortenteater.no/program", img: info.img || "", times: [], hint: title });
+      const s = shows.get(key); if (!s.times.includes(iso)) s.times.push(iso);
+    }
+    console.log(`  Nye Hjorten: ${items.length} visninger i API-et, ${shows.size} forestillinger, ${byProd.size} plakater koblet via produksjonsnummer`);
+    return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+  } finally { await page.close(); }
 }
 
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
@@ -565,7 +616,7 @@ const browser = await chromium.launch();
 try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
   await run("dns", () => dns(browser));
-  await run("nyehjorten", () => rendered(browser, ["https://nyehjortenteater.no/program?type=productions"], "Nye Hjorten Teater", /^\/program\/[^/]+/, { noDates: true, jsonSample: /fetch-eventim/ }));
+  await run("nyehjorten", () => nyehjorten(browser));
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
 const CITY = { dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
