@@ -312,11 +312,13 @@ async function rendered(browser, urls, venue, pathHint, opts) {
       const $ = cheerio.load(await page.content());
       const out = cardsFrom($, url, venue, pathHint, opts);
       console.log(`  ${venue}: ${url} -> status ${res?.status?.()} , ${out.length} funnet`);
-      if (out.length) return out;
+      if (out.length && !(opts && opts.diag)) return out;
+      if (out.length) console.log(`  Diagnose ${venue}: funnet: ${out.map(o => o.title + " -> " + o.url).join(" | ")}`);
       console.log(`  Diagnose ${venue}: JSON-kall: ${json.join(" | ") || "ingen"}`);
-      const links = [...new Set($("a[href]").map((_, a) => $(a).attr("href")).get())].slice(0, 40).join(" ");
+      const links = [...new Set($("a[href]").map((_, a) => $(a).attr("href")).get())].filter(h => !/privacy|cookie|policy|facebook|instagram|google|microsoft|snap|apple|mozilla|opera\.com|macromedia|hubpages|adform|twentythree|cloudflare/i.test(h)).slice(0, 60).join(" ");
       console.log(`  Diagnose ${venue}: lenker: ${links}`);
       console.log(`  Diagnose ${venue}: tekst: ${$("main").text().replace(/\s+/g, " ").slice(0, 400) || $("body").text().replace(/\s+/g, " ").slice(0, 400)}`);
+      if (opts && opts.diag) { console.log(`  Diagnose ${venue}: bilder: ${$("img").length}, overskrifter: ${$("h1,h2,h3").map((_, h) => $(h).text().trim()).get().slice(0, 25).join(" | ")}`); return out; }
     }
     return [];
   } finally { await page.close(); }
@@ -390,7 +392,7 @@ for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["n
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
 try {
-  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null, { noDates: true }));
+  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null, { noDates: true, diag: true }));
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
