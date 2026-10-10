@@ -80,9 +80,9 @@ body{
 @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
 /* Kultur */
-.posters{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.poster{appearance:none;border:0;padding:0;background:none;text-align:left;color:inherit;font:inherit;cursor:pointer}
-.art{aspect-ratio:1/1;border-radius:6px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:#fff}
+.posters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.poster{appearance:none;border:0;padding:0;min-width:0;width:100%;display:block;background:none;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.art{aspect-ratio:1/1;width:100%;border-radius:6px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:#fff}
 .art h3{margin:0;font-size:22px;font-weight:800;line-height:1;letter-spacing:-.02em;position:relative}
 .art .shape{position:absolute;inset:0}
 .art img,.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -291,7 +291,7 @@ const CATS=["Alle","Teater","Musikal","Opera","Ballett","Revy og show","Konsert"
 let catFilter="Alle";
 function catOf(s){
   if(s.genres&&s.genres.length){const g=s.genres.join(" ").toLowerCase();
-    if(g.includes("ballett"))return "Ballett"; if(g.includes("konsert"))return "Konsert"; if(g.includes("opera"))return "Opera";}
+    if(/ballett|ballet|dans/.test(g))return "Ballett"; if(/konsert|concert/.test(g))return "Konsert"; if(g.includes("opera"))return "Opera";}
   const t=[s.title,s.hint,s.about].join(" ").toLowerCase();
   if(/musikal/.test(t))return "Musikal";
   if(/konsert/.test(t))return "Konsert";
