@@ -300,6 +300,7 @@ async function rendered(browser, urls, venue, pathHint, opts) {
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
   const json = [];
   page.on("response", async r => {
+    try { if (opts && opts.jsonSample && opts.jsonSample.test(r.url())) { const b = await r.json(); const d = b.data || b; console.log(`  Eksempel fra ${r.url().slice(0, 120)}: ` + JSON.stringify(Array.isArray(d) ? d[0] : d).slice(0, 900)); } } catch {}
     try { if ((r.headers()["content-type"] || "").includes("json") && json.length < 12) { const b = await r.json(); json.push(`${r.url().slice(0, 140)} [${Array.isArray(b) ? "liste " + b.length : Object.keys(b).slice(0, 6).join(",")}]`); } } catch {}
   });
   try {
@@ -452,9 +453,7 @@ async function paintings() {
 const ddmmyyyy = t => { const m = t.match(/(\d{2})\.(\d{2})\.(\d{4})/); return m ? `${m[3]}-${m[2]}-${m[1]}` : null; };
 
 // ---------- Den Nationale Scene (Bergen) ----------
-async function dns() {
-  const base = "https://dns.no/forestillinger/";
-  const $ = await getHtml(base);
+function parseDns($, base) {
   const out = [], seen = new Set();
   $('h2 a[href*="/forestillinger/"]').each((_, a) => {
     const url = abs($(a).attr("href"), base); if (seen.has(url)) return;
@@ -470,6 +469,21 @@ async function dns() {
       from: iso && !iso.startsWith("9999") ? iso : null, to: null, about: before.slice(1).join(". "), hint: before.join(" ") });
   });
   return out;
+}
+// Prøv vanlig henting først; får vi ingenting (f.eks. en mellomside), åpnes siden i den usynlige nettleseren
+async function dns(browser) {
+  const base = "https://dns.no/forestillinger/";
+  let $ = await getHtml(base), out = parseDns($, base);
+  if (out.length) return out;
+  console.log(`  DNS (vanlig henting): tittel="${$("title").text().trim()}", h2=${$("h2").length}, lenker=${$('a[href*="/forestillinger/"]').length} – prøver nettleser`);
+  const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
+  try {
+    await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
+    await page.waitForTimeout(2500);
+    $ = cheerio.load(await page.content()); out = parseDns($, base);
+    if (!out.length) console.log(`  DNS (nettleser): tittel="${$("title").text().trim()}", h2=${$("h2").length}, lenker=${$('a[href*="/forestillinger/"]').length}, tekst: ${$("body").text().replace(/\s+/g, " ").slice(0, 300)}`);
+    return out;
+  } finally { await page.close(); }
 }
 
 // ---------- Kilden (Kristiansand) ----------
@@ -543,14 +557,15 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["dns", dns], ["kilden", kilden], ["trondelag", trondelag]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag]]) await run(key, fn);
 await run("fjaereheia", fjaereheia, true);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
 try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
-  await run("nyehjorten", () => rendered(browser, ["https://nyehjortenteater.no/program?type=productions"], "Nye Hjorten Teater", null, { noDates: true, diag: true }));
+  await run("dns", () => dns(browser));
+  await run("nyehjorten", () => rendered(browser, ["https://nyehjortenteater.no/program?type=productions"], "Nye Hjorten Teater", /^\/program\/[^/]+/, { noDates: true, jsonSample: /fetch-eventim/ }));
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
 const CITY = { dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
