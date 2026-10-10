@@ -337,6 +337,26 @@ async function operaen() {
   return out;
 }
 
+// ---------- Vinmonopolet (første runde: undersøk hvilke data det åpne API-et gir) ----------
+async function vinmonopolet() {
+  const key = process.env.VINMONOPOLET_KEY;
+  if (!key) throw new Error("mangler VINMONOPOLET_KEY i GitHub Secrets");
+  const VH = { "Ocp-Apim-Subscription-Key": key, "User-Agent": UA, Accept: "application/json" };
+  const tries = [
+    "https://apis.vinmonopolet.no/products/v0/details-normal?maxResults=3",
+    "https://apis.vinmonopolet.no/products/v0/details-normal?maxResults=3&changedSince=" + new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10),
+    "https://apis.vinmonopolet.no/stores/v0/details?maxResults=1"
+  ];
+  for (const u of tries) {
+    try {
+      const r = await fetch(u, { headers: VH });
+      const t = await r.text();
+      console.log(`  Vinmonopolet ${u.replace(/\?.*/, "")} -> ${r.status}. Svar: ${t.replace(/\s+/g, " ").slice(0, 1500)}`);
+    } catch (e) { console.log("  Vinmonopolet feil:", e.message); }
+  }
+  throw new Error("diagnoserunde, ingen viner lagret ennå");
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn) {
   try {
@@ -347,7 +367,7 @@ async function run(key, fn) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["wine", vinmonopolet]]) await run(key, fn);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
