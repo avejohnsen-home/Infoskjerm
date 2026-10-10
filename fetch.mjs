@@ -51,7 +51,7 @@ const imgOf = (el, base) => {
   const img = el.find("img").first();
   const src = img.attr("src") || img.attr("data-src") || (img.attr("srcset") || "").split(/\s+/)[0];
   // Next.js-bilder (/_next/image?url=...) pakkes ut til originaladressen
-  try { const u = new URL(src, base); if (u.pathname.includes("/_next/image") && u.searchParams.get("url")) return u.searchParams.get("url"); } catch {}
+  try { const u = new URL(src, base); if (u.pathname.includes("/_next/image") && u.searchParams.get("url")) return new URL(u.searchParams.get("url"), base).href; } catch {}
   return abs(src, base);
 };
 function cardAround($, el, test) { // gå oppover til elementet som inneholder det vi leter etter
@@ -169,7 +169,7 @@ function posterOf($, card, base) {
   card.find("[style*='url(']").addBack("[style*='url(']").each((_, e) => {
     const m = ($(e).attr("style") || "").match(/url\(\s*['"]?([^'")]+)/); if (m) c.push(m[1]);
   });
-  const ok = c.map(u => { try { const x = new URL(u, base); if (x.pathname.includes("/_next/image") && x.searchParams.get("url")) return x.searchParams.get("url"); return x.href; } catch { return ""; } })
+  const ok = c.map(u => { try { const x = new URL(u, base); if (x.pathname.includes("/_next/image") && x.searchParams.get("url")) return new URL(x.searchParams.get("url"), base).href; return x.href; } catch { return ""; } })
     .filter(u => u && !u.startsWith("data:") && !/\.svg(\?|$)/i.test(u) && !/placeholder|blank|spacer|logo/i.test(u));
   const best = ok.find(u => /poster|plakat|styles\//i.test(u)) || ok[0] || "";
   return { best, ok: [...new Set([best, ...ok])].filter(Boolean), all: c.slice(0, 8) };
@@ -604,8 +604,8 @@ async function nyehjorten(browser) {
 async function trondelagPosters(browser) {
   const list = data.trondelag; if (!Array.isArray(list) || list.every(x => x.img)) return;
   // gjenbruk bare plakater som faktisk er hentet via nettleseren (eldre forsøk ga feil bilder)
-  const known = new Map((old.trondelag || []).filter(x => x.img && x.imgSrc === "nettleser2").map(x => [x.url, x]));
-  list.forEach(x => { if (known.has(x.url)) { x.img = known.get(x.url).img; x.imgAlt = known.get(x.url).imgAlt || []; x.imgSrc = "nettleser2"; } else if (x.imgSrc !== "nettleser2") x.img = ""; });
+  const known = new Map((old.trondelag || []).filter(x => x.img && x.imgSrc === "nettleser3").map(x => [x.url, x]));
+  list.forEach(x => { if (known.has(x.url)) { x.img = known.get(x.url).img; x.imgAlt = known.get(x.url).imgAlt || []; x.imgSrc = "nettleser3"; } else if (x.imgSrc !== "nettleser3") x.img = ""; });
   if (list.every(x => x.img)) { console.log("  Trøndelag-plakater: alle " + list.length + " hentet tidligere"); return; }
   const base = "https://www.trondelag-teater.no/forestillinger";
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO", viewport: { width: 1280, height: 900 } });
@@ -626,8 +626,7 @@ async function trondelagPosters(browser) {
       const url = abs(card.find('a[href*="/forestillinger/"]').first().attr("href"), base).split("#")[0];
       const p = posterOf($, card, base); if (p.best) byUrl.set(url, p.ok);
     });
-    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { const ok = byUrl.get(x.url); x.img = ok[0]; x.imgAlt = ok.slice(1, 4); x.imgSrc = "nettleser2"; n++; } });
-    console.log("  Trøndelag-bilder: " + list.map(x => x.title + " = " + (x.img || "-").replace(/^https?:\/\/[^/]+/, "").slice(0, 70)).join(" | "));
+    let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { const ok = byUrl.get(x.url); x.img = ok[0]; x.imgAlt = ok.slice(1, 4); x.imgSrc = "nettleser3"; n++; } });
     const missing = list.filter(x => !x.img).length;
     console.log(`  Trøndelag-plakater: ${n} hentet via nettleser, ${missing} mangler` + (missing ? ". Diagnose: " + $.html($(".lazyload-placeholder").first().parent()).replace(/\s+/g, " ").slice(0, 400) : ""));
   } finally { await page.close(); }
