@@ -87,7 +87,8 @@ body{
 .art .shape{position:absolute;inset:0}
 .art img,.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .art .kind{z-index:1}
-.meta{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.3;min-height:3.6em}
+.meta{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.3;min-height:4.9em}
+.meta .where{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .meta b{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .filters{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
@@ -190,7 +191,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   </section>
 
   <section class="slide" id="s1">
-    <div id="films"></div>
+    <div class="posters" id="films"></div>
     <p class="src" id="srcK"></p>
   </section>
 
@@ -332,10 +333,12 @@ const dayLabel=d=>{const t=today(),x=new Date(d+"T00:00"),diff=Math.round((x-t)/
 function nextShow(f){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now)}
 function renderFilms(){
   const el=document.getElementById("films");el.innerHTML="";
-  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="film";const n=nextShow(f);
-    b.innerHTML=`<div class="thumb" style="${styleFor(f.title)}">${imgTag(f.img)}</div><div><h3>${esc(f.title)}</h3><p>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</p>${n?`<p>Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}, ${esc(n.c)}</p>`:""}</div>`;
+  (DATA.films||[]).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f);
+    const cins=(f.cinemas||[]);const where=cins.length>2?`${cins.slice(0,2).join(", ")} +${cins.length-2}`:cins.join(", ");
+    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(f.title)}"></div><h3>${esc(f.title)}</h3>${imgTag(f.img)}${f.age?`<span class="kind">${esc(f.age)}</span>`:""}</div>
+      <div class="meta"><b>${esc(f.title)}</b>${n?`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`:"Ingen flere visninger"}<span class="where">${esc(n?n.c+(cins.length>1?` (+${cins.length-1} ${cins.length-1===1?"kino":"kinoer"})`:""):where)}</span></div>`;
     b.addEventListener("click",()=>openFilm(f));el.appendChild(b);});
-  document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for visningstider.":"Fant ingen filmer ennå.";
+  document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for alle visningstider.":"Fant ingen filmer ennå.";
 }
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
