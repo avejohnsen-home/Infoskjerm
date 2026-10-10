@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-10T17:27:06.647Z",
+ "updated": "2026-10-10T18:31:58.832Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-10",
-   "h": 19,
+   "h": 20,
    "temp": 4,
    "wind": 7,
    "sym": "rain",
-   "rain": 0.7,
+   "rain": 0.8,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-10",
     "hours": [
-     {
-      "date": "2026-10-10",
-      "h": 19,
-      "temp": 4,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.7,
-      "span": 1
-     },
      {
       "date": "2026-10-10",
       "h": 20,
@@ -38,8 +29,8 @@
       "h": 21,
       "temp": 4,
       "wind": 7,
-      "sym": "rain",
-      "rain": 0.9,
+      "sym": "heavyrain",
+      "rain": 1,
       "span": 1
      },
      {
@@ -48,7 +39,7 @@
       "temp": 4,
       "wind": 7,
       "sym": "rain",
-      "rain": 0.8,
+      "rain": 0.9,
       "span": 1
      },
      {
@@ -63,7 +54,7 @@
     ],
     "max": 4,
     "min": 4,
-    "rain": 3.9,
+    "rain": 3.4,
     "sym": "rain"
    },
    {
@@ -72,8 +63,8 @@
      {
       "date": "2026-10-11",
       "h": 0,
-      "temp": 5,
-      "wind": 6,
+      "temp": 4,
+      "wind": 7,
       "sym": "rain",
       "rain": 0.4,
       "span": 1
@@ -82,7 +73,7 @@
       "date": "2026-10-11",
       "h": 1,
       "temp": 5,
-      "wind": 6,
+      "wind": 7,
       "sym": "lightrain",
       "rain": 0.1,
       "span": 1
@@ -92,8 +83,8 @@
       "h": 2,
       "temp": 5,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -138,7 +129,7 @@
       "temp": 5,
       "wind": 6,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -146,8 +137,8 @@
       "h": 8,
       "temp": 5,
       "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -155,8 +146,8 @@
       "h": 9,
       "temp": 5,
       "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -164,15 +155,15 @@
       "h": 10,
       "temp": 5,
       "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-10-11",
       "h": 11,
       "temp": 5,
-      "wind": 5,
+      "wind": 6,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -180,7 +171,7 @@
      {
       "date": "2026-10-11",
       "h": 12,
-      "temp": 6,
+      "temp": 5,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -262,7 +253,7 @@
       "date": "2026-10-11",
       "h": 21,
       "temp": 5,
-      "wind": 4,
+      "wind": 5,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -280,15 +271,15 @@
       "date": "2026-10-11",
       "h": 23,
       "temp": 5,
-      "wind": 5,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
      }
     ],
     "max": 6,
-    "min": 5,
-    "rain": 1.2,
+    "min": 4,
+    "rain": 1.8,
     "sym": "cloudy"
    },
    {
@@ -297,7 +288,7 @@
      {
       "date": "2026-10-12",
       "h": 0,
-      "temp": 5,
+      "temp": 4,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -307,8 +298,8 @@
       "date": "2026-10-12",
       "h": 1,
       "temp": 4,
-      "wind": 4,
-      "sym": "partlycloudy_night",
+      "wind": 3,
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -316,7 +307,7 @@
       "date": "2026-10-12",
       "h": 2,
       "temp": 4,
-      "wind": 3,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -343,7 +334,7 @@
       "date": "2026-10-12",
       "h": 5,
       "temp": 3,
-      "wind": 3,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -361,7 +352,7 @@
       "date": "2026-10-12",
       "h": 7,
       "temp": 2,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -370,7 +361,7 @@
       "date": "2026-10-12",
       "h": 8,
       "temp": 2,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -387,9 +378,9 @@
      {
       "date": "2026-10-12",
       "h": 10,
-      "temp": 5,
-      "wind": 2,
-      "sym": "fair_day",
+      "temp": 4,
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -398,16 +389,16 @@
       "h": 11,
       "temp": 6,
       "wind": 2,
-      "sym": "fair_day",
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-12",
       "h": 12,
-      "temp": 8,
-      "wind": 2,
-      "sym": "fair_day",
+      "temp": 7,
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -415,8 +406,8 @@
       "date": "2026-10-12",
       "h": 13,
       "temp": 8,
-      "wind": 2,
-      "sym": "fair_day",
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -424,8 +415,8 @@
       "date": "2026-10-12",
       "h": 14,
       "temp": 9,
-      "wind": 3,
-      "sym": "fair_day",
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -433,8 +424,8 @@
       "date": "2026-10-12",
       "h": 15,
       "temp": 9,
-      "wind": 3,
-      "sym": "fair_day",
+      "wind": 2,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -442,8 +433,8 @@
       "date": "2026-10-12",
       "h": 16,
       "temp": 9,
-      "wind": 3,
-      "sym": "fair_day",
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -451,8 +442,8 @@
       "date": "2026-10-12",
       "h": 17,
       "temp": 9,
-      "wind": 3,
-      "sym": "fair_day",
+      "wind": 1,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -460,17 +451,17 @@
       "date": "2026-10-12",
       "h": 18,
       "temp": 8,
-      "wind": 2,
-      "sym": "fair_night",
+      "wind": 1,
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-12",
       "h": 19,
-      "temp": 7,
+      "temp": 6,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -479,7 +470,7 @@
       "h": 20,
       "temp": 5,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -488,25 +479,25 @@
       "h": 21,
       "temp": 5,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-12",
       "h": 22,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-12",
       "h": 23,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      }
@@ -514,7 +505,7 @@
     "max": 9,
     "min": 2,
     "rain": 0,
-    "sym": "fair_day"
+    "sym": "clearsky_day"
    },
    {
     "date": "2026-10-13",
@@ -522,25 +513,25 @@
      {
       "date": "2026-10-13",
       "h": 0,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-13",
       "h": 1,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-13",
       "h": 2,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -575,7 +566,7 @@
      }
     ],
     "max": 12,
-    "min": 5,
+    "min": 4,
     "rain": 11,
     "sym": "rain"
    },
@@ -1042,7 +1033,7 @@
  "films": [
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
    "img": "",
    "len": "1 time 45 min",
    "age": "9 år",
@@ -1059,7 +1050,7 @@
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
    "img": "",
    "len": "2 timer 12 min",
    "age": "Alle",
@@ -1075,7 +1066,7 @@
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
    "img": "",
    "len": "1 time 36 min",
    "age": "15 år",
@@ -1090,7 +1081,7 @@
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "url": "https://www.nfkino.no/film/verity",
    "img": "",
    "len": "1 time 57 min",
    "age": "15 år",
@@ -1105,7 +1096,7 @@
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
    "img": "",
    "len": "1 time 21 min",
    "age": "Alle",
@@ -1120,7 +1111,7 @@
   },
   {
    "title": "Avengers: Doomsday",
-   "url": "https://www.nfkino.no/film/avengers-doomsday?city=oslo",
+   "url": "https://www.nfkino.no/film/avengers-doomsday",
    "img": "",
    "len": "2 timer 45 min",
    "age": "TBC",
@@ -1135,7 +1126,7 @@
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "url": "https://www.nfkino.no/film/digger",
    "img": "",
    "len": "2 timer 9 min",
    "age": "12 år",
@@ -1149,7 +1140,7 @@
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
    "img": "",
    "len": "1 time 49 min",
    "age": "9 år",
@@ -1164,7 +1155,7 @@
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
+   "url": "https://www.nfkino.no/film/other-mommy",
    "img": "",
    "len": "1 time 31 min",
    "age": "15 år",
@@ -1177,7 +1168,7 @@
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
+   "url": "https://www.nfkino.no/film/social-reckoning",
    "img": "",
    "len": "1 time 52 min",
    "age": "12 år",
@@ -1191,7 +1182,7 @@
   },
   {
    "title": "Dune: Part Three",
-   "url": "https://www.nfkino.no/film/dune-part-three?city=oslo",
+   "url": "https://www.nfkino.no/film/dune-part-three",
    "img": "",
    "len": "2 timer 30 min",
    "age": "TBC",
@@ -1203,7 +1194,7 @@
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
    "img": "",
    "len": "1 time 55 min",
    "age": "15 år",
@@ -1239,21 +1230,6 @@
   }
  ],
  "operaen": [
-  {
-   "title": "Knut Reiersrud og Geir Sundstøl spiller Purcell",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/knut-reiersrud-og-geir-sundstol-spiller-purcell-konsert/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/reiersrud-sundstol/reiersrud-sundstol-r-2.jpg",
-   "next": "2026-10-10T20:30",
-   "genres": [
-    "konsert",
-    "annet"
-   ],
-   "from": null,
-   "to": null,
-   "about": "",
-   "city": "Oslo"
-  },
   {
    "title": "León & Lightfoot: Salle de danse",
    "venue": "Operaen",
