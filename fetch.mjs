@@ -388,10 +388,6 @@ async function chatnoirApi() {
   const items = Array.isArray(j) ? j : (j.events || j.data || j.items || []);
   const now = new Date().toISOString().slice(0, 16);
   const shows = new Map();
-  if (items[0]) {
-    const ex = deepStrings(items[0]).filter(([k, v]) => /image|img|photo|picture|poster|asset|_ref|media|cover|thumb|url|src/i.test(k) || /^https?:|\.(jpe?g|png|webp|avif)/i.test(v));
-    console.log("  Diagnose Chat Noir-bilde: felter: " + Object.keys(items[0]).join(",") + " | bildefelt: " + ex.map(([k, v]) => k + "=" + v.slice(0, 160)).slice(0, 12).join(" | "));
-  }
   for (const it of items) {
     const strs = deepStrings(it);
     const pick = re => (strs.find(([k]) => re.test(k)) || [])[1];
@@ -408,7 +404,9 @@ async function chatnoirApi() {
     };
     const when = isoOf(pick(/start|date|dato|time/i) || "") || strs.map(([, v]) => isoOf(v)).find(Boolean);
     if (!when || when < now) continue;
-    const img = (strs.find(([k, v]) => (/image|img|picture|photo|poster/i.test(k) && /^(https?:)?\/\//.test(v)) || /\.(jpe?g|png|webp|avif)(\?|$)/i.test(v)) || [])[1] || "";
+    // plakaten ligger hos ImageKit (imagekit.url), uten filendelse; logoer for spillestedet hoppes over
+    const ik = (it.imagekit && (it.imagekit.url || it.imagekit.thumbnailUrl)) || (strs.find(([, v]) => /ik\.imagekit\.io\/.+\/event_/i.test(v)) || [])[1];
+    const img = ik ? ik.replace(/\/tr:[^/]+\//, "/") + (ik.includes("?") ? "&" : "?") + "tr=w-600" : "";
     const slugify = t => t.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const id = it.id || it._id || pick(/^(id|eventId)$/i), slug = it.slug || pick(/^slug$/i) || (id ? slugify(title) : "");
     const link = strs.map(([, v]) => v).find(v => /ticketmaster\.no\/(event|artist)/i.test(v))
