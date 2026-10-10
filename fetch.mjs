@@ -178,6 +178,17 @@ async function nfkino() {
       cinemas: OSLO_KINO.filter(k => cinemas.has(k))
     });
   });
+  // Diagnose: hvordan er visningstidene og dagene bygget opp på siden?
+  const first = $('a[href*="/screening/"]').first();
+  if (first.length) {
+    console.log("  Diagnose kino: visning-lenke: " + $.html(first).slice(0, 400));
+    console.log("  Diagnose kino: rundt visningene: " + $.html(first.parent().parent()).replace(/\s+/g, " ").slice(0, 1500));
+  }
+  const dayLinks = [...new Set($("a[href]").map((_, a) => $(a).attr("href")).get().filter(h => /date|dato|dag=|day/i.test(h)))].slice(0, 20);
+  console.log("  Diagnose kino: dato-lenker: " + (dayLinks.join(" ") || "ingen"));
+  const dataDates = [...new Set($("[data-date],[data-day],[datetime]").map((_, e) => $(e).attr("data-date") || $(e).attr("data-day") || $(e).attr("datetime")).get())].slice(0, 20);
+  console.log("  Diagnose kino: data-datoer: " + (dataDates.join(" ") || "ingen"));
+  console.log("  Diagnose kino: valgmenyer: " + ($("option").map((_, o) => $(o).attr("value") + "=" + $(o).text().trim()).get().slice(0, 20).join(" | ") || "ingen"));
   return out.slice(0, 12);
 }
 
