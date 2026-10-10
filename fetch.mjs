@@ -10,6 +10,7 @@ const MONTHS = ["januar","februar","mars","april","mai","juni","juli","august","
 const pad = n => String(n).padStart(2, "0");
 
 let old = {};
+const data = { updated: new Date().toISOString(), errors: [] };
 try { old = JSON.parse(fs.readFileSync("data.json", "utf8")); } catch {}
 
 // ---------- robots.txt: følg reglene nettstedet har satt for roboter ----------
@@ -180,9 +181,38 @@ async function nfkino() {
   return out.slice(0, 12);
 }
 
+// ---------- Chat Noir via Ticketmaster ----------
+async function chatnoir() {
+  const key = process.env.TICKETMASTER_KEY;
+  if (!key) throw new Error("mangler TICKETMASTER_KEY i GitHub Secrets");
+  const B = "https://app.ticketmaster.com/discovery/v2";
+  let vid = old.chatnoirVenue;
+  if (!vid) {
+    const r = await fetch(`${B}/venues.json?keyword=${encodeURIComponent("Chat Noir")}&countryCode=NO&apikey=${key}`);
+    if (!r.ok) throw new Error("Ticketmaster svarte " + r.status);
+    const vs = (await r.json())._embedded?.venues || [];
+    console.log("  Ticketmaster fant steder:", vs.map(v => `${v.name} (${v.city?.name || "?"}) id=${v.id}`).join(" | ") || "ingen");
+    const v = vs.find(v => /chat\s*noir/i.test(v.name));
+    if (!v) throw new Error("fant ikke Chat Noir hos Ticketmaster");
+    vid = v.id;
+  }
+  data.chatnoirVenue = vid;
+  const r = await fetch(`${B}/events.json?venueId=${vid}&size=200&sort=date,asc&apikey=${key}`);
+  if (!r.ok) throw new Error("Ticketmaster svarte " + r.status);
+  const evs = (await r.json())._embedded?.events || [];
+  const shows = new Map();
+  for (const e of evs) {
+    const d = e.dates?.start; if (!d?.localDate) continue;
+    const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
+    const img = (e.images || []).filter(i => i.ratio !== "16_9" || true).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
+    if (!shows.has(e.name)) shows.set(e.name, { title: e.name, venue: "Chat Noir", url: e.url, img, times: [] });
+    const s = shows.get(e.name); if (!s.times.includes(iso)) s.times.push(iso);
+  }
+  return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
-const data = { updated: new Date().toISOString(), errors: [] };
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino]]) {
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["chatnoir", chatnoir]]) {
   try {
     const v = await fn();
     if (Array.isArray(v) && v.length === 0) throw new Error("fant ingen oppføringer");

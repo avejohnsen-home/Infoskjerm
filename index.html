@@ -284,7 +284,7 @@ function renderWeather(w){
 }
 function renderTheatre(){
   const T=today(), list=[];
-  (DATA.christiania||[]).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:"Christiania"})});
+  [...(DATA.christiania||[]),...(DATA.chatnoir||[])].forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue==="Chat Noir"?"Chat Noir":"Christiania"})});
   (DATA.nationaltheatret||[]).forEach(s=>{const f=new Date(s.from+"T00:00"),t=new Date(s.to+"T23:59");if(t<T)return;
     const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label:"Nationaltheatret"})});
   list.sort((a,b)=>a.key-b.key);
@@ -292,7 +292,7 @@ function renderTheatre(){
   list.forEach(s=>{const b=document.createElement("button");b.className="poster";
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img)}<span class="kind">${s.label}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
-  document.getElementById("srcT").textContent=list.length?`Kilde: Christiania Teater og Nationaltheatret. ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
+  document.getElementById("srcT").textContent=list.length?`Kilde: Christiania Teater, Nationaltheatret og Chat Noir (via Ticketmaster). ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
 function renderFilms(){
   const el=document.getElementById("films");el.innerHTML="";
