@@ -17,6 +17,8 @@ jobs:
           node-version: 22
       - run: npm install
       - run: node fetch.mjs
+        env:
+          TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
       - run: |
           git config user.name "infoskjerm-bot"
           git config user.email "actions@users.noreply.github.com"
