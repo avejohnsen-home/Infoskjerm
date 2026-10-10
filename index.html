@@ -166,13 +166,12 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   </header>
   <div class="days" id="days"></div>
 
-  <p class="demo" id="banner">Tilbud og vin er fortsatt eksempeldata.</p>
+  <p class="demo" id="banner">Tilbud er fortsatt eksempeldata.</p>
 
   <nav class="nav" role="tablist" aria-label="Innhold">
     <button class="tab" role="tab" data-i="0">Teater</button>
     <button class="tab" role="tab" data-i="1">Kino</button>
     <button class="tab" role="tab" data-i="2">Tilbud</button>
-    <button class="tab" role="tab" data-i="3">Vin</button>
     <span class="status" id="status">Bytter hvert 20. sek</span>
   </nav>
   <div class="bar"><div id="prog"></div></div>
@@ -191,7 +190,6 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 
   <section class="slide" id="s2"></section>
 
-  <section class="slide" id="s3"></section>
 
   <footer>
     <button id="testSaver">Vis skjermsparer</button>
@@ -269,14 +267,10 @@ const stores=[
   {name:"Meny",color:"#D3343A",deals:[["Laksefilet, 4 stk","119,-","149,-"],["Brie, 200 g","39,90","52,90"]]},
   {name:"Coop Extra",color:"#E6A619",deals:[["Pasta, 1 kg","24,90","32,90"]]},
   {name:"Joker",color:"#C81F2D",deals:[["Brød, grovt","29,90","38,90"]]}];
-const wines=[
-  {name:"Barbera d'Asti",info:"Rødvin, Piemonte. Saftig og frisk.",price:"ca. 200 kr",color:"#5A1A2A"},
-  {name:"Riesling, Mosel",info:"Hvitvin, Tyskland. Lett sødme, frisk syre.",price:"ca. 180 kr",color:"#C9B45A"}];
+
 document.getElementById("s2").innerHTML=`<p class="src" style="margin:0 0 10px">Eksempeldata. Kobles til Kassalapp senere.</p>`+stores.map(st=>`
   <div class="store"><h3><span style="background:${st.color}"></span>${st.name}</h3>
   ${st.deals.map(d=>`<div class="deal"><span>${d[0]}</span><span><em>${d[1]}</em><s>${d[2]}</s></span></div>`).join("")}</div>`).join("");
-document.getElementById("s3").innerHTML=`<p class="src" style="margin:0 0 10px">Eksempeldata. Kobles til Vinmonopolet senere.</p>`+wines.map(w=>`
-  <div class="wine"><div class="bottle" style="background:${w.color}"></div><div><h3>${w.name}</h3><p>${w.info}</p></div><div class="price">${w.price}</div></div>`).join("");
 
 // ---------- Rendering av ekte data ----------
 let DATA=null;
@@ -348,13 +342,13 @@ async function load(){
   renderWeather(DATA.weather);renderTheatre();renderFilms();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
-  document.getElementById("banner").textContent=(DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data. ":"")+"Tilbud og vin er fortsatt eksempeldata.";
+  document.getElementById("banner").textContent=(DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data. ":"")+"Tilbud er fortsatt eksempeldata.";
 }
 load();setInterval(load,30*60*1000);
 
 // ---------- Rotasjon ----------
 const ROTATE=20000,RESUME=45000;
-const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3].map(i=>document.getElementById("s"+i));
+const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2].map(i=>document.getElementById("s"+i));
 const prog=document.getElementById("prog"),status=document.getElementById("status");
 let cur=0,start=Date.now(),paused=false,lastTouch=0;
 function show(i){cur=i;start=Date.now();slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach((t,j)=>t.setAttribute("aria-selected",j===i));}
@@ -362,7 +356,7 @@ tabs.forEach(t=>t.addEventListener("click",()=>{pause();show(+t.dataset.i)}));
 function pause(){paused=true;lastTouch=Date.now();status.textContent="Pauset, fortsetter snart"}
 setInterval(()=>{
   if(paused){prog.style.width="0";if(Date.now()-lastTouch>RESUME&&!modal.open&&!wmodal.open){paused=false;status.textContent="Bytter hvert 20. sek";show(cur)}return}
-  const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%4);},200);
+  const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%3);},200);
 show(0);
 
 // ---------- Vinduer ----------
