@@ -199,7 +199,7 @@ async function oslonye() {
       const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
       const img = (e.images || []).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
       const k = e.name + "|" + v.name;
-      if (!shows.has(k)) shows.set(k, { title: e.name, venue: /kjeller/i.test(v.name) ? "Oslo Nye Teaterkjelleren" : "Oslo Nye Teater", url: e.url, img, times: [] });
+      if (!shows.has(k)) shows.set(k, { title: e.name, venue: /kjeller/i.test(v.name) ? "Oslo Nye Teaterkjelleren" : /central/i.test(v.name) ? "Oslo Nye Centralteatret" : "Oslo Nye Teater", url: e.url, img, times: [] });
       const s = shows.get(k); if (!s.times.includes(iso)) s.times.push(iso);
     }
     await new Promise(res => setTimeout(res, 250)); // skånsom mot API-et
@@ -223,21 +223,22 @@ function datesIn(text) {
   }
   return [...out].sort();
 }
-function cardsFrom($, base, venue, pathHint) {
+function cardsFrom($, base, venue, pathHint, opts = {}) {
   const origin = new URL(base).origin, listPath = new URL(base).pathname.replace(/\/$/, "");
   const norm = h => { try { const u = new URL(h, base); u.hash = ""; return u.href.replace(/\/$/, ""); } catch { return ""; } };
   const shows = new Map();
   $("a[href]").each((_, a) => {
     const href = norm($(a).attr("href")); if (!href) return;
     const u = new URL(href);
-    if (u.origin !== origin || u.pathname.replace(/\/$/, "") === listPath || u.pathname === "/" ) return;
+    const okOrigin = u.origin === origin || (opts.origins || []).includes(u.origin);
+    if (!okOrigin || u.pathname.replace(/\/$/, "") === listPath || u.pathname === "/" ) return;
     if (pathHint && !pathHint.test(u.pathname)) return;
     const card = cardAround($, a, c => {
-      const own = new Set(c.find("a[href]").map((_, x) => norm($(x).attr("href"))).get().filter(h => h.startsWith(origin) && pathHint ? pathHint.test(new URL(h).pathname) : true));
-      return c.find("img").length > 0 && datesIn(c.text().replace(/\s+/g, " ")).length > 0 && own.size <= 3;
+      const own = new Set(c.find("a[href]").map((_, x) => norm($(x).attr("href"))).get().filter(h => h.startsWith(origin) && (!pathHint || pathHint.test(new URL(h).pathname))));
+      return c.find("img").length > 0 && (opts.noDates || datesIn(c.text().replace(/\s+/g, " ")).length > 0) && own.size <= 2;
     });
     const dates = datesIn(card.text().replace(/\s+/g, " "));
-    if (!dates.length || !card.find("img").length) return;
+    if ((!dates.length && !opts.noDates) || !card.find("img").length) return;
     const title = (card.find("h1,h2,h3,h4").first().text() || card.find("img").first().attr("alt") || $(a).text()).replace(/\s+/g, " ").trim();
     if (!title || title.length > 90) return;
     const s = shows.get(href) || { title, venue, url: href, img: imgOf(card, base), dates: [] };
@@ -246,10 +247,10 @@ function cardsFrom($, base, venue, pathHint) {
   const today = new Date().toISOString().slice(0, 10);
   return [...shows.values()].map(s => {
     const d = [...new Set(s.dates)].sort();
-    return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0], to: d[d.length - 1], about: "" };
-  }).filter(s => s.to >= today);
+    return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0] || null, to: d[d.length - 1] || null, about: "" };
+  }).filter(s => !s.to || s.to >= today);
 }
-async function rendered(browser, urls, venue, pathHint) {
+async function rendered(browser, urls, venue, pathHint, opts) {
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
   const json = [];
   page.on("response", async r => {
@@ -263,7 +264,7 @@ async function rendered(browser, urls, venue, pathHint) {
       await page.waitForTimeout(2500);
       for (let k = 0; k < 4; k++) { await page.mouse.wheel(0, 4000); await page.waitForTimeout(700); } // last inn mer ved scrolling
       const $ = cheerio.load(await page.content());
-      const out = cardsFrom($, url, venue, pathHint);
+      const out = cardsFrom($, url, venue, pathHint, opts);
       console.log(`  ${venue}: ${url} -> status ${res?.status?.()} , ${out.length} funnet`);
       if (out.length) return out;
       console.log(`  Diagnose ${venue}: JSON-kall: ${json.join(" | ") || "ingen"}`);
@@ -273,6 +274,41 @@ async function rendered(browser, urls, venue, pathHint) {
     }
     return [];
   } finally { await page.close(); }
+}
+
+// ---------- Operaen: nettsiden henter programmet fra sitt eget kalender-API ----------
+function deepStrings(o, out = [], key = "") {
+  if (typeof o === "string") out.push([key, o]);
+  else if (Array.isArray(o)) o.forEach(x => deepStrings(x, out, key));
+  else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) deepStrings(v, out, k);
+  return out;
+}
+async function operaen() {
+  const url = "https://www.operaen.no/api/calendar/productions?language=no";
+  const rule = await robotsRule(url);
+  if (rule && !rule.allow) throw new Error(`robots.txt sperrer ${url} (Disallow: ${rule.path})`);
+  const r = await fetch(url, { headers: { ...H, Accept: "application/json" } });
+  if (!r.ok) throw new Error("Operaen svarte " + r.status);
+  const list = await r.json();
+  const items = Array.isArray(list) ? list : (list.items || list.productions || list.data || []);
+  console.log("  Operaen API: " + items.length + " produksjoner. Eksempel: " + JSON.stringify(items[0]).slice(0, 700));
+  const today = new Date().toISOString().slice(0, 10);
+  const out = [];
+  for (const it of items) {
+    const strs = deepStrings(it);
+    const pick = re => (strs.find(([k]) => re.test(k)) || [])[1];
+    const title = it.title || it.name || it.heading || pick(/^(title|name|heading)$/i);
+    let link = it.url || it.link || it.href || pick(/^(url|link|href|path)$/i) || (it.slug ? "/forestillinger/" + it.slug + "/" : "");
+    const img = (strs.find(([k, v]) => /image|img|picture|photo/i.test(k) && /^(https?:)?\/\//.test(v) || /\.(jpe?g|png|webp)(\?|$)/i.test(v)) || [])[1];
+    const dates = [...new Set(strs.map(([, v]) => (v.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1]).filter(Boolean))].sort();
+    const cat = pick(/^(category|type|genre|productionType)$/i) || "";
+    if (!title || /arkiv/i.test(link || "")) continue;
+    const future = dates.filter(d => d >= today);
+    if (dates.length && !future.length) continue;
+    out.push({ title: String(title).trim(), venue: "Operaen" + (cat ? ", " + cat : ""), url: abs(link, "https://www.operaen.no/") || "https://www.operaen.no/forestillinger/",
+      img: abs(img, "https://www.operaen.no/"), from: future[0] || null, to: future[future.length - 1] || null, about: "" });
+  }
+  return out;
 }
 
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
@@ -285,13 +321,12 @@ async function run(key, fn) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen]]) await run(key, fn);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
 try {
   await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null));
-  await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", /framsyning/));
-  await run("operaen", () => rendered(browser, ["https://www.operaen.no/forestillinger/", "https://www.operaen.no/kalender/", "https://www.operaen.no/"], "Operaen", null));
+  await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
 } finally { await browser.close(); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));
