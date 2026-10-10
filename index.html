@@ -300,8 +300,8 @@ function catOf(s){
 }
 function renderTheatre(){
   const T=today();let list=[];
-  ["christiania","oslonye"].flatMap(k=>DATA[k]||[]).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
-  ["nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).forEach(s=>{
+  ["christiania","oslonye","nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).filter(s=>s.times).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
+  ["nationaltheatret","chatnoir","detnorske","operaen","neuf"].flatMap(k=>DATA[k]||[]).filter(s=>!s.times).forEach(s=>{
     const label=s.venue.split(",")[0];
     if(s.next){const n=new Date(s.next);if(n<T)return;list.push({...s,key:n,status:"Neste: "+fmtDT(n),label});return}
     if(!s.from){list.push({...s,key:new Date(8.64e15),status:"Se datoer på nettsiden",label});return}

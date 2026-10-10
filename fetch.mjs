@@ -377,6 +377,37 @@ async function operaen() {
   return out;
 }
 
+// ---------- Chat Noir: nettsiden henter programmet fra sitt eget API ----------
+async function chatnoirApi() {
+  const url = "https://www.chatnoir.no/api/eventsEdge";
+  const rule = await robotsRule(url);
+  if (rule && !rule.allow) throw new Error(`robots.txt sperrer ${url} (Disallow: ${rule.path})`);
+  const r = await fetch(url, { headers: { ...H, Accept: "application/json" } });
+  if (!r.ok) throw new Error("Chat Noir svarte " + r.status);
+  const j = await r.json();
+  const items = Array.isArray(j) ? j : (j.events || j.data || j.items || []);
+  console.log("  Chat Noir API: " + items.length + " oppføringer. Eksempel: " + JSON.stringify(items[0]).slice(0, 900));
+  const now = new Date().toISOString().slice(0, 16);
+  const shows = new Map();
+  for (const it of items) {
+    const strs = deepStrings(it);
+    const pick = re => (strs.find(([k]) => re.test(k)) || [])[1];
+    const title = String(it.name || it.title || pick(/^(name|title|heading)$/i) || "").trim();
+    if (!title) continue;
+    // tidspunkt: første ISO-dato med klokkeslett, helst fra et felt som heter noe med start/dato
+    const isoOf = v => { const m = String(v).match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2})/); return m ? `${m[1]}T${m[2]}` : null; };
+    const when = isoOf(pick(/start|date|dato|time/i) || "") || strs.map(([, v]) => isoOf(v)).find(Boolean);
+    if (!when || when < now) continue;
+    const img = (strs.find(([k, v]) => (/image|img|picture|photo|poster/i.test(k) && /^(https?:)?\/\//.test(v)) || /\.(jpe?g|png|webp|avif)(\?|$)/i.test(v)) || [])[1] || "";
+    const slug = it.slug || pick(/^slug$/i), id = it.id || it._id || pick(/^(id|eventId)$/i);
+    const link = strs.map(([, v]) => v).find(v => /ticketmaster\.no\/(event|artist)/i.test(v))
+      || (slug && id ? `https://www.chatnoir.no/events/${slug}/${id}` : "https://www.chatnoir.no/program");
+    if (!shows.has(title)) shows.set(title, { title, venue: "Chat Noir", url: link, img: abs(img, "https://www.chatnoir.no/"), times: [] });
+    const s = shows.get(title); if (!s.times.includes(when)) s.times.push(when);
+  }
+  return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn) {
   try {
@@ -387,12 +418,11 @@ async function run(key, fn) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi]]) await run(key, fn);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
 try {
-  await run("chatnoir", () => rendered(browser, ["https://www.chatnoir.no/program"], "Chat Noir", null, { noDates: true, diag: true }));
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
