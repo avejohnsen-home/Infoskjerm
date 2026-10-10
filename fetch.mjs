@@ -610,8 +610,13 @@ async function trondelagPosters(browser) {
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO", viewport: { width: 1280, height: 900 } });
   try {
     await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
-    for (let k = 0; k < 30; k++) { await page.mouse.wheel(0, 600); await page.waitForTimeout(350); }
-    await page.waitForTimeout(1500);
+    // scroll hvert plakatområde inn i bildet, ett om gangen, slik at «lazyload» laster bildet
+    const wrappers = await page.$$(".image-wrapper, .lazyload-placeholder");
+    for (const el of wrappers) {
+      try { await el.scrollIntoViewIfNeeded(); await page.evaluate(() => window.dispatchEvent(new Event("scroll"))); await page.waitForTimeout(400); } catch {}
+    }
+    await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 500) { window.scrollTo(0, y); window.dispatchEvent(new Event("scroll")); await new Promise(r => setTimeout(r, 200)); } });
+    await page.waitForTimeout(2000);
     const $ = cheerio.load(await page.content());
     const byUrl = new Map();
     $("h3").each((_, h) => {
@@ -621,7 +626,8 @@ async function trondelagPosters(browser) {
       const img = posterOf($, card, base).best; if (img) byUrl.set(url, img);
     });
     let n = 0; list.forEach(x => { if (!x.img && byUrl.has(x.url)) { x.img = byUrl.get(x.url); x.imgSrc = "nettleser"; n++; } });
-    console.log(`  Trøndelag-plakater: ${n} hentet via nettleser` + (n ? "" : ". Diagnose: " + $.html($(".image-wrapper").first()).replace(/\s+/g, " ").slice(0, 500)));
+    const missing = list.filter(x => !x.img).length;
+    console.log(`  Trøndelag-plakater: ${n} hentet via nettleser, ${missing} mangler` + (missing ? ". Diagnose: " + $.html($(".lazyload-placeholder").first().parent()).replace(/\s+/g, " ").slice(0, 400) : ""));
   } finally { await page.close(); }
 }
 
