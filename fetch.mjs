@@ -545,10 +545,22 @@ async function trondelag() {
     if (!title || seen.has(url)) return; seen.add(url);
     let p = posterOf($, card, base), box = card;
     for (let k = 0; k < 4 && !p.best; k++) { box = box.parent(); if (!box.length || box.find("h3").length > 1) break; p = posterOf($, box, base); }
-    if (!p.best && !out.length) console.log("  Diagnose Trøndelag-bilde: " + $.html(card.parent()).replace(/\s+/g, " ").slice(0, 900));
     out.push({ title, venue: "Trøndelag Teater", url, img: p.best,
       from: ddmmyyyy(text.split(/Spilles fra/i)[1] || ""), to: null, about: $(h).next().text().trim().slice(0, 160), hint: text.slice(0, 300) });
   });
+  // Plakatene lastes først når man scroller («lazyload»). Hent i stedet delingsbildet (og:image) fra hver forestillings egen side.
+  // Bilder vi har hentet før, gjenbrukes, så hver side bare besøkes én gang.
+  const known = new Map((old.trondelag || []).filter(x => x.img).map(x => [x.url, x.img]));
+  for (const o of out) {
+    if (o.img) continue;
+    if (known.has(o.url)) { o.img = known.get(o.url); continue; }
+    try {
+      const $d = await getHtml(o.url);
+      o.img = abs($d('meta[property="og:image"]').attr("content") || $d('meta[name="twitter:image"]').attr("content") || "", o.url);
+      if (/logo/i.test(o.img)) o.img = "";
+    } catch {}
+    await new Promise(res => setTimeout(res, 300));
+  }
   return out;
 }
 
