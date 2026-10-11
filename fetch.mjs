@@ -561,7 +561,7 @@ async function nyehjorten(browser) {
   page.on("response", async r => { try { if (/fetch-eventim/.test(r.url())) bodies.push(await r.json()); } catch {} });
   try {
     const byProd = new Map(), bySlug = new Map();
-    for (const pageUrl of [base, "https://nyehjortenteater.no/program"]) {   // «Forestillinger» og «Alle» (med gjestespill/arrangementer)
+    for (const pageUrl of [base, "https://nyehjortenteater.no/program", "https://nyehjortenteater.no/program?type=events"]) {   // «Forestillinger» og «Alle» (med gjestespill/arrangementer)
     await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
     await page.waitForTimeout(2500);
     for (let k = 0; k < 12; k++) { await page.mouse.wheel(0, 1200); await page.waitForTimeout(400); }
@@ -595,7 +595,28 @@ async function nyehjorten(browser) {
       if (!shows.has(key)) shows.set(key, { title, venue: "Nye Hjorten Teater" + (val(it.Salnavn) ? ", " + val(it.Salnavn) : ""), url: info.url || "https://nyehjortenteater.no/program", img: info.img || "", times: [], hint: title });
       const s = shows.get(key); if (!s.times.includes(iso)) s.times.push(iso);
     }
-    console.log(`  Nye Hjorten: ${items.length} visninger i API-et, ${shows.size} forestillinger, ${byProd.size} plakater koblet via produksjonsnummer`);
+    // Mangler fortsatt plakat: prøv forestillingens egen side (adressen lages av tittelen) og bruk delingsbildet der
+    const prevImg = new Map((old.nyehjorten || []).filter(x => x.img).map(x => [x.title, x]));
+    for (const sh of shows.values()) {
+      if (sh.img) continue;
+      if (prevImg.has(sh.title)) { sh.img = prevImg.get(sh.title).img; sh.url = prevImg.get(sh.title).url; continue; }
+      const guess = "https://nyehjortenteater.no/program/" + slugify(sh.title);
+      try {
+        const $d = await getHtml(guess);
+        const og = abs($d('meta[property="og:image"]').attr("content") || "", guess);
+        if (og && !/logo|default|fallback/i.test(og)) { sh.img = og; sh.url = guess; }
+      } catch {}
+      if (!sh.img) {   // siste forsøk: åpne siden i nettleseren og ta første store bilde
+        try {
+          await page.goto(guess, { waitUntil: "networkidle", timeout: 30000 });
+          const $p = cheerio.load(await page.content());
+          const p = posterOf($p, $p("main").length ? $p("main") : $p("body"), guess);
+          if (p.best && !/logo/i.test(p.best)) { sh.img = p.best; sh.url = guess; }
+        } catch {}
+      }
+      console.log(`  Nye Hjorten: plakat for «${sh.title}»: ${sh.img ? "funnet" : "ikke funnet"} (${guess})`);
+    }
+    console.log(`  Nye Hjorten: ${items.length} visninger i API-et, ${shows.size} forestillinger, ${[...shows.values()].filter(x => x.img).length} med plakat`);
     return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
   } finally { await page.close(); }
 }
