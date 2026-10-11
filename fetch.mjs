@@ -42,7 +42,14 @@ async function robotsRule(url) {
 async function getHtml(url) {
   const rule = await robotsRule(url);
   if (rule && !rule.allow) throw new Error(`robots.txt tillater ikke ${url} (regel: Disallow: ${rule.path})`);
-  const r = await fetch(url, { headers: H });
+  // prøv opptil 3 ganger ved midlertidige nettverksfeil
+  let r, err;
+  for (let k = 0; k < 3; k++) {
+    try { r = await fetch(url, { headers: H }); if (r.ok || r.status < 500) break; err = new Error(url + " svarte " + r.status); }
+    catch (e) { err = e; r = null; }
+    await new Promise(res => setTimeout(res, 3000 * (k + 1)));
+  }
+  if (!r) throw err;
   if (!r.ok) throw new Error(url + " svarte " + r.status);
   return cheerio.load(await r.text());
 }
