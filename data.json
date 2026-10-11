@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-10T23:46:14.377Z",
+ "updated": "2026-10-11T00:39:42.458Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-11",
-   "h": 1,
+   "h": 2,
    "temp": 4,
    "wind": 6,
    "sym": "lightrain",
@@ -17,15 +17,6 @@
     "hours": [
      {
       "date": "2026-10-11",
-      "h": 1,
-      "temp": 4,
-      "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.1,
-      "span": 1
-     },
-     {
-      "date": "2026-10-11",
       "h": 2,
       "temp": 4,
       "wind": 6,
@@ -36,7 +27,7 @@
      {
       "date": "2026-10-11",
       "h": 3,
-      "temp": 5,
+      "temp": 4,
       "wind": 6,
       "sym": "lightrain",
       "rain": 0.1,
@@ -57,7 +48,7 @@
       "temp": 4,
       "wind": 6,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -101,8 +92,8 @@
       "h": 10,
       "temp": 5,
       "wind": 6,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -117,8 +108,8 @@
      {
       "date": "2026-10-11",
       "h": 12,
-      "temp": 6,
-      "wind": 5,
+      "temp": 5,
+      "wind": 6,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -144,7 +135,7 @@
      {
       "date": "2026-10-11",
       "h": 15,
-      "temp": 7,
+      "temp": 6,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -153,7 +144,7 @@
      {
       "date": "2026-10-11",
       "h": 16,
-      "temp": 7,
+      "temp": 6,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -180,8 +171,8 @@
      {
       "date": "2026-10-11",
       "h": 19,
-      "temp": 6,
-      "wind": 5,
+      "temp": 5,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -190,7 +181,7 @@
       "date": "2026-10-11",
       "h": 20,
       "temp": 5,
-      "wind": 5,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -200,14 +191,14 @@
       "h": 21,
       "temp": 5,
       "wind": 4,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-11",
       "h": 22,
-      "temp": 5,
+      "temp": 4,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -223,9 +214,9 @@
       "span": 1
      }
     ],
-    "max": 7,
+    "max": 6,
     "min": 4,
-    "rain": 0.9,
+    "rain": 1,
     "sym": "cloudy"
    },
    {
@@ -235,7 +226,7 @@
       "date": "2026-10-12",
       "h": 0,
       "temp": 4,
-      "wind": 4,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -252,9 +243,9 @@
      {
       "date": "2026-10-12",
       "h": 2,
-      "temp": 4,
+      "temp": 3,
       "wind": 3,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -262,8 +253,8 @@
       "date": "2026-10-12",
       "h": 3,
       "temp": 3,
-      "wind": 3,
-      "sym": "fair_night",
+      "wind": 2,
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -289,7 +280,7 @@
       "date": "2026-10-12",
       "h": 6,
       "temp": 2,
-      "wind": 1,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -298,7 +289,7 @@
       "date": "2026-10-12",
       "h": 7,
       "temp": 2,
-      "wind": 1,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -414,7 +405,7 @@
      {
       "date": "2026-10-12",
       "h": 20,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -423,7 +414,7 @@
      {
       "date": "2026-10-12",
       "h": 21,
-      "temp": 5,
+      "temp": 4,
       "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
@@ -432,9 +423,9 @@
      {
       "date": "2026-10-12",
       "h": 22,
-      "temp": 5,
+      "temp": 4,
       "wind": 3,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -442,7 +433,7 @@
       "date": "2026-10-12",
       "h": 23,
       "temp": 4,
-      "wind": 3,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -459,7 +450,7 @@
      {
       "date": "2026-10-13",
       "h": 0,
-      "temp": 4,
+      "temp": 3,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -468,7 +459,7 @@
      {
       "date": "2026-10-13",
       "h": 1,
-      "temp": 4,
+      "temp": 3,
       "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -477,7 +468,7 @@
      {
       "date": "2026-10-13",
       "h": 2,
-      "temp": 4,
+      "temp": 3,
       "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -486,7 +477,7 @@
      {
       "date": "2026-10-13",
       "h": 3,
-      "temp": 4,
+      "temp": 3,
       "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -495,8 +486,8 @@
      {
       "date": "2026-10-13",
       "h": 4,
-      "temp": 4,
-      "wind": 3,
+      "temp": 3,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -504,7 +495,7 @@
      {
       "date": "2026-10-13",
       "h": 5,
-      "temp": 4,
+      "temp": 3,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -522,7 +513,7 @@
      {
       "date": "2026-10-13",
       "h": 7,
-      "temp": 5,
+      "temp": 4,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -531,7 +522,7 @@
      {
       "date": "2026-10-13",
       "h": 8,
-      "temp": 5,
+      "temp": 4,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -557,7 +548,7 @@
      }
     ],
     "max": 10,
-    "min": 4,
+    "min": 3,
     "rain": 8.3,
     "sym": "rain"
    },
@@ -2207,18 +2198,18 @@
     {
      "d": "2026-10-11",
      "t": "18:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/bcacbdbc-7ecb-4adf-867c-5bdd5b5bf3c5"
-    },
-    {
-     "d": "2026-10-11",
-     "t": "18:00",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/a50fdc53-eab0-461b-a720-dd6a0af187fe"
+    },
+    {
+     "d": "2026-10-11",
+     "t": "18:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/bcacbdbc-7ecb-4adf-867c-5bdd5b5bf3c5"
     },
     {
      "d": "2026-10-11",
@@ -7388,50 +7379,6 @@
  "fjaereheia": [],
  "detnorske": [
   {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/gavekort",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": " .js .global-header, .js .page-header .ticket-button, .js .page-header .lined-title:before, .js .page-title .sub { visibility: hidden; } .js-loaded .global-header, .js-loaded .page-header .ticket-button, .js-loaded .page-header .lined-title:before, .js-loaded .page-title .sub { visibility: visible; ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/skodespelarar",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": " .js .global-header, .js .page-header .ticket-button, .js .page-header .lined-title:before, .js .page-title .sub { visibility: hidden; } .js-loaded .global-header, .js-loaded .page-header .ticket-button, .js-loaded .page-header .lined-title:before, .js-loaded .page-title .sub { visibility: visible; ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/repertoarmagasin",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": " .js .global-header, .js .page-header .ticket-button, .js .page-header .lined-title:before, .js .page-title .sub { visibility: hidden; } .js-loaded .global-header, .js-loaded .page-header .ticket-button, .js-loaded .page-header .lined-title:before, .js-loaded .page-title .sub { visibility: visible; ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/nyheitsbrev",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": " .js .global-header, .js .page-header .ticket-button, .js .page-header .lined-title:before, .js .page-title .sub { visibility: hidden; } .js-loaded .global-header, .js-loaded .page-header .ticket-button, .js-loaded .page-header .lined-title:before, .js-loaded .page-title .sub { visibility: visible; ",
-   "city": "Oslo"
-  },
-  {
    "title": "MUSIKALENCabaret",
    "venue": "Det Norske Teatret",
    "url": "https://www.detnorsketeatret.no/framsyningar/cabaret",
@@ -7671,39 +7618,6 @@
    "to": null,
    "about": "",
    "hint": " Kontakt oss Telefon billettluke/resepsjon: 22 42 43 44 E-post: hei@detnorsketeatret.no Org.nr: 921 196 164 Besøksadresse og varelevering: Kristian IVs g. 8, 0164 OSLO Postadresse: Postboks 1238 Vika, 0110 OSLO Opningstider Sjå alle våre opningstider Opningstider billettluka og butikken: Måndag: 08.",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/stilling-ledig",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #2C622C; /** To change the color of link elements**/ --link-color: #234923; /**To change the color of the text**/ --te",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/personvern-og-informasjonskapslar",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #2C622C; /** To change the color of link elements**/ --link-color: #234923; /**To change the color of the text**/ --te",
-   "city": "Oslo"
-  },
-  {
-   "title": "Du kontrollerer dine egne data",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/arsmeldingar",
-   "img": "https://detnorsketeatret.imgix.net/16_9-Cabaret.png?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.4571&fp-y=0.2567&h=203&ixlib=php-3.3.1&w=365",
-   "from": "2026-10-10",
-   "to": "2026-10-10",
-   "about": "",
-   "hint": "/** Template name: Overlay v3 - Google Consent Mode v2 URI: https://cookieinformation.com Version 1.1.0 **/ :root{ /** Change to the main theme color of the website**/ --main-color: #2C622C; /** To change the color of link elements**/ --link-color: #234923; /**To change the color of the text**/ --te",
    "city": "Oslo"
   }
  ],
