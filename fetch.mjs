@@ -302,6 +302,7 @@ async function rendered(browser, urls, venue, pathHint, opts) {
   const json = [];
   page.on("response", async r => {
     try { if (opts && opts.jsonSample && opts.jsonSample.test(r.url())) { const b = await r.json(); const d = b.data || b; console.log(`  Eksempel fra ${r.url().slice(0, 120)}: ` + JSON.stringify(Array.isArray(d) ? d[0] : d).slice(0, 900)); } } catch {}
+    try { if (opts && opts.diag && (r.headers()["content-type"] || "").includes("json") && !/cookie|consent|analytics|insights|google/i.test(r.url())) { const b = await r.json(); const arr = Array.isArray(b) ? b : Object.values(b).find(Array.isArray) || (b.data && Object.values(b.data).find(Array.isArray)); if (arr && arr.length > 3) console.log(`  Eksempel ${venue} ${r.url().slice(0, 110)} [${arr.length}]: ` + JSON.stringify(arr[0]).slice(0, 500)); } } catch {}
     try { if ((r.headers()["content-type"] || "").includes("json") && json.length < 12) { const b = await r.json(); json.push(`${r.url().slice(0, 140)} [${Array.isArray(b) ? "liste " + b.length : Object.keys(b).slice(0, 6).join(",")}]`); } } catch {}
   });
   try {
@@ -716,10 +717,19 @@ const browser = await chromium.launch();
 try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
   await run("dns", () => dns(browser));
+  // ---- Konsertsteder (første runde: generell henting + diagnose) ----
+  const KONSERT = [
+    ["k_rockefeller", "Rockefeller / John Dee / Sentrum Scene", ["https://www.rockefeller.no/"]],
+    ["k_blaa", "Blå", ["https://www.blaaoslo.no/"]],
+    ["k_vulkan", "Vulkan Arena", ["https://www.vulkanarena.no/"]],
+    ["k_cosmopolite", "Cosmopolite", ["https://www.cosmopolite.no/"]],
+    ["k_konserthus", "Oslo Konserthus", ["https://www.oslokonserthus.no/program", "https://www.oslokonserthus.no/"]]
+  ];
+  for (const [key, venue, urls] of KONSERT) await run(key, () => rendered(browser, urls, venue, null, { diag: true }));
   await run("nyehjorten", () => nyehjorten(browser));
   try { await trondelagPosters(browser); } catch (e) { console.log("  Trøndelag-plakater feilet: " + e.message); }
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
-const CITY = { dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
+const CITY = { k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
 for (const [k, city] of Object.entries(CITY)) if (Array.isArray(data[k])) data[k].forEach(x => { x.city = x.city || city; });
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));

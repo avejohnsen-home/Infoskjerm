@@ -206,6 +206,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   <nav class="nav" role="tablist" aria-label="Innhold">
     <button class="tab" role="tab" data-i="0">Teater</button>
     <button class="tab" role="tab" data-i="1">Kino</button>
+    <button class="tab" role="tab" data-i="2">Konsert</button>
     <span class="status" id="status">Bytter hvert 20. sek</span>
   </nav>
   <div class="bar"><div id="prog"></div></div>
@@ -215,6 +216,12 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     <div class="filters" id="filters" role="group" aria-label="Filtrer forestillinger"></div>
     <div class="posters" id="posters"></div>
     <p class="src" id="srcT"></p>
+  </section>
+
+  <section class="slide" id="s2">
+    <div class="filters" id="kvenues" role="group" aria-label="Velg konsertsted"></div>
+    <div class="posters" id="konserter"></div>
+    <p class="src" id="srcC"></p>
   </section>
 
   <section class="slide" id="s1">
@@ -330,7 +337,7 @@ function catOf(s){
 }
 function renderTheatre(){
   const T=today();let list=[];
-  const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
+  const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&!k.startsWith("k_")&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
   ALL.filter(s=>s.times).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
   ALL.filter(s=>!s.times).forEach(s=>{
     const label=s.venue.split(",")[0];
@@ -384,7 +391,7 @@ function renderFilms(){
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();
+  renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -476,9 +483,32 @@ document.getElementById("quizbar").addEventListener("click",()=>{
   document.getElementById("mdesc").innerHTML=html||"Ingen quizer de neste 7 dagene.";
 });
 
+
+// ---------- Konserter ----------
+let konsertFilter="Alle";
+function renderConcerts(){
+  const T=today(),list=[];
+  Object.entries(DATA).filter(([k,v])=>k.startsWith("k_")&&Array.isArray(v)).flatMap(([,v])=>v).forEach(s=>{
+    const label=s.venue.split(",")[0];
+    if(s.times){const tm=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(tm.length)list.push({...s,times:tm,key:tm[0],status:fmtDT(tm[0]),label});return}
+    if(!s.from){list.push({...s,key:new Date(8.64e15),status:"Se dato på nettsiden",label});return}
+    const f=new Date(s.from+"T00:00");if((s.to?new Date(s.to+"T23:59"):f)<T&&f<T)return;
+    list.push({...s,f,t:s.to?new Date(s.to+"T23:59"):null,key:f,status:fmtD(f),label})});
+  list.sort((a,b)=>a.key-b.key);
+  const counts={};list.forEach(s=>counts[s.label]=(counts[s.label]||0)+1);
+  const vs=["Alle",...Object.keys(counts)];if(!vs.includes(konsertFilter))konsertFilter="Alle";
+  const fe=document.getElementById("kvenues");fe.innerHTML="";
+  vs.forEach(v=>{const b=document.createElement("button");b.className="chip";b.textContent=v==="Alle"?`Alle (${list.length})`:`${v} (${counts[v]})`;b.setAttribute("aria-pressed",v===konsertFilter);b.addEventListener("click",()=>{konsertFilter=v;pause();renderConcerts()});fe.appendChild(b)});
+  const el=document.getElementById("konserter");el.innerHTML="";
+  list.filter(s=>konsertFilter==="Alle"||s.label===konsertFilter).forEach(s=>{const b=document.createElement("button");b.className="poster";
+    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.addEventListener("click",()=>openShow(s));el.appendChild(b)});
+  document.getElementById("srcC").textContent=list.length?`Kilde: konsertstedenes egne nettsider. ${list.length} konserter.`:"Henter konserter …";
+}
+
 // ---------- Rotasjon ----------
 const ROTATE=20000,RESUME=45000;
-const tabs=[...document.querySelectorAll(".tab")],slides=[0,1].map(i=>document.getElementById("s"+i));
+const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2].map(i=>document.getElementById("s"+i));
 const prog=document.getElementById("prog"),status=document.getElementById("status");
 let cur=0,start=Date.now(),paused=false,lastTouch=0;
 function show(i){cur=i;start=Date.now();slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach((t,j)=>t.setAttribute("aria-selected",j===i));}
@@ -486,7 +516,7 @@ tabs.forEach(t=>t.addEventListener("click",()=>{pause();show(+t.dataset.i)}));
 function pause(){paused=true;lastTouch=Date.now();status.textContent="Pauset, fortsetter snart"}
 setInterval(()=>{
   if(paused){prog.style.width="0";if(Date.now()-lastTouch>RESUME&&!modal.open&&!wmodal.open){paused=false;status.textContent="Bytter hvert 20. sek";show(cur)}return}
-  const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%2);},200);
+  const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%3);},200);
 show(0);
 
 // ---------- Vinduer ----------
