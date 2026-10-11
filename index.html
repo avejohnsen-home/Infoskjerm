@@ -65,6 +65,17 @@ body{
 .wrow .r{color:var(--tram);font-size:13px}
 .wrow .w{color:var(--muted);font-size:13px;text-align:right}
 
+.transit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin:14px 0 0}
+.stop{background:var(--surface);border-radius:12px;padding:10px 12px}
+.stop h4{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--muted);display:flex;justify-content:space-between}
+.dep{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--line);font-size:15px}
+.dep:first-of-type{border-top:0}
+.line{min-width:30px;text-align:center;font-weight:800;font-size:13px;color:#fff;border-radius:6px;padding:2px 6px}
+.line.tram{background:#0B91EF}.line.bus{background:#E60000}
+.dest{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.when{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.when.soon{color:var(--tram)}
+.when small{font-weight:400;color:var(--muted);font-size:11px;margin-left:2px}
 .demo{margin:14px 0 0;font-size:13px;color:var(--muted);background:var(--surface);border-left:4px solid var(--signal);padding:8px 10px;border-radius:6px}
 
 /* Rotasjon */
@@ -178,6 +189,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     </div>
   </header>
   <div class="days" id="days"></div>
+  <section class="transit" id="transit" aria-label="Avganger"></section>
 
   <p class="demo" id="banner" hidden></p>
 
@@ -368,6 +380,51 @@ async function load(){
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
 }
 load();setInterval(load,30*60*1000);
+
+
+// ---------- Kollektivtransport (Entur, sanntid rett i nettleseren) ----------
+const ENTUR_CLIENT="avejohnsen-infoskjerm";
+const STOPS=[
+  {name:"Olaf Ryes plass", icon:"🚋", label:"Trikk", modes:["tram"], lines:null},
+  {name:"Birkelunden", icon:"🚌", label:"Buss 30", modes:["bus"], lines:["30"]}
+];
+const EH={"ET-Client-Name":ENTUR_CLIENT};
+async function stopId(st){
+  const key="entur:"+st.name;
+  try{const c=localStorage.getItem(key);if(c)return c}catch{}
+  const r=await fetch("https://api.entur.io/geocoder/v1/autocomplete?"+new URLSearchParams({text:st.name+" Oslo",size:"10",layers:"venue",lang:"no"}),{headers:EH});
+  const f=((await r.json()).features||[]).map(x=>x.properties).filter(p=>String(p.id).startsWith("NSR:StopPlace"));
+  const hit=f.find(p=>p.name.toLowerCase()===st.name.toLowerCase()&&/oslo/i.test((p.locality||"")+(p.county||"")))||f.find(p=>p.name.toLowerCase()===st.name.toLowerCase())||f[0];
+  if(!hit)throw new Error("fant ikke "+st.name);
+  try{localStorage.setItem(key,hit.id)}catch{}
+  return hit.id;
+}
+const Q=`query($id:String!){stopPlace(id:$id){name estimatedCalls(numberOfDepartures:30,timeRange:10800){expectedDepartureTime realtime cancellation destinationDisplay{frontText} serviceJourney{line{publicCode transportMode}}}}}`;
+let DEPS={};
+async function loadTransit(){
+  for(const st of STOPS){
+    try{
+      const id=await stopId(st);
+      const r=await fetch("https://api.entur.io/journey-planner/v3/graphql",{method:"POST",headers:{...EH,"Content-Type":"application/json"},body:JSON.stringify({query:Q,variables:{id}})});
+      const calls=(((await r.json()).data||{}).stopPlace||{}).estimatedCalls||[];
+      DEPS[st.name]=calls.filter(c=>!c.cancellation).map(c=>({t:new Date(c.expectedDepartureTime),rt:c.realtime,dest:c.destinationDisplay.frontText,line:c.serviceJourney.line.publicCode,mode:c.serviceJourney.line.transportMode}))
+        .filter(d=>(!st.modes||st.modes.includes(d.mode))&&(!st.lines||st.lines.includes(d.line)));
+    }catch(e){DEPS[st.name]=null}
+  }
+  renderTransit();
+}
+function renderTransit(){
+  const el=document.getElementById("transit"),now=Date.now();
+  el.innerHTML=STOPS.map(st=>{
+    const list=DEPS[st.name];
+    const rows=list===undefined?`<div class="dep"><span></span><span class="dest">Henter avganger …</span><span></span></div>`:
+      list===null?`<div class="dep"><span></span><span class="dest">Avganger utilgjengelig nå</span><span></span></div>`:
+      list.filter(d=>d.t-now>-30000).slice(0,4).map(d=>{const m=Math.round((d.t-now)/60000);
+        const w=m<=0?"nå":m<15?`${m} min`:`${String(d.t.getHours()).padStart(2,"0")}:${String(d.t.getMinutes()).padStart(2,"0")}`;
+        return `<div class="dep"><span class="line ${d.mode==="tram"?"tram":"bus"}">${esc(d.line)}</span><span class="dest">${esc(d.dest)}</span><span class="when${m<5?" soon":""}">${w}${d.rt?"":"<small>ca.</small>"}</span></div>`}).join("")||`<div class="dep"><span></span><span class="dest">Ingen avganger de neste timene</span><span></span></div>`;
+    return `<div class="stop"><h4><span>${st.icon} ${esc(st.name)}</span><span>${esc(st.label)}</span></h4>${rows}</div>`}).join("");
+}
+renderTransit();loadTransit();setInterval(loadTransit,30000);setInterval(renderTransit,15000);
 
 // ---------- Rotasjon ----------
 const ROTATE=20000,RESUME=45000;
