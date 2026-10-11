@@ -653,6 +653,51 @@ async function trondelagPosters(browser) {
   } finally { await page.close(); }
 }
 
+// ---------- Quiz: faste quizkvelder fra Norges Quizforbunds pubquizliste ----------
+// Stedene du vil følge med på. «fallback» brukes hvis stedet ikke står i Quizforbundets liste.
+const MY_QUIZ = [
+  { name: "Rabalder Bar", match: /rabalder/i },
+  { name: "Grünerløkka Brygghus", match: /grünerløkka brygghus/i },
+  { name: "Ringnes Brygghus", match: /ringnes brygghus/i },
+  { name: "Cultivate Food", match: /cultivate/i },
+  { name: "Nieu Torshov", match: /nieu/i, fallback: { day: "Onsdag", time: "19:00", type: "Allmenn", note: "Populær – kom gjerne en time før, ingen bordbestilling" } }
+];
+const WEEKDAYS = ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"];
+function quizRule(day) {
+  const d = day.toLowerCase();
+  const wd = WEEKDAYS.findIndex(w => d.includes(w));
+  let rule = "weekly";
+  if (/1\.|første/.test(d) && /måned|mnd/.test(d)) rule = "first";
+  else if (/siste/.test(d)) rule = "last";
+  else if (/oddetall/.test(d)) rule = "odd";
+  else if (/partall/.test(d)) rule = "even";
+  else if (/annenhver|annen hver/.test(d)) rule = "biweekly";
+  else if (/måned|mnd|utvalgte|varierer/.test(d)) rule = "monthly";
+  return { wd, rule };
+}
+async function quiz() {
+  const base = "https://www.norgesquizforbund.no/arrangementer/finn-din-pubquiz/";
+  const $ = await getHtml(base);
+  const out = [];
+  $("tr").each((_, tr) => {
+    const td = $(tr).find("td"); if (td.length < 6) return;
+    const city = $(td[1]).text().trim(), place = $(td[2]).text().replace(/\s+/g, " ").trim();
+    if (city !== "Oslo") return;
+    const mine = MY_QUIZ.find(m => m.match.test(place)); if (!mine) return;
+    const day = $(td[3]).text().replace(/\s+/g, " ").trim();
+    const times = $(td[4]).html().split(/<br\s*\/?>/i).map(x => cheerio.load(x).text().trim());
+    const types = $(td[5]).html().split(/<br\s*\/?>/i).map(x => cheerio.load(x).text().trim());
+    times.forEach((time, i) => out.push({ place: mine.name, day, ...quizRule(day), time, type: types[i] || types[0] || "", link: abs($(td[2]).find("a").attr("href") || "", base), src: "Norges Quizforbund" }));
+  });
+  for (const m of MY_QUIZ) {
+    if (!out.some(q => q.place === m.name)) {
+      if (m.fallback) out.push({ place: m.name, ...m.fallback, ...quizRule(m.fallback.day), link: "", src: "egen research" });
+      else console.log("  Quiz: fant ikke " + m.name + " i Quizforbundets liste");
+    }
+  }
+  return out;
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -663,7 +708,7 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz]]) await run(key, fn);
 await run("fjaereheia", fjaereheia, true);
 
 const { chromium } = await import("playwright");

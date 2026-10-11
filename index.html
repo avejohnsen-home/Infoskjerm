@@ -76,6 +76,15 @@ body{
 .when{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .when.soon{color:var(--tram)}
 .when small{font-weight:400;color:var(--muted);font-size:11px;margin-left:2px}
+.quizbar{appearance:none;width:100%;text-align:left;font:inherit;color:inherit;margin:10px 0 0;background:var(--surface);border:0;border-radius:12px;padding:10px 12px;display:flex;gap:10px;align-items:center;cursor:pointer}
+.quizbar .qi{font-size:22px}
+.quizbar b{display:block;font-size:15px}
+.quizbar span.s{font-size:13px;color:var(--muted)}
+.quizbar.tonight{outline:2px solid var(--signal)}
+.qrow{padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.qrow b{display:block}
+.qrow small{color:var(--muted)}
+.qday{margin:12px 0 2px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .demo{margin:14px 0 0;font-size:13px;color:var(--muted);background:var(--surface);border-left:4px solid var(--signal);padding:8px 10px;border-radius:6px}
 
 /* Rotasjon */
@@ -190,6 +199,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   </header>
   <div class="days" id="days"></div>
   <section class="transit" id="transit" aria-label="Avganger"></section>
+  <button class="quizbar" id="quizbar" hidden></button>
 
   <p class="demo" id="banner" hidden></p>
 
@@ -374,7 +384,7 @@ function renderFilms(){
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  renderWeather(DATA.weather);renderTheatre();renderFilms();
+  renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -425,6 +435,46 @@ function renderTransit(){
     return `<div class="stop"><h4><span>${st.icon} ${esc(st.name)}</span><span>${esc(st.label)}</span></h4>${rows}</div>`}).join("");
 }
 renderTransit();loadTransit();setInterval(loadTransit,30000);setInterval(renderTransit,15000);
+
+
+// ---------- Quiz ----------
+function isoWeek(d){const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const n=t.getUTCDay()||7;t.setUTCDate(t.getUTCDate()+4-n);const y=new Date(Date.UTC(t.getUTCFullYear(),0,1));return Math.ceil(((t-y)/864e5+1)/7)}
+// returnerer {ok, usikker} for om quizen går på dato d
+function quizOn(q,d){
+  if(d.getDay()!==q.wd)return {ok:false};
+  switch(q.rule){
+    case "weekly":return {ok:true};
+    case "first":return {ok:d.getDate()<=7};
+    case "last":return {ok:new Date(d.getFullYear(),d.getMonth(),d.getDate()+7).getMonth()!==d.getMonth()};
+    case "odd":return {ok:isoWeek(d)%2===1};
+    case "even":return {ok:isoWeek(d)%2===0};
+    default:return {ok:true,usikker:true}; // annenhver uke / én gang i måneden: vi vet ikke hvilke uker
+  }
+}
+const ruleText={first:"1. i måneden",last:"siste i måneden",odd:"oddetallsuker",even:"partallsuker",biweekly:"annenhver uke – sjekk",monthly:"én gang i måneden – sjekk"};
+function quizWeek(days=7){
+  const out=[],t=today();
+  for(let k=0;k<days;k++){const d=new Date(t);d.setDate(t.getDate()+k);
+    (DATA.quiz||[]).forEach(q=>{const r=quizOn(q,d);if(r.ok)out.push({...q,date:d,usikker:r.usikker,k})})}
+  return out.sort((a,b)=>a.date-b.date||a.time.localeCompare(b.time));
+}
+const ymdOf=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+function renderQuiz(){
+  const bar=document.getElementById("quizbar");if(!DATA||!(DATA.quiz||[]).length){bar.hidden=true;return}
+  const now=new Date(),wk=quizWeek(7);
+  const tonight=wk.filter(q=>q.k===0&&new Date(q.date.toDateString()+" "+q.time)>new Date(now-2*36e5));
+  const next=tonight[0]||wk.find(q=>q.k>0);
+  bar.hidden=false;bar.classList.toggle("tonight",!!tonight.length);
+  bar.innerHTML=`<span class="qi">🧠</span><span>${tonight.length?`<b>Quiz i kveld: ${tonight.map(q=>`${esc(q.place)} kl. ${esc(q.time)}`).join(", ")}</b><span class="s">${esc(tonight[0].type)}${tonight[0].usikker?" · "+ruleText[tonight[0].rule]:""}</span>`:next?`<b>Neste quiz: ${dayLabel(ymdOf(next.date)).toLowerCase()} kl. ${esc(next.time)}, ${esc(next.place)}</b><span class="s">Trykk for ukens quizer</span>`:`<b>Ingen quiz denne uken</b>`}</span>`;
+}
+document.getElementById("quizbar").addEventListener("click",()=>{
+  const wk=quizWeek(7),ymd=ymdOf;
+  fill("Quiz denne uken","background:linear-gradient(135deg,#3B2E5A,#2C64A8)","",[],"https://www.norgesquizforbund.no/arrangementer/finn-din-pubquiz/","Se hele quizlisten hos Norges Quizforbund");
+  let html="",last="";
+  wk.forEach(q=>{const d=ymd(q.date);if(d!==last){html+=`<div class="qday">${dayLabel(d)}</div>`;last=d}
+    html+=`<div class="qrow"><b>${esc(q.time)} · ${esc(q.place)}</b><small>${esc(q.type)}${q.usikker||q.rule!=="weekly"?" · "+ruleText[q.rule]:""}${q.note?" · "+esc(q.note):""}</small></div>`});
+  document.getElementById("mdesc").innerHTML=html||"Ingen quizer de neste 7 dagene.";
+});
 
 // ---------- Rotasjon ----------
 const ROTATE=20000,RESUME=45000;
