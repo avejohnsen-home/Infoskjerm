@@ -302,7 +302,6 @@ async function rendered(browser, urls, venue, pathHint, opts) {
   const json = [];
   page.on("response", async r => {
     try { if (opts && opts.jsonSample && opts.jsonSample.test(r.url())) { const b = await r.json(); const d = b.data || b; console.log(`  Eksempel fra ${r.url().slice(0, 120)}: ` + JSON.stringify(Array.isArray(d) ? d[0] : d).slice(0, 900)); } } catch {}
-    try { if (opts && opts.diag && (r.headers()["content-type"] || "").includes("json") && !/cookie|consent|analytics|insights|google/i.test(r.url())) { const b = await r.json(); const arr = Array.isArray(b) ? b : Object.values(b).find(Array.isArray) || (b.data && Object.values(b.data).find(Array.isArray)); if (arr && arr.length > 3) console.log(`  Eksempel ${venue} ${r.url().slice(0, 110)} [${arr.length}]: ` + JSON.stringify(arr[0]).slice(0, 500)); } } catch {}
     try { if ((r.headers()["content-type"] || "").includes("json") && json.length < 12) { const b = await r.json(); json.push(`${r.url().slice(0, 140)} [${Array.isArray(b) ? "liste " + b.length : Object.keys(b).slice(0, 6).join(",")}]`); } } catch {}
   });
   try {
@@ -381,12 +380,14 @@ async function operaen() {
 }
 
 // ---------- Chat Noir: nettsiden henter programmet fra sitt eget API ----------
-async function chatnoirApi() {
-  const url = "https://www.chatnoir.no/api/eventsEdge";
+async function chatnoirApi() { return eventsEdge("https://www.chatnoir.no", "Chat Noir"); }
+// Samme publiseringsplattform brukes av Chat Noir, Rockefeller/John Dee/Sentrum Scene, Blå og Vulkan Arena
+async function eventsEdge(site, venueName) {
+  const url = site + "/api/eventsEdge";
   const rule = await robotsRule(url);
   if (rule && !rule.allow) throw new Error(`robots.txt sperrer ${url} (Disallow: ${rule.path})`);
   const r = await fetch(url, { headers: { ...H, Accept: "application/json" } });
-  if (!r.ok) throw new Error("Chat Noir svarte " + r.status);
+  if (!r.ok) throw new Error(venueName + " svarte " + r.status);
   const j = await r.json();
   const items = Array.isArray(j) ? j : (j.events || j.data || j.items || []);
   const now = new Date().toISOString().slice(0, 16);
@@ -413,11 +414,14 @@ async function chatnoirApi() {
     const slugify = t => t.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     const id = it.id || it._id || pick(/^(id|eventId)$/i), slug = it.slug || pick(/^slug$/i) || (id ? slugify(title) : "");
     const link = strs.map(([, v]) => v).find(v => /ticketmaster\.no\/(event|artist)/i.test(v))
-      || (slug && id ? `https://www.chatnoir.no/events/${slug}/${id}` : "https://www.chatnoir.no/program");
+      || (slug && id ? `${site}/events/${slug}/${id}` : site);
     const tags = (it.tags || []).join(" ");
     const about = String(it.details || "").replace(/^[^\n]*\n+/, "").replace(/\s+/g, " ").trim().slice(0, 220);
-    if (!shows.has(title)) shows.set(title, { title, venue: "Chat Noir", url: link, img: abs(img, "https://www.chatnoir.no/"), times: [], hint: tags, about });
-    const s = shows.get(title); if (!s.times.includes(when)) s.times.push(when);
+    const pl = it.place && (typeof it.place === "object" ? (it.place.name || it.place.title || it.place.label) : it.place);
+    const venue = pl && String(pl).trim() && !new RegExp(venueName, "i").test(String(pl)) ? String(pl).trim() : venueName;
+    const key = title + "|" + venue;
+    if (!shows.has(key)) shows.set(key, { title, venue, url: link, img: abs(img, site + "/"), times: [], hint: tags, about });
+    const s = shows.get(key); if (!s.times.includes(when)) s.times.push(when);
   }
   return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
 }
@@ -699,6 +703,56 @@ async function quiz() {
   return out;
 }
 
+// ---------- Oslo Konserthus: programmet ligger i et eget API ----------
+async function konserthus() {
+  const url = "https://oslokonserthus.no/api/program?kategori=all&sal=&serie=";
+  const rule = await robotsRule(url); if (rule && !rule.allow) throw new Error("robots.txt sperrer " + url);
+  const r = await fetch(url, { headers: { ...H, Accept: "application/json" } });
+  if (!r.ok) throw new Error("Oslo Konserthus svarte " + r.status);
+  const j = await r.json(); const items = Array.isArray(j) ? j : (Object.values(j).find(Array.isArray) || []);
+  const now = new Date().toISOString().slice(0, 16), out = [];
+  const osloFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Oslo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false });
+  const toOslo = v => { const str = String(v); if (!/^\d{4}-\d{2}-\d{2}/.test(str)) return null; if (str.length <= 10) return str + "T00:00";
+    if (!/(Z|[+-]\d{2}:?\d{2})$/.test(str)) return str.slice(0, 10) + "T" + str.slice(11, 16);
+    const p = Object.fromEntries(osloFmt.formatToParts(new Date(str)).map(x => [x.type, x.value])); return `${p.year}-${p.month}-${p.day}T${p.hour === "24" ? "00" : p.hour}:${p.minute}`; };
+  for (const it of items) {
+    const times = [...new Set(deepStrings(it).map(([, v]) => toOslo(v)).filter(Boolean))].filter(t => t >= now).sort();
+    if (!it.title || !times.length) continue;
+    out.push({ title: String(it.title).trim(), venue: "Oslo Konserthus" + (it.sal && it.sal.label ? ", " + it.sal.label : ""), url: it.billetturl || abs(it.url, "https://oslokonserthus.no/"),
+      img: it.bilde && it.bilde.url ? it.bilde.url : "", times, hint: (it.kategori || []).join(" "), about: it.undertittel || "" });
+  }
+  if (!out.length && items[0]) console.log("  Diagnose Oslo Konserthus: felter: " + Object.keys(items[0]).join(","));
+  return out;
+}
+
+// ---------- Cosmopolite: programmet ligger i nettsiden ----------
+async function cosmopolite(browser) {
+  const base = "https://cosmopolite.no/program";
+  const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
+  try {
+    const rule = await robotsRule(base); if (rule && !rule.allow) throw new Error("robots.txt sperrer " + base);
+    await page.goto(base, { waitUntil: "networkidle", timeout: 45000 }).catch(() => {});
+    for (let k = 0; k < 10; k++) { await page.mouse.wheel(0, 1500); await page.waitForTimeout(400); }
+    const $ = cheerio.load(await page.content());
+    const shows = new Map(), now = new Date();
+    const MONTHS_NB = { januar: 1, februar: 2, mars: 3, april: 4, mai: 5, juni: 6, juli: 7, august: 8, september: 9, oktober: 10, november: 11, desember: 12 };
+    $('a[href*="/program/"]').each((_, a) => {
+      const url = abs($(a).attr("href"), base).split("#")[0];
+      const m = url.match(/\/program\/([^/]+)\/(\d{4})\/([a-zæøå]+)\/([^/?]+)/i); if (!m || shows.has(url)) return;
+      const card = cardAround($, a, c => c.find("img").length > 0 && /\d{1,2}\.\s*\p{L}+/u.test(c.text()));
+      const bad = /^(bilde|main navigation|kjøp billett|få billetter|les mer)$/i;
+      const cands = [card.find("h1,h2,h3,h4,h5").first().text(), ...card.find("a").map((_, x) => $(x).text()).get()].map(t => t.replace(/\s+/g, " ").trim()).filter(t => t && !bad.test(t) && t.length < 90);
+      const title = cands[0] || m[4].replace(/-/g, " ").replace(/^\w/, c => c.toUpperCase());
+      const day = (cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().match(/(\d{1,2})\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i) || []);
+      const mo = MONTHS_NB[m[3].toLowerCase()]; const d = day[1] && MONTHS_NB[day[2].toLowerCase()] === mo ? day[1] : null;
+      const from = d ? `${m[2]}-${pad(mo)}-${pad(d)}` : null;
+      if (from && new Date(from + "T23:59") < now) return;
+      shows.set(url, { title, venue: "Cosmopolite" + (/belleville/i.test(m[1]) ? ", Belleville" : ""), url, img: posterOf($, card, base).best, from, to: from, about: "", hint: card.text().replace(/\s+/g, " ").slice(0, 200) });
+    });
+    return [...shows.values()];
+  } finally { await page.close(); }
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -717,15 +771,12 @@ const browser = await chromium.launch();
 try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
   await run("dns", () => dns(browser));
-  // ---- Konsertsteder (første runde: generell henting + diagnose) ----
-  const KONSERT = [
-    ["k_rockefeller", "Rockefeller / John Dee / Sentrum Scene", ["https://www.rockefeller.no/"]],
-    ["k_blaa", "Blå", ["https://www.blaaoslo.no/"]],
-    ["k_vulkan", "Vulkan Arena", ["https://www.vulkanarena.no/"]],
-    ["k_cosmopolite", "Cosmopolite", ["https://www.cosmopolite.no/"]],
-    ["k_konserthus", "Oslo Konserthus", ["https://www.oslokonserthus.no/program", "https://www.oslokonserthus.no/"]]
-  ];
-  for (const [key, venue, urls] of KONSERT) await run(key, () => rendered(browser, urls, venue, null, { diag: true }));
+  // ---- Konsertsteder ----
+  await run("k_rockefeller", () => eventsEdge("https://www.rockefeller.no", "Rockefeller"));
+  await run("k_blaa", () => eventsEdge("https://www.blaaoslo.no", "Blå"));
+  await run("k_vulkan", () => eventsEdge("https://vulkanarena.no", "Vulkan Arena"));
+  await run("k_konserthus", () => konserthus());
+  await run("k_cosmopolite", () => cosmopolite(browser));
   await run("nyehjorten", () => nyehjorten(browser));
   try { await trondelagPosters(browser); } catch (e) { console.log("  Trøndelag-plakater feilet: " + e.message); }
 } finally { await browser.close(); }
