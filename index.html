@@ -145,6 +145,9 @@ body{
 .times{display:flex;flex-wrap:wrap;gap:6px}
 .time{display:inline-block;background:var(--bg);color:var(--ink);text-decoration:none;border-radius:8px;padding:6px 9px;font-size:14px;font-variant-numeric:tabular-nums}
 .time small{color:var(--muted);margin-left:4px}
+.scores{display:flex;gap:8px;margin:0 0 12px;flex-wrap:wrap}
+.score{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border-radius:8px;padding:6px 10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--ink)}
+.score small{font-weight:400;color:var(--muted);font-size:12px}
 .trailerbtn{display:block;width:100%;appearance:none;border:0;background:#E60000;color:#fff;font:inherit;font-weight:600;font-size:16px;padding:12px;border-radius:10px;margin:0 0 10px;cursor:pointer}
 .trailerbox{position:relative;width:100%;aspect-ratio:16/9;margin:0 0 10px;border-radius:10px;overflow:hidden;background:#000}
 .trailerbox iframe,.trailerbox video{position:absolute;inset:0;width:100%;height:100%;border:0}
@@ -553,6 +556,8 @@ function openFilm(f){
   }
   if(days.length)showDay(days[0]);else box.innerHTML="<li>Ingen flere visninger denne uken.</li>";
   const tb=document.getElementById("mtrailer");
+  const sc=[f.rt?`<span class="score">${parseInt(f.rt)>=60?"🍅":"🤢"} ${esc(f.rt)}<small>Rotten Tomatoes</small></span>`:"",f.imdb?`<a class="score" href="https://www.imdb.com/title/${esc(f.imdbId||"")}/" target="_blank" rel="noopener">⭐ ${esc(f.imdb)}<small>IMDb</small></a>`:""].join("");
+  document.getElementById("mdesc").insertAdjacentHTML("beforeend",sc?`<div class="scores" style="margin-top:10px">${sc}</div>`:"");
   if(f.trailer){tb.innerHTML=`<button class="trailerbtn">▶ Se trailer</button>`;
     tb.querySelector("button").addEventListener("click",()=>{
       tb.innerHTML=f.trailer.startsWith("yt:")

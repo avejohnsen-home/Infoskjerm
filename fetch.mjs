@@ -227,21 +227,50 @@ async function nfkino() {
   });
   // Trailer: les filmens egen side én gang og finn YouTube-trailer (eller videofil). Huskes mellom kjøringer.
   const list = out.slice(0, 16);
-  const known = new Map((old.films || []).filter(f => f.trailerChecked).map(f => [f.url, f]));
+  const known = new Map((old.films || []).filter(f => f.trailerChecked && f.origChecked).map(f => [f.url, f]));
   let found = 0;
   for (const f of list) {
-    if (known.has(f.url)) { f.trailer = known.get(f.url).trailer || ""; f.trailerChecked = true; if (f.trailer) found++; continue; }
+    if (known.has(f.url)) { const k = known.get(f.url); Object.assign(f, { trailer: k.trailer || "", trailerChecked: true, origChecked: true, orig: k.orig, year: k.year, rt: k.rt, imdb: k.imdb, ratingsAt: k.ratingsAt }); if (f.trailer) found++; continue; }
     try {
       const $d = await getHtml(f.url);
       const html = $d.html();
       const yt = html.match(/(?:youtube(?:-nocookie)?\.com\/(?:embed\/|watch\?v=|v\/)|youtu\.be\/)([\w-]{11})/);
       const mp4 = html.match(/https?:[^"'\s]+\.mp4/);
       f.trailer = yt ? "yt:" + yt[1] : mp4 ? mp4[0] : "";
-      f.trailerChecked = true; if (f.trailer) found++;
+      f.trailerChecked = true; f.origChecked = true; if (f.trailer) found++;
+      // originaltittel og år (brukes til å slå opp Rotten Tomatoes-score)
+      const txt = cheerio.load(html.replace(/<[^>]+>/g, "\n")).text().split("\n").map(x => x.trim()).filter(Boolean);
+      const oi = txt.findIndex(l => /^original\s*tittel:?$/i.test(l) || /^originaltittel:?/i.test(l));
+      if (oi >= 0) f.orig = (txt[oi].replace(/^original\s*tittel:?\s*/i, "") || txt[oi + 1] || "").trim();
+      const yi = txt.findIndex(l => /^(produksjonsår|år|premiere(år)?):?$/i.test(l));
+      if (yi >= 0) f.year = (txt[yi + 1] || "").match(/\d{4}/)?.[0] || "";
     } catch {}
     await new Promise(res => setTimeout(res, 300));
   }
   console.log(`  Kino: trailer funnet for ${found} av ${list.length} filmer`);
+  // Rotten Tomatoes- og IMDb-score via OMDb (gratis nøkkel). Sjekkes på nytt én gang i døgnet for filmer uten score.
+  const OMDB = process.env.OMDB_KEY;
+  if (OMDB) {
+    let got = 0;
+    for (const f of list) {
+      if (f.rt && f.imdb) { got++; continue; }
+      if (f.ratingsAt && Date.now() - new Date(f.ratingsAt) < 864e5) { if (f.rt) got++; continue; }
+      const tries = [[f.orig, f.year], [f.orig, ""], [f.title, f.year], [f.title, ""]].filter(([t]) => t);
+      for (const [t, y] of tries) {
+        try {
+          const r = await fetch(`https://www.omdbapi.com/?apikey=${OMDB}&type=movie&t=${encodeURIComponent(t)}${y ? "&y=" + y : ""}`);
+          const j = await r.json();
+          if (j.Response === "True") {
+            f.rt = (j.Ratings || []).find(x => /rotten/i.test(x.Source))?.Value || "";
+            f.imdb = j.imdbRating && j.imdbRating !== "N/A" ? j.imdbRating : "";
+            f.imdbId = j.imdbID || ""; break;
+          }
+        } catch {}
+      }
+      f.ratingsAt = new Date().toISOString(); if (f.rt) got++;
+    }
+    console.log(`  Kino: Rotten Tomatoes-score for ${got} av ${list.length} filmer`);
+  } else console.log("  Kino: ingen OMDB_KEY – hopper over Rotten Tomatoes");
   return list;
 }
 
