@@ -225,7 +225,24 @@ async function nfkino() {
       shows
     });
   });
-  return out.slice(0, 16);
+  // Trailer: les filmens egen side én gang og finn YouTube-trailer (eller videofil). Huskes mellom kjøringer.
+  const list = out.slice(0, 16);
+  const known = new Map((old.films || []).filter(f => f.trailerChecked).map(f => [f.url, f]));
+  let found = 0;
+  for (const f of list) {
+    if (known.has(f.url)) { f.trailer = known.get(f.url).trailer || ""; f.trailerChecked = true; if (f.trailer) found++; continue; }
+    try {
+      const $d = await getHtml(f.url);
+      const html = $d.html();
+      const yt = html.match(/(?:youtube(?:-nocookie)?\.com\/(?:embed\/|watch\?v=|v\/)|youtu\.be\/)([\w-]{11})/);
+      const mp4 = html.match(/https?:[^"'\s]+\.mp4/);
+      f.trailer = yt ? "yt:" + yt[1] : mp4 ? mp4[0] : "";
+      f.trailerChecked = true; if (f.trailer) found++;
+    } catch {}
+    await new Promise(res => setTimeout(res, 300));
+  }
+  console.log(`  Kino: trailer funnet for ${found} av ${list.length} filmer`);
+  return list;
 }
 
 // ---------- Oslo Nye Teater via Ticketmaster ----------
