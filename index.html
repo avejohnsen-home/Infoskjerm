@@ -171,6 +171,21 @@ footer button{appearance:none;background:none;border:1px solid var(--line);color
 .mfav[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:#17222C}
 @media (max-width:520px){.status{display:none}}
 
+/* Priser */
+.prices{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.price{display:inline-flex;flex-direction:column;background:var(--bg);border-radius:8px;padding:6px 10px;font-weight:800;font-size:16px;font-variant-numeric:tabular-nums}
+.price small{font-weight:600;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.price.disc{background:var(--signal);color:#17222C}
+.price.disc small{color:#17222C;opacity:.75}
+.pnote{font-size:12px;color:var(--muted);margin:0 0 12px}
+
+/* Vink */
+.vrow{appearance:none;border:0;background:none;color:inherit;font:inherit;text-align:left;width:100%;display:grid;grid-template-columns:112px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.vrow .thumb{aspect-ratio:4/3;border-radius:6px}
+.vrow h3{margin:2px 0 0;font-size:17px;line-height:1.25}
+.vrow .k{font-size:13px;font-weight:600;color:var(--tram)}
+.vrow p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+
 /* Modal */
 dialog{border:0;border-radius:14px;padding:0;max-width:min(92vw,440px);width:100%;background:var(--surface);color:var(--ink)}
 dialog::backdrop{background:rgba(10,16,22,.6)}
@@ -228,6 +243,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     <button class="tab" role="tab" data-i="0">Teater</button>
     <button class="tab" role="tab" data-i="1">Kino</button>
     <button class="tab" role="tab" data-i="2">Konsert</button>
+    <button class="tab" role="tab" data-i="4">Mat</button>
     <button class="tab wl" role="tab" data-i="3">👀 Se-liste<span class="n" id="wlcount">0</span></button>
   </nav>
 
@@ -243,6 +259,11 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     <div class="filters" id="kgenres" role="group" aria-label="Velg sjanger"></div>
     <div class="posters" id="konserter"></div>
     <p class="src" id="srcC"></p>
+  </section>
+
+  <section class="slide" id="s4">
+    <div id="vink"></div>
+    <p class="src" id="srcV"></p>
   </section>
 
   <section class="slide" id="s3">
@@ -269,6 +290,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   <div class="mbody">
     <p id="mdesc"></p>
     <ul class="dates" id="mdates"></ul>
+    <div id="mprice"></div>
     <button class="mfav" id="mfav" hidden></button>
     <div id="mtrailer"></div>
     <a class="link" id="mlink" target="_blank" rel="noopener">Se mer og kjøp billetter</a>
@@ -420,7 +442,7 @@ function renderFilms(){
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderWatch();
+  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -542,6 +564,17 @@ function renderConcerts(){
   document.getElementById("srcC").textContent=list.length?`Kilde: konsertstedenes egne nettsider. ${list.length} konserter.`:"Henter konserter …";
 }
 
+// ---------- Vink: restaurantsaker ----------
+function renderVink(){
+  const list=(DATA&&DATA.vink)||[],el=document.getElementById("vink");el.innerHTML="";
+  list.forEach(v=>{const b=document.createElement("button");b.className="vrow";
+    const meta=[v.score?`🎲 ${esc(v.score)}`:"",esc(v.cat)].filter(Boolean).join(" · ");
+    b.innerHTML=`<div class="thumb"><div class="shape" style="position:absolute;inset:0;${styleFor(v.title)}"></div>${imgTag(v.img)}</div><div>${v.kicker?`<span class="k">${esc(v.kicker)}</span>`:""}<h3>${esc(v.title)}</h3>${meta?`<p>${meta}</p>`:""}</div>`;
+    b.addEventListener("click",()=>fill(v.title,headStyle(v.title,v.img),`${v.kicker?`<b>${esc(v.kicker)}</b>`:""}${v.score?` · terningkast ${esc(v.score)}`:""}${v.cat?` · ${esc(v.cat)}`:""}`,[],v.url,"Les saken på Vink"));
+    el.appendChild(b)});
+  document.getElementById("srcV").textContent=list.length?"Kilde: Vink fra Aftenposten. Trykk for å lese saken.":"Henter restaurantsaker fra Vink …";
+}
+
 // ---------- Se-liste (👀) ----------
 const WL_KEY="infoskjerm:seliste";
 let LIVE={},WL=[];
@@ -593,20 +626,27 @@ function renderWatch(){
 document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav");if(!b)return;e.stopImmediatePropagation();WL=WL.filter(w=>w.id!==b.dataset.id);saveWL();syncFav();},true);
 
 // ---------- Faner (ingen automatisk bytting) ----------
-const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3].map(i=>document.getElementById("s"+i));
+const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4].map(i=>document.getElementById("s"+i));
 let cur=0;
-function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach((t,j)=>t.setAttribute("aria-selected",j===i));}
+function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach(t=>t.setAttribute("aria-selected",+t.dataset.i===i));}
 tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch()}));
 function pause(){} // tidligere brukt til å pause rotasjonen; beholdt så eksisterende kall fortsatt virker
 show(0);syncFav();renderWatch();
 
 // ---------- Vinduer ----------
 const modal=document.getElementById("modal"),wmodal=document.getElementById("wmodal");
-function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";document.getElementById("mfav").hidden=true;
+function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";document.getElementById("mfav").hidden=true;document.getElementById("mprice").innerHTML="";
   document.getElementById("mhead").setAttribute("style",style);document.getElementById("mtitle").textContent=title;
   document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
-function openShow(s){openShowInner(s);modalFav(s._t||"teater",s)}
+function openShow(s){openShowInner(s);document.getElementById("mprice").innerHTML=priceHtml(s);modalFav(s._t||"teater",s)}
+function priceHtml(s){
+  const c=DATA&&DATA.prices&&DATA.prices[s.url];
+  const p=(s.prices&&s.prices.length?s.prices:c&&c.p)||[];
+  if(!p.length)return "";
+  const kr=n=>n.toLocaleString("nb-NO")+" kr";
+  return `<div class="prices">${p.map(x=>`<span class="price${x.l==="Scenekort"||x.l==="OBOS"?" disc":""}"><small>${esc(x.l==="Fra"?"Billetter fra":x.l)}</small>${x.kr?kr(x.kr):"−"+esc(x.pct)+" %"}</span>`).join("")}</div><p class="pnote">Fra arrangørens side. Sjekk prisen når du kjøper.</p>`;
+}
 function openShowInner(s){
   if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
   else if(s.next) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}, ${esc(s.cat.toLowerCase())}</b><br>${s.about?esc(s.about)+"<br><br>":""}Neste forestilling: ${fmtDT(new Date(s.next))}. Alle datoer finner du på Operaens side.`,[],s.url,"Se datoer og kjøp billetter");

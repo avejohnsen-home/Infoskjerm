@@ -294,10 +294,12 @@ async function oslonye() {
       const k = e.name + "|" + v.name;
       if (!shows.has(k)) shows.set(k, { title: e.name, venue: /kjeller/i.test(v.name) ? "Oslo Nye Teaterkjelleren" : /central/i.test(v.name) ? "Oslo Nye Centralteatret" : "Oslo Nye Teater", url: e.url, img, times: [] });
       const s = shows.get(k); if (!s.times.includes(iso)) s.times.push(iso);
+      const mins = (e.priceRanges || []).map(x => Number(x.min)).filter(n => n > 0);
+      if (mins.length) { const m = Math.round(Math.min(...mins)); if (!s.priceFrom || m < s.priceFrom) s.priceFrom = m; }
     }
     await new Promise(res => setTimeout(res, 250)); // skånsom mot API-et
   }
-  return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+  return [...shows.values()].map(({ priceFrom, ...s }) => ({ ...s, times: s.times.sort(), ...(priceFrom ? { prices: [{ l: "Fra", kr: priceFrom }] } : {}) }));
 }
 
 // ---------- Sider som laster programmet med JavaScript: åpnes i en usynlig nettleser ----------
@@ -806,6 +808,105 @@ async function cosmopolite(browser) {
   } finally { await page.close(); }
 }
 
+// ---------- Vink (Aftenposten): restauranttitler, privat bruk etter avtale med Vink ----------
+const VINK_OTHER_CITY = /^(Bergen|Trondheim|Stavanger|Kristiansand|Tromsø|Bodø|Ålesund|Drammen|Fredrikstad|Tønsberg|Stockholm|Göteborg|København|London|Paris|Roma|Berlin)$/i;
+async function vink() {
+  const base = "https://vink.aftenposten.no/mat-og-drikke";
+  const $ = await getHtml(base);
+  const seen = new Set(), out = [];
+  $('a[href*="/artikkel/"]').each((_, a) => {
+    const el = $(a), url = abs(el.attr("href"), base).split("?")[0];
+    if (!url || seen.has(url)) return; seen.add(url);
+    const leaves = [];
+    el.find("*").each((_, n) => { const c = $(n); if (!c.children().length) { const t = c.text().replace(/\s+/g, " ").trim(); if (t) leaves.push(t); } });
+    const L = [...new Set(leaves)];
+    const alt = (el.find("img").attr("alt") || "").trim();
+    let title = [...L].sort((x, y) => y.length - x.length)[0] || alt || el.text().replace(/\s+/g, " ").trim();
+    if (title.length < 8 && alt) title = alt;
+    if (!title) return;
+    const score = L.find(t => /^[1-6]$/.test(t)) || "";
+    const city = L.find(t => VINK_OTHER_CITY.test(t)) || "";
+    if (city) return; // bare Oslo
+    const ti = L.indexOf(title);
+    const kicker = L.find((t, i) => i < (ti < 0 ? L.length : ti) && t !== score && t !== title) || "";
+    const after = L.filter((t, i) => i > ti && t !== score && t !== title);
+    const cat = after[after.length - 1] || "";
+    let img = imgOf(el, base);
+    if (!img) { const ss = el.find("source").attr("srcset") || ""; img = abs(ss.split(",")[0].trim().split(/\s+/)[0], base); }
+    out.push({ title, kicker: kicker === title ? "" : kicker, score, cat: cat === kicker ? "" : cat, url, img });
+  });
+  console.log("  Vink: " + out.length + " saker" + (out[0] ? ` (første: ${out[0].kicker} – ${out[0].title})` : ""));
+  return out.slice(0, 24);
+}
+
+// ---------- Billettpriser: Scenekort og OBOS først, så ordinær pris ----------
+// Leser arrangørens egen side for hver forestilling/konsert i Oslo. Ticketmaster-sider hoppes over.
+// Hver side sjekkes på nytt én gang i uken; maks PRICE_MAX_NEW nye sider per kjøring for å være skånsom.
+const PRICE_MAX_NEW = 40, PRICE_TTL = 7 * 864e5;
+const PRICE_ORDER = ["Scenekort", "OBOS", "Ordinær", "Fra"];
+function labelOf(w) {
+  w = w.toLowerCase();
+  if (w.startsWith("scenekort")) return "Scenekort";
+  if (w.startsWith("obos")) return "OBOS";
+  if (/^(ordin|full|voksen)/.test(w)) return "Ordinær";
+  if (w === "fra" || w.startsWith("priser fra") || w.startsWith("billetter fra")) return "Fra";
+  return null;
+}
+function pricesFrom($) {
+  const found = {};
+  const put = (l, v) => { if (l && !(l in found)) found[l] = v; };
+  $('script[type="application/ld+json"]').each((_, el) => {
+    try {
+      const j = JSON.parse($(el).text());
+      for (const x of [].concat(j, j["@graph"] || [])) for (const o of [].concat(x?.offers || [])) {
+        const n = Math.round(Number(o.lowPrice ?? o.price));
+        if (n >= 50 && n <= 5000 && (!found.Fra || n < found.Fra.kr)) found.Fra = { kr: n };
+      }
+    } catch {}
+  });
+  $("script,style,noscript,svg").remove();
+  $("body *").each((_, e) => { $(e).append(" "); }); // mellomrom mellom elementer, så «390 kr» ikke klistres til neste ord
+  const text = $("body").text().replace(/\s+/g, " ");
+  const W = "(scenekort(?:pris|medlemmer)?|obos(?:-?(?:pris|medlem(?:mer)?|rabatt))?|ordin[æa]r(?:\\s*pris)?|full\\s*pris|fullpris|voksen|billetter fra|priser fra|fra)";
+  const reKr = new RegExp(W + "\\s*[:\\-–]?\\s*(kr\\.?\\s*|nok\\s*)?(\\d{1,2}[ .]\\d{3}|\\d{2,4})\\s*(,-|,00|kr\\b|nok\\b)?", "gi");
+  for (const m of text.matchAll(reKr)) {
+    if (!m[2] && !m[4]) continue; // må ha kr / ,- for å regnes som pris
+    const n = Number(m[3].replace(/[ .]/g, ""));
+    if (n >= 50 && n <= 5000) put(labelOf(m[1]), { kr: n });
+  }
+  for (const m of text.matchAll(/(scenekort|obos)[^.!?]{0,60}?(\d{1,2})\s*(%|prosent)/gi)) put(labelOf(m[1]), { pct: Number(m[2]) });
+  let list = PRICE_ORDER.filter(l => found[l]).map(l => ({ l, ...found[l] }));
+  if (found.Ordinær && found.Fra) list = list.filter(x => x.l !== "Fra");
+  return list;
+}
+async function prices() {
+  const prev = old.prices || {}, out = {}, now = Date.now(), items = [];
+  for (const [k, v] of Object.entries(data)) {
+    if (!Array.isArray(v) || ["films", "art", "quiz", "vink"].includes(k)) continue;
+    for (const x of v) {
+      if (!x || !x.url || x.city !== "Oslo" || x.prices) continue;
+      if (/ticketmaster\./i.test(x.url)) continue;
+      const first = (x.times && x.times[0]) || x.from || "9999";
+      items.push({ url: x.url, first });
+    }
+  }
+  items.sort((a, b) => String(a.first).localeCompare(String(b.first)));
+  let fetched = 0;
+  for (const { url } of items) {
+    if (url in out) continue;
+    const c = prev[url];
+    if (c && now - c.at < PRICE_TTL) { out[url] = c; continue; }
+    if (fetched >= PRICE_MAX_NEW) { if (c) out[url] = c; continue; }
+    fetched++;
+    try { out[url] = { p: pricesFrom(await getHtml(url)), at: now }; }
+    catch (e) { out[url] = { p: (c && c.p) || [], at: now, err: true }; }
+    await new Promise(res => setTimeout(res, 800));
+  }
+  const withP = Object.values(out).filter(x => x.p && x.p.length).length;
+  console.log(`  Priser: ${fetched} sider sjekket nå, priser funnet for ${withP} av ${Object.keys(out).length}`);
+  return out;
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -816,7 +917,7 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
 await run("fjaereheia", fjaereheia, true);
 
 const { chromium } = await import("playwright");
@@ -836,4 +937,5 @@ try {
 // Hvilken by hver kilde hører til (nye byer legges til her)
 const CITY = { k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
 for (const [k, city] of Object.entries(CITY)) if (Array.isArray(data[k])) data[k].forEach(x => { x.city = x.city || city; });
+try { data.prices = await prices(); } catch (e) { data.prices = old.prices || {}; data.errors.push("prices: " + e.message); console.log("FEIL prices", e.message); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));
