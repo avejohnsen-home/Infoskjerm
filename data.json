@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-13T16:34:13.277Z",
+ "updated": "2026-10-13T17:32:03.882Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-13",
-   "h": 18,
+   "h": 19,
    "temp": 8,
-   "wind": 5,
-   "sym": "lightrain",
-   "rain": 0.1,
+   "wind": 4,
+   "sym": "rain",
+   "rain": 0.9,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-13",
     "hours": [
-     {
-      "date": "2026-10-13",
-      "h": 18,
-      "temp": 8,
-      "wind": 5,
-      "sym": "lightrain",
-      "rain": 0.1,
-      "span": 1
-     },
      {
       "date": "2026-10-13",
       "h": 19,
@@ -72,8 +63,8 @@
     ],
     "max": 8,
     "min": 8,
-    "rain": 7,
-    "sym": "lightrain"
+    "rain": 6.9,
+    "sym": "rain"
    },
    {
     "date": "2026-10-14",
@@ -81,7 +72,7 @@
      {
       "date": "2026-10-14",
       "h": 0,
-      "temp": 7,
+      "temp": 8,
       "wind": 4,
       "sym": "rain",
       "rain": 0.8,
@@ -90,7 +81,7 @@
      {
       "date": "2026-10-14",
       "h": 1,
-      "temp": 7,
+      "temp": 8,
       "wind": 3,
       "sym": "rain",
       "rain": 0.3,
@@ -1175,15 +1166,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2439/b749f171-b162-4fc5-9b50-13afe632935b"
-    },
-    {
-     "d": "2026-10-16",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/b749f171-b162-4fc5-9b50-13afe632935b"
     },
     {
@@ -1386,7 +1369,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-13T16:34:42.226Z",
    "city": "Oslo"
   },
@@ -1857,7 +1839,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-13T16:34:42.314Z",
    "city": "Oslo"
   },
@@ -3101,7 +3082,6 @@
    "year": "",
    "rt": "70%",
    "imdb": "7.4",
-   "imdbId": "tt9389916",
    "ratingsAt": "2026-10-13T16:34:43.213Z",
    "city": "Oslo"
   },
@@ -3419,7 +3399,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-13T16:34:43.296Z",
    "city": "Oslo"
   },
@@ -3912,7 +3891,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "imdbId": "tt36841161",
    "ratingsAt": "2026-10-13T16:34:43.384Z",
    "city": "Oslo"
   },
@@ -4346,7 +4324,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-13T16:34:43.827Z",
    "city": "Oslo"
   },
@@ -4606,7 +4583,6 @@
    "year": "",
    "rt": "11%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-13T16:34:43.925Z",
    "city": "Oslo"
   },
@@ -4923,7 +4899,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt38807889",
    "ratingsAt": "2026-10-13T16:34:44.019Z",
    "city": "Oslo"
   },
@@ -5121,7 +5096,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37510326",
    "ratingsAt": "2026-10-13T16:34:44.122Z",
    "city": "Oslo"
   },
@@ -5270,7 +5244,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-13T16:34:44.215Z",
    "city": "Oslo"
   },
@@ -5504,7 +5477,6 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "imdbId": "tt36583977",
    "ratingsAt": "2026-10-13T16:34:44.316Z",
    "city": "Oslo"
   },
@@ -5629,7 +5601,6 @@
    "year": "",
    "rt": "36%",
    "imdb": "6.6",
-   "imdbId": "tt0120804",
    "ratingsAt": "2026-10-13T16:34:44.410Z",
    "city": "Oslo"
   },
@@ -5808,7 +5779,6 @@
    "year": "",
    "rt": "85%",
    "imdb": "7.5",
-   "imdbId": "tt7526136",
    "ratingsAt": "2026-10-13T16:34:44.524Z",
    "city": "Oslo"
   }
@@ -12333,7 +12303,27 @@
     "2026-10-25T15:00",
     "2026-11-01T15:00",
     "2026-11-08T15:00",
-    "2026-11-15T15:00"
+    "2026-11-15T15:00",
+    "2026-11-22T16:00",
+    "2026-11-29T16:00",
+    "2026-12-06T16:00",
+    "2026-12-13T16:00",
+    "2026-12-20T16:00",
+    "2026-12-27T16:00",
+    "2027-01-03T16:00",
+    "2027-01-10T16:00",
+    "2027-01-17T16:00",
+    "2027-01-24T16:00",
+    "2027-01-31T16:00",
+    "2027-02-07T16:00",
+    "2027-02-14T16:00",
+    "2027-02-21T16:00",
+    "2027-02-28T16:00",
+    "2027-03-07T16:00",
+    "2027-03-14T16:00",
+    "2027-03-21T16:00",
+    "2027-03-28T17:00",
+    "2027-04-04T17:00"
    ],
    "hint": "funk soul jazz",
    "about": "Hver eneste søndag skaper BLÅ og Frank Znort Quartet en atmosfære av fred, lykke og frihet, akkompagnert av klirrende ølglass og forvridde versjoner av låter du ikke ante at du digga. Med sin livsglade tilnærming til uli",
@@ -12650,6 +12640,18 @@
    ],
    "hint": "techno idm dub",
    "about": "Bryan Müller has consistently produced some of the most inspired electronic music around over the past decade. His 4 albums and 10 EPs, released on Ilian Tape, and countless remixes have become part of the lineage of ele",
+   "city": "Oslo"
+  },
+  {
+   "title": "Visible Cloaks",
+   "venue": "Blå",
+   "url": "https://www.ticketmaster.no/event/845064747",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Fu-IvpoPa0?tr=w-600",
+   "times": [
+    "2026-11-29T19:00"
+   ],
+   "hint": "ambient electronic",
+   "about": "Visible Cloaks er en ambient-elektronisk duo fra Portland, Oregon, bestående av Spencer Doran og Ryan Carlile. Musikken deres utforsker et spenningsfelt mellom motsetninger som organisk og kunstig, tilfeldig og bevisst, ",
    "city": "Oslo"
   },
   {
@@ -16049,7 +16051,6 @@
    "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
    "img": "https://cdn.sanity.io/images/w3qmm82w/production/3e2a8bf57f3f77e76cd6e51138d8588aa73f2b33-1080x1080.png?w=1080&fit=max&auto=format",
    "times": [
-    "2026-10-13T19:00",
     "2026-10-14T19:00",
     "2026-10-15T19:00",
     "2026-10-16T19:00",
