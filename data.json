@@ -1,29 +1,22 @@
 {
- "updated": "2026-10-13T07:37:10.587Z",
- "errors": [],
+ "updated": "2026-10-13T08:36:23.916Z",
+ "errors": [
+  "films: fetch failed"
+ ],
  "weather": {
   "now": {
    "date": "2026-10-13",
-   "h": 9,
+   "h": 10,
    "temp": 6,
-   "wind": 1,
-   "sym": "cloudy",
-   "rain": 0,
+   "wind": 2,
+   "sym": "lightrain",
+   "rain": 0.1,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-13",
     "hours": [
-     {
-      "date": "2026-10-13",
-      "h": 9,
-      "temp": 6,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-13",
       "h": 10,
@@ -36,7 +29,7 @@
      {
       "date": "2026-10-13",
       "h": 11,
-      "temp": 6,
+      "temp": 7,
       "wind": 3,
       "sym": "lightrain",
       "rain": 0.2,
@@ -5728,10 +5721,10 @@
    "city": "Kristiansand"
   },
   {
-   "title": "Åpen lansering av teaterprogrammet 2027",
+   "title": "Lansering av teaterprogrammet 2027",
    "venue": "Kilden",
-   "url": "https://kilden.com/program/50915-apen-lansering-av-teaterprogrammet-2027/",
-   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F50915%2Fsquare.webp?version=tk0yut1HPJ/8yALOrHNCxw==",
+   "url": "https://kilden.com/program/50915-lansering-av-teaterprogrammet-2027/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F50915%2Fsquare.webp?version=KwqB/CnS2PKNHjsl4VuWvQ==",
    "times": [
     "2026-11-03T19:00"
    ],
@@ -11082,6 +11075,18 @@
    ],
    "hint": "electropop Electronic Pop",
    "about": "Fredag 5. mars kommer den franske elektropop-favoritten Kid Francescoli til Vulkan Arena i Oslo! Billetter i salg fredag 12. juni kl. 11.00. Kid Francescoli er prosjektet til Marseille-baserte Mathieu Hocine, som har eta",
+   "city": "Oslo"
+  },
+  {
+   "title": "Kula Shaker",
+   "venue": "Vulkan Arena",
+   "url": "https://www.ticketmaster.no/event/331532078",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_-vUjhbIRH?tr=w-600",
+   "times": [
+    "2027-03-07T19:00"
+   ],
+   "hint": "psykedelisk rock britpop rock",
+   "about": "Kula Shaker VULKAN ARENA Søndag 7. mars Kula Shaker til Vulkan Arena! Britpop-veteranene Kula Shaker kommer til Vulkan Arena i Oslo søndag 7. mars. Bandet ble dannet i London på 90-tallet med Crispian Mills i front. De s",
    "city": "Oslo"
   },
   {
