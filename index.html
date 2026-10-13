@@ -156,6 +156,21 @@ body{
 footer{margin-top:26px;display:flex;gap:16px;align-items:center;font-size:13px;color:var(--muted)}
 footer button{appearance:none;background:none;border:1px solid var(--line);color:var(--ink);font:inherit;padding:6px 10px;border-radius:8px;cursor:pointer}
 
+/* Se-liste */
+.pcard{position:relative;min-width:0}
+.fav{position:absolute;top:6px;right:6px;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.85);font-size:20px;line-height:1;cursor:pointer;display:grid;place-items:center;filter:grayscale(1);opacity:.7;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+.fav[aria-pressed="true"]{background:var(--signal);filter:none;opacity:1}
+.tab.wl{white-space:nowrap}
+.tab.wl .n{display:inline-block;min-width:20px;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--line);color:var(--ink);font-size:13px;text-align:center}
+.tab.wl .n.has{background:var(--signal);color:#17222C}
+.pcard.gone .art{filter:grayscale(1);opacity:.55}
+.wlhead{margin:18px 0 8px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.wlhead:first-child{margin-top:0}
+.empty{background:var(--surface);border-radius:12px;padding:18px;color:var(--muted);line-height:1.45}
+.mfav{display:block;width:100%;appearance:none;margin:0 0 10px;padding:11px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.mfav[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:#17222C}
+@media (max-width:520px){.status{display:none}}
+
 /* Modal */
 dialog{border:0;border-radius:14px;padding:0;max-width:min(92vw,440px);width:100%;background:var(--surface);color:var(--ink)}
 dialog::backdrop{background:rgba(10,16,22,.6)}
@@ -214,6 +229,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     <button class="tab" role="tab" data-i="1">Kino</button>
     <button class="tab" role="tab" data-i="2">Konsert</button>
     <span class="status" id="status">Bytter hvert 20. sek</span>
+    <button class="tab wl" role="tab" data-i="3">👀 Se-liste<span class="n" id="wlcount">0</span></button>
   </nav>
   <div class="bar"><div id="prog"></div></div>
 
@@ -229,6 +245,11 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
     <div class="filters" id="kgenres" role="group" aria-label="Velg sjanger"></div>
     <div class="posters" id="konserter"></div>
     <p class="src" id="srcC"></p>
+  </section>
+
+  <section class="slide" id="s3">
+    <div id="watch"></div>
+    <p class="src">Se-listen lagres på denne skjermen. Trykk 👀 igjen for å fjerne noe.</p>
   </section>
 
   <section class="slide" id="s1">
@@ -250,6 +271,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   <div class="mbody">
     <p id="mdesc"></p>
     <ul class="dates" id="mdates"></ul>
+    <button class="mfav" id="mfav" hidden></button>
     <div id="mtrailer"></div>
     <a class="link" id="mlink" target="_blank" rel="noopener">Se mer og kjøp billetter</a>
     <button class="close" id="mclose">Lukk</button>
@@ -353,7 +375,7 @@ function renderTheatre(){
     if(!s.from){list.push({...s,key:new Date(8.64e15),status:"Se datoer på nettsiden",label});return}
     const f=new Date(s.from+"T00:00"),t=s.to?new Date(s.to+"T23:59"):new Date(8.64e15);if(t<T)return;
     const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label})});
-  list.forEach(s=>{s.cat=catOf(s);s.city=s.city||"Oslo"});
+  list.forEach(s=>{s.cat=catOf(s);s.city=s.city||"Oslo";s._t="teater";LIVE[favId("teater",s)]=s});
   list.sort((a,b)=>a.key-b.key);
   const byCity={};list.forEach(s=>byCity[s.city]=(byCity[s.city]||0)+1);
   const HOME_CITY="Oslo";const cities=Object.keys(byCity).sort((a,b)=>(b===HOME_CITY)-(a===HOME_CITY)||a.localeCompare(b,"nb"));
@@ -373,7 +395,7 @@ function renderTheatre(){
   const el=document.getElementById("posters");el.innerHTML="";
   shown.forEach(s=>{const b=document.createElement("button");b.className="poster";
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
-    b.addEventListener("click",()=>openShow(s));el.appendChild(b);});
+    b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"teater",s));});
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
 const dayLabel=d=>{const t=today(),x=new Date(d+"T00:00"),diff=Math.round((x-t)/864e5);return diff===0?"I dag":diff===1?"I morgen":cap(wd[x.getDay()])+" "+x.getDate()+". "+mon[x.getMonth()]};
@@ -382,6 +404,7 @@ function nextShow(f,kino){const now=new Date();return (f.shows||[]).find(x=>new 
 let filmFilter="Alle";
 function renderFilms(){
   const films=DATA.films||[], counts={};
+  films.forEach(f=>{f._t="film";LIVE[favId("film",f)]=f});
   films.forEach(f=>(f.genres||[]).forEach(g=>counts[g]=(counts[g]||0)+1));
   const gs=["Alle",...Object.keys(counts).sort((a,b)=>counts[b]-counts[a])];
   if(!gs.includes(filmFilter))filmFilter="Alle";
@@ -393,13 +416,13 @@ function renderFilms(){
     const cins=(f.cinemas||[]);const where=cins.length>2?`${cins.slice(0,2).join(", ")} +${cins.length-2}`:cins.join(", ");
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(f.title)}"></div><h3>${esc(f.title)}</h3>${imgTag(f.img)}${f.age?`<span class="kind">${esc(f.age)}</span>`:""}</div>
       <div class="meta"><b>${esc(f.title)}</b>${n?`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`:"Ingen flere visninger"}<span class="where">${esc(n?n.c+(cins.length>1?` (+${cins.length-1} ${cins.length-1===1?"kino":"kinoer"})`:""):where)}</span></div>`;
-    b.addEventListener("click",()=>openFilm(f));el.appendChild(b);});
+    b.addEventListener("click",()=>openFilm(f));el.appendChild(card(b,"film",f));});
   document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for alle visningstider.":"Fant ingen filmer ennå.";
 }
 async function load(){
   try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();
+  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderWatch();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -505,7 +528,7 @@ function renderConcerts(){
     const f=new Date(s.from+"T00:00");if((s.to?new Date(s.to+"T23:59"):f)<T&&f<T)return;
     list.push({...s,f,t:s.to?new Date(s.to+"T23:59"):null,key:f,status:fmtD(f),label})});
   list.sort((a,b)=>a.key-b.key);
-  list.forEach(s=>s.genres=kGenreOf(s));
+  list.forEach(s=>{s.genres=kGenreOf(s);s._t="konsert";LIVE[favId("konsert",s)]=s});
   const gc={};list.filter(s=>konsertFilter==="Alle"||s.label===konsertFilter).forEach(s=>s.genres.forEach(g=>gc[g]=(gc[g]||0)+1));
   const gs=["Alle",...KGENRES.map(([n])=>n).filter(n=>gc[n]),...(gc.Annet?["Annet"]:[])];if(!gs.includes(kGenre))kGenre="Alle";
   const ge=document.getElementById("kgenres");ge.innerHTML="";
@@ -517,36 +540,89 @@ function renderConcerts(){
   const el=document.getElementById("konserter");el.innerHTML="";
   list.filter(s=>(konsertFilter==="Alle"||s.label===konsertFilter)&&(kGenre==="Alle"||s.genres.includes(kGenre))).forEach(s=>{const b=document.createElement("button");b.className="poster";
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
-    b.addEventListener("click",()=>openShow(s));el.appendChild(b)});
+    b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"konsert",s))});
   document.getElementById("srcC").textContent=list.length?`Kilde: konsertstedenes egne nettsider. ${list.length} konserter.`:"Henter konserter …";
 }
 
+// ---------- Se-liste (👀) ----------
+const WL_KEY="infoskjerm:seliste";
+let LIVE={},WL=[];
+try{WL=JSON.parse(localStorage.getItem(WL_KEY)||"[]")||[]}catch{WL=[]}
+const favId=(t,s)=>t+"|"+s.title+"|"+(t==="film"?"":s.venue||"");
+const isFav=id=>WL.some(w=>w.id===id);
+function saveWL(){try{localStorage.setItem(WL_KEY,JSON.stringify(WL))}catch{}}
+function toggleFav(t,s){
+  const id=favId(t,s);
+  if(isFav(id))WL=WL.filter(w=>w.id!==id);
+  else WL.push({id,type:t,title:s.title,img:s.img||"",venue:t==="film"?"":(s.venue||"").split(",")[0],url:s.url||"",added:Date.now()});
+  saveWL();syncFav();
+}
+function syncFav(){
+  document.querySelectorAll(".fav").forEach(b=>{const on=isFav(b.dataset.id);b.setAttribute("aria-pressed",on);b.title=on?"Fjern fra se-listen":"Legg til i se-listen";b.setAttribute("aria-label",b.title)});
+  const n=document.getElementById("wlcount");n.textContent=WL.length;n.classList.toggle("has",WL.length>0);
+  if(cur===3)renderWatch();
+}
+function favBtn(t,s){const b=document.createElement("button");b.className="fav";b.dataset.id=favId(t,s);b.textContent="👀";
+  const on=isFav(b.dataset.id);b.setAttribute("aria-pressed",on);b.title=on?"Fjern fra se-listen":"Legg til i se-listen";b.setAttribute("aria-label",b.title);
+  b.addEventListener("click",e=>{e.stopPropagation();pause();toggleFav(t,s)});return b}
+function card(b,t,s){const w=document.createElement("div");w.className="pcard";w.append(b,favBtn(t,s));return w}
+function modalFav(t,s){const b=document.getElementById("mfav"),id=favId(t,s);
+  const set=()=>{const on=isFav(id);b.setAttribute("aria-pressed",on);b.textContent=on?"👀 På se-listen (trykk for å fjerne)":"👀 Legg til i se-listen"};
+  b.hidden=false;set();b.onclick=()=>{toggleFav(t,s);set()}}
+const TYPE_ICON={teater:"🎭",film:"🎬",konsert:"🎸"};
+function renderWatch(){
+  const el=document.getElementById("watch");if(!el)return;
+  if(!WL.length){el.innerHTML=`<div class="empty">Se-listen er tom.<br>Trykk 👀 på en forestilling, film eller konsert for å samle den her.</div>`;return}
+  const live=[],gone=[];
+  WL.forEach(w=>{const s=LIVE[w.id];
+    if(s&&w.type==="film"){const n=nextShow(s,FAV_KINO)||nextShow(s);if(n)live.push({w,s,key:new Date(n.d+"T"+n.t),status:`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`,label:n.c});else gone.push({w})}
+    else if(s)live.push({w,s,key:s.key,status:s.status,label:s.label});
+    else gone.push({w});});
+  live.sort((a,b)=>a.key-b.key);
+  el.innerHTML="";
+  const grid=items=>{const g=document.createElement("div");g.className="posters";
+    items.forEach(x=>{const s=x.s||x.w,b=document.createElement("button");b.className="poster";
+      b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${TYPE_ICON[x.w.type]||""} ${esc(x.label||x.w.venue||(x.w.type==="film"?"Kino":""))}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(x.s?x.status:"Ikke lenger på programmet")}</div>`;
+      if(x.s)b.addEventListener("click",()=>x.w.type==="film"?openFilm(x.s):openShow(x.s));
+      else if(x.w.url)b.addEventListener("click",()=>window.open(x.w.url,"_blank","noopener"));
+      const c=card(b,x.w.type,x.s||{title:x.w.title,venue:x.w.venue,img:x.w.img,url:x.w.url});
+      if(!x.s){c.classList.add("gone");c.querySelector(".fav").dataset.id=x.w.id;c.querySelector(".fav").setAttribute("aria-pressed","true")}
+      g.appendChild(c)});return g};
+  if(live.length){el.insertAdjacentHTML("beforeend",`<div class="wlhead">Kommer (${live.length})</div>`);el.appendChild(grid(live))}
+  if(gone.length&&DATA){el.insertAdjacentHTML("beforeend",`<div class="wlhead">Ferdig eller ikke funnet (${gone.length})</div>`);el.appendChild(grid(gone))}
+}
+// Utgåtte elementer: 👀-knappen må fjerne dem direkte på lagret id
+document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav");if(!b)return;e.stopImmediatePropagation();WL=WL.filter(w=>w.id!==b.dataset.id);saveWL();syncFav();},true);
+
 // ---------- Rotasjon ----------
 const ROTATE=20000,RESUME=45000;
-const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2].map(i=>document.getElementById("s"+i));
+const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3].map(i=>document.getElementById("s"+i));
 const prog=document.getElementById("prog"),status=document.getElementById("status");
 let cur=0,start=Date.now(),paused=false,lastTouch=0;
 function show(i){cur=i;start=Date.now();slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach((t,j)=>t.setAttribute("aria-selected",j===i));}
-tabs.forEach(t=>t.addEventListener("click",()=>{pause();show(+t.dataset.i)}));
+tabs.forEach(t=>t.addEventListener("click",()=>{pause();show(+t.dataset.i);if(+t.dataset.i===3)renderWatch()}));
 function pause(){paused=true;lastTouch=Date.now();status.textContent="Pauset, fortsetter snart"}
 setInterval(()=>{
   if(paused){prog.style.width="0";if(Date.now()-lastTouch>RESUME&&!modal.open&&!wmodal.open){paused=false;status.textContent="Bytter hvert 20. sek";show(cur)}return}
+  if(cur===3){prog.style.width="0";return} // se-listen står i ro
   const p=(Date.now()-start)/ROTATE;prog.style.width=Math.min(p,1)*100+"%";if(p>=1)show((cur+1)%3);},200);
-show(0);
+show(0);syncFav();renderWatch();
 
 // ---------- Vinduer ----------
 const modal=document.getElementById("modal"),wmodal=document.getElementById("wmodal");
-function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";
+function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";document.getElementById("mfav").hidden=true;
   document.getElementById("mhead").setAttribute("style",style);document.getElementById("mtitle").textContent=title;
   document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
-function openShow(s){
+function openShow(s){openShowInner(s);modalFav(s._t||"teater",s)}
+function openShowInner(s){
   if(s.times) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${s.times.length} forestillinger igjen:`,s.times.map(fmtDT),s.url,"Se mer og kjøp billetter");
   else if(s.next) fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}, ${esc(s.cat.toLowerCase())}</b><br>${s.about?esc(s.about)+"<br><br>":""}Neste forestilling: ${fmtDT(new Date(s.next))}. Alle datoer finner du på Operaens side.`,[],s.url,"Se datoer og kjøp billetter");
   else fill(s.title,headStyle(s.title,s.img),`<b>${esc(s.venue)}</b><br>${s.about?esc(s.about)+"<br><br>":""}${!s.from?"Se datoer og billetter på teaterets side":!s.to?"Spilles fra "+fmtDay(s.f)+". Se alle datoer på teaterets side":s.from===s.to?"Spilles "+fmtDay(s.f):"Spilles fra "+fmtDay(s.f)+" til "+fmtDay(s.t)}.`,[],s.url,"Se datoer og kjøp billetter");}
 function openFilm(f){
   const now=new Date(),shows=(f.shows||[]).filter(x=>new Date(x.d+"T"+x.t)>=now);
   const days=[...new Set(shows.map(x=>x.d))];
+  setTimeout(()=>modalFav("film",f));
   fill(f.title,headStyle(f.title,f.img),`<b>${[f.len,f.age].filter(Boolean).map(esc).join(". ")}</b>`,[],f.url,"Se filmen på nfkino.no");
   const box=document.getElementById("mdates");
   function showDay(d){
