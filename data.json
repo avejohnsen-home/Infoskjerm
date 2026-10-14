@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-14T05:41:54.414Z",
+ "updated": "2026-10-14T06:53:52.989Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-14",
-   "h": 7,
-   "temp": 6,
+   "h": 8,
+   "temp": 5,
    "wind": 1,
-   "sym": "partlycloudy_night",
+   "sym": "partlycloudy_day",
    "rain": 0,
    "span": 1
   },
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-10-14",
-      "h": 7,
-      "temp": 6,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-14",
       "h": 8,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
-      "sym": "clearsky_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -37,8 +28,8 @@
       "date": "2026-10-14",
       "h": 9,
       "temp": 6,
-      "wind": 0,
-      "sym": "fair_day",
+      "wind": 1,
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -46,7 +37,7 @@
       "date": "2026-10-14",
       "h": 10,
       "temp": 7,
-      "wind": 2,
+      "wind": 1,
       "sym": "fair_day",
       "rain": 0,
       "span": 1
@@ -56,7 +47,7 @@
       "h": 11,
       "temp": 9,
       "wind": 2,
-      "sym": "clearsky_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -73,7 +64,7 @@
       "date": "2026-10-14",
       "h": 13,
       "temp": 13,
-      "wind": 3,
+      "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -162,7 +153,7 @@
      {
       "date": "2026-10-14",
       "h": 23,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "fair_night",
       "rain": 0,
@@ -170,7 +161,7 @@
      }
     ],
     "max": 14,
-    "min": 6,
+    "min": 5,
     "rain": 0,
     "sym": "clearsky_day"
    },
@@ -180,7 +171,7 @@
      {
       "date": "2026-10-15",
       "h": 0,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "fair_night",
       "rain": 0,
@@ -189,7 +180,7 @@
      {
       "date": "2026-10-15",
       "h": 1,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -225,7 +216,7 @@
      {
       "date": "2026-10-15",
       "h": 5,
-      "temp": 9,
+      "temp": 8,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -244,7 +235,7 @@
       "date": "2026-10-15",
       "h": 7,
       "temp": 9,
-      "wind": 2,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -261,8 +252,8 @@
      {
       "date": "2026-10-15",
       "h": 9,
-      "temp": 11,
-      "wind": 3,
+      "temp": 12,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -279,7 +270,7 @@
      {
       "date": "2026-10-15",
       "h": 11,
-      "temp": 13,
+      "temp": 14,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
@@ -361,7 +352,7 @@
       "date": "2026-10-15",
       "h": 20,
       "temp": 13,
-      "wind": 6,
+      "wind": 5,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -395,7 +386,7 @@
      }
     ],
     "max": 14,
-    "min": 7,
+    "min": 8,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -442,7 +433,7 @@
       "date": "2026-10-16",
       "h": 4,
       "temp": 13,
-      "wind": 4,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -507,7 +498,7 @@
       "temp": 14,
       "wind": 1,
       "sym": "heavyrain",
-      "rain": 4.1,
+      "rain": 4.3,
       "span": 1
      },
      {
@@ -516,14 +507,14 @@
       "temp": 13,
       "wind": 5,
       "sym": "heavyrain",
-      "rain": 2.9,
+      "rain": 2.8,
       "span": 1
      },
      {
       "date": "2026-10-16",
       "h": 13,
       "temp": 12,
-      "wind": 5,
+      "wind": 4,
       "sym": "heavyrain",
       "rain": 1.3,
       "span": 1
@@ -532,7 +523,7 @@
       "date": "2026-10-16",
       "h": 14,
       "temp": 12,
-      "wind": 1,
+      "wind": 3,
       "sym": "rain",
       "rain": 3.4,
       "span": 6
@@ -549,7 +540,7 @@
     ],
     "max": 14,
     "min": 11,
-    "rain": 15.2,
+    "rain": 15.3,
     "sym": "heavyrain"
    },
    {
@@ -1046,7 +1037,7 @@
  "films": [
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002151-1000033270.jpg?itok=S3itZJ3q",
    "genres": [
     "Drama",
@@ -1365,7 +1356,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb, Seniorkino",
+     "v": "2D, Eng. tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/f840a1ee-7203-4152-800f-a004236bc8c9"
     },
     {
@@ -1409,12 +1400,12 @@
    "rt": "97%",
    "imdb": "7.7",
    "imdbId": "tt0114388",
-   "ratingsAt": "2026-10-14T05:42:21.546Z",
+   "ratingsAt": "2026-10-14T06:54:23.362Z",
    "city": "Oslo"
   },
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
+   "url": "https://www.nfkino.no/film/pensjonskuppet",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1936,12 +1927,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt39453840",
-   "ratingsAt": "2026-10-14T05:42:21.625Z",
+   "ratingsAt": "2026-10-14T06:54:23.417Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -2570,12 +2561,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-14T05:42:22.010Z",
+   "ratingsAt": "2026-10-14T06:54:23.666Z",
    "city": "Oslo"
   },
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -3086,12 +3077,12 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-10-14T05:42:22.327Z",
+   "ratingsAt": "2026-10-14T06:54:23.884Z",
    "city": "Oslo"
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "url": "https://www.nfkino.no/film/digger",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
    "genres": [
     "Drama",
@@ -3284,12 +3275,12 @@
    "rt": "70%",
    "imdb": "7.4",
    "imdbId": "tt9389916",
-   "ratingsAt": "2026-10-14T05:42:22.418Z",
+   "ratingsAt": "2026-10-14T06:54:23.949Z",
    "city": "Oslo"
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "url": "https://www.nfkino.no/film/verity",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -3618,12 +3609,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt32261958",
-   "ratingsAt": "2026-10-14T05:42:22.498Z",
+   "ratingsAt": "2026-10-14T06:54:24.002Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -4159,12 +4150,12 @@
    "rt": "99%",
    "imdb": "",
    "imdbId": "tt36841161",
-   "ratingsAt": "2026-10-14T05:42:22.587Z",
+   "ratingsAt": "2026-10-14T06:54:24.063Z",
    "city": "Oslo"
   },
   {
    "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
+   "url": "https://www.nfkino.no/film/mysteriepakken",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034091.jpg?itok=24OuaEHW",
    "genres": [],
    "len": "1 time 20 min",
@@ -4350,12 +4341,12 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-10-14T05:42:22.898Z",
+   "ratingsAt": "2026-10-14T06:54:24.277Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
+   "url": "https://www.nfkino.no/film/other-mommy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -4626,12 +4617,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt36586020",
-   "ratingsAt": "2026-10-14T05:42:22.986Z",
+   "ratingsAt": "2026-10-14T06:54:24.334Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
+   "url": "https://www.nfkino.no/film/street-fighter",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -4918,12 +4909,12 @@
    "rt": "11%",
    "imdb": "4.2",
    "imdbId": "tt0111301",
-   "ratingsAt": "2026-10-14T05:42:23.072Z",
+   "ratingsAt": "2026-10-14T06:54:24.401Z",
    "city": "Oslo"
   },
   {
    "title": "Monster Mia",
-   "url": "https://www.nfkino.no/film/monster-mia?city=oslo",
+   "url": "https://www.nfkino.no/film/monster-mia",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002582-1000030015.jpg?itok=DbT0lQjR",
    "genres": [
     "Komedie"
@@ -5275,12 +5266,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt38807889",
-   "ratingsAt": "2026-10-14T05:42:23.153Z",
+   "ratingsAt": "2026-10-14T06:54:24.455Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -5424,12 +5415,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt32375006",
-   "ratingsAt": "2026-10-14T05:42:23.248Z",
+   "ratingsAt": "2026-10-14T06:54:24.509Z",
    "city": "Oslo"
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
    "genres": [],
    "len": "1 time 49 min",
@@ -5682,12 +5673,12 @@
    "rt": "95%",
    "imdb": "7.7",
    "imdbId": "tt36583977",
-   "ratingsAt": "2026-10-14T05:42:23.338Z",
+   "ratingsAt": "2026-10-14T06:54:24.564Z",
    "city": "Oslo"
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
+   "url": "https://www.nfkino.no/film/social-reckoning",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002677-1000034219.jpg?itok=qSODOFx2",
    "genres": [
     "Drama",
@@ -5887,12 +5878,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt37510326",
-   "ratingsAt": "2026-10-14T05:42:23.426Z",
+   "ratingsAt": "2026-10-14T06:54:24.619Z",
    "city": "Oslo"
   },
   {
    "title": "Heart of the Beast",
-   "url": "https://www.nfkino.no/film/heart-beast?city=oslo",
+   "url": "https://www.nfkino.no/film/heart-beast",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002327-1000031679.jpg?itok=eFGsYId6",
    "genres": [
     "Action"
@@ -6082,12 +6073,12 @@
    "rt": "85%",
    "imdb": "7.5",
    "imdbId": "tt7526136",
-   "ratingsAt": "2026-10-14T05:42:23.514Z",
+   "ratingsAt": "2026-10-14T06:54:24.676Z",
    "city": "Oslo"
   },
   {
    "title": "Resident Evil",
-   "url": "https://www.nfkino.no/film/resident-evil?city=oslo",
+   "url": "https://www.nfkino.no/film/resident-evil",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
    "genres": [
     "Horror",
@@ -6207,7 +6198,7 @@
    "rt": "36%",
    "imdb": "6.6",
    "imdbId": "tt0120804",
-   "ratingsAt": "2026-10-14T05:42:23.596Z",
+   "ratingsAt": "2026-10-14T06:54:24.734Z",
    "city": "Oslo"
   }
  ],
