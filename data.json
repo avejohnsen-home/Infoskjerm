@@ -1,13 +1,16 @@
 {
- "updated": "2026-10-15T01:41:57.465Z",
- "errors": [],
+ "updated": "2026-10-15T02:42:59.609Z",
+ "errors": [
+  "trondelag: fetch failed",
+  "nyehjorten: page.content: Unable to retrieve content because the page is navigating and changing the content."
+ ],
  "weather": {
   "now": {
    "date": "2026-10-15",
-   "h": 3,
+   "h": 4,
    "temp": 9,
-   "wind": 3,
-   "sym": "partlycloudy_night",
+   "wind": 2,
+   "sym": "cloudy",
    "rain": 0,
    "span": 1
   },
@@ -15,15 +18,6 @@
    {
     "date": "2026-10-15",
     "hours": [
-     {
-      "date": "2026-10-15",
-      "h": 3,
-      "temp": 9,
-      "wind": 3,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-15",
       "h": 4,
@@ -279,7 +273,7 @@
      {
       "date": "2026-10-16",
       "h": 7,
-      "temp": 11,
+      "temp": 10,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -468,7 +462,7 @@
      {
       "date": "2026-10-17",
       "h": 3,
-      "temp": 9,
+      "temp": 8,
       "wind": 5,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -504,7 +498,7 @@
      {
       "date": "2026-10-17",
       "h": 7,
-      "temp": 7,
+      "temp": 6,
       "wind": 4,
       "sym": "clearsky_night",
       "rain": 0,
@@ -1194,7 +1188,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb, Babykino",
      "u": "https://www.nfkino.no/screening/2439/bc26c8f7-b10a-4f29-923d-73d7f706fc07"
     },
     {
