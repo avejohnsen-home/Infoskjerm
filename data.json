@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-15T10:44:16.023Z",
+ "updated": "2026-10-15T11:43:55.338Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-15",
-   "h": 12,
-   "temp": 14,
+   "h": 13,
+   "temp": 15,
    "wind": 7,
-   "sym": "cloudy",
+   "sym": "partlycloudy_day",
    "rain": 0,
    "span": 1
   },
@@ -17,26 +17,17 @@
     "hours": [
      {
       "date": "2026-10-15",
-      "h": 12,
-      "temp": 14,
-      "wind": 7,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-15",
       "h": 13,
-      "temp": 14,
+      "temp": 15,
       "wind": 7,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-15",
       "h": 14,
-      "temp": 14,
+      "temp": 15,
       "wind": 8,
       "sym": "cloudy",
       "rain": 0,
@@ -45,7 +36,7 @@
      {
       "date": "2026-10-15",
       "h": 15,
-      "temp": 14,
+      "temp": 15,
       "wind": 8,
       "sym": "cloudy",
       "rain": 0,
@@ -54,7 +45,7 @@
      {
       "date": "2026-10-15",
       "h": 16,
-      "temp": 14,
+      "temp": 15,
       "wind": 7,
       "sym": "cloudy",
       "rain": 0,
@@ -124,10 +115,10 @@
       "span": 1
      }
     ],
-    "max": 14,
+    "max": 15,
     "min": 14,
     "rain": 0,
-    "sym": "cloudy"
+    "sym": "partlycloudy_day"
    },
    {
     "date": "2026-10-16",
@@ -198,7 +189,7 @@
      {
       "date": "2026-10-16",
       "h": 7,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -207,7 +198,7 @@
      {
       "date": "2026-10-16",
       "h": 8,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -216,7 +207,7 @@
      {
       "date": "2026-10-16",
       "h": 9,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -234,7 +225,7 @@
      {
       "date": "2026-10-16",
       "h": 11,
-      "temp": 10,
+      "temp": 11,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -261,7 +252,7 @@
      {
       "date": "2026-10-16",
       "h": 14,
-      "temp": 11,
+      "temp": 12,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -432,7 +423,7 @@
      {
       "date": "2026-10-17",
       "h": 8,
-      "temp": 6,
+      "temp": 7,
       "wind": 4,
       "sym": "clearsky_day",
       "rain": 0,
@@ -953,16 +944,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Vildanden",
-   "venue": "Nationaltheatret, Amfiscenen",
-   "url": "https://www.nationaltheatret.no/forestillinger/vildanden",
-   "img": "https://cdn.sanity.io/images/4hthkcie/production/18f617137ac21aea492627dff277224ae64a9416-3840x2480.jpg?rect=0,0,3840,2160&w=1280&h=720&q=60&fit=max&auto=format",
-   "from": "2026-09-04",
-   "to": "2026-12-02",
-   "about": "Opplev Henrik Ibsens hjerteskjærende og dypt menneskelige drama om den livsnødvendige livsløgnen.",
-   "city": "Oslo"
-  },
-  {
    "title": "Svindlerne",
    "venue": "Nationaltheatret, Amfiscenen",
    "url": "https://www.nationaltheatret.no/forestillinger/svindlerne",
@@ -1013,6 +994,16 @@
    "city": "Oslo"
   },
   {
+   "title": "Vildanden",
+   "venue": "Nationaltheatret, Amfiscenen",
+   "url": "https://www.nationaltheatret.no/forestillinger/vildanden",
+   "img": "https://cdn.sanity.io/images/4hthkcie/production/18f617137ac21aea492627dff277224ae64a9416-3840x2480.jpg?rect=0,0,3840,2160&w=1280&h=720&q=60&fit=max&auto=format",
+   "from": "2026-09-04",
+   "to": "2026-12-02",
+   "about": "Opplev Henrik Ibsens hjerteskjærende og dypt menneskelige drama om den livsnødvendige livsløgnen.",
+   "city": "Oslo"
+  },
+  {
    "title": "Lykke til, Cathrine Frost!",
    "venue": "Nationaltheatret, Hovedscenen",
    "url": "https://www.nationaltheatret.no/forestillinger/lykke-til-cathrine-frost",
@@ -1036,7 +1027,7 @@
  "films": [
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002151-1000033270.jpg?itok=S3itZJ3q",
    "genres": [
     "Drama",
@@ -1050,6 +1041,7 @@
     "Klingenberg",
     "Ringen",
     "Saga",
+    "Symra",
     "Vika"
    ],
    "shows": [
@@ -1295,6 +1287,14 @@
     },
     {
      "d": "2026-10-22",
+     "t": "14:15",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Seniorkino, Kinoklubb, 70mm",
+     "u": "https://www.nfkino.no/screening/2590/e2523e46-1473-4210-9571-e7303d270104"
+    },
+    {
+     "d": "2026-10-22",
      "t": "15:00",
      "c": "Saga",
      "r": "1",
@@ -1333,12 +1333,13 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "ratingsAt": "2026-10-14T16:46:17.370Z",
+   "imdbId": "tt0114388",
+   "ratingsAt": "2026-10-15T11:44:24.422Z",
    "city": "Oslo"
   },
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet",
+   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1797,6 +1798,14 @@
     },
     {
      "d": "2026-10-22",
+     "t": "11:30",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/ebff7b48-6c45-4ae2-a3cc-4a94535ab388"
+    },
+    {
+     "d": "2026-10-22",
      "t": "12:30",
      "c": "Colosseum",
      "r": "4",
@@ -1851,12 +1860,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:17.428Z",
+   "imdbId": "tt39453840",
+   "ratingsAt": "2026-10-15T11:44:24.481Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -2397,12 +2407,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-14T16:46:17.689Z",
+   "ratingsAt": "2026-10-15T11:44:24.761Z",
    "city": "Oslo"
   },
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde",
+   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -2865,12 +2875,12 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-10-14T16:46:17.915Z",
+   "ratingsAt": "2026-10-15T11:44:25.001Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
+   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -3108,12 +3118,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.392Z",
+   "imdbId": "tt36586020",
+   "ratingsAt": "2026-10-15T11:44:25.079Z",
    "city": "Oslo"
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity",
+   "url": "https://www.nfkino.no/film/verity?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -3132,18 +3143,18 @@
     {
      "d": "2026-10-15",
      "t": "18:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/e80b56b2-f0ca-4e4d-a9f9-92032e87d0dc"
-    },
-    {
-     "d": "2026-10-15",
-     "t": "18:00",
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/f9dca635-7b6e-4e75-ad3c-cd3aff1ebae1"
+    },
+    {
+     "d": "2026-10-15",
+     "t": "18:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/e80b56b2-f0ca-4e4d-a9f9-92032e87d0dc"
     },
     {
      "d": "2026-10-15",
@@ -3385,12 +3396,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.033Z",
+   "imdbId": "tt32261958",
+   "ratingsAt": "2026-10-15T11:44:25.155Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -3405,14 +3417,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-15",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/530695cf-7936-483a-8472-1d9e04525b7f"
-    },
     {
      "d": "2026-10-15",
      "t": "15:00",
@@ -3845,12 +3849,13 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.093Z",
+   "imdbId": "tt36841161",
+   "ratingsAt": "2026-10-15T11:44:25.217Z",
    "city": "Oslo"
   },
   {
    "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034091.jpg?itok=24OuaEHW",
    "genres": [],
    "len": "1 time 20 min",
@@ -4036,12 +4041,12 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-10-14T16:46:18.329Z",
+   "ratingsAt": "2026-10-15T11:44:25.470Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter",
+   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -4327,12 +4332,13 @@
    "year": "",
    "rt": "11%",
    "imdb": "4.2",
-   "ratingsAt": "2026-10-14T16:46:18.456Z",
+   "imdbId": "tt0111301",
+   "ratingsAt": "2026-10-15T11:44:25.539Z",
    "city": "Oslo"
   },
   {
    "title": "Monster Mia",
-   "url": "https://www.nfkino.no/film/monster-mia",
+   "url": "https://www.nfkino.no/film/monster-mia?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002582-1000030015.jpg?itok=DbT0lQjR",
    "genres": [
     "Komedie"
@@ -4683,193 +4689,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.514Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
-   "genres": [
-    "Drama",
-    "Komedie"
-   ],
-   "len": "2 timer 9 min",
-   "age": "12 år",
-   "cinemas": [
-    "Colosseum",
-    "Gimle",
-    "Klingenberg",
-    "Ringen",
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-15",
-     "t": "13:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Seniorkino, 70mm",
-     "u": "https://www.nfkino.no/screening/2581/98fea747-bc72-470b-a2ff-d81d03008fff"
-    },
-    {
-     "d": "2026-10-15",
-     "t": "20:00",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/f32c88ef-0065-490e-9582-9e4956f870ee"
-    },
-    {
-     "d": "2026-10-15",
-     "t": "20:45",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/f3a93812-6dcf-4598-904d-769ec0dfd3d4"
-    },
-    {
-     "d": "2026-10-16",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/b8b1046e-82a2-4f4a-9d32-9cad7762d86c"
-    },
-    {
-     "d": "2026-10-16",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/ecee96ac-7354-4362-910d-b5afa2a088de"
-    },
-    {
-     "d": "2026-10-17",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/eb0f19a3-e9c0-48f3-9335-2a07953700e8"
-    },
-    {
-     "d": "2026-10-17",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/3a2177b0-6939-400f-be36-f53e5fb31b5f"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/5f00341e-b60e-482b-87cd-64cb22da4332"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/a6c041e8-ccc0-4541-8474-a055bc5a5427"
-    },
-    {
-     "d": "2026-10-19",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/4e5dcd0c-4e5d-4ad0-b3b0-6c15528c8276"
-    },
-    {
-     "d": "2026-10-19",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/2a944399-02ee-42c7-a6c7-f657a3e29c8e"
-    },
-    {
-     "d": "2026-10-20",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/767c366c-6a9f-4291-bb06-a571ca4537d0"
-    },
-    {
-     "d": "2026-10-20",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/60cf7e7b-c3ea-40cf-8b9c-36b571558e72"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/0dafe1d2-c700-4859-bf09-19a9e9c6c0eb"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/1002/12841046-49f7-4fbf-9611-7dc81377a8fc"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/68f615c4-a7f0-45df-af82-1b3709c1aee0"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/832b8714-5f75-425d-8574-04787eb5164b"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/1002/c3db527e-4c2c-4be6-84dd-af3549e929a8"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/67cece8b-080f-4619-bd7d-079ae5fbe434"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142789-1000029846.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Digger",
-   "year": "",
-   "rt": "70%",
-   "imdb": "7.4",
-   "ratingsAt": "2026-10-14T16:46:17.976Z",
+   "imdbId": "tt38807889",
+   "ratingsAt": "2026-10-15T11:44:25.604Z",
    "city": "Oslo"
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy",
+   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
    "genres": [],
    "len": "1 time 49 min",
@@ -5089,12 +4915,186 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "ratingsAt": "2026-10-14T16:46:18.634Z",
+   "imdbId": "tt36583977",
+   "ratingsAt": "2026-10-15T11:44:25.664Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Digger",
+   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
+   "genres": [
+    "Drama",
+    "Komedie"
+   ],
+   "len": "2 timer 9 min",
+   "age": "12 år",
+   "cinemas": [
+    "Colosseum",
+    "Klingenberg",
+    "Ringen",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-15",
+     "t": "20:00",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/f32c88ef-0065-490e-9582-9e4956f870ee"
+    },
+    {
+     "d": "2026-10-15",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/f3a93812-6dcf-4598-904d-769ec0dfd3d4"
+    },
+    {
+     "d": "2026-10-16",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/b8b1046e-82a2-4f4a-9d32-9cad7762d86c"
+    },
+    {
+     "d": "2026-10-16",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/ecee96ac-7354-4362-910d-b5afa2a088de"
+    },
+    {
+     "d": "2026-10-17",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/eb0f19a3-e9c0-48f3-9335-2a07953700e8"
+    },
+    {
+     "d": "2026-10-17",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3a2177b0-6939-400f-be36-f53e5fb31b5f"
+    },
+    {
+     "d": "2026-10-18",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/5f00341e-b60e-482b-87cd-64cb22da4332"
+    },
+    {
+     "d": "2026-10-18",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a6c041e8-ccc0-4541-8474-a055bc5a5427"
+    },
+    {
+     "d": "2026-10-19",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/4e5dcd0c-4e5d-4ad0-b3b0-6c15528c8276"
+    },
+    {
+     "d": "2026-10-19",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2a944399-02ee-42c7-a6c7-f657a3e29c8e"
+    },
+    {
+     "d": "2026-10-20",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/767c366c-6a9f-4291-bb06-a571ca4537d0"
+    },
+    {
+     "d": "2026-10-20",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/60cf7e7b-c3ea-40cf-8b9c-36b571558e72"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0dafe1d2-c700-4859-bf09-19a9e9c6c0eb"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "12:30",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/1002/12841046-49f7-4fbf-9611-7dc81377a8fc"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/68f615c4-a7f0-45df-af82-1b3709c1aee0"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/832b8714-5f75-425d-8574-04787eb5164b"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "12:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/1002/c3db527e-4c2c-4be6-84dd-af3549e929a8"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/67cece8b-080f-4619-bd7d-079ae5fbe434"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142789-1000029846.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Digger",
+   "year": "",
+   "rt": "70%",
+   "imdb": "7.4",
+   "imdbId": "tt9389916",
+   "ratingsAt": "2026-10-15T11:44:25.724Z",
    "city": "Oslo"
   },
   {
    "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode",
+   "url": "https://www.nfkino.no/film/markens-grode?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-58c948b923-176680-vst-6a9e9ce7b2a9c.jpeg?itok=YLF-9Gaz",
    "genres": [
     "Drama"
@@ -5121,12 +5121,13 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-10-14T16:46:18.920Z",
+   "imdbId": "tt0011440",
+   "ratingsAt": "2026-10-15T11:44:25.791Z",
    "city": "Oslo"
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning",
+   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002677-1000034219.jpg?itok=qSODOFx2",
    "genres": [
     "Drama",
@@ -5141,14 +5142,6 @@
     "Saga"
    ],
    "shows": [
-    {
-     "d": "2026-10-15",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/1001/2424102a-e4ab-4fa0-ae85-e7106a8f9619"
-    },
     {
      "d": "2026-10-15",
      "t": "17:45",
@@ -5293,12 +5286,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.865Z",
+   "imdbId": "tt37510326",
+   "ratingsAt": "2026-10-15T11:44:25.853Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -5407,12 +5401,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T16:46:18.571Z",
+   "imdbId": "tt32375006",
+   "ratingsAt": "2026-10-15T11:44:25.912Z",
    "city": "Oslo"
   },
   {
    "title": "Whalefall",
-   "url": "https://www.nfkino.no/film/whalefall",
+   "url": "https://www.nfkino.no/film/whalefall?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-740642-1000029776.jpg?itok=RH275R08",
    "genres": [
     "Thriller"
@@ -5570,7 +5565,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-14T18:51:43.431Z",
+   "imdbId": "tt28535715",
+   "ratingsAt": "2026-10-15T11:44:25.995Z",
    "city": "Oslo"
   }
  ],
@@ -5597,20 +5593,6 @@
   }
  ],
  "operaen": [
-  {
-   "title": "Formiddagsarien: La bohème",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/formiddagsarien-la-boheme-opera/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/opera/la-boheme/la-boheme-foto-adam-olsson-operaen.no-1600x1200px.jpg",
-   "next": "2026-10-15T13:00",
-   "genres": [
-    "opera"
-   ],
-   "from": null,
-   "to": null,
-   "about": "Formiddagsarien:",
-   "city": "Oslo"
-  },
   {
    "title": "Alan Lucien Øyen: Vildanden",
    "venue": "Operaen",
@@ -12854,18 +12836,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Icona Pop",
-   "venue": "Vulkan Arena",
-   "url": "ICONA POP TIL OSLO!\n\nIcona Pop kommer til Oslo og Vulkan Arena fredag 30. oktober! Den svenske duoen er kjent for sin kompromissløse energi, sterke pophooks og grenseløse uttrykk, og i august er de klare med det nye albumet «Ritual».\n\n\nBilletter i salg mandag 25. mai kl. 10.00.\nhttps://www.ticketmaster.no/event/1701378823\n\n \nCaroline Hjelt og Aino Jawo slo for alvor gjennom med monsterhiten «I Love It» feat. Charli XCX, og har siden etablert seg som en av popmusikkens mest fryktløse og kreative duoer.\n\n\nMed sitt kommende album «Ritual», som slippes 14. august, tar de et steg videre både musikalsk og personlig. Albumet beskrives som et kraftfullt manifest for vennskap, frihet og selvutfoldelse, der Icona Pop kombinerer klubbrytmer, emosjonelle synthlandskap og rå ærlighet.\n\n\nGjennom karrieren har duoen samarbeidet med artister som Charli XCX, Sofi Tukker og Joel Corry, samtidig som de har levert energiske liveshow verden over. Nå er de klare for å innta Vulkan Arena med en kveld fylt av euforisk pop, kompromissløs attitude og låter som inviterer publikum ut på dansegulvet!\n\n______________________\n\nPraktisk info\nVi anbefaler å komme i god tid da det kan oppstå kø ved inngangen. Dette arrangementet har ståplasser.\n\nAldersgrense\nArrangementet har 18 års aldersgrense. Gyldig legitimasjon må fremvises ved inngang. Vi har ingen vergeordning – Dersom du kjøper billett til en 18+ konsert for noen under 18 år, er ikke Vulkan Arena ansvarlig dersom personen blir nektet adgang.",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_6H7L83pX1?tr=w-600",
-   "times": [
-    "2026-10-30T20:00"
-   ],
-   "hint": "synth-pop dance/electro indie pop",
-   "about": "Icona Pop kommer til Oslo og Vulkan Arena fredag 30. oktober! Den svenske duoen er kjent for sin kompromissløse energi, sterke pophooks og grenseløse uttrykk, og i august er de klare med det nye albumet «Ritual». Billett",
-   "city": "Oslo"
-  },
-  {
    "title": "Käärijä",
    "venue": "Vulkan Arena",
    "url": "https://www.ticketmaster.no/event/1948858881",
@@ -15756,7 +15726,7 @@
    "title": "Reiselitteraturfestivalen 2026",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/november/reiselitteraturfestivalen-2026",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/Reisefestival_5351x3568.jpeg?h=bf34fbab&itok=fYs_b245",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Reisefestival_1920x1080.jpg?h=bb981b7f&itok=tnXmaiap",
    "from": "2026-11-21",
    "to": "2026-11-21",
    "about": "",
@@ -17628,10 +17598,6 @@
    "at": 1791945930005
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49144/": {
-   "p": [],
-   "at": 1791945930005
-  },
-  "https://www.operaen.no/forestillinger/formiddagsarien-la-boheme-opera/": {
    "p": [],
    "at": 1791945930005
   },
