@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-15T16:44:35.377Z",
+ "updated": "2026-10-15T17:40:58.214Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-15",
-   "h": 18,
+   "h": 19,
    "temp": 14,
    "wind": 7,
    "sym": "cloudy",
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-15",
     "hours": [
-     {
-      "date": "2026-10-15",
-      "h": 18,
-      "temp": 14,
-      "wind": 7,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-15",
       "h": 19,
@@ -189,7 +180,7 @@
      {
       "date": "2026-10-16",
       "h": 12,
-      "temp": 11,
+      "temp": 12,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -207,7 +198,7 @@
      {
       "date": "2026-10-16",
       "h": 14,
-      "temp": 12,
+      "temp": 13,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -378,7 +369,7 @@
      {
       "date": "2026-10-17",
       "h": 8,
-      "temp": 6,
+      "temp": 7,
       "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
@@ -732,7 +723,6 @@
    "url": "https://christianiateaterscene.no/80",
    "img": "https://cdn.sanity.io/images/g24jximr/production/d87cd56fb506a8dd10ff359cf019c16514f8d812-1850x1850.jpg?h=400&auto=format",
    "times": [
-    "2026-10-15T19:00",
     "2026-10-16T19:00",
     "2026-10-17T16:30",
     "2026-10-17T19:00",
@@ -4721,6 +4711,38 @@
    "city": "Oslo"
   },
   {
+   "title": "Markens grøde",
+   "url": "https://www.nfkino.no/film/markens-grode",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-58c948b923-176680-vst-6a9e9ce7b2a9c.jpeg?itok=YLF-9Gaz",
+   "genres": [
+    "Drama"
+   ],
+   "len": "2 timer 39 min",
+   "age": "12 år",
+   "cinemas": [
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-22",
+     "t": "19:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Event",
+     "u": "https://www.nfkino.no/screening/2612/5679cd60-8dbd-46d1-9ae3-7b88c133fe39"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001856-1000031158.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Markens grøde",
+   "year": "",
+   "rt": "",
+   "imdb": "6.5",
+   "ratingsAt": "2026-10-15T12:55:34.404Z",
+   "city": "Oslo"
+  },
+  {
    "title": "Digger",
    "url": "https://www.nfkino.no/film/digger",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
@@ -4893,38 +4915,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-58c948b923-176680-vst-6a9e9ce7b2a9c.jpeg?itok=YLF-9Gaz",
-   "genres": [
-    "Drama"
-   ],
-   "len": "2 timer 39 min",
-   "age": "12 år",
-   "cinemas": [
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "19:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Event",
-     "u": "https://www.nfkino.no/screening/2612/5679cd60-8dbd-46d1-9ae3-7b88c133fe39"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001856-1000031158.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Markens grøde",
-   "year": "",
-   "rt": "",
-   "imdb": "6.5",
-   "ratingsAt": "2026-10-15T12:55:34.404Z",
-   "city": "Oslo"
-  },
-  {
    "title": "En nasjon i sjakk",
    "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
@@ -4939,14 +4929,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-15",
-     "t": "19:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Strikkekino",
-     "u": "https://www.nfkino.no/screening/2590/a2f3f574-eaf5-42ae-adc6-e9169f40368a"
-    },
     {
      "d": "2026-10-15",
      "t": "20:40",
@@ -5252,20 +5234,6 @@
  ],
  "operaen": [
   {
-   "title": "Alan Lucien Øyen: Vildanden",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-vildanden/wild-duck-17-10-24-coronet-theatre-1913.jpg",
-   "next": "2026-10-15T19:30",
-   "genres": [
-    "ballett"
-   ],
-   "from": null,
-   "to": null,
-   "about": "Alan Lucien Øyen: ",
-   "city": "Oslo"
-  },
-  {
    "title": "León & Lightfoot: Salle de danse",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
@@ -5277,6 +5245,20 @@
    "from": null,
    "to": null,
    "about": "León & Lightfoot:",
+   "city": "Oslo"
+  },
+  {
+   "title": "Alan Lucien Øyen: Vildanden",
+   "venue": "Operaen",
+   "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/",
+   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-vildanden/wild-duck-17-10-24-coronet-theatre-1913.jpg",
+   "next": "2026-10-16T19:30",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Alan Lucien Øyen: ",
    "city": "Oslo"
   },
   {
@@ -9019,17 +9001,6 @@
    "to": null,
    "about": "",
    "hint": "For barnDen perfekte premieren(og det som vart litt dumt)Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "15 år",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/framsyningar/15-ar",
-   "img": "https://detnorsketeatret.imgix.net/framsyningar/15-ar/15%C3%A5r_utvalg1_OHA-35_2026-06-09-120859_kmrj.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
-   "from": null,
-   "to": null,
-   "about": "",
-   "hint": "15 årDagsavisen: «en fortelling om samhold og respekt for menneskeverdet», terningkast 5Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -14930,17 +14901,6 @@
  ],
  "k_cosmopolite": [
   {
-   "title": "Karl Seglem FolkJazzWorld feat. Ramesh Shotham",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/karl-seglem-folkjazzworld-feat-ramesh-shotham",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-05/KASegl--4.jpg?itok=52Oj5ivG",
-   "from": "2026-10-15",
-   "to": "2026-10-15",
-   "about": "",
-   "hint": "Cosmopolite Scene Jazz Kjøp billettKarl Seglem FolkJazzWorld feat. Ramesh Shotham15. oktober Kjøp billett",
-   "city": "Oslo"
-  },
-  {
    "title": "Adam Pierończyk feat. Majid Bekkas & DJ Eprom",
    "venue": "Cosmopolite, Belleville",
    "url": "https://cosmopolite.no/program/belleville/2026/oktober/adam-pieronczyk-feat-majid-bekkas-dj-eprom",
@@ -15720,6 +15680,17 @@
    "about": "",
    "hint": "Original Talks Podcast Kjøp billettPå innsiden av psychohoder LIVE13. januar Kjøp billett",
    "city": "Oslo"
+  },
+  {
+   "title": "An evening with Airbag and Oak",
+   "venue": "Cosmopolite",
+   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/evening-airbag-and-oak",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/Cosmopolite_83173397881368_6633969412123475143_Airbag_Oak.png?itok=PGpHjRCa",
+   "from": "2027-01-15",
+   "to": "2027-01-15",
+   "about": "",
+   "hint": "Airbag and Oak Alternativ Rock Kjøp billettAn evening with Airbag and Oak15. januar Kjøp billett",
+   "city": "Oslo"
   }
  ],
  "nyehjorten": [
@@ -15729,7 +15700,6 @@
    "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
    "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
    "times": [
-    "2026-10-15T19:00",
     "2026-10-16T19:00",
     "2026-10-20T19:00",
     "2026-10-21T19:00",
@@ -16118,14 +16088,6 @@
    "p": [],
    "at": 1791929885648
   },
-  "https://cosmopolite.no/program/cosmopolite/2026/oktober/karl-seglem-folkjazzworld-feat-ramesh-shotham": {
-   "p": [],
-   "at": 1791929885648
-  },
-  "https://christianiateaterscene.no/80": {
-   "p": [],
-   "at": 1791929885648
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46201/": {
    "p": [],
    "at": 1791929885648
@@ -16139,6 +16101,10 @@
    "at": 1791929885648
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46575/": {
+   "p": [],
+   "at": 1791929885648
+  },
+  "https://christianiateaterscene.no/80": {
    "p": [],
    "at": 1791929885648
   },
@@ -16945,6 +16911,10 @@
    ],
    "at": 1791939428209
   },
+  "https://cosmopolite.no/program/cosmopolite/2027/januar/evening-airbag-and-oak": {
+   "p": [],
+   "at": 1792086189662
+  },
   "https://billetter.okh.no/nb/buyingflow/tickets/33749/": {
    "p": [],
    "at": 1791939428209
@@ -17285,20 +17255,20 @@
    "p": [],
    "at": 1791945930005
   },
-  "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/": {
-   "p": [
-    {
-     "l": "Fra",
-     "kr": 595
-    }
-   ],
-   "at": 1791945930005
-  },
   "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/": {
    "p": [
     {
      "l": "Fra",
      "kr": 195
+    }
+   ],
+   "at": 1791945930005
+  },
+  "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/": {
+   "p": [
+    {
+     "l": "Fra",
+     "kr": 595
     }
    ],
    "at": 1791945930005
@@ -17734,10 +17704,6 @@
    "at": 1791953212712
   },
   "https://www.detnorsketeatret.no/framsyningar/den-perfekte-premieren-og-det-som-vart-litt-dumt": {
-   "p": [],
-   "at": 1791953212712
-  },
-  "https://www.detnorsketeatret.no/framsyningar/15-ar": {
    "p": [],
    "at": 1791953212712
   },
