@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-16T16:43:34.912Z",
+ "updated": "2026-10-16T17:40:04.042Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-16",
-   "h": 18,
-   "temp": 11,
-   "wind": 2,
-   "sym": "partlycloudy_night",
+   "h": 19,
+   "temp": 10,
+   "wind": 1,
+   "sym": "fair_night",
    "rain": 0,
    "span": 1
   },
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-16",
     "hours": [
-     {
-      "date": "2026-10-16",
-      "h": 18,
-      "temp": 11,
-      "wind": 2,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-16",
       "h": 19,
@@ -70,10 +61,10 @@
       "span": 1
      }
     ],
-    "max": 11,
+    "max": 10,
     "min": 7,
     "rain": 0,
-    "sym": "partlycloudy_night"
+    "sym": "fair_night"
    },
    {
     "date": "2026-10-17",
@@ -732,7 +723,6 @@
    "url": "https://christianiateaterscene.no/80",
    "img": "https://cdn.sanity.io/images/g24jximr/production/d87cd56fb506a8dd10ff359cf019c16514f8d812-1850x1850.jpg?h=400&auto=format",
    "times": [
-    "2026-10-16T19:00",
     "2026-10-17T16:30",
     "2026-10-17T19:00",
     "2026-10-22T19:00",
@@ -1066,12 +1056,12 @@
    ],
    "shows": [
     {
-     "d": "2026-10-16",
-     "t": "19:15",
-     "c": "Vika",
+     "d": "2026-10-17",
+     "t": "12:00",
+     "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/10bb588c-dafe-4f4e-8796-dc7f5e614d54"
+     "u": "https://www.nfkino.no/screening/1002/a193f75e-515e-4825-88a4-5d42d7497058"
     },
     {
      "d": "2026-10-17",
@@ -1080,14 +1070,6 @@
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2612/eb8e0100-3620-492b-96fa-4843b3b2030b"
-    },
-    {
-     "d": "2026-10-17",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/a193f75e-515e-4825-88a4-5d42d7497058"
     },
     {
      "d": "2026-10-17",
@@ -3704,6 +3686,22 @@
      "r": "5",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/51b439ba-bb44-44bf-8367-6dd47b15e6c2"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "17:45",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/494b58c9-869c-4cb4-ba14-656e6cf26bbf"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "17:45",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/08f68051-3e7f-4894-a87b-e2094d5055fd"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002582-1000031364.mp4",
@@ -4403,6 +4401,49 @@
    "city": "Oslo"
   },
   {
+   "title": "Clayface",
+   "url": "https://www.nfkino.no/film/clayface",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
+   "genres": [
+    "Drama",
+    "Action",
+    "Horror"
+   ],
+   "len": "1 time 48 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-23",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/2439/b54d92ce-61c3-4af4-bbfb-35e5c9970e80"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "18:00",
+     "c": "Colosseum",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142799-1000033534.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Clayface",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-10-16T11:43:40.315Z",
+   "city": "Oslo"
+  },
+  {
    "title": "Whalefall",
    "url": "https://www.nfkino.no/film/whalefall",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-740642-1000029776.jpg?itok=RH275R08",
@@ -4555,40 +4596,6 @@
    "rt": "",
    "imdb": "",
    "ratingsAt": "2026-10-16T11:43:40.238Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Clayface",
-   "url": "https://www.nfkino.no/film/clayface",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
-   "genres": [
-    "Drama",
-    "Action",
-    "Horror"
-   ],
-   "len": "1 time 48 min",
-   "age": "15 år",
-   "cinemas": [
-    "Colosseum"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-23",
-     "t": "18:00",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142799-1000033534.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Clayface",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-10-16T11:43:40.315Z",
    "city": "Oslo"
   },
   {
@@ -4745,34 +4752,6 @@
  ],
  "operaen": [
   {
-   "title": "León & Lightfoot: Salle de danse",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/leon-lightfoot/salle-de-danse-foto-erik-berg-operaen.no-1600x1200px.jpg",
-   "next": "2026-10-16T19:00",
-   "genres": [
-    "ballett"
-   ],
-   "from": null,
-   "to": null,
-   "about": "León & Lightfoot:",
-   "city": "Oslo"
-  },
-  {
-   "title": "Alan Lucien Øyen: Vildanden",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-vildanden/wild-duck-17-10-24-coronet-theatre-1913.jpg",
-   "next": "2026-10-16T19:30",
-   "genres": [
-    "ballett"
-   ],
-   "from": null,
-   "to": null,
-   "about": "Alan Lucien Øyen: ",
-   "city": "Oslo"
-  },
-  {
    "title": "Lørdagsdans",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/lordagsdans-ballett/",
@@ -4801,6 +4780,34 @@
    "from": null,
    "to": null,
    "about": "Opera for alle:",
+   "city": "Oslo"
+  },
+  {
+   "title": "Alan Lucien Øyen: Vildanden",
+   "venue": "Operaen",
+   "url": "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/",
+   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/alan-lucien-oyen-vildanden/wild-duck-17-10-24-coronet-theatre-1913.jpg",
+   "next": "2026-10-17T13:30",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "Alan Lucien Øyen: ",
+   "city": "Oslo"
+  },
+  {
+   "title": "León & Lightfoot: Salle de danse",
+   "venue": "Operaen",
+   "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
+   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/leon-lightfoot/salle-de-danse-foto-erik-berg-operaen.no-1600x1200px.jpg",
+   "next": "2026-10-17T18:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "León & Lightfoot:",
    "city": "Oslo"
   },
   {
@@ -14492,17 +14499,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Avlyst",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/sanam-marvi",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-05/%C2%A9Lime%20Studios%203.jpeg?itok=UKjZJlBm",
-   "from": "2026-10-28",
-   "to": "2026-10-28",
-   "about": "",
-   "hint": "Oslo World Folk AvlystSanam Marvi28. oktober Avlyst",
-   "city": "Oslo"
-  },
-  {
    "title": "Salvador Sobral",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/salvador-sobral",
@@ -15150,46 +15146,20 @@
    "about": "",
    "hint": "Airbag and Oak Alternativ Rock Kjøp billettAn evening with Airbag and Oak15. januar Kjøp billett",
    "city": "Oslo"
+  },
+  {
+   "title": "Eddie Jobson’s U.K. Revisited",
+   "venue": "Cosmopolite",
+   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/eddie-jobsons-uk-revisited",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Cosmopolite_83173397881368_6669097607145749864_IMG_8059.png?h=fadaf7db&itok=Zbf-mtCC",
+   "from": "2027-01-20",
+   "to": "2027-01-20",
+   "about": "",
+   "hint": "Zappaunion Progrock Kjøp billettEddie Jobson’s U.K. Revisited20. januar Kjøp billett",
+   "city": "Oslo"
   }
  ],
  "nyehjorten": [
-  {
-   "title": "Elling og Kjell Bjarne",
-   "venue": "Nye Hjorten Teater, Hovedscenen",
-   "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
-   "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
-   "times": [
-    "2026-10-16T19:00",
-    "2026-10-20T19:00",
-    "2026-10-21T19:00",
-    "2026-10-22T19:00",
-    "2026-10-23T19:00",
-    "2026-10-29T19:30",
-    "2026-10-30T19:30",
-    "2026-10-31T19:30",
-    "2026-11-05T19:30",
-    "2026-11-06T19:30",
-    "2026-11-07T19:30",
-    "2027-01-07T19:30",
-    "2027-01-08T19:30",
-    "2027-01-09T19:30",
-    "2027-01-13T19:30",
-    "2027-01-14T19:30",
-    "2027-01-15T19:30",
-    "2027-01-16T19:30",
-    "2027-01-23T19:30",
-    "2027-01-27T19:30",
-    "2027-01-28T20:00",
-    "2027-01-29T20:00",
-    "2027-01-30T19:30",
-    "2027-02-10T19:30",
-    "2027-02-11T19:30",
-    "2027-02-12T20:00",
-    "2027-02-13T19:30"
-   ],
-   "hint": "Elling og Kjell Bjarne",
-   "city": "Trondheim"
-  },
   {
    "title": "Evig Ung",
    "venue": "Nye Hjorten Teater, Hovedscenen",
@@ -15231,6 +15201,42 @@
     "2026-10-18T18:00"
    ],
    "hint": "Chicago!",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Elling og Kjell Bjarne",
+   "venue": "Nye Hjorten Teater, Hovedscenen",
+   "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "times": [
+    "2026-10-20T19:00",
+    "2026-10-21T19:00",
+    "2026-10-22T19:00",
+    "2026-10-23T19:00",
+    "2026-10-29T19:30",
+    "2026-10-30T19:30",
+    "2026-10-31T19:30",
+    "2026-11-05T19:30",
+    "2026-11-06T19:30",
+    "2026-11-07T19:30",
+    "2027-01-07T19:30",
+    "2027-01-08T19:30",
+    "2027-01-09T19:30",
+    "2027-01-13T19:30",
+    "2027-01-14T19:30",
+    "2027-01-15T19:30",
+    "2027-01-16T19:30",
+    "2027-01-23T19:30",
+    "2027-01-27T19:30",
+    "2027-01-28T20:00",
+    "2027-01-29T20:00",
+    "2027-01-30T19:30",
+    "2027-02-10T19:30",
+    "2027-02-11T19:30",
+    "2027-02-12T20:00",
+    "2027-02-13T19:30"
+   ],
+   "hint": "Elling og Kjell Bjarne",
    "city": "Trondheim"
   },
   {
@@ -15555,10 +15561,6 @@
    "p": [],
    "at": 1791929885648
   },
-  "https://christianiateaterscene.no/80": {
-   "p": [],
-   "at": 1791929885648
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/48707/": {
    "p": [],
    "at": 1791929885648
@@ -15584,6 +15586,10 @@
    "at": 1791929885648
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46511/": {
+   "p": [],
+   "at": 1791929885648
+  },
+  "https://christianiateaterscene.no/80": {
    "p": [],
    "at": 1791929885648
   },
@@ -15700,10 +15706,6 @@
    "at": 1791930173948
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47730/": {
-   "p": [],
-   "at": 1791930173948
-  },
-  "https://cosmopolite.no/program/cosmopolite/2026/oktober/sanam-marvi": {
    "p": [],
    "at": 1791930173948
   },
@@ -16378,6 +16380,10 @@
    "p": [],
    "at": 1791939428209
   },
+  "https://cosmopolite.no/program/cosmopolite/2027/januar/eddie-jobsons-uk-revisited": {
+   "p": [],
+   "at": 1792172553058
+  },
   "https://christianiateaterscene.no/lillebjorn": {
    "p": [],
    "at": 1791939428209
@@ -16714,13 +16720,12 @@
    "p": [],
    "at": 1791945930005
   },
-  "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/": {
-   "p": [
-    {
-     "l": "Fra",
-     "kr": 195
-    }
-   ],
+  "https://www.operaen.no/forestillinger/lordagsdans-ballett/": {
+   "p": [],
+   "at": 1791945930005
+  },
+  "https://www.operaen.no/forestillinger/opera-for-alle-lordagssang/": {
+   "p": [],
    "at": 1791945930005
   },
   "https://www.operaen.no/forestillinger/alan-lucien-oyen-vildanden-teater/": {
@@ -16732,12 +16737,13 @@
    ],
    "at": 1791945930005
   },
-  "https://www.operaen.no/forestillinger/lordagsdans-ballett/": {
-   "p": [],
-   "at": 1791945930005
-  },
-  "https://www.operaen.no/forestillinger/opera-for-alle-lordagssang/": {
-   "p": [],
+  "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/": {
+   "p": [
+    {
+     "l": "Fra",
+     "kr": 195
+    }
+   ],
    "at": 1791945930005
   },
   "https://www.operaen.no/forestillinger/operahogskolens-balkongkonsert-konsert/": {
