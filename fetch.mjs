@@ -325,6 +325,8 @@ function datesIn(text) {
   }
   return [...out].sort();
 }
+const JUNK_TITLE = /^kontakt oss$|^teater for barn$|du kontrollerer|dine egne data|informasjonskapsl|cookie|samtykke|personvern|nyhetsbrev|meld deg på|logo$|^meny$|^søk$|gavekort/i;
+const JUNK_URL = /personvern|cookie|informasjonskapsl|samtykke|nyhetsbrev|gavekort|ledige-stillinger|kontakt|om-oss|praktisk|billettinfo|vennelaget|podkast|privacy/i;
 function cardsFrom($, base, venue, pathHint, opts = {}) {
   const origin = new URL(base).origin, listPath = new URL(base).pathname.replace(/\/$/, "");
   const norm = h => { try { const u = new URL(h, base); u.hash = ""; return u.href.replace(/\/$/, ""); } catch { return ""; } };
@@ -341,16 +343,21 @@ function cardsFrom($, base, venue, pathHint, opts = {}) {
     });
     const dates = datesIn(card.text().replace(/\s+/g, " "));
     if ((!dates.length && !opts.noDates) || !card.find("img").length) return;
-    const title = (card.find("h1,h2,h3,h4").first().text() || card.find("img").first().attr("alt") || $(a).text()).replace(/\s+/g, " ").trim();
+    let title = (card.find("h1,h2,h3,h4").first().text() || card.find("img").first().attr("alt") || $(a).text()).replace(/\u00ad/g, "").replace(/\s+/g, " ").trim();
+    // fjern kategorietiketter som henger fast i tittelen, f.eks. «MUSIKALENCabaret», «FOR BARNPippi», «…Gratis»
+    title = title.replace(/^(musikalen|for barn|lunsj\s*&\s*lyrikk|innsikt|omvising|konsert|gjestespel|gjestespill)\s*/i, "").replace(/gratis$/i, "").trim();
     if (!title || title.length > 90) return;
+    // hopp over cookie-vinduer, nyhetsbrev, personvern o.l. (ikke forestillinger)
+    if (JUNK_TITLE.test(title) || JUNK_URL.test(u.pathname)) return;
     const s = shows.get(href) || { title, venue, url: href, img: imgOf(card, base), dates: [], hint: card.text().replace(/\s+/g, " ").slice(0, 300) };
     s.dates.push(...dates); shows.set(href, s);
   });
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toISOString().slice(0, 10), seenTitle = new Set();
   return [...shows.values()].map(s => {
     const d = [...new Set(s.dates)].sort();
     return { title: s.title, venue: s.venue, url: s.url, img: s.img, from: d[0] || null, to: d[d.length - 1] || null, about: "", hint: s.hint };
-  }).filter(s => !s.to || s.to >= today);
+  }).filter(s => !s.to || s.to >= today)
+    .filter(s => { const k = s.title.toLowerCase(); if (seenTitle.has(k)) return false; seenTitle.add(k); return true; });   // samme tittel bare én gang
 }
 async function rendered(browser, urls, venue, pathHint, opts) {
   const page = await browser.newPage({ userAgent: UA, locale: "nb-NO" });
