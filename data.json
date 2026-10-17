@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-17T19:35:07.274Z",
+ "updated": "2026-10-17T20:38:34.010Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-17",
-   "h": 21,
+   "h": 22,
    "temp": 6,
-   "wind": 2,
+   "wind": 1,
    "sym": "clearsky_night",
    "rain": 0,
    "span": 1
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-17",
     "hours": [
-     {
-      "date": "2026-10-17",
-      "h": 21,
-      "temp": 6,
-      "wind": 2,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-17",
       "h": 22,
@@ -144,7 +135,7 @@
      {
       "date": "2026-10-18",
       "h": 10,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
@@ -234,7 +225,7 @@
      {
       "date": "2026-10-18",
       "h": 20,
-      "temp": 7,
+      "temp": 6,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -252,7 +243,7 @@
      {
       "date": "2026-10-18",
       "h": 22,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -288,7 +279,7 @@
      {
       "date": "2026-10-19",
       "h": 1,
-      "temp": 5,
+      "temp": 4,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -342,7 +333,7 @@
      {
       "date": "2026-10-19",
       "h": 7,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -405,7 +396,7 @@
      {
       "date": "2026-10-19",
       "h": 14,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -450,7 +441,7 @@
      {
       "date": "2026-10-19",
       "h": 19,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -494,7 +485,7 @@
      }
     ],
     "max": 10,
-    "min": 4,
+    "min": 3,
     "rain": 0,
     "sym": "partlycloudy_day"
    },
@@ -533,7 +524,7 @@
       "h": 8,
       "temp": 5,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
      },
@@ -550,8 +541,8 @@
       "date": "2026-10-20",
       "h": 20,
       "temp": 7,
-      "wind": 3,
-      "sym": "clearsky_night",
+      "wind": 4,
+      "sym": "fair_night",
       "rain": 0,
       "span": 6
      }
@@ -567,15 +558,6 @@
      {
       "date": "2026-10-21",
       "h": 2,
-      "temp": 5,
-      "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 6
-     },
-     {
-      "date": "2026-10-21",
-      "h": 8,
       "temp": 6,
       "wind": 4,
       "sym": "cloudy",
@@ -584,26 +566,35 @@
      },
      {
       "date": "2026-10-21",
+      "h": 8,
+      "temp": 7,
+      "wind": 5,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-10-21",
       "h": 14,
       "temp": 7,
-      "wind": 4,
+      "wind": 5,
       "sym": "rain",
-      "rain": 2.9,
+      "rain": 3.6,
       "span": 6
      },
      {
       "date": "2026-10-21",
       "h": 20,
-      "temp": 9,
+      "temp": 10,
       "wind": 4,
       "sym": "rain",
-      "rain": 3.4,
+      "rain": 3.5,
       "span": 6
      }
     ],
-    "max": 9,
-    "min": 5,
-    "rain": 6.3,
+    "max": 10,
+    "min": 6,
+    "rain": 7.1,
     "sym": "rain"
    },
    {
@@ -613,18 +604,18 @@
       "date": "2026-10-22",
       "h": 2,
       "temp": 10,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 4.5,
+      "wind": 3,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-22",
       "h": 8,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 2.7,
       "span": 6
      },
      {
@@ -632,24 +623,24 @@
       "h": 14,
       "temp": 10,
       "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 3.2,
       "span": 6
      },
      {
       "date": "2026-10-22",
       "h": 20,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "rain",
-      "rain": 3.8,
+      "rain": 3,
       "span": 6
      }
     ],
-    "max": 11,
+    "max": 10,
     "min": 10,
-    "rain": 8.3,
-    "sym": "cloudy"
+    "rain": 8.9,
+    "sym": "rain"
    },
    {
     "date": "2026-10-23",
@@ -657,10 +648,10 @@
      {
       "date": "2026-10-23",
       "h": 2,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "rain",
-      "rain": 0,
+      "rain": 2.6,
       "span": 6
      },
      {
@@ -675,25 +666,25 @@
      {
       "date": "2026-10-23",
       "h": 14,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
-      "rain": 2.8,
+      "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-23",
       "h": 20,
-      "temp": 11,
-      "wind": 3,
+      "temp": 10,
+      "wind": 4,
       "sym": "rain",
-      "rain": 2.7,
+      "rain": 2.8,
       "span": 6
      }
     ],
-    "max": 11,
+    "max": 10,
     "min": 10,
-    "rain": 5.5,
+    "rain": 5.4,
     "sym": "cloudy"
    }
   ]
@@ -1429,7 +1420,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb, Babykino",
      "u": "https://www.nfkino.no/screening/2439/bc26c8f7-b10a-4f29-923d-73d7f706fc07"
     },
     {
@@ -2518,18 +2509,18 @@
     {
      "d": "2026-10-18",
      "t": "18:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/f97b8a26-7e31-49a4-a9ca-4bac51954483"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "18:00",
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/d8ef0f77-4ae2-488f-a732-e8796728ce69"
+    },
+    {
+     "d": "2026-10-18",
+     "t": "18:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f97b8a26-7e31-49a4-a9ca-4bac51954483"
     },
     {
      "d": "2026-10-18",
@@ -7950,30 +7941,6 @@
   }
  ],
  "k_rockefeller": [
-  {
-   "title": "Skinny E",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/981560776?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Skinny_E_171026_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Skinny_E_171026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_SFxzsMIyW?tr=w-600",
-   "times": [
-    "2026-10-17T20:00"
-   ],
-   "hint": "hiphop",
-   "about": "Etter 12–13 år som up-and-coming artist, tar Skinny E med seg hele repertoaret og alle vennene sine til en one-night-only på Rockefeller lørdag 17. oktober! Etter å ha forlatt kone og barn for å flytte til Los Angeles i ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Espen Lind",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/393464210?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Espen_Lind_171026_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Espen_Lind_171026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_FQxqS3AoD?tr=w-600",
-   "times": [
-    "2026-10-17T20:00"
-   ],
-   "hint": "pop singersongwriter",
-   "about": "Espen Lind slo gjennom på slutten av 90-tallet med «When Susannah Cries» og har siden markert seg som en av Norges mest respekterte og allsidige artister. Han har skrevet låter for blant andre Beyoncé, Taylor Swift og Tr",
-   "city": "Oslo"
-  },
   {
    "title": "Humanity’s Last Breath",
    "venue": "John Dee",
