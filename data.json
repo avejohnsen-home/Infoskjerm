@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-17T05:39:49.266Z",
+ "updated": "2026-10-17T06:49:37.911Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-17",
-   "h": 7,
+   "h": 8,
    "temp": 6,
-   "wind": 4,
-   "sym": "clearsky_night",
+   "wind": 3,
+   "sym": "clearsky_day",
    "rain": 0,
    "span": 1
   },
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-17",
     "hours": [
-     {
-      "date": "2026-10-17",
-      "h": 7,
-      "temp": 6,
-      "wind": 4,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-17",
       "h": 8,
@@ -45,7 +36,7 @@
      {
       "date": "2026-10-17",
       "h": 10,
-      "temp": 8,
+      "temp": 7,
       "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
@@ -117,8 +108,8 @@
      {
       "date": "2026-10-17",
       "h": 18,
-      "temp": 9,
-      "wind": 1,
+      "temp": 10,
+      "wind": 0,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -127,7 +118,7 @@
       "date": "2026-10-17",
       "h": 19,
       "temp": 8,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -153,8 +144,8 @@
      {
       "date": "2026-10-17",
       "h": 22,
-      "temp": 6,
-      "wind": 2,
+      "temp": 5,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -163,7 +154,7 @@
       "date": "2026-10-17",
       "h": 23,
       "temp": 5,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -181,7 +172,7 @@
       "date": "2026-10-18",
       "h": 0,
       "temp": 5,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -244,7 +235,7 @@
       "date": "2026-10-18",
       "h": 7,
       "temp": 3,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -254,7 +245,7 @@
       "h": 8,
       "temp": 3,
       "wind": 2,
-      "sym": "fair_day",
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -263,7 +254,7 @@
       "h": 9,
       "temp": 4,
       "wind": 2,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -290,7 +281,7 @@
       "h": 12,
       "temp": 8,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -316,7 +307,7 @@
       "date": "2026-10-18",
       "h": 15,
       "temp": 10,
-      "wind": 2,
+      "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -405,7 +396,7 @@
      {
       "date": "2026-10-19",
       "h": 0,
-      "temp": 4,
+      "temp": 5,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -441,7 +432,7 @@
      {
       "date": "2026-10-19",
       "h": 4,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -450,7 +441,7 @@
      {
       "date": "2026-10-19",
       "h": 5,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -470,32 +461,14 @@
       "h": 7,
       "temp": 3,
       "wind": 1,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-19",
       "h": 8,
-      "temp": 4,
-      "wind": 1,
-      "sym": "clearsky_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-19",
-      "h": 9,
-      "temp": 4,
-      "wind": 1,
-      "sym": "fair_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-19",
-      "h": 10,
-      "temp": 5,
+      "temp": 3,
       "wind": 2,
       "sym": "fair_day",
       "rain": 0,
@@ -503,16 +476,43 @@
      },
      {
       "date": "2026-10-19",
-      "h": 11,
-      "temp": 6,
+      "h": 9,
+      "temp": 4,
+      "wind": 2,
+      "sym": "fog",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-19",
+      "h": 10,
+      "temp": 5,
       "wind": 1,
-      "sym": "fair_day",
+      "sym": "fog",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-19",
+      "h": 11,
+      "temp": 5,
+      "wind": 1,
+      "sym": "fog",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-19",
       "h": 12,
+      "temp": 6,
+      "wind": 1,
+      "sym": "partlycloudy_day",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-19",
+      "h": 13,
       "temp": 7,
       "wind": 1,
       "sym": "fair_day",
@@ -521,17 +521,8 @@
      },
      {
       "date": "2026-10-19",
-      "h": 13,
-      "temp": 8,
-      "wind": 1,
-      "sym": "fair_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-19",
       "h": 14,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
@@ -547,7 +538,7 @@
       "span": 6
      }
     ],
-    "max": 9,
+    "max": 8,
     "min": 3,
     "rain": 0,
     "sym": "fair_day"
