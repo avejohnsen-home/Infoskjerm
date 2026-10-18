@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-18T17:37:36.119Z",
+ "updated": "2026-10-18T18:41:39.588Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-18",
-   "h": 19,
-   "temp": 8,
+   "h": 20,
+   "temp": 7,
    "wind": 2,
-   "sym": "fair_night",
+   "sym": "clearsky_night",
    "rain": 0,
    "span": 1
   },
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-10-18",
-      "h": 19,
-      "temp": 8,
-      "wind": 2,
-      "sym": "fair_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-18",
       "h": 20,
-      "temp": 6,
+      "temp": 7,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -45,7 +36,7 @@
      {
       "date": "2026-10-18",
       "h": 22,
-      "temp": 5,
+      "temp": 6,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -61,10 +52,10 @@
       "span": 1
      }
     ],
-    "max": 8,
+    "max": 7,
     "min": 5,
     "rain": 0,
-    "sym": "fair_night"
+    "sym": "clearsky_night"
    },
    {
     "date": "2026-10-19",
@@ -72,9 +63,9 @@
      {
       "date": "2026-10-19",
       "h": 0,
-      "temp": 4,
+      "temp": 5,
       "wind": 1,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -83,7 +74,7 @@
       "h": 1,
       "temp": 4,
       "wind": 1,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -127,7 +118,7 @@
       "date": "2026-10-19",
       "h": 6,
       "temp": 3,
-      "wind": 0,
+      "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -136,7 +127,7 @@
       "date": "2026-10-19",
       "h": 7,
       "temp": 3,
-      "wind": 1,
+      "wind": 0,
       "sym": "fair_night",
       "rain": 0,
       "span": 1
@@ -146,7 +137,7 @@
       "h": 8,
       "temp": 3,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -155,7 +146,7 @@
       "h": 9,
       "temp": 3,
       "wind": 1,
-      "sym": "fog",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -191,7 +182,7 @@
       "h": 13,
       "temp": 6,
       "wind": 1,
-      "sym": "fair_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -226,7 +217,7 @@
       "date": "2026-10-19",
       "h": 17,
       "temp": 9,
-      "wind": 0,
+      "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -234,7 +225,7 @@
      {
       "date": "2026-10-19",
       "h": 18,
-      "temp": 8,
+      "temp": 9,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -245,7 +236,7 @@
       "h": 19,
       "temp": 8,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -289,7 +280,7 @@
     "max": 9,
     "min": 3,
     "rain": 0,
-    "sym": "fair_day"
+    "sym": "partlycloudy_day"
    },
    {
     "date": "2026-10-20",
@@ -315,7 +306,7 @@
      {
       "date": "2026-10-20",
       "h": 2,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -335,14 +326,14 @@
       "h": 4,
       "temp": 5,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-20",
       "h": 5,
-      "temp": 4,
+      "temp": 5,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -361,7 +352,7 @@
       "date": "2026-10-20",
       "h": 7,
       "temp": 4,
-      "wind": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -405,7 +396,7 @@
      {
       "date": "2026-10-20",
       "h": 12,
-      "temp": 5,
+      "temp": 6,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -443,7 +434,7 @@
       "h": 16,
       "temp": 6,
       "wind": 3,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -451,8 +442,8 @@
       "date": "2026-10-20",
       "h": 17,
       "temp": 6,
-      "wind": 4,
-      "sym": "partlycloudy_day",
+      "wind": 3,
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -461,7 +452,7 @@
       "h": 18,
       "temp": 6,
       "wind": 3,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -470,7 +461,7 @@
       "h": 19,
       "temp": 5,
       "wind": 3,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 1
      },
@@ -1044,14 +1035,6 @@
    ],
    "shows": [
     {
-     "d": "2026-10-18",
-     "t": "20:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/bba659ba-1c38-448b-a6a4-11c04a05dbea"
-    },
-    {
      "d": "2026-10-19",
      "t": "12:00",
      "c": "Ringen",
@@ -1337,14 +1320,6 @@
    ],
    "shows": [
     {
-     "d": "2026-10-18",
-     "t": "19:45",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2612/0351462a-e169-413f-b6d3-584705b5ebb5"
-    },
-    {
      "d": "2026-10-19",
      "t": "12:00",
      "c": "Ringen",
@@ -1513,161 +1488,6 @@
    "rt": "97%",
    "imdb": "7.7",
    "ratingsAt": "2026-10-18T16:41:02.404Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
-   "genres": [
-    "Horror"
-   ],
-   "len": "1 time 31 min",
-   "age": "15 år",
-   "cinemas": [
-    "Colosseum",
-    "Ringen",
-    "Saga",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-18",
-     "t": "20:45",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2590/1bb0e44b-b1eb-41fa-8920-c5762446fff0"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "20:50",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/fe65bb52-010e-4865-a37a-3da3f981dd21"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "21:15",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/6c38cf0f-9cad-4e5d-97db-5fe8a1eef15b"
-    },
-    {
-     "d": "2026-10-19",
-     "t": "17:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/2624cb21-9df8-4ee2-b7f9-24b5f426728b"
-    },
-    {
-     "d": "2026-10-19",
-     "t": "20:30",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/c213edcd-c11b-4a1a-9250-d20ece5bf323"
-    },
-    {
-     "d": "2026-10-19",
-     "t": "21:00",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/f729d7d1-69b3-4649-b742-376852f919a5"
-    },
-    {
-     "d": "2026-10-20",
-     "t": "17:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/efb96cb1-1751-44b9-b753-9352b99f83bb"
-    },
-    {
-     "d": "2026-10-20",
-     "t": "20:45",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/fa3d83d1-6f3b-4262-8cd1-bfd75cb3edd8"
-    },
-    {
-     "d": "2026-10-20",
-     "t": "21:00",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/689cff4e-4ecc-4283-a208-711212dee7d1"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "20:50",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/a27731a8-e73a-42a4-9cf3-57dde9a0237b"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "21:00",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/14bdad8a-3c51-4ac6-8545-bb7d3f99b2f5"
-    },
-    {
-     "d": "2026-10-21",
-     "t": "21:00",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/806ba722-d2e4-49fb-98cb-0c9120a3ca9c"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "17:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/0e3c99ca-66f9-461c-a093-6783dc04af16"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:00",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2590/c237044a-a722-43db-8f9d-ef0829138edc"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:45",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/1f023565-26db-44c2-8888-ab7028fdfa8a"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "21:00",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/67766913-8c46-47a6-98d0-aefac948ee8c"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001429-1000032812.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Other Mommy",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-10-18T16:41:02.455Z",
    "city": "Oslo"
   },
   {
@@ -1942,6 +1762,161 @@
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
    "ratingsAt": "2026-10-18T16:41:02.723Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Other Mommy",
+   "url": "https://www.nfkino.no/film/other-mommy",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
+   "genres": [
+    "Horror"
+   ],
+   "len": "1 time 31 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga",
+    "Symra"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-18",
+     "t": "20:45",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/1bb0e44b-b1eb-41fa-8920-c5762446fff0"
+    },
+    {
+     "d": "2026-10-18",
+     "t": "20:50",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/fe65bb52-010e-4865-a37a-3da3f981dd21"
+    },
+    {
+     "d": "2026-10-18",
+     "t": "21:15",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/6c38cf0f-9cad-4e5d-97db-5fe8a1eef15b"
+    },
+    {
+     "d": "2026-10-19",
+     "t": "17:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/2624cb21-9df8-4ee2-b7f9-24b5f426728b"
+    },
+    {
+     "d": "2026-10-19",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c213edcd-c11b-4a1a-9250-d20ece5bf323"
+    },
+    {
+     "d": "2026-10-19",
+     "t": "21:00",
+     "c": "Colosseum",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f729d7d1-69b3-4649-b742-376852f919a5"
+    },
+    {
+     "d": "2026-10-20",
+     "t": "17:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/efb96cb1-1751-44b9-b753-9352b99f83bb"
+    },
+    {
+     "d": "2026-10-20",
+     "t": "20:45",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/fa3d83d1-6f3b-4262-8cd1-bfd75cb3edd8"
+    },
+    {
+     "d": "2026-10-20",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/689cff4e-4ecc-4283-a208-711212dee7d1"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "20:50",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/a27731a8-e73a-42a4-9cf3-57dde9a0237b"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/14bdad8a-3c51-4ac6-8545-bb7d3f99b2f5"
+    },
+    {
+     "d": "2026-10-21",
+     "t": "21:00",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/806ba722-d2e4-49fb-98cb-0c9120a3ca9c"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "17:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/0e3c99ca-66f9-461c-a093-6783dc04af16"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:00",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/c237044a-a722-43db-8f9d-ef0829138edc"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:45",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/1f023565-26db-44c2-8888-ab7028fdfa8a"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/67766913-8c46-47a6-98d0-aefac948ee8c"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001429-1000032812.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Other Mommy",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-10-18T16:41:02.455Z",
    "city": "Oslo"
   },
   {
@@ -2894,22 +2869,6 @@
    "shows": [
     {
      "d": "2026-10-18",
-     "t": "20:30",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/0bc87e2c-245c-4e92-adb4-d1e2e14b0de2"
-    },
-    {
-     "d": "2026-10-18",
-     "t": "20:40",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/c28b3839-9254-4c09-a352-604359825d3f"
-    },
-    {
-     "d": "2026-10-18",
      "t": "20:45",
      "c": "Ringen",
      "r": "6",
@@ -3477,14 +3436,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-18",
-     "t": "19:45",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/5b4f48f1-d2f7-4f23-aafe-a71d1a0c69af"
-    },
     {
      "d": "2026-10-19",
      "t": "12:15",
@@ -4540,19 +4491,6 @@
  ],
  "chatnoir": [
   {
-   "title": "Til deg",
-   "venue": "Chat Noir",
-   "url": "https://www.ticketmaster.no/event/764149260",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3LYeL1MlY?tr=w-600",
-   "times": [
-    "2026-10-18T18:30",
-    "2026-11-03T19:30"
-   ],
-   "hint": "Teater",
-   "about": "Det kan være vanskelig å innrømme at man både er svært følsom og kanskje også ganske ensom, i en verden der alle skal være frigjorte og selvstendige. «Til deg» er en forestilling til alle dem som alltid går med hjertet f",
-   "city": "Oslo"
-  },
-  {
    "title": "TOTAL AVSPORING - En kriminalkomedie i høy hastighet",
    "venue": "Chat Noir",
    "url": "https://www.ticketmaster.no/event/1027123207",
@@ -4622,6 +4560,18 @@
    ],
    "hint": "Iren_Reppen",
    "about": "Iren sier: Det krever litt av en voksen dame å si «Hei, mitt navn er Iren Reppen og jeg er sexy nok. Ganske mye faktisk. Sånt sier man ikke. Jeg sier det aldri. Bare på konserten. Unikt. Jeg kan ikke by på modellkropp, j",
+   "city": "Oslo"
+  },
+  {
+   "title": "Til deg",
+   "venue": "Chat Noir",
+   "url": "https://www.ticketmaster.no/event/1099755286",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3LYeL1MlY?tr=w-600",
+   "times": [
+    "2026-11-03T19:30"
+   ],
+   "hint": "Teater",
+   "about": "Det kan være vanskelig å innrømme at man både er svært følsom og kanskje også ganske ensom, i en verden der alle skal være frigjorte og selvstendige. «Til deg» er en forestilling til alle dem som alltid går med hjertet f",
    "city": "Oslo"
   },
   {
@@ -12923,17 +12873,6 @@
  ],
  "k_cosmopolite": [
   {
-   "title": "Sidiki Camara - Ankaben // plateslipp",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/sidiki-camara-ankaben-plateslipp",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/1.%20Hovedbilde%20release%20konsert%20%28Tomas%20Lauvland%29%20.jpg?itok=wfUFXP4x",
-   "from": "2026-10-18",
-   "to": "2026-10-18",
-   "about": "",
-   "hint": "Cosmopolite Scene Vestafrikansk Jazz Kjøp billettSidiki Camara - Ankaben // plateslipp 18. oktober Kjøp billett",
-   "city": "Oslo"
-  },
-  {
    "title": "Flamencamiento Global Trio",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/flamencamiento-global-trio",
@@ -13052,6 +12991,17 @@
    "to": "2026-10-30",
    "about": "",
    "hint": "Oslo World Indie Rock Utsolgt Dirty Three30. oktober Utsolgt",
+   "city": "Oslo"
+  },
+  {
+   "title": "Imarhan",
+   "venue": "Cosmopolite",
+   "url": "https://cosmopolite.no/program/cosmopolite/2026/oktober/imarhan",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-03/Pressphoto_credit-Drabber-Ouladheddar-scaled-2048x1366.jpeg?itok=I2zjQcoW",
+   "from": "2026-10-30",
+   "to": "2026-10-30",
+   "about": "",
+   "hint": "Oslo World Ørkenblues Kjøp billettImarhan30. oktober Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -14100,10 +14050,6 @@
    ],
    "at": 1791929885648
   },
-  "https://cosmopolite.no/program/cosmopolite/2026/oktober/sidiki-camara-ankaben-plateslipp": {
-   "p": [],
-   "at": 1791929885648
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/45841/": {
    "p": [],
    "at": 1791929885648
@@ -14247,6 +14193,10 @@
   "https://cosmopolite.no/program/cosmopolite/2026/oktober/dirty-three": {
    "p": [],
    "at": 1791930173948
+  },
+  "https://cosmopolite.no/program/cosmopolite/2026/oktober/imarhan": {
+   "p": [],
+   "at": 1792349054376
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46356/": {
    "p": [],
