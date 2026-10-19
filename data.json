@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-19T05:42:42.722Z",
+ "updated": "2026-10-19T06:57:26.310Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-19",
-   "h": 7,
-   "temp": 3,
+   "h": 8,
+   "temp": 4,
    "wind": 1,
-   "sym": "fair_night",
+   "sym": "partlycloudy_day",
    "rain": 0,
    "span": 1
   },
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-19",
     "hours": [
-     {
-      "date": "2026-10-19",
-      "h": 7,
-      "temp": 3,
-      "wind": 1,
-      "sym": "fair_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-19",
       "h": 8,
@@ -36,7 +27,7 @@
      {
       "date": "2026-10-19",
       "h": 9,
-      "temp": 4,
+      "temp": 5,
       "wind": 2,
       "sym": "fog",
       "rain": 0,
@@ -46,7 +37,7 @@
       "date": "2026-10-19",
       "h": 10,
       "temp": 5,
-      "wind": 2,
+      "wind": 1,
       "sym": "fog",
       "rain": 0,
       "span": 1
@@ -90,7 +81,7 @@
      {
       "date": "2026-10-19",
       "h": 15,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "fair_day",
       "rain": 0,
@@ -100,7 +91,7 @@
       "date": "2026-10-19",
       "h": 16,
       "temp": 10,
-      "wind": 0,
+      "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
@@ -109,7 +100,7 @@
       "date": "2026-10-19",
       "h": 17,
       "temp": 10,
-      "wind": 1,
+      "wind": 0,
       "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
@@ -119,7 +110,7 @@
       "h": 18,
       "temp": 9,
       "wind": 1,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -127,7 +118,7 @@
       "date": "2026-10-19",
       "h": 19,
       "temp": 8,
-      "wind": 1,
+      "wind": 0,
       "sym": "fair_night",
       "rain": 0,
       "span": 1
@@ -137,14 +128,14 @@
       "h": 20,
       "temp": 7,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-19",
       "h": 21,
-      "temp": 7,
+      "temp": 6,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -154,7 +145,7 @@
       "date": "2026-10-19",
       "h": 22,
       "temp": 6,
-      "wind": 0,
+      "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -170,7 +161,7 @@
      }
     ],
     "max": 10,
-    "min": 3,
+    "min": 4,
     "rain": 0,
     "sym": "partlycloudy_day"
    },
@@ -208,7 +199,7 @@
       "date": "2026-10-20",
       "h": 3,
       "temp": 6,
-      "wind": 1,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -262,7 +253,7 @@
       "date": "2026-10-20",
       "h": 9,
       "temp": 4,
-      "wind": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -271,7 +262,7 @@
       "date": "2026-10-20",
       "h": 10,
       "temp": 4,
-      "wind": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -315,7 +306,7 @@
      {
       "date": "2026-10-20",
       "h": 15,
-      "temp": 6,
+      "temp": 7,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -335,7 +326,7 @@
       "h": 17,
       "temp": 7,
       "wind": 3,
-      "sym": "fair_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -344,7 +335,7 @@
       "h": 18,
       "temp": 6,
       "wind": 3,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -369,7 +360,7 @@
      {
       "date": "2026-10-20",
       "h": 21,
-      "temp": 5,
+      "temp": 6,
       "wind": 4,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -378,8 +369,8 @@
      {
       "date": "2026-10-20",
       "h": 22,
-      "temp": 5,
-      "wind": 5,
+      "temp": 6,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -387,16 +378,16 @@
      {
       "date": "2026-10-20",
       "h": 23,
-      "temp": 5,
+      "temp": 6,
       "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      }
     ],
     "max": 7,
     "min": 4,
-    "rain": 0,
+    "rain": 0.1,
     "sym": "cloudy"
    },
    {
@@ -408,7 +399,7 @@
       "temp": 5,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.9,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -416,35 +407,35 @@
       "h": 1,
       "temp": 5,
       "wind": 6,
-      "sym": "rain",
-      "rain": 0.4,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 2,
-      "temp": 5,
-      "wind": 6,
+      "temp": 6,
+      "wind": 7,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 3,
-      "temp": 5,
+      "temp": 6,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 4,
-      "temp": 5,
+      "temp": 6,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -452,14 +443,14 @@
       "h": 5,
       "temp": 6,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 6,
-      "temp": 6,
+      "temp": 7,
       "wind": 7,
       "sym": "cloudy",
       "rain": 0,
@@ -468,7 +459,7 @@
      {
       "date": "2026-10-21",
       "h": 7,
-      "temp": 6,
+      "temp": 7,
       "wind": 7,
       "sym": "cloudy",
       "rain": 0,
@@ -477,10 +468,10 @@
      {
       "date": "2026-10-21",
       "h": 8,
-      "temp": 6,
+      "temp": 7,
       "wind": 7,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -495,10 +486,10 @@
      {
       "date": "2026-10-21",
       "h": 10,
-      "temp": 7,
+      "temp": 8,
       "wind": 6,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -506,14 +497,14 @@
       "h": 11,
       "temp": 7,
       "wind": 7,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "rain",
+      "rain": 0.7,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 12,
-      "temp": 7,
+      "temp": 8,
       "wind": 7,
       "sym": "lightrain",
       "rain": 0.2,
@@ -522,7 +513,7 @@
      {
       "date": "2026-10-21",
       "h": 13,
-      "temp": 7,
+      "temp": 8,
       "wind": 7,
       "sym": "lightrain",
       "rain": 0.1,
@@ -549,7 +540,7 @@
     ],
     "max": 10,
     "min": 5,
-    "rain": 3.5,
+    "rain": 3.7,
     "sym": "lightrain"
    },
    {
