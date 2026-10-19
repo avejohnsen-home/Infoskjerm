@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-18T23:35:09.812Z",
+ "updated": "2026-10-19T00:54:59.505Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-19",
-   "h": 1,
+   "h": 2,
    "temp": 4,
    "wind": 1,
    "sym": "clearsky_night",
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-19",
     "hours": [
-     {
-      "date": "2026-10-19",
-      "h": 1,
-      "temp": 4,
-      "wind": 1,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-19",
       "h": 2,
@@ -63,7 +54,7 @@
      {
       "date": "2026-10-19",
       "h": 6,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -82,7 +73,7 @@
       "date": "2026-10-19",
       "h": 8,
       "temp": 3,
-      "wind": 1,
+      "wind": 2,
       "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
@@ -126,7 +117,7 @@
      {
       "date": "2026-10-19",
       "h": 13,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
       "sym": "fair_day",
       "rain": 0,
@@ -216,9 +207,9 @@
      {
       "date": "2026-10-19",
       "h": 23,
-      "temp": 6,
-      "wind": 1,
-      "sym": "cloudy",
+      "temp": 5,
+      "wind": 0,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      }
@@ -234,8 +225,8 @@
      {
       "date": "2026-10-20",
       "h": 0,
-      "temp": 6,
-      "wind": 1,
+      "temp": 5,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -243,7 +234,7 @@
      {
       "date": "2026-10-20",
       "h": 1,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -252,9 +243,9 @@
      {
       "date": "2026-10-20",
       "h": 2,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -279,8 +270,8 @@
      {
       "date": "2026-10-20",
       "h": 5,
-      "temp": 5,
-      "wind": 2,
+      "temp": 4,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -315,7 +306,7 @@
      {
       "date": "2026-10-20",
       "h": 9,
-      "temp": 4,
+      "temp": 3,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -333,7 +324,7 @@
      {
       "date": "2026-10-20",
       "h": 11,
-      "temp": 5,
+      "temp": 4,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -351,7 +342,7 @@
      {
       "date": "2026-10-20",
       "h": 13,
-      "temp": 6,
+      "temp": 5,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -378,7 +369,7 @@
      {
       "date": "2026-10-20",
       "h": 16,
-      "temp": 7,
+      "temp": 6,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -387,7 +378,7 @@
      {
       "date": "2026-10-20",
       "h": 17,
-      "temp": 7,
+      "temp": 6,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -398,7 +389,7 @@
       "h": 18,
       "temp": 6,
       "wind": 3,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -407,7 +398,7 @@
       "h": 19,
       "temp": 5,
       "wind": 3,
-      "sym": "clearsky_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -416,14 +407,14 @@
       "h": 20,
       "temp": 5,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-20",
       "h": 21,
-      "temp": 4,
+      "temp": 5,
       "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -448,8 +439,8 @@
       "span": 1
      }
     ],
-    "max": 7,
-    "min": 4,
+    "max": 6,
+    "min": 3,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -461,8 +452,8 @@
       "h": 0,
       "temp": 5,
       "wind": 6,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -470,8 +461,8 @@
       "h": 1,
       "temp": 5,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "rain",
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -480,7 +471,7 @@
       "temp": 5,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -488,8 +479,8 @@
       "h": 3,
       "temp": 5,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -504,7 +495,7 @@
      {
       "date": "2026-10-21",
       "h": 5,
-      "temp": 6,
+      "temp": 5,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
@@ -513,8 +504,8 @@
      {
       "date": "2026-10-21",
       "h": 6,
-      "temp": 6,
-      "wind": 5,
+      "temp": 5,
+      "wind": 6,
       "sym": "lightrain",
       "rain": 0.1,
       "span": 1
@@ -522,7 +513,7 @@
      {
       "date": "2026-10-21",
       "h": 7,
-      "temp": 6,
+      "temp": 5,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
@@ -558,7 +549,7 @@
     ],
     "max": 10,
     "min": 5,
-    "rain": 4.1,
+    "rain": 4.6,
     "sym": "cloudy"
    },
    {
@@ -1334,7 +1325,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-18T23:35:44.709Z",
    "city": "Oslo"
   },
@@ -1524,7 +1514,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-18T23:35:44.737Z",
    "city": "Oslo"
   },
@@ -1914,7 +1903,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-18T23:35:44.898Z",
    "city": "Oslo"
   },
@@ -2094,7 +2082,6 @@
    "year": "",
    "rt": "11%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-18T23:35:44.929Z",
    "city": "Oslo"
   },
@@ -2127,7 +2114,6 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "imdbId": "tt0011440",
    "ratingsAt": "2026-10-18T23:35:44.953Z",
    "city": "Oslo"
   },
@@ -2348,7 +2334,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "imdbId": "tt36841161",
    "ratingsAt": "2026-10-18T23:35:44.987Z",
    "city": "Oslo"
   },
@@ -2923,7 +2908,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-18T23:35:45.210Z",
    "city": "Oslo"
   },
@@ -2990,7 +2974,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-18T23:35:45.235Z",
    "city": "Oslo"
   },
@@ -3103,7 +3086,6 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "imdbId": "tt36583977",
    "ratingsAt": "2026-10-18T23:35:45.264Z",
    "city": "Oslo"
   },
@@ -3137,7 +3119,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37968648",
    "ratingsAt": "2026-10-18T23:35:45.289Z",
    "city": "Oslo"
   },
@@ -3172,6 +3153,14 @@
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/2439/71c5e65d-541e-49dd-9adc-6977aa0632cd"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142799-1000033534.mp4",
@@ -3181,7 +3170,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt6492922",
    "ratingsAt": "2026-10-18T23:35:45.321Z",
    "city": "Oslo"
   },
@@ -3384,6 +3372,14 @@
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1001/d5dbf893-99c4-4d03-b570-210840b11196"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "17:45",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/aba0df66-64e6-4a95-8a7c-e75999751af4"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002582-1000031364.mp4",
@@ -3393,7 +3389,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt38807889",
    "ratingsAt": "2026-10-18T23:35:45.348Z",
    "city": "Oslo"
   },
@@ -3516,7 +3511,6 @@
    "year": "",
    "rt": "85%",
    "imdb": "7.5",
-   "imdbId": "tt7526136",
    "ratingsAt": "2026-10-18T23:35:45.376Z",
    "city": "Oslo"
   }
