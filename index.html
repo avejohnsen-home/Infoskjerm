@@ -409,7 +409,7 @@ function catOf(s){
 
 // ---------- Egne logoer: matcher filnavn («Logo - Chat Noir») mot teaternavn ----------
 const LOGO_ALIAS={"oslo nye central":"centralteatret teaterkjellern","oslo nye centralteatret":"centralteatret teaterkjellern","central":"centralteatret teaterkjellern","centralteatret":"centralteatret teaterkjellern","dns":"den nationale scene","neuf":"chateau neuf","opera":"operaen","den norske opera":"operaen","oslo nye":"oslo nye teater","trondelag":"nye trondelag teater","trondelag teater":"nye trondelag teater","nye hjorten":"nye hjorten teater","fjaereheia":"bruddet fjaereheia","bruddet":"bruddet fjaereheia","christiania":"christiania teater","det norske":"det norske teatret"};
-const nrm=t=>String(t||"").toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"o").replace(/å/g,"a").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\(.*?\)/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const nrm=t=>String(t||"").toLowerCase().replace(/oslonye/g,"oslo nye").replace(/æ/g,"ae").replace(/ø/g,"o").replace(/å/g,"a").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\(.*?\)/g,"").replace(/[^a-z0-9]+/g," ").trim();
 function ownLogoFor(name){
   const list=(DATA&&DATA.ownLogos)||[];if(!list.length)return "";
   const n=nrm(name);
