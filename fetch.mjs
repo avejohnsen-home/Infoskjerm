@@ -225,6 +225,7 @@ async function nfkino() {
       shows
     });
   });
+  if (!out.length) console.log(`  Diagnose kino: overskrifter med filmlenke: ${$('h2 a[href*="/film/"]').length}, visninger: ${$('li[data-date]').length}, alle filmlenker: ${$('a[href*="/film/"]').length}`);
   // Trailer: les filmens egen side én gang og finn YouTube-trailer (eller videofil). Huskes mellom kjøringer.
   const list = out.slice(0, 16);
   const known = new Map((old.films || []).filter(f => f.trailerChecked && f.origChecked).map(f => [f.url, f]));
@@ -1051,7 +1052,21 @@ async function grieghallen() {
       await new Promise(res => setTimeout(res, 250));
     }
   }
-  return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+  // Ticketmaster har bare noen få av arrangementene – suppler med programmet på grieghallen.no
+  let web = [];
+  for (const url of ["https://www.grieghallen.no/arrangementer/", "https://www.grieghallen.no/program/", "https://www.grieghallen.no/"]) {
+    try {
+      const $ = await getHtml(url);
+      web = cardsFrom($, url, "Grieghallen", /\/arrangementer\/[^/]+/);
+      console.log(`  Grieghallen.no: ${url} -> ${web.length} arrangementer`);
+      if (web.length) break;
+      console.log(`  Diagnose Grieghallen: lenker til /arrangementer/: ${$('a[href*="/arrangementer/"]').length}, bilder: ${$("img").length}, tekst: ${$("body").text().replace(/\s+/g, " ").slice(0, 200)}`);
+    } catch (e) { console.log("  Grieghallen.no: " + e.message); }
+  }
+  const tm = [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+  const norm = t => t.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
+  const have = new Set(tm.map(s => norm(s.title)));
+  return [...tm, ...web.filter(w => !have.has(norm(w.title)))];
 }
 
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
