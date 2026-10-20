@@ -406,7 +406,7 @@ function catOf(s){
 }
 
 // ---------- Egne logoer: matcher filnavn («Logo - Chat Noir») mot teaternavn ----------
-const LOGO_ALIAS={"dns":"den nationale scene","neuf":"chateau neuf","opera":"operaen","den norske opera":"operaen","oslo nye":"oslo nye teater","central":"centralteatret","trondelag":"trondelag teater","nye hjorten":"nye hjorten teater","fjaereheia":"bruddet fjaereheia","bruddet":"bruddet fjaereheia","christiania":"christiania teater","det norske":"det norske teatret"};
+const LOGO_ALIAS={"oslo nye central":"centralteatret teaterkjellern","oslo nye centralteatret":"centralteatret teaterkjellern","central":"centralteatret teaterkjellern","centralteatret":"centralteatret teaterkjellern","dns":"den nationale scene","neuf":"chateau neuf","opera":"operaen","den norske opera":"operaen","oslo nye":"oslo nye teater","trondelag":"nye trondelag teater","trondelag teater":"nye trondelag teater","nye hjorten":"nye hjorten teater","fjaereheia":"bruddet fjaereheia","bruddet":"bruddet fjaereheia","christiania":"christiania teater","det norske":"det norske teatret"};
 const nrm=t=>String(t||"").toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"o").replace(/å/g,"a").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\(.*?\)/g,"").replace(/[^a-z0-9]+/g," ").trim();
 function ownLogoFor(name){
   const list=(DATA&&DATA.ownLogos)||[];if(!list.length)return "";
@@ -490,7 +490,10 @@ function renderFilms(){
   document.getElementById("srcK").textContent=(DATA.films||[]).length?"Kilde: NF Kino, Oslo. Trykk på en film for alle visningstider.":"Fant ingen filmer ennå.";
 }
 async function load(){
-  try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();}
+  try{const r=await fetch("data.json?"+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json();
+    // Centralteatret vises med fullt navn
+    (DATA.oslonye||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Centralteatret(?=,|$)/,"Centralteatret & Teaterkjellern")});
+    (DATA.trondelag||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Trøndelag Teater(?=,|$)/,"Nye Trøndelag Teater")});}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
   LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();
   const u=new Date(DATA.updated);
