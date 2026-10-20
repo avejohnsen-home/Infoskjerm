@@ -221,7 +221,8 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 .saver .pic{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;padding:0}
 .saver::after{content:"";position:absolute;left:0;right:0;bottom:0;height:28%;background:linear-gradient(to top,rgba(0,0,0,.6),transparent);z-index:1;pointer-events:none}
 .saver .sclock{position:absolute;left:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35);z-index:2}
-.saver .cap{position:absolute;right:20px;bottom:calc(36px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.85);font-size:13px;max-width:55%;text-align:right;line-height:1.35;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.saver .stemp{position:absolute;right:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35);z-index:2}
+.saver .cap{position:absolute;right:20px;bottom:calc(110px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.85);font-size:13px;max-width:55%;text-align:right;line-height:1.35;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .saver .cap b{display:block;color:#fff;font-size:15px}
 
 @media (prefers-reduced-motion:reduce){
@@ -325,6 +326,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 <div class="saver" id="saver" role="button" aria-label="Trykk for å gå tilbake">
   <div class="hill"></div>
   <div class="sclock" id="sclock"></div>
+  <div class="stemp" id="stemp"></div>
   <div class="layer" id="artA"><div class="blur"></div><img class="pic" alt=""></div>
   <div class="layer" id="artB"><div class="blur"></div><img class="pic" alt=""></div>
   <div class="cap" id="artCap"></div>
@@ -748,7 +750,9 @@ function showArt(){
   img.onerror=()=>{if(artPos<artOrder.length)showArt()};
   img.src=a.img;
 }
-function startSaver(){if(modal.open)modal.close();if(wmodal.open)wmodal.close();saver.classList.add("on");showArt();clearInterval(artTimer);artTimer=setInterval(showArt,ART_EVERY)}
+function saverTemp(){const t=DATA&&DATA.weather&&DATA.weather.now;document.getElementById("stemp").textContent=t?`${t.temp}°`:""}
+function startSaver(){saverTemp();if(modal.open)modal.close();if(wmodal.open)wmodal.close();saver.classList.add("on");showArt();clearInterval(artTimer);artTimer=setInterval(()=>{showArt();saverTemp()},ART_EVERY)}
+setInterval(()=>{if(saver.classList.contains("on"))saverTemp()},5*60*1000);
 function stopSaver(){saver.classList.remove("on");clearInterval(artTimer);idle=Date.now()}
 saver.addEventListener("pointerdown",e=>{e.stopPropagation();stopSaver()});
 document.getElementById("testSaver").addEventListener("click",e=>{e.stopPropagation();startSaver()});
