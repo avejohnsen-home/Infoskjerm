@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-20T03:43:51.611Z",
+ "updated": "2026-10-20T04:41:52.219Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-20",
-   "h": 5,
+   "h": 6,
    "temp": 7,
    "wind": 1,
    "sym": "cloudy",
@@ -17,7 +17,7 @@
     "hours": [
      {
       "date": "2026-10-20",
-      "h": 5,
+      "h": 6,
       "temp": 7,
       "wind": 1,
       "sym": "cloudy",
@@ -26,18 +26,9 @@
      },
      {
       "date": "2026-10-20",
-      "h": 6,
+      "h": 7,
       "temp": 7,
       "wind": 2,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-20",
-      "h": 7,
-      "temp": 6,
-      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -82,7 +73,7 @@
       "date": "2026-10-20",
       "h": 12,
       "temp": 7,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -99,7 +90,7 @@
      {
       "date": "2026-10-20",
       "h": 14,
-      "temp": 7,
+      "temp": 8,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -126,7 +117,7 @@
      {
       "date": "2026-10-20",
       "h": 17,
-      "temp": 7,
+      "temp": 8,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -154,7 +145,7 @@
       "date": "2026-10-20",
       "h": 20,
       "temp": 6,
-      "wind": 4,
+      "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -182,14 +173,14 @@
       "h": 23,
       "temp": 6,
       "wind": 5,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      }
     ],
     "max": 8,
     "min": 6,
-    "rain": 0.1,
+    "rain": 0,
     "sym": "cloudy"
    },
    {
@@ -210,7 +201,7 @@
       "temp": 6,
       "wind": 7,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -218,8 +209,8 @@
       "h": 2,
       "temp": 6,
       "wind": 7,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -246,16 +237,16 @@
       "temp": 6,
       "wind": 7,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 6,
       "temp": 6,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 7,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -263,15 +254,15 @@
       "h": 7,
       "temp": 6,
       "wind": 8,
-      "sym": "heavyrain",
-      "rain": 1,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 8,
       "temp": 7,
-      "wind": 8,
+      "wind": 7,
       "sym": "rain",
       "rain": 0.4,
       "span": 1
@@ -281,31 +272,22 @@
       "h": 9,
       "temp": 7,
       "wind": 7,
-      "sym": "rain",
-      "rain": 0.9,
+      "sym": "heavyrain",
+      "rain": 1.8,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 10,
       "temp": 7,
-      "wind": 8,
+      "wind": 7,
       "sym": "heavyrain",
-      "rain": 2.2,
+      "rain": 1.7,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 11,
-      "temp": 8,
-      "wind": 8,
-      "sym": "heavyrain",
-      "rain": 2.4,
-      "span": 1
-     },
-     {
-      "date": "2026-10-21",
-      "h": 12,
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
@@ -314,8 +296,17 @@
      },
      {
       "date": "2026-10-21",
+      "h": 12,
+      "temp": 8,
+      "wind": 7,
+      "sym": "rain",
+      "rain": 0.9,
+      "span": 1
+     },
+     {
+      "date": "2026-10-21",
       "h": 13,
-      "temp": 9,
+      "temp": 8,
       "wind": 7,
       "sym": "rain",
       "rain": 0.7,
@@ -324,16 +315,16 @@
      {
       "date": "2026-10-21",
       "h": 14,
-      "temp": 10,
-      "wind": 7,
+      "temp": 8,
+      "wind": 6,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 15,
-      "temp": 10,
+      "temp": 9,
       "wind": 6,
       "sym": "lightrain",
       "rain": 0.2,
@@ -342,7 +333,7 @@
      {
       "date": "2026-10-21",
       "h": 16,
-      "temp": 10,
+      "temp": 9,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -351,7 +342,7 @@
      {
       "date": "2026-10-21",
       "h": 17,
-      "temp": 10,
+      "temp": 9,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -360,7 +351,7 @@
      {
       "date": "2026-10-21",
       "h": 18,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -369,52 +360,52 @@
      {
       "date": "2026-10-21",
       "h": 19,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 20,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.3,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 21,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.5,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 22,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 23,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.8,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      }
     ],
-    "max": 10,
+    "max": 9,
     "min": 6,
-    "rain": 12.5,
+    "rain": 9.1,
     "sym": "rain"
    },
    {
@@ -423,19 +414,19 @@
      {
       "date": "2026-10-22",
       "h": 0,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "heavyrain",
-      "rain": 1.3,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 1,
-      "temp": 10,
-      "wind": 5,
-      "sym": "heavyrain",
-      "rain": 1.7,
+      "temp": 9,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -444,7 +435,7 @@
       "temp": 10,
       "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.4,
+      "rain": 1.2,
       "span": 1
      },
      {
@@ -453,32 +444,32 @@
       "temp": 10,
       "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.3,
+      "rain": 1.5,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 4,
       "temp": 10,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.8,
+      "wind": 5,
+      "sym": "heavyrain",
+      "rain": 1.3,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 5,
       "temp": 10,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.7,
+      "wind": 5,
+      "sym": "heavyrain",
+      "rain": 1.2,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 6,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "rain",
       "rain": 0.3,
       "span": 1
@@ -486,8 +477,8 @@
      {
       "date": "2026-10-22",
       "h": 7,
-      "temp": 11,
-      "wind": 4,
+      "temp": 10,
+      "wind": 5,
       "sym": "rain",
       "rain": 0.3,
       "span": 1
@@ -495,11 +486,56 @@
      {
       "date": "2026-10-22",
       "h": 8,
+      "temp": 10,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.3,
+      "span": 1
+     },
+     {
+      "date": "2026-10-22",
+      "h": 9,
       "temp": 11,
       "wind": 4,
       "sym": "rain",
-      "rain": 5.1,
-      "span": 6
+      "rain": 0.8,
+      "span": 1
+     },
+     {
+      "date": "2026-10-22",
+      "h": 10,
+      "temp": 11,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.9,
+      "span": 1
+     },
+     {
+      "date": "2026-10-22",
+      "h": 11,
+      "temp": 11,
+      "wind": 4,
+      "sym": "heavyrain",
+      "rain": 1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-22",
+      "h": 12,
+      "temp": 11,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.8,
+      "span": 1
+     },
+     {
+      "date": "2026-10-22",
+      "h": 13,
+      "temp": 11,
+      "wind": 4,
+      "sym": "heavyrain",
+      "rain": 1,
+      "span": 1
      },
      {
       "date": "2026-10-22",
@@ -521,9 +557,9 @@
      }
     ],
     "max": 12,
-    "min": 10,
-    "rain": 17.2,
-    "sym": "rain"
+    "min": 9,
+    "rain": 15.6,
+    "sym": "heavyrain"
    },
    {
     "date": "2026-10-23",
