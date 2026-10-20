@@ -393,7 +393,7 @@ function renderWeather(w){
     b.addEventListener("click",()=>openDay(d,k));el.appendChild(b);});
 }
 const CATS=["Alle","Teater","Musikal","Opera","Ballett","Revy og show","Konsert"];
-let catFilter="Alle", cityFilter="Oslo", venueFilter="Alle", theatreView="logos";
+let catFilter="Alle", cityFilter="Alle", venueFilter="Alle", theatreView="logos";
 const theaterOf=s=>/^oslo nye/i.test(s.label)?"Oslo Nye Teater":s.label;
 function catOf(s){
   if(s.genres&&s.genres.length){const g=s.genres.join(" ").toLowerCase();
@@ -433,12 +433,13 @@ function renderTheatre(){
   list.sort((a,b)=>a.key-b.key);
   const byCity={};list.forEach(s=>byCity[s.city]=(byCity[s.city]||0)+1);
   const HOME_CITY="Oslo";const cities=Object.keys(byCity).sort((a,b)=>(b===HOME_CITY)-(a===HOME_CITY)||a.localeCompare(b,"nb"));
-  if(!cities.includes(cityFilter))cityFilter=cities[0]||"Oslo";
+  if(cityFilter!=="Alle"&&!cities.includes(cityFilter))cityFilter="Alle";
   const ce=document.getElementById("cities");ce.innerHTML="";
-  cities.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=`${c} (${byCity[c]})`;
+  ["Alle",...cities].forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=c==="Alle"?`Alle byer (${list.length})`:`${c} (${byCity[c]})`;
     b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";venueFilter="Alle";theatreView="logos";pause();renderTheatre()});ce.appendChild(b)});
   const all=list;
-  list=all.filter(s=>s.city===cityFilter);
+  list=cityFilter==="Alle"?all:all.filter(s=>s.city===cityFilter);
+  const cityOfTheater={};list.forEach(s=>cityOfTheater[theaterOf(s)]=s.city);
   // teatermeny for valgt by
   const vc={};list.forEach(s=>{const t=theaterOf(s);vc[t]=(vc[t]||0)+1});
   const venues=Object.keys(vc).sort((a,b)=>a.localeCompare(b,"nb"));
@@ -456,9 +457,9 @@ function renderTheatre(){
   const shown=list.filter(s=>catFilter==="Alle"||s.cat===catFilter);
   const el=document.getElementById("posters");el.innerHTML="";
   // Logooversikt: det første man ser på Teater-fanen
-  if(theatreView==="logos"&&venueFilter==="Alle"&&catFilter==="Alle"&&venues.length>1){
+  if(theatreView==="logos"&&venueFilter==="Alle"&&catFilter==="Alle"&&venues.length>=1){
     const mk=(name,count,logo,onClick,isAll,isOwn)=>{const b=document.createElement("button");b.className="poster theatre-tile";
-      b.innerHTML=`<div class="art logo-art${isAll?" all":""}${isOwn?" own":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} forestillinger</div>`;
+      b.innerHTML=`<div class="art logo-art${isAll?" all":""}${isOwn?" own":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} ${count===1?"forestilling":"forestillinger"}${!isAll&&cityFilter==="Alle"&&cityOfTheater[name]?", "+esc(cityOfTheater[name]):""}</div>`;
       b.addEventListener("click",onClick);el.appendChild(b);};
     mk("Alle teatrene",list.length,"",()=>{theatreView="posters";pause();renderTheatre()},true);
     venues.forEach(v=>{const own=ownLogoFor(v);mk(v,vc[v],own||(DATA.logos||{})[v],()=>{venueFilter=v;theatreView="posters";pause();renderTheatre()},false,!!own)});
@@ -684,7 +685,7 @@ document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav
 const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4].map(i=>document.getElementById("s"+i));
 let cur=0;
 function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach(t=>t.setAttribute("aria-selected",+t.dataset.i===i));}
-tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===0&&DATA){theatreView="logos";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
+tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===0&&DATA){theatreView="logos";cityFilter="Alle";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
 function pause(){} // tidligere brukt til å pause rotasjonen; beholdt så eksisterende kall fortsatt virker
 show(0);syncFav();renderWatch();
 
