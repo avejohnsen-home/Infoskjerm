@@ -968,14 +968,27 @@ async function oslonyeWeb() {
       if (!prod.has(m[1])) prod.set(m[1], { title: $(a).text().replace(/\u00ad/g, "").replace(/\s+/g, " ").trim(), url: href + "/", img: "", scene: sceneOf(t), sub: subOf(t) });
     });
   }
+  // Plakat: bruk delingsbildet (og:image) fra hver forestillings egen side – det er alltid riktig plakat.
+  // Bildene huskes mellom kjøringer, så hver side besøkes bare én gang.
+  const known = new Map((old.oslonye || []).filter(x => x.imgSrc === "og" && x.img).map(x => [x.url, x.img]));
+  let og = 0;
+  for (const p of prod.values()) {
+    if (known.has(p.url)) { p.img = known.get(p.url); p.imgSrc = "og"; og++; continue; }
+    try {
+      const $d = await getHtml(p.url);
+      const img = $d('meta[property="og:image"]').attr("content") || $d('meta[name="twitter:image"]').attr("content") || "";
+      if (img && !/logo|favicon|_small\.svg/i.test(img)) { p.img = abs(img, p.url); p.imgSrc = "og"; og++; }
+    } catch {}
+    await new Promise(res => setTimeout(res, 300));
+  }
   const out = [];
   for (const [slug, p] of prod) {
     const ds = [...(dates.get(slug) || [])].filter(x => x >= today).sort();
     const premiere = (p.title.match(/premiere/i) ? "" : "");
     out.push({ title: p.title, venue: p.scene + (p.sub && !/hovedscenen/i.test(p.sub) ? ", " + p.sub.replace(/^teaterkjeller\w*/i, "Teaterkjelleren").replace(/^cafescenen$/i, "Caféscenen") : ""),
-      url: p.url, img: p.img, from: ds[0] || null, to: ds[ds.length - 1] || null, about: ds.length > 1 ? `${ds.length} forestillinger de neste ukene` : "", hint: p.title + premiere });
+      url: p.url, img: p.img, imgSrc: p.imgSrc || "", from: ds[0] || null, to: ds[ds.length - 1] || null, about: ds.length > 1 ? `${ds.length} forestillinger de neste ukene` : "", hint: p.title + premiere });
   }
-  console.log(`  Oslo Nye: ${out.length} forestillinger (${out.filter(x => /^Centralteatret/.test(x.venue)).length} på Centralteatret), ${out.filter(x => x.from).length} med datoer`);
+  console.log(`  Oslo Nye: ${out.length} forestillinger (${out.filter(x => /^Centralteatret/.test(x.venue)).length} på Centralteatret), ${out.filter(x => x.from).length} med datoer, ${og} plakater fra egen side`);
   return out;
 }
 
