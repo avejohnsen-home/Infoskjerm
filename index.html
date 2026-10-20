@@ -473,7 +473,7 @@ function renderTheatre(){
     const mk=(name,count,logo,onClick,isAll,isOwn)=>{const b=document.createElement("button");b.className="poster theatre-tile";
       b.innerHTML=`<div class="art logo-art${isAll?" all":""}${isOwn?" own":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} ${count===1?"forestilling":"forestillinger"}${!isAll&&cityFilter==="Alle"&&cityOfTheater[name]?", "+esc(cityOfTheater[name]):""}</div>`;
       b.addEventListener("click",onClick);el.appendChild(b);};
-    mk("Alle teatrene",list.length,"",()=>{theatreView="posters";pause();renderTheatre()},true);
+    if(cityFilter!=="Alle")mk("Alle teatrene",list.length,"",()=>{theatreView="posters";pause();renderTheatre()},true);  // bare når en by er valgt
     venues.forEach(v=>{const own=ownLogoFor(v);mk(v,vc[v],own||(DATA.logos||{})[v],()=>{venueFilter=v;theatreView="posters";pause();renderTheatre()},false,!!own)});
     document.getElementById("srcT").textContent=`Velg et teater, eller «Alle teatrene» for å se alle ${list.length} forestillinger.`;
     return;
