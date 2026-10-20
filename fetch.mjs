@@ -996,7 +996,7 @@ async function oslonyeWeb() {
 const THEATER_SITES = {
   "Chat Noir": "https://www.chatnoir.no/", "Chateau Neuf": "https://neuf.no/", "Christiania Teater": "https://christianiateaterscene.no/",
   "Det Norske Teatret": "https://www.detnorsketeatret.no/", "Nationaltheatret": "https://www.nationaltheatret.no/", "Operaen": "https://www.operaen.no/",
-  "Oslo Nye Teater": "https://oslonye.no/", "Den Nationale Scene": "https://dns.no/", "Kilden": "https://kilden.com/",
+  "Oslo Nye Teater": "https://oslonye.no/", "Den Nationale Scene": "https://dns.no/", "Grieghallen": "https://www.grieghallen.no/", "Kilden": "https://kilden.com/",
   "Bruddet Fjæreheia (Grimstad)": "https://www.xn--bruddetfjreheia-5lb.no/", "Trøndelag Teater": "https://www.trondelag-teater.no/", "Nye Hjorten Teater": "https://nyehjortenteater.no/"
 };
 const LOGO_OVERRIDE = { "Centralteatret": "https://oslonye.no/wp-content/uploads/centralteatret_small.svg" };
@@ -1021,6 +1021,39 @@ async function logos() {
   return out;
 }
 
+// ---------- Grieghallen (Bergen) via Ticketmaster – billettene selges der, med eksakte tider og bilder ----------
+async function grieghallen() {
+  const key = process.env.TICKETMASTER_KEY;
+  if (!key) throw new Error("mangler TICKETMASTER_KEY i GitHub Secrets");
+  const B = "https://app.ticketmaster.com/discovery/v2";
+  const r = await fetch(`${B}/venues.json?keyword=Grieghallen&countryCode=NO&size=20&apikey=${key}`);
+  if (!r.ok) throw new Error("Ticketmaster svarte " + r.status);
+  const venues = ((await r.json())._embedded?.venues || []).filter(v => /grieghallen/i.test(v.name));
+  console.log("  Grieghallen hos Ticketmaster: " + (venues.map(v => v.name).join(" | ") || "ingen"));
+  const shows = new Map();
+  for (const v of venues) {
+    for (let page = 0; page < 3; page++) {
+      const er = await fetch(`${B}/events.json?venueId=${v.id}&size=200&page=${page}&sort=date,asc&apikey=${key}`);
+      if (!er.ok) break;
+      const j = await er.json();
+      for (const e of j._embedded?.events || []) {
+        const d = e.dates?.start; if (!d?.localDate) continue;
+        const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
+        const img = (e.images || []).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
+        const title = e.name.replace(/\s*[-–]\s*(siste forestilling|ekstraforestilling|ekstra)!?$/i, "").trim();
+        const sal = (v.name.match(/,\s*(.+)$/) || [])[1] || "";
+        const k = title.toLowerCase();
+        const genre = [e.classifications?.[0]?.segment?.name, e.classifications?.[0]?.genre?.name].filter(x => x && x !== "Undefined").join(" ");
+        if (!shows.has(k)) shows.set(k, { title, venue: "Grieghallen" + (sal ? ", " + sal : ""), url: e.url, img, times: [], hint: genre });
+        const s = shows.get(k); if (!s.times.includes(iso)) s.times.push(iso);
+      }
+      if ((j.page?.totalPages || 1) <= page + 1) break;
+      await new Promise(res => setTimeout(res, 250));
+    }
+  }
+  return [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -1031,7 +1064,7 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink], ["grieghallen", grieghallen]]) await run(key, fn);
 await run("ownArt", ownPictures, true);
 await run("logos", logos);
 await run("fjaereheia", fjaereheia, true);
@@ -1051,7 +1084,7 @@ try {
   try { await trondelagPosters(browser); } catch (e) { console.log("  Trøndelag-plakater feilet: " + e.message); }
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
-const CITY = { k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
+const CITY = { grieghallen: "Bergen", k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
 for (const [k, city] of Object.entries(CITY)) if (Array.isArray(data[k])) data[k].forEach(x => { x.city = x.city || city; });
 try { data.prices = await prices(); } catch (e) { data.prices = old.prices || {}; data.errors.push("prices: " + e.message); console.log("FEIL prices", e.message); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));
