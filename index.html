@@ -114,6 +114,7 @@ body{
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--tram);border-color:var(--tram);color:#fff}
 #cities .chip{font-weight:600}
+#venues .chip[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:#17222C}
 #cities .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 .meta b{color:var(--ink);font-weight:600;display:block;font-size:14px}
 .kind{display:inline-block;font-size:11px;font-weight:600;background:rgba(255,255,255,.88);color:#17222C;border-radius:4px;padding:2px 6px;position:absolute;top:10px;left:10px}
@@ -258,6 +259,7 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 
   <section class="slide" id="s0">
     <div class="filters" id="cities" role="group" aria-label="Velg by"></div>
+    <div class="filters" id="venues" role="group" aria-label="Velg teater"></div>
     <div class="filters" id="filters" role="group" aria-label="Filtrer forestillinger"></div>
     <div class="posters" id="posters"></div>
     <p class="src" id="srcT"></p>
@@ -382,7 +384,8 @@ function renderWeather(w){
     b.addEventListener("click",()=>openDay(d,k));el.appendChild(b);});
 }
 const CATS=["Alle","Teater","Musikal","Opera","Ballett","Revy og show","Konsert"];
-let catFilter="Alle", cityFilter="Oslo";
+let catFilter="Alle", cityFilter="Oslo", venueFilter="Alle";
+const theaterOf=s=>/^oslo nye/i.test(s.label)?"Oslo Nye Teater":s.label;
 function catOf(s){
   if(s.genres&&s.genres.length){const g=s.genres.join(" ").toLowerCase();
     if(/ballett|ballet|dans/.test(g))return "Ballett"; if(/konsert|concert/.test(g))return "Konsert"; if(g.includes("opera"))return "Opera";}
@@ -411,9 +414,17 @@ function renderTheatre(){
   if(!cities.includes(cityFilter))cityFilter=cities[0]||"Oslo";
   const ce=document.getElementById("cities");ce.innerHTML="";
   cities.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=`${c} (${byCity[c]})`;
-    b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";pause();renderTheatre()});ce.appendChild(b)});
+    b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";venueFilter="Alle";pause();renderTheatre()});ce.appendChild(b)});
   const all=list;
   list=all.filter(s=>s.city===cityFilter);
+  // teatermeny for valgt by
+  const vc={};list.forEach(s=>{const t=theaterOf(s);vc[t]=(vc[t]||0)+1});
+  const venues=Object.keys(vc).sort((a,b)=>a.localeCompare(b,"nb"));
+  if(venueFilter!=="Alle"&&!venues.includes(venueFilter))venueFilter="Alle";
+  const ve=document.getElementById("venues");ve.innerHTML="";
+  if(venues.length>1)["Alle",...venues].forEach(v=>{const b=document.createElement("button");b.className="chip";b.textContent=v==="Alle"?`Alle teatre (${list.length})`:`${v} (${vc[v]})`;
+    b.setAttribute("aria-pressed",v===venueFilter);b.addEventListener("click",()=>{venueFilter=v;catFilter="Alle";pause();renderTheatre()});ve.appendChild(b)});
+  if(venueFilter!=="Alle")list=list.filter(s=>theaterOf(s)===venueFilter);
   const counts={};list.forEach(s=>counts[s.cat]=(counts[s.cat]||0)+1);
   const cats=CATS.filter(c=>c==="Alle"||counts[c]);
   if(!cats.includes(catFilter))catFilter="Alle";
