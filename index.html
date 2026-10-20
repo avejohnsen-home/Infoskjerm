@@ -229,6 +229,18 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
   .slide.on,.saver.on{animation:none}
 }
 
+
+/* ---- Mørk brun bakgrunn (fast, uansett lys/mørk modus) ---- */
+:root{
+  --bg:#140E0A !important; --surface:#231A14 !important; --ink:#F4ECE2 !important; --muted:#C4B3A2 !important;
+  --line:#3B2E24 !important; --tram:#E4B36A !important; --signal:#F0C352 !important;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink)}
+.chip[aria-pressed="true"],.close{color:#140E0A !important}
+#cities .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#140E0A !important}
+.when.soon{color:var(--tram)}
+
 /* ---- Fyll hele skjermen (veggskjerm i stående format) ---- */
 .wrap{max-width:none;padding:clamp(16px,3vw,36px) clamp(16px,3vw,36px) 28px}
 .posters{grid-template-columns:repeat(auto-fill,minmax(min(200px,45%),1fr))}
