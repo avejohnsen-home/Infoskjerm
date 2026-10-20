@@ -939,9 +939,13 @@ async function oslonyeWeb() {
       const title = ($(a).text().replace(/\u00ad/g, "").replace(/\s+/g, " ").trim());
       if (!title || /^https?:/.test(title) || /billetter|se trailer/i.test(title)) return;
       const text = card.text().replace(/\s+/g, " ");
+      // scene: adressen er sikrest (Rosenkrantz' gate = Oslo Nye, Akersgata = Centralteatret), ellers teksten rett før tittelen
+      const hasR = /rosenkrantz/i.test(text), hasA = /akersg/i.test(text);
+      const before = text.slice(0, Math.max(0, text.indexOf(title))).slice(-80);
+      const scene = hasR && !hasA ? "Oslo Nye Teater" : hasA && !hasR ? "Centralteatret" : sceneOf(before);
       const old = prod.get(m[1]) || {};
       const img = posterOf($, card, url).ok.find(u => !/_small\.svg|logo|icon|\.svg/i.test(u)) || old.img || "";
-      prod.set(m[1], { title: old.title || title, url: href + "/", img, scene: old.scene || sceneOf(text), sub: old.sub || subOf(text) });
+      prod.set(m[1], { title: old.title || title, url: href + "/", img, scene: old.scene || scene, sub: old.sub || subOf(before) });
     });
   }
   // kalender: datoer per forestilling
@@ -958,6 +962,9 @@ async function oslonyeWeb() {
       let y = d[3] ? (d[3].length === 2 ? 2000 + +d[3] : +d[3]) : now.getFullYear();
       let iso = `${y}-${pad(d[2])}-${pad(d[1])}`; if (!d[3] && iso < today) iso = `${y + 1}-${pad(d[2])}-${pad(d[1])}`;
       if (!dates.has(m[1])) dates.set(m[1], new Set()); dates.get(m[1]).add(iso);
+      const icon = card.find("img").map((_, e) => $(e).attr("src") || "").get().join(" ");
+      const calScene = /centralteatret_small/i.test(icon) ? "Centralteatret" : /oslonye_small/i.test(icon) ? "Oslo Nye Teater" : null;
+      if (calScene && prod.has(m[1])) { const p = prod.get(m[1]); p.scene = calScene; if (!p.sub) p.sub = subOf(t); }
       if (!prod.has(m[1])) prod.set(m[1], { title: $(a).text().replace(/\u00ad/g, "").replace(/\s+/g, " ").trim(), url: href + "/", img: "", scene: sceneOf(t), sub: subOf(t) });
     });
   }
