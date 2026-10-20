@@ -922,6 +922,85 @@ async function ownPictures() {
   return files.map(f => ({ title: f.replace(/\.[^.]+$/, "").replace(/[-_]+/g, " "), artist: "", year: "", img: "pausebilder/" + encodeURIComponent(f), own: true }));
 }
 
+// ---------- Oslo Nye Teater + Centralteatret (fra oslonye.no) ----------
+// Hovedscenen/Trikkestallen = «Oslo Nye Teater». Centralteatret (med Teaterkjelleren og Caféscenen) = eget teater.
+async function oslonyeWeb() {
+  const base = "https://oslonye.no/";
+  const prod = new Map();   // slug -> {title, url, img, scene}
+  const sceneOf = t => /centralteatret|teaterkjeller|caféscenen|cafescenen/i.test(t) ? "Centralteatret" : "Oslo Nye Teater";
+  const subOf = t => (t.match(/teaterkjeller\w*|caféscenen|cafescenen|trikkestallen|hovedscenen/i) || [""])[0];
+  for (const url of ["https://oslonye.no/forestillinger/", base]) {
+    let $; try { $ = await getHtml(url); } catch (e) { console.log("  Oslo Nye: " + e.message); continue; }
+    $('a[href*="/forestillinger/"]').each((_, a) => {
+      const href = abs($(a).attr("href"), url).split("?")[0].replace(/\/$/, "");
+      const m = href.match(/\/forestillinger\/([^/]+)$/); if (!m) return;
+      const card = cardAround($, a, c => c.find("img").length > 0 && new Set(c.find('a[href*="/forestillinger/"]').map((_, x) => abs($(x).attr("href"), url).split("?")[0].replace(/\/$/, "")).get().filter(h => /\/forestillinger\/[^/]+$/.test(h))).size === 1);
+      if (!card.length || card.find("img").length === 0) return;
+      const title = ($(a).text().replace(/\u00ad/g, "").replace(/\s+/g, " ").trim());
+      if (!title || /^https?:/.test(title) || /billetter|se trailer/i.test(title)) return;
+      const text = card.text().replace(/\s+/g, " ");
+      const old = prod.get(m[1]) || {};
+      const img = posterOf($, card, url).ok.find(u => !/_small\.svg|logo|icon|\.svg/i.test(u)) || old.img || "";
+      prod.set(m[1], { title: old.title || title, url: href + "/", img, scene: old.scene || sceneOf(text), sub: old.sub || subOf(text) });
+    });
+  }
+  // kalender: datoer per forestilling
+  const dates = new Map(); const now = new Date(); const today = now.toISOString().slice(0, 10);
+  for (const url of ["https://oslonye.no/kalender/", base]) {
+    let $; try { $ = await getHtml(url); } catch { continue; }
+    $('a[href*="/forestillinger/"]').each((_, a) => {
+      const href = abs($(a).attr("href"), url).split("?")[0].replace(/\/$/, "");
+      const m = href.match(/\/forestillinger\/([^/]+)$/); if (!m) return;
+      const card = cardAround($, a, c => /(^|\D)\d{1,2}\.\d{1,2}(\D|$)/.test(c.text()) && c.find('a[href*="ticketmaster"], a[href*="billett"]').length > 0);
+      const t = card.text().replace(/\s+/g, " ");
+      const d = t.match(/(?:^|\D)(\d{1,2})\.(\d{1,2})(?:\.(\d{2,4}))?(?!\d)/); if (!d) return;
+      if (new Set(card.find('a[href*="/forestillinger/"]').map((_, x) => $(x).attr("href")).get()).size > 2) return;
+      let y = d[3] ? (d[3].length === 2 ? 2000 + +d[3] : +d[3]) : now.getFullYear();
+      let iso = `${y}-${pad(d[2])}-${pad(d[1])}`; if (!d[3] && iso < today) iso = `${y + 1}-${pad(d[2])}-${pad(d[1])}`;
+      if (!dates.has(m[1])) dates.set(m[1], new Set()); dates.get(m[1]).add(iso);
+      if (!prod.has(m[1])) prod.set(m[1], { title: $(a).text().replace(/\u00ad/g, "").replace(/\s+/g, " ").trim(), url: href + "/", img: "", scene: sceneOf(t), sub: subOf(t) });
+    });
+  }
+  const out = [];
+  for (const [slug, p] of prod) {
+    const ds = [...(dates.get(slug) || [])].filter(x => x >= today).sort();
+    const premiere = (p.title.match(/premiere/i) ? "" : "");
+    out.push({ title: p.title, venue: p.scene + (p.sub && !/hovedscenen/i.test(p.sub) ? ", " + p.sub.replace(/^teaterkjeller\w*/i, "Teaterkjelleren").replace(/^cafescenen$/i, "Caféscenen") : ""),
+      url: p.url, img: p.img, from: ds[0] || null, to: ds[ds.length - 1] || null, about: ds.length > 1 ? `${ds.length} forestillinger de neste ukene` : "", hint: p.title + premiere });
+  }
+  console.log(`  Oslo Nye: ${out.length} forestillinger (${out.filter(x => /^Centralteatret/.test(x.venue)).length} på Centralteatret), ${out.filter(x => x.from).length} med datoer`);
+  return out;
+}
+
+// ---------- Teaterlogoer (hentes én gang i uken) ----------
+const THEATER_SITES = {
+  "Chat Noir": "https://www.chatnoir.no/", "Chateau Neuf": "https://neuf.no/", "Christiania Teater": "https://christianiateaterscene.no/",
+  "Det Norske Teatret": "https://www.detnorsketeatret.no/", "Nationaltheatret": "https://www.nationaltheatret.no/", "Operaen": "https://www.operaen.no/",
+  "Oslo Nye Teater": "https://oslonye.no/", "Den Nationale Scene": "https://dns.no/", "Kilden": "https://kilden.com/",
+  "Bruddet Fjæreheia (Grimstad)": "https://www.xn--bruddetfjreheia-5lb.no/", "Trøndelag Teater": "https://www.trondelag-teater.no/", "Nye Hjorten Teater": "https://nyehjortenteater.no/"
+};
+const LOGO_OVERRIDE = { "Centralteatret": "https://oslonye.no/wp-content/uploads/centralteatret_small.svg" };
+async function logos() {
+  if (old.logos && old.logosAt && Date.now() - new Date(old.logosAt) < 7 * 864e5) { data.logosAt = old.logosAt; return old.logos; }
+  const out = { ...LOGO_OVERRIDE };
+  for (const [name, url] of Object.entries(THEATER_SITES)) {
+    try {
+      const $ = await getHtml(url);
+      const cand = [];
+      $("header img, img").each((_, e) => { const el = $(e); const src = el.attr("src") || el.attr("data-src") || ""; const tag = (src + " " + (el.attr("alt") || "") + " " + (el.attr("class") || "")).toLowerCase(); if (src && /logo/.test(tag)) cand.push(src); });
+      const touch = $('link[rel="apple-touch-icon"], link[rel="apple-touch-icon-precomposed"]').attr("href");
+      const icon = $('link[rel="icon"][sizes]').toArray().map(e => $(e)).sort((a, b) => parseInt(b.attr("sizes")) - parseInt(a.attr("sizes")))[0]?.attr("href");
+      const tile = $('meta[name="msapplication-TileImage"]').attr("content");
+      const pick = cand[0] || touch || tile || icon || "";
+      if (pick) out[name] = abs(pick.startsWith("/_next/image") ? new URL(pick, url).searchParams.get("url") || pick : pick, url);
+    } catch {}
+    await new Promise(res => setTimeout(res, 300));
+  }
+  console.log("  Logoer: " + Object.keys(out).length + " teatre");
+  data.logosAt = new Date().toISOString();
+  return out;
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -932,8 +1011,9 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
 await run("ownArt", ownPictures, true);
+await run("logos", logos);
 await run("fjaereheia", fjaereheia, true);
 
 const { chromium } = await import("playwright");

@@ -112,6 +112,11 @@ body{
 .meta b{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .filters{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
+.logo-art{display:flex;align-items:center;justify-content:center;background:#C9D1D8;padding:14%}
+.logo-art .logo{position:static;width:100%;height:100%;object-fit:contain}
+.logo-art.all{background:linear-gradient(135deg,var(--tram),#3B2E5A)}
+.all-txt{color:#fff;font-weight:800;font-size:clamp(20px,5vw,30px);line-height:1.05;text-align:center}
+.logo-txt{color:#17222C;font-weight:800;font-size:clamp(16px,4vw,24px);text-align:center;line-height:1.1}
 .chip[aria-pressed="true"]{background:var(--tram);border-color:var(--tram);color:#fff}
 #cities .chip{font-weight:600}
 #venues .chip[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:#17222C}
@@ -384,7 +389,7 @@ function renderWeather(w){
     b.addEventListener("click",()=>openDay(d,k));el.appendChild(b);});
 }
 const CATS=["Alle","Teater","Musikal","Opera","Ballett","Revy og show","Konsert"];
-let catFilter="Alle", cityFilter="Oslo", venueFilter="Alle";
+let catFilter="Alle", cityFilter="Oslo", venueFilter="Alle", theatreView="logos";
 const theaterOf=s=>/^oslo nye/i.test(s.label)?"Oslo Nye Teater":s.label;
 function catOf(s){
   if(s.genres&&s.genres.length){const g=s.genres.join(" ").toLowerCase();
@@ -414,7 +419,7 @@ function renderTheatre(){
   if(!cities.includes(cityFilter))cityFilter=cities[0]||"Oslo";
   const ce=document.getElementById("cities");ce.innerHTML="";
   cities.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=`${c} (${byCity[c]})`;
-    b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";venueFilter="Alle";pause();renderTheatre()});ce.appendChild(b)});
+    b.setAttribute("aria-pressed",c===cityFilter);b.addEventListener("click",()=>{cityFilter=c;catFilter="Alle";venueFilter="Alle";theatreView="logos";pause();renderTheatre()});ce.appendChild(b)});
   const all=list;
   list=all.filter(s=>s.city===cityFilter);
   // teatermeny for valgt by
@@ -423,16 +428,26 @@ function renderTheatre(){
   if(venueFilter!=="Alle"&&!venues.includes(venueFilter))venueFilter="Alle";
   const ve=document.getElementById("venues");ve.innerHTML="";
   if(venues.length>1)["Alle",...venues].forEach(v=>{const b=document.createElement("button");b.className="chip";b.textContent=v==="Alle"?`Alle teatre (${list.length})`:`${v} (${vc[v]})`;
-    b.setAttribute("aria-pressed",v===venueFilter);b.addEventListener("click",()=>{venueFilter=v;catFilter="Alle";pause();renderTheatre()});ve.appendChild(b)});
+    b.setAttribute("aria-pressed",v===venueFilter);b.addEventListener("click",()=>{venueFilter=v;catFilter="Alle";theatreView=v==="Alle"?"logos":"posters";pause();renderTheatre()});ve.appendChild(b)});
   if(venueFilter!=="Alle")list=list.filter(s=>theaterOf(s)===venueFilter);
   const counts={};list.forEach(s=>counts[s.cat]=(counts[s.cat]||0)+1);
   const cats=CATS.filter(c=>c==="Alle"||counts[c]);
   if(!cats.includes(catFilter))catFilter="Alle";
   const fe=document.getElementById("filters");fe.innerHTML="";
   cats.forEach(c=>{const b=document.createElement("button");b.className="chip";b.textContent=c==="Alle"?`Alle (${list.length})`:`${c} (${counts[c]})`;
-    b.setAttribute("aria-pressed",c===catFilter);b.addEventListener("click",()=>{catFilter=c;pause();renderTheatre()});fe.appendChild(b)});
+    b.setAttribute("aria-pressed",c===catFilter);b.addEventListener("click",()=>{catFilter=c;theatreView="posters";pause();renderTheatre()});fe.appendChild(b)});
   const shown=list.filter(s=>catFilter==="Alle"||s.cat===catFilter);
   const el=document.getElementById("posters");el.innerHTML="";
+  // Logooversikt: det første man ser på Teater-fanen
+  if(theatreView==="logos"&&venueFilter==="Alle"&&catFilter==="Alle"&&venues.length>1){
+    const mk=(name,count,logo,onClick,isAll)=>{const b=document.createElement("button");b.className="poster theatre-tile";
+      b.innerHTML=`<div class="art logo-art${isAll?" all":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} forestillinger</div>`;
+      b.addEventListener("click",onClick);el.appendChild(b);};
+    mk("Alle teatrene",list.length,"",()=>{theatreView="posters";pause();renderTheatre()},true);
+    venues.forEach(v=>mk(v,vc[v],(DATA.logos||{})[v],()=>{venueFilter=v;theatreView="posters";pause();renderTheatre()}));
+    document.getElementById("srcT").textContent=`Velg et teater, eller «Alle teatrene» for å se alle ${list.length} forestillinger.`;
+    return;
+  }
   shown.forEach(s=>{const b=document.createElement("button");b.className="poster";
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"teater",s));});
@@ -649,7 +664,7 @@ document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav
 const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4].map(i=>document.getElementById("s"+i));
 let cur=0;
 function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach(t=>t.setAttribute("aria-selected",+t.dataset.i===i));}
-tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch()}));
+tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===0&&DATA){theatreView="logos";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
 function pause(){} // tidligere brukt til å pause rotasjonen; beholdt så eksisterende kall fortsatt virker
 show(0);syncFav();renderWatch();
 
