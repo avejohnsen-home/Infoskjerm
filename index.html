@@ -114,6 +114,8 @@ body{
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
 .logo-art{display:flex;align-items:center;justify-content:center;background:#C9D1D8;padding:14%}
 .logo-art .logo{position:static;width:100%;height:100%;object-fit:contain}
+.logo-art.own{padding:0;background:transparent}
+.logo-art.own .logo{object-fit:cover}
 .logo-art.all{background:linear-gradient(135deg,var(--tram),#3B2E5A)}
 .all-txt{color:#fff;font-weight:800;font-size:clamp(20px,5vw,30px);line-height:1.05;text-align:center}
 .logo-txt{color:#17222C;font-weight:800;font-size:clamp(16px,4vw,24px);text-align:center;line-height:1.1}
@@ -402,6 +404,19 @@ function catOf(s){
   if(s.venue==="Operaen")return "Opera";
   return "Teater";
 }
+
+// ---------- Egne logoer: matcher filnavn («Logo - Chat Noir») mot teaternavn ----------
+const LOGO_ALIAS={"dns":"den nationale scene","neuf":"chateau neuf","opera":"operaen","den norske opera":"operaen","oslo nye":"oslo nye teater","central":"centralteatret","trondelag":"trondelag teater","nye hjorten":"nye hjorten teater","fjaereheia":"bruddet fjaereheia","bruddet":"bruddet fjaereheia","christiania":"christiania teater","det norske":"det norske teatret"};
+const nrm=t=>String(t||"").toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"o").replace(/å/g,"a").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\(.*?\)/g,"").replace(/[^a-z0-9]+/g," ").trim();
+function ownLogoFor(name){
+  const list=(DATA&&DATA.ownLogos)||[];if(!list.length)return "";
+  const n=nrm(name);
+  const exact=list.find(l=>{const k=nrm(l.name);return k===n||LOGO_ALIAS[k]===n});
+  if(exact)return exact.img;
+  const part=list.find(l=>{const k=LOGO_ALIAS[nrm(l.name)]||nrm(l.name);return k.length>3&&(n.startsWith(k)||k.startsWith(n))});
+  return part?part.img:"";
+}
+
 function renderTheatre(){
   const T=today();let list=[];
   const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&!k.startsWith("k_")&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
@@ -440,11 +455,11 @@ function renderTheatre(){
   const el=document.getElementById("posters");el.innerHTML="";
   // Logooversikt: det første man ser på Teater-fanen
   if(theatreView==="logos"&&venueFilter==="Alle"&&catFilter==="Alle"&&venues.length>1){
-    const mk=(name,count,logo,onClick,isAll)=>{const b=document.createElement("button");b.className="poster theatre-tile";
-      b.innerHTML=`<div class="art logo-art${isAll?" all":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} forestillinger</div>`;
+    const mk=(name,count,logo,onClick,isAll,isOwn)=>{const b=document.createElement("button");b.className="poster theatre-tile";
+      b.innerHTML=`<div class="art logo-art${isAll?" all":""}${isOwn?" own":""}">${isAll?`<span class="all-txt">Alle<br>teatrene</span>`:logo?`<img class="logo" src="${esc(logo)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-txt',textContent:${JSON.stringify(name).replace(/"/g,"&quot;")}}))">`:`<span class="logo-txt">${esc(name)}</span>`}</div><div class="meta"><b>${esc(isAll?"Alle teatrene":name)}</b>${count} forestillinger</div>`;
       b.addEventListener("click",onClick);el.appendChild(b);};
     mk("Alle teatrene",list.length,"",()=>{theatreView="posters";pause();renderTheatre()},true);
-    venues.forEach(v=>mk(v,vc[v],(DATA.logos||{})[v],()=>{venueFilter=v;theatreView="posters";pause();renderTheatre()}));
+    venues.forEach(v=>{const own=ownLogoFor(v);mk(v,vc[v],own||(DATA.logos||{})[v],()=>{venueFilter=v;theatreView="posters";pause();renderTheatre()},false,!!own)});
     document.getElementById("srcT").textContent=`Velg et teater, eller «Alle teatrene» for å se alle ${list.length} forestillinger.`;
     return;
   }

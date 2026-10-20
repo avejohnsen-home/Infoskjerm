@@ -1064,6 +1064,13 @@ async function grieghallen(browser) {
   return [...tm, ...web.filter(w => !have.has(norm(w.title)))];
 }
 
+// ---------- Egne logoer: bilder i mappen «logoer», f.eks. «Logo - Chat Noir.png» ----------
+async function ownLogos() {
+  let files = [];
+  try { files = fs.readdirSync("logoer").filter(f => /\.(png|jpe?g|webp|svg|gif|avif)$/i.test(f)).sort(); } catch { return []; }
+  return files.map(f => ({ name: f.replace(/\.[^.]+$/, "").replace(/^logo\s*[-–_:]?\s*/i, "").trim(), img: "logoer/" + encodeURIComponent(f) }));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -1076,6 +1083,7 @@ async function run(key, fn, allowEmpty = false) {
 }
 for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
 await run("ownArt", ownPictures, true);
+await run("ownLogos", ownLogos, true);
 await run("logos", logos);
 await run("fjaereheia", fjaereheia, true);
 
