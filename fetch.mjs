@@ -1023,7 +1023,7 @@ async function logos() {
 }
 
 // ---------- Grieghallen (Bergen) via Ticketmaster – billettene selges der, med eksakte tider og bilder ----------
-async function grieghallen() {
+async function grieghallen(browser) {
   const key = process.env.TICKETMASTER_KEY;
   if (!key) throw new Error("mangler TICKETMASTER_KEY i GitHub Secrets");
   const B = "https://app.ticketmaster.com/discovery/v2";
@@ -1053,16 +1053,11 @@ async function grieghallen() {
     }
   }
   // Ticketmaster har bare noen få av arrangementene – suppler med programmet på grieghallen.no
+  // (programmet lastes med JavaScript, så siden åpnes i den usynlige nettleseren)
   let web = [];
-  for (const url of ["https://www.grieghallen.no/arrangementer/", "https://www.grieghallen.no/program/", "https://www.grieghallen.no/"]) {
-    try {
-      const $ = await getHtml(url);
-      web = cardsFrom($, url, "Grieghallen", /\/arrangementer\/[^/]+/);
-      console.log(`  Grieghallen.no: ${url} -> ${web.length} arrangementer`);
-      if (web.length) break;
-      console.log(`  Diagnose Grieghallen: lenker til /arrangementer/: ${$('a[href*="/arrangementer/"]').length}, bilder: ${$("img").length}, tekst: ${$("body").text().replace(/\s+/g, " ").slice(0, 200)}`);
-    } catch (e) { console.log("  Grieghallen.no: " + e.message); }
-  }
+  try { web = await rendered(browser, ["https://www.grieghallen.no/arrangementer/"], "Grieghallen", /\/arrangementer\/[^/]+/, { noDates: true }); }
+  catch (e) { console.log("  Grieghallen.no: " + e.message); }
+  console.log(`  Grieghallen.no: ${web.length} arrangementer (${web.filter(w => w.from).length} med dato)`);
   const tm = [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
   const norm = t => t.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
   const have = new Set(tm.map(s => norm(s.title)));
@@ -1079,7 +1074,7 @@ async function run(key, fn, allowEmpty = false) {
     data[key] = old[key] ?? null; data.errors.push(`${key}: ${e.message}`); console.log("FEIL", key, e.message);
   }
 }
-for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink], ["grieghallen", grieghallen]]) await run(key, fn);
+for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonyeWeb], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
 await run("ownArt", ownPictures, true);
 await run("logos", logos);
 await run("fjaereheia", fjaereheia, true);
@@ -1089,6 +1084,7 @@ const browser = await chromium.launch();
 try {
   await run("detnorske", () => rendered(browser, ["https://www.detnorsketeatret.no/framsyningar"], "Det Norske Teatret", null, { noDates: true, origins: ["https://program.detnorsketeatret.no"] }));
   await run("dns", () => dns(browser));
+  await run("grieghallen", () => grieghallen(browser));
   // ---- Konsertsteder ----
   await run("k_rockefeller", () => eventsEdge("https://www.rockefeller.no", "Rockefeller"));
   await run("k_blaa", () => eventsEdge("https://www.blaaoslo.no", "Blå"));
