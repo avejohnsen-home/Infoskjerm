@@ -218,6 +218,14 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 @media (prefers-reduced-motion:reduce){
   .slide.on,.saver.on{animation:none}
 }
+
+/* ---- Fyll hele skjermen (veggskjerm i stående format) ---- */
+.wrap{max-width:none;padding:clamp(16px,3vw,36px) clamp(16px,3vw,36px) 28px}
+.posters{grid-template-columns:repeat(auto-fill,minmax(min(200px,45%),1fr))}
+.days .day{flex:1 1 0}
+@media (min-width:700px){ body{zoom:1.2} }
+@media (min-width:950px){ body{zoom:1.4} }
+@media (min-width:1300px){ body{zoom:1.7} }
 </style>
 </head>
 <body>
