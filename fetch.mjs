@@ -914,6 +914,14 @@ async function prices() {
   return out;
 }
 
+// ---------- Egne pausebilder: alle bilder i mappen «pausebilder» i prosjektet ----------
+// Finnes det minst ett bilde der, bruker skjermspareren BARE disse (i stedet for museumsmaleriene).
+async function ownPictures() {
+  let files = [];
+  try { files = fs.readdirSync("pausebilder").filter(f => /\.(jpe?g|png|webp|gif|avif)$/i.test(f)).sort(); } catch { return []; }
+  return files.map(f => ({ title: f.replace(/\.[^.]+$/, "").replace(/[-_]+/g, " "), artist: "", year: "", img: "pausebilder/" + encodeURIComponent(f), own: true }));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -925,6 +933,7 @@ async function run(key, fn, allowEmpty = false) {
   }
 }
 for (const [key, fn] of [["weather", weather], ["christiania", christiania], ["nationaltheatret", nationaltheatret], ["films", nfkino], ["oslonye", oslonye], ["operaen", operaen], ["neuf", neuf], ["chatnoir", chatnoirApi], ["art", paintings], ["kilden", kilden], ["trondelag", trondelag], ["quiz", quiz], ["vink", vink]]) await run(key, fn);
+await run("ownArt", ownPictures, true);
 await run("fjaereheia", fjaereheia, true);
 
 const { chromium } = await import("playwright");
