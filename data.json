@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-20T23:38:48.298Z",
+ "updated": "2026-10-21T00:54:34.712Z",
  "errors": [
-  "films: fant ingen oppføringer"
+  "films: fetch failed"
  ],
  "weather": {
   "now": {
    "date": "2026-10-21",
-   "h": 1,
+   "h": 2,
    "temp": 6,
-   "wind": 6,
-   "sym": "lightrain",
-   "rain": 0.2,
+   "wind": 7,
+   "sym": "rain",
+   "rain": 0.6,
    "span": 1
   },
   "days": [
@@ -19,20 +19,11 @@
     "hours": [
      {
       "date": "2026-10-21",
-      "h": 1,
-      "temp": 6,
-      "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
-      "span": 1
-     },
-     {
-      "date": "2026-10-21",
       "h": 2,
       "temp": 6,
       "wind": 7,
       "sym": "rain",
-      "rain": 0.3,
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -40,8 +31,8 @@
       "h": 3,
       "temp": 6,
       "wind": 7,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -67,17 +58,17 @@
       "h": 6,
       "temp": 7,
       "wind": 8,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 7,
       "temp": 7,
-      "wind": 9,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 8,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -86,7 +77,7 @@
       "temp": 7,
       "wind": 8,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -95,7 +86,7 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2,
+      "rain": 1.6,
       "span": 1
      },
      {
@@ -104,7 +95,7 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2.4,
+      "rain": 2.5,
       "span": 1
      },
      {
@@ -113,41 +104,41 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2.2,
+      "rain": 2.1,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 12,
-      "temp": 8,
+      "temp": 9,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.5,
+      "rain": 1.1,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 13,
       "temp": 9,
-      "wind": 7,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 14,
-      "temp": 9,
+      "temp": 10,
       "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-21",
       "h": 15,
       "temp": 10,
-      "wind": 6,
+      "wind": 5,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -155,7 +146,7 @@
      {
       "date": "2026-10-21",
       "h": 16,
-      "temp": 10,
+      "temp": 11,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -164,8 +155,8 @@
      {
       "date": "2026-10-21",
       "h": 17,
-      "temp": 10,
-      "wind": 3,
+      "temp": 11,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -218,16 +209,16 @@
      {
       "date": "2026-10-21",
       "h": 23,
-      "temp": 10,
+      "temp": 11,
       "wind": 4,
       "sym": "heavyrain",
       "rain": 1.2,
       "span": 1
      }
     ],
-    "max": 10,
+    "max": 11,
     "min": 6,
-    "rain": 12.5,
+    "rain": 11.5,
     "sym": "rain"
    },
    {
@@ -236,7 +227,7 @@
      {
       "date": "2026-10-22",
       "h": 0,
-      "temp": 10,
+      "temp": 11,
       "wind": 4,
       "sym": "heavyrain",
       "rain": 1.3,
@@ -245,25 +236,25 @@
      {
       "date": "2026-10-22",
       "h": 1,
-      "temp": 10,
+      "temp": 11,
       "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.7,
+      "rain": 1.6,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 2,
-      "temp": 10,
+      "temp": 11,
       "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.1,
+      "rain": 1,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 3,
-      "temp": 10,
+      "temp": 11,
       "wind": 5,
       "sym": "lightrain",
       "rain": 0.2,
@@ -274,8 +265,8 @@
       "h": 4,
       "temp": 11,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.4,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -283,8 +274,8 @@
       "h": 5,
       "temp": 11,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.6,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -299,8 +290,8 @@
      {
       "date": "2026-10-22",
       "h": 7,
-      "temp": 11,
-      "wind": 5,
+      "temp": 12,
+      "wind": 4,
       "sym": "heavyrain",
       "rain": 1.4,
       "span": 1
@@ -317,7 +308,7 @@
      {
       "date": "2026-10-22",
       "h": 9,
-      "temp": 11,
+      "temp": 12,
       "wind": 5,
       "sym": "heavyrain",
       "rain": 1.5,
@@ -345,7 +336,7 @@
       "date": "2026-10-22",
       "h": 12,
       "temp": 12,
-      "wind": 4,
+      "wind": 5,
       "sym": "heavyrain",
       "rain": 1.9,
       "span": 1
@@ -381,7 +372,7 @@
       "date": "2026-10-22",
       "h": 16,
       "temp": 12,
-      "wind": 2,
+      "wind": 3,
       "sym": "rain",
       "rain": 0.6,
       "span": 1
@@ -391,8 +382,8 @@
       "h": 17,
       "temp": 12,
       "wind": 3,
-      "sym": "rain",
-      "rain": 0.8,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -400,17 +391,17 @@
       "h": 18,
       "temp": 11,
       "wind": 3,
-      "sym": "rain",
-      "rain": 0.7,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 19,
-      "temp": 12,
+      "temp": 11,
       "wind": 3,
-      "sym": "rain",
-      "rain": 0.5,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -418,17 +409,17 @@
       "h": 20,
       "temp": 11,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.6,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 21,
       "temp": 11,
-      "wind": 5,
-      "sym": "rain",
-      "rain": 0.7,
+      "wind": 4,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -436,14 +427,14 @@
       "h": 22,
       "temp": 11,
       "wind": 4,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 23,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -452,7 +443,7 @@
     ],
     "max": 12,
     "min": 10,
-    "rain": 24.5,
+    "rain": 20.2,
     "sym": "heavyrain"
    },
    {
@@ -461,7 +452,7 @@
      {
       "date": "2026-10-23",
       "h": 0,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -470,7 +461,7 @@
      {
       "date": "2026-10-23",
       "h": 1,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -479,7 +470,7 @@
      {
       "date": "2026-10-23",
       "h": 2,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -488,16 +479,16 @@
      {
       "date": "2026-10-23",
       "h": 3,
-      "temp": 10,
+      "temp": 9,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 4,
-      "temp": 10,
+      "temp": 9,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -506,7 +497,7 @@
      {
       "date": "2026-10-23",
       "h": 5,
-      "temp": 10,
+      "temp": 9,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -515,7 +506,7 @@
      {
       "date": "2026-10-23",
       "h": 6,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -524,7 +515,7 @@
      {
       "date": "2026-10-23",
       "h": 7,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -533,7 +524,7 @@
      {
       "date": "2026-10-23",
       "h": 8,
-      "temp": 9,
+      "temp": 8,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -558,8 +549,8 @@
       "span": 6
      }
     ],
-    "max": 11,
-    "min": 9,
+    "max": 10,
+    "min": 8,
     "rain": 2.2,
     "sym": "cloudy"
    },
@@ -17559,39 +17550,39 @@
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46944/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://www.nationaltheatret.no/forestillinger/hostsonaten": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/isaiah-sharkey": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/43677/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/reiselitteraturfestivalen-2026": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49011/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49014/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47676/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/44585/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/kirill-richter-richter-trio-christmas-concert": {
    "p": [
@@ -17600,35 +17591,35 @@
      "kr": 450
     }
    ],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45601/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/48244/": {
    "p": [],
-   "at": 1791931422787
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/kilder-til-begeistring-med-odd-magnus-williamson-og-jakob-oftebro": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/belleville/2026/november/taraf-og-hersleb-visekollektiv": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/verdens-beste-show-3-0": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49611/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46208/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://neuf.no/arrangementer/chelsea-wolfe": {
    "p": [
@@ -17637,15 +17628,15 @@
      "kr": 419
     }
    ],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/arild-andersen-group": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/48631/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/touch-christmas-2026": {
    "p": [],
@@ -17653,83 +17644,83 @@
   },
   "https://christianiateaterscene.no/blaafjell": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46514/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46199/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/stacey-kent": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/48273/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49116/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45902/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45334/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/desember/vart-siste-juleshow-med-snorre-olli-jon-sindre-og-jakob": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/48082/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/desember/vart-siste-juleshow-med-snorre-olli-jon-sindre-og-jakob-0": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47897/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://christianiateaterscene.no/jul": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://www.rockefeller.no/events/popquiz/ng3Y4tIIFo": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46279/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/desember/verdens-beste-show-3": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46415/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47146/": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://www.nationaltheatret.no/forestillinger/little-women": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/belleville/2026/desember/rigla-wold-wiggen": {
    "p": [],
-   "at": 1791934876996
+   "at": 1792544267487
   },
   "https://cosmopolite.no/program/cosmopolite/2026/desember/vart-siste-juleshow-med-snorre-olli-jon-sindre-og-jakob-1": {
    "p": [],
