@@ -1,12 +1,14 @@
 {
- "updated": "2026-10-21T13:50:32.111Z",
- "errors": [],
+ "updated": "2026-10-21T14:45:03.384Z",
+ "errors": [
+  "k_cosmopolite: fant ingen oppføringer"
+ ],
  "weather": {
   "now": {
    "date": "2026-10-21",
-   "h": 15,
+   "h": 16,
    "temp": 10,
-   "wind": 5,
+   "wind": 4,
    "sym": "cloudy",
    "rain": 0,
    "span": 1
@@ -15,15 +17,6 @@
    {
     "date": "2026-10-21",
     "hours": [
-     {
-      "date": "2026-10-21",
-      "h": 15,
-      "temp": 10,
-      "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-21",
       "h": 16,
@@ -1037,14 +1030,6 @@
    "shows": [
     {
      "d": "2026-10-21",
-     "t": "16:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/b22002fa-87ce-48bf-bcba-537ffada73a2"
-    },
-    {
-     "d": "2026-10-21",
      "t": "17:00",
      "c": "Gimle",
      "r": "1",
@@ -1881,7 +1866,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-21T13:51:47.916Z",
    "city": "Oslo"
   },
@@ -1921,7 +1905,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "6.5",
-   "imdbId": "tt0011440",
    "ratingsAt": "2026-10-21T13:51:47.984Z",
    "city": "Oslo"
   },
@@ -2280,7 +2263,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-21T13:51:48.205Z",
    "city": "Oslo"
   },
@@ -2303,7 +2285,7 @@
      "t": "17:30",
      "c": "Vika",
      "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Førpremiere, Chikkflikk Kinoklubb",
+     "v": "2D, Eng. tale, Norsk tekst, Førpremiere, Chikkflikk",
      "u": "https://www.nfkino.no/screening/2612/254c0a55-c5de-49eb-9db5-f151fad20593"
     }
    ],
@@ -2312,7 +2294,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37968648",
    "ratingsAt": "2026-10-21T13:51:48.275Z",
    "city": "Oslo"
   },
@@ -2684,7 +2665,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt6492922",
    "ratingsAt": "2026-10-21T13:51:48.368Z",
    "city": "Oslo"
   },
@@ -3336,7 +3316,6 @@
    "origChecked": true,
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-21T13:51:48.796Z",
    "city": "Oslo"
   },
@@ -4611,7 +4590,6 @@
    "origChecked": true,
    "rt": "11%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-21T13:51:49.438Z",
    "city": "Oslo"
   },
@@ -4668,7 +4646,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-21T13:51:49.561Z",
    "city": "Oslo"
   },
@@ -5139,7 +5116,6 @@
    "origChecked": true,
    "rt": "93%",
    "imdb": "7.6",
-   "imdbId": "tt33095251",
    "ratingsAt": "2026-10-21T13:51:49.998Z",
    "city": "Oslo"
   },
@@ -5349,7 +5325,6 @@
    "origChecked": true,
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-21T13:51:50.064Z",
    "city": "Oslo"
   }
