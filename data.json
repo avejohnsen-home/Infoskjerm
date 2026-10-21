@@ -1,31 +1,22 @@
 {
- "updated": "2026-10-21T19:43:32.032Z",
+ "updated": "2026-10-21T20:44:18.389Z",
  "errors": [
   "k_cosmopolite: fant ingen oppføringer"
  ],
  "weather": {
   "now": {
    "date": "2026-10-21",
-   "h": 21,
+   "h": 22,
    "temp": 11,
    "wind": 3,
-   "sym": "cloudy",
-   "rain": 0,
+   "sym": "lightrain",
+   "rain": 0.1,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-21",
     "hours": [
-     {
-      "date": "2026-10-21",
-      "h": 21,
-      "temp": 11,
-      "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-21",
       "h": 22,
@@ -48,7 +39,7 @@
     "max": 11,
     "min": 11,
     "rain": 0.5,
-    "sym": "cloudy"
+    "sym": "lightrain"
    },
    {
     "date": "2026-10-22",
@@ -281,7 +272,7 @@
      {
       "date": "2026-10-23",
       "h": 0,
-      "temp": 10,
+      "temp": 11,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -534,7 +525,7 @@
       "date": "2026-10-24",
       "h": 8,
       "temp": 7,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -542,25 +533,25 @@
      {
       "date": "2026-10-24",
       "h": 14,
-      "temp": 9,
+      "temp": 8,
       "wind": 3,
       "sym": "rain",
-      "rain": 3,
+      "rain": 1.6,
       "span": 6
      },
      {
       "date": "2026-10-24",
       "h": 20,
       "temp": 10,
-      "wind": 3,
+      "wind": 4,
       "sym": "rain",
-      "rain": 3.1,
+      "rain": 1.8,
       "span": 6
      }
     ],
     "max": 10,
     "min": 7,
-    "rain": 6.1,
+    "rain": 3.4,
     "sym": "rain"
    },
    {
@@ -570,9 +561,9 @@
       "date": "2026-10-25",
       "h": 2,
       "temp": 10,
-      "wind": 6,
+      "wind": 7,
       "sym": "heavyrain",
-      "rain": 8,
+      "rain": 11.5,
       "span": 6
      },
      {
@@ -580,17 +571,17 @@
       "h": 7,
       "temp": 9,
       "wind": 8,
-      "sym": "heavyrain",
-      "rain": 12,
+      "sym": "rain",
+      "rain": 4.9,
       "span": 6
      },
      {
       "date": "2026-10-25",
       "h": 13,
-      "temp": 9,
+      "temp": 11,
       "wind": 7,
-      "sym": "rain",
-      "rain": 4.3,
+      "sym": "partlycloudy_day",
+      "rain": 0,
       "span": 6
      },
      {
@@ -598,15 +589,15 @@
       "h": 19,
       "temp": 10,
       "wind": 6,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 10,
+    "max": 11,
     "min": 9,
-    "rain": 24.3,
-    "sym": "rain"
+    "rain": 16.4,
+    "sym": "partlycloudy_day"
    },
    {
     "date": "2026-10-26",
@@ -624,15 +615,6 @@
       "date": "2026-10-26",
       "h": 7,
       "temp": 8,
-      "wind": 4,
-      "sym": "fair_day",
-      "rain": 0,
-      "span": 6
-     },
-     {
-      "date": "2026-10-26",
-      "h": 13,
-      "temp": 11,
       "wind": 5,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -640,18 +622,27 @@
      },
      {
       "date": "2026-10-26",
+      "h": 13,
+      "temp": 12,
+      "wind": 6,
+      "sym": "fair_day",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-10-26",
       "h": 19,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "rainshowers_night",
-      "rain": 3.1,
+      "rain": 2.4,
       "span": 6
      }
     ],
-    "max": 11,
+    "max": 12,
     "min": 8,
-    "rain": 3.1,
-    "sym": "partlycloudy_day"
+    "rain": 2.4,
+    "sym": "fair_day"
    },
    {
     "date": "2026-10-27",
@@ -659,19 +650,19 @@
      {
       "date": "2026-10-27",
       "h": 1,
-      "temp": 8,
+      "temp": 9,
       "wind": 4,
       "sym": "rain",
-      "rain": 4,
+      "rain": 4.9,
       "span": 6
      },
      {
       "date": "2026-10-27",
       "h": 7,
-      "temp": 11,
-      "wind": 6,
+      "temp": 9,
+      "wind": 5,
       "sym": "rain",
-      "rain": 3.4,
+      "rain": 4.2,
       "span": 6
      },
      {
@@ -687,15 +678,15 @@
       "date": "2026-10-27",
       "h": 19,
       "temp": 11,
-      "wind": 6,
+      "wind": 7,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
     "max": 11,
-    "min": 8,
-    "rain": 7.4,
+    "min": 9,
+    "rain": 9.1,
     "sym": "cloudy"
    }
   ]
@@ -9370,6 +9361,1007 @@
    ],
    "hint": "Music Rock",
    "city": "Bergen"
+  },
+  {
+   "title": "Utstilling: Simen Langeland – Akvareller i Grieghallen",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/utstilling-simen-langeland-akvareller-i-grieghallen",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1782127605/hulen-2-nettside-simen-langeland-2000x1000.jpg?",
+   "from": "2026-10-08",
+   "to": "2026-10-30",
+   "about": "",
+   "hint": " Utstilling: Simen Langeland – Akvareller i Grieghallen Arrangør: Simen Langeland 08. - 30. oktober 2026 18:00 08. - 30. oktober 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Kort og klassisk. Rakhmaninov 3",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kort-og-klassisk-rakhmaninov-3",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781783487/2026-10-22-rakhmaninov-pavel-kolesnikov9-eva-vermandel-web.jpg?",
+   "from": "2026-10-21",
+   "to": "2026-10-21",
+   "about": "",
+   "hint": " Kort og klassisk. Rakhmaninov 3 Bergen Filharmoniske Orkester 21. oktober 2026 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Vi Bygger Vestland",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/vi-bygger-vestland",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1773225060/vi-bygger-vestland-2026.png?",
+   "from": "2026-10-22",
+   "to": "2026-10-23",
+   "about": "",
+   "hint": " Vi Bygger Vestland Arrangør: Bergen Live 2 dager 22. - 23. oktober 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Rakhmaninovs tredje pianokonsert",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/rakhmaninovs-tredje-pianokonsert-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781783800/2026-10-22-rakhmaninov-pavel-kolesnikov9-eva-vermandel-web.jpg?",
+   "from": "2026-10-22",
+   "to": "2026-10-22",
+   "about": "",
+   "hint": " Rakhmaninovs tredje pianokonsert Bergen Filharmoniske Orkester 22. oktober 2026 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Hanne Boel m/band",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/hanne-boel-m-band",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1765269330/hanne-boel-2025-2000x1000.png?",
+   "from": "2026-10-24",
+   "to": "2026-10-24",
+   "about": "",
+   "hint": " Utsolgt Hanne Boel m/band Arrangør: ERA Konserter & Underholdning 24. oktober 2026 16:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Club Darling Point",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/club-darling-point-8",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1741087856/club-darling-point-2.png?",
+   "from": "2026-10-28",
+   "to": "2026-10-28",
+   "about": "",
+   "hint": " Club Darling Point Arrangør: Club Darling Point 28. oktober 2026 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Lars Monsen – Ustoppelig",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/lars-monsen-ustoppelig",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1766066650/ustoppelig-1000x500-noeytral-m-logo.jpg?",
+   "from": "2026-10-29",
+   "to": "2026-10-29",
+   "about": "",
+   "hint": " Utsolgt Lars Monsen – Ustoppelig Arrangør: Rocksport Booking 29. oktober 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bjørnov tar det piano",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bjoernov-tar-det-piano",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1762333124/ingrid-bjoernov-tar-det-piano-2000x1000.jpg?",
+   "from": "2026-10-31",
+   "to": "2026-10-31",
+   "about": "",
+   "hint": " Få billetter Bjørnov tar det piano Arrangør: Backstage Management og Produksjon & STARWORKS 31. oktober 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Ukraina - En vinterreise, Foredrag med Erika Fatland",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/ukraina-en-vinterreise-foredrag-med-erika-fatland",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788766376/erika-fatland-sentrert-2000x1000.png?",
+   "from": "2026-11-02",
+   "to": "2026-11-02",
+   "about": "",
+   "hint": " Ukraina - En vinterreise, Foredrag med Erika Fatland Arrangør: Grieghallen 02. november 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Høstens Smakstrender",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/hoestens-smakstrender-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790061990/smakstrender-hoesten-2026.jpeg?",
+   "from": "2026-11-06",
+   "to": "2026-11-06",
+   "about": "",
+   "hint": " Utsolgt Høstens Smakstrender Arrangør: Aftenposten 06. november 2026 15:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Kristian Valen - Bare VisVas",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kristian-valen-bare-visvas",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1769416427/kristian-valen-2000x1000.png?",
+   "from": "2026-11-06",
+   "to": "2026-11-07",
+   "about": "",
+   "hint": " Utsolgt Kristian Valen - Bare VisVas Arrangør: Deepwater Entertainment 4 forestillinger 06. - 07. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bergen Nasjonale Opera – Jubileumsforestilling",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bergen-nasjonale-opera-jubileumsforestilling-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781184525/jubileumsforestilling-grieghallen-web-2000x1000.jpg?",
+   "from": "2026-11-07",
+   "to": "2026-11-13",
+   "about": "",
+   "hint": " Bergen Nasjonale Opera – Jubileumsforestilling Arrangør: Bergen Nasjonale Opera 4 forestillinger 07. - 13. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Triggersystemet",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/triggersystemet",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1786356949/filmplakat-triggersystemet-2026-2000x1000-griegformat-liggende-v4.jpg?",
+   "from": "2026-11-12",
+   "to": "2026-11-14",
+   "about": "",
+   "hint": " Triggersystemet Arrangør: Transiteateret og Den Nationale Scene 6 forestillinger 12. - 14. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Mari Boine - Jubileumsturné",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/mari-boine-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1780397188/mari-boine-2026-2000x1000.png?",
+   "from": "2026-11-14",
+   "to": "2026-11-14",
+   "about": "",
+   "hint": " Mari Boine - Jubileumsturné Arrangør: All Things Live Norway 14. november 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Fargespill Bergen – Gjengen min",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/fargespill-bergen-presenterer-gjengen-min",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788258314/fargespill-bergen.jpg?",
+   "from": "2026-11-15",
+   "to": "2026-11-15",
+   "about": "",
+   "hint": " Fargespill Bergen – Gjengen min Arrangør: Fargespill Bergen 15. november 2026 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Edward Gardner dirigerer Mendelssohn",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/edward-gardner-dirigerer-mendelssohn",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788357633/2027-04-01-mahler-10-ed-gardner-bfung-2021-magnus-skrede-ms-bfu-07448-web.jpg?",
+   "from": "2026-11-19",
+   "to": "2026-11-19",
+   "about": "",
+   "hint": " Edward Gardner dirigerer Mendelssohn Bergen Filharmoniske Orkester 19. november 2026 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Årskonferansen og Årsmiddagen 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/aarskonferansen-og-aarsmiddagen-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790672951/a-rskonferansen-og-a-rsmiddagen-2026-2000x1000.png?",
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "about": "",
+   "hint": " Årskonferansen og Årsmiddagen 2026 Arrangør: Bergen Næringsråd 20. november 2026 08:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "DumDum Boys - XL [romertallførti]",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/dumdum-boys-xl-romertallfoerti",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1745489888/2025-bilde-til-arrangement-2000x1000.png?",
+   "from": "2026-11-21",
+   "to": "2026-11-21",
+   "about": "",
+   "hint": " Utsolgt DumDum Boys - XL [romertallførti] Arrangør: Stageway, All Things Live Norway & Ramalama 21. november 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bjørn Eidsvåg & Bjarte Tjøstheim",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bjoern-eidsvaag-bjarte-tjoestheim-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1779191498/vaar-2026-bilde-til-arrangement-2000x1000.png?",
+   "from": "2026-11-22",
+   "to": "2026-11-22",
+   "about": "",
+   "hint": " Bjørn Eidsvåg & Bjarte Tjøstheim Arrangør: Quint as, seminar:partner & Stageway 22. november 2026 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Händels Messias",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/haendels-messias",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781784574/2026-11-25-messias-bergen-filharmoniske-kor-otello-2017-thor-broedreskift-web.jpg?",
+   "from": "2026-11-25",
+   "to": "2026-11-26",
+   "about": "",
+   "hint": " Händels Messias Bergen Filharmoniske Orkester 2 forestillinger 25. - 26. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Putti Plutti Pott",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/putti-plutti-pott-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1749021771/putti-plutti-pott-2025-2000x1000.png?",
+   "from": "2026-11-27",
+   "to": "2026-11-29",
+   "about": "",
+   "hint": " Putti Plutti Pott Arrangør: Troll Production AS 7 forestillinger 27. - 29. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Thomas Dybdahl",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/thomas-dybdahl",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1779955604/thomas-dybdal-2000x1000.png?",
+   "from": "2026-12-01",
+   "to": "2026-12-01",
+   "about": "",
+   "hint": " Thomas Dybdahl Arrangør: Bergen Live 01. desember 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Maria Mena",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/maria-mena-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1763973573/maria-mena-2000x1000.png?",
+   "from": "2026-12-02",
+   "to": "2026-12-02",
+   "about": "",
+   "hint": " Maria Mena Arrangør: TimeOut, Vendetta og Bergen Live 02. desember 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "SFMK – Swinging Christmas med Frode Vassel og Sinne Eeg",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/sfmk-swinging-christmas-med-frode-vassel-og-sinne-eeg",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790151019/swinging-christmas-2026-2000x1000.png?",
+   "from": "2026-12-03",
+   "to": "2026-12-03",
+   "about": "",
+   "hint": " SFMK – Swinging Christmas med Frode Vassel og Sinne Eeg Arrangør: Sjøforsvarets musikkorps 03. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Mahlers sjette symfoni",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/mahlers-sjette-symfoni",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781785098/kahchun-wong-a-photo-by-angie-kremer.webp?",
+   "from": "2026-12-03",
+   "to": "2026-12-04",
+   "about": "",
+   "hint": " Mahlers sjette symfoni Bergen Filharmoniske Orkester 2 forestillinger 03. - 04. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Wallmans On Tour 2026 Dinnershow",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/wallmans-on-tour-2026-dinnershow",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1774618897/vaar-2026-bilde-til-arrangement-2000x1000-1.png?",
+   "from": "2026-12-04",
+   "to": "2026-12-05",
+   "about": "",
+   "hint": " Få billetter Wallmans On Tour 2026 Dinnershow Arrangør: ARL Event 2 forestillinger 04. - 05. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Musikalske julekort",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/musikalske-julekort-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781786436/2026-12-05-musikalske-julekort-4j5a1115-sunniva-oeiestad-web.jpg?",
+   "from": "2026-12-05",
+   "to": "2026-12-05",
+   "about": "",
+   "hint": " Musikalske julekort Bergen Filharmoniske Ungdomsorkester 2 forestillinger 05. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Eva Weel Skram - Falle til ro",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/eva-weel-skram-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1773752293/eva-weel-skram-2026-2000x1000.png?",
+   "from": "2026-12-05",
+   "to": "2026-12-05",
+   "about": "",
+   "hint": " Eva Weel Skram - Falle til ro Arrangør: Stageway og All Things Live 05. desember 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bjørnis redder julen!",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bjoernis-redder-julen",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781249454/bjornis-2000x1000.jpg?",
+   "from": "2026-12-06",
+   "to": "2026-12-06",
+   "about": "",
+   "hint": " Utsolgt Bjørnis redder julen! Arrangør: Stiftelsen Brannbamsen Bjørnis 06. desember 2026 11:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Oslo Gospel Choir - En stjerne skinner i natt",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/oslo-gospel-choir-en-stjerne-skinner-i-natt-4",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1785939238/oslo-gospel-choir-2026-2000x1000.png?",
+   "from": "2026-12-06",
+   "to": "2026-12-06",
+   "about": "",
+   "hint": " Oslo Gospel Choir - En stjerne skinner i natt Arrangør: HiHat 06. desember 2026 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bugge Wesseltoft – It's Snowing on my piano",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bugge-wesseltoft-it-s-snowing-on-my-piano-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781777370/bugge-2000x1000-2026.png?",
+   "from": "2026-12-06",
+   "to": "2026-12-06",
+   "about": "",
+   "hint": " Bugge Wesseltoft – It's Snowing on my piano Arrangør: Bergen Jazzforum 06. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Julekonsert med Helene Bøksle 2026 – «Det hev ei rose sprunge»",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/julekonsert-med-helene-boeksle-2026-det-hev-ei-rose-sprunge",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1792134706/fb-banner-bergen.jpg?",
+   "from": "2026-12-07",
+   "to": "2026-12-07",
+   "about": "",
+   "hint": " Julekonsert med Helene Bøksle 2026 – «Det hev ei rose sprunge» Arrangør: Mockingbird Music 07. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Sissels Jul 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/sissels-jul-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1774625237/sissels-jul-2026-2000x1000-2.png?",
+   "from": "2026-12-08",
+   "to": "2026-12-08",
+   "about": "",
+   "hint": " Få billetter Sissels Jul 2026 Arrangør: Early Bird Music og Skyskraper Artist 08. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "The Nutcracker: Symphony of Lights",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/noetteknekkeren-grand-kyiv-ballet",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1769500881/nutcracker-2000x1000.png?",
+   "from": "2026-12-09",
+   "to": "2026-12-09",
+   "about": "",
+   "hint": " The Nutcracker: Symphony of Lights Arrangør: Grand Kyiv Ballet 09. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Stjernenatt – en julekonsert med Odd René Andersen",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/stjernenatt-en-julekonsert-med-odd-rene-andersen-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1778155288/odd-rene-andersen-2000x1000.png?",
+   "from": "2026-12-10",
+   "to": "2026-12-10",
+   "about": "",
+   "hint": " Stjernenatt – en julekonsert med Odd René Andersen Arrangør: Stageway & All Things Live Norway 10. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bruckners syvende symfoni",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bruckners-syvende-symfoni",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781786106/2026-12-10-bruckner-7-jusssen-lucas-arthur09-c-marco-borggreve-web.jpg?",
+   "from": "2026-12-10",
+   "to": "2026-12-10",
+   "about": "",
+   "hint": " Bruckners syvende symfoni Bergen Filharmoniske Orkester 10. desember 2026 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "No e D.D.E. Jul Igjen",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/no-e-d-d-e-jul-igjen",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1774353961/dde-jul-2000x1000-grieghallen.jpg?",
+   "from": "2026-12-11",
+   "to": "2026-12-11",
+   "about": "",
+   "hint": " No e D.D.E. Jul Igjen Arrangør: Stageway & All Things Live Norway 11. desember 2026 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Love Actually™ live in concert",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/love-actually-live-in-concert-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1766131795/love-actually-2000x1000.jpg?",
+   "from": "2026-12-12",
+   "to": "2026-12-12",
+   "about": "",
+   "hint": " Love Actually™ live in concert Arrangør: Grieghallen 2 forestillinger 12. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Christel Alsos – I den kalde vinteren 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/christel-alsos-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1765527974/christel-alsos-2000-x1000.png?",
+   "from": "2026-12-12",
+   "to": "2026-12-12",
+   "about": "",
+   "hint": " Christel Alsos – I den kalde vinteren 2026 Arrangør: Bergen Live 2 forestillinger 12. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Jag är Carola - En musikalsk livsberättelse",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/jag-aer-carola",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1786443426/carola-2026-2000x1000.png?",
+   "from": "2026-12-13",
+   "to": "2026-12-13",
+   "about": "",
+   "hint": " Jag är Carola - En musikalsk livsberättelse Arrangør: All Things Live Norway 13. desember 2026 16:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Didrik Solli-Tangen – O Helga Natt",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/didrik-solli-tangen-o-helga-natt-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1738748304/2025-didrik-solli-tangen-o-helga-natt-2000x1000.png?",
+   "from": "2026-12-13",
+   "to": "2026-12-13",
+   "about": "",
+   "hint": " Didrik Solli-Tangen – O Helga Natt Arrangør: Class-A Entertainment 13. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Snekker Andersen og Julenissen",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/snekker-andersen-og-julenissen",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1792574064/snekker-andersen-og-julenissen.png?",
+   "from": "2026-12-14",
+   "to": "2026-12-15",
+   "about": "",
+   "hint": " Snekker Andersen og Julenissen Arrangør: Talina Produksjon og Grieghallen 4 forestillinger 14. - 15. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Christmas with Nordic Tenors 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/christmas-with-nordic-tenors-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1766066921/nordic-tenors-2026-riktig-2000x1000.png?",
+   "from": "2026-12-15",
+   "to": "2026-12-15",
+   "about": "",
+   "hint": " Christmas with Nordic Tenors 2026 Arrangør: Nordic Moments AS 15. desember 2026 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "VÅR JUL 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/vaar-jul-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781783022/va-r-jul-2026-digitale-flater-2000x1000.png?",
+   "from": "2026-12-16",
+   "to": "2026-12-16",
+   "about": "",
+   "hint": " VÅR JUL 2026 Arrangør: Bald and Beautiful Production 2 forestillinger 16. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Ina Wroldsen: The Business of Christmas",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/ina-wroldsen-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1771414399/ina-wroldsen-6-business-of-christmas.png?",
+   "from": "2026-12-17",
+   "to": "2026-12-18",
+   "about": "",
+   "hint": " Ina Wroldsen: The Business of Christmas Arrangør: Bergen Live & Live Nation 2 forestillinger 17. - 18. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Symfonica - Norges mektigste julekonsert!",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/symfonica-norges-mest-storslaatte-julekonsert",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790083913/symfonica-uten-logo.jpg?",
+   "from": "2026-12-18",
+   "to": "2026-12-18",
+   "about": "",
+   "hint": " Symfonica - Norges mektigste julekonsert! Arrangør: Symfonica 18. desember 2026 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Kurt Nilsen - Julekonsert 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kurt-nilsen-julekonsert-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1771231500/kurt-nilsen-20262000x1000.png?",
+   "from": "2026-12-19",
+   "to": "2026-12-22",
+   "about": "",
+   "hint": " Kurt Nilsen - Julekonsert 2026 Arrangør: Bergen Live 8 forestillinger 19. - 22. desember 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Bad Brooks - Country Christmas 2026",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/bad-brooks-country-christmas-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1749022166/country-christmas-2000x1000px.jpg?",
+   "from": "2026-12-19",
+   "to": "2026-12-19",
+   "about": "",
+   "hint": " Bad Brooks - Country Christmas 2026 Arrangør: Bad Brooks 19. desember 2026 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Eikanger-Bjørsvik : Nyttårskonsert på sjølvaste nyttårsaften",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/eikanger-bjoersvik-nyttaarskonsert-paa-sjoelvaste-nyttaarsaften-2026",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781076460/eikanger-bjoersvik-nyttar26-2000x1000.jpg?",
+   "from": "2026-12-31",
+   "to": "2026-12-31",
+   "about": "",
+   "hint": " Eikanger-Bjørsvik : Nyttårskonsert på sjølvaste nyttårsaften Arrangør: Eikanger-Bjørsvik 31. desember 2026 15:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Nyttårskonserten 2027 – med Bergen Filharmoniske Orkester",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/nyttaarskonserten-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1780477770/alondra-de-la-parra-by-felix-broede-09-1440x960.jpg?",
+   "from": "2027-01-07",
+   "to": "2027-01-08",
+   "about": "",
+   "hint": " Nyttårskonserten 2027 – med Bergen Filharmoniske Orkester Bergen Filharmoniske Orkester 2 forestillinger 07. - 08. januar 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Scary Monsters",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/scary-monsters",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1782385658/scary-monsters-2000x1000.png?",
+   "from": "2027-01-08",
+   "to": "2027-01-08",
+   "about": "",
+   "hint": " Scary Monsters Arrangør: Stageway, All Things Live Norway 08. januar 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "The Norwegian Opry",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/the-norwegian-opry",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1787921283/opry26-gh-2000x1000-v3.jpg?",
+   "from": "2027-01-16",
+   "to": "2027-01-16",
+   "about": "",
+   "hint": " The Norwegian Opry Arrangør: NCMA 16. januar 2027 20:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Nyttårskonserten 2027 – Schönbrunn Palace Orchestra fra Wien",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/nyttaarskonserten-2027-schoenbrunn-palace-orchestra-fra-wien",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1780300220/nk27-new-biljettbilder-2000x1000.jpg?",
+   "from": "2027-01-17",
+   "to": "2027-01-17",
+   "about": "",
+   "hint": " Nyttårskonserten 2027 – Schönbrunn Palace Orchestra fra Wien Arrangør: Julius Production & PH int Music and Great Éntertainment 17. januar 2027 19:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Beethoven 1, 2 og 4",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/beethoven-1-2-og-4",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791206935/1440x1080-beethoven.jpg?",
+   "from": "2027-01-21",
+   "to": "2027-01-21",
+   "about": "",
+   "hint": " Beethoven 1, 2 og 4 Bergen Filharmoniske Orkester 21. januar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Beethoven 3 og 7",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/beethoven-3-og-7",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791279178/1440x1080-beethoven.jpg?",
+   "from": "2027-01-22",
+   "to": "2027-01-22",
+   "about": "",
+   "hint": " Beethoven 3 og 7 Bergen Filharmoniske Orkester 22. januar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Jan Eggum 75?",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/jan-eggum-75",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1779275320/jan-eggum-2027-2000x1000.png?",
+   "from": "2027-01-23",
+   "to": "2027-01-23",
+   "about": "",
+   "hint": " Jan Eggum 75? Arrangør: Stageway & All Things Live Norway 2 forestillinger 23. januar 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Svanesjøen – en tidløs klassiker",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/svanesjoeen-en-tidloes-klassiker-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790940252/svanesjoeen-ny-versjon.png?",
+   "from": "2027-01-24",
+   "to": "2027-01-24",
+   "about": "",
+   "hint": " Svanesjøen – en tidløs klassiker Arrangør: The International Ballet Company Berlin 24. januar 2027 14:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Kort og klassisk. Skjebnesymfonien",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kort-og-klassisk-skjebnesymfonien",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791279595/1440x1080-beethoven-kortogklassisk.jpg?",
+   "from": "2027-01-27",
+   "to": "2027-01-27",
+   "about": "",
+   "hint": " Kort og klassisk. Skjebnesymfonien Bergen Filharmoniske Orkester 27. januar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Beethoven 5 og 6",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/beethoven-5-og-6",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791280000/1440x1080-beethoven.jpg?",
+   "from": "2027-01-28",
+   "to": "2027-01-28",
+   "about": "",
+   "hint": " Beethoven 5 og 6 Bergen Filharmoniske Orkester 28. januar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Beethoven 8 og 9",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/beethoven-8-og-9",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791280479/1440x1080-beethoven.jpg?",
+   "from": "2027-01-29",
+   "to": "2027-01-29",
+   "about": "",
+   "hint": " Beethoven 8 og 9 Bergen Filharmoniske Orkester 29. januar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Janneloven",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/janneloven",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781767628/janneloven-2000x1000.png?",
+   "from": "2027-01-30",
+   "to": "2027-01-30",
+   "about": "",
+   "hint": " Janneloven Arrangør: PLAN-B 30. januar 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "NORDLYS",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/nordlys",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1778483927/nordlys-2000x1000.jpg?",
+   "from": "2027-01-31",
+   "to": "2027-01-31",
+   "about": "",
+   "hint": " NORDLYS Arrangør: Victoria Productions 2 forestillinger 31. januar 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Lyst på livet - En kveld med Anne Lindmo og Nina Brochmann",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/lyst-paa-livet-en-kveld-med-anne-lindmo-og-nina-brochmann",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790148063/nona-brochmann-anne-lindmo-2000x1000.png?",
+   "from": "2027-02-03",
+   "to": "2027-02-03",
+   "about": "",
+   "hint": " Lyst på livet - En kveld med Anne Lindmo og Nina Brochmann Arrangør: Original Talks 03. februar 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Tsjaikovskij og Brahms",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/tsjaikovskij-og-brahms",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791280731/tabita-berglund-nepstadmose-oapneseth-4-1500px.jpg?",
+   "from": "2027-02-04",
+   "to": "2027-02-04",
+   "about": "",
+   "hint": " Tsjaikovskij og Brahms Bergen Filharmoniske Orkester 04. februar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "med BBC Singers og Edvard Grieg Kor",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/gjestespill-med-bbc-singers-og-edvard-grieg-kor",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791284827/bbc-singers.jpg?",
+   "from": "2027-02-11",
+   "to": "2027-02-11",
+   "about": "",
+   "hint": " Gjestespill med BBC Singers og Edvard Grieg Kor Bergen Filharmoniske Orkester 11. februar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Vamp - Syr ei blonda",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/vamp-syr-ei-blonda",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1771919572/vamp-1-2000-1000.png?",
+   "from": "2027-02-13",
+   "to": "2027-02-13",
+   "about": "",
+   "hint": " Vamp - Syr ei blonda Arrangør: Vamp 13. februar 2027 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Daniel Sloss – BITTER",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/daniel-sloss",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1780646248/daniel-sloss-2000x1000.png?",
+   "from": "2027-02-15",
+   "to": "2027-02-15",
+   "about": "",
+   "hint": " Daniel Sloss – BITTER Arrangør: Stageway, Acomic Soul, All Things Live Norway 15. februar 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "We Will Rock You",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/we-will-rock-you",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1778657875/we-will-rock-you-2000x1000.png?",
+   "from": "2027-02-18",
+   "to": "2027-02-20",
+   "about": "",
+   "hint": " We Will Rock You Arrangør: Musical Norway 5 forestillinger 18. - 20. februar 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Night of Soul",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/night-of-soul",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1775718847/night-of-soul-2027-2000x1000.png?",
+   "from": "2027-02-20",
+   "to": "2027-02-20",
+   "about": "",
+   "hint": " Night of Soul Arrangør: Estageworks 20. februar 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Lords of the Sound - The Music of Hans Zimmer",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/lords-of-the-sound-the-music-of-hans-zimmer",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1785913718/2000h1000-notext.jpg?",
+   "from": "2027-02-28",
+   "to": "2027-02-28",
+   "about": "",
+   "hint": " Få billetter Lords of the Sound - The Music of Hans Zimmer Arrangør: KIART Nord AB 2 forestillinger 28. februar 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Viljeskallen - Petter Northug og Thor Gotaas",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/viljeskallen-petter-northug-og-thor-gotaas",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1782195821/petter-northug-og-thor-gotaas-2000x1000.png?",
+   "from": "2027-03-09",
+   "to": "2027-03-09",
+   "about": "",
+   "hint": " Viljeskallen - Petter Northug og Thor Gotaas Arrangør: Original Talks AS 09. mars 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Barbereren i Sevilla - Bergen Nasjonale Opera",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/barbereren-i-sevilla-bergen-nasjonale-opera",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1775734019/barbereren-i-sevilla-2000x1000-web.jpg?",
+   "from": "2027-03-13",
+   "to": "2027-03-13",
+   "about": "",
+   "hint": " Barbereren i Sevilla - Bergen Nasjonale Opera Arrangør: Bergen Nasjonale Opera 13. mars 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Mahler 10 med Edward Gardner",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/mahler-10-med-edward-gardner",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791797266/2027-04-01-mahler-10-ed-gardner-bfung-2021-magnus-skrede-ms-bfu-07448-web.jpg?",
+   "from": "2027-04-01",
+   "to": "2027-04-02",
+   "about": "",
+   "hint": " Mahler 10 med Edward Gardner Bergen Filharmoniske Orkester 2 forestillinger 01. - 02. april 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "The Nordic Floyd Show - Animals + Classics",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/the-nordic-floyd-show-animals-classics",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791284486/nordic-floyd-2000x1000.png?",
+   "from": "2027-04-03",
+   "to": "2027-04-03",
+   "about": "",
+   "hint": " The Nordic Floyd Show - Animals + Classics Arrangør: Stageway og All Things Live Norway 03. april 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Det kan alltid bli verre - Foredrag med John Hammersmark",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/det-kan-alltid-bli-verre-foredrag-med-john-hammersmark-2",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1748240307/det-kan-alltid-bli-verre-2000x1000.png?",
+   "from": "2027-04-14",
+   "to": "2027-04-14",
+   "about": "",
+   "hint": " Det kan alltid bli verre - Foredrag med John Hammersmark Arrangør: Original Talks AS 2 dager 14. april 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Beat The Drum – The Runrig Experience (UK)",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/beat-the-drum-the-runrig-experience-uk",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1792147131/btd-2000x1000.jpg?",
+   "from": "2027-04-15",
+   "to": "2027-04-15",
+   "about": "",
+   "hint": " Beat The Drum – The Runrig Experience (UK) Arrangør: Showbizz Concerts 15. april 2027 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Kunsten å lese kroppsspråk",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kunsten-aa-lese-kroppsspraak",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788158334/2000-x-1000-px.png?",
+   "from": "2027-04-17",
+   "to": "2027-04-17",
+   "about": "",
+   "hint": " Kunsten å lese kroppsspråk Arrangør: Mentalist Vidar Hansen 17. april 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "FROST 1 & 2 - Et musikalsk show!",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/frost-1-2-et-musikalsk-show",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1779178175/frost-2027-2000x1000.png?",
+   "from": "2027-04-18",
+   "to": "2027-04-18",
+   "about": "",
+   "hint": " FROST 1 & 2 - Et musikalsk show! Arrangør: Showtime Concerts 18. april 2027 15:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "THE MAGIC OF ALEXX ALEXXANDER 2.0 - 2027",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/the-magic-of-alexx-alexxander-2-0-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1771598663/motorbike-poster-liggende-2.jpg?",
+   "from": "2027-04-25",
+   "to": "2027-04-25",
+   "about": "",
+   "hint": " THE MAGIC OF ALEXX ALEXXANDER 2.0 - 2027 25. april 2027 16:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Letz Zep – Tribute to Led Zeppelin",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/letz-zep-tribute-to-led-zeppelin-uk",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1786091587/letz-zep-norway-ticketmaster-logo-eb-15-2000-x-1000-px.png?",
+   "from": "2027-04-30",
+   "to": "2027-04-30",
+   "about": "",
+   "hint": " Letz Zep – Tribute to Led Zeppelin Arrangør: DukeBox Promotions 30. april 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Iselin Guttormsen Kommer",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/iselin-guttormsen-kommer",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1787214383/iselin-guttormsen-2000x1000.png?",
+   "from": "2027-05-01",
+   "to": "2027-05-01",
+   "about": "",
+   "hint": " Iselin Guttormsen Kommer Arrangør: Stageway og All Things Live 01. mai 2027 16:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Lukas Graham",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/lukas-graham",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790755844/lukas-graham-2000x1000.png?",
+   "from": "2027-05-02",
+   "to": "2027-05-02",
+   "about": "",
+   "hint": " Lukas Graham Arrangør: All Things Live Norway 02. mai 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Jo Koy -Just Being Koy Tour",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/jo-koy-just-being-koy-tour-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781012933/jo-koy-just-being-koy-tour-2027-2000x1000.png?",
+   "from": "2027-05-21",
+   "to": "2027-05-21",
+   "about": "",
+   "hint": " Jo Koy -Just Being Koy Tour Arrangør: Stageway, All Things Live Norway, Acomic Soul 21. mai 2027 17:30 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Pianomaraton – Vexations av Erik Satie",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-pianomaraton-vexations-av-erik-satie",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781172359/vexations.jpg?",
+   "from": "2027-05-28",
+   "to": "2027-05-28",
+   "about": "",
+   "hint": " Festspillene i Bergen: Pianomaraton – Vexations av Erik Satie Festspillene i Bergen 28. mai 2027 11:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Anne Pedersdotter",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-anne-pedersdotter",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1782384179/anne-pedersdotter-victoria-randem-festspillene-i-bergen-2027.jpg?",
+   "from": "2027-05-29",
+   "to": "2027-05-31",
+   "about": "",
+   "hint": " Festspillene i Bergen: Anne Pedersdotter Festspillene i Bergen 2 forestillinger 29. - 31. mai 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Operakor & singalong",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-operakor-singalong",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1782385166/syng-opera-astrid-nordstad-festspillene-bergen-norge-norway-festival-foto-erik-berg.jpg?",
+   "from": "2027-05-30",
+   "to": "2027-05-30",
+   "about": "",
+   "hint": " Festspillene i Bergen: Operakor & singalong Festspillene i Bergen 30. mai 2027 16:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Emergence m/Scottish Ballet",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-emergence-m-scottish-ballet",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1789053735/scottish-ballet-company-emergence-crystal-pite-photo-andy-ross-festspillene-bergen-festival-norge-norway-2027.jpg?",
+   "from": "2027-06-07",
+   "to": "2027-06-08",
+   "about": "",
+   "hint": " Festspillene i Bergen: Emergence m/Scottish Ballet Festspillene i Bergen 3 forestillinger 07. - 08. juni 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Ritual m/Yo-Yo Ma",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-ritual-m-yo-yo-ma",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781695328/ritual-med-yo-yo-ma.jpg?",
+   "from": "2027-06-10",
+   "to": "2027-06-10",
+   "about": "",
+   "hint": " Festspillene i Bergen: Ritual m/Yo-Yo Ma Festspillene i Bergen 10. juni 2027 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "K-Pop Superstars",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/k-pop-superstars-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1791876945/k-pop-superstars-2000x1000.png?",
+   "from": "2027-06-13",
+   "to": "2027-06-13",
+   "about": "",
+   "hint": " K-Pop Superstars Arrangør: Showbizz Concerts 13. juni 2027 15:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "BRIT FLOYD – ANIMALS 50 - World Tour 2027",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/brit-floyd-animals-50-world-tour-2027",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790593424/brit-floyd-animals-1-2000x1000.png?",
+   "from": "2027-10-02",
+   "to": "2027-10-02",
+   "about": "",
+   "hint": " BRIT FLOYD – ANIMALS 50 - World Tour 2027 Arrangør: Bergen Live 02. oktober 2027 18:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "BRIT FLOYD - Echoes: 60 Years of Pink Floyd",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/brit-floyd-echoes-60-years-of-pink-floyd",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790590270/brit-floyd-echoes-2000x1000.png?",
+   "from": "2027-10-03",
+   "to": "2027-10-03",
+   "about": "",
+   "hint": " BRIT FLOYD - Echoes: 60 Years of Pink Floyd Arrangør: Bergen Live 03. oktober 2027 17:00 LES MER",
+   "city": "Bergen"
   }
  ],
  "k_rockefeller": [
@@ -12021,18 +13013,6 @@
   }
  ],
  "k_blaa": [
-  {
-   "title": "Voice Actor (Noa Kurzweil), Felisha Ledesma & Rune Kielsgaard",
-   "venue": "Blå",
-   "url": "https://www.ticketmaster.no/event/1880686181",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_lZdparZlS?tr=w-600",
-   "times": [
-    "2026-10-21T20:00"
-   ],
-   "hint": "Ambient Experimental Electronic",
-   "about": "Noa Kurzweil is the person behind the enigmatic UK-based music project Voice Actor, blending dream-pop, IDM, and lo-fi aesthetics with spoken-word elements. Known for her prolific debut, *Sent from my Telephone* (2022, S",
-   "city": "Oslo"
-  },
   {
    "title": "Hundzig",
    "venue": "Blå",
