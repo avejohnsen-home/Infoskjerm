@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-22T13:53:04.596Z",
+ "updated": "2026-10-22T14:45:43.449Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-22",
-   "h": 15,
+   "h": 16,
    "temp": 12,
    "wind": 4,
    "sym": "heavyrain",
-   "rain": 2.2,
+   "rain": 1.2,
    "span": 1
   },
   "days": [
@@ -17,17 +17,8 @@
     "hours": [
      {
       "date": "2026-10-22",
-      "h": 15,
-      "temp": 12,
-      "wind": 4,
-      "sym": "heavyrain",
-      "rain": 2.2,
-      "span": 1
-     },
-     {
-      "date": "2026-10-22",
       "h": 16,
-      "temp": 11,
+      "temp": 12,
       "wind": 4,
       "sym": "heavyrain",
       "rain": 1.2,
@@ -99,7 +90,7 @@
     ],
     "max": 12,
     "min": 11,
-    "rain": 4.5,
+    "rain": 2.3,
     "sym": "heavyrain"
    },
    {
@@ -135,7 +126,7 @@
      {
       "date": "2026-10-23",
       "h": 3,
-      "temp": 10,
+      "temp": 11,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -342,7 +333,7 @@
      {
       "date": "2026-10-24",
       "h": 1,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -459,7 +450,7 @@
      {
       "date": "2026-10-24",
       "h": 14,
-      "temp": 9,
+      "temp": 10,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -1017,7 +1008,7 @@
  "films": [
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet",
+   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1037,19 +1028,11 @@
    "shows": [
     {
      "d": "2026-10-22",
-     "t": "16:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/b05b6321-8875-49b3-bbe2-4c09b85cd24f"
-    },
-    {
-     "d": "2026-10-22",
      "t": "17:00",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/9cb52759-be15-4baa-ba27-08b7b41f2e56"
+     "u": "https://www.nfkino.no/screening/1002/9cb52759-be15-4baa-ba27-08b7b41f2e56"
     },
     {
      "d": "2026-10-22",
@@ -1057,7 +1040,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/939c4b6e-7297-457d-aa17-a34655e01163"
+     "u": "https://www.nfkino.no/screening/1001/939c4b6e-7297-457d-aa17-a34655e01163"
     },
     {
      "d": "2026-10-23",
@@ -1065,7 +1048,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/faf7f1eb-4dc5-47de-9aca-1dd877929d35"
+     "u": "https://www.nfkino.no/screening/1002/faf7f1eb-4dc5-47de-9aca-1dd877929d35"
     },
     {
      "d": "2026-10-23",
@@ -1073,7 +1056,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/3ae65ee0-ea19-41d0-bb9b-ca6e2e75d2ad"
+     "u": "https://www.nfkino.no/screening/2583/3ae65ee0-ea19-41d0-bb9b-ca6e2e75d2ad"
     },
     {
      "d": "2026-10-23",
@@ -1081,7 +1064,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c0fc5fc5-ba52-4121-808a-478901193545"
+     "u": "https://www.nfkino.no/screening/1001/c0fc5fc5-ba52-4121-808a-478901193545"
     },
     {
      "d": "2026-10-23",
@@ -1089,7 +1072,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/abcda2c1-a48b-4c3d-abcf-3b327fe5d0aa"
+     "u": "https://www.nfkino.no/screening/2590/abcda2c1-a48b-4c3d-abcf-3b327fe5d0aa"
     },
     {
      "d": "2026-10-23",
@@ -1097,7 +1080,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2a88a128-4475-4500-83d2-5fd66f161412"
+     "u": "https://www.nfkino.no/screening/1002/2a88a128-4475-4500-83d2-5fd66f161412"
     },
     {
      "d": "2026-10-23",
@@ -1105,7 +1088,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/48faa4e3-3706-4194-9ee4-bf279722e168"
+     "u": "https://www.nfkino.no/screening/2583/48faa4e3-3706-4194-9ee4-bf279722e168"
     },
     {
      "d": "2026-10-23",
@@ -1113,7 +1096,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0049c86b-cf66-4fa3-a738-0df0070e7d8f"
+     "u": "https://www.nfkino.no/screening/2439/0049c86b-cf66-4fa3-a738-0df0070e7d8f"
     },
     {
      "d": "2026-10-23",
@@ -1121,7 +1104,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/8041f704-f02c-4062-83c5-7a4b517106b5"
+     "u": "https://www.nfkino.no/screening/1001/8041f704-f02c-4062-83c5-7a4b517106b5"
     },
     {
      "d": "2026-10-23",
@@ -1129,7 +1112,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/db81e848-ec16-4d6f-b6c6-583040bbacf5"
+     "u": "https://www.nfkino.no/screening/2590/db81e848-ec16-4d6f-b6c6-583040bbacf5"
     },
     {
      "d": "2026-10-23",
@@ -1137,7 +1120,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/57ee93a6-d77e-41b2-8b5b-ea09a9d17513"
+     "u": "https://www.nfkino.no/screening/2612/57ee93a6-d77e-41b2-8b5b-ea09a9d17513"
     },
     {
      "d": "2026-10-23",
@@ -1145,7 +1128,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/6eb913d0-f77c-40a3-bd85-0f245449decf"
+     "u": "https://www.nfkino.no/screening/1002/6eb913d0-f77c-40a3-bd85-0f245449decf"
     },
     {
      "d": "2026-10-23",
@@ -1153,7 +1136,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/749ba9df-21d9-477a-ad0f-599d8f252e72"
+     "u": "https://www.nfkino.no/screening/2590/749ba9df-21d9-477a-ad0f-599d8f252e72"
     },
     {
      "d": "2026-10-23",
@@ -1161,7 +1144,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/df52e59d-af72-4792-9d71-efeace011802"
+     "u": "https://www.nfkino.no/screening/1001/df52e59d-af72-4792-9d71-efeace011802"
     },
     {
      "d": "2026-10-23",
@@ -1169,7 +1152,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/148428f1-06a5-4791-815a-029bc58c7b57"
+     "u": "https://www.nfkino.no/screening/2612/148428f1-06a5-4791-815a-029bc58c7b57"
     },
     {
      "d": "2026-10-24",
@@ -1177,7 +1160,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/9842fba3-3242-42a1-8428-d13a11f32944"
+     "u": "https://www.nfkino.no/screening/2612/9842fba3-3242-42a1-8428-d13a11f32944"
     },
     {
      "d": "2026-10-24",
@@ -1185,7 +1168,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b7c13aab-a944-4083-9f69-e7bf08fa73c1"
+     "u": "https://www.nfkino.no/screening/1002/b7c13aab-a944-4083-9f69-e7bf08fa73c1"
     },
     {
      "d": "2026-10-24",
@@ -1193,7 +1176,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/c9cf5519-7968-402f-b6c8-8e2c9ae2ec4f"
+     "u": "https://www.nfkino.no/screening/2583/c9cf5519-7968-402f-b6c8-8e2c9ae2ec4f"
     },
     {
      "d": "2026-10-24",
@@ -1201,7 +1184,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/869b33dc-319b-4a20-a3dd-a9f54f85e094"
+     "u": "https://www.nfkino.no/screening/1001/869b33dc-319b-4a20-a3dd-a9f54f85e094"
     },
     {
      "d": "2026-10-24",
@@ -1209,7 +1192,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/559b8781-056a-4354-922d-0bdb3f508c76"
+     "u": "https://www.nfkino.no/screening/2590/559b8781-056a-4354-922d-0bdb3f508c76"
     },
     {
      "d": "2026-10-24",
@@ -1217,7 +1200,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/8c66be6b-d621-4b5a-848d-3932c59892d0"
+     "u": "https://www.nfkino.no/screening/2581/8c66be6b-d621-4b5a-848d-3932c59892d0"
     },
     {
      "d": "2026-10-24",
@@ -1225,7 +1208,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/6a747dea-0f36-45a7-8b14-da8c06788439"
+     "u": "https://www.nfkino.no/screening/2612/6a747dea-0f36-45a7-8b14-da8c06788439"
     },
     {
      "d": "2026-10-24",
@@ -1233,7 +1216,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/dbca50eb-2d15-4bc5-971f-3204bcc15537"
+     "u": "https://www.nfkino.no/screening/2583/dbca50eb-2d15-4bc5-971f-3204bcc15537"
     },
     {
      "d": "2026-10-24",
@@ -1241,7 +1224,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/0cbc6257-080e-4730-a139-7c27ea4298f1"
+     "u": "https://www.nfkino.no/screening/1002/0cbc6257-080e-4730-a139-7c27ea4298f1"
     },
     {
      "d": "2026-10-24",
@@ -1249,7 +1232,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/fa2942fe-6ea6-47de-af30-f8a3f0a69c3e"
+     "u": "https://www.nfkino.no/screening/2439/fa2942fe-6ea6-47de-af30-f8a3f0a69c3e"
     },
     {
      "d": "2026-10-24",
@@ -1257,7 +1240,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/b4326c0c-6115-40a4-924c-23555c060c6d"
+     "u": "https://www.nfkino.no/screening/1001/b4326c0c-6115-40a4-924c-23555c060c6d"
     },
     {
      "d": "2026-10-24",
@@ -1265,7 +1248,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/cdc5c8f2-2274-4a9f-830f-e97e43a480bf"
+     "u": "https://www.nfkino.no/screening/2612/cdc5c8f2-2274-4a9f-830f-e97e43a480bf"
     },
     {
      "d": "2026-10-24",
@@ -1273,7 +1256,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/0803d755-ebae-4bee-a659-77e765b99f8d"
+     "u": "https://www.nfkino.no/screening/1002/0803d755-ebae-4bee-a659-77e765b99f8d"
     },
     {
      "d": "2026-10-24",
@@ -1281,7 +1264,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/e09660e9-57e8-4d7c-83ad-a5747c662de4"
+     "u": "https://www.nfkino.no/screening/2590/e09660e9-57e8-4d7c-83ad-a5747c662de4"
     },
     {
      "d": "2026-10-24",
@@ -1289,7 +1272,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c7872a76-9ea7-464f-b614-5642705c05d2"
+     "u": "https://www.nfkino.no/screening/1001/c7872a76-9ea7-464f-b614-5642705c05d2"
     },
     {
      "d": "2026-10-24",
@@ -1297,7 +1280,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/daa9e1cb-278c-4692-8b92-380d33420f81"
+     "u": "https://www.nfkino.no/screening/2612/daa9e1cb-278c-4692-8b92-380d33420f81"
     },
     {
      "d": "2026-10-25",
@@ -1305,7 +1288,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/c00cbacc-3b3d-4a5f-9cf6-d5bb4a57c42f"
+     "u": "https://www.nfkino.no/screening/2583/c00cbacc-3b3d-4a5f-9cf6-d5bb4a57c42f"
     },
     {
      "d": "2026-10-25",
@@ -1313,7 +1296,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/aef64385-c781-4e15-8a2f-1a3f20e7f48c"
+     "u": "https://www.nfkino.no/screening/1001/aef64385-c781-4e15-8a2f-1a3f20e7f48c"
     },
     {
      "d": "2026-10-25",
@@ -1321,7 +1304,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/484517e8-2e43-459a-a94f-be7a08ef38b0"
+     "u": "https://www.nfkino.no/screening/2581/484517e8-2e43-459a-a94f-be7a08ef38b0"
     },
     {
      "d": "2026-10-25",
@@ -1329,7 +1312,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/49183678-a005-4629-b94b-4106cf492fdf"
+     "u": "https://www.nfkino.no/screening/2583/49183678-a005-4629-b94b-4106cf492fdf"
     },
     {
      "d": "2026-10-25",
@@ -1337,7 +1320,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/f2ae4af8-7fa6-42bf-a9b7-bc46873db06a"
+     "u": "https://www.nfkino.no/screening/2439/f2ae4af8-7fa6-42bf-a9b7-bc46873db06a"
     },
     {
      "d": "2026-10-25",
@@ -1345,7 +1328,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
+     "u": "https://www.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
     },
     {
      "d": "2026-10-25",
@@ -1353,7 +1336,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
+     "u": "https://www.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
     },
     {
      "d": "2026-10-25",
@@ -1361,7 +1344,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/385fe469-cc53-4c77-a1f5-b7d169861972"
+     "u": "https://www.nfkino.no/screening/2590/385fe469-cc53-4c77-a1f5-b7d169861972"
     },
     {
      "d": "2026-10-25",
@@ -1369,7 +1352,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/f0809c05-1a41-4f49-a2aa-458a691e103a"
+     "u": "https://www.nfkino.no/screening/2612/f0809c05-1a41-4f49-a2aa-458a691e103a"
     },
     {
      "d": "2026-10-25",
@@ -1377,7 +1360,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/bbb64393-7803-4aec-9f6c-6359aa9d0081"
+     "u": "https://www.nfkino.no/screening/1002/bbb64393-7803-4aec-9f6c-6359aa9d0081"
     },
     {
      "d": "2026-10-25",
@@ -1385,7 +1368,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ac522547-1a60-4ad2-9922-9ae03b8db525"
+     "u": "https://www.nfkino.no/screening/1001/ac522547-1a60-4ad2-9922-9ae03b8db525"
     },
     {
      "d": "2026-10-25",
@@ -1393,7 +1376,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/31cd609f-1e30-4f7b-ba80-7ec47ebc5774"
+     "u": "https://www.nfkino.no/screening/2612/31cd609f-1e30-4f7b-ba80-7ec47ebc5774"
     },
     {
      "d": "2026-10-25",
@@ -1401,7 +1384,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/62646f22-1bf5-43a4-8bce-5eff84caf2c1"
+     "u": "https://www.nfkino.no/screening/2590/62646f22-1bf5-43a4-8bce-5eff84caf2c1"
     },
     {
      "d": "2026-10-26",
@@ -1409,7 +1392,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/7b1903aa-fbc3-4ad4-bec8-a104990b4618"
+     "u": "https://www.nfkino.no/screening/2583/7b1903aa-fbc3-4ad4-bec8-a104990b4618"
     },
     {
      "d": "2026-10-26",
@@ -1417,7 +1400,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/3419319c-5aa2-4b9b-aa13-8e8c2ed65315"
+     "u": "https://www.nfkino.no/screening/2439/3419319c-5aa2-4b9b-aa13-8e8c2ed65315"
     },
     {
      "d": "2026-10-26",
@@ -1425,7 +1408,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/6d093bc7-51a8-4e0e-9f31-e1c1d0c16625"
+     "u": "https://www.nfkino.no/screening/1001/6d093bc7-51a8-4e0e-9f31-e1c1d0c16625"
     },
     {
      "d": "2026-10-26",
@@ -1433,7 +1416,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b9c692fd-d0eb-43de-9357-3e0c32196e9c"
+     "u": "https://www.nfkino.no/screening/1002/b9c692fd-d0eb-43de-9357-3e0c32196e9c"
     },
     {
      "d": "2026-10-26",
@@ -1441,7 +1424,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/3c629df7-38f5-4f56-98fe-9f941822328a"
+     "u": "https://www.nfkino.no/screening/2583/3c629df7-38f5-4f56-98fe-9f941822328a"
     },
     {
      "d": "2026-10-26",
@@ -1449,7 +1432,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a375fed2-d415-4085-8849-317868abe16e"
+     "u": "https://www.nfkino.no/screening/2439/a375fed2-d415-4085-8849-317868abe16e"
     },
     {
      "d": "2026-10-26",
@@ -1457,7 +1440,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/3a7347f0-eadc-4e6c-8437-73ce862f34e2"
+     "u": "https://www.nfkino.no/screening/1001/3a7347f0-eadc-4e6c-8437-73ce862f34e2"
     },
     {
      "d": "2026-10-26",
@@ -1465,7 +1448,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
+     "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
     },
     {
      "d": "2026-10-26",
@@ -1473,7 +1456,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
+     "u": "https://www.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
     },
     {
      "d": "2026-10-26",
@@ -1481,7 +1464,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7480c378-fd2b-4560-b798-944f627ac12a"
+     "u": "https://www.nfkino.no/screening/1001/7480c378-fd2b-4560-b798-944f627ac12a"
     },
     {
      "d": "2026-10-26",
@@ -1489,7 +1472,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/4fbaf30a-0b02-4331-8c22-11b6069d20e2"
+     "u": "https://www.nfkino.no/screening/2612/4fbaf30a-0b02-4331-8c22-11b6069d20e2"
     },
     {
      "d": "2026-10-27",
@@ -1497,7 +1480,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/0b3acb1e-b3f5-435a-9a23-80e36a65dcb1"
+     "u": "https://www.nfkino.no/screening/2590/0b3acb1e-b3f5-435a-9a23-80e36a65dcb1"
     },
     {
      "d": "2026-10-27",
@@ -1505,7 +1488,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/da7b3b67-bfa2-4fbc-b1ed-92719d19d63a"
+     "u": "https://www.nfkino.no/screening/1002/da7b3b67-bfa2-4fbc-b1ed-92719d19d63a"
     },
     {
      "d": "2026-10-27",
@@ -1513,7 +1496,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
+     "u": "https://www.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
     },
     {
      "d": "2026-10-27",
@@ -1521,7 +1504,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ba13d246-1114-43ff-a07a-314992f759be"
+     "u": "https://www.nfkino.no/screening/1001/ba13d246-1114-43ff-a07a-314992f759be"
     },
     {
      "d": "2026-10-27",
@@ -1529,7 +1512,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/4fe7bf34-0472-4ea3-9dc3-4b6aed37880c"
+     "u": "https://www.nfkino.no/screening/2590/4fe7bf34-0472-4ea3-9dc3-4b6aed37880c"
     },
     {
      "d": "2026-10-27",
@@ -1537,7 +1520,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/dd9e49d4-5fa8-4343-b4ac-9b392f07d388"
+     "u": "https://www.nfkino.no/screening/2439/dd9e49d4-5fa8-4343-b4ac-9b392f07d388"
     },
     {
      "d": "2026-10-27",
@@ -1545,7 +1528,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2a894da3-86cb-4e0f-9723-14930643b5e5"
+     "u": "https://www.nfkino.no/screening/1002/2a894da3-86cb-4e0f-9723-14930643b5e5"
     },
     {
      "d": "2026-10-27",
@@ -1553,7 +1536,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/1dc82abb-2ad9-4ed6-8a18-298f1dba7c7a"
+     "u": "https://www.nfkino.no/screening/2583/1dc82abb-2ad9-4ed6-8a18-298f1dba7c7a"
     },
     {
      "d": "2026-10-27",
@@ -1561,7 +1544,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/b1b82719-aa33-44af-b804-448b63160a28"
+     "u": "https://www.nfkino.no/screening/1001/b1b82719-aa33-44af-b804-448b63160a28"
     },
     {
      "d": "2026-10-27",
@@ -1569,7 +1552,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/9f970e5a-e22b-4d7b-94ff-c4fccee55c3a"
+     "u": "https://www.nfkino.no/screening/2612/9f970e5a-e22b-4d7b-94ff-c4fccee55c3a"
     },
     {
      "d": "2026-10-27",
@@ -1577,7 +1560,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b0d88c1a-cac8-45d7-ab98-1fdbf741b453"
+     "u": "https://www.nfkino.no/screening/1002/b0d88c1a-cac8-45d7-ab98-1fdbf741b453"
     },
     {
      "d": "2026-10-27",
@@ -1585,7 +1568,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/bea6d7b4-81d2-46cb-af41-be3dab23500e"
+     "u": "https://www.nfkino.no/screening/1001/bea6d7b4-81d2-46cb-af41-be3dab23500e"
     },
     {
      "d": "2026-10-27",
@@ -1593,7 +1576,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/fe1d8408-9365-4132-bd04-a57db05afef6"
+     "u": "https://www.nfkino.no/screening/2612/fe1d8408-9365-4132-bd04-a57db05afef6"
     },
     {
      "d": "2026-10-28",
@@ -1601,7 +1584,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2583/3d5a7c74-5abe-4a30-98b7-a1214f762182"
+     "u": "https://www.nfkino.no/screening/2583/3d5a7c74-5abe-4a30-98b7-a1214f762182"
     },
     {
      "d": "2026-10-28",
@@ -1609,7 +1592,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/cc7d0d9a-bacc-46e3-b693-d448dd66ea22"
+     "u": "https://www.nfkino.no/screening/2439/cc7d0d9a-bacc-46e3-b693-d448dd66ea22"
     },
     {
      "d": "2026-10-28",
@@ -1617,7 +1600,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a7f44ca8-2425-4e77-80fc-863ae99b3e01"
+     "u": "https://www.nfkino.no/screening/1002/a7f44ca8-2425-4e77-80fc-863ae99b3e01"
     },
     {
      "d": "2026-10-28",
@@ -1625,7 +1608,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c64f94e7-3329-4215-a6bb-f1aa713342fe"
+     "u": "https://www.nfkino.no/screening/1001/c64f94e7-3329-4215-a6bb-f1aa713342fe"
     },
     {
      "d": "2026-10-28",
@@ -1633,7 +1616,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/d771b205-304a-4842-915d-173ff0e492c0"
+     "u": "https://www.nfkino.no/screening/2581/d771b205-304a-4842-915d-173ff0e492c0"
     },
     {
      "d": "2026-10-28",
@@ -1641,7 +1624,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/d1d12d20-0e2d-4a8f-9543-bb2e9a5a2cff"
+     "u": "https://www.nfkino.no/screening/1001/d1d12d20-0e2d-4a8f-9543-bb2e9a5a2cff"
     },
     {
      "d": "2026-10-28",
@@ -1649,7 +1632,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/13534fe3-f4b1-41a2-a81c-bdc58baf9581"
+     "u": "https://www.nfkino.no/screening/2590/13534fe3-f4b1-41a2-a81c-bdc58baf9581"
     },
     {
      "d": "2026-10-28",
@@ -1657,7 +1640,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/756a3cc9-4ee8-47a9-8826-fc78980f2223"
+     "u": "https://www.nfkino.no/screening/2439/756a3cc9-4ee8-47a9-8826-fc78980f2223"
     },
     {
      "d": "2026-10-28",
@@ -1665,7 +1648,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2d28a80a-1c94-436f-a1c7-a19ff9d5e79e"
+     "u": "https://www.nfkino.no/screening/1002/2d28a80a-1c94-436f-a1c7-a19ff9d5e79e"
     },
     {
      "d": "2026-10-28",
@@ -1673,7 +1656,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/865ba41e-5036-459e-b3f0-1c3b8a43f585"
+     "u": "https://www.nfkino.no/screening/2583/865ba41e-5036-459e-b3f0-1c3b8a43f585"
     },
     {
      "d": "2026-10-28",
@@ -1681,7 +1664,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/b36681e1-3636-4dd5-9668-678608a97626"
+     "u": "https://www.nfkino.no/screening/2612/b36681e1-3636-4dd5-9668-678608a97626"
     },
     {
      "d": "2026-10-28",
@@ -1689,7 +1672,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a2cf0b5a-4b5a-4ab9-8efb-3f43eebe8778"
+     "u": "https://www.nfkino.no/screening/1002/a2cf0b5a-4b5a-4ab9-8efb-3f43eebe8778"
     },
     {
      "d": "2026-10-28",
@@ -1697,7 +1680,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c3a3e58a-04db-49f5-b37a-9019fa2b7f16"
+     "u": "https://www.nfkino.no/screening/1001/c3a3e58a-04db-49f5-b37a-9019fa2b7f16"
     },
     {
      "d": "2026-10-28",
@@ -1705,7 +1688,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/de800738-01b3-4fa0-aa42-c2f5039bc17b"
+     "u": "https://www.nfkino.no/screening/2612/de800738-01b3-4fa0-aa42-c2f5039bc17b"
     },
     {
      "d": "2026-10-28",
@@ -1713,7 +1696,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/ba3d929b-1f00-456f-9f98-ab1ef0c0eca4"
+     "u": "https://www.nfkino.no/screening/2590/ba3d929b-1f00-456f-9f98-ab1ef0c0eca4"
     },
     {
      "d": "2026-10-29",
@@ -1721,7 +1704,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
+     "u": "https://www.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
     },
     {
      "d": "2026-10-29",
@@ -1729,7 +1712,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/29fd67df-dd68-4e39-b93b-aa5af9c8ad7c"
+     "u": "https://www.nfkino.no/screening/1002/29fd67df-dd68-4e39-b93b-aa5af9c8ad7c"
     },
     {
      "d": "2026-10-29",
@@ -1737,7 +1720,7 @@
      "c": "Ringen",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/06fd7ca1-0c1d-4412-b28f-ea1bcd261e09"
+     "u": "https://www.nfkino.no/screening/2439/06fd7ca1-0c1d-4412-b28f-ea1bcd261e09"
     },
     {
      "d": "2026-10-29",
@@ -1745,7 +1728,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2590/34102e0b-0c86-47be-b3ce-1f383a4cae0f"
+     "u": "https://www.nfkino.no/screening/2590/34102e0b-0c86-47be-b3ce-1f383a4cae0f"
     },
     {
      "d": "2026-10-29",
@@ -1753,7 +1736,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/cbbe560b-9ec9-4034-98bd-a2cd666591d7"
+     "u": "https://www.nfkino.no/screening/2439/cbbe560b-9ec9-4034-98bd-a2cd666591d7"
     },
     {
      "d": "2026-10-29",
@@ -1761,7 +1744,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/54800ccc-4aa4-498f-9591-98d34211da72"
+     "u": "https://www.nfkino.no/screening/1002/54800ccc-4aa4-498f-9591-98d34211da72"
     },
     {
      "d": "2026-10-29",
@@ -1769,7 +1752,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7cc4b1ea-fff3-420b-b5a4-4adff88c5362"
+     "u": "https://www.nfkino.no/screening/1001/7cc4b1ea-fff3-420b-b5a4-4adff88c5362"
     },
     {
      "d": "2026-10-29",
@@ -1777,7 +1760,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/a6cc04bc-4a2b-47f3-adf7-f026defdc5c3"
+     "u": "https://www.nfkino.no/screening/2612/a6cc04bc-4a2b-47f3-adf7-f026defdc5c3"
     },
     {
      "d": "2026-10-29",
@@ -1785,7 +1768,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
+     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
     },
     {
      "d": "2026-10-29",
@@ -1793,7 +1776,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
+     "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
     },
     {
      "d": "2026-10-29",
@@ -1801,7 +1784,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/1de58f18-0360-4b75-80db-2a1291535ac3"
+     "u": "https://www.nfkino.no/screening/1001/1de58f18-0360-4b75-80db-2a1291535ac3"
     },
     {
      "d": "2026-10-29",
@@ -1809,7 +1792,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/cc8fa789-c2bd-47e8-bda2-de4b0c8287ee"
+     "u": "https://www.nfkino.no/screening/2612/cc8fa789-c2bd-47e8-bda2-de4b0c8287ee"
     },
     {
      "d": "2026-10-30",
@@ -1817,7 +1800,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/5074af8f-e658-4448-86c6-123792c2554d"
+     "u": "https://www.nfkino.no/screening/2581/5074af8f-e658-4448-86c6-123792c2554d"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000896-1000030483.mp4",
@@ -1827,12 +1810,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:06.198Z",
+   "imdbId": "tt39453840",
+   "ratingsAt": "2026-10-22T14:46:18.073Z",
    "city": "Oslo"
   },
   {
    "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode",
+   "url": "https://www.nfkino.no/film/markens-grode?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001856-1000034751.jpg?itok=fIju7tRE",
    "genres": [
     "Drama"
@@ -1852,7 +1836,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Event",
-     "u": "https://wwwapp.nfkino.no/screening/2612/5679cd60-8dbd-46d1-9ae3-7b88c133fe39"
+     "u": "https://www.nfkino.no/screening/2612/5679cd60-8dbd-46d1-9ae3-7b88c133fe39"
     },
     {
      "d": "2026-10-29",
@@ -1860,7 +1844,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2583/d331f8fa-192c-43ac-9236-ffe35164523f"
+     "u": "https://www.nfkino.no/screening/2583/d331f8fa-192c-43ac-9236-ffe35164523f"
     },
     {
      "d": "2026-10-30",
@@ -1868,7 +1852,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/1002/4b0579f4-21d5-4155-add2-4901ee8382cd"
+     "u": "https://www.nfkino.no/screening/1002/4b0579f4-21d5-4155-add2-4901ee8382cd"
     },
     {
      "d": "2026-10-30",
@@ -1876,7 +1860,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2581/6f4b735d-a995-4a3b-92f8-4b5fdde396d7"
+     "u": "https://www.nfkino.no/screening/2581/6f4b735d-a995-4a3b-92f8-4b5fdde396d7"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001856-1000031158.mp4",
@@ -1886,12 +1870,13 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-10-22T12:54:06.466Z",
+   "imdbId": "tt0011440",
+   "ratingsAt": "2026-10-22T14:46:18.176Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
+   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -1912,7 +1897,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/0e3c99ca-66f9-461c-a093-6783dc04af16"
+     "u": "https://www.nfkino.no/screening/1001/0e3c99ca-66f9-461c-a093-6783dc04af16"
     },
     {
      "d": "2026-10-22",
@@ -1920,7 +1905,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/c237044a-a722-43db-8f9d-ef0829138edc"
+     "u": "https://www.nfkino.no/screening/2590/c237044a-a722-43db-8f9d-ef0829138edc"
     },
     {
      "d": "2026-10-22",
@@ -1928,7 +1913,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/1f023565-26db-44c2-8888-ab7028fdfa8a"
+     "u": "https://www.nfkino.no/screening/1002/1f023565-26db-44c2-8888-ab7028fdfa8a"
     },
     {
      "d": "2026-10-22",
@@ -1936,7 +1921,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/67766913-8c46-47a6-98d0-aefac948ee8c"
+     "u": "https://www.nfkino.no/screening/2439/67766913-8c46-47a6-98d0-aefac948ee8c"
     },
     {
      "d": "2026-10-23",
@@ -1944,7 +1929,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/4b122208-d8c6-466b-9690-9ef60af269c0"
+     "u": "https://www.nfkino.no/screening/1002/4b122208-d8c6-466b-9690-9ef60af269c0"
     },
     {
      "d": "2026-10-23",
@@ -1952,7 +1937,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/2e9e5dcb-2caa-4817-9f94-28ce92c4a45b"
+     "u": "https://www.nfkino.no/screening/1001/2e9e5dcb-2caa-4817-9f94-28ce92c4a45b"
     },
     {
      "d": "2026-10-24",
@@ -1960,7 +1945,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/6f5eeaaf-da54-4722-b022-eb1808a0f8f3"
+     "u": "https://www.nfkino.no/screening/2439/6f5eeaaf-da54-4722-b022-eb1808a0f8f3"
     },
     {
      "d": "2026-10-24",
@@ -1968,7 +1953,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/0f97071e-ffa1-4794-83ba-15958aa5fe4f"
+     "u": "https://www.nfkino.no/screening/1002/0f97071e-ffa1-4794-83ba-15958aa5fe4f"
     },
     {
      "d": "2026-10-24",
@@ -1976,7 +1961,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/12764e6d-b75d-47d4-8caf-f2bf1138975e"
+     "u": "https://www.nfkino.no/screening/1001/12764e6d-b75d-47d4-8caf-f2bf1138975e"
     },
     {
      "d": "2026-10-25",
@@ -1984,7 +1969,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7f3b9fb7-2ded-4bf9-a6bb-53748ca19dcf"
+     "u": "https://www.nfkino.no/screening/2439/7f3b9fb7-2ded-4bf9-a6bb-53748ca19dcf"
     },
     {
      "d": "2026-10-25",
@@ -1992,7 +1977,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/d51214a9-dc3c-480c-86d5-fdb4bd3a4589"
+     "u": "https://www.nfkino.no/screening/1002/d51214a9-dc3c-480c-86d5-fdb4bd3a4589"
     },
     {
      "d": "2026-10-25",
@@ -2000,7 +1985,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/33e19ddc-c8c8-4568-9ddd-2911b795f2b6"
+     "u": "https://www.nfkino.no/screening/1001/33e19ddc-c8c8-4568-9ddd-2911b795f2b6"
     },
     {
      "d": "2026-10-26",
@@ -2008,7 +1993,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/66c14706-8016-4e55-b851-286e20bb1091"
+     "u": "https://www.nfkino.no/screening/1002/66c14706-8016-4e55-b851-286e20bb1091"
     },
     {
      "d": "2026-10-26",
@@ -2016,7 +2001,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c723a20d-9bbf-43c3-94a2-e9ac90dbd37f"
+     "u": "https://www.nfkino.no/screening/1001/c723a20d-9bbf-43c3-94a2-e9ac90dbd37f"
     },
     {
      "d": "2026-10-27",
@@ -2024,7 +2009,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/f55f93ec-2b94-467b-8c12-6c65917fecf1"
+     "u": "https://www.nfkino.no/screening/1002/f55f93ec-2b94-467b-8c12-6c65917fecf1"
     },
     {
      "d": "2026-10-27",
@@ -2032,7 +2017,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/84ed9fcd-a9d8-42dd-a892-205cae51e49e"
+     "u": "https://www.nfkino.no/screening/2439/84ed9fcd-a9d8-42dd-a892-205cae51e49e"
     },
     {
      "d": "2026-10-27",
@@ -2040,7 +2025,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/a1fc166a-0b29-4f06-bdc8-3190deaebbe8"
+     "u": "https://www.nfkino.no/screening/1001/a1fc166a-0b29-4f06-bdc8-3190deaebbe8"
     },
     {
      "d": "2026-10-28",
@@ -2048,7 +2033,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/00f6a7e4-8fc6-4056-a36b-c5fc63260e2f"
+     "u": "https://www.nfkino.no/screening/2590/00f6a7e4-8fc6-4056-a36b-c5fc63260e2f"
     },
     {
      "d": "2026-10-28",
@@ -2056,7 +2041,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ada9cab8-86ce-4ed9-838b-50b99dda9ba6"
+     "u": "https://www.nfkino.no/screening/1002/ada9cab8-86ce-4ed9-838b-50b99dda9ba6"
     },
     {
      "d": "2026-10-28",
@@ -2064,7 +2049,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5772daa2-d569-462c-90d1-13e2e4f4cd98"
+     "u": "https://www.nfkino.no/screening/1001/5772daa2-d569-462c-90d1-13e2e4f4cd98"
     },
     {
      "d": "2026-10-29",
@@ -2072,7 +2057,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a14c0512-53e9-4c22-ab86-5c13b8336661"
+     "u": "https://www.nfkino.no/screening/1002/a14c0512-53e9-4c22-ab86-5c13b8336661"
     },
     {
      "d": "2026-10-29",
@@ -2080,7 +2065,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/bea44722-dfd0-4f1f-9c10-14ec594f3ed0"
+     "u": "https://www.nfkino.no/screening/1001/bea44722-dfd0-4f1f-9c10-14ec594f3ed0"
     },
     {
      "d": "2026-10-30",
@@ -2088,7 +2073,7 @@
      "c": "Vika",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst, Halloween",
-     "u": "https://wwwapp.nfkino.no/screening/2612/1e4d7020-2c20-4992-9024-beb22e787cb8"
+     "u": "https://www.nfkino.no/screening/2612/1e4d7020-2c20-4992-9024-beb22e787cb8"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001429-1000032812.mp4",
@@ -2098,12 +2083,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:07.446Z",
+   "imdbId": "tt36586020",
+   "ratingsAt": "2026-10-22T14:46:18.273Z",
    "city": "Oslo"
   },
   {
    "title": "Wildwood",
-   "url": "https://www.nfkino.no/film/wildwood",
+   "url": "https://www.nfkino.no/film/wildwood?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002807-1000034192.jpg?itok=ChVdapzT",
    "genres": [
     "Familiefilm",
@@ -2123,7 +2109,7 @@
      "c": "Vika",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst, Førpremiere, Chikkflikk",
-     "u": "https://wwwapp.nfkino.no/screening/2612/254c0a55-c5de-49eb-9db5-f151fad20593"
+     "u": "https://www.nfkino.no/screening/2612/254c0a55-c5de-49eb-9db5-f151fad20593"
     },
     {
      "d": "2026-10-30",
@@ -2131,7 +2117,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/634a3460-3817-4996-9fdf-a7552c251527"
+     "u": "https://www.nfkino.no/screening/1001/634a3460-3817-4996-9fdf-a7552c251527"
     },
     {
      "d": "2026-10-30",
@@ -2139,7 +2125,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4e7a812f-eee9-4846-835a-dd9adee05226"
+     "u": "https://www.nfkino.no/screening/2439/4e7a812f-eee9-4846-835a-dd9adee05226"
     },
     {
      "d": "2026-10-30",
@@ -2147,7 +2133,7 @@
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c325d29b-ca8f-42f2-95ba-afa6fdf1a4bc"
+     "u": "https://www.nfkino.no/screening/1001/c325d29b-ca8f-42f2-95ba-afa6fdf1a4bc"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002807-1000033730.mp4",
@@ -2157,12 +2143,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:08.206Z",
+   "imdbId": "tt37968648",
+   "ratingsAt": "2026-10-22T14:46:18.367Z",
    "city": "Oslo"
   },
   {
    "title": "Clayface",
-   "url": "https://www.nfkino.no/film/clayface",
+   "url": "https://www.nfkino.no/film/clayface?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
    "genres": [
     "Drama",
@@ -2185,7 +2172,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b54d92ce-61c3-4af4-bbfb-35e5c9970e80"
+     "u": "https://www.nfkino.no/screening/2439/b54d92ce-61c3-4af4-bbfb-35e5c9970e80"
     },
     {
      "d": "2026-10-23",
@@ -2193,7 +2180,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/bad730c6-1590-4f89-a6ce-8ea953c9433d"
+     "u": "https://www.nfkino.no/screening/1002/bad730c6-1590-4f89-a6ce-8ea953c9433d"
     },
     {
      "d": "2026-10-23",
@@ -2201,7 +2188,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/9672045d-7bc7-405b-9a19-18b3be7a64a4"
+     "u": "https://www.nfkino.no/screening/2439/9672045d-7bc7-405b-9a19-18b3be7a64a4"
     },
     {
      "d": "2026-10-23",
@@ -2209,7 +2196,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
+     "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
     },
     {
      "d": "2026-10-23",
@@ -2217,7 +2204,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/41df8a82-0856-4a35-a3e4-01be25d014c1"
+     "u": "https://www.nfkino.no/screening/2439/41df8a82-0856-4a35-a3e4-01be25d014c1"
     },
     {
      "d": "2026-10-23",
@@ -2225,7 +2212,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/2f64157b-e022-4ea7-92ed-96e46820d799"
+     "u": "https://www.nfkino.no/screening/2590/2f64157b-e022-4ea7-92ed-96e46820d799"
     },
     {
      "d": "2026-10-23",
@@ -2233,7 +2220,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/5188f8a1-441d-4bf7-93fe-8000f0f4020a"
+     "u": "https://www.nfkino.no/screening/1002/5188f8a1-441d-4bf7-93fe-8000f0f4020a"
     },
     {
      "d": "2026-10-23",
@@ -2241,7 +2228,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ebda2bfc-5466-4878-bd45-28bc8e7ecbdc"
+     "u": "https://www.nfkino.no/screening/1001/ebda2bfc-5466-4878-bd45-28bc8e7ecbdc"
     },
     {
      "d": "2026-10-24",
@@ -2249,7 +2236,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4c183bb5-fac0-4f14-a3d1-af257b474eb4"
+     "u": "https://www.nfkino.no/screening/2439/4c183bb5-fac0-4f14-a3d1-af257b474eb4"
     },
     {
      "d": "2026-10-24",
@@ -2257,7 +2244,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/d0328124-e9a9-49f2-808e-abc16ca519a3"
+     "u": "https://www.nfkino.no/screening/1002/d0328124-e9a9-49f2-808e-abc16ca519a3"
     },
     {
      "d": "2026-10-24",
@@ -2265,7 +2252,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2d71e640-b860-40c5-94bb-d3d694c9540b"
+     "u": "https://www.nfkino.no/screening/1002/2d71e640-b860-40c5-94bb-d3d694c9540b"
     },
     {
      "d": "2026-10-24",
@@ -2273,7 +2260,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/03e6e426-1466-40f0-a566-93af9a7985f9"
+     "u": "https://www.nfkino.no/screening/2590/03e6e426-1466-40f0-a566-93af9a7985f9"
     },
     {
      "d": "2026-10-24",
@@ -2281,7 +2268,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/971cf769-2020-441b-9e6f-486ad00df735"
+     "u": "https://www.nfkino.no/screening/2439/971cf769-2020-441b-9e6f-486ad00df735"
     },
     {
      "d": "2026-10-24",
@@ -2289,7 +2276,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/099b3900-9acb-40c4-8f53-1d3b67553089"
+     "u": "https://www.nfkino.no/screening/1001/099b3900-9acb-40c4-8f53-1d3b67553089"
     },
     {
      "d": "2026-10-25",
@@ -2297,7 +2284,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b20e60b5-af04-4eab-80c3-00279547bf9b"
+     "u": "https://www.nfkino.no/screening/2439/b20e60b5-af04-4eab-80c3-00279547bf9b"
     },
     {
      "d": "2026-10-25",
@@ -2305,7 +2292,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/9934f591-a1b2-4618-ad9f-24c713137524"
+     "u": "https://www.nfkino.no/screening/1002/9934f591-a1b2-4618-ad9f-24c713137524"
     },
     {
      "d": "2026-10-25",
@@ -2313,7 +2300,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/93e55404-8db5-48cb-97be-3eab3cfb1836"
+     "u": "https://www.nfkino.no/screening/1002/93e55404-8db5-48cb-97be-3eab3cfb1836"
     },
     {
      "d": "2026-10-25",
@@ -2321,7 +2308,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/333b130b-6a4d-410e-9986-a0feb3559595"
+     "u": "https://www.nfkino.no/screening/2439/333b130b-6a4d-410e-9986-a0feb3559595"
     },
     {
      "d": "2026-10-25",
@@ -2329,7 +2316,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/22ac8cb7-6d17-403b-b87b-8dd4b5422491"
+     "u": "https://www.nfkino.no/screening/1001/22ac8cb7-6d17-403b-b87b-8dd4b5422491"
     },
     {
      "d": "2026-10-26",
@@ -2337,7 +2324,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/12a19638-ec9b-4202-98da-4ff2e51771d0"
+     "u": "https://www.nfkino.no/screening/1002/12a19638-ec9b-4202-98da-4ff2e51771d0"
     },
     {
      "d": "2026-10-26",
@@ -2345,7 +2332,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/89d73b41-850d-4489-8899-7d41685de7b5"
+     "u": "https://www.nfkino.no/screening/2439/89d73b41-850d-4489-8899-7d41685de7b5"
     },
     {
      "d": "2026-10-26",
@@ -2353,7 +2340,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/c8186300-1e20-4b7d-bc3c-6500dfc9d7f2"
+     "u": "https://www.nfkino.no/screening/1002/c8186300-1e20-4b7d-bc3c-6500dfc9d7f2"
     },
     {
      "d": "2026-10-26",
@@ -2361,7 +2348,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/f1f3fe8d-cb8a-4963-9a42-d33764e599ea"
+     "u": "https://www.nfkino.no/screening/2590/f1f3fe8d-cb8a-4963-9a42-d33764e599ea"
     },
     {
      "d": "2026-10-26",
@@ -2369,7 +2356,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/717df868-4e0c-482d-ac21-47beaeef71d2"
+     "u": "https://www.nfkino.no/screening/1002/717df868-4e0c-482d-ac21-47beaeef71d2"
     },
     {
      "d": "2026-10-26",
@@ -2377,7 +2364,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/3d4915eb-5afe-49f8-86ef-a4c1bb5dda5c"
+     "u": "https://www.nfkino.no/screening/2439/3d4915eb-5afe-49f8-86ef-a4c1bb5dda5c"
     },
     {
      "d": "2026-10-26",
@@ -2385,7 +2372,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/70ae4801-49d6-45df-b7bb-3d62379b8824"
+     "u": "https://www.nfkino.no/screening/1001/70ae4801-49d6-45df-b7bb-3d62379b8824"
     },
     {
      "d": "2026-10-27",
@@ -2393,7 +2380,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/71c5e65d-541e-49dd-9adc-6977aa0632cd"
+     "u": "https://www.nfkino.no/screening/2439/71c5e65d-541e-49dd-9adc-6977aa0632cd"
     },
     {
      "d": "2026-10-27",
@@ -2401,7 +2388,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7d3588ba-e3b1-4a27-9803-a71a8ae53350"
+     "u": "https://www.nfkino.no/screening/2439/7d3588ba-e3b1-4a27-9803-a71a8ae53350"
     },
     {
      "d": "2026-10-27",
@@ -2409,7 +2396,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/06449a9d-5a14-49f3-9585-858f75324246"
+     "u": "https://www.nfkino.no/screening/1002/06449a9d-5a14-49f3-9585-858f75324246"
     },
     {
      "d": "2026-10-27",
@@ -2417,7 +2404,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/eeae5bae-726f-48ba-9a33-d7301f1aebce"
+     "u": "https://www.nfkino.no/screening/1002/eeae5bae-726f-48ba-9a33-d7301f1aebce"
     },
     {
      "d": "2026-10-27",
@@ -2425,7 +2412,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/8c95c922-d3e4-4284-90a3-89d04e3c25b3"
+     "u": "https://www.nfkino.no/screening/2439/8c95c922-d3e4-4284-90a3-89d04e3c25b3"
     },
     {
      "d": "2026-10-27",
@@ -2433,7 +2420,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/3cb65aef-57c6-48b5-92e6-64f6b26e837e"
+     "u": "https://www.nfkino.no/screening/1001/3cb65aef-57c6-48b5-92e6-64f6b26e837e"
     },
     {
      "d": "2026-10-28",
@@ -2441,7 +2428,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b2cc3317-aace-4815-ad21-0a42a0dfd286"
+     "u": "https://www.nfkino.no/screening/2439/b2cc3317-aace-4815-ad21-0a42a0dfd286"
     },
     {
      "d": "2026-10-28",
@@ -2449,7 +2436,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/956a1dc0-34a3-41a2-a472-c555f814c425"
+     "u": "https://www.nfkino.no/screening/1002/956a1dc0-34a3-41a2-a472-c555f814c425"
     },
     {
      "d": "2026-10-28",
@@ -2457,7 +2444,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/681d89df-a3a8-4c62-9527-87f2effe408a"
+     "u": "https://www.nfkino.no/screening/2439/681d89df-a3a8-4c62-9527-87f2effe408a"
     },
     {
      "d": "2026-10-28",
@@ -2465,7 +2452,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f603d0db-b7ef-4085-99c4-92603bee1914"
+     "u": "https://www.nfkino.no/screening/1001/f603d0db-b7ef-4085-99c4-92603bee1914"
     },
     {
      "d": "2026-10-28",
@@ -2473,7 +2460,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b4198f5c-4ef7-44c8-b8f3-95951f086530"
+     "u": "https://www.nfkino.no/screening/1002/b4198f5c-4ef7-44c8-b8f3-95951f086530"
     },
     {
      "d": "2026-10-29",
@@ -2481,7 +2468,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/d99f9e01-7e86-4d47-810b-2bc2dcdad566"
+     "u": "https://www.nfkino.no/screening/2439/d99f9e01-7e86-4d47-810b-2bc2dcdad566"
     },
     {
      "d": "2026-10-29",
@@ -2489,7 +2476,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ed4f7458-9c15-4696-9dd4-55c9be32e737"
+     "u": "https://www.nfkino.no/screening/1002/ed4f7458-9c15-4696-9dd4-55c9be32e737"
     },
     {
      "d": "2026-10-29",
@@ -2497,7 +2484,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/b5394a7d-fc74-45be-8ba3-6a0f12a716c9"
+     "u": "https://www.nfkino.no/screening/2590/b5394a7d-fc74-45be-8ba3-6a0f12a716c9"
     },
     {
      "d": "2026-10-29",
@@ -2505,7 +2492,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/e00fb932-40c5-4053-9253-724ab7a67cdf"
+     "u": "https://www.nfkino.no/screening/1002/e00fb932-40c5-4053-9253-724ab7a67cdf"
     },
     {
      "d": "2026-10-29",
@@ -2513,7 +2500,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/311598f6-e970-443f-ae47-1136c79165ac"
+     "u": "https://www.nfkino.no/screening/1001/311598f6-e970-443f-ae47-1136c79165ac"
     },
     {
      "d": "2026-10-30",
@@ -2521,7 +2508,7 @@
      "c": "Vika",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst, Halloween",
-     "u": "https://wwwapp.nfkino.no/screening/2612/168429a7-bac1-4d10-9076-8fa165b1ee15"
+     "u": "https://www.nfkino.no/screening/2612/168429a7-bac1-4d10-9076-8fa165b1ee15"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142799-1000033534.mp4",
@@ -2531,12 +2518,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:08.445Z",
+   "imdbId": "tt6492922",
+   "ratingsAt": "2026-10-22T14:46:18.456Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -2552,20 +2540,12 @@
    ],
    "shows": [
     {
-     "d": "2026-10-22",
-     "t": "16:15",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7d1bed12-da5e-4855-9186-4ced15560af6"
-    },
-    {
      "d": "2026-10-23",
      "t": "10:20",
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/62092b2a-6899-4e49-aa07-3b3e3f5ea897"
+     "u": "https://www.nfkino.no/screening/1001/62092b2a-6899-4e49-aa07-3b3e3f5ea897"
     },
     {
      "d": "2026-10-23",
@@ -2573,7 +2553,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/cfc483f7-264e-4c59-a4b8-d72cee729321"
+     "u": "https://www.nfkino.no/screening/1002/cfc483f7-264e-4c59-a4b8-d72cee729321"
     },
     {
      "d": "2026-10-23",
@@ -2581,7 +2561,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/135fe5a5-8522-4b33-8ff9-8500bc127733"
+     "u": "https://www.nfkino.no/screening/2439/135fe5a5-8522-4b33-8ff9-8500bc127733"
     },
     {
      "d": "2026-10-23",
@@ -2589,7 +2569,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b2f11295-0c6d-4bcb-b75d-155c0a2efe56"
+     "u": "https://www.nfkino.no/screening/1002/b2f11295-0c6d-4bcb-b75d-155c0a2efe56"
     },
     {
      "d": "2026-10-23",
@@ -2597,7 +2577,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/2224c0a4-62e3-40f7-9d3a-9e482e125949"
+     "u": "https://www.nfkino.no/screening/1001/2224c0a4-62e3-40f7-9d3a-9e482e125949"
     },
     {
      "d": "2026-10-23",
@@ -2605,7 +2585,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2590/1e81cfba-700d-428c-bf29-92b57e135c59"
+     "u": "https://www.nfkino.no/screening/2590/1e81cfba-700d-428c-bf29-92b57e135c59"
     },
     {
      "d": "2026-10-24",
@@ -2613,7 +2593,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/2dc2e234-9b6d-40e3-b861-5c3b5fa2a7ad"
+     "u": "https://www.nfkino.no/screening/1001/2dc2e234-9b6d-40e3-b861-5c3b5fa2a7ad"
     },
     {
      "d": "2026-10-24",
@@ -2621,7 +2601,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/fdaa7549-91b8-458b-8aa1-8e97536076ab"
+     "u": "https://www.nfkino.no/screening/2439/fdaa7549-91b8-458b-8aa1-8e97536076ab"
     },
     {
      "d": "2026-10-24",
@@ -2629,7 +2609,7 @@
      "c": "Vika",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2612/8b1a1ed5-b342-4e96-acc0-8efea5bde65e"
+     "u": "https://www.nfkino.no/screening/2612/8b1a1ed5-b342-4e96-acc0-8efea5bde65e"
     },
     {
      "d": "2026-10-24",
@@ -2637,7 +2617,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/549feb5c-1446-4e5a-9736-e8565c15800b"
+     "u": "https://www.nfkino.no/screening/1002/549feb5c-1446-4e5a-9736-e8565c15800b"
     },
     {
      "d": "2026-10-24",
@@ -2645,7 +2625,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ee7967b1-0ac3-40e5-83a2-1e7776b20166"
+     "u": "https://www.nfkino.no/screening/1001/ee7967b1-0ac3-40e5-83a2-1e7776b20166"
     },
     {
      "d": "2026-10-24",
@@ -2653,7 +2633,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2590/1b8225b3-eb94-4d90-8075-523218429a0f"
+     "u": "https://www.nfkino.no/screening/2590/1b8225b3-eb94-4d90-8075-523218429a0f"
     },
     {
      "d": "2026-10-24",
@@ -2661,7 +2641,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/1987f10c-172d-4140-9bec-219e8825359d"
+     "u": "https://www.nfkino.no/screening/2439/1987f10c-172d-4140-9bec-219e8825359d"
     },
     {
      "d": "2026-10-24",
@@ -2669,7 +2649,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/df80d469-a2ce-4495-bfec-92b29f514afe"
+     "u": "https://www.nfkino.no/screening/1001/df80d469-a2ce-4495-bfec-92b29f514afe"
     },
     {
      "d": "2026-10-24",
@@ -2677,7 +2657,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ba21e35e-73f5-4a3c-b805-78931c1b184c"
+     "u": "https://www.nfkino.no/screening/1002/ba21e35e-73f5-4a3c-b805-78931c1b184c"
     },
     {
      "d": "2026-10-25",
@@ -2685,7 +2665,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/43326300-8797-4d05-a224-8e5e92cc3ebe"
+     "u": "https://www.nfkino.no/screening/1001/43326300-8797-4d05-a224-8e5e92cc3ebe"
     },
     {
      "d": "2026-10-25",
@@ -2693,7 +2673,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a6e41756-3c0e-4587-a1e1-7b75d3a0e304"
+     "u": "https://www.nfkino.no/screening/2439/a6e41756-3c0e-4587-a1e1-7b75d3a0e304"
     },
     {
      "d": "2026-10-25",
@@ -2701,7 +2681,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ddd72a8b-b005-447e-80a7-409d6f09f0b1"
+     "u": "https://www.nfkino.no/screening/1002/ddd72a8b-b005-447e-80a7-409d6f09f0b1"
     },
     {
      "d": "2026-10-25",
@@ -2709,7 +2689,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2590/d7831d6d-376d-47d9-9d59-63ff19b32cf6"
+     "u": "https://www.nfkino.no/screening/2590/d7831d6d-376d-47d9-9d59-63ff19b32cf6"
     },
     {
      "d": "2026-10-25",
@@ -2717,7 +2697,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/951462a7-b208-490c-b1ba-03ad20a9daa7"
+     "u": "https://www.nfkino.no/screening/1001/951462a7-b208-490c-b1ba-03ad20a9daa7"
     },
     {
      "d": "2026-10-25",
@@ -2725,7 +2705,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a27470c1-1489-41d0-b40d-f23908fa512c"
+     "u": "https://www.nfkino.no/screening/2439/a27470c1-1489-41d0-b40d-f23908fa512c"
     },
     {
      "d": "2026-10-25",
@@ -2733,7 +2713,7 @@
      "c": "Vika",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2612/046932c7-f9d6-4cf0-b0df-fefd97baf364"
+     "u": "https://www.nfkino.no/screening/2612/046932c7-f9d6-4cf0-b0df-fefd97baf364"
     },
     {
      "d": "2026-10-25",
@@ -2741,7 +2721,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/19db4769-d0d6-4296-92f2-8bbfa4484158"
+     "u": "https://www.nfkino.no/screening/1001/19db4769-d0d6-4296-92f2-8bbfa4484158"
     },
     {
      "d": "2026-10-25",
@@ -2749,7 +2729,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2da2ea0f-141f-4368-adbc-a436775c5fe2"
+     "u": "https://www.nfkino.no/screening/1002/2da2ea0f-141f-4368-adbc-a436775c5fe2"
     },
     {
      "d": "2026-10-26",
@@ -2757,7 +2737,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/8b7de3a4-1bed-4095-b55e-4bc616932c2c"
+     "u": "https://www.nfkino.no/screening/1001/8b7de3a4-1bed-4095-b55e-4bc616932c2c"
     },
     {
      "d": "2026-10-26",
@@ -2765,7 +2745,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/e93473a9-886e-40aa-baef-d634298e3917"
+     "u": "https://www.nfkino.no/screening/1002/e93473a9-886e-40aa-baef-d634298e3917"
     },
     {
      "d": "2026-10-26",
@@ -2773,7 +2753,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0959ebde-a977-4b32-bc77-f10e30dc8152"
+     "u": "https://www.nfkino.no/screening/2439/0959ebde-a977-4b32-bc77-f10e30dc8152"
     },
     {
      "d": "2026-10-26",
@@ -2781,7 +2761,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/60deddf7-87dc-4faf-a8df-4395be5250ca"
+     "u": "https://www.nfkino.no/screening/1001/60deddf7-87dc-4faf-a8df-4395be5250ca"
     },
     {
      "d": "2026-10-26",
@@ -2789,7 +2769,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/69964718-e05e-49f0-96a8-1d5eb24f21e7"
+     "u": "https://www.nfkino.no/screening/1002/69964718-e05e-49f0-96a8-1d5eb24f21e7"
     },
     {
      "d": "2026-10-26",
@@ -2797,7 +2777,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/c3856fcc-d333-4458-a2be-4df1b1e09139"
+     "u": "https://www.nfkino.no/screening/1001/c3856fcc-d333-4458-a2be-4df1b1e09139"
     },
     {
      "d": "2026-10-27",
@@ -2805,7 +2785,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/cf61fe20-84cb-4612-9f73-0bda660a36fb"
+     "u": "https://www.nfkino.no/screening/1002/cf61fe20-84cb-4612-9f73-0bda660a36fb"
     },
     {
      "d": "2026-10-27",
@@ -2813,7 +2793,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/824c640d-56d4-4f11-bc3d-112d1e09e524"
+     "u": "https://www.nfkino.no/screening/2439/824c640d-56d4-4f11-bc3d-112d1e09e524"
     },
     {
      "d": "2026-10-27",
@@ -2821,7 +2801,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/41ee271a-bb38-4a31-be45-53043f2e5c7a"
+     "u": "https://www.nfkino.no/screening/1001/41ee271a-bb38-4a31-be45-53043f2e5c7a"
     },
     {
      "d": "2026-10-27",
@@ -2829,7 +2809,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/4ff8a9e7-a24a-4f4a-9828-994d0f2d24b4"
+     "u": "https://www.nfkino.no/screening/1002/4ff8a9e7-a24a-4f4a-9828-994d0f2d24b4"
     },
     {
      "d": "2026-10-27",
@@ -2837,7 +2817,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/12b52a35-08d1-4401-9f17-835f75fa7c00"
+     "u": "https://www.nfkino.no/screening/1001/12b52a35-08d1-4401-9f17-835f75fa7c00"
     },
     {
      "d": "2026-10-27",
@@ -2845,7 +2825,7 @@
      "c": "Ringen",
      "r": "5",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/5618c25e-542b-4025-af5b-30629ce08983"
+     "u": "https://www.nfkino.no/screening/2439/5618c25e-542b-4025-af5b-30629ce08983"
     },
     {
      "d": "2026-10-27",
@@ -2853,7 +2833,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2590/798b1f88-6c82-4b1d-86e4-bdbb45082441"
+     "u": "https://www.nfkino.no/screening/2590/798b1f88-6c82-4b1d-86e4-bdbb45082441"
     },
     {
      "d": "2026-10-28",
@@ -2861,7 +2841,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/17fd1140-7bde-4eba-9df3-b04bf1a1250a"
+     "u": "https://www.nfkino.no/screening/1001/17fd1140-7bde-4eba-9df3-b04bf1a1250a"
     },
     {
      "d": "2026-10-28",
@@ -2869,7 +2849,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/91c702b2-556b-4e3f-85a4-10be5f9b6429"
+     "u": "https://www.nfkino.no/screening/1002/91c702b2-556b-4e3f-85a4-10be5f9b6429"
     },
     {
      "d": "2026-10-28",
@@ -2877,7 +2857,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a0bfa240-7bae-4962-8c40-aa8c59d6ec50"
+     "u": "https://www.nfkino.no/screening/2439/a0bfa240-7bae-4962-8c40-aa8c59d6ec50"
     },
     {
      "d": "2026-10-28",
@@ -2885,7 +2865,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f978b488-2799-494f-93f2-6c028e05d73d"
+     "u": "https://www.nfkino.no/screening/1001/f978b488-2799-494f-93f2-6c028e05d73d"
     },
     {
      "d": "2026-10-28",
@@ -2893,7 +2873,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/7d23cfcf-28d6-48b1-9407-fb178dd5d682"
+     "u": "https://www.nfkino.no/screening/1002/7d23cfcf-28d6-48b1-9407-fb178dd5d682"
     },
     {
      "d": "2026-10-28",
@@ -2901,7 +2881,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/0111e9a2-e417-436c-83b1-b3c32a3489f8"
+     "u": "https://www.nfkino.no/screening/1001/0111e9a2-e417-436c-83b1-b3c32a3489f8"
     },
     {
      "d": "2026-10-29",
@@ -2909,7 +2889,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/b428d806-4339-420d-834b-1aece43584a2"
+     "u": "https://www.nfkino.no/screening/1001/b428d806-4339-420d-834b-1aece43584a2"
     },
     {
      "d": "2026-10-29",
@@ -2917,7 +2897,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/45916152-d0b3-4b68-9c7f-87acb768c120"
+     "u": "https://www.nfkino.no/screening/1002/45916152-d0b3-4b68-9c7f-87acb768c120"
     },
     {
      "d": "2026-10-29",
@@ -2925,7 +2905,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/2439/3c47bc84-d3b4-4b1e-a01c-2b5edc8c0ecd"
+     "u": "https://www.nfkino.no/screening/2439/3c47bc84-d3b4-4b1e-a01c-2b5edc8c0ecd"
     },
     {
      "d": "2026-10-29",
@@ -2933,7 +2913,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f91c3f89-79d3-4ee1-877c-cc0e5cfd0803"
+     "u": "https://www.nfkino.no/screening/1001/f91c3f89-79d3-4ee1-877c-cc0e5cfd0803"
     },
     {
      "d": "2026-10-29",
@@ -2941,7 +2921,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1002/9612a56b-9ce6-490d-9484-3d9a034c3def"
+     "u": "https://www.nfkino.no/screening/1002/9612a56b-9ce6-490d-9484-3d9a034c3def"
     },
     {
      "d": "2026-10-29",
@@ -2949,7 +2929,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale",
-     "u": "https://wwwapp.nfkino.no/screening/1001/9d636ef4-ec19-48ec-9ddc-59db9053c0ce"
+     "u": "https://www.nfkino.no/screening/1001/9d636ef4-ec19-48ec-9ddc-59db9053c0ce"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001358-1000032345.mp4",
@@ -2959,12 +2939,13 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:08.499Z",
+   "imdbId": "tt36841161",
+   "ratingsAt": "2026-10-22T14:46:18.567Z",
    "city": "Oslo"
   },
   {
    "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
    "genres": [],
    "len": "1 time 20 min",
@@ -2981,7 +2962,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/3c3c077e-177f-47f3-8e71-8e609b4b1f74"
+     "u": "https://www.nfkino.no/screening/1001/3c3c077e-177f-47f3-8e71-8e609b4b1f74"
     },
     {
      "d": "2026-10-24",
@@ -2989,7 +2970,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/fc505738-ec0c-4d29-82be-b52d5ff5d66e"
+     "u": "https://www.nfkino.no/screening/1001/fc505738-ec0c-4d29-82be-b52d5ff5d66e"
     },
     {
      "d": "2026-10-24",
@@ -2997,7 +2978,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/8355886b-9804-4a31-bba2-48bea34a8292"
+     "u": "https://www.nfkino.no/screening/1001/8355886b-9804-4a31-bba2-48bea34a8292"
     },
     {
      "d": "2026-10-25",
@@ -3005,7 +2986,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/12d89473-01f5-4ef7-93f1-a038f93fd343"
+     "u": "https://www.nfkino.no/screening/1001/12d89473-01f5-4ef7-93f1-a038f93fd343"
     },
     {
      "d": "2026-10-25",
@@ -3013,7 +2994,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/0a137467-96a1-41c9-8b88-7b55d4949df9"
+     "u": "https://www.nfkino.no/screening/2590/0a137467-96a1-41c9-8b88-7b55d4949df9"
     },
     {
      "d": "2026-10-25",
@@ -3021,7 +3002,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ca876d08-292d-4bd0-b8b9-226d707b80ff"
+     "u": "https://www.nfkino.no/screening/1001/ca876d08-292d-4bd0-b8b9-226d707b80ff"
     },
     {
      "d": "2026-10-26",
@@ -3029,7 +3010,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/6a6778c7-8ff0-4fcc-ad5b-b08c43b6275f"
+     "u": "https://www.nfkino.no/screening/1001/6a6778c7-8ff0-4fcc-ad5b-b08c43b6275f"
     },
     {
      "d": "2026-10-26",
@@ -3037,7 +3018,7 @@
      "c": "Ringen",
      "r": "5",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/c3836f2e-5eb1-426c-98d6-bf840cb1e93a"
+     "u": "https://www.nfkino.no/screening/2439/c3836f2e-5eb1-426c-98d6-bf840cb1e93a"
     },
     {
      "d": "2026-10-27",
@@ -3045,7 +3026,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
+     "u": "https://www.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
     },
     {
      "d": "2026-10-28",
@@ -3053,7 +3034,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
+     "u": "https://www.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
     },
     {
      "d": "2026-10-29",
@@ -3061,7 +3042,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
+     "u": "https://www.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
@@ -3069,12 +3050,12 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-10-22T12:54:07.150Z",
+   "ratingsAt": "2026-10-22T14:46:18.983Z",
    "city": "Oslo"
   },
   {
    "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
    "genres": [
     "Familiefilm"
@@ -3095,7 +3076,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/aa464fdb-6302-4eba-bfe6-5c949ceb2e33"
+     "u": "https://www.nfkino.no/screening/1001/aa464fdb-6302-4eba-bfe6-5c949ceb2e33"
     },
     {
      "d": "2026-10-24",
@@ -3103,7 +3084,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/fdfcbb7c-5a6a-41ee-90d1-d908f6b3b8c6"
+     "u": "https://www.nfkino.no/screening/1001/fdfcbb7c-5a6a-41ee-90d1-d908f6b3b8c6"
     },
     {
      "d": "2026-10-24",
@@ -3111,7 +3092,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/09cad16d-fb7c-46ab-87de-d24af06fbb6b"
+     "u": "https://www.nfkino.no/screening/2439/09cad16d-fb7c-46ab-87de-d24af06fbb6b"
     },
     {
      "d": "2026-10-24",
@@ -3119,7 +3100,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/3bd5bc32-88f3-40dd-a7be-296402b00883"
+     "u": "https://www.nfkino.no/screening/2590/3bd5bc32-88f3-40dd-a7be-296402b00883"
     },
     {
      "d": "2026-10-24",
@@ -3127,7 +3108,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2612/5ccceb42-5093-4f92-8f53-a695c8bc11f8"
+     "u": "https://www.nfkino.no/screening/2612/5ccceb42-5093-4f92-8f53-a695c8bc11f8"
     },
     {
      "d": "2026-10-24",
@@ -3135,7 +3116,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ec95ee29-1604-4485-9ba3-76cbea152198"
+     "u": "https://www.nfkino.no/screening/1002/ec95ee29-1604-4485-9ba3-76cbea152198"
     },
     {
      "d": "2026-10-24",
@@ -3143,7 +3124,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/f0764352-cad5-43ea-8e03-ce07e1c28e9e"
+     "u": "https://www.nfkino.no/screening/2439/f0764352-cad5-43ea-8e03-ce07e1c28e9e"
     },
     {
      "d": "2026-10-25",
@@ -3151,7 +3132,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/19f35b5a-5a6c-4736-a8e2-95e702012d26"
+     "u": "https://www.nfkino.no/screening/1001/19f35b5a-5a6c-4736-a8e2-95e702012d26"
     },
     {
      "d": "2026-10-25",
@@ -3159,7 +3140,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/f86cd470-46e5-4714-99b2-84942603396c"
+     "u": "https://www.nfkino.no/screening/2590/f86cd470-46e5-4714-99b2-84942603396c"
     },
     {
      "d": "2026-10-25",
@@ -3167,7 +3148,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/44a3f406-edd1-4707-a2ae-38849c80c7ac"
+     "u": "https://www.nfkino.no/screening/2439/44a3f406-edd1-4707-a2ae-38849c80c7ac"
     },
     {
      "d": "2026-10-25",
@@ -3175,7 +3156,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1002/f28ba19e-eb87-49c2-9f6f-216a4281c009"
+     "u": "https://www.nfkino.no/screening/1002/f28ba19e-eb87-49c2-9f6f-216a4281c009"
     },
     {
      "d": "2026-10-25",
@@ -3183,7 +3164,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/9ff7ba29-cdba-47c7-8108-6f158e329051"
+     "u": "https://www.nfkino.no/screening/2439/9ff7ba29-cdba-47c7-8108-6f158e329051"
     },
     {
      "d": "2026-10-25",
@@ -3191,7 +3172,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1002/163ae2a4-f6b2-45fb-95af-b13996ae5871"
+     "u": "https://www.nfkino.no/screening/1002/163ae2a4-f6b2-45fb-95af-b13996ae5871"
     },
     {
      "d": "2026-10-26",
@@ -3199,7 +3180,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/00c95052-68bd-474d-806e-fcb82aa02f06"
+     "u": "https://www.nfkino.no/screening/1001/00c95052-68bd-474d-806e-fcb82aa02f06"
     },
     {
      "d": "2026-10-26",
@@ -3207,7 +3188,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/fe7b3470-5bde-4d8c-b8d6-f29f4d351d6a"
+     "u": "https://www.nfkino.no/screening/2590/fe7b3470-5bde-4d8c-b8d6-f29f4d351d6a"
     },
     {
      "d": "2026-10-27",
@@ -3215,7 +3196,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/e260b464-9f2d-4cff-94b3-145d742d6a9f"
+     "u": "https://www.nfkino.no/screening/1001/e260b464-9f2d-4cff-94b3-145d742d6a9f"
     },
     {
      "d": "2026-10-27",
@@ -3223,7 +3204,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2612/57b75044-96e2-48b8-b9cd-4d39c037226d"
+     "u": "https://www.nfkino.no/screening/2612/57b75044-96e2-48b8-b9cd-4d39c037226d"
     },
     {
      "d": "2026-10-28",
@@ -3231,7 +3212,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5cb38a7a-85c6-4acb-879f-7c3f30c60093"
+     "u": "https://www.nfkino.no/screening/1001/5cb38a7a-85c6-4acb-879f-7c3f30c60093"
     },
     {
      "d": "2026-10-28",
@@ -3239,7 +3220,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2612/4211f694-753f-4190-a5b7-f2d72cf30827"
+     "u": "https://www.nfkino.no/screening/2612/4211f694-753f-4190-a5b7-f2d72cf30827"
     },
     {
      "d": "2026-10-28",
@@ -3247,7 +3228,7 @@
      "c": "Ringen",
      "r": "5",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a57ad5c3-3dd4-4968-a872-cdee3fc650ce"
+     "u": "https://www.nfkino.no/screening/2439/a57ad5c3-3dd4-4968-a872-cdee3fc650ce"
     },
     {
      "d": "2026-10-29",
@@ -3255,7 +3236,7 @@
      "c": "Saga",
      "r": "6",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1001/27f35d5d-05fa-4072-9e6a-db0df14e7730"
+     "u": "https://www.nfkino.no/screening/1001/27f35d5d-05fa-4072-9e6a-db0df14e7730"
     },
     {
      "d": "2026-10-29",
@@ -3263,7 +3244,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4e60bb8e-2467-4227-8ebf-028af9760bd2"
+     "u": "https://www.nfkino.no/screening/2439/4e60bb8e-2467-4227-8ebf-028af9760bd2"
     },
     {
      "d": "2026-10-29",
@@ -3271,7 +3252,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2612/3c008f58-dd87-4405-88a6-f43b87fba737"
+     "u": "https://www.nfkino.no/screening/2612/3c008f58-dd87-4405-88a6-f43b87fba737"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
@@ -3279,12 +3260,12 @@
    "origChecked": true,
    "orig": "Lille spøkelset Laban skøyer igjen",
    "year": "",
-   "ratingsAt": "2026-10-22T12:54:09.796Z",
+   "ratingsAt": "2026-10-22T14:46:19.375Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -3304,7 +3285,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/345ee667-ddfe-4784-a561-5ea89e6a3a20"
+     "u": "https://www.nfkino.no/screening/2590/345ee667-ddfe-4784-a561-5ea89e6a3a20"
     },
     {
      "d": "2026-10-22",
@@ -3312,7 +3293,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/5a03fdcb-656d-40aa-97d1-430191d40c35"
+     "u": "https://www.nfkino.no/screening/2439/5a03fdcb-656d-40aa-97d1-430191d40c35"
     },
     {
      "d": "2026-10-22",
@@ -3320,7 +3301,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/86cdb46b-dc73-48d6-b866-88735e56f256"
+     "u": "https://www.nfkino.no/screening/1001/86cdb46b-dc73-48d6-b866-88735e56f256"
     },
     {
      "d": "2026-10-22",
@@ -3328,7 +3309,7 @@
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b7606f6e-973e-4039-9efd-676683964dde"
+     "u": "https://www.nfkino.no/screening/1002/b7606f6e-973e-4039-9efd-676683964dde"
     },
     {
      "d": "2026-10-22",
@@ -3336,7 +3317,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/aacbd8e3-fd51-4d4b-ba0b-25c85822becd"
+     "u": "https://www.nfkino.no/screening/2439/aacbd8e3-fd51-4d4b-ba0b-25c85822becd"
     },
     {
      "d": "2026-10-22",
@@ -3344,7 +3325,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a267684a-5f23-49cc-a711-986cb5123489"
+     "u": "https://www.nfkino.no/screening/1002/a267684a-5f23-49cc-a711-986cb5123489"
     },
     {
      "d": "2026-10-23",
@@ -3352,7 +3333,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/ab626c8c-3618-4853-a01a-3ce4ce71f715"
+     "u": "https://www.nfkino.no/screening/2590/ab626c8c-3618-4853-a01a-3ce4ce71f715"
     },
     {
      "d": "2026-10-23",
@@ -3360,7 +3341,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/7473818e-3ce6-4e57-929c-c88e85155cd3"
+     "u": "https://www.nfkino.no/screening/1002/7473818e-3ce6-4e57-929c-c88e85155cd3"
     },
     {
      "d": "2026-10-23",
@@ -3368,7 +3349,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/ad3af391-7d69-4f9f-8ee2-0bfde157b142"
+     "u": "https://www.nfkino.no/screening/2439/ad3af391-7d69-4f9f-8ee2-0bfde157b142"
     },
     {
      "d": "2026-10-23",
@@ -3376,7 +3357,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/6b40ce77-7135-4620-8a28-57ff1de85276"
+     "u": "https://www.nfkino.no/screening/1001/6b40ce77-7135-4620-8a28-57ff1de85276"
     },
     {
      "d": "2026-10-23",
@@ -3384,7 +3365,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/681d38fb-cb49-40b9-be46-6842e4757e5a"
+     "u": "https://www.nfkino.no/screening/1002/681d38fb-cb49-40b9-be46-6842e4757e5a"
     },
     {
      "d": "2026-10-24",
@@ -3392,7 +3373,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b23dbd8b-8721-4d8a-a771-ac38fb19ee4a"
+     "u": "https://www.nfkino.no/screening/2439/b23dbd8b-8721-4d8a-a771-ac38fb19ee4a"
     },
     {
      "d": "2026-10-24",
@@ -3400,7 +3381,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/9c3af770-a0cd-4690-965f-345150866fc5"
+     "u": "https://www.nfkino.no/screening/2590/9c3af770-a0cd-4690-965f-345150866fc5"
     },
     {
      "d": "2026-10-24",
@@ -3408,7 +3389,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/19f04ee5-7594-4b71-b061-7a247dcebd86"
+     "u": "https://www.nfkino.no/screening/1002/19f04ee5-7594-4b71-b061-7a247dcebd86"
     },
     {
      "d": "2026-10-24",
@@ -3416,7 +3397,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/0a3fbf70-5611-4339-b34c-1c17976960b3"
+     "u": "https://www.nfkino.no/screening/1001/0a3fbf70-5611-4339-b34c-1c17976960b3"
     },
     {
      "d": "2026-10-24",
@@ -3424,7 +3405,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a25ce58a-851f-4ec2-88f1-4e6c555ed775"
+     "u": "https://www.nfkino.no/screening/1002/a25ce58a-851f-4ec2-88f1-4e6c555ed775"
     },
     {
      "d": "2026-10-25",
@@ -3432,7 +3413,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/86518a2e-287a-4642-8062-1febf34ebee0"
+     "u": "https://www.nfkino.no/screening/1002/86518a2e-287a-4642-8062-1febf34ebee0"
     },
     {
      "d": "2026-10-25",
@@ -3440,7 +3421,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0fef0115-79e1-4e98-9ac8-1b3e04099536"
+     "u": "https://www.nfkino.no/screening/2439/0fef0115-79e1-4e98-9ac8-1b3e04099536"
     },
     {
      "d": "2026-10-25",
@@ -3448,7 +3429,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/005e3bac-73c3-4b42-9e7b-824baf59075b"
+     "u": "https://www.nfkino.no/screening/2590/005e3bac-73c3-4b42-9e7b-824baf59075b"
     },
     {
      "d": "2026-10-25",
@@ -3456,7 +3437,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/c55d315b-ba8d-4097-98ab-b4b9e9277ed8"
+     "u": "https://www.nfkino.no/screening/1002/c55d315b-ba8d-4097-98ab-b4b9e9277ed8"
     },
     {
      "d": "2026-10-25",
@@ -3464,7 +3445,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5309c4dc-4eef-4456-930b-c6a8b6d7d59d"
+     "u": "https://www.nfkino.no/screening/1001/5309c4dc-4eef-4456-930b-c6a8b6d7d59d"
     },
     {
      "d": "2026-10-25",
@@ -3472,7 +3453,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/5129b4a0-2909-4fc1-89d4-096d003a8962"
+     "u": "https://www.nfkino.no/screening/1002/5129b4a0-2909-4fc1-89d4-096d003a8962"
     },
     {
      "d": "2026-10-26",
@@ -3480,7 +3461,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/76a8dd5a-7f42-40ec-bbbf-f6c08f161b6a"
+     "u": "https://www.nfkino.no/screening/1002/76a8dd5a-7f42-40ec-bbbf-f6c08f161b6a"
     },
     {
      "d": "2026-10-26",
@@ -3488,7 +3469,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/90d89543-0ea3-420f-bca3-6eadb2a0ca58"
+     "u": "https://www.nfkino.no/screening/2439/90d89543-0ea3-420f-bca3-6eadb2a0ca58"
     },
     {
      "d": "2026-10-26",
@@ -3496,7 +3477,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/bd95c69a-b738-4ad6-a302-17b855cebaf7"
+     "u": "https://www.nfkino.no/screening/1001/bd95c69a-b738-4ad6-a302-17b855cebaf7"
     },
     {
      "d": "2026-10-26",
@@ -3504,7 +3485,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/6f73c8d9-bec2-485b-ba23-f7623347a8dc"
+     "u": "https://www.nfkino.no/screening/1002/6f73c8d9-bec2-485b-ba23-f7623347a8dc"
     },
     {
      "d": "2026-10-27",
@@ -3512,7 +3493,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/1a4d496a-fef5-489d-90a6-6a160f58e93a"
+     "u": "https://www.nfkino.no/screening/1002/1a4d496a-fef5-489d-90a6-6a160f58e93a"
     },
     {
      "d": "2026-10-27",
@@ -3520,7 +3501,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5e096b00-48c4-47df-bad9-05dc6b2d2835"
+     "u": "https://www.nfkino.no/screening/1001/5e096b00-48c4-47df-bad9-05dc6b2d2835"
     },
     {
      "d": "2026-10-27",
@@ -3528,7 +3509,7 @@
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/10020b7d-21a3-4fc5-a98e-856c4f34dbcb"
+     "u": "https://www.nfkino.no/screening/2590/10020b7d-21a3-4fc5-a98e-856c4f34dbcb"
     },
     {
      "d": "2026-10-27",
@@ -3536,7 +3517,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/e00951a3-e171-4355-b2a7-3f28c28935ab"
+     "u": "https://www.nfkino.no/screening/1002/e00951a3-e171-4355-b2a7-3f28c28935ab"
     },
     {
      "d": "2026-10-28",
@@ -3544,7 +3525,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/994e7573-4275-47eb-a139-e2a79c81cf2f"
+     "u": "https://www.nfkino.no/screening/1002/994e7573-4275-47eb-a139-e2a79c81cf2f"
     },
     {
      "d": "2026-10-28",
@@ -3552,7 +3533,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/001d6417-e531-470f-bb2a-d9237a6d8510"
+     "u": "https://www.nfkino.no/screening/2439/001d6417-e531-470f-bb2a-d9237a6d8510"
     },
     {
      "d": "2026-10-28",
@@ -3560,7 +3541,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/8afc4034-6d52-469e-b43d-299bf54b6201"
+     "u": "https://www.nfkino.no/screening/1002/8afc4034-6d52-469e-b43d-299bf54b6201"
     },
     {
      "d": "2026-10-28",
@@ -3568,7 +3549,7 @@
      "c": "Saga",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/d3d1e30b-9e36-4c8c-86ff-302e363be453"
+     "u": "https://www.nfkino.no/screening/1001/d3d1e30b-9e36-4c8c-86ff-302e363be453"
     },
     {
      "d": "2026-10-28",
@@ -3576,7 +3557,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/cf82698d-35d1-4fa0-b699-514b90126a4e"
+     "u": "https://www.nfkino.no/screening/1002/cf82698d-35d1-4fa0-b699-514b90126a4e"
     },
     {
      "d": "2026-10-29",
@@ -3584,7 +3565,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b747d300-3333-4d4d-a834-420726385f6e"
+     "u": "https://www.nfkino.no/screening/1002/b747d300-3333-4d4d-a834-420726385f6e"
     },
     {
      "d": "2026-10-29",
@@ -3592,7 +3573,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/650aba72-b5c1-4bd0-95da-b0504f1b2854"
+     "u": "https://www.nfkino.no/screening/2439/650aba72-b5c1-4bd0-95da-b0504f1b2854"
     },
     {
      "d": "2026-10-29",
@@ -3600,7 +3581,7 @@
      "c": "Saga",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7b1ff836-21e1-4cee-b65a-17049a4f2af9"
+     "u": "https://www.nfkino.no/screening/1001/7b1ff836-21e1-4cee-b65a-17049a4f2af9"
     },
     {
      "d": "2026-10-29",
@@ -3608,7 +3589,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/6e70ba23-39c8-4e91-aa87-0389e9ef3d5c"
+     "u": "https://www.nfkino.no/screening/1002/6e70ba23-39c8-4e91-aa87-0389e9ef3d5c"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1035849-1000028330.mp4",
@@ -3616,12 +3597,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-22T12:54:10.807Z",
+   "ratingsAt": "2026-10-22T14:46:19.718Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter",
+   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -3640,7 +3621,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/cb4c6bfd-8a2d-452c-baef-a887b123bfe1"
+     "u": "https://www.nfkino.no/screening/2439/cb4c6bfd-8a2d-452c-baef-a887b123bfe1"
     },
     {
      "d": "2026-10-22",
@@ -3648,7 +3629,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/bfde2149-ee79-47e8-a0fe-1ab9d105cb9c"
+     "u": "https://www.nfkino.no/screening/1002/bfde2149-ee79-47e8-a0fe-1ab9d105cb9c"
     },
     {
      "d": "2026-10-22",
@@ -3656,7 +3637,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a0c6c452-fef4-4151-ae88-b5fa793a9098"
+     "u": "https://www.nfkino.no/screening/2439/a0c6c452-fef4-4151-ae88-b5fa793a9098"
     },
     {
      "d": "2026-10-22",
@@ -3664,7 +3645,7 @@
      "c": "Saga",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/e4d30fc5-3ce0-4bb1-ae7e-a777d7eaaf00"
+     "u": "https://www.nfkino.no/screening/1001/e4d30fc5-3ce0-4bb1-ae7e-a777d7eaaf00"
     },
     {
      "d": "2026-10-23",
@@ -3672,7 +3653,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/5bf9363c-6f12-4de5-aa9a-3258b1074155"
+     "u": "https://www.nfkino.no/screening/1002/5bf9363c-6f12-4de5-aa9a-3258b1074155"
     },
     {
      "d": "2026-10-23",
@@ -3680,7 +3661,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0d248c8e-1568-4693-9d28-66e5dd2ccfdd"
+     "u": "https://www.nfkino.no/screening/2439/0d248c8e-1568-4693-9d28-66e5dd2ccfdd"
     },
     {
      "d": "2026-10-23",
@@ -3688,7 +3669,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/34ff1afa-02a8-4fcc-a581-f74cebc1a9ff"
+     "u": "https://www.nfkino.no/screening/2439/34ff1afa-02a8-4fcc-a581-f74cebc1a9ff"
     },
     {
      "d": "2026-10-24",
@@ -3696,7 +3677,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/78af860b-80cc-4f69-9a0f-44c01686e15c"
+     "u": "https://www.nfkino.no/screening/2439/78af860b-80cc-4f69-9a0f-44c01686e15c"
     },
     {
      "d": "2026-10-24",
@@ -3704,7 +3685,7 @@
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/fa2cc562-9e71-417a-96f5-3f547b5532cd"
+     "u": "https://www.nfkino.no/screening/1002/fa2cc562-9e71-417a-96f5-3f547b5532cd"
     },
     {
      "d": "2026-10-24",
@@ -3712,7 +3693,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/06742159-6f65-4ec3-88b9-a9fa22d1215e"
+     "u": "https://www.nfkino.no/screening/1002/06742159-6f65-4ec3-88b9-a9fa22d1215e"
     },
     {
      "d": "2026-10-24",
@@ -3720,7 +3701,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/aac67bdf-db83-454c-9ebb-a4ec7a99928d"
+     "u": "https://www.nfkino.no/screening/2439/aac67bdf-db83-454c-9ebb-a4ec7a99928d"
     },
     {
      "d": "2026-10-25",
@@ -3728,7 +3709,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/1b07cbf9-0191-4141-9950-13268c91609e"
+     "u": "https://www.nfkino.no/screening/2439/1b07cbf9-0191-4141-9950-13268c91609e"
     },
     {
      "d": "2026-10-25",
@@ -3736,7 +3717,7 @@
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/37f74a67-5b1f-4b21-b4f0-2b352493a2da"
+     "u": "https://www.nfkino.no/screening/1002/37f74a67-5b1f-4b21-b4f0-2b352493a2da"
     },
     {
      "d": "2026-10-25",
@@ -3744,7 +3725,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/949f534a-379e-4912-abad-fbb3f9fb8a21"
+     "u": "https://www.nfkino.no/screening/2439/949f534a-379e-4912-abad-fbb3f9fb8a21"
     },
     {
      "d": "2026-10-26",
@@ -3752,7 +3733,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/b939eb68-9c73-4af9-bab2-b7930e0cb264"
+     "u": "https://www.nfkino.no/screening/1002/b939eb68-9c73-4af9-bab2-b7930e0cb264"
     },
     {
      "d": "2026-10-26",
@@ -3760,7 +3741,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/1ec6b312-f3fd-4556-9351-839cc43f0ed5"
+     "u": "https://www.nfkino.no/screening/2439/1ec6b312-f3fd-4556-9351-839cc43f0ed5"
     },
     {
      "d": "2026-10-26",
@@ -3768,7 +3749,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/699443b1-4d5c-4da2-8797-620ee90043e7"
+     "u": "https://www.nfkino.no/screening/2439/699443b1-4d5c-4da2-8797-620ee90043e7"
     },
     {
      "d": "2026-10-27",
@@ -3776,7 +3757,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/74a6b4b4-68d9-483c-90aa-cf3e100126a6"
+     "u": "https://www.nfkino.no/screening/1002/74a6b4b4-68d9-483c-90aa-cf3e100126a6"
     },
     {
      "d": "2026-10-27",
@@ -3784,7 +3765,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2876b83c-03b5-4fac-9a38-a58e88fd5035"
+     "u": "https://www.nfkino.no/screening/1002/2876b83c-03b5-4fac-9a38-a58e88fd5035"
     },
     {
      "d": "2026-10-27",
@@ -3792,7 +3773,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4b0dc906-e6a8-416b-95dd-5a26cf244ee5"
+     "u": "https://www.nfkino.no/screening/2439/4b0dc906-e6a8-416b-95dd-5a26cf244ee5"
     },
     {
      "d": "2026-10-28",
@@ -3800,7 +3781,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/d29530e7-5a2d-4421-bd2d-216e26ab294f"
+     "u": "https://www.nfkino.no/screening/2439/d29530e7-5a2d-4421-bd2d-216e26ab294f"
     },
     {
      "d": "2026-10-28",
@@ -3808,7 +3789,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/47071fbb-5a52-4cfe-9fc4-2fe3da9d67d0"
+     "u": "https://www.nfkino.no/screening/2439/47071fbb-5a52-4cfe-9fc4-2fe3da9d67d0"
     },
     {
      "d": "2026-10-29",
@@ -3816,7 +3797,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/6d21bb03-127f-4b14-907f-897bb4e5212c"
+     "u": "https://www.nfkino.no/screening/1002/6d21bb03-127f-4b14-907f-897bb4e5212c"
     },
     {
      "d": "2026-10-29",
@@ -3824,7 +3805,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b5478c13-8dfd-4964-bd60-14430977473f"
+     "u": "https://www.nfkino.no/screening/2439/b5478c13-8dfd-4964-bd60-14430977473f"
     },
     {
      "d": "2026-10-29",
@@ -3832,7 +3813,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/86b8b03a-c7f1-4aea-9bcd-671fc47290ed"
+     "u": "https://www.nfkino.no/screening/2439/86b8b03a-c7f1-4aea-9bcd-671fc47290ed"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001806-1000031957.mp4",
@@ -3842,12 +3823,13 @@
    "year": "",
    "rt": "11%",
    "imdb": "4.2",
-   "ratingsAt": "2026-10-22T12:54:10.861Z",
+   "imdbId": "tt0111301",
+   "ratingsAt": "2026-10-22T14:46:19.809Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -3866,7 +3848,7 @@
      "c": "Colosseum",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2e55f5d6-21f5-48e6-a2bc-07fcaf417a64"
+     "u": "https://www.nfkino.no/screening/1002/2e55f5d6-21f5-48e6-a2bc-07fcaf417a64"
     },
     {
      "d": "2026-10-28",
@@ -3874,7 +3856,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2590/5d337bf1-b56b-454e-b21d-909f8ab6999a"
+     "u": "https://www.nfkino.no/screening/2590/5d337bf1-b56b-454e-b21d-909f8ab6999a"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142314-1000029353.mp4",
@@ -3884,12 +3866,810 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:11.113Z",
+   "imdbId": "tt32375006",
+   "ratingsAt": "2026-10-22T14:46:19.929Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Tony",
+   "url": "https://www.nfkino.no/film/tony?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
+   "genres": [
+    "Drama"
+   ],
+   "len": "1 time 46 min",
+   "age": "12 år",
+   "cinemas": [
+    "Gimle",
+    "Ringen",
+    "Saga",
+    "Symra"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-23",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/2439/39772330-29b3-4284-9331-fe112445844e"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/4ca617df-9433-4d17-ac8a-d2f4e15c6cd1"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/ada9ed08-5754-468c-8d31-fb6d8df9d3ae"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/0311d502-98bd-460d-8b5b-23b7928b587f"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "20:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2581/5050732b-ad0b-4095-aa08-6547a2b40bda"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/4c8363c8-9c55-4ca7-b973-a206315df67f"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "21:10",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/8a69593b-77e9-4750-8171-7714717c6f6e"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/d41ab2df-503c-4070-99ae-7cbe0b402d8e"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/af3488df-4e59-42fa-8686-8c02e8b7a94c"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/3e361e3b-b7ca-49c1-b4fd-ba0dc187f0ce"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "21:10",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/780ea249-9fa8-4d68-8600-0ed3fb08bf82"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/7d7f7065-e061-4951-bc61-c567e2afa1aa"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/0a258716-2cb5-426d-b5e7-51624cc89f93"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/b72f5c6c-8c55-4197-92dd-dbef2b94af15"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "20:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/762466bb-716f-4b0d-a9f4-42c47201e828"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "21:10",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/363fa59f-6b7f-4c72-9e18-47e4dc47a6b4"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7c48111f-0475-49f3-8389-efb82a5d5f85"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/120797dc-fbbb-4613-88b7-021605261946"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/1b314ce7-419f-4c09-972b-b877a318f38c"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/7912da2c-4b7e-4db9-bfe9-68874529c90f"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "21:10",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/1b910fa1-b5e3-4f1c-8a0f-48c635f3275c"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/909632eb-b1dc-4a48-94f2-b1f2d0fc72ac"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7945cd91-297f-4055-93d1-e1732e01a749"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/931a2398-4486-4211-b36e-227f7895bea8"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "19:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/b9e0cc93-db80-41c8-87f0-ae65bf9d6bf7"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "21:10",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/5defb026-13b7-42ac-8f2f-2f68b5d8b458"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/2439/f551db14-4ce2-47b4-8521-43a4f4dac740"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/d4d219c1-6651-42a2-a375-3ebaa7a6fc28"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "15:45",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/d795f4b2-cf20-45ef-b800-1a8a24cb4b3b"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/b2161c23-d399-45a6-bca1-689f383ed2d5"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "18:45",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/bfe8c9a9-d2eb-4fa3-a589-663bde424d0a"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "21:15",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/38853d6b-0040-4cba-897c-45df34368bb6"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:15",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/5407c83b-99da-4474-8898-b6ef3e4e0fea"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "21:40",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/0f9c583b-c1b1-481b-972c-7678a51323e2"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002865-1000030535.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Tony",
+   "year": "",
+   "rt": "93%",
+   "imdb": "7.6",
+   "imdbId": "tt33095251",
+   "ratingsAt": "2026-10-22T14:46:20.118Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Verity",
+   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
+   "genres": [
+    "Thriller",
+    "Romantikk"
+   ],
+   "len": "1 time 57 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-22",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/ec60bda1-ed5a-49b5-9292-a660e9334158"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:30",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/db55bed0-327e-4802-a05e-c999e8cbb639"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f0c9b6fe-fc05-4772-8dfe-6db3f7d12b86"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/22b9d5d4-caef-4284-8296-a489e57d1ae4"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/6537d706-17cb-4f91-9994-7134be1ed7a9"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "20:15",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/a05fdbb4-fabf-44bf-8847-20b4a775af8d"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8ce893ef-1acf-4473-af4e-67c2271c643e"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "20:50",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/de813e13-4ece-416e-9080-5a817773fde4"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8bd6ace5-d110-4d12-941d-24a2fa03b0e1"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "20:50",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/97b68f66-a93e-42a9-a8ae-5883451bb999"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "20:15",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/0883b661-22dc-4346-b52c-81a8338c13bc"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7ad8bd23-e0ff-44c0-8bc6-188c442e9b07"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/333b32f3-e3fc-4381-9091-dda5fcb3cd7c"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "20:15",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/e8fb9604-bcdc-47e4-8b7b-f3350c6fbaad"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/761b02d1-8792-4166-8927-1f3f0e4af122"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "20:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/493b74fa-c4f3-46e8-8cfe-2373a17852b9"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:30",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/1002/a9b6dd61-5bf5-4ceb-b82f-96c4979f54ec"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "20:15",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/ce5627ff-59a1-4542-b02a-4a9d370906cb"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7b8e87b3-fba6-440f-925d-56b4ed5a880a"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002608-1000030845.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Verity",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "imdbId": "tt32261958",
+   "ratingsAt": "2026-10-22T14:46:20.207Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Sense and Sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002151-1000033270.jpg?itok=S3itZJ3q",
+   "genres": [
+    "Drama",
+    "Romantikk"
+   ],
+   "len": "2 timer 12 min",
+   "age": "Alle",
+   "cinemas": [
+    "Gimle",
+    "Ringen",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-22",
+     "t": "17:20",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/454fead7-94bd-4c05-a06b-6bbfc6b76714"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "17:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2581/4cafeabb-631e-4343-854d-1c0424f2256b"
+    },
+    {
+     "d": "2026-10-22",
+     "t": "20:20",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/d9d694b3-87f1-4f31-b2c4-b6748dfd9582"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "13:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2581/a5dbad67-af67-4ef7-8e81-279d89651b65"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "14:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/7bfcf74c-88f1-4cc6-9d07-aa7f252025a3"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/e7bee606-b9fe-4231-a1da-f756cda67b4f"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "13:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/5af05b5e-7f5e-4d90-9c86-ab69bf89f5b4"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "19:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2581/d2128641-47cf-4fb2-a23a-64ebb8da2d96"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/ba4d3278-b116-4c4b-9424-37fb3a3d32a5"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "16:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/7c42ab52-c949-4d1e-a7c3-9acebd3f137b"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/921a2a99-3e14-4512-a92d-7dc2f2d61c95"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/60525f5a-b182-4a88-8106-a3f9670a33e3"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/03e2582f-1d27-409d-85c8-ed3de8683856"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/4be10153-325a-42d3-bd6a-3b0a8a274dec"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:00",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2581/441da663-6dc1-4803-883b-04f895cebcbb"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/603f34df-1a64-4d23-92a2-e28806732932"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002151-1000031524.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Sense and Sensibility",
+   "year": "",
+   "rt": "97%",
+   "imdb": "7.7",
+   "imdbId": "tt0114388",
+   "ratingsAt": "2026-10-22T14:46:20.298Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Glemselens øy",
+   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
+   "genres": [],
+   "len": "1 time 49 min",
+   "age": "9 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Symra"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-22",
+     "t": "17:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2590/b1c33f1d-88cd-48ae-b061-88458a85ea5f"
+    },
+    {
+     "d": "2026-10-23",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/1300c725-e272-4d63-b70b-b7e915649eee"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/eb157de9-bfd7-49ba-905c-8a016604a3e9"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "12:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/1002/38a4617f-751c-4c2e-8649-399b421b1e3e"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/8baad7af-f8d6-44e5-9f5d-e119b8e0d0ab"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "15:40",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2590/7eefc472-b1b8-4d43-9fbc-0b5dc07b1329"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/0393320e-6e7b-4cbe-b1fc-30a0028e52bd"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/b8ffcd7a-62fd-495e-84f3-5c60df0e5f0b"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "12:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/1002/2239402e-d73d-4862-9986-80d7dd8a23a7"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "13:15",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2590/5c4a6cc3-494d-4d87-a3ba-2a7db8ffaa28"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/48d1ea53-f9d8-42fd-8474-a76c7f81e031"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/a65379b5-b27d-4496-9e7b-5e3d95f5181a"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/8a02590a-7803-4d52-bd7c-89c654979ce2"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/f5e46cf8-387e-4844-bd01-434c1eff1071"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/ed298db9-cbc9-41c7-a1b3-af7852e3a9fd"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/5874e861-df36-4991-a216-d389b4178adc"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2590/07ea4edd-3810-41eb-b43f-168969bc230c"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-786515-1000029352.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Forgotten Island",
+   "year": "",
+   "rt": "95%",
+   "imdb": "7.7",
+   "imdbId": "tt36583977",
+   "ratingsAt": "2026-10-22T14:46:20.394Z",
    "city": "Oslo"
   },
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde",
+   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -3911,7 +4691,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0a82fd1d-605c-43ca-b67b-78f64cb11181"
+     "u": "https://www.nfkino.no/screening/2439/0a82fd1d-605c-43ca-b67b-78f64cb11181"
     },
     {
      "d": "2026-10-22",
@@ -3919,7 +4699,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/a9de514d-0f0e-4431-bc12-85bf842acec1"
+     "u": "https://www.nfkino.no/screening/2583/a9de514d-0f0e-4431-bc12-85bf842acec1"
     },
     {
      "d": "2026-10-22",
@@ -3927,7 +4707,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/b3b37448-2f6e-4bad-9ccb-8aefe62d2240"
+     "u": "https://www.nfkino.no/screening/2590/b3b37448-2f6e-4bad-9ccb-8aefe62d2240"
     },
     {
      "d": "2026-10-22",
@@ -3935,7 +4715,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/c6733f1b-8428-4107-9110-32f2784972fe"
+     "u": "https://www.nfkino.no/screening/2581/c6733f1b-8428-4107-9110-32f2784972fe"
     },
     {
      "d": "2026-10-22",
@@ -3943,7 +4723,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/918fed34-2b08-49bc-8678-0bde70134682"
+     "u": "https://www.nfkino.no/screening/2583/918fed34-2b08-49bc-8678-0bde70134682"
     },
     {
      "d": "2026-10-23",
@@ -3951,7 +4731,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/092f7053-3258-456f-aa26-4d92c245dda4"
+     "u": "https://www.nfkino.no/screening/2583/092f7053-3258-456f-aa26-4d92c245dda4"
     },
     {
      "d": "2026-10-23",
@@ -3959,7 +4739,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b3f97ab0-7d7d-4a19-a3f2-0457da2819b7"
+     "u": "https://www.nfkino.no/screening/2439/b3f97ab0-7d7d-4a19-a3f2-0457da2819b7"
     },
     {
      "d": "2026-10-23",
@@ -3967,7 +4747,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/f208c5e3-00e9-4d4b-88b7-7eaf8bc01038"
+     "u": "https://www.nfkino.no/screening/2583/f208c5e3-00e9-4d4b-88b7-7eaf8bc01038"
     },
     {
      "d": "2026-10-23",
@@ -3975,7 +4755,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/83724b2b-42e7-403b-bce4-ee45cd7e5694"
+     "u": "https://www.nfkino.no/screening/2439/83724b2b-42e7-403b-bce4-ee45cd7e5694"
     },
     {
      "d": "2026-10-23",
@@ -3983,7 +4763,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/11c668fa-264b-48a1-8352-0b059a2c3afe"
+     "u": "https://www.nfkino.no/screening/2583/11c668fa-264b-48a1-8352-0b059a2c3afe"
     },
     {
      "d": "2026-10-24",
@@ -3991,7 +4771,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/5751aa74-8e8d-4599-afbc-03312b552c44"
+     "u": "https://www.nfkino.no/screening/2583/5751aa74-8e8d-4599-afbc-03312b552c44"
     },
     {
      "d": "2026-10-24",
@@ -3999,7 +4779,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/7fb5b5d0-d91c-408b-95a9-53e2c69df289"
+     "u": "https://www.nfkino.no/screening/2612/7fb5b5d0-d91c-408b-95a9-53e2c69df289"
     },
     {
      "d": "2026-10-24",
@@ -4007,7 +4787,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/0da8a7c2-2a78-4bd6-9b88-1ae3cbaa6422"
+     "u": "https://www.nfkino.no/screening/2583/0da8a7c2-2a78-4bd6-9b88-1ae3cbaa6422"
     },
     {
      "d": "2026-10-24",
@@ -4015,7 +4795,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/745a259a-5da1-46eb-9ed2-044d48926cf5"
+     "u": "https://www.nfkino.no/screening/2581/745a259a-5da1-46eb-9ed2-044d48926cf5"
     },
     {
      "d": "2026-10-24",
@@ -4023,7 +4803,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/d9074a5f-8463-4597-a64b-56910054809e"
+     "u": "https://www.nfkino.no/screening/2439/d9074a5f-8463-4597-a64b-56910054809e"
     },
     {
      "d": "2026-10-24",
@@ -4031,7 +4811,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/7576acf7-4a07-4660-a596-63c8089b7672"
+     "u": "https://www.nfkino.no/screening/2583/7576acf7-4a07-4660-a596-63c8089b7672"
     },
     {
      "d": "2026-10-25",
@@ -4039,7 +4819,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/8bbe9a69-2a54-4984-b9b1-620205adb11e"
+     "u": "https://www.nfkino.no/screening/2583/8bbe9a69-2a54-4984-b9b1-620205adb11e"
     },
     {
      "d": "2026-10-25",
@@ -4047,7 +4827,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2612/242efc35-f163-424d-89cb-a33c16056e76"
+     "u": "https://www.nfkino.no/screening/2612/242efc35-f163-424d-89cb-a33c16056e76"
     },
     {
      "d": "2026-10-25",
@@ -4055,7 +4835,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/bb49e5fc-f360-4940-a09f-b650daed0b1e"
+     "u": "https://www.nfkino.no/screening/2583/bb49e5fc-f360-4940-a09f-b650daed0b1e"
     },
     {
      "d": "2026-10-25",
@@ -4063,7 +4843,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4e96ad62-a41d-4de6-9e1e-5afee55bf314"
+     "u": "https://www.nfkino.no/screening/2439/4e96ad62-a41d-4de6-9e1e-5afee55bf314"
     },
     {
      "d": "2026-10-25",
@@ -4071,7 +4851,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/f3a03467-70cf-482f-8fca-876db4f96193"
+     "u": "https://www.nfkino.no/screening/2583/f3a03467-70cf-482f-8fca-876db4f96193"
     },
     {
      "d": "2026-10-26",
@@ -4079,7 +4859,7 @@
      "c": "Ringen",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/e03cd5de-f4b5-44e5-b096-0ab1a89ddfaa"
+     "u": "https://www.nfkino.no/screening/2439/e03cd5de-f4b5-44e5-b096-0ab1a89ddfaa"
     },
     {
      "d": "2026-10-26",
@@ -4087,7 +4867,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/95f50229-cd0f-4652-bf47-ce3fd7d26a01"
+     "u": "https://www.nfkino.no/screening/2583/95f50229-cd0f-4652-bf47-ce3fd7d26a01"
     },
     {
      "d": "2026-10-26",
@@ -4095,7 +4875,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/3524206a-c9d7-4b49-8e64-aad4a9d48cf8"
+     "u": "https://www.nfkino.no/screening/2439/3524206a-c9d7-4b49-8e64-aad4a9d48cf8"
     },
     {
      "d": "2026-10-26",
@@ -4103,7 +4883,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/04c8159c-12c8-4e6f-a82a-4f7604728b4f"
+     "u": "https://www.nfkino.no/screening/2583/04c8159c-12c8-4e6f-a82a-4f7604728b4f"
     },
     {
      "d": "2026-10-26",
@@ -4111,7 +4891,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a5448e23-bc13-4866-a2d1-6512727575a8"
+     "u": "https://www.nfkino.no/screening/2439/a5448e23-bc13-4866-a2d1-6512727575a8"
     },
     {
      "d": "2026-10-26",
@@ -4119,7 +4899,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/808354fb-b8e0-4dbe-b773-52e37570bb36"
+     "u": "https://www.nfkino.no/screening/2583/808354fb-b8e0-4dbe-b773-52e37570bb36"
     },
     {
      "d": "2026-10-27",
@@ -4127,7 +4907,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://wwwapp.nfkino.no/screening/2583/396ff1cc-dd34-4dd1-963b-a753423d49ed"
+     "u": "https://www.nfkino.no/screening/2583/396ff1cc-dd34-4dd1-963b-a753423d49ed"
     },
     {
      "d": "2026-10-27",
@@ -4135,7 +4915,7 @@
      "c": "Ringen",
      "r": "6",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/45cb71a5-925b-44fe-ba4d-dfd530752873"
+     "u": "https://www.nfkino.no/screening/2439/45cb71a5-925b-44fe-ba4d-dfd530752873"
     },
     {
      "d": "2026-10-27",
@@ -4143,7 +4923,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/1aa96cbd-5b5e-464a-b64a-f75607b550a3"
+     "u": "https://www.nfkino.no/screening/2583/1aa96cbd-5b5e-464a-b64a-f75607b550a3"
     },
     {
      "d": "2026-10-27",
@@ -4151,7 +4931,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/97f90637-0fd1-4280-b7e3-5aa3cd6fa5e0"
+     "u": "https://www.nfkino.no/screening/2439/97f90637-0fd1-4280-b7e3-5aa3cd6fa5e0"
     },
     {
      "d": "2026-10-27",
@@ -4159,7 +4939,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/ce9f787b-a802-4325-91c2-02b64637a11f"
+     "u": "https://www.nfkino.no/screening/2583/ce9f787b-a802-4325-91c2-02b64637a11f"
     },
     {
      "d": "2026-10-28",
@@ -4167,7 +4947,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/2aeaa69e-828f-40f9-911e-2fab42bfc4bf"
+     "u": "https://www.nfkino.no/screening/2583/2aeaa69e-828f-40f9-911e-2fab42bfc4bf"
     },
     {
      "d": "2026-10-28",
@@ -4175,7 +4955,7 @@
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/dd87b621-3cea-4591-8dbe-7fb8e65e4635"
+     "u": "https://www.nfkino.no/screening/2581/dd87b621-3cea-4591-8dbe-7fb8e65e4635"
     },
     {
      "d": "2026-10-28",
@@ -4183,7 +4963,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/4043dba8-46b1-4ca1-bb2e-de6dff350085"
+     "u": "https://www.nfkino.no/screening/2583/4043dba8-46b1-4ca1-bb2e-de6dff350085"
     },
     {
      "d": "2026-10-28",
@@ -4191,7 +4971,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0c5c1869-b93b-485c-8e3a-b6de1476377d"
+     "u": "https://www.nfkino.no/screening/2439/0c5c1869-b93b-485c-8e3a-b6de1476377d"
     },
     {
      "d": "2026-10-28",
@@ -4199,7 +4979,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/e932b2e8-ef23-47d8-8e4c-d1ec94f5d999"
+     "u": "https://www.nfkino.no/screening/2583/e932b2e8-ef23-47d8-8e4c-d1ec94f5d999"
     },
     {
      "d": "2026-10-29",
@@ -4207,7 +4987,7 @@
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/6fad4e14-216d-4336-960b-af78ce52e3e2"
+     "u": "https://www.nfkino.no/screening/2583/6fad4e14-216d-4336-960b-af78ce52e3e2"
     },
     {
      "d": "2026-10-29",
@@ -4215,7 +4995,7 @@
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b6b41a26-a5ad-473c-a6d6-4568d6cd1a24"
+     "u": "https://www.nfkino.no/screening/2439/b6b41a26-a5ad-473c-a6d6-4568d6cd1a24"
     },
     {
      "d": "2026-10-29",
@@ -4223,7 +5003,7 @@
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2583/e49a9e77-e178-4f00-96cc-728d79f03310"
+     "u": "https://www.nfkino.no/screening/2583/e49a9e77-e178-4f00-96cc-728d79f03310"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000645-1000027877.mp4",
@@ -4231,801 +5011,7 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-10-22T12:54:12.326Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Tony",
-   "url": "https://www.nfkino.no/film/tony",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
-   "genres": [
-    "Drama"
-   ],
-   "len": "1 time 46 min",
-   "age": "12 år",
-   "cinemas": [
-    "Gimle",
-    "Ringen",
-    "Saga",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-23",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/39772330-29b3-4284-9331-fe112445844e"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4ca617df-9433-4d17-ac8a-d2f4e15c6cd1"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/ada9ed08-5754-468c-8d31-fb6d8df9d3ae"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/0311d502-98bd-460d-8b5b-23b7928b587f"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "20:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2581/5050732b-ad0b-4095-aa08-6547a2b40bda"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "21:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4c8363c8-9c55-4ca7-b973-a206315df67f"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "21:10",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/8a69593b-77e9-4750-8171-7714717c6f6e"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/d41ab2df-503c-4070-99ae-7cbe0b402d8e"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/af3488df-4e59-42fa-8686-8c02e8b7a94c"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/3e361e3b-b7ca-49c1-b4fd-ba0dc187f0ce"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "21:10",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/780ea249-9fa8-4d68-8600-0ed3fb08bf82"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7d7f7065-e061-4951-bc61-c567e2afa1aa"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0a258716-2cb5-426d-b5e7-51624cc89f93"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/b72f5c6c-8c55-4197-92dd-dbef2b94af15"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "20:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/762466bb-716f-4b0d-a9f4-42c47201e828"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "21:10",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/363fa59f-6b7f-4c72-9e18-47e4dc47a6b4"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7c48111f-0475-49f3-8389-efb82a5d5f85"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/120797dc-fbbb-4613-88b7-021605261946"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/1b314ce7-419f-4c09-972b-b877a318f38c"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/7912da2c-4b7e-4db9-bfe9-68874529c90f"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "21:10",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/1b910fa1-b5e3-4f1c-8a0f-48c635f3275c"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/909632eb-b1dc-4a48-94f2-b1f2d0fc72ac"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7945cd91-297f-4055-93d1-e1732e01a749"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/931a2398-4486-4211-b36e-227f7895bea8"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "19:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2590/b9e0cc93-db80-41c8-87f0-ae65bf9d6bf7"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "21:10",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/5defb026-13b7-42ac-8f2f-2f68b5d8b458"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/2439/f551db14-4ce2-47b4-8521-43a4f4dac740"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/d4d219c1-6651-42a2-a375-3ebaa7a6fc28"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/d795f4b2-cf20-45ef-b800-1a8a24cb4b3b"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b2161c23-d399-45a6-bca1-689f383ed2d5"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "18:45",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/bfe8c9a9-d2eb-4fa3-a589-663bde424d0a"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "21:15",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/38853d6b-0040-4cba-897c-45df34368bb6"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:15",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/5407c83b-99da-4474-8898-b6ef3e4e0fea"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "21:40",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/0f9c583b-c1b1-481b-972c-7678a51323e2"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002865-1000030535.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Tony",
-   "year": "",
-   "rt": "93%",
-   "imdb": "7.6",
-   "ratingsAt": "2026-10-22T12:54:12.587Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
-   "genres": [
-    "Thriller",
-    "Romantikk"
-   ],
-   "len": "1 time 57 min",
-   "age": "15 år",
-   "cinemas": [
-    "Colosseum",
-    "Ringen",
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/ec60bda1-ed5a-49b5-9292-a660e9334158"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:30",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1001/db55bed0-327e-4802-a05e-c999e8cbb639"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/f0c9b6fe-fc05-4772-8dfe-6db3f7d12b86"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/22b9d5d4-caef-4284-8296-a489e57d1ae4"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/6537d706-17cb-4f91-9994-7134be1ed7a9"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "20:15",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a05fdbb4-fabf-44bf-8847-20b4a775af8d"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/8ce893ef-1acf-4473-af4e-67c2271c643e"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "20:50",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/de813e13-4ece-416e-9080-5a817773fde4"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/8bd6ace5-d110-4d12-941d-24a2fa03b0e1"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "20:50",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/97b68f66-a93e-42a9-a8ae-5883451bb999"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "20:15",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/0883b661-22dc-4346-b52c-81a8338c13bc"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "20:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7ad8bd23-e0ff-44c0-8bc6-188c442e9b07"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/333b32f3-e3fc-4381-9091-dda5fcb3cd7c"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "20:15",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/e8fb9604-bcdc-47e4-8b7b-f3350c6fbaad"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/761b02d1-8792-4166-8927-1f3f0e4af122"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "20:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/493b74fa-c4f3-46e8-8cfe-2373a17852b9"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://wwwapp.nfkino.no/screening/1002/a9b6dd61-5bf5-4ceb-b82f-96c4979f54ec"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "20:15",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/1002/ce5627ff-59a1-4542-b02a-4a9d370906cb"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "20:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://wwwapp.nfkino.no/screening/2439/7b8e87b3-fba6-440f-925d-56b4ed5a880a"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002608-1000030845.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Verity",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-10-22T12:54:13.085Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002151-1000033270.jpg?itok=S3itZJ3q",
-   "genres": [
-    "Drama",
-    "Romantikk"
-   ],
-   "len": "2 timer 12 min",
-   "age": "Alle",
-   "cinemas": [
-    "Gimle",
-    "Ringen",
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:20",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/454fead7-94bd-4c05-a06b-6bbfc6b76714"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "17:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2581/4cafeabb-631e-4343-854d-1c0424f2256b"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "20:20",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/d9d694b3-87f1-4f31-b2c4-b6748dfd9582"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "13:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2581/a5dbad67-af67-4ef7-8e81-279d89651b65"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "14:30",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/7bfcf74c-88f1-4cc6-9d07-aa7f252025a3"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/e7bee606-b9fe-4231-a1da-f756cda67b4f"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "13:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/5af05b5e-7f5e-4d90-9c86-ab69bf89f5b4"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "19:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2581/d2128641-47cf-4fb2-a23a-64ebb8da2d96"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/ba4d3278-b116-4c4b-9424-37fb3a3d32a5"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "16:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/7c42ab52-c949-4d1e-a7c3-9acebd3f137b"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/921a2a99-3e14-4512-a92d-7dc2f2d61c95"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2439/60525f5a-b182-4a88-8106-a3f9670a33e3"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/03e2582f-1d27-409d-85c8-ed3de8683856"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2439/4be10153-325a-42d3-bd6a-3b0a8a274dec"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:00",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2581/441da663-6dc1-4803-883b-04f895cebcbb"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
-     "u": "https://wwwapp.nfkino.no/screening/2612/603f34df-1a64-4d23-92a2-e28806732932"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002151-1000031524.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Sense and Sensibility",
-   "year": "",
-   "rt": "97%",
-   "imdb": "7.7",
-   "ratingsAt": "2026-10-22T12:54:11.387Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
-   "genres": [],
-   "len": "1 time 49 min",
-   "age": "9 år",
-   "cinemas": [
-    "Colosseum",
-    "Ringen",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/b1c33f1d-88cd-48ae-b061-88458a85ea5f"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/1300c725-e272-4d63-b70b-b7e915649eee"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "11:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/eb157de9-bfd7-49ba-905c-8a016604a3e9"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1002/38a4617f-751c-4c2e-8649-399b421b1e3e"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "14:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/8baad7af-f8d6-44e5-9f5d-e119b8e0d0ab"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "15:40",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/7eefc472-b1b8-4d43-9fbc-0b5dc07b1329"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "17:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/0393320e-6e7b-4cbe-b1fc-30a0028e52bd"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "11:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/b8ffcd7a-62fd-495e-84f3-5c60df0e5f0b"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/1002/2239402e-d73d-4862-9986-80d7dd8a23a7"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "13:15",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/5c4a6cc3-494d-4d87-a3ba-2a7db8ffaa28"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "14:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/48d1ea53-f9d8-42fd-8474-a76c7f81e031"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "17:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/a65379b5-b27d-4496-9e7b-5e3d95f5181a"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/8a02590a-7803-4d52-bd7c-89c654979ce2"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/f5e46cf8-387e-4844-bd01-434c1eff1071"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/ed298db9-cbc9-41c7-a1b3-af7852e3a9fd"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2439/5874e861-df36-4991-a216-d389b4178adc"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://wwwapp.nfkino.no/screening/2590/07ea4edd-3810-41eb-b43f-168969bc230c"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-786515-1000029352.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Forgotten Island",
-   "year": "",
-   "rt": "95%",
-   "imdb": "7.7",
-   "imdbId": "tt36583977",
-   "ratingsAt": "2026-10-22T13:53:19.224Z",
+   "ratingsAt": "2026-10-22T14:46:20.800Z",
    "city": "Oslo"
   }
  ],
@@ -16057,14 +16043,14 @@
    "city": "Oslo"
   },
   {
-   "title": "Utsolgt",
+   "title": "Lizz Wright",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/november/lizz-wright",
    "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-04/Lizz%20Wright%20by%20Hollis%20King%20%28sIMG_6612%29.jpg?h=944009b3&itok=gH8jasAI",
    "from": "2026-11-07",
    "to": "2026-11-07",
    "about": "",
-   "hint": "Cosmopolite Scene Jazz Soul UtsolgtLizz Wright7. november Utsolgt",
+   "hint": "Cosmopolite Scene Jazz Soul Få billetterLizz Wright7. november Få billetter",
    "city": "Oslo"
   },
   {
