@@ -112,6 +112,8 @@ body{
 .meta b{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .filters{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}
 .chip{appearance:none;flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;cursor:pointer}
+.secthead{grid-column:1/-1;font-size:20px;font-weight:800;letter-spacing:-.01em;margin:10px 0 0;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.secthead:first-child{margin-top:0}
 .logo-art{display:flex;align-items:center;justify-content:center;background:#C9D1D8;padding:14%}
 .logo-art .logo{position:static;width:100%;height:100%;object-fit:contain}
 .logo-art.own{padding:0;background:transparent}
@@ -478,7 +480,21 @@ function renderTheatre(){
     document.getElementById("srcT").textContent=`Velg et teater, eller «Alle teatrene» for å se alle ${list.length} forestillinger.`;
     return;
   }
-  shown.forEach(s=>{const b=document.createElement("button");b.className="poster";
+  // Del opp med overskrifter: I dag, Spilles nå, Denne uken, Senere, Uten fast dato
+  const SECT=["I dag","Spilles nå","Denne uken","Senere","Uten fast dato"];
+  const now0=today(),tomorrow=new Date(now0.getTime()+864e5),weekEnd=new Date(now0);weekEnd.setDate(now0.getDate()+((8-now0.getDay())%7||7));
+  const sectOf=s=>{
+    const t=s.times?s.times[0]:s.next?new Date(s.next):null;
+    if(t)return t<tomorrow?0:t<weekEnd?2:3;
+    if(!s.from)return 4;
+    if(s.f<=now0)return s.from===s.to&&s.f>=now0?0:1;
+    return s.f<tomorrow?0:s.f<weekEnd?2:3;
+  };
+  shown.forEach(s=>s.sect=sectOf(s));
+  shown.sort((a,b)=>a.sect-b.sect||a.key-b.key);
+  let lastSect=-1;
+  shown.forEach(s=>{if(s.sect!==lastSect){lastSect=s.sect;const h=document.createElement("div");h.className="secthead";h.textContent=SECT[s.sect];el.appendChild(h)}
+    const b=document.createElement("button");b.className="poster";
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"teater",s));});
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
