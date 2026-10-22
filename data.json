@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-22T15:44:59.408Z",
+ "updated": "2026-10-22T16:45:17.455Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-22",
-   "h": 17,
+   "h": 18,
    "temp": 11,
    "wind": 3,
-   "sym": "rain",
-   "rain": 0.6,
+   "sym": "cloudy",
+   "rain": 0,
    "span": 1
   },
   "days": [
@@ -17,27 +17,18 @@
     "hours": [
      {
       "date": "2026-10-22",
-      "h": 17,
-      "temp": 11,
-      "wind": 3,
-      "sym": "rain",
-      "rain": 0.6,
-      "span": 1
-     },
-     {
-      "date": "2026-10-22",
       "h": 18,
       "temp": 11,
-      "wind": 2,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 3,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-22",
       "h": 19,
       "temp": 11,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -55,7 +46,7 @@
       "date": "2026-10-22",
       "h": 21,
       "temp": 11,
-      "wind": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -64,7 +55,7 @@
       "date": "2026-10-22",
       "h": 22,
       "temp": 11,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -73,16 +64,16 @@
       "date": "2026-10-22",
       "h": 23,
       "temp": 11,
-      "wind": 2,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "wind": 3,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      }
     ],
     "max": 11,
     "min": 11,
-    "rain": 1.1,
-    "sym": "rain"
+    "rain": 0,
+    "sym": "cloudy"
    },
    {
     "date": "2026-10-23",
@@ -91,18 +82,18 @@
       "date": "2026-10-23",
       "h": 0,
       "temp": 11,
-      "wind": 2,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 1,
       "temp": 11,
-      "wind": 3,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -117,7 +108,7 @@
      {
       "date": "2026-10-23",
       "h": 3,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -144,8 +135,8 @@
      {
       "date": "2026-10-23",
       "h": 6,
-      "temp": 10,
-      "wind": 3,
+      "temp": 9,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -153,7 +144,7 @@
      {
       "date": "2026-10-23",
       "h": 7,
-      "temp": 10,
+      "temp": 9,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -162,35 +153,35 @@
      {
       "date": "2026-10-23",
       "h": 8,
-      "temp": 10,
+      "temp": 9,
       "wind": 3,
-      "sym": "heavyrain",
-      "rain": 1.2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 9,
-      "temp": 10,
+      "temp": 9,
       "wind": 3,
-      "sym": "heavyrain",
-      "rain": 1.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 10,
-      "temp": 10,
-      "wind": 2,
-      "sym": "rain",
-      "rain": 0.7,
+      "temp": 9,
+      "wind": 3,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 11,
-      "temp": 10,
-      "wind": 2,
+      "temp": 9,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -207,7 +198,7 @@
      {
       "date": "2026-10-23",
       "h": 13,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -216,7 +207,7 @@
      {
       "date": "2026-10-23",
       "h": 14,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -227,7 +218,7 @@
       "h": 15,
       "temp": 11,
       "wind": 3,
-      "sym": "partlycloudy_day",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -262,6 +253,15 @@
       "date": "2026-10-23",
       "h": 19,
       "temp": 9,
+      "wind": 3,
+      "sym": "partlycloudy_night",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-23",
+      "h": 20,
+      "temp": 9,
       "wind": 2,
       "sym": "fair_night",
       "rain": 0,
@@ -269,19 +269,10 @@
      },
      {
       "date": "2026-10-23",
-      "h": 20,
-      "temp": 8,
-      "wind": 1,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-23",
       "h": 21,
-      "temp": 8,
+      "temp": 9,
       "wind": 1,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -306,7 +297,7 @@
     ],
     "max": 11,
     "min": 8,
-    "rain": 3.5,
+    "rain": 0,
     "sym": "cloudy"
    },
    {
@@ -324,8 +315,8 @@
      {
       "date": "2026-10-24",
       "h": 1,
-      "temp": 8,
-      "wind": 2,
+      "temp": 7,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -333,8 +324,8 @@
      {
       "date": "2026-10-24",
       "h": 2,
-      "temp": 8,
-      "wind": 2,
+      "temp": 7,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -370,7 +361,7 @@
       "date": "2026-10-24",
       "h": 6,
       "temp": 7,
-      "wind": 5,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -378,8 +369,8 @@
      {
       "date": "2026-10-24",
       "h": 7,
-      "temp": 7,
-      "wind": 4,
+      "temp": 8,
+      "wind": 5,
       "sym": "lightrain",
       "rain": 0.2,
       "span": 1
@@ -388,18 +379,18 @@
       "date": "2026-10-24",
       "h": 8,
       "temp": 8,
-      "wind": 4,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 9,
       "temp": 8,
-      "wind": 5,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -414,10 +405,10 @@
      {
       "date": "2026-10-24",
       "h": 11,
-      "temp": 9,
+      "temp": 8,
       "wind": 5,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -426,7 +417,7 @@
       "temp": 9,
       "wind": 4,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -434,58 +425,22 @@
       "h": 13,
       "temp": 9,
       "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
-      "h": 14,
-      "temp": 10,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
-      "h": 15,
-      "temp": 10,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
-      "h": 16,
-      "temp": 10,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
-      "h": 17,
-      "temp": 10,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.7,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
-      "h": 18,
-      "temp": 10,
-      "wind": 5,
       "sym": "rain",
       "rain": 0.6,
       "span": 1
      },
      {
       "date": "2026-10-24",
-      "h": 19,
+      "h": 14,
+      "temp": 9,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.4,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 15,
       "temp": 10,
       "wind": 4,
       "sym": "rain",
@@ -494,26 +449,107 @@
      },
      {
       "date": "2026-10-24",
+      "h": 16,
+      "temp": 10,
+      "wind": 5,
+      "sym": "rain",
+      "rain": 0.3,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 17,
+      "temp": 10,
+      "wind": 6,
+      "sym": "lightrain",
+      "rain": 0.2,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 18,
+      "temp": 10,
+      "wind": 5,
+      "sym": "lightrain",
+      "rain": 0.1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 19,
+      "temp": 10,
+      "wind": 5,
+      "sym": "lightrain",
+      "rain": 0.1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
       "h": 20,
       "temp": 10,
+      "wind": 5,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 21,
+      "temp": 10,
+      "wind": 5,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 22,
+      "temp": 10,
       "wind": 4,
-      "sym": "rain",
-      "rain": 2.7,
-      "span": 6
+      "sym": "lightrain",
+      "rain": 0.1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 23,
+      "temp": 10,
+      "wind": 5,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
      }
     ],
     "max": 10,
     "min": 7,
-    "rain": 6.8,
-    "sym": "cloudy"
+    "rain": 4.1,
+    "sym": "rain"
    },
    {
     "date": "2026-10-25",
     "hours": [
      {
       "date": "2026-10-25",
+      "h": 0,
+      "temp": 9,
+      "wind": 5,
+      "sym": "lightrain",
+      "rain": 0.2,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 1,
+      "temp": 9,
+      "wind": 5,
+      "sym": "rain",
+      "rain": 0.3,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
       "h": 2,
-      "temp": 10,
+      "temp": 9,
       "wind": 6,
       "sym": "heavyrain",
       "rain": 7.9,
@@ -549,7 +585,7 @@
     ],
     "max": 10,
     "min": 9,
-    "rain": 16.4,
+    "rain": 16.9,
     "sym": "rain"
    },
    {
@@ -1018,14 +1054,6 @@
    ],
    "shows": [
     {
-     "d": "2026-10-22",
-     "t": "18:15",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/939c4b6e-7297-457d-aa17-a34655e01163"
-    },
-    {
      "d": "2026-10-23",
      "t": "12:00",
      "c": "Colosseum",
@@ -1308,18 +1336,18 @@
     {
      "d": "2026-10-25",
      "t": "15:30",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "15:30",
+     "c": "Saga",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
     },
     {
      "d": "2026-10-25",
@@ -1793,7 +1821,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-22T15:45:32.120Z",
    "city": "Oslo"
   },
@@ -1853,7 +1880,6 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "imdbId": "tt0011440",
    "ratingsAt": "2026-10-22T15:45:32.266Z",
    "city": "Oslo"
   },
@@ -1874,14 +1900,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/0e3c99ca-66f9-461c-a093-6783dc04af16"
-    },
     {
      "d": "2026-10-22",
      "t": "20:00",
@@ -2066,7 +2084,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-22T15:45:32.624Z",
    "city": "Oslo"
   },
@@ -2126,7 +2143,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37968648",
    "ratingsAt": "2026-10-22T15:45:33.235Z",
    "city": "Oslo"
   },
@@ -2501,7 +2517,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt6492922",
    "ratingsAt": "2026-10-22T15:45:33.356Z",
    "city": "Oslo"
   },
@@ -2922,7 +2937,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "imdbId": "tt36841161",
    "ratingsAt": "2026-10-22T15:45:34.536Z",
    "city": "Oslo"
   },
@@ -3264,30 +3278,6 @@
    "shows": [
     {
      "d": "2026-10-22",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/5a03fdcb-656d-40aa-97d1-430191d40c35"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "18:00",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/86cdb46b-dc73-48d6-b866-88735e56f256"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "18:00",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/b7606f6e-973e-4039-9efd-676683964dde"
-    },
-    {
-     "d": "2026-10-22",
      "t": "20:30",
      "c": "Ringen",
      "r": "3",
@@ -3592,14 +3582,6 @@
    "shows": [
     {
      "d": "2026-10-22",
-     "t": "17:50",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/bfde2149-ee79-47e8-a0fe-1ab9d105cb9c"
-    },
-    {
-     "d": "2026-10-22",
      "t": "20:45",
      "c": "Ringen",
      "r": "1",
@@ -3790,7 +3772,6 @@
    "year": "",
    "rt": "11%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-22T15:45:38.972Z",
    "city": "Oslo"
   },
@@ -3805,18 +3786,9 @@
    "len": "1 time 55 min",
    "age": "15 år",
    "cinemas": [
-    "Colosseum",
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:50",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/2e55f5d6-21f5-48e6-a2bc-07fcaf417a64"
-    },
     {
      "d": "2026-10-28",
      "t": "19:15",
@@ -3833,7 +3805,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-22T15:45:39.881Z",
    "city": "Oslo"
   },
@@ -4133,7 +4104,6 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.6",
-   "imdbId": "tt33095251",
    "ratingsAt": "2026-10-22T15:45:41.085Z",
    "city": "Oslo"
   },
@@ -4153,14 +4123,6 @@
     "Saga"
    ],
    "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/ec60bda1-ed5a-49b5-9292-a660e9334158"
-    },
     {
      "d": "2026-10-22",
      "t": "20:30",
@@ -4313,7 +4275,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-22T15:45:41.233Z",
    "city": "Oslo"
   },
@@ -4453,7 +4414,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-22T15:45:41.567Z",
    "city": "Oslo"
   },
@@ -4606,7 +4566,6 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "imdbId": "tt36583977",
    "ratingsAt": "2026-10-22T15:45:42.537Z",
    "city": "Oslo"
   },
@@ -4628,22 +4587,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-22",
-     "t": "18:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/0a82fd1d-605c-43ca-b67b-78f64cb11181"
-    },
-    {
-     "d": "2026-10-22",
-     "t": "18:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/a9de514d-0f0e-4431-bc12-85bf842acec1"
-    },
     {
      "d": "2026-10-22",
      "t": "20:00",
@@ -4799,18 +4742,18 @@
     {
      "d": "2026-10-26",
      "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/2439/e03cd5de-f4b5-44e5-b096-0ab1a89ddfaa"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "12:00",
      "c": "Klingenberg",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/95f50229-cd0f-4652-bf47-ce3fd7d26a01"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst, Babykino",
+     "u": "https://www.nfkino.no/screening/2439/e03cd5de-f4b5-44e5-b096-0ab1a89ddfaa"
     },
     {
      "d": "2026-10-26",
@@ -4831,18 +4774,18 @@
     {
      "d": "2026-10-26",
      "t": "20:45",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/a5448e23-bc13-4866-a2d1-6512727575a8"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "20:45",
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/808354fb-b8e0-4dbe-b773-52e37570bb36"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/a5448e23-bc13-4866-a2d1-6512727575a8"
     },
     {
      "d": "2026-10-27",
