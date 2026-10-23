@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-23T16:53:43.193Z",
+ "updated": "2026-10-23T17:43:51.388Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-23",
-   "h": 18,
-   "temp": 10,
+   "h": 19,
+   "temp": 9,
    "wind": 2,
-   "sym": "fair_night",
+   "sym": "partlycloudy_night",
    "rain": 0,
    "span": 1
   },
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-10-23",
-      "h": 18,
-      "temp": 10,
-      "wind": 2,
-      "sym": "fair_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-23",
       "h": 19,
       "temp": 9,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -38,7 +29,7 @@
       "h": 20,
       "temp": 8,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -70,10 +61,10 @@
       "span": 1
      }
     ],
-    "max": 10,
+    "max": 9,
     "min": 8,
     "rain": 0,
-    "sym": "fair_night"
+    "sym": "partlycloudy_night"
    },
    {
     "date": "2026-10-24",
@@ -108,7 +99,7 @@
      {
       "date": "2026-10-24",
       "h": 3,
-      "temp": 7,
+      "temp": 6,
       "wind": 4,
       "sym": "cloudy",
       "rain": 0,
@@ -216,7 +207,7 @@
      {
       "date": "2026-10-24",
       "h": 15,
-      "temp": 9,
+      "temp": 10,
       "wind": 4,
       "sym": "lightrain",
       "rain": 0.2,
@@ -315,7 +306,7 @@
      {
       "date": "2026-10-25",
       "h": 1,
-      "temp": 9,
+      "temp": 10,
       "wind": 7,
       "sym": "rain",
       "rain": 0.6,
@@ -423,7 +414,7 @@
      {
       "date": "2026-10-25",
       "h": 12,
-      "temp": 7,
+      "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
       "rain": 2.1,
@@ -732,7 +723,6 @@
    "url": "https://christianiateaterscene.no/80",
    "img": "https://cdn.sanity.io/images/g24jximr/production/d87cd56fb506a8dd10ff359cf019c16514f8d812-1850x1850.jpg?h=400&auto=format",
    "times": [
-    "2026-10-23T19:00",
     "2026-10-24T16:30",
     "2026-10-24T19:00",
     "2026-10-29T19:00",
@@ -1073,14 +1063,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-23",
-     "t": "19:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/148428f1-06a5-4791-815a-029bc58c7b57"
-    },
     {
      "d": "2026-10-24",
      "t": "11:30",
@@ -4756,20 +4738,6 @@
  ],
  "operaen": [
   {
-   "title": "León & Lightfoot: Salle de danse",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/leon-lightfoot/salle-de-danse-foto-erik-berg-operaen.no-1600x1200px.jpg",
-   "next": "2026-10-23T19:00",
-   "genres": [
-    "ballett"
-   ],
-   "from": null,
-   "to": null,
-   "about": "León & Lightfoot:",
-   "city": "Oslo"
-  },
-  {
    "title": "Opera-mysteriet",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/operamysteriet-formidling/",
@@ -4796,6 +4764,20 @@
    "from": null,
    "to": null,
    "about": "Operaorkestrets kammerserie:",
+   "city": "Oslo"
+  },
+  {
+   "title": "León & Lightfoot: Salle de danse",
+   "venue": "Operaen",
+   "url": "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/",
+   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/ballett/leon-lightfoot/salle-de-danse-foto-erik-berg-operaen.no-1600x1200px.jpg",
+   "next": "2026-10-24T18:00",
+   "genres": [
+    "ballett"
+   ],
+   "from": null,
+   "to": null,
+   "about": "León & Lightfoot:",
    "city": "Oslo"
   },
   {
@@ -15913,174 +15895,9 @@
    "about": "",
    "hint": "Cosmopolite Scene Jazz Jul Kjøp billettThe Source: of Christmas19. desember Kjøp billett",
    "city": "Oslo"
-  },
-  {
-   "title": "The Switch med venner presenterer: Jul på Torshov",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2026/desember/switch-med-venner-presenterer-jul-pa-torshov",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Plakat%20-%20The%20Switch%20-%20Cosmo%20-%20korbilde%20liggende%20%20IMG_5614%20kopi.jpg?itok=c1wCOt9N",
-   "from": "2026-12-21",
-   "to": "2026-12-21",
-   "about": "",
-   "hint": "Cosmopolite Scene Jul Kjøp billettThe Switch med venner presenterer: Jul på Torshov21. desember Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Lyst på livet – en kveld med Anne Lindmo og Nina Brochmann",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/lyst-pa-livet-en-kveld-med-anne-lindmo-og-nina-brochmann",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/Cosmopolite_83173397881368_6615677796216159597_Anne%20Lindmo%20og%20Nina%20Brochman-Lyst%20pa%CC%8A%20livet-3840x1492.png?h=7abede5f&itok=VLXJa1JE",
-   "from": "2027-01-11",
-   "to": "2027-01-11",
-   "about": "",
-   "hint": "Original Talks Foredrag Samtale Kjøp billettLyst på livet – en kveld med Anne Lindmo og Nina Brochmann11. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "På innsiden av psychohoder LIVE",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/pa-innsiden-av-psychohoder-live",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/Cosmopolite_83173397881368_6615668726218793978_Pa%CC%8A%20innsiden%20av%20psychohoder-3840x1492.png?h=2b0f3684&itok=dWf6uDgV",
-   "from": "2027-01-13",
-   "to": "2027-01-13",
-   "about": "",
-   "hint": "Original Talks Podcast Kjøp billettPå innsiden av psychohoder LIVE13. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "An evening with Airbag and Oak",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/evening-airbag-and-oak",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/Cosmopolite_83173397881368_6633969412123475143_Airbag_Oak.png?itok=PGpHjRCa",
-   "from": "2027-01-15",
-   "to": "2027-01-15",
-   "about": "",
-   "hint": "Airbag and Oak Alternativ Rock Kjøp billettAn evening with Airbag and Oak15. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Eddie Jobson’s U.K. Revisited",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/eddie-jobsons-uk-revisited",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Cosmopolite_83173397881368_6669097607145749864_IMG_8059.png?h=fadaf7db&itok=Zbf-mtCC",
-   "from": "2027-01-20",
-   "to": "2027-01-20",
-   "about": "",
-   "hint": "Zappaunion Progrock Kjøp billettEddie Jobson’s U.K. Revisited20. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Djangofestivalen 2027",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/djangofestivalen-2027",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Django_Reinhardt_%28Gottlieb_07301%29%20%282%29_0.jpg?h=be9e7839&itok=OdjxKo6s",
-   "from": "2027-01-21",
-   "to": "2027-01-21",
-   "about": "",
-   "hint": "Cosmopolite Scene String swing Kjøp billettDjangofestivalen 202721. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Djangofestivalen 2027",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/januar/djangofestivalen-2027-0",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Django_Reinhardt_%28Gottlieb_07301%29%20%282%29_2.jpg?h=0a880b8a&itok=lgHJji2H",
-   "from": "2027-01-22",
-   "to": "2027-01-22",
-   "about": "",
-   "hint": "Cosmopolite Scene String swing Kjøp billettDjangofestivalen 202722. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Djangofestivalen 2027",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/january/djangofestivalen-2027",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Django_Reinhardt_%28Gottlieb_07301%29%20%282%29_3.jpg?h=0a880b8a&itok=-Lltd3To",
-   "from": null,
-   "to": null,
-   "about": "",
-   "hint": "Cosmopolite Scene String swing Kjøp billettDjangofestivalen 202723. januar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "XTZ IMPRO 10 ÅR",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/xtz-impro-10-ar",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/XTZ%2010%20A%CC%8AR%20EKTE.001.jpeg?h=b409ebbf&itok=BQgplY1_",
-   "from": "2027-02-05",
-   "to": "2027-02-05",
-   "about": "",
-   "hint": "XTZ Impro Impro Kjøp billettXTZ IMPRO 10 ÅR5. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-0",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005.png?h=1a020742&itok=17k61R99",
-   "from": "2027-02-11",
-   "to": "2027-02-11",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth11. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005_0.png?itok=rpsCydTg",
-   "from": "2027-02-12",
-   "to": "2027-02-12",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth12. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-1",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005_1.png?itok=8vkw7Sf1",
-   "from": "2027-02-13",
-   "to": "2027-02-13",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth13. februar Kjøp billett",
-   "city": "Oslo"
   }
  ],
  "nyehjorten": [
-  {
-   "title": "Elling og Kjell Bjarne",
-   "venue": "Nye Hjorten Teater, Hovedscenen",
-   "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
-   "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
-   "times": [
-    "2026-10-23T19:00",
-    "2026-10-29T19:30",
-    "2026-10-30T19:30",
-    "2026-10-31T19:30",
-    "2026-11-05T19:30",
-    "2026-11-06T19:30",
-    "2026-11-07T19:30",
-    "2027-01-07T19:30",
-    "2027-01-08T19:30",
-    "2027-01-09T19:30",
-    "2027-01-13T19:30",
-    "2027-01-14T19:30",
-    "2027-01-15T19:30",
-    "2027-01-16T19:30",
-    "2027-01-23T19:30",
-    "2027-01-27T19:30",
-    "2027-01-28T20:00",
-    "2027-01-29T20:00",
-    "2027-01-30T19:30",
-    "2027-02-10T19:30",
-    "2027-02-11T19:30",
-    "2027-02-12T20:00",
-    "2027-02-13T19:30"
-   ],
-   "hint": "Elling og Kjell Bjarne",
-   "city": "Trondheim"
-  },
   {
    "title": "Evig Ung",
    "venue": "Nye Hjorten Teater, Hovedscenen",
@@ -16107,6 +15924,38 @@
     "2026-10-28T19:00"
    ],
    "hint": "Bokbad med Marte Heian-Engdal",
+   "city": "Trondheim"
+  },
+  {
+   "title": "Elling og Kjell Bjarne",
+   "venue": "Nye Hjorten Teater, Hovedscenen",
+   "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
+   "times": [
+    "2026-10-29T19:30",
+    "2026-10-30T19:30",
+    "2026-10-31T19:30",
+    "2026-11-05T19:30",
+    "2026-11-06T19:30",
+    "2026-11-07T19:30",
+    "2027-01-07T19:30",
+    "2027-01-08T19:30",
+    "2027-01-09T19:30",
+    "2027-01-13T19:30",
+    "2027-01-14T19:30",
+    "2027-01-15T19:30",
+    "2027-01-16T19:30",
+    "2027-01-23T19:30",
+    "2027-01-27T19:30",
+    "2027-01-28T20:00",
+    "2027-01-29T20:00",
+    "2027-01-30T19:30",
+    "2027-02-10T19:30",
+    "2027-02-11T19:30",
+    "2027-02-12T20:00",
+    "2027-02-13T19:30"
+   ],
+   "hint": "Elling og Kjell Bjarne",
    "city": "Trondheim"
   },
   {
@@ -16446,10 +16295,6 @@
    "p": [],
    "at": 1792536281632
   },
-  "https://christianiateaterscene.no/80": {
-   "p": [],
-   "at": 1792330893609
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/48485/": {
    "p": [],
    "at": 1792536281632
@@ -16482,6 +16327,10 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/47476/": {
    "p": [],
    "at": 1792536281632
+  },
+  "https://christianiateaterscene.no/80": {
+   "p": [],
+   "at": 1792330893609
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47636/": {
    "p": [],
@@ -17222,10 +17071,6 @@
    "p": [],
    "at": 1792547262622
   },
-  "https://cosmopolite.no/program/cosmopolite/2026/desember/switch-med-venner-presenterer-jul-pa-torshov": {
-   "p": [],
-   "at": 1792590834208
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/43683/": {
    "p": [],
    "at": 1792547262622
@@ -17246,17 +17091,9 @@
    "p": [],
    "at": 1792547262622
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/lyst-pa-livet-en-kveld-med-anne-lindmo-og-nina-brochmann": {
-   "p": [],
-   "at": 1792590834208
-  },
   "https://www.nationaltheatret.no/forestillinger/prima-facie": {
    "p": [],
    "at": 1792677331298
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/pa-innsiden-av-psychohoder-live": {
-   "p": [],
-   "at": 1792590834208
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46219/": {
    "p": [],
@@ -17271,17 +17108,9 @@
    ],
    "at": 1792547262622
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/evening-airbag-and-oak": {
-   "p": [],
-   "at": 1792590834208
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/33749/": {
    "p": [],
    "at": 1792547262622
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/eddie-jobsons-uk-revisited": {
-   "p": [],
-   "at": 1792590834208
   },
   "https://christianiateaterscene.no/lillebjorn": {
    "p": [],
@@ -17291,17 +17120,9 @@
    "p": [],
    "at": 1792550746691
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/djangofestivalen-2027": {
-   "p": [],
-   "at": 1792590834208
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46221/": {
    "p": [],
    "at": 1792550746691
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/januar/djangofestivalen-2027-0": {
-   "p": [],
-   "at": 1792590834208
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47868/": {
    "p": [],
@@ -17347,10 +17168,6 @@
    "p": [],
    "at": 1792550746691
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/xtz-impro-10-ar": {
-   "p": [],
-   "at": 1792590834208
-  },
   "https://billetter.okh.no/nb/buyingflow/package/924/": {
    "p": [],
    "at": 1792550746691
@@ -17384,14 +17201,6 @@
    "p": [],
    "at": 1792550746691
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-0": {
-   "p": [],
-   "at": 1792590834208
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth": {
-   "p": [],
-   "at": 1792695691976
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/49020/": {
    "p": [],
    "at": 1792550746691
@@ -17399,10 +17208,6 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/48865/": {
    "p": [],
    "at": 1792550746691
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-1": {
-   "p": [],
-   "at": 1792774574509
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46782/": {
    "p": [],
@@ -17753,15 +17558,6 @@
    "p": [],
    "at": 1792495413115
   },
-  "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/": {
-   "p": [
-    {
-     "l": "Fra",
-     "kr": 195
-    }
-   ],
-   "at": 1792554391612
-  },
   "https://www.operaen.no/forestillinger/operamysteriet-formidling/": {
    "p": [
     {
@@ -17776,6 +17572,15 @@
     {
      "l": "Fra",
      "kr": 395
+    }
+   ],
+   "at": 1792554391612
+  },
+  "https://www.operaen.no/forestillinger/leon-lightfoot-salle-de-danse-ballett/": {
+   "p": [
+    {
+     "l": "Fra",
+     "kr": 195
     }
    ],
    "at": 1792554391612
@@ -18194,10 +17999,6 @@
   "https://www.detnorsketeatret.no/innsikt/jennys-leseklubb": {
    "p": [],
    "at": 1792662609404
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/january/djangofestivalen-2027": {
-   "p": [],
-   "at": 1792590834208
   }
  }
 }
