@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-23T05:42:07.007Z",
+ "updated": "2026-10-23T06:53:22.101Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-23",
-   "h": 7,
+   "h": 8,
    "temp": 10,
    "wind": 3,
    "sym": "cloudy",
@@ -17,20 +17,11 @@
     "hours": [
      {
       "date": "2026-10-23",
-      "h": 7,
+      "h": 8,
       "temp": 10,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-23",
-      "h": 8,
-      "temp": 10,
-      "wind": 3,
-      "sym": "lightrain",
-      "rain": 0.1,
       "span": 1
      },
      {
@@ -47,13 +38,22 @@
       "h": 10,
       "temp": 10,
       "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 11,
+      "temp": 10,
+      "wind": 2,
+      "sym": "rain",
+      "rain": 0.3,
+      "span": 1
+     },
+     {
+      "date": "2026-10-23",
+      "h": 12,
       "temp": 10,
       "wind": 3,
       "sym": "cloudy",
@@ -62,18 +62,9 @@
      },
      {
       "date": "2026-10-23",
-      "h": 12,
-      "temp": 10,
-      "wind": 2,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-23",
       "h": 13,
       "temp": 11,
-      "wind": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -83,14 +74,14 @@
       "h": 14,
       "temp": 11,
       "wind": 3,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 15,
-      "temp": 11,
+      "temp": 12,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -99,7 +90,7 @@
      {
       "date": "2026-10-23",
       "h": 16,
-      "temp": 11,
+      "temp": 12,
       "wind": 3,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -127,7 +118,7 @@
       "date": "2026-10-23",
       "h": 19,
       "temp": 9,
-      "wind": 2,
+      "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -137,7 +128,7 @@
       "h": 20,
       "temp": 8,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -146,7 +137,7 @@
       "h": 21,
       "temp": 8,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -155,7 +146,7 @@
       "h": 22,
       "temp": 8,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -164,14 +155,14 @@
       "h": 23,
       "temp": 8,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      }
     ],
-    "max": 11,
+    "max": 12,
     "min": 8,
-    "rain": 0.3,
+    "rain": 0.8,
     "sym": "cloudy"
    },
    {
@@ -208,7 +199,7 @@
       "date": "2026-10-24",
       "h": 3,
       "temp": 7,
-      "wind": 3,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -225,7 +216,7 @@
      {
       "date": "2026-10-24",
       "h": 5,
-      "temp": 7,
+      "temp": 8,
       "wind": 5,
       "sym": "lightrain",
       "rain": 0.2,
@@ -237,16 +228,16 @@
       "temp": 8,
       "wind": 5,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.6,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 7,
       "temp": 8,
-      "wind": 5,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -255,7 +246,7 @@
       "temp": 8,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.7,
       "span": 1
      },
      {
@@ -279,8 +270,8 @@
      {
       "date": "2026-10-24",
       "h": 11,
-      "temp": 8,
-      "wind": 4,
+      "temp": 9,
+      "wind": 5,
       "sym": "rain",
       "rain": 0.3,
       "span": 1
@@ -300,7 +291,7 @@
       "temp": 9,
       "wind": 4,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -315,7 +306,7 @@
      {
       "date": "2026-10-24",
       "h": 15,
-      "temp": 9,
+      "temp": 10,
       "wind": 5,
       "sym": "rain",
       "rain": 0.3,
@@ -325,9 +316,9 @@
       "date": "2026-10-24",
       "h": 16,
       "temp": 10,
-      "wind": 5,
+      "wind": 6,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -344,15 +335,15 @@
       "h": 18,
       "temp": 10,
       "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 19,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "lightrain",
       "rain": 0.2,
       "span": 1
@@ -369,7 +360,7 @@
      {
       "date": "2026-10-24",
       "h": 21,
-      "temp": 9,
+      "temp": 10,
       "wind": 4,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -381,7 +372,7 @@
       "temp": 9,
       "wind": 4,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -396,7 +387,7 @@
     ],
     "max": 10,
     "min": 7,
-    "rain": 6.1,
+    "rain": 6.8,
     "sym": "rain"
    },
    {
@@ -417,7 +408,7 @@
       "temp": 9,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.5,
+      "rain": 1.4,
       "span": 1
      },
      {
@@ -426,7 +417,7 @@
       "temp": 9,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.2,
+      "rain": 1,
       "span": 1
      },
      {
@@ -435,7 +426,7 @@
       "temp": 10,
       "wind": 8,
       "sym": "rain",
-      "rain": 0.8,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -451,16 +442,16 @@
       "date": "2026-10-25",
       "h": 4,
       "temp": 10,
-      "wind": 8,
+      "wind": 7,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 5,
-      "temp": 9,
-      "wind": 9,
+      "temp": 10,
+      "wind": 8,
       "sym": "heavyrain",
       "rain": 1.5,
       "span": 1
@@ -477,7 +468,7 @@
      {
       "date": "2026-10-25",
       "h": 7,
-      "temp": 8,
+      "temp": 9,
       "wind": 9,
       "sym": "heavyrain",
       "rain": 1.9,
@@ -489,7 +480,7 @@
       "temp": 8,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.6,
+      "rain": 1.7,
       "span": 1
      },
      {
@@ -498,7 +489,7 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2,
+      "rain": 2.1,
       "span": 1
      },
      {
@@ -507,7 +498,7 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.8,
+      "rain": 2.1,
       "span": 1
      },
      {
@@ -516,13 +507,13 @@
       "temp": 8,
       "wind": 9,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 12,
-      "temp": 8,
+      "temp": 9,
       "wind": 7,
       "sym": "rain",
       "rain": 0.9,
@@ -531,8 +522,8 @@
      {
       "date": "2026-10-25",
       "h": 13,
-      "temp": 8,
-      "wind": 7,
+      "temp": 9,
+      "wind": 8,
       "sym": "rain",
       "rain": 3.4,
       "span": 6
@@ -549,7 +540,7 @@
     ],
     "max": 10,
     "min": 8,
-    "rain": 21.2,
+    "rain": 20.5,
     "sym": "rain"
    },
    {
@@ -8895,6 +8886,17 @@
    "to": null,
    "about": "",
    "hint": "FOR BARNPippi på sirkusSuksessen kjem tilbake våren 2027!Kjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Litteraturhuset på Det Norske TeatretKarl Ove Knausgård",
+   "venue": "Det Norske Teatret",
+   "url": "https://www.detnorsketeatret.no/framsyningar/karl-ove-knausgard",
+   "img": "https://detnorsketeatret.imgix.net/Image-4.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.8224&fp-y=0.5001&h=203&ixlib=php-3.3.1&w=365",
+   "from": null,
+   "to": null,
+   "about": "",
+   "hint": "Litteraturhuset på Det Norske TeatretKarl Ove Knausgård I samtale med Kathrine Tschemerinsky (Weekendavisen) om siste bind i Morgenstjernen-serien.Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -18476,6 +18478,10 @@
   "https://www.detnorsketeatret.no/framsyningar/pippi-pa-sirkus": {
    "p": [],
    "at": 1792557939903
+  },
+  "https://www.detnorsketeatret.no/framsyningar/karl-ove-knausgard": {
+   "p": [],
+   "at": 1792738540569
   },
   "https://www.detnorsketeatret.no/framsyningar/gutta": {
    "p": [],
