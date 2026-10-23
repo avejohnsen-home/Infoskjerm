@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-23T09:57:50.952Z",
+ "updated": "2026-10-23T10:41:43.833Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-23",
-   "h": 11,
+   "h": 12,
    "temp": 10,
-   "wind": 2,
+   "wind": 3,
    "sym": "rain",
-   "rain": 0.3,
+   "rain": 0.4,
    "span": 1
   },
   "days": [
@@ -17,37 +17,28 @@
     "hours": [
      {
       "date": "2026-10-23",
-      "h": 11,
-      "temp": 10,
-      "wind": 2,
-      "sym": "rain",
-      "rain": 0.3,
-      "span": 1
-     },
-     {
-      "date": "2026-10-23",
       "h": 12,
       "temp": 10,
       "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "rain",
+      "rain": 0.4,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 13,
       "temp": 11,
-      "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
+      "wind": 2,
+      "sym": "lightrain",
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-10-23",
       "h": 14,
       "temp": 11,
-      "wind": 3,
-      "sym": "partlycloudy_day",
+      "wind": 2,
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -55,7 +46,7 @@
       "date": "2026-10-23",
       "h": 15,
       "temp": 12,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -82,8 +73,8 @@
       "date": "2026-10-23",
       "h": 18,
       "temp": 10,
-      "wind": 3,
-      "sym": "partlycloudy_night",
+      "wind": 2,
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -91,8 +82,8 @@
       "date": "2026-10-23",
       "h": 19,
       "temp": 9,
-      "wind": 3,
-      "sym": "partlycloudy_night",
+      "wind": 2,
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -110,7 +101,7 @@
       "h": 21,
       "temp": 8,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -119,7 +110,7 @@
       "h": 22,
       "temp": 8,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -128,15 +119,15 @@
       "h": 23,
       "temp": 8,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      }
     ],
     "max": 12,
     "min": 8,
-    "rain": 0.3,
-    "sym": "cloudy"
+    "rain": 0.5,
+    "sym": "lightrain"
    },
    {
     "date": "2026-10-24",
@@ -154,7 +145,7 @@
       "date": "2026-10-24",
       "h": 1,
       "temp": 8,
-      "wind": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -172,7 +163,7 @@
       "date": "2026-10-24",
       "h": 3,
       "temp": 7,
-      "wind": 4,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -191,17 +182,17 @@
       "h": 5,
       "temp": 7,
       "wind": 5,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 6,
-      "temp": 8,
+      "temp": 7,
       "wind": 5,
       "sym": "rain",
-      "rain": 0.6,
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -210,7 +201,7 @@
       "temp": 8,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.7,
       "span": 1
      },
      {
@@ -219,7 +210,7 @@
       "temp": 8,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.8,
       "span": 1
      },
      {
@@ -228,16 +219,16 @@
       "temp": 8,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 10,
       "temp": 8,
-      "wind": 6,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 5,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -245,8 +236,8 @@
       "h": 11,
       "temp": 9,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.3,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -254,8 +245,8 @@
       "h": 12,
       "temp": 9,
       "wind": 4,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "rain",
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -263,35 +254,35 @@
       "h": 13,
       "temp": 9,
       "wind": 4,
+      "sym": "heavyrain",
+      "rain": 1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-24",
+      "h": 14,
+      "temp": 10,
+      "wind": 4,
       "sym": "rain",
       "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-24",
-      "h": 14,
-      "temp": 9,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.4,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
       "h": 15,
       "temp": 10,
-      "wind": 5,
+      "wind": 3,
       "sym": "rain",
-      "rain": 0.3,
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 16,
       "temp": 10,
-      "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "wind": 4,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -299,8 +290,8 @@
       "h": 17,
       "temp": 10,
       "wind": 5,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -318,7 +309,7 @@
       "temp": 10,
       "wind": 5,
       "sym": "lightrain",
-      "rain": 0.2,
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -334,34 +325,34 @@
       "date": "2026-10-24",
       "h": 21,
       "temp": 10,
-      "wind": 4,
-      "sym": "partlycloudy_night",
+      "wind": 5,
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 22,
-      "temp": 9,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.6,
+      "temp": 10,
+      "wind": 5,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 23,
-      "temp": 9,
+      "temp": 10,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.9,
+      "rain": 0.4,
       "span": 1
      }
     ],
     "max": 10,
     "min": 7,
-    "rain": 6.8,
-    "sym": "rain"
+    "rain": 7.2,
+    "sym": "heavyrain"
    },
    {
     "date": "2026-10-25",
@@ -370,9 +361,9 @@
       "date": "2026-10-25",
       "h": 0,
       "temp": 9,
-      "wind": 7,
+      "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.7,
+      "rain": 1.2,
       "span": 1
      },
      {
@@ -381,25 +372,25 @@
       "temp": 9,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.4,
+      "rain": 1.6,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 2,
       "temp": 9,
-      "wind": 8,
-      "sym": "heavyrain",
-      "rain": 1,
+      "wind": 7,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 2,
-      "temp": 10,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.3,
+      "temp": 9,
+      "wind": 6,
+      "sym": "heavyrain",
+      "rain": 1,
       "span": 1
      },
      {
@@ -415,45 +406,45 @@
       "date": "2026-10-25",
       "h": 4,
       "temp": 10,
-      "wind": 7,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.3,
+      "rain": 0.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 5,
-      "temp": 10,
+      "temp": 9,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.5,
+      "rain": 1.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 6,
       "temp": 9,
-      "wind": 9,
-      "sym": "heavyrain",
-      "rain": 1.6,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
-      "h": 7,
-      "temp": 9,
-      "wind": 9,
+      "wind": 8,
       "sym": "heavyrain",
       "rain": 1.9,
       "span": 1
      },
      {
       "date": "2026-10-25",
-      "h": 8,
-      "temp": 8,
+      "h": 7,
+      "temp": 9,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.7,
+      "rain": 2,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 8,
+      "temp": 8,
+      "wind": 7,
+      "sym": "heavyrain",
+      "rain": 2.2,
       "span": 1
      },
      {
@@ -462,16 +453,16 @@
       "temp": 8,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2.1,
+      "rain": 1.7,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 10,
       "temp": 8,
-      "wind": 7,
+      "wind": 8,
       "sym": "heavyrain",
-      "rain": 2.1,
+      "rain": 1.2,
       "span": 1
      },
      {
@@ -479,17 +470,17 @@
       "h": 11,
       "temp": 8,
       "wind": 9,
-      "sym": "rain",
-      "rain": 0.3,
+      "sym": "heavyrain",
+      "rain": 1.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 12,
       "temp": 8,
-      "wind": 7,
+      "wind": 8,
       "sym": "rain",
-      "rain": 0.9,
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -497,15 +488,60 @@
       "h": 13,
       "temp": 9,
       "wind": 8,
+      "sym": "lightrain",
+      "rain": 0.2,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 14,
+      "temp": 9,
+      "wind": 8,
       "sym": "rain",
-      "rain": 3.4,
-      "span": 6
+      "rain": 0.7,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 15,
+      "temp": 9,
+      "wind": 8,
+      "sym": "heavyrain",
+      "rain": 1.7,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 16,
+      "temp": 10,
+      "wind": 8,
+      "sym": "heavyrain",
+      "rain": 2.6,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 17,
+      "temp": 10,
+      "wind": 5,
+      "sym": "heavyrain",
+      "rain": 2.1,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 18,
+      "temp": 10,
+      "wind": 6,
+      "sym": "heavyrain",
+      "rain": 1.2,
+      "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 19,
       "temp": 10,
-      "wind": 6,
+      "wind": 5,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -513,8 +549,8 @@
     ],
     "max": 10,
     "min": 8,
-    "rain": 20.5,
-    "sym": "rain"
+    "rain": 25.7,
+    "sym": "lightrain"
    },
    {
     "date": "2026-10-26",
@@ -523,9 +559,9 @@
       "date": "2026-10-26",
       "h": 1,
       "temp": 9,
-      "wind": 5,
-      "sym": "rain",
-      "rain": 1.9,
+      "wind": 4,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 6
      },
      {
@@ -541,8 +577,8 @@
       "date": "2026-10-26",
       "h": 13,
       "temp": 12,
-      "wind": 5,
-      "sym": "partlycloudy_day",
+      "wind": 4,
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
@@ -558,8 +594,8 @@
     ],
     "max": 12,
     "min": 8,
-    "rain": 1.9,
-    "sym": "partlycloudy_day"
+    "rain": 0,
+    "sym": "fair_day"
    },
    {
     "date": "2026-10-27",
@@ -567,19 +603,19 @@
      {
       "date": "2026-10-27",
       "h": 1,
-      "temp": 8,
+      "temp": 7,
       "wind": 3,
-      "sym": "rainshowers_night",
-      "rain": 3.2,
+      "sym": "rain",
+      "rain": 3.1,
       "span": 6
      },
      {
       "date": "2026-10-27",
       "h": 7,
-      "temp": 8,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 3.4,
+      "temp": 9,
+      "wind": 3,
+      "sym": "rain",
+      "rain": 3,
       "span": 6
      },
      {
@@ -594,16 +630,16 @@
      {
       "date": "2026-10-27",
       "h": 19,
-      "temp": 12,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 2.7,
+      "temp": 13,
+      "wind": 8,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 6
      }
     ],
-    "max": 12,
-    "min": 8,
-    "rain": 9.3,
+    "max": 13,
+    "min": 7,
+    "rain": 6.1,
     "sym": "cloudy"
    },
    {
@@ -613,15 +649,15 @@
       "date": "2026-10-28",
       "h": 1,
       "temp": 11,
-      "wind": 6,
-      "sym": "cloudy",
+      "wind": 7,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-28",
       "h": 7,
-      "temp": 10,
+      "temp": 9,
       "wind": 6,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -630,7 +666,7 @@
      {
       "date": "2026-10-28",
       "h": 13,
-      "temp": 13,
+      "temp": 12,
       "wind": 6,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -639,15 +675,15 @@
      {
       "date": "2026-10-28",
       "h": 19,
-      "temp": 11,
+      "temp": 10,
       "wind": 4,
       "sym": "fair_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 13,
-    "min": 10,
+    "max": 12,
+    "min": 9,
     "rain": 0,
     "sym": "partlycloudy_day"
    },
@@ -657,7 +693,7 @@
      {
       "date": "2026-10-29",
       "h": 1,
-      "temp": 8,
+      "temp": 9,
       "wind": 3,
       "sym": "fair_night",
       "rain": 0,
@@ -666,18 +702,18 @@
      {
       "date": "2026-10-29",
       "h": 7,
-      "temp": 7,
-      "wind": 2,
-      "sym": "fair_day",
+      "temp": 8,
+      "wind": 3,
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-29",
       "h": 13,
-      "temp": 12,
-      "wind": 2,
-      "sym": "partlycloudy_day",
+      "temp": 13,
+      "wind": 3,
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
@@ -691,10 +727,10 @@
       "span": 6
      }
     ],
-    "max": 12,
-    "min": 7,
+    "max": 13,
+    "min": 8,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "fair_day"
    }
   ]
  },
@@ -1048,22 +1084,6 @@
    "shows": [
     {
      "d": "2026-10-23",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/1002/faf7f1eb-4dc5-47de-9aca-1dd877929d35"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/3ae65ee0-ea19-41d0-bb9b-ca6e2e75d2ad"
-    },
-    {
-     "d": "2026-10-23",
      "t": "12:45",
      "c": "Saga",
      "r": "3",
@@ -1257,18 +1277,18 @@
     {
      "d": "2026-10-24",
      "t": "18:00",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/0803d755-ebae-4bee-a659-77e765b99f8d"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "18:00",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/e09660e9-57e8-4d7c-83ad-a5747c662de4"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "18:00",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/0803d755-ebae-4bee-a659-77e765b99f8d"
     },
     {
      "d": "2026-10-24",
@@ -1329,18 +1349,18 @@
     {
      "d": "2026-10-25",
      "t": "15:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:30",
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "15:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
     },
     {
      "d": "2026-10-25",
@@ -1449,18 +1469,18 @@
     {
      "d": "2026-10-26",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
     },
     {
      "d": "2026-10-26",
@@ -1769,18 +1789,18 @@
     {
      "d": "2026-10-29",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
     },
     {
      "d": "2026-10-29",
@@ -1814,7 +1834,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-23T09:58:25.283Z",
    "city": "Oslo"
   },
@@ -1898,7 +1917,6 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "imdbId": "tt0011440",
    "ratingsAt": "2026-10-23T09:58:25.338Z",
    "city": "Oslo"
   },
@@ -2079,7 +2097,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-23T09:58:25.396Z",
    "city": "Oslo"
   },
@@ -2148,7 +2165,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37968648",
    "ratingsAt": "2026-10-23T09:58:25.454Z",
    "city": "Oslo"
   },
@@ -2173,19 +2189,11 @@
    "shows": [
     {
      "d": "2026-10-23",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/2439/b54d92ce-61c3-4af4-bbfb-35e5c9970e80"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "12:30",
+     "t": "18:00",
      "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/1002/bad730c6-1590-4f89-a6ce-8ea953c9433d"
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
     },
     {
      "d": "2026-10-23",
@@ -2194,14 +2202,6 @@
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/9672045d-7bc7-405b-9a19-18b3be7a64a4"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "18:00",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/4e98d653-11e1-497d-a9eb-1c0c156c7152"
     },
     {
      "d": "2026-10-23",
@@ -2286,18 +2286,18 @@
     {
      "d": "2026-10-25",
      "t": "17:30",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/b20e60b5-af04-4eab-80c3-00279547bf9b"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "17:30",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/9934f591-a1b2-4618-ad9f-24c713137524"
+    },
+    {
+     "d": "2026-10-25",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/b20e60b5-af04-4eab-80c3-00279547bf9b"
     },
     {
      "d": "2026-10-25",
@@ -2523,7 +2523,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt6492922",
    "ratingsAt": "2026-10-23T09:58:25.514Z",
    "city": "Oslo"
   },
@@ -2544,22 +2543,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-23",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1002/cfc483f7-264e-4c59-a4b8-d72cee729321"
-    },
-    {
-     "d": "2026-10-23",
-     "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/135fe5a5-8522-4b33-8ff9-8500bc127733"
-    },
     {
      "d": "2026-10-23",
      "t": "15:10",
@@ -2819,26 +2802,18 @@
     {
      "d": "2026-10-27",
      "t": "17:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/5618c25e-542b-4025-af5b-30629ce08983"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale",
      "u": "https://www.nfkino.no/screening/2590/798b1f88-6c82-4b1d-86e4-bdbb45082441"
     },
     {
-     "d": "2026-10-28",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "1",
+     "d": "2026-10-27",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
      "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/17fd1140-7bde-4eba-9df3-b04bf1a1250a"
+     "u": "https://www.nfkino.no/screening/2439/5618c25e-542b-4025-af5b-30629ce08983"
     },
     {
      "d": "2026-10-28",
@@ -2936,7 +2911,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "imdbId": "tt36841161",
    "ratingsAt": "2026-10-23T09:58:25.574Z",
    "city": "Oslo"
   },
@@ -3274,7 +3248,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-23T09:58:26.098Z",
    "city": "Oslo"
   },
@@ -3585,14 +3558,6 @@
    "shows": [
     {
      "d": "2026-10-23",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/2439/39772330-29b3-4284-9331-fe112445844e"
-    },
-    {
-     "d": "2026-10-23",
      "t": "15:15",
      "c": "Ringen",
      "r": "4",
@@ -3863,7 +3828,6 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.6",
-   "imdbId": "tt33095251",
    "ratingsAt": "2026-10-23T09:58:26.378Z",
    "city": "Oslo"
   },
@@ -4010,7 +3974,6 @@
    "year": "",
    "rt": "31%",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-23T09:58:26.435Z",
    "city": "Oslo"
   },
@@ -4204,7 +4167,6 @@
    "year": "",
    "rt": "20%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-23T09:58:26.492Z",
    "city": "Oslo"
   },
@@ -4221,14 +4183,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-23",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/1300c725-e272-4d63-b70b-b7e915649eee"
-    },
     {
      "d": "2026-10-24",
      "t": "11:45",
@@ -4357,7 +4311,6 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "imdbId": "tt36583977",
    "ratingsAt": "2026-10-23T09:58:26.549Z",
    "city": "Oslo"
   },
@@ -4665,7 +4618,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt38807889",
    "ratingsAt": "2026-10-23T09:58:26.609Z",
    "city": "Oslo"
   },
@@ -4797,7 +4749,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-23T09:58:26.664Z",
    "city": "Oslo"
   }
@@ -13449,7 +13400,7 @@
     "2027-01-08T20:00"
    ],
    "hint": "Hard Rock Heavy Metal Metal",
-   "about": "Fredag 8. januar 2027 inntar vi Vulkan Arena i Oslo. Runway Rock Fests daglig leder fyller 50 år ved midnatt – og det feirer vi med en heidundrende kick-off-fest for festivalen. Med oss på feiringen har vi fått med oss t",
+   "about": "Festivalen i mai blir tidenes første Runway Rock Fest - og det feirer vi med et smell med kick-off på Vulkan Arena i januar! I tillegg til dette, så feirer vi vår daglige leder som fyller 50 år ved midnatt! Med oss på fe",
    "city": "Oslo"
   },
   {
@@ -15756,14 +15707,14 @@
    "city": "Oslo"
   },
   {
-   "title": "Lizz Wright",
+   "title": "Utsolgt",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/november/lizz-wright",
    "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-04/Lizz%20Wright%20by%20Hollis%20King%20%28sIMG_6612%29.jpg?h=944009b3&itok=gH8jasAI",
    "from": "2026-11-07",
    "to": "2026-11-07",
    "about": "",
-   "hint": "Cosmopolite Scene Jazz Soul Få billetterLizz Wright7. november Få billetter",
+   "hint": "Cosmopolite Scene Jazz Soul UtsolgtLizz Wright7. november Utsolgt",
    "city": "Oslo"
   },
   {
