@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-23T06:53:22.101Z",
+ "updated": "2026-10-23T07:51:34.784Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-23",
-   "h": 8,
+   "h": 9,
    "temp": 10,
    "wind": 3,
-   "sym": "cloudy",
-   "rain": 0,
+   "sym": "lightrain",
+   "rain": 0.2,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-23",
     "hours": [
-     {
-      "date": "2026-10-23",
-      "h": 8,
-      "temp": 10,
-      "wind": 3,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-23",
       "h": 9,
@@ -216,7 +207,7 @@
      {
       "date": "2026-10-24",
       "h": 5,
-      "temp": 8,
+      "temp": 7,
       "wind": 5,
       "sym": "lightrain",
       "rain": 0.2,
@@ -867,9 +858,50 @@
     "2027-04-17T21:00"
    ],
    "city": "Oslo"
+  },
+  {
+   "title": "Great Leadership Forum",
+   "venue": "Christiania Teater",
+   "url": "https://christianiateaterscene.no/greatplacetowork",
+   "img": "https://cdn.sanity.io/images/g24jximr/production/20907a3300029d59a3c3b0aae39d4cb533ccab21-1850x1850.jpg?h=400&auto=format",
+   "times": [
+    "2027-04-13T12:00"
+   ],
+   "city": "Oslo"
+  },
+  {
+   "title": "Isabel Skolmen",
+   "venue": "Christiania Teater",
+   "url": "https://christianiateaterscene.no/isabelskolmen",
+   "img": "https://cdn.sanity.io/images/g24jximr/production/e222ead76aa080e434172ed5a5033b56a53dd0a5-1850x1850.jpg?h=400&auto=format",
+   "times": [
+    "2027-04-14T18:00",
+    "2027-04-28T18:00"
+   ],
+   "city": "Oslo"
   }
  ],
  "nationaltheatret": [
+  {
+   "title": "En julefortelling",
+   "venue": "Nationaltheatret, Hovedscenen",
+   "url": "https://www.nationaltheatret.no/forestillinger/en-julefortelling",
+   "img": "https://cdn.sanity.io/images/4hthkcie/production/e6529b6daeb0cf454f50cdf7d566d7710bfd62e8-3840x2596.jpg?rect=0,0,3840,2160&w=1280&h=720&q=60&fit=max&auto=format",
+   "from": "2026-10-29",
+   "to": "2026-12-31",
+   "about": "Den griske gjerrigknarken Scrooge får gjenferd på besøk, og lærer en viktig lekse om julens budskap i Dickens’ klassiker for hele familien.",
+   "city": "Oslo"
+  },
+  {
+   "title": "Relæxt julefortelling",
+   "venue": "Nationaltheatret, Hovedscenen",
+   "url": "https://www.nationaltheatret.no/forestillinger/relaext-julefortelling",
+   "img": "https://cdn.sanity.io/images/4hthkcie/production/d401d1a5df6d54fa9f238b0ff96725ec09fba6e2-1920x1080.png?w=1280&h=720&q=60&fit=max&auto=format",
+   "from": "2026-11-04",
+   "to": "2026-11-04",
+   "about": "Velkommen til Relæxt julefortelling – en teaterkveld spesielt tilpasset barn, voksne og familier som har ønske om og behov for litt mer avslappede rammer.",
+   "city": "Oslo"
+  },
   {
    "title": "Fruen fra havet",
    "venue": "Nationaltheatret, Hovedscenen",
@@ -881,6 +913,16 @@
    "city": "Oslo"
   },
   {
+   "title": "Little Women",
+   "venue": "Nationaltheatret, Hovedscenen",
+   "url": "https://www.nationaltheatret.no/forestillinger/little-women",
+   "img": "https://cdn.sanity.io/images/4hthkcie/production/aa5dfd05f40ca54f53eda782ef829a09ded350c5-1920x1080.jpg?w=1280&h=720&q=60&fit=max&auto=format",
+   "from": "2026-12-04",
+   "to": "2027-02-13",
+   "about": "Den berømte såre, nådeløse og morsomme oppveksthistorien Little Women blir teater!",
+   "city": "Oslo"
+  },
+  {
    "title": "Haugtussa",
    "venue": "Nationaltheatret, Hovedscenen",
    "url": "https://www.nationaltheatret.no/forestillinger/haugtussa",
@@ -888,26 +930,6 @@
    "from": "2026-09-22",
    "to": "2026-10-31",
    "about": "Etter å ha gått for fulle hus og blitt stående igjen som en av de mest markante teateropplevelsene i nyere norsk teaterhistorie, vender Haugtussa tilbake til Hovedscenen.",
-   "city": "Oslo"
-  },
-  {
-   "title": "En julefortelling",
-   "venue": "Nationaltheatret, Hovedscenen",
-   "url": "https://www.nationaltheatret.no/forestillinger/en-julefortelling",
-   "img": "https://cdn.sanity.io/images/4hthkcie/production/e7a20d0e95541f2f4a9ecdba5f725921dfcfc49b-2880x2160.png?rect=0,105,2880,1620&w=1280&h=720&q=60&fit=max&auto=format",
-   "from": "2026-10-29",
-   "to": "2026-12-31",
-   "about": "Den griske gjerrigknarken Scrooge får gjenferd på besøk, og lærer en viktig lekse om julens budskap i Dickens’ klassiker for hele familien.",
-   "city": "Oslo"
-  },
-  {
-   "title": "Relæxt julefortelling",
-   "venue": "Nationaltheatret, Hovedscenen",
-   "url": "https://www.nationaltheatret.no/forestillinger/relaext-julefortelling",
-   "img": "https://cdn.sanity.io/images/4hthkcie/production/eac4c9757f6bbc88053b010c30134f55588440b4-1920x1080.png?w=1280&h=720&q=60&fit=max&auto=format",
-   "from": "2026-11-04",
-   "to": "2026-11-04",
-   "about": "Velkommen til Relæxt julefortelling – en teaterkveld spesielt tilpasset barn, voksne og familier som har ønske om og behov for litt mer avslappede rammer.",
    "city": "Oslo"
   },
   {
@@ -928,16 +950,6 @@
    "from": "2026-11-07",
    "to": "2026-11-08",
    "about": "Regissør Oskaras Koršunovas og litauiske Valstybinis Jaunimo Teatras gjester Ibsenfestivalen med et dypdykk ned i Henrik Ibsens mesterverk om den store livsløgnen.",
-   "city": "Oslo"
-  },
-  {
-   "title": "Little Women",
-   "venue": "Nationaltheatret, Hovedscenen",
-   "url": "https://www.nationaltheatret.no/forestillinger/little-women",
-   "img": "https://cdn.sanity.io/images/4hthkcie/production/aa5dfd05f40ca54f53eda782ef829a09ded350c5-1920x1080.jpg?w=1280&h=720&q=60&fit=max&auto=format",
-   "from": "2026-12-04",
-   "to": "2027-02-13",
-   "about": "Den berømte såre, nådeløse og morsomme oppveksthistorien Little Women blir teater!",
    "city": "Oslo"
   },
   {
@@ -6708,7 +6720,7 @@
     "2026-11-13T19:00",
     "2026-11-14T18:00"
    ],
-   "hint": "Seniorkilden Teater U30 av Susie Wang",
+   "hint": "Teater U30 av Susie Wang",
    "about": "av Susie Wang",
    "city": "Kristiansand"
   },
@@ -13152,6 +13164,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Flammer Dance Band",
+   "venue": "Blå",
+   "url": "https://www.ticketmaster.no/event/852746450",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_kZllRWjTh?tr=w-600",
+   "times": [
+    "2026-12-04T20:00"
+   ],
+   "hint": "funk psychedelic",
+   "about": "Flammer er et syvmannsensemble fra Norge som spesialiserer seg på psykedelisk funk, inspirert av 1970-tallets funky musikkæra. I en verden der musikken ofte streber etter perfeksjon og polert produksjon, byr Flammer på e",
+   "city": "Oslo"
+  },
+  {
    "title": "Fakethias (DJ) + Onleash + Sport7000",
    "venue": "Blå",
    "url": "https://www.ticketmaster.no/event/920499601",
@@ -13726,7 +13750,7 @@
    "title": "Orffs Carmina Burana",
    "venue": "Oslo Konserthus, Store sal",
    "url": "https://billetter.okh.no/nb/buyingflow/tickets/47476/",
-   "img": "https://cdn.mustasj.dev/okh/production/bilder/47383206/Feature_47476-v1789050592_2714657282f6038b708bd13864fd5f3f.jpg",
+   "img": "https://cdn.mustasj.dev/okh/production/bilder/49212922/Feature_47476-v1792738730_2714657282f6038b708bd13864fd5f3f.jpg",
    "times": [
     "2026-10-24T16:00",
     "2026-10-24T17:05",
@@ -13734,7 +13758,7 @@
     "2026-10-24T20:35"
    ],
    "hint": "klassisk",
-   "about": "Oslo oratoriekor sammen med Sølvguttene og   Oslo symfoniorkester",
+   "about": "Oslo Oratoriekor sammen med Sølvguttene, Oslo Domkirkes Guttekor og Oslo Symfoniorkester",
    "city": "Oslo"
   },
   {
@@ -17884,6 +17908,14 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/46592/": {
    "p": [],
    "at": 1792554391612
+  },
+  "https://christianiateaterscene.no/greatplacetowork": {
+   "p": [],
+   "at": 1792742051656
+  },
+  "https://christianiateaterscene.no/isabelskolmen": {
+   "p": [],
+   "at": 1792742051656
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45360/": {
    "p": [],
