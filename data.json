@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-24T03:42:42.009Z",
+ "updated": "2026-10-24T04:41:29.733Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-24",
-   "h": 5,
+   "h": 6,
    "temp": 8,
    "wind": 5,
-   "sym": "cloudy",
-   "rain": 0,
+   "sym": "rain",
+   "rain": 0.3,
    "span": 1
   },
   "days": [
@@ -17,36 +17,27 @@
     "hours": [
      {
       "date": "2026-10-24",
-      "h": 5,
-      "temp": 8,
-      "wind": 5,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-24",
       "h": 6,
       "temp": 8,
       "wind": 5,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 7,
-      "temp": 8,
-      "wind": 5,
+      "temp": 9,
+      "wind": 6,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.7,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 8,
       "temp": 9,
-      "wind": 5,
+      "wind": 6,
       "sym": "rain",
       "rain": 0.5,
       "span": 1
@@ -57,7 +48,7 @@
       "temp": 9,
       "wind": 6,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -65,17 +56,17 @@
       "h": 10,
       "temp": 9,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.3,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 11,
       "temp": 9,
-      "wind": 4,
+      "wind": 5,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -84,7 +75,7 @@
       "temp": 9,
       "wind": 4,
       "sym": "rain",
-      "rain": 0.3,
+      "rain": 0.8,
       "span": 1
      },
      {
@@ -92,8 +83,8 @@
       "h": 13,
       "temp": 9,
       "wind": 4,
-      "sym": "rain",
-      "rain": 0.9,
+      "sym": "heavyrain",
+      "rain": 1,
       "span": 1
      },
      {
@@ -102,7 +93,7 @@
       "temp": 9,
       "wind": 3,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -111,7 +102,7 @@
       "temp": 10,
       "wind": 3,
       "sym": "lightrain",
-      "rain": 0.1,
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -119,8 +110,8 @@
       "h": 16,
       "temp": 10,
       "wind": 4,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -128,8 +119,8 @@
       "h": 17,
       "temp": 10,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.4,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -137,8 +128,8 @@
       "h": 18,
       "temp": 10,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.3,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -147,16 +138,16 @@
       "temp": 10,
       "wind": 5,
       "sym": "lightrain",
-      "rain": 0.2,
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 20,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "lightrain",
-      "rain": 0.2,
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -174,23 +165,23 @@
       "temp": 10,
       "wind": 4,
       "sym": "heavyrain",
-      "rain": 1.3,
+      "rain": 1.2,
       "span": 1
      },
      {
       "date": "2026-10-24",
       "h": 23,
       "temp": 10,
-      "wind": 6,
+      "wind": 5,
       "sym": "heavyrain",
-      "rain": 1.6,
+      "rain": 1.5,
       "span": 1
      }
     ],
     "max": 10,
     "min": 8,
-    "rain": 8.2,
-    "sym": "rain"
+    "rain": 8.9,
+    "sym": "heavyrain"
    },
    {
     "date": "2026-10-25",
@@ -200,8 +191,8 @@
       "h": 0,
       "temp": 10,
       "wind": 7,
-      "sym": "rain",
-      "rain": 0.9,
+      "sym": "heavyrain",
+      "rain": 1.2,
       "span": 1
      },
      {
@@ -209,8 +200,8 @@
       "h": 1,
       "temp": 10,
       "wind": 8,
-      "sym": "rain",
-      "rain": 0.8,
+      "sym": "heavyrain",
+      "rain": 1.4,
       "span": 1
      },
      {
@@ -219,12 +210,39 @@
       "temp": 10,
       "wind": 6,
       "sym": "heavyrain",
-      "rain": 2,
+      "rain": 2.1,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 2,
+      "temp": 10,
+      "wind": 7,
+      "sym": "rain",
+      "rain": 0.8,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 3,
+      "temp": 10,
+      "wind": 8,
+      "sym": "rain",
+      "rain": 0.5,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 4,
+      "temp": 10,
+      "wind": 6,
+      "sym": "rain",
+      "rain": 0.3,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
+      "h": 5,
       "temp": 10,
       "wind": 8,
       "sym": "heavyrain",
@@ -233,43 +251,7 @@
      },
      {
       "date": "2026-10-25",
-      "h": 3,
-      "temp": 10,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.4,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
-      "h": 4,
-      "temp": 10,
-      "wind": 7,
-      "sym": "lightrain",
-      "rain": 0.1,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
-      "h": 5,
-      "temp": 10,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.9,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
       "h": 6,
-      "temp": 9,
-      "wind": 9,
-      "sym": "heavyrain",
-      "rain": 2.4,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
-      "h": 7,
       "temp": 9,
       "wind": 9,
       "sym": "heavyrain",
@@ -278,11 +260,20 @@
      },
      {
       "date": "2026-10-25",
+      "h": 7,
+      "temp": 9,
+      "wind": 9,
+      "sym": "heavyrain",
+      "rain": 2.2,
+      "span": 1
+     },
+     {
+      "date": "2026-10-25",
       "h": 8,
       "temp": 8,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.8,
+      "rain": 2,
       "span": 1
      },
      {
@@ -291,7 +282,7 @@
       "temp": 8,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.5,
+      "rain": 1.8,
       "span": 1
      },
      {
@@ -300,16 +291,16 @@
       "temp": 8,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.8,
+      "rain": 1.3,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 11,
       "temp": 8,
-      "wind": 7,
+      "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.2,
+      "rain": 1.4,
       "span": 1
      },
      {
@@ -317,17 +308,17 @@
       "h": 12,
       "temp": 8,
       "wind": 7,
-      "sym": "rain",
-      "rain": 0.8,
+      "sym": "heavyrain",
+      "rain": 1.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 13,
       "temp": 8,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.5,
+      "wind": 7,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -335,8 +326,8 @@
       "h": 14,
       "temp": 9,
       "wind": 7,
-      "sym": "rain",
-      "rain": 0.5,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -352,9 +343,9 @@
       "date": "2026-10-25",
       "h": 16,
       "temp": 9,
-      "wind": 8,
+      "wind": 7,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -363,16 +354,16 @@
       "temp": 9,
       "wind": 7,
       "sym": "heavyrain",
-      "rain": 2.5,
+      "rain": 1.1,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 18,
-      "temp": 9,
-      "wind": 8,
+      "temp": 10,
+      "wind": 7,
       "sym": "heavyrain",
-      "rain": 2,
+      "rain": 1.3,
       "span": 1
      },
      {
@@ -380,33 +371,33 @@
       "h": 19,
       "temp": 10,
       "wind": 6,
-      "sym": "heavyrain",
-      "rain": 1.3,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 20,
       "temp": 10,
-      "wind": 4,
+      "wind": 6,
       "sym": "heavyrain",
-      "rain": 1,
+      "rain": 1.2,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 21,
       "temp": 10,
-      "wind": 4,
-      "sym": "rain",
-      "rain": 0.9,
+      "wind": 6,
+      "sym": "heavyrain",
+      "rain": 2.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 22,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "rain",
       "rain": 0.7,
       "span": 1
@@ -415,16 +406,16 @@
       "date": "2026-10-25",
       "h": 23,
       "temp": 10,
-      "wind": 3,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "wind": 4,
+      "sym": "heavyrain",
+      "rain": 1.4,
       "span": 1
      }
     ],
     "max": 10,
     "min": 8,
-    "rain": 28.3,
-    "sym": "rain"
+    "rain": 29.1,
+    "sym": "lightrain"
    },
    {
     "date": "2026-10-26",
@@ -435,7 +426,7 @@
       "temp": 10,
       "wind": 4,
       "sym": "heavyrain",
-      "rain": 1.8,
+      "rain": 1.5,
       "span": 1
      },
      {
@@ -443,24 +434,24 @@
       "h": 1,
       "temp": 10,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.4,
+      "sym": "heavyrain",
+      "rain": 1.6,
       "span": 1
      },
      {
       "date": "2026-10-26",
       "h": 2,
       "temp": 10,
-      "wind": 2,
-      "sym": "cloudy",
-      "rain": 0,
+      "wind": 5,
+      "sym": "rain",
+      "rain": 0.6,
       "span": 1
      },
      {
       "date": "2026-10-26",
       "h": 3,
       "temp": 10,
-      "wind": 2,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -469,7 +460,7 @@
       "date": "2026-10-26",
       "h": 4,
       "temp": 10,
-      "wind": 1,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -477,8 +468,8 @@
      {
       "date": "2026-10-26",
       "h": 5,
-      "temp": 9,
-      "wind": 1,
+      "temp": 10,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -487,7 +478,7 @@
       "date": "2026-10-26",
       "h": 6,
       "temp": 9,
-      "wind": 1,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -496,10 +487,55 @@
       "date": "2026-10-26",
       "h": 7,
       "temp": 9,
-      "wind": 1,
+      "wind": 3,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-26",
+      "h": 8,
+      "temp": 9,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-26",
+      "h": 9,
+      "temp": 9,
+      "wind": 3,
       "sym": "partlycloudy_day",
       "rain": 0,
-      "span": 6
+      "span": 1
+     },
+     {
+      "date": "2026-10-26",
+      "h": 10,
+      "temp": 10,
+      "wind": 2,
+      "sym": "clearsky_day",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-26",
+      "h": 11,
+      "temp": 11,
+      "wind": 2,
+      "sym": "clearsky_day",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-26",
+      "h": 12,
+      "temp": 12,
+      "wind": 3,
+      "sym": "clearsky_day",
+      "rain": 0,
+      "span": 1
      },
      {
       "date": "2026-10-26",
@@ -522,7 +558,7 @@
     ],
     "max": 12,
     "min": 9,
-    "rain": 2.2,
+    "rain": 3.7,
     "sym": "fair_day"
    },
    {
@@ -1089,18 +1125,18 @@
     {
      "d": "2026-10-24",
      "t": "13:00",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2581/8c66be6b-d621-4b5a-848d-3932c59892d0"
-    },
-    {
-     "d": "2026-10-24",
-     "t": "13:00",
      "c": "Symra",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/559b8781-056a-4354-922d-0bdb3f508c76"
+    },
+    {
+     "d": "2026-10-24",
+     "t": "13:00",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2581/8c66be6b-d621-4b5a-848d-3932c59892d0"
     },
     {
      "d": "2026-10-24",
