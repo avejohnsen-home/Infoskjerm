@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-24T19:37:02.542Z",
+ "updated": "2026-10-24T20:38:35.781Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-24",
-   "h": 21,
+   "h": 22,
    "temp": 10,
-   "wind": 5,
-   "sym": "rain",
-   "rain": 0.8,
+   "wind": 6,
+   "sym": "heavyrain",
+   "rain": 1,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-24",
     "hours": [
-     {
-      "date": "2026-10-24",
-      "h": 21,
-      "temp": 10,
-      "wind": 5,
-      "sym": "rain",
-      "rain": 0.8,
-      "span": 1
-     },
      {
       "date": "2026-10-24",
       "h": 22,
@@ -45,8 +36,8 @@
     ],
     "max": 10,
     "min": 10,
-    "rain": 2.9,
-    "sym": "rain"
+    "rain": 2.1,
+    "sym": "heavyrain"
    },
    {
     "date": "2026-10-25",
@@ -72,7 +63,7 @@
      {
       "date": "2026-10-25",
       "h": 2,
-      "temp": 11,
+      "temp": 10,
       "wind": 7,
       "sym": "heavyrain",
       "rain": 3.5,
@@ -81,7 +72,7 @@
      {
       "date": "2026-10-25",
       "h": 2,
-      "temp": 11,
+      "temp": 10,
       "wind": 8,
       "sym": "heavyrain",
       "rain": 2.6,
@@ -252,7 +243,7 @@
      {
       "date": "2026-10-25",
       "h": 21,
-      "temp": 10,
+      "temp": 9,
       "wind": 5,
       "sym": "rain",
       "rain": 0.4,
@@ -277,7 +268,7 @@
       "span": 1
      }
     ],
-    "max": 11,
+    "max": 10,
     "min": 7,
     "rain": 31.8,
     "sym": "rain"
@@ -333,7 +324,7 @@
      {
       "date": "2026-10-26",
       "h": 5,
-      "temp": 10,
+      "temp": 9,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -387,7 +378,7 @@
      {
       "date": "2026-10-26",
       "h": 11,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
@@ -524,33 +515,33 @@
       "h": 1,
       "temp": 7,
       "wind": 3,
-      "sym": "rainshowers_night",
-      "rain": 2.5,
+      "sym": "rain",
+      "rain": 3.6,
       "span": 6
      },
      {
       "date": "2026-10-27",
       "h": 7,
-      "temp": 7,
-      "wind": 3,
-      "sym": "rain",
-      "rain": 2.5,
-      "span": 6
-     },
-     {
-      "date": "2026-10-27",
-      "h": 13,
-      "temp": 12,
-      "wind": 5,
+      "temp": 11,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-27",
+      "h": 13,
+      "temp": 13,
+      "wind": 8,
+      "sym": "rain",
+      "rain": 2.3,
+      "span": 6
+     },
+     {
+      "date": "2026-10-27",
       "h": 19,
       "temp": 14,
-      "wind": 8,
+      "wind": 9,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -558,8 +549,8 @@
     ],
     "max": 14,
     "min": 7,
-    "rain": 5,
-    "sym": "cloudy"
+    "rain": 5.9,
+    "sym": "rain"
    },
    {
     "date": "2026-10-28",
@@ -567,17 +558,17 @@
      {
       "date": "2026-10-28",
       "h": 1,
-      "temp": 12,
+      "temp": 11,
       "wind": 7,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-28",
       "h": 7,
-      "temp": 10,
-      "wind": 6,
+      "temp": 9,
+      "wind": 5,
       "sym": "fair_day",
       "rain": 0,
       "span": 6
@@ -587,7 +578,7 @@
       "h": 13,
       "temp": 12,
       "wind": 5,
-      "sym": "partlycloudy_day",
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 6
      },
@@ -596,15 +587,15 @@
       "h": 19,
       "temp": 10,
       "wind": 4,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 6
      }
     ],
     "max": 12,
-    "min": 10,
+    "min": 9,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "clearsky_day"
    },
    {
     "date": "2026-10-29",
@@ -614,7 +605,7 @@
       "h": 1,
       "temp": 8,
       "wind": 2,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 6
      },
@@ -631,7 +622,7 @@
       "date": "2026-10-29",
       "h": 13,
       "temp": 12,
-      "wind": 2,
+      "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 6
@@ -641,7 +632,7 @@
       "h": 19,
       "temp": 9,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 6
      }
@@ -668,33 +659,33 @@
       "h": 7,
       "temp": 5,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-30",
       "h": 13,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-10-30",
       "h": 19,
-      "temp": 8,
+      "temp": 7,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 9,
+    "max": 10,
     "min": 5,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "fair_day"
    }
   ]
  },
@@ -5620,18 +5611,6 @@
   }
  ],
  "kilden": [
-  {
-   "title": "Thomas Dybdahl",
-   "venue": "Kilden",
-   "url": "https://kilden.com/program/47619-thomas-dybdahl/",
-   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F47619%2Fsquare.webp?version=F89CQCQ+5wTKA39YNb3RRA==",
-   "times": [
-    "2026-10-24T19:00"
-   ],
-   "hint": "Konsert",
-   "about": "",
-   "city": "Kristiansand"
-  },
   {
    "title": "Melancholia II",
    "venue": "Kilden",
@@ -11600,18 +11579,6 @@
  ],
  "k_blaa": [
   {
-   "title": "SKAAR",
-   "venue": "Blå",
-   "url": "https://www.ticketmaster.no/event/skaar-billetter/241195113",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_P0fqSHQcWG?tr=w-600",
-   "times": [
-    "2026-10-24T20:00"
-   ],
-   "hint": "indie pop",
-   "about": "I høst legger SKAAR og bandet hennes ut på en liten og intim turné, der hun spiller det kommende albumet fra start til slutt. Tre år siden SKAAR slapp sitt forrige album, Mad Woman, og nå kan artisten røpe at ny musikk e",
-   "city": "Oslo"
-  },
-  {
    "title": "Gundelach (DJ SET)",
    "venue": "Blå",
    "url": "https://www.ticketmaster.no/event/406545777",
@@ -12483,24 +12450,11 @@
  ],
  "k_konserthus": [
   {
-   "title": "Orffs Carmina Burana",
-   "venue": "Oslo Konserthus, Store sal",
-   "url": "https://billetter.okh.no/nb/buyingflow/tickets/47476/",
-   "img": "https://cdn.mustasj.dev/okh/production/bilder/49212922/Feature_47476-v1792738730_2714657282f6038b708bd13864fd5f3f.jpg",
-   "times": [
-    "2026-10-24T20:35"
-   ],
-   "hint": "klassisk",
-   "about": "Oslo Oratoriekor sammen med Sølvguttene, Oslo Domkirkes Guttekor og Oslo Symfoniorkester",
-   "city": "Oslo"
-  },
-  {
    "title": "Asbjørn Ribe med band",
    "venue": "Oslo Konserthus, Lille sal",
    "url": "https://billetter.okh.no/nb/buyingflow/tickets/47636/",
    "img": "https://cdn.mustasj.dev/okh/production/bilder/42608201/Feature_47636-v1779437636_2714657282f6038b708bd13864fd5f3f.jpg",
    "times": [
-    "2026-10-24T20:00",
     "2026-10-24T21:30"
    ],
    "hint": "country",
@@ -15537,10 +15491,6 @@
    "at": 1792536281632
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47636/": {
-   "p": [],
-   "at": 1792536281632
-  },
-  "https://billetter.okh.no/nb/buyingflow/tickets/47476/": {
    "p": [],
    "at": 1792536281632
   },
