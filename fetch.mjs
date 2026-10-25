@@ -227,7 +227,11 @@ async function nfkino() {
   });
   if (!out.length) console.log(`  Diagnose kino: overskrifter med filmlenke: ${$('h2 a[href*="/film/"]').length}, visninger: ${$('li[data-date]').length}, alle filmlenker: ${$('a[href*="/film/"]').length}`);
   // Trailer: les filmens egen side én gang og finn YouTube-trailer (eller videofil). Huskes mellom kjøringer.
-  const list = out.slice(0, 16);
+  // Ta med alle filmene som går i Oslo (før: bare de 16 første)
+  const list = out.slice(0, 80);
+  const todayOslo = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Oslo" }).format(new Date());
+  const ringenToday = list.filter(f => f.shows.some(x => x.c === "Ringen" && x.d === todayOslo)).map(f => f.title);
+  console.log(`  Kino: ${$('h2 a[href*="/film/"]').length} filmer på siden, ${out.length} med visninger i Oslo. Ringen i dag (${ringenToday.length}): ${ringenToday.join(", ")}`);
   const known = new Map((old.films || []).filter(f => f.trailerChecked && f.origChecked).map(f => [f.url, f]));
   let found = 0;
   for (const f of list) {
