@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-25T14:40:19.037Z",
+ "updated": "2026-10-25T15:41:27.266Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-25",
-   "h": 15,
+   "h": 16,
    "temp": 9,
-   "wind": 8,
-   "sym": "lightrainshowers_day",
-   "rain": 0.1,
+   "wind": 7,
+   "sym": "heavyrain",
+   "rain": 1.5,
    "span": 1
   },
   "days": [
@@ -17,29 +17,20 @@
     "hours": [
      {
       "date": "2026-10-25",
-      "h": 15,
-      "temp": 9,
-      "wind": 8,
-      "sym": "lightrainshowers_day",
-      "rain": 0.1,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
       "h": 16,
       "temp": 9,
       "wind": 7,
-      "sym": "heavyrainshowers_day",
-      "rain": 1.4,
+      "sym": "heavyrain",
+      "rain": 1.5,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 17,
-      "temp": 10,
-      "wind": 8,
+      "temp": 9,
+      "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.1,
+      "rain": 1.5,
       "span": 1
      },
      {
@@ -48,16 +39,16 @@
       "temp": 10,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.4,
+      "rain": 1.6,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 19,
       "temp": 10,
-      "wind": 8,
+      "wind": 7,
       "sym": "heavyrain",
-      "rain": 1.6,
+      "rain": 1.4,
       "span": 1
      },
      {
@@ -65,8 +56,8 @@
       "h": 20,
       "temp": 10,
       "wind": 6,
-      "sym": "heavyrain",
-      "rain": 4.2,
+      "sym": "rain",
+      "rain": 0.7,
       "span": 1
      },
      {
@@ -74,8 +65,8 @@
       "h": 21,
       "temp": 10,
       "wind": 5,
-      "sym": "heavyrain",
-      "rain": 1.4,
+      "sym": "rain",
+      "rain": 0.5,
       "span": 1
      },
      {
@@ -83,24 +74,24 @@
       "h": 22,
       "temp": 10,
       "wind": 5,
-      "sym": "heavyrain",
-      "rain": 1.3,
+      "sym": "rain",
+      "rain": 0.8,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 23,
       "temp": 10,
-      "wind": 5,
-      "sym": "rain",
-      "rain": 0.4,
+      "wind": 6,
+      "sym": "heavyrain",
+      "rain": 1.7,
       "span": 1
      }
     ],
     "max": 10,
     "min": 9,
-    "rain": 12.9,
-    "sym": "lightrainshowers_day"
+    "rain": 9.7,
+    "sym": "heavyrain"
    },
    {
     "date": "2026-10-26",
@@ -108,17 +99,17 @@
      {
       "date": "2026-10-26",
       "h": 0,
-      "temp": 11,
-      "wind": 8,
-      "sym": "cloudy",
-      "rain": 0,
+      "temp": 10,
+      "wind": 5,
+      "sym": "heavyrain",
+      "rain": 1.1,
       "span": 1
      },
      {
       "date": "2026-10-26",
       "h": 1,
-      "temp": 11,
-      "wind": 6,
+      "temp": 10,
+      "wind": 7,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -127,7 +118,7 @@
       "date": "2026-10-26",
       "h": 2,
       "temp": 10,
-      "wind": 4,
+      "wind": 5,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -145,7 +136,7 @@
       "date": "2026-10-26",
       "h": 4,
       "temp": 10,
-      "wind": 3,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -153,8 +144,8 @@
      {
       "date": "2026-10-26",
       "h": 5,
-      "temp": 9,
-      "wind": 3,
+      "temp": 10,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -163,7 +154,7 @@
       "date": "2026-10-26",
       "h": 6,
       "temp": 9,
-      "wind": 2,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -181,8 +172,8 @@
       "date": "2026-10-26",
       "h": 8,
       "temp": 9,
-      "wind": 2,
-      "sym": "cloudy",
+      "wind": 1,
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -199,16 +190,16 @@
       "date": "2026-10-26",
       "h": 10,
       "temp": 10,
-      "wind": 3,
-      "sym": "clearsky_day",
+      "wind": 2,
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-26",
       "h": 11,
-      "temp": 11,
-      "wind": 3,
+      "temp": 10,
+      "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -245,7 +236,7 @@
       "h": 15,
       "temp": 13,
       "wind": 3,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -262,7 +253,7 @@
       "date": "2026-10-26",
       "h": 17,
       "temp": 11,
-      "wind": 2,
+      "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -271,7 +262,7 @@
       "date": "2026-10-26",
       "h": 18,
       "temp": 10,
-      "wind": 3,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -290,7 +281,7 @@
       "h": 20,
       "temp": 8,
       "wind": 2,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -306,9 +297,9 @@
      {
       "date": "2026-10-26",
       "h": 22,
-      "temp": 8,
+      "temp": 7,
       "wind": 3,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
@@ -317,14 +308,14 @@
       "h": 23,
       "temp": 7,
       "wind": 3,
-      "sym": "partlycloudy_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      }
     ],
     "max": 13,
     "min": 7,
-    "rain": 0,
+    "rain": 1.1,
     "sym": "clearsky_day"
    },
    {
@@ -333,19 +324,19 @@
      {
       "date": "2026-10-27",
       "h": 0,
-      "temp": 8,
-      "wind": 2,
-      "sym": "cloudy",
+      "temp": 7,
+      "wind": 3,
+      "sym": "fair_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 1,
-      "temp": 8,
-      "wind": 3,
-      "sym": "heavyrain",
-      "rain": 1,
+      "temp": 7,
+      "wind": 2,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -363,23 +354,23 @@
       "temp": 8,
       "wind": 1,
       "sym": "heavyrain",
-      "rain": 1.2,
+      "rain": 1.5,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 4,
-      "temp": 10,
+      "temp": 9,
       "wind": 4,
-      "sym": "heavyrain",
-      "rain": 1.6,
+      "sym": "rain",
+      "rain": 0.7,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 5,
       "temp": 10,
-      "wind": 5,
+      "wind": 4,
       "sym": "rain",
       "rain": 0.3,
       "span": 1
@@ -388,7 +379,7 @@
       "date": "2026-10-27",
       "h": 6,
       "temp": 11,
-      "wind": 8,
+      "wind": 7,
       "sym": "lightrain",
       "rain": 0.2,
       "span": 1
@@ -397,9 +388,9 @@
       "date": "2026-10-27",
       "h": 7,
       "temp": 11,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.3,
+      "wind": 7,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -414,7 +405,7 @@
      {
       "date": "2026-10-27",
       "h": 9,
-      "temp": 12,
+      "temp": 11,
       "wind": 7,
       "sym": "lightrain",
       "rain": 0.2,
@@ -424,7 +415,7 @@
       "date": "2026-10-27",
       "h": 10,
       "temp": 12,
-      "wind": 8,
+      "wind": 7,
       "sym": "lightrain",
       "rain": 0.1,
       "span": 1
@@ -432,10 +423,10 @@
      {
       "date": "2026-10-27",
       "h": 11,
-      "temp": 12,
+      "temp": 13,
       "wind": 8,
-      "sym": "lightrain",
-      "rain": 0.1,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 1
      },
      {
@@ -444,16 +435,16 @@
       "temp": 13,
       "wind": 8,
       "sym": "lightrain",
-      "rain": 0.2,
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 13,
       "temp": 13,
-      "wind": 8,
+      "wind": 7,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -462,7 +453,7 @@
       "temp": 13,
       "wind": 8,
       "sym": "rain",
-      "rain": 0.5,
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -471,16 +462,16 @@
       "temp": 13,
       "wind": 9,
       "sym": "rain",
-      "rain": 0.9,
+      "rain": 0.7,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 16,
       "temp": 13,
-      "wind": 10,
+      "wind": 9,
       "sym": "rain",
-      "rain": 0.8,
+      "rain": 0.6,
       "span": 1
      },
      {
@@ -498,22 +489,58 @@
       "temp": 13,
       "wind": 10,
       "sym": "heavyrain",
-      "rain": 1.6,
+      "rain": 1.2,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 19,
       "temp": 13,
-      "wind": 11,
+      "wind": 10,
+      "sym": "rain",
+      "rain": 0.6,
+      "span": 1
+     },
+     {
+      "date": "2026-10-27",
+      "h": 20,
+      "temp": 13,
+      "wind": 9,
+      "sym": "rain",
+      "rain": 0.4,
+      "span": 1
+     },
+     {
+      "date": "2026-10-27",
+      "h": 21,
+      "temp": 12,
+      "wind": 6,
       "sym": "cloudy",
       "rain": 0,
-      "span": 6
+      "span": 1
+     },
+     {
+      "date": "2026-10-27",
+      "h": 22,
+      "temp": 12,
+      "wind": 7,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-27",
+      "h": 23,
+      "temp": 12,
+      "wind": 6,
+      "sym": "partlycloudy_night",
+      "rain": 0,
+      "span": 1
      }
     ],
     "max": 13,
-    "min": 8,
-    "rain": 12.2,
+    "min": 7,
+    "rain": 10.8,
     "sym": "rain"
    },
    {
@@ -521,9 +548,18 @@
     "hours": [
      {
       "date": "2026-10-28",
+      "h": 0,
+      "temp": 12,
+      "wind": 5,
+      "sym": "fair_night",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-28",
       "h": 1,
       "temp": 11,
-      "wind": 6,
+      "wind": 4,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 6
@@ -1025,7 +1061,7 @@
  "films": [
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet",
+   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1043,22 +1079,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "15:45",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2590/385fe469-cc53-4c77-a1f5-b7d169861972"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "16:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/f0809c05-1a41-4f49-a2aa-458a691e103a"
-    },
     {
      "d": "2026-10-25",
      "t": "18:10",
@@ -1150,18 +1170,18 @@
     {
      "d": "2026-10-26",
      "t": "17:30",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "17:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "17:30",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
     },
     {
      "d": "2026-10-26",
@@ -1470,18 +1490,18 @@
     {
      "d": "2026-10-29",
      "t": "17:30",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
     },
     {
      "d": "2026-10-29",
@@ -1523,12 +1543,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:13.649Z",
+   "imdbId": "tt39453840",
+   "ratingsAt": "2026-10-25T15:41:51.191Z",
    "city": "Oslo"
   },
   {
    "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode",
+   "url": "https://www.nfkino.no/film/markens-grode?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-582449c8bc-176680-vst-6adb40a70a5de.jpeg?itok=YCvjkzXe",
    "genres": [
     "Drama"
@@ -1630,12 +1651,13 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-10-25T09:42:13.698Z",
+   "imdbId": "tt0011440",
+   "ratingsAt": "2026-10-25T15:41:51.242Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
+   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -1770,12 +1792,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:13.747Z",
+   "imdbId": "tt36586020",
+   "ratingsAt": "2026-10-25T15:41:51.304Z",
    "city": "Oslo"
   },
   {
    "title": "Wildwood",
-   "url": "https://www.nfkino.no/film/wildwood",
+   "url": "https://www.nfkino.no/film/wildwood?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002807-1000034192.jpg?itok=ChVdapzT",
    "genres": [
     "Familiefilm",
@@ -1838,12 +1861,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:13.796Z",
+   "imdbId": "tt37968648",
+   "ratingsAt": "2026-10-25T15:41:51.355Z",
    "city": "Oslo"
   },
   {
    "title": "Clayface",
-   "url": "https://www.nfkino.no/film/clayface",
+   "url": "https://www.nfkino.no/film/clayface?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
    "genres": [
     "Drama",
@@ -2100,12 +2124,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:13.849Z",
+   "imdbId": "tt6492922",
+   "ratingsAt": "2026-10-25T15:41:51.404Z",
    "city": "Oslo"
   },
   {
    "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
    "genres": [
     "Familiefilm"
@@ -2213,12 +2238,12 @@
    "origChecked": true,
    "orig": "Lille spøkelset Laban skøyer igjen",
    "year": "",
-   "ratingsAt": "2026-10-25T09:42:14.054Z",
+   "ratingsAt": "2026-10-25T15:41:51.622Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -2232,14 +2257,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "16:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1002/2da2ea0f-141f-4368-adbc-a436775c5fe2"
-    },
     {
      "d": "2026-10-26",
      "t": "10:30",
@@ -2440,12 +2457,13 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:14.107Z",
+   "imdbId": "tt36841161",
+   "ratingsAt": "2026-10-25T15:41:51.675Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -2473,12 +2491,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:14.345Z",
+   "imdbId": "tt32375006",
+   "ratingsAt": "2026-10-25T15:41:51.726Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -2492,14 +2511,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "16:00",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/86518a2e-287a-4642-8062-1febf34ebee0"
-    },
     {
      "d": "2026-10-25",
      "t": "17:45",
@@ -2682,12 +2693,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-25T09:42:14.530Z",
+   "ratingsAt": "2026-10-25T15:41:51.921Z",
    "city": "Oslo"
   },
   {
    "title": "Tony",
-   "url": "https://www.nfkino.no/film/tony",
+   "url": "https://www.nfkino.no/film/tony?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
    "genres": [
     "Drama"
@@ -2700,14 +2711,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "15:45",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/7d7f7065-e061-4951-bc61-c567e2afa1aa"
-    },
     {
      "d": "2026-10-25",
      "t": "18:00",
@@ -2892,12 +2895,13 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-25T09:42:14.584Z",
+   "imdbId": "tt33095251",
+   "ratingsAt": "2026-10-25T15:41:51.974Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter",
+   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -3021,12 +3025,13 @@
    "year": "",
    "rt": "20%",
    "imdb": "4.2",
-   "ratingsAt": "2026-10-25T09:42:14.634Z",
+   "imdbId": "tt0111301",
+   "ratingsAt": "2026-10-25T15:41:52.035Z",
    "city": "Oslo"
   },
   {
    "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
    "genres": [],
    "len": "1 time 20 min",
@@ -3082,12 +3087,12 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-10-25T09:42:14.293Z",
+   "ratingsAt": "2026-10-25T15:41:52.232Z",
    "city": "Oslo"
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-67eec5dff3-176680-vst-6adb40c7ad1fb.jpeg?itok=zwrhYKol",
    "genres": [
     "Drama",
@@ -3181,12 +3186,13 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "ratingsAt": "2026-10-25T09:42:14.687Z",
+   "imdbId": "tt0114388",
+   "ratingsAt": "2026-10-25T15:41:52.286Z",
    "city": "Oslo"
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity",
+   "url": "https://www.nfkino.no/film/verity?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -3295,12 +3301,13 @@
    "year": "",
    "rt": "31%",
    "imdb": "",
-   "ratingsAt": "2026-10-25T09:42:14.792Z",
+   "imdbId": "tt32261958",
+   "ratingsAt": "2026-10-25T15:41:52.338Z",
    "city": "Oslo"
   },
   {
    "title": "Minions & monstre",
-   "url": "https://www.nfkino.no/film/minions-monstre",
+   "url": "https://www.nfkino.no/film/minions-monstre?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1169964-1000027978.jpg?itok=p1uoz6pa",
    "genres": [],
    "len": "1 time 25 min",
@@ -3325,12 +3332,13 @@
    "year": "",
    "rt": "89%",
    "imdb": "6.3",
-   "ratingsAt": "2026-10-25T11:40:09.959Z",
+   "imdbId": "tt32890033",
+   "ratingsAt": "2026-10-25T15:41:52.389Z",
    "city": "Oslo"
   },
   {
    "title": "The Odyssey",
-   "url": "https://www.nfkino.no/film/odyssey",
+   "url": "https://www.nfkino.no/film/odyssey?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
    "genres": [],
    "len": "2 timer 52 min",
@@ -3363,7 +3371,8 @@
    "year": "",
    "rt": "94%",
    "imdb": "8.4",
-   "ratingsAt": "2026-10-25T11:40:10.017Z",
+   "imdbId": "tt33764258",
+   "ratingsAt": "2026-10-25T15:41:52.445Z",
    "city": "Oslo"
   }
  ],
@@ -4319,7 +4328,7 @@
    "title": "Konsert med desVerre",
    "venue": "Chateau Neuf",
    "url": "https://neuf.no/arrangementer/konsert-med-desverre",
-   "img": "https://cms.neuf.no/media/original_images/69021047-A12C-4B64-8E5D-0AC4A7334815.jpg?v=86bfb494",
+   "img": "https://cms.neuf.no/media/original_images/IMG_4757.jpg?v=4c3d0387",
    "from": "2026-11-05",
    "to": "2026-11-05",
    "about": "",
@@ -11099,41 +11108,6 @@
  ],
  "k_blaa": [
   {
-   "title": "Frank Znort Quartet",
-   "venue": "Blå",
-   "url": "https://www.blaaoslo.no/events/frank-znort-quartet/0juVt7PWPx",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_JiuhA5t7E?tr=w-600",
-   "times": [
-    "2026-10-25T15:00",
-    "2026-11-01T15:00",
-    "2026-11-08T15:00",
-    "2026-11-15T15:00",
-    "2026-11-22T16:00",
-    "2026-11-29T16:00",
-    "2026-12-06T16:00",
-    "2026-12-13T16:00",
-    "2026-12-20T16:00",
-    "2026-12-27T16:00",
-    "2027-01-03T16:00",
-    "2027-01-10T16:00",
-    "2027-01-17T16:00",
-    "2027-01-24T16:00",
-    "2027-01-31T16:00",
-    "2027-02-07T16:00",
-    "2027-02-14T16:00",
-    "2027-02-21T16:00",
-    "2027-02-28T16:00",
-    "2027-03-07T16:00",
-    "2027-03-14T16:00",
-    "2027-03-21T16:00",
-    "2027-03-28T17:00",
-    "2027-04-04T17:00"
-   ],
-   "hint": "funk soul jazz",
-   "about": "Hver eneste søndag skaper BLÅ og Frank Znort Quartet en atmosfære av fred, lykke og frihet, akkompagnert av klirrende ølglass og forvridde versjoner av låter du ikke ante at du digga. Med sin livsglade tilnærming til uli",
-   "city": "Oslo"
-  },
-  {
    "title": "Robyn Hitchcock (FÅ BILLETTER IGJEN)",
    "venue": "Blå",
    "url": "https://www.ticketmaster.no/event/robyn-hitchcock-billetter/1152252726?language=en-us",
@@ -11203,6 +11177,40 @@
    ],
    "hint": "techno batida",
    "about": "With support from Liveurope and the Norwegian Arts Council.",
+   "city": "Oslo"
+  },
+  {
+   "title": "Frank Znort Quartet",
+   "venue": "Blå",
+   "url": "https://www.blaaoslo.no/events/frank-znort-quartet/IW8aMLZe26",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_JiuhA5t7E?tr=w-600",
+   "times": [
+    "2026-11-01T15:00",
+    "2026-11-08T15:00",
+    "2026-11-15T15:00",
+    "2026-11-22T16:00",
+    "2026-11-29T16:00",
+    "2026-12-06T16:00",
+    "2026-12-13T16:00",
+    "2026-12-20T16:00",
+    "2026-12-27T16:00",
+    "2027-01-03T16:00",
+    "2027-01-10T16:00",
+    "2027-01-17T16:00",
+    "2027-01-24T16:00",
+    "2027-01-31T16:00",
+    "2027-02-07T16:00",
+    "2027-02-14T16:00",
+    "2027-02-21T16:00",
+    "2027-02-28T16:00",
+    "2027-03-07T16:00",
+    "2027-03-14T16:00",
+    "2027-03-21T16:00",
+    "2027-03-28T17:00",
+    "2027-04-04T17:00"
+   ],
+   "hint": "funk soul jazz",
+   "about": "Hver eneste søndag skaper BLÅ og Frank Znort Quartet en atmosfære av fred, lykke og frihet, akkompagnert av klirrende ølglass og forvridde versjoner av låter du ikke ante at du digga. Med sin livsglade tilnærming til uli",
    "city": "Oslo"
   },
   {
@@ -14967,10 +14975,6 @@
    "p": [],
    "at": 1792536281632
   },
-  "https://www.blaaoslo.no/events/frank-znort-quartet/0juVt7PWPx": {
-   "p": [],
-   "at": 1792341790855
-  },
   "https://cosmopolite.no/program/belleville/2026/oktober/john-craigie-special-guest-jobi-riccio": {
    "p": [],
    "at": 1792536281632
@@ -15131,6 +15135,10 @@
   "https://cosmopolite.no/program/cosmopolite/2026/november/thomas-stronens-extended-ground-feat-fredrik-hoyer-og-havard": {
    "p": [],
    "at": 1792536281632
+  },
+  "https://www.blaaoslo.no/events/frank-znort-quartet/IW8aMLZe26": {
+   "p": [],
+   "at": 1792943009315
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47757/": {
    "p": [],
