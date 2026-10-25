@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-25T12:48:41.359Z",
+ "updated": "2026-10-25T13:40:43.550Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-25",
-   "h": 13,
+   "h": 14,
    "temp": 8,
-   "wind": 9,
+   "wind": 8,
    "sym": "rain",
-   "rain": 0.8,
+   "rain": 0.5,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-25",
     "hours": [
-     {
-      "date": "2026-10-25",
-      "h": 13,
-      "temp": 8,
-      "wind": 9,
-      "sym": "rain",
-      "rain": 0.8,
-      "span": 1
-     },
      {
       "date": "2026-10-25",
       "h": 14,
@@ -117,7 +108,7 @@
     ],
     "max": 10,
     "min": 8,
-    "rain": 14.2,
+    "rain": 13.4,
     "sym": "rain"
    },
    {
@@ -2163,21 +2154,12 @@
    "len": "1 time 1 min",
    "age": "Alle",
    "cinemas": [
-    "Colosseum",
     "Ringen",
     "Saga",
     "Symra",
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "14:10",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1002/163ae2a4-f6b2-45fb-95af-b13996ae5871"
-    },
     {
      "d": "2026-10-26",
      "t": "11:00",
@@ -2525,67 +2507,6 @@
    "rt": "99%",
    "imdb": "",
    "ratingsAt": "2026-10-25T09:42:14.107Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
-   "genres": [],
-   "len": "1 time 20 min",
-   "age": "TBC",
-   "cinemas": [
-    "Ringen",
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-26",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/6a6778c7-8ff0-4fcc-ad5b-b08c43b6275f"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "17:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/c3836f2e-5eb1-426c-98d6-bf840cb1e93a"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Mysteriepakken",
-   "year": "",
-   "ratingsAt": "2026-10-25T09:42:14.293Z",
    "city": "Oslo"
   },
   {
@@ -3056,14 +2977,6 @@
    "shows": [
     {
      "d": "2026-10-25",
-     "t": "14:30",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/1b07cbf9-0191-4141-9950-13268c91609e"
-    },
-    {
-     "d": "2026-10-25",
      "t": "18:10",
      "c": "Colosseum",
      "r": "3",
@@ -3175,6 +3088,67 @@
    "rt": "20%",
    "imdb": "4.2",
    "ratingsAt": "2026-10-25T09:42:14.634Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
+   "genres": [],
+   "len": "1 time 20 min",
+   "age": "TBC",
+   "cinemas": [
+    "Ringen",
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-26",
+     "t": "11:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/6a6778c7-8ff0-4fcc-ad5b-b08c43b6275f"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c3836f2e-5eb1-426c-98d6-bf840cb1e93a"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "13:30",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "11:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "13:30",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Mysteriepakken",
+   "year": "",
+   "ratingsAt": "2026-10-25T09:42:14.293Z",
    "city": "Oslo"
   },
   {
@@ -15157,7 +15131,7 @@
   },
   "https://christianiateaterscene.no/80": {
    "p": [],
-   "at": 1792330893609
+   "at": 1792935780236
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45651/": {
    "p": [],
