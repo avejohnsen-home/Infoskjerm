@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-25T13:40:43.550Z",
+ "updated": "2026-10-25T14:40:19.037Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-25",
-   "h": 14,
-   "temp": 8,
+   "h": 15,
+   "temp": 9,
    "wind": 8,
-   "sym": "rain",
-   "rain": 0.5,
+   "sym": "lightrainshowers_day",
+   "rain": 0.1,
    "span": 1
   },
   "days": [
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-10-25",
-      "h": 14,
-      "temp": 8,
-      "wind": 8,
-      "sym": "rain",
-      "rain": 0.5,
-      "span": 1
-     },
-     {
-      "date": "2026-10-25",
       "h": 15,
       "temp": 9,
       "wind": 8,
-      "sym": "lightrain",
+      "sym": "lightrainshowers_day",
       "rain": 0.1,
       "span": 1
      },
@@ -38,14 +29,14 @@
       "h": 16,
       "temp": 9,
       "wind": 7,
-      "sym": "heavyrain",
+      "sym": "heavyrainshowers_day",
       "rain": 1.4,
       "span": 1
      },
      {
       "date": "2026-10-25",
       "h": 17,
-      "temp": 9,
+      "temp": 10,
       "wind": 8,
       "sym": "heavyrain",
       "rain": 1.1,
@@ -54,7 +45,7 @@
      {
       "date": "2026-10-25",
       "h": 18,
-      "temp": 9,
+      "temp": 10,
       "wind": 8,
       "sym": "heavyrain",
       "rain": 1.4,
@@ -107,9 +98,9 @@
      }
     ],
     "max": 10,
-    "min": 8,
-    "rain": 13.4,
-    "sym": "rain"
+    "min": 9,
+    "rain": 12.9,
+    "sym": "lightrainshowers_day"
    },
    {
     "date": "2026-10-26",
@@ -126,7 +117,7 @@
      {
       "date": "2026-10-26",
       "h": 1,
-      "temp": 10,
+      "temp": 11,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
@@ -261,7 +252,7 @@
      {
       "date": "2026-10-26",
       "h": 16,
-      "temp": 12,
+      "temp": 13,
       "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
@@ -342,7 +333,7 @@
      {
       "date": "2026-10-27",
       "h": 0,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -450,7 +441,7 @@
      {
       "date": "2026-10-27",
       "h": 12,
-      "temp": 12,
+      "temp": 13,
       "wind": 8,
       "sym": "lightrain",
       "rain": 0.2,
@@ -513,7 +504,7 @@
      {
       "date": "2026-10-27",
       "h": 19,
-      "temp": 12,
+      "temp": 13,
       "wind": 11,
       "sym": "cloudy",
       "rain": 0,
@@ -521,7 +512,7 @@
      }
     ],
     "max": 13,
-    "min": 7,
+    "min": 8,
     "rain": 12.2,
     "sym": "rain"
    },
@@ -1054,38 +1045,6 @@
    "shows": [
     {
      "d": "2026-10-25",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/49183678-a005-4629-b94b-4106cf492fdf"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/f2ae4af8-7fa6-42bf-a9b7-bc46873db06a"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:30",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f9785c7b-b556-4711-90e7-9fcb7fdf1381"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/2d9bd542-d6d7-4cfc-a74b-76b25aed37a0"
-    },
-    {
-     "d": "2026-10-25",
      "t": "15:45",
      "c": "Symra",
      "r": "2",
@@ -1135,18 +1094,18 @@
     {
      "d": "2026-10-26",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/7b1903aa-fbc3-4ad4-bec8-a104990b4618"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "12:00",
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/3419319c-5aa2-4b9b-aa13-8e8c2ed65315"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/7b1903aa-fbc3-4ad4-bec8-a104990b4618"
     },
     {
      "d": "2026-10-26",
@@ -1167,18 +1126,18 @@
     {
      "d": "2026-10-26",
      "t": "15:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/3c629df7-38f5-4f56-98fe-9f941822328a"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "15:00",
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/a375fed2-d415-4085-8849-317868abe16e"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3c629df7-38f5-4f56-98fe-9f941822328a"
     },
     {
      "d": "2026-10-26",
@@ -1191,18 +1150,18 @@
     {
      "d": "2026-10-26",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/d40c25e1-ef71-43ee-8300-342797b6ec04"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/a0704d0d-8db3-40f0-b28f-186defed133a"
     },
     {
      "d": "2026-10-26",
@@ -1231,18 +1190,18 @@
     {
      "d": "2026-10-27",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/da7b3b67-bfa2-4fbc-b1ed-92719d19d63a"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
     },
     {
      "d": "2026-10-27",
@@ -1327,18 +1286,18 @@
     {
      "d": "2026-10-28",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2583/3d5a7c74-5abe-4a30-98b7-a1214f762182"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2439/cc7d0d9a-bacc-46e3-b693-d448dd66ea22"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2583/3d5a7c74-5abe-4a30-98b7-a1214f762182"
     },
     {
      "d": "2026-10-28",
@@ -1455,18 +1414,18 @@
     {
      "d": "2026-10-29",
      "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2439/06fd7ca1-0c1d-4412-b28f-ea1bcd261e09"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/29fd67df-dd68-4e39-b93b-aa5af9c8ad7c"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2439/06fd7ca1-0c1d-4412-b28f-ea1bcd261e09"
     },
     {
      "d": "2026-10-29",
@@ -1511,18 +1470,18 @@
     {
      "d": "2026-10-29",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
     },
     {
      "d": "2026-10-29",
@@ -2270,34 +2229,9 @@
     "Colosseum",
     "Ringen",
     "Saga",
-    "Symra",
-    "Vika"
+    "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-25",
-     "t": "14:45",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/a27470c1-1489-41d0-b40d-f23908fa512c"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:00",
-     "c": "Vika",
-     "r": "2",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2612/046932c7-f9d6-4cf0-b0df-fefd97baf364"
-    },
-    {
-     "d": "2026-10-25",
-     "t": "15:30",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/19db4769-d0d6-4296-92f2-8bbfa4484158"
-    },
     {
      "d": "2026-10-25",
      "t": "16:00",
@@ -2317,18 +2251,18 @@
     {
      "d": "2026-10-26",
      "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/0959ebde-a977-4b32-bc77-f10e30dc8152"
-    },
-    {
-     "d": "2026-10-26",
-     "t": "12:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
      "u": "https://www.nfkino.no/screening/1002/e93473a9-886e-40aa-baef-d634298e3917"
+    },
+    {
+     "d": "2026-10-26",
+     "t": "12:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/0959ebde-a977-4b32-bc77-f10e30dc8152"
     },
     {
      "d": "2026-10-26",
@@ -2357,18 +2291,18 @@
     {
      "d": "2026-10-27",
      "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/824c640d-56d4-4f11-bc3d-112d1e09e524"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "12:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
      "u": "https://www.nfkino.no/screening/1002/cf61fe20-84cb-4612-9f73-0bda660a36fb"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "12:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/824c640d-56d4-4f11-bc3d-112d1e09e524"
     },
     {
      "d": "2026-10-27",
@@ -2413,18 +2347,18 @@
     {
      "d": "2026-10-28",
      "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/a0bfa240-7bae-4962-8c40-aa8c59d6ec50"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
      "u": "https://www.nfkino.no/screening/1002/91c702b2-556b-4e3f-85a4-10be5f9b6429"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "12:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/a0bfa240-7bae-4962-8c40-aa8c59d6ec50"
     },
     {
      "d": "2026-10-28",
@@ -2461,18 +2395,18 @@
     {
      "d": "2026-10-29",
      "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/3c47bc84-d3b4-4b1e-a01c-2b5edc8c0ecd"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:30",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale",
      "u": "https://www.nfkino.no/screening/1002/45916152-d0b3-4b68-9c7f-87acb768c120"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/3c47bc84-d3b4-4b1e-a01c-2b5edc8c0ecd"
     },
     {
      "d": "2026-10-29",
@@ -11272,6 +11206,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Amerikansk valgvake: mellomvalget i USA",
+   "venue": "Blå",
+   "url": "https://www.blaaoslo.no/events/amerikansk-valgvake-mellomvalget-i-usa/xMsUs8Yzdk",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_EBJigUBaf?tr=w-600",
+   "times": [
+    "2026-11-03T19:00"
+   ],
+   "hint": "USA Valgvake Livepodkast",
+   "about": "Mer info om gjester og innslag annonseres forløpende. Arrangementet er gratis.",
+   "city": "Oslo"
+  },
+  {
    "title": "Oslo Queer Line Dance",
    "venue": "Blå",
    "url": "https://www.ticketmaster.no/event/1164776999",
@@ -15206,6 +15152,10 @@
   "https://cosmopolite.no/program/cosmopolite/2026/november/scheen-jazzorkester-thea-grant-century-caves": {
    "p": [],
    "at": 1792536281632
+  },
+  "https://www.blaaoslo.no/events/amerikansk-valgvake-mellomvalget-i-usa/xMsUs8Yzdk": {
+   "p": [],
+   "at": 1792939349158
   },
   "https://www.nationaltheatret.no/forestillinger/relaext-julefortelling": {
    "p": [],
