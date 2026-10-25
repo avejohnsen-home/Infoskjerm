@@ -513,7 +513,14 @@ function renderFilms(){
   if(gs.length>1)gs.forEach(g=>{const b=document.createElement("button");b.className="chip";b.textContent=g==="Alle"?`Alle (${films.length})`:`${g} (${counts[g]})`;
     b.setAttribute("aria-pressed",g===filmFilter);b.addEventListener("click",()=>{filmFilter=g;pause();renderFilms()});fe.appendChild(b)});
   const el=document.getElementById("films");el.innerHTML="";
-  films.filter(f=>filmFilter==="Alle"||(f.genres||[]).includes(filmFilter)).forEach(f=>{const b=document.createElement("button");b.className="poster";const n=nextShow(f,FAV_KINO)||nextShow(f);
+  // Filmer som går i dag øverst (etter klokkeslett), deretter resten
+  const tEnd=new Date(today().getTime()+864e5);
+  const pick=f=>{const td=(k)=>{const x=nextShow(f,k);return x&&new Date(x.d+"T"+x.t)<tEnd?x:null};return td(FAV_KINO)||td()||nextShow(f,FAV_KINO)||nextShow(f)};
+  const ordered=films.filter(f=>filmFilter==="Alle"||(f.genres||[]).includes(filmFilter)).map(f=>{const n=pick(f);const t=n?new Date(n.d+"T"+n.t):new Date(8.64e15);return {f,n,t,isToday:t<tEnd}})
+    .sort((a,b)=>(b.isToday-a.isToday)||a.t-b.t);
+  let lastH=null;
+  ordered.forEach(({f,n,isToday})=>{const h=isToday?"I dag":"Senere";if(h!==lastH){lastH=h;const hd=document.createElement("div");hd.className="secthead";hd.textContent=h;el.appendChild(hd)}
+    const b=document.createElement("button");b.className="poster";
     const cins=(f.cinemas||[]);const where=cins.length>2?`${cins.slice(0,2).join(", ")} +${cins.length-2}`:cins.join(", ");
     b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(f.title)}"></div><h3>${esc(f.title)}</h3>${imgTag(f.img)}${f.age?`<span class="kind">${esc(f.age)}</span>`:""}</div>
       <div class="meta"><b>${esc(f.title)}</b>${n?`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`:"Ingen flere visninger"}<span class="where">${esc(n?n.c+(cins.length>1?` (+${cins.length-1} ${cins.length-1===1?"kino":"kinoer"})`:""):where)}</span></div>`;
