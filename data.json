@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T12:02:50.282Z",
+ "updated": "2026-10-26T12:38:29.524Z",
  "errors": [],
  "weather": {
   "now": {
@@ -7,7 +7,7 @@
    "h": 13,
    "temp": 12,
    "wind": 3,
-   "sym": "clearsky_day",
+   "sym": "fair_day",
    "rain": 0,
    "span": 1
   },
@@ -20,7 +20,7 @@
       "h": 13,
       "temp": 12,
       "wind": 3,
-      "sym": "clearsky_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -29,7 +29,7 @@
       "h": 14,
       "temp": 12,
       "wind": 3,
-      "sym": "clearsky_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -37,8 +37,8 @@
       "date": "2026-10-26",
       "h": 15,
       "temp": 12,
-      "wind": 3,
-      "sym": "clearsky_day",
+      "wind": 4,
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -82,7 +82,7 @@
       "date": "2026-10-26",
       "h": 20,
       "temp": 7,
-      "wind": 1,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -91,7 +91,7 @@
       "date": "2026-10-26",
       "h": 21,
       "temp": 6,
-      "wind": 2,
+      "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -118,7 +118,7 @@
     "max": 12,
     "min": 6,
     "rain": 0,
-    "sym": "clearsky_day"
+    "sym": "fair_day"
    },
    {
     "date": "2026-10-27",
@@ -147,7 +147,7 @@
       "temp": 7,
       "wind": 3,
       "sym": "rain",
-      "rain": 0.3,
+      "rain": 0.4,
       "span": 1
      },
      {
@@ -155,8 +155,8 @@
       "h": 3,
       "temp": 8,
       "wind": 2,
-      "sym": "rain",
-      "rain": 0.8,
+      "sym": "heavyrain",
+      "rain": 1,
       "span": 1
      },
      {
@@ -174,16 +174,16 @@
       "temp": 10,
       "wind": 4,
       "sym": "rain",
-      "rain": 0.7,
+      "rain": 0.8,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 6,
       "temp": 10,
-      "wind": 6,
-      "sym": "lightrain",
-      "rain": 0.2,
+      "wind": 7,
+      "sym": "rain",
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -234,10 +234,10 @@
      {
       "date": "2026-10-27",
       "h": 12,
-      "temp": 12,
+      "temp": 11,
       "wind": 7,
       "sym": "lightrain",
-      "rain": 0.2,
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -291,7 +291,7 @@
       "temp": 12,
       "wind": 8,
       "sym": "heavyrain",
-      "rain": 1.7,
+      "rain": 1.8,
       "span": 1
      },
      {
@@ -308,8 +308,8 @@
       "h": 20,
       "temp": 12,
       "wind": 5,
-      "sym": "rain",
-      "rain": 0.6,
+      "sym": "lightrain",
+      "rain": 0.2,
       "span": 1
      },
      {
@@ -342,7 +342,7 @@
     ],
     "max": 13,
     "min": 6,
-    "rain": 11.7,
+    "rain": 11.8,
     "sym": "lightrain"
    },
    {
@@ -369,7 +369,7 @@
      {
       "date": "2026-10-28",
       "h": 2,
-      "temp": 11,
+      "temp": 10,
       "wind": 4,
       "sym": "fair_night",
       "rain": 0,
@@ -396,7 +396,7 @@
      {
       "date": "2026-10-28",
       "h": 5,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -405,7 +405,7 @@
      {
       "date": "2026-10-28",
       "h": 6,
-      "temp": 9,
+      "temp": 8,
       "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
@@ -423,7 +423,7 @@
      {
       "date": "2026-10-28",
       "h": 8,
-      "temp": 8,
+      "temp": 7,
       "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
@@ -468,7 +468,7 @@
      {
       "date": "2026-10-28",
       "h": 13,
-      "temp": 12,
+      "temp": 11,
       "wind": 4,
       "sym": "fair_day",
       "rain": 0,
@@ -495,7 +495,7 @@
      {
       "date": "2026-10-28",
       "h": 16,
-      "temp": 12,
+      "temp": 11,
       "wind": 4,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -513,7 +513,7 @@
      {
       "date": "2026-10-28",
       "h": 18,
-      "temp": 11,
+      "temp": 10,
       "wind": 5,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -530,7 +530,7 @@
      }
     ],
     "max": 12,
-    "min": 8,
+    "min": 7,
     "rain": 0,
     "sym": "fair_day"
    },
@@ -2124,14 +2124,6 @@
    "shows": [
     {
      "d": "2026-10-26",
-     "t": "13:15",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/60deddf7-87dc-4faf-a8df-4395be5250ca"
-    },
-    {
-     "d": "2026-10-26",
      "t": "15:10",
      "c": "Colosseum",
      "r": "3",
@@ -3100,14 +3092,6 @@
    "shows": [
     {
      "d": "2026-10-26",
-     "t": "13:15",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Org. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/1a630e50-aa5d-45aa-864d-c376ea9cab0b"
-    },
-    {
-     "d": "2026-10-26",
      "t": "15:15",
      "c": "Ringen",
      "r": "3",
@@ -3728,14 +3712,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-26",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/344b615e-b388-47b3-9f37-028558e00d8c"
-    },
     {
      "d": "2026-10-26",
      "t": "15:00",
@@ -16700,7 +16676,7 @@
    "title": "Reiselitteraturfestivalen 2026",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/november/reiselitteraturfestivalen-2026",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Reisefestival_1920x1080.jpg?h=bb981b7f&itok=tnXmaiap",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/Reisefestival_1920x1080_0.jpg?h=fbaf454a&itok=XZR_JWqM",
    "from": "2026-11-21",
    "to": "2026-11-21",
    "about": "",
