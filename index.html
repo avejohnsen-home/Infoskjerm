@@ -248,6 +248,16 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 .irow{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
 .irow small{color:var(--muted)}
 
+/* Merker på plakater */
+.badges{position:absolute;top:40px;left:10px;z-index:3;display:flex;gap:4px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--signal);color:#140E0A;line-height:1.2}
+.badge.ut{background:#B3261E;color:#fff}
+.badge.free{background:#3F9F41;color:#fff}
+.ichip.warn{outline:2px solid var(--signal)}
+.ichip.warn.oransje{outline-color:#E8833A}
+.ichip.warn.rød{outline-color:#D63B3B}
+.ilink{display:inline-block;margin-top:8px;color:var(--tram);font-weight:600}
+
 /* Helg-fanen */
 .wkday{margin:18px 0 8px;font-size:20px;font-weight:800;letter-spacing:-.01em;padding-bottom:6px;border-bottom:2px solid var(--line)}
 .wkday:first-child{margin-top:0}
@@ -549,7 +559,7 @@ function renderTheatre(){
   let lastSect=-1;
   shown.forEach(s=>{if(s.sect!==lastSect){lastSect=s.sect;const h=document.createElement("div");h.className="secthead";h.textContent=SECT[s.sect];el.appendChild(h)}
     const b=document.createElement("button");b.className="poster";
-    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.innerHTML=`<div class="art">${badgeHtml(s)}<div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"teater",s));});
   document.getElementById("srcT").textContent=list.length?`Kilde: teatrenes egne nettsider og Ticketmaster. Viser ${shown.length} av ${list.length} forestillinger.`:"Fant ingen forestillinger ennå.";
 }
@@ -587,7 +597,7 @@ async function load(){
     (DATA.oslonye||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Centralteatret(?=,|$)/,"Centralteatret & Teaterkjellern")});
     (DATA.trondelag||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Trøndelag Teater(?=,|$)/,"Nye Trøndelag Teater")});}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderWeekend();renderSlm();
+  prepStatus();LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderWeekend();renderSlm();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -704,7 +714,7 @@ function renderConcerts(){
   vs.forEach(v=>{const b=document.createElement("button");b.className="chip";b.textContent=v==="Alle"?`Alle (${list.length})`:`${v} (${counts[v]})`;b.setAttribute("aria-pressed",v===konsertFilter);b.addEventListener("click",()=>{konsertFilter=v;kGenre="Alle";pause();renderConcerts()});fe.appendChild(b)});
   const el=document.getElementById("konserter");el.innerHTML="";
   list.filter(s=>(konsertFilter==="Alle"||s.label===konsertFilter)&&(kGenre==="Alle"||s.genres.includes(kGenre))).forEach(s=>{const b=document.createElement("button");b.className="poster";
-    b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.innerHTML=`<div class="art">${badgeHtml(s)}<div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
     b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,"konsert",s))});
   document.getElementById("srcC").textContent=list.length?`Kilde: konsertstedenes egne nettsider. ${list.length} konserter.`:"Henter konserter …";
 }
@@ -758,7 +768,7 @@ function renderWatch(){
   el.innerHTML="";
   const grid=items=>{const g=document.createElement("div");g.className="posters";
     items.forEach(x=>{const s=x.s||x.w,b=document.createElement("button");b.className="poster";
-      b.innerHTML=`<div class="art"><div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${TYPE_ICON[x.w.type]||""} ${esc(x.label||x.w.venue||(x.w.type==="film"?"Kino":""))}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(x.s?x.status:"Ikke lenger på programmet")}</div>`;
+      b.innerHTML=`<div class="art">${badgeHtml(x.s)}<div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${TYPE_ICON[x.w.type]||""} ${esc(x.label||x.w.venue||(x.w.type==="film"?"Kino":""))}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(x.s?x.status:"Ikke lenger på programmet")}</div>`;
       if(x.s)b.addEventListener("click",()=>x.w.type==="film"?openFilm(x.s):openShow(x.s));
       else if(x.w.url)b.addEventListener("click",()=>window.open(x.w.url,"_blank","noopener"));
       const c=card(b,x.w.type,x.s||{title:x.w.title,venue:x.w.venue,img:x.w.img,url:x.w.url});
@@ -769,6 +779,30 @@ function renderWatch(){
 }
 // Utgåtte elementer: 👀-knappen må fjerne dem direkte på lagret id
 document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav");if(!b)return;e.stopImmediatePropagation();WL=WL.filter(w=>w.id!==b.dataset.id);saveWL();syncFav();},true);
+
+// ---------- Billettstatus og gratis ----------
+function ticketState(s){const t=[s.title,s.hint].join(" "),a=String(s.about||"");
+  if(/få billetter igjen|snart utsolgt|nesten utsolgt|siste billetter|few tickets/i.test(t)||/·\s*snart utsolgt$/i.test(a))return "snart";
+  if(/\butsolgt\b(?!e)/i.test(t)||/·\s*utsolgt$/i.test(a))return "ut";return ""}
+const isFree=s=>/\bgratis\b|fri entré|gratis inngang|free entry/i.test([s.title,s.hint,s.about,s.price].join(" "));
+const cleanTitle=t=>String(t||"").replace(/\s*\((få billetter igjen|snart utsolgt|utsolgt)\)\s*/i," ").replace(/\s*[-–]\s*(utsolgt|snart utsolgt|få billetter igjen)!?\s*$/i,"").trim();
+function prepStatus(){Object.values(DATA).forEach(v=>{if(!Array.isArray(v))return;v.forEach(s=>{if(!s||typeof s!=="object"||!s.title||!s.venue)return;
+  s._sold=ticketState(s);s._free=isFree(s);s.title=cleanTitle(s.title)})})}
+const badgeHtml=s=>s&&(s._sold||s._free)?`<div class="badges">${s._sold==="ut"?`<span class="badge ut">Utsolgt</span>`:s._sold?`<span class="badge">Snart utsolgt</span>`:""}${s._free?`<span class="badge free">Gratis</span>`:""}</div>`:"";
+const badgeTxt=s=>[s._sold==="ut"?"🔴 Utsolgt":s._sold?"🟡 Snart utsolgt":"",s._free?"🟢 Gratis":""].filter(Boolean).join(" · ");
+
+// ---------- Glatt føre og farevarsler ----------
+function activeAlerts(){const n=Date.now();return ((DATA&&DATA.alerts)||[]).filter(a=>(!a.from||new Date(a.from)-n<12*36e5)&&(!a.to||new Date(a.to)>n))}
+function slipRisk(){ // egen vurdering ut fra timevarselet de neste 12 timene
+  const w=DATA&&DATA.weather;if(!w||!w.days)return null;const now=Date.now();
+  const hrs=w.days.flatMap(d=>(d.hours||[]).map(h=>({...h,t:new Date(d.date+"T"+String(h.h).padStart(2,"0")+":00")}))).sort((a,b)=>a.t-b.t);
+  const near=hrs.filter(h=>h.t-now>-36e5&&h.t-now<12*36e5);
+  for(let i=0;i<near.length;i++){const h=near[i],wet=x=>(x.rain||0)>0||/rain|sleet|snow/.test(x.sym||"");
+    const prevWet=hrs.filter(x=>x.t<=h.t&&h.t-x.t<=6*36e5).some(wet);
+    if(h.temp<=1&&h.temp>=-6&&(wet(h)||prevWet))return {t:h.t,why:/snow/.test(h.sym||"")?"snø rundt null grader":wet(h)?"nedbør rundt null grader":"minusgrader etter nedbør"}}
+  const ice=activeAlerts().find(a=>/ice|icing|snow/i.test(a.event));
+  return ice?{t:new Date(ice.from||now),why:ice.title}:null}
+const SKI_MONTHS=[10,11,0,1,2,3]; // nov–apr
 
 // ---------- Sol og måne (regnes ut lokalt, formler fra SunCalc, BSD-lisens) ----------
 const LAT=59.923,LON=10.759;
@@ -815,17 +849,24 @@ const whenTxt=iso=>{const k=daysTo(iso);return k===0?"i dag":k===1?"i morgen":k<
 // ---------- Infolinje under værstripen ----------
 function renderInfo(){
   const el=document.getElementById("infoline"),out=[];
+  activeAlerts().forEach(al=>out.push(`<span class="ichip warn ${al.level}">⚠️ ${esc(al.title)}</span>`));
+  const sl=slipRisk();if(sl)out.push(`<span class="ichip warn">🧊 Kan bli glatt${sl.t>new Date()?" fra kl. "+hm(sl.t):""}</span>`);
   const a=airNow();if(a){const c=aqClass(a.aqi);out.push(`<span class="ichip"><span class="dot" style="background:${c[2]}"></span>Luft: ${c[1].toLowerCase()}</span>`)}
   const st=sunFor(new Date());if(st)out.push(`<span class="ichip">🌅 ${hm(st.rise)} <span style="opacity:.5">·</span> 🌇 ${hm(st.set)}</span>`);
   const mn=moonName(AST.moon(new Date()).phase);out.push(`<span class="ichip">${mn[1]} ${mn[2]}</span>`);
+  const sn=DATA&&DATA.snow;if(sn&&sn.cm>0&&SKI_MONTHS.includes(new Date().getMonth()))out.push(`<span class="ichip">⛷️ Tryvann ${sn.cm} cm</span>`);
   const w=((DATA&&DATA.waste)||[]).filter(x=>daysTo(x.next)>=0);
   if(w.length){const n=w[0].next,same=w.filter(x=>x.next===n),k=daysTo(n);
     out.push(`<span class="ichip${k<=1?" hot":""}">${WASTE_ICON(same[0].type)} ${same.map(x=>esc(x.type)).join(" og ")} ${whenTxt(n)}</span>`)}
   el.innerHTML=out.join("");
 }
 document.getElementById("infoline").addEventListener("click",()=>{
-  fill("Luft, sol, måne og søppel","background:linear-gradient(135deg,#2E5E7E,#4D3E6B)","",[],"https://luftkvalitet.miljodirektoratet.no/","Se luftkvaliteten hos Miljødirektoratet");
+  fill("Dagens info","background:linear-gradient(135deg,#2E5E7E,#4D3E6B)","",[],"https://luftkvalitet.miljodirektoratet.no/","Se luftkvaliteten hos Miljødirektoratet");
   let h="";const a=DATA&&DATA.air;
+  const als=activeAlerts(),sl=slipRisk();
+  if(als.length||sl){h+=`<div class="ihead">Varsler</div>`;
+    als.forEach(al=>{h+=`<div class="irow"><span>⚠️ <b>${esc(al.title)}</b> <small>${esc(al.level)} nivå${al.to?" · til "+fmtDT(new Date(al.to)):""}</small></span></div>${al.desc?`<p style="margin:6px 0 4px;font-size:14px">${esc(al.desc)}</p>`:""}${al.advice?`<p style="margin:0 0 8px;font-size:13px;color:var(--muted)">${esc(al.advice)}</p>`:""}`});
+    if(sl)h+=`<div class="irow"><span>🧊 Kan bli glatt føre</span><small>${sl.t>new Date()?"fra ca. kl. "+hm(sl.t)+" · ":""}${esc(sl.why)}</small></div>`;}
   if(a&&a.hours){const now=new Date(),d0=ymdOf(now),list=a.hours.filter(x=>x.date>d0||(x.date===d0&&x.h>=now.getHours())).slice(0,24);
     const cur=list[0];
     if(cur){const c=aqClass(cur.aqi),mx=list.slice(0,24).reduce((m,x)=>x.aqi>m.aqi?x:m,cur),mc=aqClass(mx.aqi);
@@ -840,6 +881,10 @@ document.getElementById("infoline").addEventListener("click",()=>{
   const m=AST.moon(t),mn=moonName(m.phase),fm=nextMoon(.5),nm=nextMoon(0);
   h+=`<div class="ihead">Månen</div><div class="irow"><span>${mn[1]} ${mn[2]}</span><small>${Math.round(m.frac*100)} % opplyst</small></div>
     ${fm?`<div class="irow"><span>🌕 Neste fullmåne</span><b>${fmtD(fm)}</b></div>`:""}${nm?`<div class="irow"><span>🌑 Neste nymåne</span><b>${fmtD(nm)}</b></div>`:""}`;
+  const sn=DATA&&DATA.snow;
+  if(SKI_MONTHS.includes(t.getMonth())||(sn&&sn.cm>0)){h+=`<div class="ihead">Skiføre i Marka</div>`;
+    h+=sn?`<div class="irow"><span>⛷️ Snødybde ${esc(sn.station)}</span><b>${sn.cm>0?sn.cm+" cm":"Ingen snø"}</b></div>${sn.time?`<div class="irow"><span>Målt</span><small>${fmtD(new Date(sn.time))}</small></div>`:""}`:"";
+    h+=`<a class="ilink" href="https://sporet.no/" target="_blank" rel="noopener">Se preparerte løyper på sporet.no →</a>`;}
   const w=((DATA&&DATA.waste)||[]).filter(x=>daysTo(x.next)>=0);
   if(w.length)h+=`<div class="ihead">Søppelhenting</div>`+w.map(x=>`<div class="irow"><span>${WASTE_ICON(x.type)} ${esc(x.type)} <small>${esc(x.freq||"")}${x.estimated?" · beregnet":""}</small></span><b>${cap(whenTxt(x.next))}</b></div>`).join("");
   document.getElementById("mdesc").innerHTML=h;
@@ -869,13 +914,17 @@ function renderWeekend(){
   for(let d=new Date(Math.max(start,today()));d<=end;d.setDate(d.getDate()+1))
     (DATA.quiz||[]).forEach(q=>{const r=quizOn(q,d);if(!r.ok)return;const [H,M]=String(q.time).split(":").map(Number);const t=new Date(d);t.setHours(H||19,M||0,0,0);
       if(t>=new Date(nowT-60*6e4))ev.push({t,kind:"quiz",time:true,q:{...q,usikker:r.usikker}})});
+  ((DATA&&DATA.loppis)||[]).forEach(l=>(l.dates||[]).forEach(d=>{const x=new Date(d+"T00:00");if(x<start||x>end||x<today())return;
+    const [H,M]=String(l.time||"").split(/[–-]/)[0].split(/[.:]/).map(Number);const t=new Date(x);t.setHours(isNaN(H)?10:H,M||0,0,0);ev.push({t,kind:"loppe",time:!!l.time,l})}));
   // tidspunkt først, arrangementer uten klokkeslett sist på dagen
   const sk=x=>x.time?+x.t:+x.t+864e5-1;ev.sort((a,b)=>sk(a)-sk(b));
-  const ICON={teater:"🎭",konsert:"🎸",humor:"😂",quiz:"🧠"};
+  const ICON={teater:"🎭",konsert:"🎸",humor:"😂",quiz:"🧠",loppe:"🛍️"};
   const row=x=>{const b=document.createElement("button");b.className="hrow";
     if(x.kind==="quiz"){b.innerHTML=`<div class="th"><span class="ic">🧠</span></div><div><span class="t">${hm(x.t)} · Quiz</span><b>${esc(x.q.place)}</b><small>${esc(x.q.type)}${x.q.usikker?" · "+ruleText[x.q.rule]:""}</small></div>`;
       b.addEventListener("click",()=>document.getElementById("quizbar").click());return b}
-    const s=x.s;b.innerHTML=`<div class="th"><span class="ic">${ICON[x.kind]}</span>${imgTag(s.img,s.imgAlt)}</div><div><span class="t">${x.time?hm(x.t)+" · ":x.ranged?"":"Tid på nettsiden · "}${ICON[x.kind]} ${x.kind==="humor"?"Stand-up":x.kind==="konsert"?"Konsert":esc(s.cat)}</span><b>${esc(s.title)}</b><small>${esc(s.label)}</small></div>`;
+    if(x.kind==="loppe"){const l=x.l;b.innerHTML=`<div class="th"><span class="ic">🛍️</span>${imgTag(l.img)}</div><div><span class="t">${l.time?esc(l.time)+" · ":""}🛍️ Loppemarked</span><b>${esc(l.title)}</b><small>${esc(l.place||"")}</small></div>`;
+      b.addEventListener("click",()=>window.open(l.url,"_blank","noopener"));return b}
+    const s=x.s;b.innerHTML=`<div class="th"><span class="ic">${ICON[x.kind]}</span>${imgTag(s.img,s.imgAlt)}</div><div><span class="t">${x.time?hm(x.t)+" · ":x.ranged?"":"Tid på nettsiden · "}${ICON[x.kind]} ${x.kind==="humor"?"Stand-up":x.kind==="konsert"?"Konsert":esc(s.cat)}</span><b>${esc(s.title)}</b><small>${esc(s.label)}${badgeTxt(s)?" · "+badgeTxt(s):""}</small></div>`;
     b.addEventListener("click",()=>openShow(s));return b};
   el.innerHTML="";
   const ttl=document.createElement("p");ttl.className="src";ttl.style.margin="0 0 6px";
@@ -922,7 +971,7 @@ function fill(title,style,desc,dates,url,linkText){pause();document.getElementBy
   document.getElementById("mhead").setAttribute("style",style);document.getElementById("mtitle").textContent=title;
   document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
-function openShow(s){openShowInner(s);document.getElementById("mprice").innerHTML=priceHtml(s);modalFav(s._t||"teater",s)}
+function openShow(s){openShowInner(s);{const b=badgeTxt(s);if(b)document.getElementById("mdesc").insertAdjacentHTML("afterbegin",`<b>${b}</b><br>`)}document.getElementById("mprice").innerHTML=priceHtml(s);modalFav(s._t||"teater",s)}
 function priceHtml(s){
   const c=DATA&&DATA.prices&&DATA.prices[s.url];
   const p=(s.prices&&s.prices.length?s.prices:c&&c.p)||[];

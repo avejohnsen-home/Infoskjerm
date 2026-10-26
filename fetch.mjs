@@ -805,7 +805,7 @@ async function cosmopolite(browser) {
       const url = abs($(a).attr("href"), base).split("#")[0];
       const m = url.match(/\/program\/([^/]+)\/(\d{4})\/([a-zæøå]+)\/([^/?]+)/i); if (!m || shows.has(url)) return;
       const card = cardAround($, a, c => c.find("img").length > 0 && /\d{1,2}\.\s*\p{L}+/u.test(c.text()));
-      const bad = /^(bilde|main navigation|kjøp billett|få billetter|les mer)$/i;
+      const bad = /^(bilde|main navigation|kjøp billett|få billetter|les mer|utsolgt|snart utsolgt|få billetter igjen)$/i;
       const cands = [card.find("h1,h2,h3,h4,h5").first().text(), ...card.find("a").map((_, x) => $(x).text()).get()].map(t => t.replace(/\s+/g, " ").trim()).filter(t => t && !bad.test(t) && t.length < 90);
       const title = cands[0] || m[4].replace(/-/g, " ").replace(/^\w/, c => c.toUpperCase());
       const day = (cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().match(/(\d{1,2})\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i) || []);
@@ -1270,6 +1270,70 @@ async function slm() {
     .sort((a, b) => a.start.localeCompare(b.start));
 }
 
+
+// ---------- Farevarsler fra MET for Grünerløkka ----------
+async function alerts() {
+  const r = await fetch("https://api.met.no/weatherapi/metalerts/2.0/current.json?lat=59.923&lon=10.759&lang=no", { headers: H });
+  if (!r.ok) throw new Error("MET farevarsel svarte " + r.status);
+  const j = await r.json();
+  return (j.features || []).map(f => {
+    const p = f.properties || {}, iv = f.when?.interval || [];
+    const lvl = String(p.riskMatrixColor || p.awareness_level || "").toLowerCase();
+    return { event: p.event || "", title: p.eventAwarenessName || p.title || "Farevarsel", level: /red|rød/.test(lvl) ? "rød" : /orange/.test(lvl) ? "oransje" : "gult",
+      desc: String(p.description || "").slice(0, 400), advice: String(p.instruction || "").slice(0, 300), area: p.area || "", from: iv[0] || null, to: iv[1] || null };
+  });
+}
+
+// ---------- Snødybde på Tryvannshøgda (MET Frost, krever gratis FROST_CLIENT_ID) ----------
+async function snow() {
+  const id = process.env.FROST_CLIENT_ID;
+  if (!id) { console.log("  Snø: ingen FROST_CLIENT_ID i GitHub Secrets, hopper over"); return null; }
+  const url = "https://frost.met.no/observations/v0.jsonld?" + new URLSearchParams({ sources: "SN18950", elements: "surface_snow_thickness", referencetime: "latest", maxage: "P14D" });
+  const r = await fetch(url, { headers: { ...H, Authorization: "Basic " + Buffer.from(id + ":").toString("base64") } });
+  if (r.status === 404) return { station: "Tryvannshøgda", cm: null, time: null };  // ingen måling siste to uker
+  if (!r.ok) throw new Error("Frost svarte " + r.status);
+  const d = ((await r.json()).data || [])[0];
+  const o = d?.observations?.[0];
+  return { station: "Tryvannshøgda", cm: o && o.value >= 0 ? Math.round(o.value) : null, time: d?.referenceTime || null };
+}
+
+// ---------- Loppemarkeder i Oslo (loppi.no) ----------
+async function loppis() {
+  const base = "https://www.loppi.no/loppemarkeder/oslo";
+  const $ = await getHtml(base);
+  const MON = { januar: 1, februar: 2, mars: 3, april: 4, mai: 5, juni: 6, juli: 7, august: 8, september: 9, oktober: 10, november: 11, desember: 12 };
+  const now = new Date(), todayIso = now.toLocaleDateString("sv-SE", { timeZone: "Europe/Oslo" });
+  const yOf = mo => { const y = now.getFullYear(); return mo < now.getMonth() + 1 - 2 ? y + 1 : y; };
+  // «27.–28. oktober, 3.–4. november» / «1. november, 8. november» -> liste med datoer
+  function datesOf(t) {
+    const out = [];
+    for (const m of t.matchAll(/(\d{1,2})\.(?:\s*[–-]\s*(\d{1,2})\.)?\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/gi)) {
+      const mo = MON[m[3].toLowerCase()], a = Number(m[1]), b = Number(m[2] || m[1]);
+      for (let d = a; d <= b && d - a < 10; d++) out.push(`${yOf(mo)}-${pad(mo)}-${pad(d)}`);
+    }
+    return out;
+  }
+  const seen = new Map();
+  $('a[href*="/loppemarked/"]').each((_, a) => {
+    const url = abs($(a).attr("href"), base).split(/[?#]/)[0];
+    if (seen.has(url)) return;
+    const own = $(a).text().replace(/\s+/g, " ").trim();
+    if (/sist\s+\d/i.test(own)) return;   // tidligere marked («…Sist 24. okt · …»)
+    const card = cardAround($, a, c => /\d{1,2}\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i.test(c.text()));
+    const blocks = card.find("*").filter((_, e) => $(e).children().length === 0).map((_, e) => $(e).text().replace(/\s+/g, " ").trim()).get().filter(Boolean);
+    const title = ($(a).find("h1,h2,h3,h4").first().text() || own).replace(/\s+/g, " ").trim();
+    const ctext = cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " ");
+    const MRX = "(?:januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)";
+    const dateTxt = (ctext.match(new RegExp(`\\d{1,2}\\.(?:\\s*[–-]\\s*\\d{1,2}\\.)?\\s*${MRX}(?:\\s*,\\s*\\d{1,2}\\.(?:\\s*[–-]\\s*\\d{1,2}\\.)?\\s*${MRX})*`, "i")) || [""])[0];
+    const dates = datesOf(dateTxt).filter(d => d >= todayIso);
+    if (!title || !dates.length) return;
+    const time = ((ctext.match(/kl\.?\s*\d{1,2}(?:[.:]\d{2})?\s*[–-]\s*\d{1,2}(?:[.:]\d{2})?/i) || [""])[0].match(/(\d{1,2}(?:[.:]\d{2})?)\s*[–-]\s*(\d{1,2}(?:[.:]\d{2})?)/) || []).slice(1, 3).join("–");
+    const place = blocks.find(b => b !== title && !b.includes(dateTxt.slice(0, 8)) && !/^kl\.?\s*\d/i.test(b) && b.length < 90 && /\d|gate|vei|plass|park|skole|kirke|huset|torg/i.test(b) && !/^\+?\d+$/.test(b)) || "";
+    seen.set(url, { title, dates, time, place, url, img: imgOf(card, base) });
+  });
+  return [...seen.values()].sort((x, y) => x.dates[0].localeCompare(y.dates[0]));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -1290,6 +1354,9 @@ await run("sun", sun);
 await run("latter", latter);
 await run("waste", waste, true);
 await run("slm", slm);
+await run("alerts", alerts, true);
+await run("snow", snow, true);
+await run("loppis", loppis);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
