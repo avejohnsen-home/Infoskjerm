@@ -192,7 +192,11 @@ async function nfkino() {
   const until = new Date(Date.now() + 8 * 864e5).toISOString().slice(0, 10);
   $('h2 a[href*="/film/"]').each((_, a) => {
     const title = $(a).text().trim();
-    const card = cardAround($, a, c => c.find('a[href*="/screening/"]').length > 0);
+    // Filmens egen blokk: den største delen av siden som bare inneholder DENNE filmen.
+    // (Før kunne blokken bli så stor at den tok med neste films plakat og visninger.)
+    let card = $(a).parent();
+    while (card.parent().length && card.parent().find('h2 a[href*="/film/"]').length === 1) card = card.parent();
+    if (card.find('h2 a[href*="/film/"]').length !== 1) return;
     const shows = [];
     card.find("li[data-date]").each((_, li) => {
       const el = $(li), d = el.attr("data-date"), raw = (el.attr("data-time") || "").padStart(4, "0");
@@ -210,13 +214,7 @@ async function nfkino() {
     const text = cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " "); // tekst med mellomrom mellom elementene
     const head = text.split(/\d+ timer?|\d+ min/)[0];           // teksten før lengden: tittel + sjangre
     const genres = GENRES.filter(g => new RegExp("(^|[^\\p{L}])" + g + "($|[^\\p{L}])", "iu").test(head));
-    // plakaten kan ligge utenfor blokken med visninger: gå oppover så lenge vi bare har denne ene filmen
-    let p = posterOf($, card, base), box = card;
-    for (let k = 0; k < 4 && !p.best; k++) {
-      box = box.parent(); if (!box.length || box.find('h2 a[href*="/film/"]').length > 1) break;
-      p = posterOf($, box, base);
-    }
-    if (!p.best) { const prev = card.prevAll().first(); if (prev.length) p = posterOf($, prev, base); }
+    const p = posterOf($, card, base);
     out.push({
       title, url: abs($(a).attr("href"), base), img: p.best, genres,
       len: (text.match(/\d+ timer? \d+ min|\d+ timer?|\d+ min/) || [""])[0],
