@@ -1073,6 +1073,129 @@ async function ownLogos() {
   return files.map(f => ({ name: f.replace(/\.[^.]+$/, "").replace(/^logo\s*[-–_:]?\s*/i, "").trim(), img: "logoer/" + encodeURIComponent(f) }));
 }
 
+
+
+// ---------- Soloppgang og solnedgang (MET), i går til om 2 dager ----------
+async function sun() {
+  const out = [];
+  for (let k = -1; k <= 2; k++) {
+    const date = new Date(Date.now() + k * 864e5).toLocaleDateString("sv-SE", { timeZone: "Europe/Oslo" });
+    const off = new Intl.DateTimeFormat("en", { timeZone: "Europe/Oslo", timeZoneName: "longOffset" }).formatToParts(new Date(date + "T12:00:00Z")).find(x => x.type === "timeZoneName").value.replace("GMT", "") || "+00:00";
+    const r = await fetch(`https://api.met.no/weatherapi/sunrise/3.0/sun?lat=59.923&lon=10.759&date=${date}&offset=${encodeURIComponent(off)}`, { headers: H });
+    if (!r.ok) throw new Error("MET sol svarte " + r.status);
+    const p = (await r.json()).properties || {};
+    out.push({ date, rise: p.sunrise?.time || null, set: p.sunset?.time || null });
+  }
+  return out;
+}
+
+// ---------- Luftkvalitet (Meteorologisk institutt) ----------
+// AQI fra MET: under 2 = lav, 2–3 = moderat, 3–4 = høy, over 4 = svært høy
+async function air() {
+  const r = await fetch("https://api.met.no/weatherapi/airqualityforecast/0.1/?lat=59.923&lon=10.759&areaclass=grunnkrets", { headers: H });
+  if (!r.ok) throw new Error("MET luftkvalitet svarte " + r.status);
+  const j = await r.json();
+  const NAMES = { pm10: "svevestøv (PM10)", pm25: "fint svevestøv (PM2,5)", no2: "NO₂ (eksos)", o3: "ozon" };
+  const fmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Oslo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hour12: false });
+  const hours = (j.data?.time || []).map(t => {
+    const v = t.variables || {}, val = k => v[k]?.value;
+    const comps = ["pm10", "pm25", "no2", "o3"].map(c => [c, val("AQI_" + c)]).filter(([, x]) => x != null).sort((a, b) => b[1] - a[1]);
+    const p = Object.fromEntries(fmt.formatToParts(new Date(t.from)).map(x => [x.type, x.value]));
+    return { date: `${p.year}-${p.month}-${p.day}`, h: Number(p.hour) % 24, aqi: Math.round((val("AQI") ?? 0) * 10) / 10, main: comps[0] ? NAMES[comps[0][0]] : "" };
+  }).filter(x => x.aqi);
+  if (!hours.length) throw new Error("fant ingen luftkvalitetsdata");
+  return { place: j.meta?.location?.name || "", hours };
+}
+
+// ---------- Latter (stand-up, Aker Brygge): Ticketmaster + latter.no ----------
+async function latter() {
+  const key = process.env.TICKETMASTER_KEY;
+  const shows = new Map();
+  if (key) {
+    const B = "https://app.ticketmaster.com/discovery/v2";
+    const r = await fetch(`${B}/venues.json?keyword=Latter&countryCode=NO&size=20&apikey=${key}`);
+    const venues = r.ok ? ((await r.json())._embedded?.venues || []).filter(v => /^latter\b/i.test(v.name) && /oslo/i.test(v.city?.name || "")) : [];
+    console.log("  Latter hos Ticketmaster: " + (venues.map(v => v.name).join(" | ") || "ingen"));
+    for (const v of venues) {
+      for (let page = 0; page < 3; page++) {
+        const er = await fetch(`${B}/events.json?venueId=${v.id}&size=200&page=${page}&sort=date,asc&apikey=${key}`);
+        if (!er.ok) break;
+        const j = await er.json();
+        for (const e of j._embedded?.events || []) {
+          const d = e.dates?.start; if (!d?.localDate) continue;
+          const iso = d.localDate + "T" + (d.localTime || "19:00:00").slice(0, 5);
+          const img = (e.images || []).sort((a, b) => (b.ratio === "3_2") - (a.ratio === "3_2") || b.width - a.width)[0]?.url || "";
+          const title = e.name.replace(/\s*[-–]\s*(siste forestilling|ekstraforestilling|ekstra)!?$/i, "").trim();
+          const k = title.toLowerCase();
+          if (!shows.has(k)) shows.set(k, { title, venue: "Latter", url: e.url, img, times: [], hint: "stand-up humor" });
+          const s = shows.get(k); if (!s.times.includes(iso)) s.times.push(iso);
+        }
+        if ((j.page?.totalPages || 1) <= page + 1) break;
+        await new Promise(res => setTimeout(res, 250));
+      }
+    }
+  }
+  // Suppler med programmet på latter.no (forestillinger som ikke ligger hos Ticketmaster)
+  const web = new Map();
+  try {
+    const base = "https://latter.no/forestillinger";
+    const $ = await getHtml(base);
+    $('a[href*="/forestillinger/"]').each((_, a) => {
+      let u; try { u = new URL($(a).attr("href"), base); } catch { return; }
+      const slug = (u.pathname.match(/\/forestillinger\/([^/?#]+)/) || [])[1]; if (!slug) return;
+      const date = u.searchParams.get("date");
+      const card = cardAround($, a, c => c.find("img").length > 0 && c.text().trim().length > 10);
+      const title = (card.find("h1,h2,h3,h4").first().text() || $(a).text() || decodeURIComponent(slug).replace(/-/g, " ")).replace(/\s+/g, " ").trim();
+      if (!web.has(slug)) web.set(slug, { title, venue: "Latter", url: base + "/" + slug, img: imgOf(card, base), dates: new Set(), hint: "stand-up humor" });
+      if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) web.get(slug).dates.add(date);
+    });
+  } catch (e) { console.log("  latter.no: " + e.message); }
+  const norm = t => t.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
+  const tm = [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
+  const have = new Set(tm.map(s => norm(s.title)));
+  const extra = [...web.values()].filter(w => w.title && !have.has(norm(w.title))).map(w => {
+    const d = [...w.dates].sort(); const { dates, ...rest } = w;
+    return { ...rest, from: d[0] || null, to: d[d.length - 1] || null };
+  });
+  console.log(`  Latter: ${tm.length} fra Ticketmaster, ${extra.length} ekstra fra latter.no`);
+  return [...tm, ...extra];
+}
+
+// ---------- Tømmekalender (Oslo kommune) ----------
+// Adressen ligger skjult i GitHub Secrets (ADRESSE), f.eks. «Thorvald Meyers gate 50B».
+// Den skrives aldri til data.json eller loggen, bare tømmedatoene.
+async function waste() {
+  const adr = (process.env.ADRESSE || "").trim();
+  if (!adr) { console.log("  Søppel: ingen ADRESSE i GitHub Secrets, hopper over"); return null; }
+  const g = await fetch("https://ws.geonorge.no/adresser/v1/sok?" + new URLSearchParams({ sok: adr, kommunenummer: "0301", treffPerSide: "5" }), { headers: H });
+  if (!g.ok) throw new Error("Geonorge svarte " + g.status);
+  const a = ((await g.json()).adresser || [])[0];
+  if (!a) throw new Error("fant ikke adressen hos Geonorge (sjekk ADRESSE)");
+  const q = { street: a.adressenavn, number: String(a.nummer), street_id: String(a.adressekode) };
+  if (a.bokstav) q.letter = a.bokstav;
+  const r = await fetch("https://www.oslo.kommune.no/actions/snap-lib-waste-complaint/search-by-address?" + new URLSearchParams(q), { headers: { ...H, Accept: "application/json" } });
+  if (!r.ok) throw new Error("Oslo kommune svarte " + r.status);
+  const j = await r.json();
+  const points = j?.result?.[0]?.HentePunkts || [];
+  const DAYS = { 10000: 7, 20000: 4, 30000: 3, 40000: 14, 50000: 28 };
+  const FREQ = { 10000: "hver uke", 20000: "2 ganger i uken", 30000: "3 ganger i uken", 40000: "annenhver uke", 50000: "én gang i måneden" };
+  const todayIso = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Oslo" });
+  const out = new Map();
+  for (const p of points) for (const t of p.Tjenester || []) {
+    const type = String(t.Fraksjon?.Tekst || "Avfall").trim();
+    const m = String(t.TommeDato || "").match(/(\d{2})\.(\d{2})\.(\d{4})/); if (!m) continue;
+    let d = new Date(`${m[3]}-${m[2]}-${m[1]}T12:00:00Z`);
+    const f = t.Hyppighet?.Faktor, step = DAYS[f] || 7;
+    let estimated = false;
+    while (d.toISOString().slice(0, 10) < todayIso) { d = new Date(d.getTime() + step * 864e5); estimated = true; }
+    const next = d.toISOString().slice(0, 10);
+    const prev = out.get(type.toLowerCase());
+    if (!prev || next < prev.next) out.set(type.toLowerCase(), { type, next, freq: FREQ[f] || t.Hyppighet?.Tekst || "", estimated });
+  }
+  if (!out.size) throw new Error("fant ingen tømmedatoer for adressen");
+  return [...out.values()].sort((x, y) => x.next.localeCompare(y.next));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -1088,6 +1211,10 @@ await run("ownArt", ownPictures, true);
 await run("ownLogos", ownLogos, true);
 await run("logos", logos);
 await run("fjaereheia", fjaereheia, true);
+await run("air", air);
+await run("sun", sun);
+await run("latter", latter);
+await run("waste", waste, true);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();
@@ -1105,7 +1232,7 @@ try {
   try { await trondelagPosters(browser); } catch (e) { console.log("  Trøndelag-plakater feilet: " + e.message); }
 } finally { await browser.close(); }
 // Hvilken by hver kilde hører til (nye byer legges til her)
-const CITY = { grieghallen: "Bergen", k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", detnorske: "Oslo", films: "Oslo" };
+const CITY = { grieghallen: "Bergen", k_rockefeller: "Oslo", k_blaa: "Oslo", k_vulkan: "Oslo", k_cosmopolite: "Oslo", k_konserthus: "Oslo", dns: "Bergen", kilden: "Kristiansand", fjaereheia: "Kristiansand", trondelag: "Trondheim", nyehjorten: "Trondheim", christiania: "Oslo", nationaltheatret: "Oslo", oslonye: "Oslo", operaen: "Oslo", neuf: "Oslo", chatnoir: "Oslo", latter: "Oslo", detnorske: "Oslo", films: "Oslo" };
 for (const [k, city] of Object.entries(CITY)) if (Array.isArray(data[k])) data[k].forEach(x => { x.city = x.city || city; });
 try { data.prices = await prices(); } catch (e) { data.prices = old.prices || {}; data.errors.push("prices: " + e.message); console.log("FEIL prices", e.message); }
 fs.writeFileSync("data.json", JSON.stringify(data, null, 1));
