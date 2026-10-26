@@ -1228,6 +1228,43 @@ async function waste() {
   return [...out.values()].sort((x, y) => x.next.localeCompare(y.next));
 }
 
+
+// ---------- SLM Oslo: arrangementer (WordPress / The Events Calendar) ----------
+async function slm() {
+  const site = "https://slmoslo.no";
+  const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Oslo" });
+  const txt = h => cheerio.load(String(h || "")).text().replace(/\s+/g, " ").trim();
+  const out = [];
+  // 1) REST-API-et til kalenderen
+  try {
+    let url = `${site}/wp-json/tribe/events/v1/events?per_page=50&start_date=${today}`;
+    for (let k = 0; url && k < 6; k++) {
+      const rule = await robotsRule(url); if (rule && !rule.allow) throw new Error("robots.txt sperrer API-et");
+      const r = await fetch(url, { headers: { ...H, Accept: "application/json" } });
+      if (!r.ok) throw new Error("API svarte " + r.status);
+      const j = await r.json();
+      for (const e of j.events || []) out.push({ title: txt(e.title), start: String(e.start_date || "").replace(" ", "T").slice(0, 16),
+        url: e.url, price: txt(e.cost), about: txt(e.excerpt).slice(0, 220) });
+      url = j.next_rest_url || null;
+      await new Promise(res => setTimeout(res, 300));
+    }
+  } catch (e) { console.log("  SLM API: " + e.message + " – prøver kalenderfilen"); out.length = 0; }
+  // 2) Reserve: iCal-filen
+  if (!out.length) {
+    const url = `${site}/?post_type=tribe_events&ical=1&eventDisplay=list`;
+    const rule = await robotsRule(url); if (rule && !rule.allow) throw new Error("robots.txt sperrer kalenderfilen");
+    const r = await fetch(url, { headers: H }); if (!r.ok) throw new Error("SLM kalender svarte " + r.status);
+    const ics = (await r.text()).replace(/\r?\n[ \t]/g, "");
+    for (const ev of ics.split("BEGIN:VEVENT").slice(1)) {
+      const get = k => ((ev.match(new RegExp("^" + k + "(?:;[^:\\n]*)?:(.*)$", "m")) || [])[1] || "").replace(/\\([,;\\])/g, "$1").replace(/\\n/gi, " ").trim();
+      const d = get("DTSTART").match(/(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2}))?/); if (!d) continue;
+      out.push({ title: get("SUMMARY"), start: `${d[1]}-${d[2]}-${d[3]}T${d[4] || "00"}:${d[5] || "00"}`, url: get("URL"), price: "", about: get("DESCRIPTION").slice(0, 220) });
+    }
+  }
+  const seen = new Set();
+  return out.filter(e => e.title && e.start.slice(0, 10) >= today && !seen.has(e.url + e.start) && seen.add(e.url + e.start)).sort((a, b) => a.start.localeCompare(b.start));
+}
+
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
 async function run(key, fn, allowEmpty = false) {
   try {
@@ -1247,6 +1284,7 @@ await run("air", air);
 await run("sun", sun);
 await run("latter", latter);
 await run("waste", waste, true);
+await run("slm", slm);
 
 const { chromium } = await import("playwright");
 const browser = await chromium.launch();

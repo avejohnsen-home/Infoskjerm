@@ -81,6 +81,11 @@ body{
 .quizbar b{display:block;font-size:15px}
 .quizbar span.s{font-size:13px;color:var(--muted)}
 .quizbar.tonight{outline:2px solid var(--signal)}
+.slmbar{margin-top:8px}
+.slmrow{display:block;text-decoration:none;color:inherit;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.slmrow b{display:block}
+.slmrow small{color:var(--muted)}
+.slmrow .tm{color:var(--tram);font-weight:600}
 .qrow{padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
 .qrow b{display:block}
 .qrow small{color:var(--muted)}
@@ -305,6 +310,7 @@ body{background:var(--bg);color:var(--ink)}
   <button class="infoline" id="infoline" aria-label="Luft, sol, måne og søppel – trykk for detaljer"></button>
   <section class="transit" id="transit" aria-label="Avganger"></section>
   <button class="quizbar" id="quizbar" hidden></button>
+  <button class="quizbar slmbar" id="slmbar" hidden></button>
 
   <p class="demo" id="banner" hidden></p>
 
@@ -581,7 +587,7 @@ async function load(){
     (DATA.oslonye||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Centralteatret(?=,|$)/,"Centralteatret & Teaterkjellern")});
     (DATA.trondelag||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Trøndelag Teater(?=,|$)/,"Nye Trøndelag Teater")});}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderWeekend();
+  LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderWeekend();renderSlm();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -838,7 +844,7 @@ document.getElementById("infoline").addEventListener("click",()=>{
   if(w.length)h+=`<div class="ihead">Søppelhenting</div>`+w.map(x=>`<div class="irow"><span>${WASTE_ICON(x.type)} ${esc(x.type)} <small>${esc(x.freq||"")}${x.estimated?" · beregnet":""}</small></span><b>${cap(whenTxt(x.next))}</b></div>`).join("");
   document.getElementById("mdesc").innerHTML=h;
 });
-setInterval(()=>{if(DATA){renderInfo();renderWeekend()}},5*60*1000);
+setInterval(()=>{if(DATA){renderInfo();renderWeekend();renderSlm()}},5*60*1000);
 
 // ---------- Helg: fredag–søndag samlet ----------
 function weekendRange(){const t=today(),d=t.getDay(); // 5=fre, 6=lør, 0=søn
@@ -882,6 +888,25 @@ function renderWeekend(){
     ranged.sort((a,b)=>a.s.title.localeCompare(b.s.title,"nb")).forEach(r=>el.appendChild(row({...r,time:false,ranged:true})))}
   document.getElementById("srcW").textContent=`${ev.length} arrangementer med tidspunkt${ranged.length?` og ${ranged.length} forestillinger som går over flere dager (se tider på nettsiden)`:""}. Kino finner du under Kino-fanen.`;
 }
+
+
+// ---------- SLM Oslo ----------
+const SLM_DAYS=90; // hvor langt fram lista viser
+const slmList=()=>((DATA&&DATA.slm)||[]).map(e=>({...e,t:new Date(e.start)})).filter(e=>e.t>=new Date(Date.now()-3*36e5));
+function renderSlm(){
+  const bar=document.getElementById("slmbar"),list=slmList();if(!list.length){bar.hidden=true;return}
+  const n=list[0],tonight=ymdOf(n.t)===ymdOf(new Date());
+  bar.hidden=false;bar.classList.toggle("tonight",tonight);
+  bar.innerHTML=`<span class="qi">🎟️</span><span><b>SLM${tonight?" i kveld":""}: ${esc(n.title)}</b><span class="s">${tonight?"kl. "+hm(n.t):dayLabel(ymdOf(n.t))+" kl. "+hm(n.t)} · trykk for alle arrangementer</span></span>`;
+}
+document.getElementById("slmbar").addEventListener("click",()=>{
+  const end=new Date(Date.now()+SLM_DAYS*864e5),list=slmList().filter(e=>e.t<=end);
+  fill("SLM Oslo","background:linear-gradient(135deg,#1A1A1A,#5A1F2B)","",[],"https://slmoslo.no/events/","Se hele programmet på slmoslo.no");
+  let html="",last="";
+  list.forEach(e=>{const d=ymdOf(e.t);if(d!==last){html+=`<div class="qday">${dayLabel(d)}</div>`;last=d}
+    html+=`<a class="slmrow" href="${esc(e.url||"https://slmoslo.no/events/")}" target="_blank" rel="noopener"><span class="tm">${hm(e.t)}</span> · <b style="display:inline">${esc(e.title)}</b>${e.price||e.about?`<small style="display:block">${[e.price,e.about].filter(Boolean).map(esc).join(" · ")}</small>`:""}</a>`});
+  document.getElementById("mdesc").innerHTML=html||"Ingen arrangementer de neste månedene.";
+});
 
 // ---------- Faner (ingen automatisk bytting) ----------
 const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4,5].map(i=>document.getElementById("s"+i));
