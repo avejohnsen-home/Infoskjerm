@@ -906,6 +906,7 @@ function renderWeekend(){
     if(k==="films"||!Array.isArray(v)||!v.length||!v[0].venue)return;const isK=k.startsWith("k_");
     v.forEach(s0=>{if(s0.city&&s0.city!=="Oslo")return;
       const s={...s0,_t:isK?"konsert":"teater",label:s0.venue.split(",")[0]};s.cat=catOf(s);const kind=kindOf(s,isK);
+      if(kind==="teater")return; // teater vises bare på Teater-fanen
       if(s0.times){const tm=s0.times.map(x=>new Date(x));s.times=tm.filter(t=>t>=today());tm.filter(inW).forEach(t=>ev.push({t,s,kind,time:true}));return}
       if(s0.next){const n=new Date(s0.next);if(inW(n))ev.push({t:n,s,kind,time:true});return}
       if(!s0.from)return;s.f=new Date(s0.from+"T00:00");s.t=s0.to?new Date(s0.to+"T23:59"):null;
@@ -936,7 +937,7 @@ function renderWeekend(){
   if(!ev.length)el.insertAdjacentHTML("beforeend",`<div class="empty">Fant ingen arrangementer med fast tidspunkt denne helgen.</div>`);
   if(ranged.length){const h=document.createElement("div");h.className="wkday";h.textContent="Spilles i helgen";el.appendChild(h);
     ranged.sort((a,b)=>a.s.title.localeCompare(b.s.title,"nb")).forEach(r=>el.appendChild(row({...r,time:false,ranged:true})))}
-  document.getElementById("srcW").textContent=`${ev.length} arrangementer med tidspunkt${ranged.length?` og ${ranged.length} forestillinger som går over flere dager (se tider på nettsiden)`:""}. Kino finner du under Kino-fanen.`;
+  document.getElementById("srcW").textContent=`${ev.length} arrangementer med tidspunkt${ranged.length?` og ${ranged.length} forestillinger som går over flere dager (se tider på nettsiden)`:""}. Teater og kino finner du under egne faner.`;
 }
 
 
