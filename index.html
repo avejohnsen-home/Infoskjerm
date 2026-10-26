@@ -783,13 +783,14 @@ document.addEventListener("click",e=>{const b=e.target.closest(".pcard.gone .fav
 // ---------- Billettstatus og gratis ----------
 function ticketState(s){const t=[s.title,s.hint].join(" "),a=String(s.about||"");
   if(/få billetter igjen|snart utsolgt|nesten utsolgt|siste billetter|few tickets/i.test(t)||/·\s*snart utsolgt$/i.test(a))return "snart";
-  if(/\butsolgt\b(?!e)/i.test(t)||/·\s*utsolgt$/i.test(a))return "ut";return ""}
+  if(/\butsolgt\b(?!e)/i.test(t)||/·\s*utsolgt$/i.test(a))return "ut";
+  if(/\bavlyst\b/i.test(t))return "avlyst";return ""}
 const isFree=s=>/\bgratis\b|fri entré|gratis inngang|free entry/i.test([s.title,s.hint,s.about,s.price].join(" "));
 const cleanTitle=t=>String(t||"").replace(/\s*\((få billetter igjen|snart utsolgt|utsolgt)\)\s*/i," ").replace(/\s*[-–]\s*(utsolgt|snart utsolgt|få billetter igjen)!?\s*$/i,"").trim();
 function prepStatus(){Object.values(DATA).forEach(v=>{if(!Array.isArray(v))return;v.forEach(s=>{if(!s||typeof s!=="object"||!s.title||!s.venue)return;
   s._sold=ticketState(s);s._free=isFree(s);s.title=cleanTitle(s.title)})})}
-const badgeHtml=s=>s&&(s._sold||s._free)?`<div class="badges">${s._sold==="ut"?`<span class="badge ut">Utsolgt</span>`:s._sold?`<span class="badge">Snart utsolgt</span>`:""}${s._free?`<span class="badge free">Gratis</span>`:""}</div>`:"";
-const badgeTxt=s=>[s._sold==="ut"?"🔴 Utsolgt":s._sold?"🟡 Snart utsolgt":"",s._free?"🟢 Gratis":""].filter(Boolean).join(" · ");
+const badgeHtml=s=>s&&(s._sold||s._free)?`<div class="badges">${s._sold==="ut"?`<span class="badge ut">Utsolgt</span>`:s._sold==="avlyst"?`<span class="badge ut">Avlyst</span>`:s._sold?`<span class="badge">Snart utsolgt</span>`:""}${s._free?`<span class="badge free">Gratis</span>`:""}</div>`:"";
+const badgeTxt=s=>[s._sold==="ut"?"🔴 Utsolgt":s._sold==="avlyst"?"⛔ Avlyst":s._sold?"🟡 Snart utsolgt":"",s._free?"🟢 Gratis":""].filter(Boolean).join(" · ");
 
 // ---------- Glatt føre og farevarsler ----------
 function activeAlerts(){const n=Date.now();return ((DATA&&DATA.alerts)||[]).filter(a=>(!a.from||new Date(a.from)-n<12*36e5)&&(!a.to||new Date(a.to)>n))}

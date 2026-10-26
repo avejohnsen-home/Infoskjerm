@@ -805,7 +805,7 @@ async function cosmopolite(browser) {
       const url = abs($(a).attr("href"), base).split("#")[0];
       const m = url.match(/\/program\/([^/]+)\/(\d{4})\/([a-zæøå]+)\/([^/?]+)/i); if (!m || shows.has(url)) return;
       const card = cardAround($, a, c => c.find("img").length > 0 && /\d{1,2}\.\s*\p{L}+/u.test(c.text()));
-      const bad = /^(bilde|main navigation|kjøp billett|få billetter|les mer|utsolgt|snart utsolgt|få billetter igjen)$/i;
+      const bad = /^(bilde|main navigation|kjøp billett|få billetter|les mer|utsolgt|snart utsolgt|få billetter igjen|avlyst|avlyses|flyttet|ny dato)$/i;
       const cands = [card.find("h1,h2,h3,h4,h5").first().text(), ...card.find("a").map((_, x) => $(x).text()).get()].map(t => t.replace(/\s+/g, " ").trim()).filter(t => t && !bad.test(t) && t.length < 90);
       const title = cands[0] || m[4].replace(/-/g, " ").replace(/^\w/, c => c.toUpperCase());
       const day = (cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().match(/(\d{1,2})\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i) || []);
@@ -1286,11 +1286,12 @@ async function alerts() {
 
 // ---------- Snødybde på Tryvannshøgda (MET Frost, krever gratis FROST_CLIENT_ID) ----------
 async function snow() {
-  const id = process.env.FROST_CLIENT_ID;
+  const id = (process.env.FROST_CLIENT_ID || "").trim();
   if (!id) { console.log("  Snø: ingen FROST_CLIENT_ID i GitHub Secrets, hopper over"); return null; }
   const url = "https://frost.met.no/observations/v0.jsonld?" + new URLSearchParams({ sources: "SN18950", elements: "surface_snow_thickness", referencetime: "latest", maxage: "P14D" });
   const r = await fetch(url, { headers: { ...H, Authorization: "Basic " + Buffer.from(id + ":").toString("base64") } });
   if (r.status === 404) return { station: "Tryvannshøgda", cm: null, time: null };  // ingen måling siste to uker
+  if (r.status === 401 || r.status === 403) throw new Error("Frost avviste nøkkelen (" + r.status + "): sjekk at FROST_CLIENT_ID er Client ID, ikke Client secret");
   if (!r.ok) throw new Error("Frost svarte " + r.status);
   const d = ((await r.json()).data || [])[0];
   const o = d?.observations?.[0];
@@ -1319,7 +1320,9 @@ async function loppis() {
     if (seen.has(url)) return;
     const own = $(a).text().replace(/\s+/g, " ").trim();
     if (/sist\s+\d/i.test(own)) return;   // tidligere marked («…Sist 24. okt · …»)
-    const card = cardAround($, a, c => /\d{1,2}\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i.test(c.text()));
+    let card = cardAround($, a, c => /\d{1,2}\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)/i.test(c.text()));
+    // utvid kortet så lenge det bare inneholder dette ene markedet (klokkeslett og bilde ligger ofte litt utenfor)
+    for (let k = 0; k < 4; k++) { const p = card.parent(); if (!p.length || p.find('a[href*="/loppemarked/"]').map((_, x) => abs($(x).attr("href"), base).split(/[?#]/)[0]).get().some(u => u !== url)) break; card = p; }
     const blocks = card.find("*").filter((_, e) => $(e).children().length === 0).map((_, e) => $(e).text().replace(/\s+/g, " ").trim()).get().filter(Boolean);
     const title = ($(a).find("h1,h2,h3,h4").first().text() || own).replace(/\s+/g, " ").trim();
     const ctext = cheerio.load($.html(card).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " ");
