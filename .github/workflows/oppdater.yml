@@ -22,6 +22,7 @@ jobs:
           TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
           OMDB_KEY: ${{ secrets.OMDB_KEY }}
           ADRESSE: ${{ secrets.ADRESSE }}
+          FROST_CLIENT_ID: ${{ secrets.FROST_CLIENT_ID }}
       - run: |
           git config user.name "infoskjerm-bot"
           git config user.email "actions@users.noreply.github.com"
