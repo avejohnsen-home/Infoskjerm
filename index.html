@@ -835,8 +835,7 @@ document.getElementById("infoline").addEventListener("click",()=>{
   h+=`<div class="ihead">Månen</div><div class="irow"><span>${mn[1]} ${mn[2]}</span><small>${Math.round(m.frac*100)} % opplyst</small></div>
     ${fm?`<div class="irow"><span>🌕 Neste fullmåne</span><b>${fmtD(fm)}</b></div>`:""}${nm?`<div class="irow"><span>🌑 Neste nymåne</span><b>${fmtD(nm)}</b></div>`:""}`;
   const w=((DATA&&DATA.waste)||[]).filter(x=>daysTo(x.next)>=0);
-  if(w.length)h+=`<div class="ihead">Søppelhenting</div>`+w.map(x=>`<div class="irow"><span>${WASTE_ICON(x.type)} ${esc(x.type)} <small>${esc(x.freq||"")}${x.estimated?" · beregnet":""}</small></span><b>${cap(whenTxt(x.next))}</b></div>`).join("")+
-    `<div class="irow"><span>🍾 Glass og metall</span><small>leveres på returpunkt</small></div>`;
+  if(w.length)h+=`<div class="ihead">Søppelhenting</div>`+w.map(x=>`<div class="irow"><span>${WASTE_ICON(x.type)} ${esc(x.type)} <small>${esc(x.freq||"")}${x.estimated?" · beregnet":""}</small></span><b>${cap(whenTxt(x.next))}</b></div>`).join("");
   document.getElementById("mdesc").innerHTML=h;
 });
 setInterval(()=>{if(DATA){renderInfo();renderWeekend()}},5*60*1000);
