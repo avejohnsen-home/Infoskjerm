@@ -21,6 +21,7 @@ jobs:
         env:
           TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
           OMDB_KEY: ${{ secrets.OMDB_KEY }}
+          ADRESSE: ${{ secrets.ADRESSE }}
       - run: |
           git config user.name "infoskjerm-bot"
           git config user.email "actions@users.noreply.github.com"
