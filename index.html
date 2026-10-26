@@ -219,13 +219,23 @@ dialog::backdrop{background:rgba(10,16,22,.6)}
 .saver .hill{position:absolute;left:-10%;right:-10%;bottom:-8%;height:42%;background:#14263A;border-radius:50% 50% 0 0;opacity:.9}
 .saver .layer{position:absolute;inset:0;opacity:0;transition:opacity 2s ease}
 .saver .layer.show{opacity:1}
-.saver .blur{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(30px) brightness(.45)}
-.saver .pic{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;padding:0}
+.saver .blur{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(30px) brightness(.225)}
+.saver .pic{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;padding:0;filter:brightness(.5)} /* pausebildene dempet 50 % */
 .saver::after{content:"";position:absolute;left:0;right:0;bottom:0;height:28%;background:linear-gradient(to top,rgba(0,0,0,.6),transparent);z-index:1;pointer-events:none}
 .saver .sclock{position:absolute;left:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35);z-index:2}
 .saver .stemp{position:absolute;right:24px;bottom:calc(28px + env(safe-area-inset-bottom,0px));color:#fff;font-size:56px;font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(0,0,0,.35);z-index:2}
 .saver .cap{position:absolute;right:20px;bottom:calc(110px + env(safe-area-inset-bottom,0px));color:rgba(255,255,255,.85);font-size:13px;max-width:55%;text-align:right;line-height:1.35;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .saver .cap b{display:block;color:#fff;font-size:15px}
+
+
+/* Nattmodus */
+.night{position:fixed;inset:0;z-index:60;display:none;background:#000;cursor:pointer;color:#B08A4E}
+.night.on{display:block;animation:fade 1.5s ease}
+.night .nbox{position:absolute;left:50%;top:var(--ny,40%);transform:translate(-50%,-50%);text-align:center;transition:top 3s ease}
+.night .nclock{font-size:150px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.night .ndate{font-size:26px;opacity:.7;margin-top:8px}
+.night .ntemp{font-size:54px;font-weight:700;margin-top:34px;opacity:.85}
+.night .nnext{font-size:20px;opacity:.55;margin-top:10px}
 
 @media (prefers-reduced-motion:reduce){
   .slide.on,.saver.on{animation:none}
@@ -314,6 +324,7 @@ body{background:var(--bg);color:var(--ink)}
 
   <footer>
     <button id="testSaver">Vis skjermsparer</button>
+    <button id="testNight">Vis nattmodus</button>
     <span id="updated">Skjermsparer etter 2 min uten berøring</span>
   </footer>
 </div>
@@ -336,6 +347,10 @@ body{background:var(--bg);color:var(--ink)}
   <div class="wlist" id="wlist"></div>
   <div class="mbody"><button class="close" id="wclose">Lukk</button></div>
 </dialog>
+
+<div class="night" id="night" role="button" aria-label="Nattmodus – trykk for å vise dashboardet">
+  <div class="nbox"><div class="nclock" id="nclock"></div><div class="ndate" id="ndate"></div><div class="ntemp" id="ntemp"></div><div class="nnext" id="nnext"></div></div>
+</div>
 
 <div class="saver" id="saver" role="button" aria-label="Trykk for å gå tilbake">
   <div class="hill"></div>
@@ -792,7 +807,38 @@ setInterval(()=>{if(saver.classList.contains("on"))saverTemp()},5*60*1000);
 function stopSaver(){saver.classList.remove("on");clearInterval(artTimer);idle=Date.now()}
 saver.addEventListener("pointerdown",e=>{e.stopPropagation();stopSaver()});
 document.getElementById("testSaver").addEventListener("click",e=>{e.stopPropagation();startSaver()});
-setInterval(()=>{if(Date.now()-idle>SAVER&&!saver.classList.contains("on"))startSaver()},1000);
+setInterval(()=>{if(Date.now()-idle>SAVER&&!saver.classList.contains("on")&&!isNight())startSaver()},1000);
+
+// ---------- Nattmodus (23:00–08:00) ----------
+// Mellom NIGHT_START og NIGHT_END vises en svak klokke i stedet for bildeskjermsparer.
+// I Fully Kiosk (med JavaScript Interface på) skrus lysstyrken ned automatisk.
+const NIGHT_START=23,NIGHT_END=8,NIGHT_BRIGHT=12; // lysstyrke 0–255 om natta
+const night=document.getElementById("night");let nightTest=false,dayBright=null;
+const FK=()=>typeof fully!=="undefined"?fully:null;
+function isNight(){const h=new Date().getHours();return nightTest||h>=NIGHT_START||h<NIGHT_END}
+function setBright(v){const f=FK();if(!f||v==null)return;try{f.setScreenBrightness(v)}catch(e){}}
+function dimScreen(){const f=FK();if(!f)return;try{const b=f.getScreenBrightness();if(b>NIGHT_BRIGHT)dayBright=b}catch(e){}setBright(NIGHT_BRIGHT)}
+function brightScreen(){setBright(dayBright==null?200:dayBright)}
+function nightFill(){const d=new Date();
+  document.getElementById("nclock").textContent=String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+  document.getElementById("ndate").textContent=`${cap(days[d.getDay()])} ${d.getDate()}. ${months[d.getMonth()]}`;
+  const w=DATA&&DATA.weather;document.getElementById("ntemp").textContent=w&&w.now?`${sym(w.now.sym)} ${w.now.temp}°`:"";
+  const t=w&&w.days&&w.days.find(x=>x.date>=new Date(Date.now()+(d.getHours()>=NIGHT_START?864e5:0)).toLocaleDateString("sv-SE"));
+  document.getElementById("nnext").textContent=t?`${d.getHours()>=NIGHT_START?"I morgen":"I dag"}: ${sym(t.sym)} ${t.max}° / ${t.min}°`:"";}
+function startNight(){if(night.classList.contains("on"))return;if(saver.classList.contains("on")){saver.classList.remove("on");clearInterval(artTimer)}
+  if(modal.open)modal.close();if(wmodal.open)wmodal.close();nightFill();night.classList.add("on");dimScreen()}
+function stopNight(){if(!night.classList.contains("on"))return;night.classList.remove("on");brightScreen();idle=Date.now()}
+night.addEventListener("pointerdown",e=>{e.stopPropagation();stopNight()});
+// flytter klokka litt hvert 10. minutt så skjermen ikke får innbrent bilde
+setInterval(()=>night.style.setProperty("--ny",(34+Math.random()*14).toFixed(1)+"%"),10*60*1000);
+setInterval(()=>{
+  if(night.classList.contains("on")){nightFill();if(!isNight())stopNight()}
+  else if(isNight()&&Date.now()-idle>SAVER)startNight();
+},1000);
+document.getElementById("testNight").addEventListener("click",e=>{e.stopPropagation();nightTest=true;startNight();
+  setTimeout(()=>{nightTest=false;if(!isNight())stopNight()},60*1000)});
+if(isNight())startNight();
+
 
 </script>
 </body>
