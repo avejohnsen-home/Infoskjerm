@@ -1148,21 +1148,36 @@ async function latter() {
       const slug = (u.pathname.match(/\/forestillinger\/([^/?#]+)/) || [])[1]; if (!slug || web.has(slug)) return;
       const date = u.searchParams.get("date");
       const txt = cheerio.load($.html(a).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " ").trim();
-      const m = txt.match(/^(.*?)\s+(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?\s+(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?\s+(.*)$/i);
-      const title = (m ? m[1] : txt.split(/ledige plasser|snart utsolgt|utsolgt|bestill billett/i)[0] || decodeURIComponent(slug).replace(/-/g, " ")).trim();
-      let rest = m ? m[6] : "";
+      // datoene kan stå før eller etter tittelen: «03 sep. 19 des. Finn tre feil Pernille Sørensen …»
+      const m = txt.match(/(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?\s+(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?/i);
+      const STATUS = /ledige plasser|snart utsolgt|utsolgt|bestill billett/i;
+      const before = m ? txt.slice(0, m.index).trim() : "";
+      let rest = (m ? txt.slice(m.index + m[0].length) : txt).split(STATUS)[0].trim();
+      const status = (txt.match(/ledige plasser|snart utsolgt|utsolgt/i) || [""])[0];
+      const nk = t => t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9æøå]+/g, "");
+      // tittel: overskrift i kortet, bildetekst, tekst før datoene, eller ordene som stemmer med lenken
+      // tekstbitene i kortet hver for seg (uten datoer og status): første er tittelen, resten undertittel
+      const DATEBIT = /^(\d{1,2}\.?\s*)?((jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?)?(\s*[-–]\s*)?$/i;
+      const blocks = $(a).find("*").filter((_, e) => $(e).children().length === 0).map((_, e) => $(e).text().replace(/\s+/g, " ").trim()).get()
+        .filter(t => t && !DATEBIT.test(t) && !/^\d{1,2}\s*\p{L}{3}\.?\s*[-–]?\s*\d{1,2}\s*\p{L}{3}\.?$/u.test(t) && !/^(ledige plasser|snart utsolgt|utsolgt|bestill billett|kjøp billett)$/i.test(t));
+      let title = $(a).find("h1,h2,h3,h4,h5,h6").first().text().replace(/\s+/g, " ").trim() || blocks[0] || (($(a).find("img").attr("alt") || "").trim().replace(/^(bilde|image|img|foto)$/i, "")) || before;
+      if (!title) {
+        const sl = nk(decodeURIComponent(slug).replace(/-\d+$/, "")), words = rest.split(" ");
+        let best = "";
+        for (let k = 1; k <= words.length; k++) { const t = words.slice(0, k).join(" "); if (sl.startsWith(nk(t))) best = t; else break; }
+        title = best && nk(best).length >= sl.length * 0.5 ? best : rest;
+      }
       if (rest.toLowerCase().startsWith(title.toLowerCase())) rest = rest.slice(title.length);
-      const status = (rest.match(/ledige plasser|snart utsolgt|utsolgt/i) || [""])[0];
-      const about = rest.split(/ledige plasser|snart utsolgt|utsolgt|bestill billett/i)[0].replace(/^[\s:–-]+/, "").trim();
+      const about = rest.replace(/^[\s:–-]+/, "").trim();
       // neste dato står i lenken, sluttdato i teksten (året regnes ut)
       const from = date && /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
       let to = from;
       if (m && from) {
-        const mo = MON[m[5].toLowerCase()], dd = pad(Number(m[4]));
+        const mo = MON[m[4].toLowerCase()], dd = pad(Number(m[3]));
         let y = Number(from.slice(0, 4)); if (`${y}-${pad(mo)}-${dd}` < from) y++;
         to = `${y}-${pad(mo)}-${dd}`;
         // én forestilling (samme start og slutt i teksten) eller urimelig lang periode: bruk bare datoen fra lenken
-        if ((m[2] === m[4] && m[3].toLowerCase() === m[5].toLowerCase()) || new Date(to) - new Date(from) > 400 * 864e5) to = from;
+        if ((m[1] === m[3] && m[2].toLowerCase() === m[4].toLowerCase()) || new Date(to) - new Date(from) > 400 * 864e5) to = from;
       }
       // bilde: let oppover så lenge vi bare har dette ene kortet
       let c = $(a), img = c.find("img").first();
