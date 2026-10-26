@@ -1261,8 +1261,13 @@ async function slm() {
       out.push({ title: get("SUMMARY"), start: `${d[1]}-${d[2]}-${d[3]}T${d[4] || "00"}:${d[5] || "00"}`, url: get("URL"), price: "", about: get("DESCRIPTION").slice(0, 220) });
     }
   }
+  // Siden har hvert arrangement på både norsk og engelsk (/en/): bruk bare de norske
+  const key = e => e.start + "|" + e.title.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
   const seen = new Set();
-  return out.filter(e => e.title && e.start.slice(0, 10) >= today && !seen.has(e.url + e.start) && seen.add(e.url + e.start)).sort((a, b) => a.start.localeCompare(b.start));
+  const hasNo = out.some(e => !/\/en\//.test(e.url));
+  return out.filter(e => !(hasNo && /\/en\//.test(e.url)))
+    .filter(e => e.title && e.start.slice(0, 10) >= today && !seen.has(key(e)) && seen.add(key(e)))
+    .sort((a, b) => a.start.localeCompare(b.start));
 }
 
 // ---------- Kjør alt, behold forrige data hvis en kilde feiler ----------
