@@ -1182,13 +1182,34 @@ async function latter() {
       // bilde: let oppover så lenge vi bare har dette ene kortet
       let c = $(a), img = c.find("img").first();
       for (let k = 0; k < 3 && !img.length; k++) { const p = c.parent(); if (p.find('a[href*="/forestillinger/"]').length > 1) break; c = p; img = c.find("img").first(); }
-      web.set(slug, { title, venue: "Latter", url: u.origin + u.pathname, img: img.length ? imgOf(c, base) : "", from, to, about: [about, status].filter(Boolean).join(" · "), hint: "stand-up humor" });
+      // bildene lastes inn etter hvert (src er en plassholder), så se etter data-src/srcset først
+      let pic = "";
+      if (img.length) for (const at of ["data-src", "data-lazy-src", "data-original", "data-srcset", "srcset", "src"]) {
+        const v = (img.attr(at) || "").split(",").map(x => x.trim().split(/\s+/)[0]).filter(Boolean).pop() || "";
+        if (v && !/placeholder|data:image/i.test(v)) { pic = abs(v, base); break; }
+      }
+      if (!pic) { const st = (c.find("[style*='background']").attr("style") || "").match(/url\(['"]?([^'")]+)/); if (st && !/placeholder/i.test(st[1])) pic = abs(st[1], base); }
+      web.set(slug, { title, venue: "Latter", url: u.origin + u.pathname, img: pic, from, to, about: [about, status].filter(Boolean).join(" · "), hint: "stand-up humor" });
     });
   } catch (e) { console.log("  latter.no: " + e.message); }
   const norm = t => t.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
   const tm = [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
   const have = new Set(tm.map(s => norm(s.title)));
   const extra = [...web.values()].filter(w => w.title && !have.has(norm(w.title)));
+  // mangler bildet: hent delingsbildet (og:image) fra forestillingens egen side, og husk det til neste gang
+  const oldImg = Object.fromEntries((old.latter || []).filter(x => x.img && !/placeholder/i.test(x.img)).map(x => [x.url, x.img]));
+  let fetched = 0;
+  for (const w of extra) {
+    if (w.img) continue;
+    if (oldImg[w.url]) { w.img = oldImg[w.url]; continue; }
+    if (fetched >= 30) continue;
+    try { const $d = await getHtml(w.url); fetched++;
+      const og = $d('meta[property="og:image"]').attr("content") || $d('meta[name="twitter:image"]').attr("content") || "";
+      if (og && !/placeholder/i.test(og)) w.img = abs(og, w.url);
+    } catch (e) { console.log("  Latter-bilde: " + e.message); }
+    await new Promise(res => setTimeout(res, 300));
+  }
+  console.log(`  Latter: bilde for ${extra.filter(w => w.img).length} av ${extra.length}`);
   console.log(`  Latter: ${tm.length} fra Ticketmaster, ${extra.length} ekstra fra latter.no`);
   return [...tm, ...extra];
 }
