@@ -1140,23 +1140,40 @@ async function latter() {
   try {
     const base = "https://latter.no/forestillinger";
     const $ = await getHtml(base);
+    // Hvert kort er én lenke, teksten ser slik ut:
+    // «Finn tre feil 03sep. 19des. Finn tre feil Pernille Sørensen, Live Nelvik … Ledige plasser Bestill billett»
+    const MON = { jan: 1, feb: 2, mar: 3, apr: 4, mai: 5, jun: 6, jul: 7, aug: 8, sep: 9, okt: 10, nov: 11, des: 12 };
     $('a[href*="/forestillinger/"]').each((_, a) => {
       let u; try { u = new URL($(a).attr("href"), base); } catch { return; }
-      const slug = (u.pathname.match(/\/forestillinger\/([^/?#]+)/) || [])[1]; if (!slug) return;
+      const slug = (u.pathname.match(/\/forestillinger\/([^/?#]+)/) || [])[1]; if (!slug || web.has(slug)) return;
       const date = u.searchParams.get("date");
-      const card = cardAround($, a, c => c.find("img").length > 0 && c.text().trim().length > 10);
-      const title = (card.find("h1,h2,h3,h4").first().text() || $(a).text() || decodeURIComponent(slug).replace(/-/g, " ")).replace(/\s+/g, " ").trim();
-      if (!web.has(slug)) web.set(slug, { title, venue: "Latter", url: base + "/" + slug, img: imgOf(card, base), dates: new Set(), hint: "stand-up humor" });
-      if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) web.get(slug).dates.add(date);
+      const txt = cheerio.load($.html(a).replace(/<[^>]+>/g, " ")).text().replace(/\s+/g, " ").trim();
+      const m = txt.match(/^(.*?)\s+(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?\s+(\d{1,2})\s*(jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des)\.?\s+(.*)$/i);
+      const title = (m ? m[1] : txt.split(/ledige plasser|snart utsolgt|utsolgt|bestill billett/i)[0] || decodeURIComponent(slug).replace(/-/g, " ")).trim();
+      let rest = m ? m[6] : "";
+      if (rest.toLowerCase().startsWith(title.toLowerCase())) rest = rest.slice(title.length);
+      const status = (rest.match(/ledige plasser|snart utsolgt|utsolgt/i) || [""])[0];
+      const about = rest.split(/ledige plasser|snart utsolgt|utsolgt|bestill billett/i)[0].replace(/^[\s:–-]+/, "").trim();
+      // neste dato står i lenken, sluttdato i teksten (året regnes ut)
+      const from = date && /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
+      let to = from;
+      if (m && from) {
+        const mo = MON[m[5].toLowerCase()], dd = pad(Number(m[4]));
+        let y = Number(from.slice(0, 4)); if (`${y}-${pad(mo)}-${dd}` < from) y++;
+        to = `${y}-${pad(mo)}-${dd}`;
+        // én forestilling (samme start og slutt i teksten) eller urimelig lang periode: bruk bare datoen fra lenken
+        if ((m[2] === m[4] && m[3].toLowerCase() === m[5].toLowerCase()) || new Date(to) - new Date(from) > 400 * 864e5) to = from;
+      }
+      // bilde: let oppover så lenge vi bare har dette ene kortet
+      let c = $(a), img = c.find("img").first();
+      for (let k = 0; k < 3 && !img.length; k++) { const p = c.parent(); if (p.find('a[href*="/forestillinger/"]').length > 1) break; c = p; img = c.find("img").first(); }
+      web.set(slug, { title, venue: "Latter", url: u.origin + u.pathname, img: img.length ? imgOf(c, base) : "", from, to, about: [about, status].filter(Boolean).join(" · "), hint: "stand-up humor" });
     });
   } catch (e) { console.log("  latter.no: " + e.message); }
   const norm = t => t.toLowerCase().replace(/[^a-z0-9æøå]+/g, "");
   const tm = [...shows.values()].map(s => ({ ...s, times: s.times.sort() }));
   const have = new Set(tm.map(s => norm(s.title)));
-  const extra = [...web.values()].filter(w => w.title && !have.has(norm(w.title))).map(w => {
-    const d = [...w.dates].sort(); const { dates, ...rest } = w;
-    return { ...rest, from: d[0] || null, to: d[d.length - 1] || null };
-  });
+  const extra = [...web.values()].filter(w => w.title && !have.has(norm(w.title)));
   console.log(`  Latter: ${tm.length} fra Ticketmaster, ${extra.length} ekstra fra latter.no`);
   return [...tm, ...extra];
 }
