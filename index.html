@@ -325,11 +325,11 @@ body{background:var(--bg);color:var(--ink)}
   <p class="demo" id="banner" hidden></p>
 
   <nav class="nav" role="tablist" aria-label="Innhold">
-    <button class="tab" role="tab" data-i="0">Teater</button>
-    <button class="tab" role="tab" data-i="1">Kino</button>
-    <button class="tab" role="tab" data-i="2">Konsert</button>
-    <button class="tab" role="tab" data-i="5">Helg</button>
-    <button class="tab" role="tab" data-i="4">Mat</button>
+    <button class="tab" role="tab" data-i="0">🎭 Teater</button>
+    <button class="tab" role="tab" data-i="5">😹 Stand-up</button>
+    <button class="tab" role="tab" data-i="1">🎬 Kino</button>
+    <button class="tab" role="tab" data-i="2">🎶 Konsert</button>
+    <button class="tab" role="tab" data-i="4">🌮 Mat</button>
     <button class="tab wl" role="tab" data-i="3">👀 Se-liste<span class="n" id="wlcount">0</span></button>
   </nav>
 
@@ -354,8 +354,9 @@ body{background:var(--bg);color:var(--ink)}
   </section>
 
   <section class="slide" id="s5">
-    <div id="weekend"></div>
-    <p class="src" id="srcW"></p>
+    <div class="filters" id="svenues" role="group" aria-label="Velg scene"></div>
+    <div class="posters" id="standup"></div>
+    <p class="src" id="srcS"></p>
   </section>
 
   <section class="slide" id="s3">
@@ -499,7 +500,7 @@ function ownLogoFor(name){
 
 function renderTheatre(){
   const T=today();let list=[];
-  const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&!k.startsWith("k_")&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
+  const ALL=Object.entries(DATA).filter(([k,v])=>k!=="films"&&k!=="latter"&&!k.startsWith("k_")&&Array.isArray(v)&&v.length&&v[0].venue).flatMap(([,v])=>v);
   ALL.filter(s=>s.times).forEach(s=>{const times=s.times.map(x=>new Date(x)).filter(t=>t>=T);if(times.length)list.push({...s,times,key:times[0],status:"Neste: "+fmtDT(times[0]),label:s.venue.split(",")[0]})});
   ALL.filter(s=>!s.times).forEach(s=>{
     const label=s.venue.split(",")[0];
@@ -597,7 +598,7 @@ async function load(){
     (DATA.oslonye||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Centralteatret(?=,|$)/,"Centralteatret & Teaterkjellern")});
     (DATA.trondelag||[]).forEach(x=>{x.venue=String(x.venue||"").replace(/^Trøndelag Teater(?=,|$)/,"Nye Trøndelag Teater")});}
   catch{document.getElementById("banner").textContent="Fant ingen data ennå. Kjør hentejobben under Actions i GitHub.";return}
-  prepStatus();LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderWeekend();renderSlm();
+  prepStatus();LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderStandup();renderSlm();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
   const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
@@ -890,56 +891,7 @@ document.getElementById("infoline").addEventListener("click",()=>{
   if(w.length)h+=`<div class="ihead">Søppelhenting</div>`+w.map(x=>`<div class="irow"><span>${WASTE_ICON(x.type)} ${esc(x.type)} <small>${esc(x.freq||"")}${x.estimated?" · beregnet":""}</small></span><b>${cap(whenTxt(x.next))}</b></div>`).join("");
   document.getElementById("mdesc").innerHTML=h;
 });
-setInterval(()=>{if(DATA){renderInfo();renderWeekend();renderSlm()}},5*60*1000);
-
-// ---------- Helg: fredag–søndag samlet ----------
-function weekendRange(){const t=today(),d=t.getDay(); // 5=fre, 6=lør, 0=søn
-  const start=new Date(t);if(d>=1&&d<=4)start.setDate(t.getDate()+(5-d));
-  const end=new Date(start);end.setDate(start.getDate()+(start.getDay()===0?0:7-start.getDay()));end.setHours(23,59,59,999);
-  return {start,end,now:d===5||d===6||d===0}}
-function renderWeekend(){
-  const el=document.getElementById("weekend");if(!el||!DATA)return;
-  const {start,end,now}=weekendRange(),nowT=new Date(),ev=[],ranged=[];
-  const inW=t=>t>=start&&t<=end&&t>=new Date(nowT-60*6e4);
-  const kindOf=(s,isK)=>s.venue==="Latter"||s.venue==="Chat Noir"?"humor":isK?"konsert":"teater";
-  Object.entries(DATA).forEach(([k,v])=>{
-    if(k==="films"||!Array.isArray(v)||!v.length||!v[0].venue)return;const isK=k.startsWith("k_");
-    v.forEach(s0=>{if(s0.city&&s0.city!=="Oslo")return;
-      const s={...s0,_t:isK?"konsert":"teater",label:s0.venue.split(",")[0]};s.cat=catOf(s);const kind=kindOf(s,isK);
-      if(kind==="teater")return; // teater vises bare på Teater-fanen
-      if(s0.times){const tm=s0.times.map(x=>new Date(x));s.times=tm.filter(t=>t>=today());tm.filter(inW).forEach(t=>ev.push({t,s,kind,time:true}));return}
-      if(s0.next){const n=new Date(s0.next);if(inW(n))ev.push({t:n,s,kind,time:true});return}
-      if(!s0.from)return;s.f=new Date(s0.from+"T00:00");s.t=s0.to?new Date(s0.to+"T23:59"):null;
-      if(s0.from===s0.to){if(s.f>=today()&&s.f>=start&&s.f<=end)ev.push({t:s.f,s,kind,time:false});return}
-      if(s.f<=end&&(!s.t||s.t>=start))ranged.push({s,kind})});
-  });
-  for(let d=new Date(Math.max(start,today()));d<=end;d.setDate(d.getDate()+1))
-    (DATA.quiz||[]).forEach(q=>{const r=quizOn(q,d);if(!r.ok)return;const [H,M]=String(q.time).split(":").map(Number);const t=new Date(d);t.setHours(H||19,M||0,0,0);
-      if(t>=new Date(nowT-60*6e4))ev.push({t,kind:"quiz",time:true,q:{...q,usikker:r.usikker}})});
-  ((DATA&&DATA.loppis)||[]).forEach(l=>(l.dates||[]).forEach(d=>{const x=new Date(d+"T00:00");if(x<start||x>end||x<today())return;
-    const [H,M]=String(l.time||"").split(/[–-]/)[0].split(/[.:]/).map(Number);const t=new Date(x);t.setHours(isNaN(H)?10:H,M||0,0,0);ev.push({t,kind:"loppe",time:!!l.time,l})}));
-  // tidspunkt først, arrangementer uten klokkeslett sist på dagen
-  const sk=x=>x.time?+x.t:+x.t+864e5-1;ev.sort((a,b)=>sk(a)-sk(b));
-  const ICON={teater:"🎭",konsert:"🎸",humor:"😂",quiz:"🧠",loppe:"🛍️"};
-  const row=x=>{const b=document.createElement("button");b.className="hrow";
-    if(x.kind==="quiz"){b.innerHTML=`<div class="th"><span class="ic">🧠</span></div><div><span class="t">${hm(x.t)} · Quiz</span><b>${esc(x.q.place)}</b><small>${esc(x.q.type)}${x.q.usikker?" · "+ruleText[x.q.rule]:""}</small></div>`;
-      b.addEventListener("click",()=>document.getElementById("quizbar").click());return b}
-    if(x.kind==="loppe"){const l=x.l;b.innerHTML=`<div class="th"><span class="ic">🛍️</span>${imgTag(l.img)}</div><div><span class="t">${l.time?esc(l.time)+" · ":""}🛍️ Loppemarked</span><b>${esc(l.title)}</b><small>${esc(l.place||"")}</small></div>`;
-      b.addEventListener("click",()=>window.open(l.url,"_blank","noopener"));return b}
-    const s=x.s;b.innerHTML=`<div class="th"><span class="ic">${ICON[x.kind]}</span>${imgTag(s.img,s.imgAlt)}</div><div><span class="t">${x.time?hm(x.t)+" · ":x.ranged?"":"Tid på nettsiden · "}${ICON[x.kind]} ${x.kind==="humor"?"Stand-up":x.kind==="konsert"?"Konsert":esc(s.cat)}</span><b>${esc(s.title)}</b><small>${esc(s.label)}${badgeTxt(s)?" · "+badgeTxt(s):""}</small></div>`;
-    b.addEventListener("click",()=>openShow(s));return b};
-  el.innerHTML="";
-  const ttl=document.createElement("p");ttl.className="src";ttl.style.margin="0 0 6px";
-  ttl.textContent=(now?"Denne helgen":"Til helgen")+": "+(ymdOf(start)===ymdOf(end)?`i dag, ${fmtD(start)}`:`${fmtD(start)} – ${fmtD(end)}`)+". Oslo.";el.appendChild(ttl);
-  let lastD="";
-  ev.forEach(x=>{const d=ymdOf(x.t);if(d!==lastD){lastD=d;const h=document.createElement("div");h.className="wkday";h.textContent=dayLabel(d).replace(/^(\p{L}+) /u,(m,w)=>({fre:"Fredag",lør:"Lørdag",søn:"Søndag"}[w.toLowerCase()]||w)+" ");el.appendChild(h)}
-    el.appendChild(row(x))});
-  if(!ev.length)el.insertAdjacentHTML("beforeend",`<div class="empty">Fant ingen arrangementer med fast tidspunkt denne helgen.</div>`);
-  if(ranged.length){const h=document.createElement("div");h.className="wkday";h.textContent="Spilles i helgen";el.appendChild(h);
-    ranged.sort((a,b)=>a.s.title.localeCompare(b.s.title,"nb")).forEach(r=>el.appendChild(row({...r,time:false,ranged:true})))}
-  document.getElementById("srcW").textContent=`${ev.length} arrangementer med tidspunkt${ranged.length?` og ${ranged.length} forestillinger som går over flere dager (se tider på nettsiden)`:""}. Teater og kino finner du under egne faner.`;
-}
-
+setInterval(()=>{if(DATA){renderInfo();renderSlm()}},5*60*1000);
 
 // ---------- SLM Oslo ----------
 const SLM_DAYS=90; // hvor langt fram lista viser
@@ -959,11 +911,45 @@ document.getElementById("slmbar").addEventListener("click",()=>{
   document.getElementById("mdesc").innerHTML=html||"Ingen arrangementer de neste månedene.";
 });
 
+// ---------- Stand-up: Latter + humor fra de andre scenene i Oslo ----------
+let standupVenue="Alle";
+const isStandup=s=>s.venue==="Latter"||/stand-?\s?up|standup|komiker|\bhumor\b|comedy/i.test([s.title,s.hint].join(" "))||/stand-?\s?up/i.test(s.about||"");
+function renderStandup(){
+  const el=document.getElementById("standup");if(!el||!DATA)return;
+  const T=today(),list=[],seen=new Set();
+  Object.entries(DATA).forEach(([k,v])=>{if(k==="films"||!Array.isArray(v)||!v.length||!v[0].venue)return;const isK=k.startsWith("k_");
+    v.forEach(s0=>{if((s0.city&&s0.city!=="Oslo")||!isStandup(s0))return;const label=s0.venue.split(",")[0],id=label+"|"+s0.title+"|"+(s0.times?s0.times[0]:s0.from||"");if(seen.has(id))return;seen.add(id);
+      const s={...s0,_t:isK?"konsert":"teater",label};s.cat=catOf(s);
+      if(s0.times){const tm=s0.times.map(x=>new Date(x)).filter(t=>t>=T);if(!tm.length)return;Object.assign(s,{times:tm,key:tm[0],status:"Neste: "+fmtDT(tm[0])})}
+      else if(s0.next){const n=new Date(s0.next);if(n<T)return;Object.assign(s,{key:n,status:"Neste: "+fmtDT(n)})}
+      else if(s0.from){const f=new Date(s0.from+"T00:00"),t=s0.to?new Date(s0.to+"T23:59"):null;if((t||f)<T)return;const now=f<=T,one=s0.from===s0.to;
+        Object.assign(s,{f,t,key:now?T:f,status:one?fmtD(f):now?"Spilles nå"+(t?" – til "+fmtDay(t):""):"Fra "+fmtDay(f)})}
+      else return;
+      LIVE[favId(s._t,s)]=s;list.push(s)})});
+  // samme forestilling på flere datoer (f.eks. Cosmopolite) slås sammen til ett kort
+  list.sort((a,b)=>a.key-b.key);
+  const byKey=new Map();list.forEach(s=>{const k=s.label+"|"+s.title.toLowerCase();const m=byKey.get(k);if(!m){s._n=1;byKey.set(k,s)}else{m._n++;if(m._sold&&!s._sold)m._sold=""}});
+  list.length=0;byKey.forEach(s=>{if(s._n>1)s.status+=` (+${s._n-1} ${s._n===2?"dato":"datoer"})`;list.push(s)});
+  const counts={};list.forEach(s=>counts[s.label]=(counts[s.label]||0)+1);
+  const vs=["Alle",...Object.keys(counts).sort((a,b)=>(b==="Latter")-(a==="Latter")||counts[b]-counts[a])];if(!vs.includes(standupVenue))standupVenue="Alle";
+  const fe=document.getElementById("svenues");fe.innerHTML="";
+  if(vs.length>2)vs.forEach(v=>{const b=document.createElement("button");b.className="chip";b.textContent=v==="Alle"?`Alle (${list.length})`:`${v} (${counts[v]})`;b.setAttribute("aria-pressed",v===standupVenue);b.addEventListener("click",()=>{standupVenue=v;renderStandup()});fe.appendChild(b)});
+  const shown=list.filter(s=>standupVenue==="Alle"||s.label===standupVenue);
+  const tomorrow=new Date(T.getTime()+864e5),weekEnd=new Date(T);weekEnd.setDate(T.getDate()+((8-T.getDay())%7||7));
+  const SECT=["I dag","Denne uken","Senere"],sect=s=>s.key<tomorrow?0:s.key<weekEnd?1:2;
+  el.innerHTML="";let last=-1;
+  shown.forEach(s=>{const k=sect(s);if(k!==last){last=k;const h=document.createElement("div");h.className="secthead";h.textContent=SECT[k];el.appendChild(h)}
+    const b=document.createElement("button");b.className="poster";
+    b.innerHTML=`<div class="art">${badgeHtml(s)}<div class="shape" style="${styleFor(s.title)}"></div><h3>${esc(s.title)}</h3>${imgTag(s.img,s.imgAlt)}<span class="kind">${esc(s.label)}</span></div><div class="meta"><b>${esc(s.title)}</b>${esc(s.status)}</div>`;
+    b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,s._t,s))});
+  document.getElementById("srcS").textContent=list.length?`Kilde: Latter, Chat Noir, Chateau Neuf, Cosmopolite m.fl. ${shown.length} forestillinger.`:"Fant ingen stand-up ennå.";
+}
+
 // ---------- Faner (ingen automatisk bytting) ----------
 const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4,5].map(i=>document.getElementById("s"+i));
 let cur=0;
 function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach(t=>t.setAttribute("aria-selected",+t.dataset.i===i));}
-tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===5&&DATA)renderWeekend();if(+t.dataset.i===0&&DATA){theatreView="logos";cityFilter="Alle";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
+tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===5&&DATA)renderStandup();if(+t.dataset.i===0&&DATA){theatreView="logos";cityFilter="Alle";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
 function pause(){} // tidligere brukt til å pause rotasjonen; beholdt så eksisterende kall fortsatt virker
 show(0);syncFav();renderWatch();
 
