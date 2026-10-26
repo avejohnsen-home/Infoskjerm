@@ -179,6 +179,11 @@ footer button{appearance:none;background:none;border:1px solid var(--line);color
 .tab.wl .n{display:inline-block;min-width:20px;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--line);color:var(--ink);font-size:13px;text-align:center}
 .tab.wl .n.has{background:var(--signal);color:#17222C}
 .pcard.gone .art{filter:grayscale(1);opacity:.55}
+.seenb{position:absolute;top:56px;right:6px;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.85);color:#17222C;font-size:20px;font-weight:800;line-height:1;cursor:pointer;display:grid;place-items:center;opacity:.8}
+.seenb[aria-pressed="true"]{background:#3F9F41;color:#fff;opacity:1}
+.pcard.isseen .art,.pcard.isseen .meta{opacity:.45}
+.seentoggle{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:inherit;font-size:14px;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;white-space:nowrap;margin-left:6px}
+.seentoggle[aria-pressed="true"]{background:#3F9F41;border-color:#3F9F41;color:#fff}
 .wlhead{margin:18px 0 8px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .wlhead:first-child{margin-top:0}
 .empty{background:var(--surface);border-radius:12px;padding:18px;color:var(--muted);line-height:1.45}
@@ -331,6 +336,7 @@ body{background:var(--bg);color:var(--ink)}
     <button class="tab" role="tab" data-i="2">🎶 Konsert</button>
     <button class="tab" role="tab" data-i="4">🌮 Mat</button>
     <button class="tab wl" role="tab" data-i="3">👀 Se-liste<span class="n" id="wlcount">0</span></button>
+    <button class="seentoggle" id="seenToggle" aria-pressed="false" title="Vis eller skjul det du har sett">✓ Sett <span id="seencount">0</span></button>
   </nav>
 
   <section class="slide" id="s0">
@@ -386,6 +392,7 @@ body{background:var(--bg);color:var(--ink)}
     <ul class="dates" id="mdates"></ul>
     <div id="mprice"></div>
     <button class="mfav" id="mfav" hidden></button>
+    <button class="mfav" id="mseen" hidden></button>
     <div id="mtrailer"></div>
     <a class="link" id="mlink" target="_blank" rel="noopener">Se mer og kjøp billetter</a>
     <button class="close" id="mclose">Lukk</button>
@@ -509,6 +516,7 @@ function renderTheatre(){
     const f=new Date(s.from+"T00:00"),t=s.to?new Date(s.to+"T23:59"):new Date(8.64e15);if(t<T)return;
     const one=s.from===s.to,now=f<=T;list.push({...s,f,t,key:now?T:f,status:one?fmtD(f):(now?"Spilles nå":"Fra "+fmtDay(f)),label})});
   list.forEach(s=>{s.cat=catOf(s);s.city=s.city||"Oslo";s._t="teater";LIVE[favId("teater",s)]=s});
+  list=list.filter(s=>keep("teater",s));
   list.sort((a,b)=>a.key-b.key);
   const byCity={};list.forEach(s=>byCity[s.city]=(byCity[s.city]||0)+1);
   const HOME_CITY="Oslo";const cities=Object.keys(byCity).sort((a,b)=>(b===HOME_CITY)-(a===HOME_CITY)||a.localeCompare(b,"nb"));
@@ -569,8 +577,8 @@ const FAV_KINO="Ringen"; // nærmeste kino: vises alltid først når filmen går
 function nextShow(f,kino){const now=new Date();return (f.shows||[]).find(x=>new Date(x.d+"T"+x.t)>=now&&(!kino||x.c===kino))}
 let filmFilter="Alle";
 function renderFilms(){
-  const films=DATA.films||[], counts={};
-  films.forEach(f=>{f._t="film";LIVE[favId("film",f)]=f});
+  (DATA.films||[]).forEach(f=>{f._t="film";LIVE[favId("film",f)]=f});
+  const films=(DATA.films||[]).filter(f=>keep("film",f)), counts={};
   films.forEach(f=>(f.genres||[]).forEach(g=>counts[g]=(counts[g]||0)+1));
   const gs=["Alle",...Object.keys(counts).sort((a,b)=>counts[b]-counts[a])];
   if(!gs.includes(filmFilter))filmFilter="Alle";
@@ -705,6 +713,7 @@ function renderConcerts(){
     list.push({...s,f,t:s.to?new Date(s.to+"T23:59"):null,key:f,status:fmtD(f),label})});
   list.sort((a,b)=>a.key-b.key);
   list.forEach(s=>{s.genres=kGenreOf(s);s._t="konsert";LIVE[favId("konsert",s)]=s});
+  list.splice(0,list.length,...list.filter(s=>keep("konsert",s)));
   const gc={};list.filter(s=>konsertFilter==="Alle"||s.label===konsertFilter).forEach(s=>s.genres.forEach(g=>gc[g]=(gc[g]||0)+1));
   const gs=["Alle",...KGENRES.map(([n])=>n).filter(n=>gc[n]),...(gc.Annet?["Annet"]:[])];if(!gs.includes(kGenre))kGenre="Alle";
   const ge=document.getElementById("kgenres");ge.innerHTML="";
@@ -752,16 +761,33 @@ function syncFav(){
 function favBtn(t,s){const b=document.createElement("button");b.className="fav";b.dataset.id=favId(t,s);b.textContent="👀";
   const on=isFav(b.dataset.id);b.setAttribute("aria-pressed",on);b.title=on?"Fjern fra se-listen":"Legg til i se-listen";b.setAttribute("aria-label",b.title);
   b.addEventListener("click",e=>{e.stopPropagation();pause();toggleFav(t,s)});return b}
-function card(b,t,s){const w=document.createElement("div");w.className="pcard";w.append(b,favBtn(t,s));return w}
+// ---------- Sett: skjul det du har sett (lagres på denne skjermen) ----------
+const SEEN_KEY="infoskjerm:sett";let SEEN=new Set(),showSeen=false;
+try{SEEN=new Set(JSON.parse(localStorage.getItem(SEEN_KEY)||"[]"))}catch{SEEN=new Set()}
+const isSeen=(t,s)=>SEEN.has(favId(t,s));
+const keep=(t,s)=>showSeen||!isSeen(t,s);
+function toggleSeen(t,s){const id=favId(t,s);SEEN.has(id)?SEEN.delete(id):SEEN.add(id);try{localStorage.setItem(SEEN_KEY,JSON.stringify([...SEEN]))}catch{}rerenderAll()}
+function rerenderAll(){if(!DATA)return;renderTheatre();renderStandup();renderFilms();renderConcerts();renderWatch();syncSeen()}
+function syncSeen(){const b=document.getElementById("seenToggle");b.setAttribute("aria-pressed",showSeen);
+  b.innerHTML=showSeen?`Viser alle <span id="seencount">${SEEN.size}</span> sette`:`✓ Sett <span id="seencount">${SEEN.size}</span>`;
+  b.title=showSeen?"Viser alt, også det du har sett. Trykk for å skjule det igjen.":"Skjuler det du har sett. Trykk for å vise alt."}
+document.getElementById("seenToggle").addEventListener("click",()=>{showSeen=!showSeen;rerenderAll()});
+function seenBtn(t,s){const b=document.createElement("button");b.className="seenb";b.textContent="✓";const on=isSeen(t,s);
+  b.setAttribute("aria-pressed",on);b.title=on?"Sett – trykk for å angre":"Merk som sett";b.setAttribute("aria-label",b.title);
+  b.addEventListener("click",e=>{e.stopPropagation();toggleSeen(t,s)});return b}
+function card(b,t,s){const w=document.createElement("div");w.className="pcard"+(isSeen(t,s)?" isseen":"");w.append(b,favBtn(t,s),seenBtn(t,s));return w}
 function modalFav(t,s){const b=document.getElementById("mfav"),id=favId(t,s);
   const set=()=>{const on=isFav(id);b.setAttribute("aria-pressed",on);b.textContent=on?"👀 På se-listen (trykk for å fjerne)":"👀 Legg til i se-listen"};
-  b.hidden=false;set();b.onclick=()=>{toggleFav(t,s);set()}}
+  b.hidden=false;set();b.onclick=()=>{toggleFav(t,s);set()}
+  const m=document.getElementById("mseen"),setS=()=>{const on=isSeen(t,s);m.setAttribute("aria-pressed",on);m.textContent=on?"✓ Sett (trykk for å angre)":"✓ Merk som sett"};
+  m.hidden=false;setS();m.onclick=()=>{toggleSeen(t,s);setS();if(!showSeen&&isSeen(t,s))modal.close()}}
 const TYPE_ICON={teater:"🎭",film:"🎬",konsert:"🎸"};
 function renderWatch(){
   const el=document.getElementById("watch");if(!el)return;
   if(!WL.length){el.innerHTML=`<div class="empty">Se-listen er tom.<br>Trykk 👀 på en forestilling, film eller konsert for å samle den her.</div>`;return}
   const live=[],gone=[];
   WL.forEach(w=>{const s=LIVE[w.id];
+    if(s&&!keep(w.type,s))return;
     if(s&&w.type==="film"){const n=nextShow(s,FAV_KINO)||nextShow(s);if(n)live.push({w,s,key:new Date(n.d+"T"+n.t),status:`Neste: ${dayLabel(n.d).toLowerCase()} ${n.t}`,label:n.c});else gone.push({w})}
     else if(s)live.push({w,s,key:s.key,status:s.status,label:s.label});
     else gone.push({w});});
@@ -926,6 +952,7 @@ function renderStandup(){
         Object.assign(s,{f,t,key:now?T:f,status:one?fmtD(f):now?"Spilles nå"+(t?" – til "+fmtDay(t):""):"Fra "+fmtDay(f)})}
       else return;
       LIVE[favId(s._t,s)]=s;list.push(s)})});
+  list.splice(0,list.length,...list.filter(s=>keep(s._t,s)));
   // samme forestilling på flere datoer (f.eks. Cosmopolite) slås sammen til ett kort
   list.sort((a,b)=>a.key-b.key);
   const byKey=new Map();list.forEach(s=>{const k=s.label+"|"+s.title.toLowerCase();const m=byKey.get(k);if(!m){s._n=1;byKey.set(k,s)}else{m._n++;if(m._sold&&!s._sold)m._sold=""}});
@@ -951,11 +978,11 @@ let cur=0;
 function show(i){cur=i;slides.forEach((s,j)=>s.classList.toggle("on",j===i));tabs.forEach(t=>t.setAttribute("aria-selected",+t.dataset.i===i));}
 tabs.forEach(t=>t.addEventListener("click",()=>{show(+t.dataset.i);if(+t.dataset.i===3)renderWatch();if(+t.dataset.i===5&&DATA)renderStandup();if(+t.dataset.i===0&&DATA){theatreView="logos";cityFilter="Alle";venueFilter="Alle";catFilter="Alle";renderTheatre()}}));
 function pause(){} // tidligere brukt til å pause rotasjonen; beholdt så eksisterende kall fortsatt virker
-show(0);syncFav();renderWatch();
+show(0);syncFav();renderWatch();syncSeen();
 
 // ---------- Vinduer ----------
 const modal=document.getElementById("modal"),wmodal=document.getElementById("wmodal");
-function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";document.getElementById("mfav").hidden=true;document.getElementById("mprice").innerHTML="";
+function fill(title,style,desc,dates,url,linkText){pause();document.getElementById("mtrailer").innerHTML="";document.getElementById("mfav").hidden=true;document.getElementById("mseen").hidden=true;document.getElementById("mprice").innerHTML="";
   document.getElementById("mhead").setAttribute("style",style);document.getElementById("mtitle").textContent=title;
   document.getElementById("mdesc").innerHTML=desc;document.getElementById("mdates").innerHTML=dates.map(d=>`<li>${esc(d)}</li>`).join("");
   const a=document.getElementById("mlink");a.href=url;a.textContent=linkText;modal.showModal();}
