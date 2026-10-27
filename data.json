@@ -1,29 +1,20 @@
 {
- "updated": "2026-10-27T06:53:24.539Z",
+ "updated": "2026-10-27T08:04:03.942Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-27",
-   "h": 7,
+   "h": 8,
    "temp": 10,
    "wind": 7,
    "sym": "rain",
-   "rain": 0.3,
+   "rain": 0.4,
    "span": 1
   },
   "days": [
    {
     "date": "2026-10-27",
     "hours": [
-     {
-      "date": "2026-10-27",
-      "h": 7,
-      "temp": 10,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.3,
-      "span": 1
-     },
      {
       "date": "2026-10-27",
       "h": 8,
@@ -37,7 +28,7 @@
       "date": "2026-10-27",
       "h": 9,
       "temp": 10,
-      "wind": 8,
+      "wind": 7,
       "sym": "rain",
       "rain": 0.4,
       "span": 1
@@ -75,16 +66,16 @@
       "temp": 11,
       "wind": 7,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.5,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 14,
       "temp": 12,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.9,
+      "wind": 8,
+      "sym": "heavyrain",
+      "rain": 1,
       "span": 1
      },
      {
@@ -92,8 +83,8 @@
       "h": 15,
       "temp": 12,
       "wind": 7,
-      "sym": "heavyrain",
-      "rain": 1,
+      "sym": "rain",
+      "rain": 0.9,
       "span": 1
      },
      {
@@ -108,19 +99,19 @@
      {
       "date": "2026-10-27",
       "h": 17,
-      "temp": 13,
+      "temp": 12,
       "wind": 8,
-      "sym": "heavyrain",
-      "rain": 1.2,
+      "sym": "rain",
+      "rain": 0.7,
       "span": 1
      },
      {
       "date": "2026-10-27",
       "h": 18,
       "temp": 13,
-      "wind": 8,
-      "sym": "heavyrain",
-      "rain": 1.1,
+      "wind": 7,
+      "sym": "rain",
+      "rain": 0.9,
       "span": 1
      },
      {
@@ -129,7 +120,7 @@
       "temp": 13,
       "wind": 6,
       "sym": "rain",
-      "rain": 0.4,
+      "rain": 0.3,
       "span": 1
      },
      {
@@ -153,7 +144,7 @@
      {
       "date": "2026-10-27",
       "h": 22,
-      "temp": 13,
+      "temp": 12,
       "wind": 5,
       "sym": "cloudy",
       "rain": 0,
@@ -171,7 +162,7 @@
     ],
     "max": 13,
     "min": 10,
-    "rain": 7.2,
+    "rain": 6.2,
     "sym": "rain"
    },
    {
@@ -189,7 +180,7 @@
      {
       "date": "2026-10-28",
       "h": 1,
-      "temp": 12,
+      "temp": 11,
       "wind": 4,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -333,7 +324,7 @@
      {
       "date": "2026-10-28",
       "h": 17,
-      "temp": 10,
+      "temp": 11,
       "wind": 3,
       "sym": "fair_night",
       "rain": 0,
@@ -352,7 +343,7 @@
       "date": "2026-10-28",
       "h": 19,
       "temp": 10,
-      "wind": 4,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -414,7 +405,7 @@
      {
       "date": "2026-10-29",
       "h": 1,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -441,7 +432,7 @@
      {
       "date": "2026-10-29",
       "h": 4,
-      "temp": 7,
+      "temp": 8,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -450,7 +441,7 @@
      {
       "date": "2026-10-29",
       "h": 5,
-      "temp": 6,
+      "temp": 7,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -459,7 +450,7 @@
      {
       "date": "2026-10-29",
       "h": 6,
-      "temp": 6,
+      "temp": 7,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -478,23 +469,14 @@
       "date": "2026-10-29",
       "h": 8,
       "temp": 6,
-      "wind": 1,
-      "sym": "clearsky_day",
+      "wind": 2,
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-29",
       "h": 9,
-      "temp": 6,
-      "wind": 2,
-      "sym": "clearsky_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-29",
-      "h": 10,
       "temp": 7,
       "wind": 2,
       "sym": "clearsky_day",
@@ -503,9 +485,18 @@
      },
      {
       "date": "2026-10-29",
-      "h": 11,
+      "h": 10,
       "temp": 8,
-      "wind": 1,
+      "wind": 2,
+      "sym": "clearsky_day",
+      "rain": 0,
+      "span": 1
+     },
+     {
+      "date": "2026-10-29",
+      "h": 11,
+      "temp": 9,
+      "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -513,7 +504,7 @@
      {
       "date": "2026-10-29",
       "h": 12,
-      "temp": 9,
+      "temp": 10,
       "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
@@ -522,7 +513,7 @@
      {
       "date": "2026-10-29",
       "h": 13,
-      "temp": 10,
+      "temp": 11,
       "wind": 2,
       "sym": "fair_day",
       "rain": 0,
@@ -538,7 +529,7 @@
       "span": 6
      }
     ],
-    "max": 10,
+    "max": 11,
     "min": 6,
     "rain": 0,
     "sym": "fair_day"
@@ -1052,7 +1043,7 @@
  "films": [
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
+   "url": "https://www.nfkino.no/film/pensjonskuppet",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1299,7 +1290,15 @@
      "t": "11:30",
      "c": "Symra",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Med Besøk",
+     "v": "2D, Norsk tale, Norsk tekst, Med Besøk",
+     "u": "https://www.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "11:30",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
     },
     {
@@ -1495,12 +1494,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt39453840",
-   "ratingsAt": "2026-10-27T06:54:27.780Z",
+   "ratingsAt": "2026-10-27T08:05:20.645Z",
    "city": "Oslo"
   },
   {
    "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode?city=oslo",
+   "url": "https://www.nfkino.no/film/markens-grode",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-582449c8bc-176680-vst-6adb40a70a5de.jpeg?itok=YCvjkzXe",
    "genres": [
     "Drama"
@@ -1541,18 +1540,18 @@
     {
      "d": "2026-10-30",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/4b0579f4-21d5-4155-add2-4901ee8382cd"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "17:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2581/6f4b735d-a995-4a3b-92f8-4b5fdde396d7"
+    },
+    {
+     "d": "2026-10-30",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/1002/4b0579f4-21d5-4155-add2-4901ee8382cd"
     },
     {
      "d": "2026-10-31",
@@ -1715,12 +1714,12 @@
    "rt": "",
    "imdb": "6.5",
    "imdbId": "tt0011440",
-   "ratingsAt": "2026-10-27T06:54:27.838Z",
+   "ratingsAt": "2026-10-27T08:05:20.702Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
+   "url": "https://www.nfkino.no/film/other-mommy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -1808,12 +1807,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt36586020",
-   "ratingsAt": "2026-10-27T06:54:27.894Z",
+   "ratingsAt": "2026-10-27T08:05:20.758Z",
    "city": "Oslo"
   },
   {
    "title": "Wildwood",
-   "url": "https://www.nfkino.no/film/wildwood?city=oslo",
+   "url": "https://www.nfkino.no/film/wildwood",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002807-1000034192.jpg?itok=ChVdapzT",
    "genres": [
     "Familiefilm",
@@ -1876,12 +1875,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt37968648",
-   "ratingsAt": "2026-10-27T06:54:27.951Z",
+   "ratingsAt": "2026-10-27T08:05:20.817Z",
    "city": "Oslo"
   },
   {
    "title": "Clayface",
-   "url": "https://www.nfkino.no/film/clayface?city=oslo",
+   "url": "https://www.nfkino.no/film/clayface",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
    "genres": [
     "Drama",
@@ -2034,108 +2033,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt6492922",
-   "ratingsAt": "2026-10-27T06:54:28.009Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen?city=oslo",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
-   "genres": [
-    "Familiefilm"
-   ],
-   "len": "1 time 1 min",
-   "age": "Alle",
-   "cinemas": [
-    "Ringen",
-    "Saga",
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-27",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1001/e260b464-9f2d-4cff-94b3-145d742d6a9f"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "15:15",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2612/57b75044-96e2-48b8-b9cd-4d39c037226d"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1001/5cb38a7a-85c6-4acb-879f-7c3f30c60093"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "15:15",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2612/4211f694-753f-4190-a5b7-f2d72cf30827"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "17:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/a57ad5c3-3dd4-4968-a872-cdee3fc650ce"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "10:15",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1001/27f35d5d-05fa-4072-9e6a-db0df14e7730"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "15:15",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2612/3c008f58-dd87-4405-88a6-f43b87fba737"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/4e60bb8e-2467-4227-8ebf-028af9760bd2"
-    },
-    {
-     "d": "2026-11-01",
-     "t": "13:30",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Norsk tale, Halloween",
-     "u": "https://www.nfkino.no/screening/2612/ccc08315-76f7-4098-9762-9a414c161a54"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Lille spøkelset Laban skøyer igjen",
-   "year": "",
-   "ratingsAt": "2026-10-27T06:54:28.262Z",
+   "ratingsAt": "2026-10-27T08:05:20.874Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -2294,12 +2197,108 @@
    "rt": "99%",
    "imdb": "",
    "imdbId": "tt36841161",
-   "ratingsAt": "2026-10-27T06:54:28.324Z",
+   "ratingsAt": "2026-10-27T08:05:20.934Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Lille spøkelset Laban skøyer igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 time 1 min",
+   "age": "Alle",
+   "cinemas": [
+    "Ringen",
+    "Saga",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-27",
+     "t": "11:00",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/1001/e260b464-9f2d-4cff-94b3-145d742d6a9f"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/57b75044-96e2-48b8-b9cd-4d39c037226d"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "11:00",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/1001/5cb38a7a-85c6-4acb-879f-7c3f30c60093"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/4211f694-753f-4190-a5b7-f2d72cf30827"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/a57ad5c3-3dd4-4968-a872-cdee3fc650ce"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "10:15",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/1001/27f35d5d-05fa-4072-9e6a-db0df14e7730"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/3c008f58-dd87-4405-88a6-f43b87fba737"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/4e60bb8e-2467-4227-8ebf-028af9760bd2"
+    },
+    {
+     "d": "2026-11-01",
+     "t": "13:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Halloween",
+     "u": "https://www.nfkino.no/screening/2612/ccc08315-76f7-4098-9762-9a414c161a54"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Lille spøkelset Laban skøyer igjen",
+   "year": "",
+   "ratingsAt": "2026-10-27T08:05:21.169Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -2328,12 +2327,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt32375006",
-   "ratingsAt": "2026-10-27T06:54:28.381Z",
+   "ratingsAt": "2026-10-27T08:05:21.231Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -2457,12 +2456,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:28.603Z",
+   "ratingsAt": "2026-10-27T08:05:21.453Z",
    "city": "Oslo"
   },
   {
    "title": "Tony",
-   "url": "https://www.nfkino.no/film/tony?city=oslo",
+   "url": "https://www.nfkino.no/film/tony",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
    "genres": [
     "Drama"
@@ -2588,12 +2587,56 @@
    "rt": "93%",
    "imdb": "7.6",
    "imdbId": "tt33095251",
-   "ratingsAt": "2026-10-27T06:54:28.665Z",
+   "ratingsAt": "2026-10-27T08:05:21.515Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
+   "genres": [],
+   "len": "1 time 20 min",
+   "age": "TBC",
+   "cinemas": [
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-27",
+     "t": "13:30",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
+    },
+    {
+     "d": "2026-10-28",
+     "t": "11:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "13:30",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Mysteriepakken",
+   "year": "",
+   "ratingsAt": "2026-10-27T08:05:21.727Z",
    "city": "Oslo"
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-67eec5dff3-176680-vst-6adb40c7ad1fb.jpeg?itok=zwrhYKol",
    "genres": [
     "Drama",
@@ -2664,12 +2707,12 @@
    "rt": "97%",
    "imdb": "7.7",
    "imdbId": "tt0114388",
-   "ratingsAt": "2026-10-27T06:54:28.721Z",
+   "ratingsAt": "2026-10-27T08:05:21.783Z",
    "city": "Oslo"
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity?city=oslo",
+   "url": "https://www.nfkino.no/film/verity",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -2747,12 +2790,12 @@
    "rt": "31%",
    "imdb": "",
    "imdbId": "tt32261958",
-   "ratingsAt": "2026-10-27T06:54:28.782Z",
+   "ratingsAt": "2026-10-27T08:05:21.839Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
+   "url": "https://www.nfkino.no/film/street-fighter",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -2837,56 +2880,12 @@
    "rt": "20%",
    "imdb": "4.2",
    "imdbId": "tt0111301",
-   "ratingsAt": "2026-10-27T06:54:28.843Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
-   "genres": [],
-   "len": "1 time 20 min",
-   "age": "TBC",
-   "cinemas": [
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-27",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f23b99ab-9f0d-41d9-a566-108372f3b66a"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "11:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/f4cd6bac-4a6a-4d82-85be-55a5d7163741"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "13:30",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/5b9e49e5-6a8c-46e3-896c-2fd79158c2db"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Mysteriepakken",
-   "year": "",
-   "ratingsAt": "2026-10-27T06:54:29.066Z",
+   "ratingsAt": "2026-10-27T08:05:21.897Z",
    "city": "Oslo"
   },
   {
    "title": "NAZA",
-   "url": "https://www.nfkino.no/film/naza?city=oslo",
+   "url": "https://www.nfkino.no/film/naza",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003335-1000034863.jpg?itok=mX7QuWrX",
    "genres": [
     "Dokumentar"
@@ -3029,12 +3028,12 @@
    "rt": "100%",
    "imdb": "7.9",
    "imdbId": "tt44766123",
-   "ratingsAt": "2026-10-27T06:54:29.124Z",
+   "ratingsAt": "2026-10-27T08:05:21.955Z",
    "city": "Oslo"
   },
   {
    "title": "Minions & monstre",
-   "url": "https://www.nfkino.no/film/minions-monstre?city=oslo",
+   "url": "https://www.nfkino.no/film/minions-monstre",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1169964-1000027978.jpg?itok=p1uoz6pa",
    "genres": [],
    "len": "1 time 25 min",
@@ -3060,12 +3059,12 @@
    "rt": "89%",
    "imdb": "6.3",
    "imdbId": "tt32890033",
-   "ratingsAt": "2026-10-27T06:54:29.180Z",
+   "ratingsAt": "2026-10-27T08:05:22.012Z",
    "city": "Oslo"
   },
   {
    "title": "The Odyssey",
-   "url": "https://www.nfkino.no/film/odyssey?city=oslo",
+   "url": "https://www.nfkino.no/film/odyssey",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
    "genres": [],
    "len": "2 timer 52 min",
@@ -3099,12 +3098,12 @@
    "rt": "94%",
    "imdb": "8.4",
    "imdbId": "tt33764258",
-   "ratingsAt": "2026-10-27T06:54:29.245Z",
+   "ratingsAt": "2026-10-27T08:05:22.082Z",
    "city": "Oslo"
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
+   "url": "https://www.nfkino.no/film/glemselens-oy",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
    "genres": [],
    "len": "1 time 49 min",
@@ -3155,12 +3154,12 @@
    "rt": "95%",
    "imdb": "7.7",
    "imdbId": "tt36583977",
-   "ratingsAt": "2026-10-27T06:54:29.305Z",
+   "ratingsAt": "2026-10-27T08:05:22.140Z",
    "city": "Oslo"
   },
   {
    "title": "Sangen fra skogene",
-   "url": "https://www.nfkino.no/film/sangen-fra-skogene?city=oslo",
+   "url": "https://www.nfkino.no/film/sangen-fra-skogene",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002619-1000031742.jpg?itok=kdA9ZJFm",
    "genres": [
     "Dokumentar"
@@ -3374,12 +3373,12 @@
    "origChecked": true,
    "orig": "Le chant des forêts",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:29.542Z",
+   "ratingsAt": "2026-10-27T08:05:22.355Z",
    "city": "Oslo"
   },
   {
    "title": "Rammstein - Live in Mexico City",
-   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city?city=oslo",
+   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003304-1000032830.jpg?itok=hL8xFfwF",
    "genres": [
     "Musikkfilm"
@@ -3407,12 +3406,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt46000907",
-   "ratingsAt": "2026-10-27T06:54:29.609Z",
+   "ratingsAt": "2026-10-27T08:05:22.413Z",
    "city": "Oslo"
   },
   {
    "title": "Resident Evil",
-   "url": "https://www.nfkino.no/film/resident-evil?city=oslo",
+   "url": "https://www.nfkino.no/film/resident-evil",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
    "genres": [
     "Horror",
@@ -3466,12 +3465,12 @@
    "rt": "36%",
    "imdb": "6.6",
    "imdbId": "tt0120804",
-   "ratingsAt": "2026-10-27T06:54:29.669Z",
+   "ratingsAt": "2026-10-27T08:05:22.473Z",
    "city": "Oslo"
   },
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
+   "url": "https://www.nfkino.no/film/suser-avgarde",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -3684,12 +3683,12 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:29.895Z",
+   "ratingsAt": "2026-10-27T08:05:22.692Z",
    "city": "Oslo"
   },
   {
    "title": "Monster Mia",
-   "url": "https://www.nfkino.no/film/monster-mia?city=oslo",
+   "url": "https://www.nfkino.no/film/monster-mia",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002582-1000030015.jpg?itok=DbT0lQjR",
    "genres": [
     "Komedie"
@@ -3832,12 +3831,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt38807889",
-   "ratingsAt": "2026-10-27T06:54:29.960Z",
+   "ratingsAt": "2026-10-27T08:05:22.749Z",
    "city": "Oslo"
   },
   {
    "title": "Godzilla Minus Zero",
-   "url": "https://www.nfkino.no/film/godzilla-minus-zero?city=oslo",
+   "url": "https://www.nfkino.no/film/godzilla-minus-zero",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002954-1000034054.jpg?itok=AwRgcTOF",
    "genres": [
     "Drama",
@@ -3867,12 +3866,12 @@
    "rt": "97%",
    "imdb": "",
    "imdbId": "tt34384661",
-   "ratingsAt": "2026-10-27T06:54:30.131Z",
+   "ratingsAt": "2026-10-27T08:05:22.914Z",
    "city": "Oslo"
   },
   {
    "title": "Whalefall",
-   "url": "https://www.nfkino.no/film/whalefall?city=oslo",
+   "url": "https://www.nfkino.no/film/whalefall",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-740642-1000034635.jpg?itok=vTRiWb6L",
    "genres": [
     "Thriller"
@@ -3916,12 +3915,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt28535715",
-   "ratingsAt": "2026-10-27T06:54:30.186Z",
+   "ratingsAt": "2026-10-27T08:05:22.969Z",
    "city": "Oslo"
   },
   {
    "title": "Tulpiniai. Lemtinga klaida",
-   "url": "https://www.nfkino.no/film/tulpiniai-lemtinga-klaida?city=oslo",
+   "url": "https://www.nfkino.no/film/tulpiniai-lemtinga-klaida",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003235-1000032226.png?itok=caYRVgZj",
    "genres": [
     "Dokumentar"
@@ -3946,12 +3945,12 @@
    "origChecked": true,
    "orig": "Tulpiniai. Lemtinga klaida",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:30.407Z",
+   "ratingsAt": "2026-10-27T08:05:23.181Z",
    "city": "Oslo"
   },
   {
    "title": "Paw Patrol: Dinofilmen",
-   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen?city=oslo",
+   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001602-1000026005.jpg?itok=HJuT8zuG",
    "genres": [],
    "len": "1 time 28 min",
@@ -3974,12 +3973,12 @@
    "origChecked": true,
    "orig": "Paw Patrol Dino Movie",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:30.634Z",
+   "ratingsAt": "2026-10-27T08:05:23.409Z",
    "city": "Oslo"
   },
   {
    "title": "Rose",
-   "url": "https://www.nfkino.no/film/rose-0?city=oslo",
+   "url": "https://www.nfkino.no/film/rose-0",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002620-1000034616.jpg?itok=yWQ2yfQk",
    "genres": [
     "Drama"
@@ -4145,45 +4144,12 @@
    "rt": "",
    "imdb": "7.6",
    "imdbId": "tt2043979",
-   "ratingsAt": "2026-10-27T06:54:30.704Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "The Ring",
-   "url": "https://www.nfkino.no/film/ring-1?city=oslo",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-16373-1000030218.jpg?itok=uQQ1xvp8",
-   "genres": [
-    "Thriller"
-   ],
-   "len": "2 timer 1 min",
-   "age": "15 år",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-31",
-     "t": "21:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Eng. tale, Kinostalgi",
-     "u": "https://www.nfkino.no/screening/2439/439ae208-7c3a-4356-8a98-3de1b633c3df"
-    }
-   ],
-   "trailer": "",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "The Ring",
-   "year": "",
-   "rt": "72%",
-   "imdb": "7.1",
-   "imdbId": "tt0298130",
-   "ratingsAt": "2026-10-27T06:54:30.768Z",
+   "ratingsAt": "2026-10-27T08:05:23.489Z",
    "city": "Oslo"
   },
   {
    "title": "Ozzy & Black Sabbath: Back To The Beginning",
-   "url": "https://www.nfkino.no/film/ozzy-black-sabbath-back-beginning?city=oslo",
+   "url": "https://www.nfkino.no/film/ozzy-black-sabbath-back-beginning",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003310-1000032859.jpg?itok=MOEwv18x",
    "genres": [],
    "len": "2 timer 27 min",
@@ -4217,12 +4183,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt46055956",
-   "ratingsAt": "2026-10-27T06:54:30.825Z",
+   "ratingsAt": "2026-10-27T08:05:23.555Z",
    "city": "Oslo"
   },
   {
    "title": "Heart of the Beast",
-   "url": "https://www.nfkino.no/film/heart-beast?city=oslo",
+   "url": "https://www.nfkino.no/film/heart-beast",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002327-1000031679.jpg?itok=eFGsYId6",
    "genres": [
     "Action"
@@ -4275,12 +4241,12 @@
    "rt": "85%",
    "imdb": "7.5",
    "imdbId": "tt7526136",
-   "ratingsAt": "2026-10-27T06:54:30.884Z",
+   "ratingsAt": "2026-10-27T08:05:23.617Z",
    "city": "Oslo"
   },
   {
    "title": "Kjærast",
-   "url": "https://www.nfkino.no/film/kjaerast?city=oslo",
+   "url": "https://www.nfkino.no/film/kjaerast",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001978-1000033012.jpg?itok=JMQCyw_T",
    "genres": [],
    "len": "1 time 54 min",
@@ -4428,12 +4394,45 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt31451181",
-   "ratingsAt": "2026-10-27T06:54:30.941Z",
+   "ratingsAt": "2026-10-27T08:05:23.673Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Ring",
+   "url": "https://www.nfkino.no/film/ring-1",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-16373-1000030218.jpg?itok=uQQ1xvp8",
+   "genres": [
+    "Thriller"
+   ],
+   "len": "2 timer 1 min",
+   "age": "15 år",
+   "cinemas": [
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-31",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Kinostalgi",
+     "u": "https://www.nfkino.no/screening/2439/439ae208-7c3a-4356-8a98-3de1b633c3df"
+    }
+   ],
+   "trailer": "",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "The Ring",
+   "year": "",
+   "rt": "72%",
+   "imdb": "7.1",
+   "imdbId": "tt0298130",
+   "ratingsAt": "2026-10-27T08:05:23.742Z",
    "city": "Oslo"
   },
   {
    "title": "Franz",
-   "url": "https://www.nfkino.no/film/franz?city=oslo",
+   "url": "https://www.nfkino.no/film/franz",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002132-1000025141.jpg?itok=V5vwr94h",
    "genres": [
     "Drama"
@@ -4568,12 +4567,12 @@
    "rt": "75%",
    "imdb": "6.5",
    "imdbId": "tt0205073",
-   "ratingsAt": "2026-10-27T06:54:31.000Z",
+   "ratingsAt": "2026-10-27T08:05:23.802Z",
    "city": "Oslo"
   },
   {
    "title": "Coyote vs. Acme - Per Ulv på saken",
-   "url": "https://www.nfkino.no/film/coyote-vs-acme-ulv-pa-saken?city=oslo",
+   "url": "https://www.nfkino.no/film/coyote-vs-acme-ulv-pa-saken",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002860-1000032594.jpg?itok=rOcKOc-P",
    "genres": [
     "Komedie"
@@ -4601,12 +4600,12 @@
    "rt": "96%",
    "imdb": "7.6",
    "imdbId": "tt1756855",
-   "ratingsAt": "2026-10-27T06:54:31.056Z",
+   "ratingsAt": "2026-10-27T08:05:23.857Z",
    "city": "Oslo"
   },
   {
    "title": "Monsterfabrikken",
-   "url": "https://www.nfkino.no/film/monsterfabrikken?city=oslo",
+   "url": "https://www.nfkino.no/film/monsterfabrikken",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002380-1000031574.jpg?itok=H3q9gcy1",
    "genres": [],
    "len": "1 time 31 min",
@@ -4657,12 +4656,12 @@
    "rt": "69%",
    "imdb": "5.8",
    "imdbId": "tt26720001",
-   "ratingsAt": "2026-10-27T06:54:31.114Z",
+   "ratingsAt": "2026-10-27T08:05:23.914Z",
    "city": "Oslo"
   },
   {
    "title": "Fjord",
-   "url": "https://www.nfkino.no/film/fjord?city=oslo",
+   "url": "https://www.nfkino.no/film/fjord",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-20b98bce87-176680-vst-6adb4241357fa.jpeg?itok=rpU9g4WQ",
    "genres": [
     "Drama"
@@ -4747,12 +4746,12 @@
    "rt": "91%",
    "imdb": "7.6",
    "imdbId": "tt35410859",
-   "ratingsAt": "2026-10-27T06:54:31.170Z",
+   "ratingsAt": "2026-10-27T08:05:23.970Z",
    "city": "Oslo"
   },
   {
    "title": "Harila - Nådeløse fjell",
-   "url": "https://www.nfkino.no/film/harila-nadelose-fjell?city=oslo",
+   "url": "https://www.nfkino.no/film/harila-nadelose-fjell",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002157-1000034673.jpg?itok=Zlm29rrD",
    "genres": [],
    "len": "1 time 40 min",
@@ -4848,12 +4847,12 @@
    "origChecked": true,
    "orig": "Harila - Nådeløse fjell",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:31.387Z",
+   "ratingsAt": "2026-10-27T08:05:24.181Z",
    "city": "Oslo"
   },
   {
    "title": "Spiralis",
-   "url": "https://www.nfkino.no/film/spiralis?city=oslo",
+   "url": "https://www.nfkino.no/film/spiralis",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002540-1000033349.jpg?itok=qqCWzz7o",
    "genres": [
     "Komedie"
@@ -4889,12 +4888,12 @@
    "rt": "",
    "imdb": "6.3",
    "imdbId": "tt33029380",
-   "ratingsAt": "2026-10-27T06:54:31.442Z",
+   "ratingsAt": "2026-10-27T08:05:24.239Z",
    "city": "Oslo"
   },
   {
    "title": "Butterfly",
-   "url": "https://www.nfkino.no/film/butterfly?city=oslo",
+   "url": "https://www.nfkino.no/film/butterfly",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1149699-1000033360.jpg?itok=yqYP3hlm",
    "genres": [
     "Drama"
@@ -5035,12 +5034,12 @@
    "rt": "96%",
    "imdb": "7.6",
    "imdbId": "tt0188030",
-   "ratingsAt": "2026-10-27T06:54:31.504Z",
+   "ratingsAt": "2026-10-27T08:05:24.300Z",
    "city": "Oslo"
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger?city=oslo",
+   "url": "https://www.nfkino.no/film/digger",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
    "genres": [
     "Drama",
@@ -5133,12 +5132,42 @@
    "rt": "70%",
    "imdb": "7.4",
    "imdbId": "tt9389916",
-   "ratingsAt": "2026-10-27T06:54:31.562Z",
+   "ratingsAt": "2026-10-27T08:05:24.361Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "HEX - En film om fenomenet Witch Club Satan",
+   "url": "https://www.nfkino.no/film/hex-en-film-om-fenomenet-witch-club-satan",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001277-1000032705.jpg?itok=1xCx2bnq",
+   "genres": [
+    "Dokumentar"
+   ],
+   "len": "1 time 32 min",
+   "age": "9 år",
+   "cinemas": [
+    "Klingenberg"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-30",
+     "t": "18:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tekst, Starter presist",
+     "u": "https://www.nfkino.no/screening/2583/81e1f123-d521-4093-8428-4822d61c5158"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001277-1000028829.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "HEX - En film om fenomenet Witch Club Satan",
+   "year": "",
+   "ratingsAt": "2026-10-27T08:05:24.578Z",
    "city": "Oslo"
   },
   {
    "title": "Reisen til Piemonte",
-   "url": "https://www.nfkino.no/film/reisen-til-piemonte?city=oslo",
+   "url": "https://www.nfkino.no/film/reisen-til-piemonte",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002857-1000033371.jpg?itok=mmbKNc5K",
    "genres": [],
    "len": "1 time 51 min",
@@ -5189,12 +5218,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt38890302",
-   "ratingsAt": "2026-10-27T06:54:31.619Z",
+   "ratingsAt": "2026-10-27T08:05:24.641Z",
    "city": "Oslo"
   },
   {
    "title": "The Conjuring",
-   "url": "https://www.nfkino.no/film/conjuring-0?city=oslo",
+   "url": "https://www.nfkino.no/film/conjuring-0",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-762c382531-176680-vst-6acf5bcd82803.png?itok=ZAhW0fTm",
    "genres": [
     "Thriller"
@@ -5222,12 +5251,12 @@
    "rt": "86%",
    "imdb": "7.5",
    "imdbId": "tt1457767",
-   "ratingsAt": "2026-10-27T06:54:31.680Z",
+   "ratingsAt": "2026-10-27T08:05:24.698Z",
    "city": "Oslo"
   },
   {
    "title": "Obsession",
-   "url": "https://www.nfkino.no/film/obsession?city=oslo",
+   "url": "https://www.nfkino.no/film/obsession",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
    "genres": [
     "Horror"
@@ -5255,12 +5284,12 @@
    "rt": "93%",
    "imdb": "7.8",
    "imdbId": "tt37287335",
-   "ratingsAt": "2026-10-27T06:54:31.752Z",
+   "ratingsAt": "2026-10-27T08:05:24.756Z",
    "city": "Oslo"
   },
   {
    "title": "Dette er ikke et eple",
-   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple?city=oslo",
+   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002655-1000031464.jpg?itok=811S3937",
    "genres": [
     "Dokumentar"
@@ -5285,12 +5314,12 @@
    "origChecked": true,
    "orig": "Dette er ikke et eple",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:31.975Z",
+   "ratingsAt": "2026-10-27T08:05:24.973Z",
    "city": "Oslo"
   },
   {
    "title": "A Prayer for the Dying",
-   "url": "https://www.nfkino.no/film/prayer-dying?city=oslo",
+   "url": "https://www.nfkino.no/film/prayer-dying",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002811-1000030332.jpg?itok=c-ywjuMD",
    "genres": [
     "Drama",
@@ -5344,12 +5373,12 @@
    "rt": "50%",
    "imdb": "6.3",
    "imdbId": "tt0093771",
-   "ratingsAt": "2026-10-27T06:54:32.037Z",
+   "ratingsAt": "2026-10-27T08:05:25.040Z",
    "city": "Oslo"
   },
   {
    "title": "La fjella leve",
-   "url": "https://www.nfkino.no/film/la-fjella-leve?city=oslo",
+   "url": "https://www.nfkino.no/film/la-fjella-leve",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001923-1000028765.jpg?itok=SKzMTQmb",
    "genres": [
     "Dokumentar"
@@ -5391,42 +5420,12 @@
    "origChecked": true,
    "orig": "La fjella leve",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:32.259Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "HEX - En film om fenomenet Witch Club Satan",
-   "url": "https://www.nfkino.no/film/hex-en-film-om-fenomenet-witch-club-satan?city=oslo",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001277-1000032705.jpg?itok=1xCx2bnq",
-   "genres": [
-    "Dokumentar"
-   ],
-   "len": "1 time 32 min",
-   "age": "9 år",
-   "cinemas": [
-    "Klingenberg"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-30",
-     "t": "18:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tekst, Starter presist",
-     "u": "https://www.nfkino.no/screening/2583/81e1f123-d521-4093-8428-4822d61c5158"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001277-1000028829.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "HEX - En film om fenomenet Witch Club Satan",
-   "year": "",
-   "ratingsAt": "2026-10-27T06:54:32.484Z",
+   "ratingsAt": "2026-10-27T08:05:25.256Z",
    "city": "Oslo"
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
+   "url": "https://www.nfkino.no/film/social-reckoning",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002677-1000034219.jpg?itok=qSODOFx2",
    "genres": [
     "Drama",
@@ -5536,12 +5535,12 @@
    "rt": "54%",
    "imdb": "",
    "imdbId": "tt37510326",
-   "ratingsAt": "2026-10-27T06:54:32.551Z",
+   "ratingsAt": "2026-10-27T08:05:25.313Z",
    "city": "Oslo"
   },
   {
    "title": "Scream (1996)",
-   "url": "https://www.nfkino.no/film/scream-1996?city=oslo",
+   "url": "https://www.nfkino.no/film/scream-1996",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-588067-1000027967.jpg?itok=nRpXqnJj",
    "genres": [
     "Horror"
@@ -5569,12 +5568,12 @@
    "rt": "78%",
    "imdb": "7.4",
    "imdbId": "tt0117571",
-   "ratingsAt": "2026-10-27T06:54:32.612Z",
+   "ratingsAt": "2026-10-27T08:05:25.372Z",
    "city": "Oslo"
   },
   {
    "title": "Málagagaten",
-   "url": "https://www.nfkino.no/film/malagagaten?city=oslo",
+   "url": "https://www.nfkino.no/film/malagagaten",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002184-1000034178.jpg?itok=dC5oReiU",
    "genres": [
     "Drama",
@@ -5603,12 +5602,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt32429174",
-   "ratingsAt": "2026-10-27T06:54:32.675Z",
+   "ratingsAt": "2026-10-27T08:05:25.430Z",
    "city": "Oslo"
   },
   {
    "title": "Backrooms",
-   "url": "https://www.nfkino.no/film/backrooms?city=oslo",
+   "url": "https://www.nfkino.no/film/backrooms",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002351-1000027931.jpg?itok=GLj1iaGD",
    "genres": [
     "Thriller",
@@ -5637,12 +5636,12 @@
    "rt": "86%",
    "imdb": "6.7",
    "imdbId": "tt26657236",
-   "ratingsAt": "2026-10-27T06:54:32.733Z",
+   "ratingsAt": "2026-10-27T08:05:25.495Z",
    "city": "Oslo"
   },
   {
    "title": "Lave forventninger",
-   "url": "https://www.nfkino.no/film/lave-forventninger?city=oslo",
+   "url": "https://www.nfkino.no/film/lave-forventninger",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001151-1000032754.jpg?itok=oSZwRJQ2",
    "genres": [
     "Drama"
@@ -5708,12 +5707,12 @@
    "origChecked": true,
    "orig": "Lave forventninger",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:32.951Z",
+   "ratingsAt": "2026-10-27T08:05:25.708Z",
    "city": "Oslo"
   },
   {
    "title": "Everybody Digs Bill Evans",
-   "url": "https://www.nfkino.no/film/everybody-digs-bill-evans?city=oslo",
+   "url": "https://www.nfkino.no/film/everybody-digs-bill-evans",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002636-1000032352.jpg?itok=pjfKHkJn",
    "genres": [
     "Drama"
@@ -5741,12 +5740,12 @@
    "rt": "100%",
    "imdb": "7.0",
    "imdbId": "tt34347792",
-   "ratingsAt": "2026-10-27T06:54:33.007Z",
+   "ratingsAt": "2026-10-27T08:05:25.764Z",
    "city": "Oslo"
   },
   {
    "title": "Avengers: Endgame Encore",
-   "url": "https://www.nfkino.no/film/avengers-endgame-encore?city=oslo",
+   "url": "https://www.nfkino.no/film/avengers-endgame-encore",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003113-1000031445.jpg?itok=PVCUd-DP",
    "genres": [],
    "len": "3 timer 5 min",
@@ -5769,12 +5768,12 @@
    "origChecked": true,
    "orig": "Avengers: Endgame Encore",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:33.226Z",
+   "ratingsAt": "2026-10-27T08:05:25.978Z",
    "city": "Oslo"
   },
   {
    "title": "Jailer 2",
-   "url": "https://www.nfkino.no/film/jailer-2?city=oslo",
+   "url": "https://www.nfkino.no/film/jailer-2",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003400-1000033610.jpg?itok=uiJ3u6lE",
    "genres": [
     "Drama",
@@ -5803,12 +5802,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt33318732",
-   "ratingsAt": "2026-10-27T06:54:33.303Z",
+   "ratingsAt": "2026-10-27T08:05:26.033Z",
    "city": "Oslo"
   },
   {
    "title": "Primetime",
-   "url": "https://www.nfkino.no/film/primetime?city=oslo",
+   "url": "https://www.nfkino.no/film/primetime",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003305-1000034515.jpg?itok=udnRnitM",
    "genres": [
     "Drama"
@@ -5836,12 +5835,12 @@
    "rt": "86%",
    "imdb": "8.7",
    "imdbId": "tt34206385",
-   "ratingsAt": "2026-10-27T06:54:33.364Z",
+   "ratingsAt": "2026-10-27T08:05:26.090Z",
    "city": "Oslo"
   },
   {
    "title": "The Shining",
-   "url": "https://www.nfkino.no/film/shining-1?city=oslo",
+   "url": "https://www.nfkino.no/film/shining-1",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-372db2f7f6-176680-vst-6ab648f44fe05.jpeg?itok=MWDKalQd",
    "genres": [],
    "len": "1 time 59 min",
@@ -5867,12 +5866,12 @@
    "rt": "75%",
    "imdb": "8.4",
    "imdbId": "tt0081505",
-   "ratingsAt": "2026-10-27T06:54:33.426Z",
+   "ratingsAt": "2026-10-27T08:05:26.148Z",
    "city": "Oslo"
   },
   {
    "title": "Bring Her Back",
-   "url": "https://www.nfkino.no/film/bring-her-back?city=oslo",
+   "url": "https://www.nfkino.no/film/bring-her-back",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001018-1000013829.jpg?itok=PrqemgP3",
    "genres": [
     "Horror"
@@ -5900,12 +5899,12 @@
    "rt": "89%",
    "imdb": "7.1",
    "imdbId": "tt32246771",
-   "ratingsAt": "2026-10-27T06:54:33.483Z",
+   "ratingsAt": "2026-10-27T08:05:26.205Z",
    "city": "Oslo"
   },
   {
    "title": "HOKUM",
-   "url": "https://www.nfkino.no/film/hokum?city=oslo",
+   "url": "https://www.nfkino.no/film/hokum",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002363-1000027231.jpg?itok=bzCj9SMj",
    "genres": [
     "Horror"
@@ -5933,12 +5932,12 @@
    "rt": "90%",
    "imdb": "6.6",
    "imdbId": "tt35672862",
-   "ratingsAt": "2026-10-27T06:54:33.546Z",
+   "ratingsAt": "2026-10-27T08:05:26.260Z",
    "city": "Oslo"
   },
   {
    "title": "Evil Dead Burn",
-   "url": "https://www.nfkino.no/film/evil-dead-burn?city=oslo",
+   "url": "https://www.nfkino.no/film/evil-dead-burn",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002664-1000029808.jpg?itok=nMCOlEQw",
    "genres": [],
    "len": "1 time 50 min",
@@ -5964,12 +5963,12 @@
    "rt": "70%",
    "imdb": "6.3",
    "imdbId": "tt31170389",
-   "ratingsAt": "2026-10-27T06:54:33.607Z",
+   "ratingsAt": "2026-10-27T08:05:26.317Z",
    "city": "Oslo"
   },
   {
    "title": "Insidious: Out of the Further",
-   "url": "https://www.nfkino.no/film/insidious-out-further?city=oslo",
+   "url": "https://www.nfkino.no/film/insidious-out-further",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1144899-1000031317.jpg?itok=L1XDVUaO",
    "genres": [
     "Thriller",
@@ -5998,12 +5997,12 @@
    "rt": "57%",
    "imdb": "6.2",
    "imdbId": "tt32393988",
-   "ratingsAt": "2026-10-27T06:54:33.670Z",
+   "ratingsAt": "2026-10-27T08:05:26.374Z",
    "city": "Oslo"
   },
   {
    "title": "Siri Hustvedt - Dansen rundt selvet",
-   "url": "https://www.nfkino.no/film/siri-hustvedt-dansen-rundt-selvet?city=oslo",
+   "url": "https://www.nfkino.no/film/siri-hustvedt-dansen-rundt-selvet",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002670-1000029508.jpg?itok=jaj5lKTm",
    "genres": [
     "Dokumentar"
@@ -6031,12 +6030,12 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt39368552",
-   "ratingsAt": "2026-10-27T06:54:33.732Z",
+   "ratingsAt": "2026-10-27T08:05:26.432Z",
    "city": "Oslo"
   },
   {
    "title": "RBO: Manon",
-   "url": "https://www.nfkino.no/film/rbo-manon?city=oslo",
+   "url": "https://www.nfkino.no/film/rbo-manon",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-1e49042199-176680-vst-6ac5e62e444f9.jpeg?itok=j7gDumdQ",
    "genres": [],
    "len": "3 timer 10 min",
@@ -6059,12 +6058,12 @@
    "origChecked": true,
    "orig": "RBO: Manon",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:33.949Z",
+   "ratingsAt": "2026-10-27T08:05:26.642Z",
    "city": "Oslo"
   },
   {
    "title": "Kvinne ukjent",
-   "url": "https://www.nfkino.no/film/kvinne-ukjent-0?city=oslo",
+   "url": "https://www.nfkino.no/film/kvinne-ukjent-0",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003015-1000032748.jpg?itok=UVcwA8pQ",
    "genres": [
     "Drama"
@@ -6097,12 +6096,12 @@
    "origChecked": true,
    "orig": "Kvinde ukendt",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:34.167Z",
+   "ratingsAt": "2026-10-27T08:05:26.854Z",
    "city": "Oslo"
   },
   {
    "title": "Rosemary's Baby (1968)",
-   "url": "https://www.nfkino.no/film/rosemarys-baby-1968?city=oslo",
+   "url": "https://www.nfkino.no/film/rosemarys-baby-1968",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-43458-1000018636.jpg?itok=1W_RK51X",
    "genres": [
     "Horror"
@@ -6127,12 +6126,12 @@
    "origChecked": true,
    "orig": "Rosemary's Baby (1968)",
    "year": "",
-   "ratingsAt": "2026-10-27T06:54:34.393Z",
+   "ratingsAt": "2026-10-27T08:05:27.070Z",
    "city": "Oslo"
   },
   {
    "title": "The Thing",
-   "url": "https://www.nfkino.no/film/thing-1?city=oslo",
+   "url": "https://www.nfkino.no/film/thing-1",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-15f30c36da-176680-vst-6adf4d9049b97.png?itok=zrSs5sWv",
    "genres": [],
    "len": "1 time 49 min",
@@ -6158,12 +6157,12 @@
    "rt": "85%",
    "imdb": "8.2",
    "imdbId": "tt0084787",
-   "ratingsAt": "2026-10-27T06:54:34.454Z",
+   "ratingsAt": "2026-10-27T08:05:27.132Z",
    "city": "Oslo"
   },
   {
    "title": "Godzilla Minus One",
-   "url": "https://www.nfkino.no/film/godzilla-minus-one-0?city=oslo",
+   "url": "https://www.nfkino.no/film/godzilla-minus-one-0",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1040940-1041752.jpg?itok=qwyD4H89",
    "genres": [
     "Drama",
@@ -6193,12 +6192,12 @@
    "rt": "99%",
    "imdb": "7.6",
    "imdbId": "tt23289160",
-   "ratingsAt": "2026-10-27T06:54:34.511Z",
+   "ratingsAt": "2026-10-27T08:05:27.192Z",
    "city": "Oslo"
   },
   {
    "title": "UDTA TEER",
-   "url": "https://www.nfkino.no/film/udta-teer?city=oslo",
+   "url": "https://www.nfkino.no/film/udta-teer",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003363-1000034684.jpg?itok=DZqQBLU6",
    "genres": [
     "Komedie"
@@ -6226,7 +6225,7 @@
    "rt": "",
    "imdb": "",
    "imdbId": "tt14606262",
-   "ratingsAt": "2026-10-27T06:54:34.567Z",
+   "ratingsAt": "2026-10-27T08:05:27.248Z",
    "city": "Oslo"
   }
  ],
@@ -10097,42 +10096,6 @@
   "hours": [
    {
     "date": "2026-10-27",
-    "h": 1,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 2,
-    "aqi": 1.7,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 3,
-    "aqi": 1.7,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 4,
-    "aqi": 1.7,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 5,
-    "aqi": 1.7,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 6,
-    "aqi": 1.7,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
     "h": 7,
     "aqi": 1.6,
     "main": "ozon"
@@ -10158,13 +10121,13 @@
    {
     "date": "2026-10-27",
     "h": 11,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 12,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
@@ -10182,13 +10145,13 @@
    {
     "date": "2026-10-27",
     "h": 15,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 16,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
@@ -10200,79 +10163,79 @@
    {
     "date": "2026-10-27",
     "h": 18,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 19,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 20,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 21,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 22,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 23,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 0,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 1,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 2,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 3,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 4,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 5,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-28",
     "h": 6,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
@@ -10326,7 +10289,7 @@
    {
     "date": "2026-10-28",
     "h": 15,
-    "aqi": 1.7,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
@@ -10338,7 +10301,7 @@
    {
     "date": "2026-10-28",
     "h": 17,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
@@ -10380,50 +10343,86 @@
    {
     "date": "2026-10-29",
     "h": 0,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
     "h": 1,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
     "h": 2,
-    "aqi": 1.4,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
     "h": 3,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 4,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 5,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 6,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 7,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 8,
     "aqi": 1.3,
-    "main": "NO₂ (eksos)"
+    "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 4,
+    "h": 9,
+    "aqi": 1.3,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 10,
     "aqi": 1.4,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 5,
+    "h": 11,
     "aqi": 1.4,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 6,
-    "aqi": 1.4,
+    "h": 12,
+    "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 7,
-    "aqi": 1.4,
-    "main": "NO₂ (eksos)"
+    "h": 13,
+    "aqi": 1.5,
+    "main": "ozon"
    },
    {
     "date": "2026-10-28",
@@ -11504,7 +11503,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-27T06:00:00.000Z"
+  "time": "2026-10-27T07:00:00.000Z"
  },
  "loppis": [
   {
@@ -13987,18 +13986,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Makosir",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1697283505?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ODYjTLTBU?tr=w-600",
-   "times": [
-    "2026-12-10T19:00"
-   ],
-   "hint": "pop deltalder",
-   "about": "Med låter som «Jessica», «Gledestårer» og «SOS» har Makosir preget lydbildet for mange denne sommeren, og han har raskt etablert seg som et av de mest spennende navnene på den norske musikkscenen. Denne sommeren har lytt",
-   "city": "Oslo"
-  },
-  {
    "title": "Anne Fagermo",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1723339799?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14008,6 +13995,18 @@
    ],
    "hint": "americana countryrock",
    "about": "Artisten fra Midt-Telemark inntok den norske musikkscenen med fullt trøkk da hun ga ut sitt etterlengtede debutalbum *Spillet er i gang* i fjor. Singelen «Hele byen» ble raskt en publikumsfavoritt, og albumet markerte st",
+   "city": "Oslo"
+  },
+  {
+   "title": "Makosir",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1697283505?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ODYjTLTBU?tr=w-600",
+   "times": [
+    "2026-12-10T19:00"
+   ],
+   "hint": "pop deltalder",
+   "about": "Med låter som «Jessica», «Gledestårer» og «SOS» har Makosir preget lydbildet for mange denne sommeren, og han har raskt etablert seg som et av de mest spennende navnene på den norske musikkscenen. Denne sommeren har lytt",
    "city": "Oslo"
   },
   {
@@ -14023,18 +14022,6 @@
    "city": "Oslo"
   },
   {
-   "title": "The Cruel Intentions",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/153279701?brand=johndee",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o99s-E3SK?tr=w-600",
-   "times": [
-    "2026-12-11T19:00"
-   ],
-   "hint": "glamrock sleazerock hardrock",
-   "about": "**The Cruel Intentions** Med kritikerrost nytt album ute og etter konserter i USA, Europa og Sverige avslutter The Cruel Intentions året med et brak på John Dee 11. desember. Albumet *All Hail Hypocrisy* har høstet inn u",
-   "city": "Oslo"
-  },
-  {
    "title": "Di Derre",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1082698757?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Di_Derre_111226_Billettsalg&utm_campaign=NO_Rockefeller_Di_Derre_111226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14045,6 +14032,18 @@
    ],
    "hint": "poprock",
    "about": "Førjulskonsertene på Sentrum Scene har blitt en fast tradisjon og blir år etter år utsolgt. I dag består Di Derre av Jo Nesbø (vokal, gitar), Magnus Larsen jr. (bass), Espen Stenhammer (trommer), Halvor Holter (tangenter",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Cruel Intentions",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/153279701?brand=johndee",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o99s-E3SK?tr=w-600",
+   "times": [
+    "2026-12-11T19:00"
+   ],
+   "hint": "glamrock sleazerock hardrock",
+   "about": "**The Cruel Intentions** Med kritikerrost nytt album ute og etter konserter i USA, Europa og Sverige avslutter The Cruel Intentions året med et brak på John Dee 11. desember. Albumet *All Hail Hypocrisy* har høstet inn u",
    "city": "Oslo"
   },
   {
@@ -14121,18 +14120,6 @@
    "city": "Oslo"
   },
   {
-   "title": "B-lagets juleshow",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1573801419?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_B_lagets_juleshow_171226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_B_lagets_juleshow_171226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ddAQyBWJ2?tr=w-600",
-   "times": [
-    "2026-12-17T19:00"
-   ],
-   "hint": "livepodcast comedy",
-   "about": "-- Bill. kr. 410,- + bill.avg. 18 års aldersgrense med legitimasjonsplikt. Ingen vergeordning. Gyldig legitimasjon er fysisk nasjonalt ID-kort, pass, fysisk førerkort eller bankkort med bilde. Digital legitimasjon (digit",
-   "city": "Oslo"
-  },
-  {
    "title": "AVHØRT – Juleshow",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1877314685",
@@ -14142,6 +14129,18 @@
    ],
    "hint": "livepodcast show",
    "about": "Legg julehandelen på vent og bli med på en kveld med AVHØRT live på scenen. Vi samler gjengen og publikum til et juleshow for deg som liker historiene litt mørkere enn juleeventyrene. AVHØRT tar for seg mørke historier f",
+   "city": "Oslo"
+  },
+  {
+   "title": "B-lagets juleshow",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1573801419?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_B_lagets_juleshow_171226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_B_lagets_juleshow_171226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ddAQyBWJ2?tr=w-600",
+   "times": [
+    "2026-12-17T19:00"
+   ],
+   "hint": "livepodcast comedy",
+   "about": "-- Bill. kr. 410,- + bill.avg. 18 års aldersgrense med legitimasjonsplikt. Ingen vergeordning. Gyldig legitimasjon er fysisk nasjonalt ID-kort, pass, fysisk førerkort eller bankkort med bilde. Digital legitimasjon (digit",
    "city": "Oslo"
   },
   {
@@ -14157,18 +14156,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Seigmen",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1901629445?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_4k0W5ryNb?tr=w-600",
-   "times": [
-    "2026-12-18T19:00"
-   ],
-   "hint": "rock industrialrock",
-   "about": "Siden gjennombruddet på 90-tallet har Seigmen satt et varig avtrykk på norsk rock med klassiske album som *Total* og det Spellemannprisvinnende og platinaselgende *Metropolis*. De siste årene har bandet samtidig vist en ",
-   "city": "Oslo"
-  },
-  {
    "title": "EN HÆLVETES JULEKONSERT",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/613281524?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_En_Haelvetes_Julekonsert_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_En_Haelvetes_Julekonsert_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14181,6 +14168,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Seigmen",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1901629445?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_4k0W5ryNb?tr=w-600",
+   "times": [
+    "2026-12-18T19:00"
+   ],
+   "hint": "rock industrialrock",
+   "about": "Siden gjennombruddet på 90-tallet har Seigmen satt et varig avtrykk på norsk rock med klassiske album som *Total* og det Spellemannprisvinnende og platinaselgende *Metropolis*. De siste årene har bandet samtidig vist en ",
+   "city": "Oslo"
+  },
+  {
    "title": "Juletrefest med Ronny Pøbel",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/847021649?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14190,18 +14189,6 @@
    ],
    "hint": "punk rock",
    "about": "Fra ingenmannsland dukket blikkenslageren Ronny Pøbel plutselig opp i Oslos rockemiljø i 2005. Han markerte seg og vakte oppsikt umiddelbart med å utnevne seg selv til *Samfunnshater nr. 1*, med slagordet og parolen *Føk",
-   "city": "Oslo"
-  },
-  {
-   "title": "Bigbang",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1440280819",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0IFgqLIp1?tr=w-600",
-   "times": [
-    "2026-12-19T19:00"
-   ],
-   "hint": "rock",
-   "about": "Det er lett å glemme at Bigbang er en trio, at alt man hører og ser kommer fra kun tre musikere. Der de aller fleste rockband trenger fire eller gjerne fem medlemmer for å holde skuta flytende, lener den klassiske trioen",
    "city": "Oslo"
   },
   {
@@ -14227,6 +14214,18 @@
    ],
    "hint": "industrial metal electro",
    "about": "Bandet ledes av den norske musikeren Andy LaPlegua, grunnlegger av Icon of Coil, og får selskap på scenen av en energisk livebesetning som skaper en intens konsertopplevelse. «Everybody Hates You» var Combichrists første",
+   "city": "Oslo"
+  },
+  {
+   "title": "Bigbang",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1440280819",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0IFgqLIp1?tr=w-600",
+   "times": [
+    "2026-12-19T19:00"
+   ],
+   "hint": "rock",
+   "about": "Det er lett å glemme at Bigbang er en trio, at alt man hører og ser kommer fra kun tre musikere. Der de aller fleste rockband trenger fire eller gjerne fem medlemmer for å holde skuta flytende, lener den klassiske trioen",
    "city": "Oslo"
   },
   {
@@ -14327,18 +14326,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Hannah Storm",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1836966895?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_campaign=NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/abcdefg_sEqDMlPBl?tr=w-600",
-   "times": [
-    "2027-01-15T19:00"
-   ],
-   "hint": "pop",
-   "about": "Etter å ha vokst opp i et musikalsk hjem i Oslo og skrevet egne sanger siden hun var sju, gikk 26-åringen veien via Foss vgs., Toneheim og LIMPI før hun i 2021 ble plukket opp av MADE Management (AURORA, Sigrid, SKAAR). ",
-   "city": "Oslo"
-  },
-  {
    "title": "Donkeyboy",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1740304732?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Donkeyboy_ekstra_150127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Donkeyboy_ekstra_150127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14349,6 +14336,18 @@
    ],
    "hint": "pop synthpop",
    "about": "Siden gjennombruddet i 2009 har Donkeyboy levert noen av Norges største poplåter, med klassikere som «Ambitions», «Sometimes», «City Boy» og «Crazy Something Normal» som har satt lydspor til utallige minner. Med sine sto",
+   "city": "Oslo"
+  },
+  {
+   "title": "Hannah Storm",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1836966895?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_campaign=NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/abcdefg_sEqDMlPBl?tr=w-600",
+   "times": [
+    "2027-01-15T19:00"
+   ],
+   "hint": "pop",
+   "about": "Etter å ha vokst opp i et musikalsk hjem i Oslo og skrevet egne sanger siden hun var sju, gikk 26-åringen veien via Foss vgs., Toneheim og LIMPI før hun i 2021 ble plukket opp av MADE Management (AURORA, Sigrid, SKAAR). ",
    "city": "Oslo"
   },
   {
@@ -14390,18 +14389,6 @@
    "city": "Oslo"
   },
   {
-   "title": "The Black Dahlia Murder",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1843671206?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_fbmxveltm?tr=w-600",
-   "times": [
-    "2027-01-22T19:00"
-   ],
-   "hint": "metal melodicdeathmetal",
-   "about": "Siden starten i Michigan i 2001 har The Black Dahlia Murder vært blant de mest markante navnene innen melodisk death metal. Med sin kompromissløse kombinasjon av ekstrem intensitet, teknisk presisjon og sterke melodier h",
-   "city": "Oslo"
-  },
-  {
    "title": "Erlend Ropstad",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/883452271?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14411,6 +14398,18 @@
    ],
    "hint": "rock singersongwriter",
    "about": "Ropstad har siden gjennombruddet etablert seg som en av landets markante rockartister, med en rekke kritikerroste utgivelser og en stadig voksende fanskare. På det nye albumet vender Ropstad tilbake til rocken etter året",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Black Dahlia Murder",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1843671206?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_fbmxveltm?tr=w-600",
+   "times": [
+    "2027-01-22T19:00"
+   ],
+   "hint": "metal melodicdeathmetal",
+   "about": "Siden starten i Michigan i 2001 har The Black Dahlia Murder vært blant de mest markante navnene innen melodisk death metal. Med sin kompromissløse kombinasjon av ekstrem intensitet, teknisk presisjon og sterke melodier h",
    "city": "Oslo"
   },
   {
@@ -14426,18 +14425,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Trollfest",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/755311741?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_t16Rj-Lf4?tr=w-600",
-   "times": [
-    "2027-01-29T19:00"
-   ],
-   "hint": "folkmetal",
-   "about": "Med seg har de Vanvidd, som lover en trolsk og dansbar start på det som ligger an til å bli en heidundrende folk metal-kveld i Oslo. Her er det bare å lade partybatteriene til randen og gjøre seg klar for hæla i taket! -",
-   "city": "Oslo"
-  },
-  {
    "title": "Stavangerkameratene",
    "venue": "Rockefeller",
    "url": " https://www.ticketmaster.no/event/224117616?brand=rockefeller",
@@ -14447,6 +14434,18 @@
    ],
    "hint": "poprock",
    "about": "Stavangerkameratene har for lengst etablert seg som en publikumsmagnet på konsertscener og festivaler over hele landet. Med monsterhiten «Bare så du vett det», en Spellemann-nominasjon og flere album bak seg har de bygge",
+   "city": "Oslo"
+  },
+  {
+   "title": "Trollfest",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/755311741?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_t16Rj-Lf4?tr=w-600",
+   "times": [
+    "2027-01-29T19:00"
+   ],
+   "hint": "folkmetal",
+   "about": "Med seg har de Vanvidd, som lover en trolsk og dansbar start på det som ligger an til å bli en heidundrende folk metal-kveld i Oslo. Her er det bare å lade partybatteriene til randen og gjøre seg klar for hæla i taket! -",
    "city": "Oslo"
   },
   {
@@ -14522,18 +14521,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Signs of the Swarm",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1782300199?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Signs_Of_The_Swarm_090227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Signs_Of_The_Swarm_090227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_yTfGwLPHb?tr=w-600",
-   "times": [
-    "2027-02-09T19:00"
-   ],
-   "hint": "deathcore metal",
-   "about": "Signs of the Swarm er aktuelle med sitt kritikerroste sjettealbum *To Rid Myself of Truth*, som ble sluppet i fjor. Albumet viser et band som nå henter like mye inspirasjon fra Meshuggah, Gojira og Fear Factory som fra d",
-   "city": "Oslo"
-  },
-  {
    "title": "Elder",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1271421081",
@@ -14543,6 +14530,18 @@
    ],
    "hint": "stonermetal psychedelicrock prog",
    "about": "Elder har en unik evne til å absorbere og utforske impulser fra et mangfold av sjangre, uten å falle i fellen av ren pastisj eller miste sitt eget særpreg. Gjennom de siste tjue årene har Elder perfeksjonert kunsten å ko",
+   "city": "Oslo"
+  },
+  {
+   "title": "Signs of the Swarm",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1782300199?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Signs_Of_The_Swarm_090227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Signs_Of_The_Swarm_090227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_yTfGwLPHb?tr=w-600",
+   "times": [
+    "2027-02-09T19:00"
+   ],
+   "hint": "deathcore metal",
+   "about": "Signs of the Swarm er aktuelle med sitt kritikerroste sjettealbum *To Rid Myself of Truth*, som ble sluppet i fjor. Albumet viser et band som nå henter like mye inspirasjon fra Meshuggah, Gojira og Fear Factory som fra d",
    "city": "Oslo"
   },
   {
@@ -14570,18 +14569,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Pernille Haaland",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/973941915?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Pernille_Haaland_120227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Pernille_Haaland_120227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_s6OoBqU9X?tr=w-600",
-   "times": [
-    "2027-02-12T19:00"
-   ],
-   "hint": "standup comedy",
-   "about": "Showet er på engelsk. -- Award winning comedian Pernille Haaland (HBO Max, Netflix, Discovery, NRK, TV2) returns with a brand-new hour of stand-up – cool, cutting, and unapologetically Nordic. From the surreal experience",
-   "city": "Oslo"
-  },
-  {
    "title": "Dugg",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/643738798?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dugg_120227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dugg_120227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14603,6 +14590,18 @@
    ],
    "hint": "hardcore rock",
    "about": "Rett fra levra og rett fra hjertet. Ondt Blod spiller kokforbanna hardcore og fengende rock på nordnorsk. Full av nordnorsk jævelskap og samisk stolthet, spiller bandet låter om politisk undertrykkelse, rasisme og annen ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Pernille Haaland",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/973941915?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Pernille_Haaland_120227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Pernille_Haaland_120227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_s6OoBqU9X?tr=w-600",
+   "times": [
+    "2027-02-12T19:00"
+   ],
+   "hint": "standup comedy",
+   "about": "Showet er på engelsk. -- Award winning comedian Pernille Haaland (HBO Max, Netflix, Discovery, NRK, TV2) returns with a brand-new hour of stand-up – cool, cutting, and unapologetically Nordic. From the surreal experience",
    "city": "Oslo"
   },
   {
@@ -14738,18 +14737,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Bernth",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/artist/bernth-billetter/1206513?venueId=4757&camefrom=CFC_NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_campaign=NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5CkjlK4XI?tr=w-600",
-   "times": [
-    "2027-02-21T19:00"
-   ],
-   "hint": "rock metal prog",
-   "about": "Den østerrikske gitaristen, komponisten og kreatøren Bernth har beveget seg mellom ekstrem metal, soundtrackarbeid, sessionjobber og virtuos instrumentalmusikk. Han har turnert med Belphegor, spilt inn gitar for Seiler u",
-   "city": "Oslo"
-  },
-  {
    "title": "Amble",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/537509382?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Amble_210227_Billettsalg&utm_campaign=NO_Rockefeller_Amble_210227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14759,6 +14746,18 @@
    ],
    "hint": "folk",
    "about": "De slapp sitt etterlengtede debutalbum *Reverie* i mai 2025, og fulgte opp med EP-en *Hand Me Downs* senere på året. Nå har de nettopp sluppet singelen «Moral Victory», og mer ny musikk er på vei! Amble består av Robbie ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Bernth",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/artist/bernth-billetter/1206513?venueId=4757&camefrom=CFC_NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_campaign=NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5CkjlK4XI?tr=w-600",
+   "times": [
+    "2027-02-21T19:00"
+   ],
+   "hint": "rock metal prog",
+   "about": "Den østerrikske gitaristen, komponisten og kreatøren Bernth har beveget seg mellom ekstrem metal, soundtrackarbeid, sessionjobber og virtuos instrumentalmusikk. Han har turnert med Belphegor, spilt inn gitar for Seiler u",
    "city": "Oslo"
   },
   {
@@ -14822,18 +14821,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Beth Orton",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
-   "times": [
-    "2027-02-27T19:00"
-   ],
-   "hint": "folk electronica singersongwriter",
-   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
-   "city": "Oslo"
-  },
-  {
    "title": "KALEO",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/551960807?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14845,6 +14832,18 @@
    ],
    "hint": "rock bluesrock folkrock",
    "about": "Siden gjennombruddet med albumet *A/B* i 2016 har KALEO etablert seg som et av Islands største internasjonale rockeband. Med sin særegne blanding av bluesrock, folk og stemningsfull rock har de opparbeidet seg et stort p",
+   "city": "Oslo"
+  },
+  {
+   "title": "Beth Orton",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
+   "times": [
+    "2027-02-27T19:00"
+   ],
+   "hint": "folk electronica singersongwriter",
+   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
    "city": "Oslo"
   },
   {
@@ -14881,6 +14880,18 @@
    ],
    "hint": "deathmetal",
    "about": "**Party Cannon** kommer fra Skottland, og er kjent for sin eksplosive blanding av death metal og «party slam». Knusende riff, blastbeats, gutturals, inflatables og push-up pits har gjort bandet til en liveopplevelse helt",
+   "city": "Oslo"
+  },
+  {
+   "title": "Jacob Banks",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1502836727?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jacob_Banks_040327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jacob_Banks_040327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_FmK_VJoVK?tr=w-600",
+   "times": [
+    "2027-03-04T19:00"
+   ],
+   "hint": "soul rnb gospel",
+   "about": "Jacob Banks er født i Nigeria og oppvokst i London, og ble tidlig lagt merke til for sin gripende stemme og sine følelsesladde tekster. Musikken hans utforsker ofte temaer som identitet, kjærlighet og tilhørighet. Etter ",
    "city": "Oslo"
   },
   {
@@ -14980,6 +14991,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Saint Etienne",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1151246004?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_WsuurbIdD0?tr=w-600",
+   "times": [
+    "2027-03-10T19:00"
+   ],
+   "hint": "pop electronica",
+   "about": "Saint Etienne ble dannet i Croydon i 1990 av Bob Stanley og Pete Wiggs, og fikk raskt oppmerksomhet med sin versjon av Neil Youngs «Only Love Can Break Your Heart», som ble en klubbfavoritt. Med vokalist Sarah Cracknell,",
+   "city": "Oslo"
+  },
+  {
    "title": "Svart Ridå",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/219245929?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svart_Rida_100327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svart_Rida_100327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -14989,20 +15012,6 @@
    ],
    "hint": "indierock",
    "about": "Svart Ridå leverer støyende gitarsoloer og fengende poprefrenger side om side med introverte, mørke tekster. De slapp sitt andre studioalbum *Aponia* i 2025, som ble hyllet av et samlet anmelderkorps. De ga også ut en fa",
-   "city": "Oslo"
-  },
-  {
-   "title": "Dagny",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1958383666?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dagny_110327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dagny_110327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_MQ6SsyP6o?tr=w-600",
-   "times": [
-    "2027-03-11T19:00",
-    "2027-03-12T19:00",
-    "2027-03-13T19:00"
-   ],
-   "hint": "pop",
-   "about": "Turneen følger Dagnys kritikerroste nyeste album, *Dancefloor Erotica*, et fryktløst og dansedrevet kapittel fra en artist som fortsetter å flytte grensene for sitt eget pop-univers. Aftenposten ga albumet terningkast 6 ",
    "city": "Oslo"
   },
   {
@@ -15027,6 +15036,20 @@
    ],
    "hint": "hardrock",
    "about": "Audrey Horne serverer klassisk hardrock med røttene solid plantet i tradisjonen til Thin Lizzy, Iron Maiden og Led Zeppelin, kombinert med den mørkere tyngden og melodiske nerven man kjenner fra Alice in Chains og Soundg",
+   "city": "Oslo"
+  },
+  {
+   "title": "Dagny",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1958383666?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dagny_110327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Dagny_110327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_MQ6SsyP6o?tr=w-600",
+   "times": [
+    "2027-03-11T19:00",
+    "2027-03-12T19:00",
+    "2027-03-13T19:00"
+   ],
+   "hint": "pop",
+   "about": "Turneen følger Dagnys kritikerroste nyeste album, *Dancefloor Erotica*, et fryktløst og dansedrevet kapittel fra en artist som fortsetter å flytte grensene for sitt eget pop-univers. Aftenposten ga albumet terningkast 6 ",
    "city": "Oslo"
   },
   {
@@ -15090,18 +15113,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Nessa Barrett",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/867823729?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_d7hgZ57CVX?tr=w-600",
-   "times": [
-    "2027-03-20T19:00"
-   ],
-   "hint": "alternativepop darkpop deltalder",
-   "about": "Musikalsk bygger *Tough Love* videre på det mørke, triphop-inspirerte fundamentet hun har utviklet siden *Aftercare*-turneen og EP-en *Jesus Loves a Primadonna*. Inspirasjonskildene kommer tydelig til uttrykk på albumet,",
-   "city": "Oslo"
-  },
-  {
    "title": "Bokassa",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/249200124?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15111,6 +15122,18 @@
    ],
    "hint": "Rock",
    "about": "Punkmetal-trioen har i en årrekke fusjonert flere av rockens undersjangre til sitt helt egne sound. Med fire kritikerroste album bak seg har de turnert med band som Clutch, Lagwagon, Mastodon, Therapy? og Metallica, og s",
+   "city": "Oslo"
+  },
+  {
+   "title": "Nessa Barrett",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/867823729?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_d7hgZ57CVX?tr=w-600",
+   "times": [
+    "2027-03-20T19:00"
+   ],
+   "hint": "alternativepop darkpop deltalder",
+   "about": "Musikalsk bygger *Tough Love* videre på det mørke, triphop-inspirerte fundamentet hun har utviklet siden *Aftercare*-turneen og EP-en *Jesus Loves a Primadonna*. Inspirasjonskildene kommer tydelig til uttrykk på albumet,",
    "city": "Oslo"
   },
   {
@@ -15126,18 +15149,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Palaye Royale",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/854370510?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_lWytVDjr3?tr=w-600",
-   "times": [
-    "2027-03-23T19:00"
-   ],
-   "hint": "avantgarde rock deltalder",
-   "about": "På den kommende turneen skal brødrene Remington Leith, Sebastian Danzig og Emerson Barrett fylle arenaer verden over og spille for over 80.000 publikummere. Det nye albumet slippes 22. januar, og første smakebit, «Lost I",
-   "city": "Oslo"
-  },
-  {
    "title": "Eve",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1958764140?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Eve_121026_Billettsalg&utm_campaign=NO_Rockefeller_Eve_121026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15147,6 +15158,18 @@
    ],
    "hint": "hiphop rap",
    "about": "Med hits som «Who’s That Girl» og den Grammy-vinnende «Let Me Blow Ya Mind», tok *Scorpion* verden med storm og toppet albumlister verden over. Albumet befestet posisjonen hennes blant de aller største, og hadde et impon",
+   "city": "Oslo"
+  },
+  {
+   "title": "Palaye Royale",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/854370510?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_lWytVDjr3?tr=w-600",
+   "times": [
+    "2027-03-23T19:00"
+   ],
+   "hint": "avantgarde rock deltalder",
+   "about": "På den kommende turneen skal brødrene Remington Leith, Sebastian Danzig og Emerson Barrett fylle arenaer verden over og spille for over 80.000 publikummere. Det nye albumet slippes 22. januar, og første smakebit, «Lost I",
    "city": "Oslo"
   },
   {
