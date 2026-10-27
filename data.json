@@ -1,14 +1,16 @@
 {
- "updated": "2026-10-27T00:57:47.548Z",
- "errors": [],
+ "updated": "2026-10-27T01:50:55.628Z",
+ "errors": [
+  "slm: fant ingen oppføringer"
+ ],
  "weather": {
   "now": {
    "date": "2026-10-27",
-   "h": 1,
+   "h": 2,
    "temp": 8,
    "wind": 2,
-   "sym": "partlycloudy_night",
-   "rain": 0,
+   "sym": "rain",
+   "rain": 0.3,
    "span": 1
   },
   "days": [
@@ -17,17 +19,8 @@
     "hours": [
      {
       "date": "2026-10-27",
-      "h": 1,
-      "temp": 8,
-      "wind": 2,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-27",
       "h": 2,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "rain",
       "rain": 0.3,
@@ -288,7 +281,7 @@
      {
       "date": "2026-10-28",
       "h": 6,
-      "temp": 9,
+      "temp": 8,
       "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
@@ -423,7 +416,7 @@
      {
       "date": "2026-10-28",
       "h": 21,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -1090,18 +1083,18 @@
     {
      "d": "2026-10-27",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
-    },
-    {
-     "d": "2026-10-27",
-     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/da7b3b67-bfa2-4fbc-b1ed-92719d19d63a"
+    },
+    {
+     "d": "2026-10-27",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/926e4d61-21d3-4185-a29c-ed19364b20bb"
     },
     {
      "d": "2026-10-27",
@@ -1458,18 +1451,18 @@
     {
      "d": "2026-11-03",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/cc5ff86d-354b-409c-b2c1-6a5897379339"
-    },
-    {
-     "d": "2026-11-03",
-     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/5eccfb55-c960-4551-ab75-0471070d25d2"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/cc5ff86d-354b-409c-b2c1-6a5897379339"
     },
     {
      "d": "2026-11-03",
@@ -3076,7 +3069,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/56080404-7977-4389-b444-5bc68fe7c0c1"
+     "u": "https://www.kinowww.nfkino.no/screening/2439/56080404-7977-4389-b444-5bc68fe7c0c1"
     },
     {
      "d": "2026-10-29",
@@ -3084,7 +3077,7 @@
      "c": "Ringen",
      "r": "2",
      "v": "4DX 2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/11b633b9-238f-4b8f-bec0-40c064b38e01"
+     "u": "https://www.kinowww.nfkino.no/screening/2439/11b633b9-238f-4b8f-bec0-40c064b38e01"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1122855-1000027083.mp4",
@@ -3390,7 +3383,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Konsert",
-     "u": "https://2fwww.nfkino.no/screening/2439/2dbd561f-df2e-4854-9d04-ef565e441470"
+     "u": "https://www.nfkino.no/screening/2439/2dbd561f-df2e-4854-9d04-ef565e441470"
     }
    ],
    "trailer": "",
@@ -3400,7 +3393,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt46000907",
    "ratingsAt": "2026-10-27T00:57:55.089Z",
    "city": "Oslo"
   },
@@ -5251,7 +5243,7 @@
      "t": "11:30",
      "c": "Symra",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Regissørbesøk",
+     "v": "2D, Norsk tale, Norsk tekst, Regissørbesøk, Seniorkino",
      "u": "https://www.nfkino.no/screening/2590/aab50d92-b9ae-47d6-abe9-01272f75e835"
     }
    ],
@@ -5530,7 +5522,7 @@
      "t": "20:00",
      "c": "Vika",
      "r": "1",
-     "v": "2D, Eng. tale, Kinostalgi, Halloween",
+     "v": "2D, Eng. tale, Halloween, Kinostalgi",
      "u": "https://www.nfkino.no/screening/2612/be4819ad-184b-44d2-8b58-84a6cc9489b7"
     }
    ],
@@ -5803,7 +5795,6 @@
    "year": "",
    "rt": "86%",
    "imdb": "8.7",
-   "imdbId": "tt34206385",
    "ratingsAt": "2026-10-27T00:57:55.169Z",
    "city": "Oslo"
   },
@@ -10055,42 +10046,6 @@
   "place": "Grünerløkka Rode 5",
   "hours": [
    {
-    "date": "2026-10-26",
-    "h": 19,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-26",
-    "h": 20,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-26",
-    "h": 21,
-    "aqi": 1.3,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-26",
-    "h": 22,
-    "aqi": 1.5,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-26",
-    "h": 23,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-10-27",
-    "h": 0,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
     "date": "2026-10-27",
     "h": 1,
     "aqi": 1.6,
@@ -10099,19 +10054,19 @@
    {
     "date": "2026-10-27",
     "h": 2,
-    "aqi": 1.6,
+    "aqi": 1.7,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 3,
-    "aqi": 1.6,
+    "aqi": 1.7,
     "main": "ozon"
    },
    {
     "date": "2026-10-27",
     "h": 4,
-    "aqi": 1.6,
+    "aqi": 1.7,
     "main": "ozon"
    },
    {
@@ -10183,7 +10138,7 @@
    {
     "date": "2026-10-27",
     "h": 16,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
@@ -10267,7 +10222,7 @@
    {
     "date": "2026-10-28",
     "h": 6,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
@@ -10357,7 +10312,7 @@
    {
     "date": "2026-10-28",
     "h": 21,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
@@ -10369,26 +10324,56 @@
    {
     "date": "2026-10-28",
     "h": 23,
+    "aqi": 1.6,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 0,
     "aqi": 1.5,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 0,
+    "h": 1,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 2,
     "aqi": 1.4,
     "main": "ozon"
    },
    {
     "date": "2026-10-29",
-    "h": 1,
+    "h": 3,
     "aqi": 1.3,
+    "main": "NO₂ (eksos)"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 4,
+    "aqi": 1.4,
     "main": "ozon"
    },
    {
-    "date": "2026-10-27",
-    "h": 0,
-    "aqi": 1.7,
+    "date": "2026-10-29",
+    "h": 5,
+    "aqi": 1.4,
     "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 6,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-10-29",
+    "h": 7,
+    "aqi": 1.4,
+    "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-10-28",
@@ -11469,7 +11454,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-27T00:00:00.000Z"
+  "time": "2026-10-27T01:00:00.000Z"
  },
  "loppis": [
   {
