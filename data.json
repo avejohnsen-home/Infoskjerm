@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-27T08:04:03.942Z",
+ "updated": "2026-10-27T08:52:10.300Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-27",
-   "h": 8,
+   "h": 9,
    "temp": 10,
    "wind": 7,
    "sym": "rain",
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-27",
     "hours": [
-     {
-      "date": "2026-10-27",
-      "h": 8,
-      "temp": 10,
-      "wind": 7,
-      "sym": "rain",
-      "rain": 0.4,
-      "span": 1
-     },
      {
       "date": "2026-10-27",
       "h": 9,
@@ -162,7 +153,7 @@
     ],
     "max": 13,
     "min": 10,
-    "rain": 6.2,
+    "rain": 5.8,
     "sym": "rain"
    },
    {
@@ -324,7 +315,7 @@
      {
       "date": "2026-10-28",
       "h": 17,
-      "temp": 11,
+      "temp": 10,
       "wind": 3,
       "sym": "fair_night",
       "rain": 0,
@@ -515,7 +506,7 @@
       "h": 13,
       "temp": 11,
       "wind": 2,
-      "sym": "fair_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
      },
@@ -524,7 +515,7 @@
       "h": 19,
       "temp": 10,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
@@ -532,7 +523,7 @@
     "max": 11,
     "min": 6,
     "rain": 0,
-    "sym": "fair_day"
+    "sym": "partlycloudy_day"
    },
    {
     "date": "2026-10-30",
@@ -540,7 +531,7 @@
      {
       "date": "2026-10-30",
       "h": 1,
-      "temp": 8,
+      "temp": 9,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -549,7 +540,7 @@
      {
       "date": "2026-10-30",
       "h": 7,
-      "temp": 6,
+      "temp": 7,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -558,7 +549,7 @@
      {
       "date": "2026-10-30",
       "h": 13,
-      "temp": 12,
+      "temp": 13,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -568,14 +559,14 @@
       "date": "2026-10-30",
       "h": 19,
       "temp": 9,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 12,
-    "min": 6,
+    "max": 13,
+    "min": 7,
     "rain": 0,
     "sym": "partlycloudy_day"
    },
@@ -594,7 +585,7 @@
      {
       "date": "2026-10-31",
       "h": 7,
-      "temp": 7,
+      "temp": 6,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -603,7 +594,7 @@
      {
       "date": "2026-10-31",
       "h": 13,
-      "temp": 10,
+      "temp": 9,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -612,15 +603,15 @@
      {
       "date": "2026-10-31",
       "h": 19,
-      "temp": 8,
+      "temp": 7,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 10,
-    "min": 7,
+    "max": 9,
+    "min": 6,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -630,7 +621,7 @@
      {
       "date": "2026-11-01",
       "h": 1,
-      "temp": 8,
+      "temp": 7,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -639,7 +630,7 @@
      {
       "date": "2026-11-01",
       "h": 7,
-      "temp": 8,
+      "temp": 7,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -648,8 +639,8 @@
      {
       "date": "2026-11-01",
       "h": 13,
-      "temp": 10,
-      "wind": 2,
+      "temp": 9,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -657,15 +648,15 @@
      {
       "date": "2026-11-01",
       "h": 19,
-      "temp": 8,
+      "temp": 7,
       "wind": 2,
-      "sym": "clearsky_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 10,
-    "min": 8,
+    "max": 9,
+    "min": 7,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -677,23 +668,23 @@
       "h": 1,
       "temp": 6,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-02",
       "h": 7,
-      "temp": 6,
+      "temp": 5,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-02",
       "h": 13,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -702,15 +693,15 @@
      {
       "date": "2026-11-02",
       "h": 19,
-      "temp": 8,
-      "wind": 2,
-      "sym": "partlycloudy_night",
+      "temp": 7,
+      "wind": 1,
+      "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 9,
-    "min": 6,
+    "max": 8,
+    "min": 5,
     "rain": 0,
     "sym": "cloudy"
    }
@@ -1290,15 +1281,7 @@
      "t": "11:30",
      "c": "Symra",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Med Besøk",
-     "u": "https://www.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "11:30",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Med Besøk",
      "u": "https://www.nfkino.no/screening/2590/d7d11fed-5df0-4160-b706-962df09aad4c"
     },
     {
@@ -1493,7 +1476,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39453840",
    "ratingsAt": "2026-10-27T08:05:20.645Z",
    "city": "Oslo"
   },
@@ -1540,18 +1522,18 @@
     {
      "d": "2026-10-30",
      "t": "17:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2581/6f4b735d-a995-4a3b-92f8-4b5fdde396d7"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "17:30",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/1002/4b0579f4-21d5-4155-add2-4901ee8382cd"
+    },
+    {
+     "d": "2026-10-30",
+     "t": "17:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2581/6f4b735d-a995-4a3b-92f8-4b5fdde396d7"
     },
     {
      "d": "2026-10-31",
@@ -1713,7 +1695,6 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "imdbId": "tt0011440",
    "ratingsAt": "2026-10-27T08:05:20.702Z",
    "city": "Oslo"
   },
@@ -1806,7 +1787,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt36586020",
    "ratingsAt": "2026-10-27T08:05:20.758Z",
    "city": "Oslo"
   },
@@ -1874,7 +1854,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt37968648",
    "ratingsAt": "2026-10-27T08:05:20.817Z",
    "city": "Oslo"
   },
@@ -2032,7 +2011,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt6492922",
    "ratingsAt": "2026-10-27T08:05:20.874Z",
    "city": "Oslo"
   },
@@ -2196,7 +2174,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "imdbId": "tt36841161",
    "ratingsAt": "2026-10-27T08:05:20.934Z",
    "city": "Oslo"
   },
@@ -2326,7 +2303,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32375006",
    "ratingsAt": "2026-10-27T08:05:21.231Z",
    "city": "Oslo"
   },
@@ -2586,7 +2562,6 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.6",
-   "imdbId": "tt33095251",
    "ratingsAt": "2026-10-27T08:05:21.515Z",
    "city": "Oslo"
   },
@@ -2706,7 +2681,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "imdbId": "tt0114388",
    "ratingsAt": "2026-10-27T08:05:21.783Z",
    "city": "Oslo"
   },
@@ -2789,7 +2763,6 @@
    "year": "",
    "rt": "31%",
    "imdb": "",
-   "imdbId": "tt32261958",
    "ratingsAt": "2026-10-27T08:05:21.839Z",
    "city": "Oslo"
   },
@@ -2879,7 +2852,6 @@
    "year": "",
    "rt": "20%",
    "imdb": "4.2",
-   "imdbId": "tt0111301",
    "ratingsAt": "2026-10-27T08:05:21.897Z",
    "city": "Oslo"
   },
@@ -3027,7 +2999,6 @@
    "year": "",
    "rt": "100%",
    "imdb": "7.9",
-   "imdbId": "tt44766123",
    "ratingsAt": "2026-10-27T08:05:21.955Z",
    "city": "Oslo"
   },
@@ -3058,7 +3029,6 @@
    "year": "",
    "rt": "89%",
    "imdb": "6.3",
-   "imdbId": "tt32890033",
    "ratingsAt": "2026-10-27T08:05:22.012Z",
    "city": "Oslo"
   },
@@ -3097,7 +3067,6 @@
    "year": "",
    "rt": "94%",
    "imdb": "8.4",
-   "imdbId": "tt33764258",
    "ratingsAt": "2026-10-27T08:05:22.082Z",
    "city": "Oslo"
   },
@@ -3153,7 +3122,6 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "imdbId": "tt36583977",
    "ratingsAt": "2026-10-27T08:05:22.140Z",
    "city": "Oslo"
   },
@@ -3405,7 +3373,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt46000907",
    "ratingsAt": "2026-10-27T08:05:22.413Z",
    "city": "Oslo"
   },
@@ -3464,7 +3431,6 @@
    "year": "",
    "rt": "36%",
    "imdb": "6.6",
-   "imdbId": "tt0120804",
    "ratingsAt": "2026-10-27T08:05:22.473Z",
    "city": "Oslo"
   },
@@ -3830,7 +3796,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt38807889",
    "ratingsAt": "2026-10-27T08:05:22.749Z",
    "city": "Oslo"
   },
@@ -3865,7 +3830,6 @@
    "year": "",
    "rt": "97%",
    "imdb": "",
-   "imdbId": "tt34384661",
    "ratingsAt": "2026-10-27T08:05:22.914Z",
    "city": "Oslo"
   },
@@ -3914,7 +3878,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt28535715",
    "ratingsAt": "2026-10-27T08:05:22.969Z",
    "city": "Oslo"
   },
@@ -4143,7 +4106,6 @@
    "year": "",
    "rt": "",
    "imdb": "7.6",
-   "imdbId": "tt2043979",
    "ratingsAt": "2026-10-27T08:05:23.489Z",
    "city": "Oslo"
   },
@@ -4164,7 +4126,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Konsert, Musikkfilm",
-     "u": "https://www.nfkino.no/screening/2439/ef6a90e3-4300-4d94-8203-a498b6eab65a"
+     "u": "https://2fwww.nfkino.no/screening/2439/ef6a90e3-4300-4d94-8203-a498b6eab65a"
     },
     {
      "d": "2026-10-30",
@@ -4172,7 +4134,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Konsert, Musikkfilm",
-     "u": "https://www.nfkino.no/screening/2439/24b94a64-dddc-452c-9f9c-fbf55bd0e8c5"
+     "u": "https://2fwww.nfkino.no/screening/2439/24b94a64-dddc-452c-9f9c-fbf55bd0e8c5"
     }
    ],
    "trailer": "",
@@ -4182,7 +4144,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt46055956",
    "ratingsAt": "2026-10-27T08:05:23.555Z",
    "city": "Oslo"
   },
@@ -4240,7 +4201,6 @@
    "year": "",
    "rt": "85%",
    "imdb": "7.5",
-   "imdbId": "tt7526136",
    "ratingsAt": "2026-10-27T08:05:23.617Z",
    "city": "Oslo"
   },
@@ -4393,7 +4353,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt31451181",
    "ratingsAt": "2026-10-27T08:05:23.673Z",
    "city": "Oslo"
   },
@@ -4426,7 +4385,6 @@
    "year": "",
    "rt": "72%",
    "imdb": "7.1",
-   "imdbId": "tt0298130",
    "ratingsAt": "2026-10-27T08:05:23.742Z",
    "city": "Oslo"
   },
@@ -4566,7 +4524,6 @@
    "year": "",
    "rt": "75%",
    "imdb": "6.5",
-   "imdbId": "tt0205073",
    "ratingsAt": "2026-10-27T08:05:23.802Z",
    "city": "Oslo"
   },
@@ -4599,7 +4556,6 @@
    "year": "",
    "rt": "96%",
    "imdb": "7.6",
-   "imdbId": "tt1756855",
    "ratingsAt": "2026-10-27T08:05:23.857Z",
    "city": "Oslo"
   },
@@ -4655,7 +4611,6 @@
    "year": "",
    "rt": "69%",
    "imdb": "5.8",
-   "imdbId": "tt26720001",
    "ratingsAt": "2026-10-27T08:05:23.914Z",
    "city": "Oslo"
   },
@@ -4745,7 +4700,6 @@
    "year": "",
    "rt": "91%",
    "imdb": "7.6",
-   "imdbId": "tt35410859",
    "ratingsAt": "2026-10-27T08:05:23.970Z",
    "city": "Oslo"
   },
@@ -4887,7 +4841,6 @@
    "year": "",
    "rt": "",
    "imdb": "6.3",
-   "imdbId": "tt33029380",
    "ratingsAt": "2026-10-27T08:05:24.239Z",
    "city": "Oslo"
   },
@@ -5033,7 +4986,6 @@
    "year": "",
    "rt": "96%",
    "imdb": "7.6",
-   "imdbId": "tt0188030",
    "ratingsAt": "2026-10-27T08:05:24.300Z",
    "city": "Oslo"
   },
@@ -5131,7 +5083,6 @@
    "year": "",
    "rt": "70%",
    "imdb": "7.4",
-   "imdbId": "tt9389916",
    "ratingsAt": "2026-10-27T08:05:24.361Z",
    "city": "Oslo"
   },
@@ -5217,7 +5168,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt38890302",
    "ratingsAt": "2026-10-27T08:05:24.641Z",
    "city": "Oslo"
   },
@@ -5250,7 +5200,6 @@
    "year": "",
    "rt": "86%",
    "imdb": "7.5",
-   "imdbId": "tt1457767",
    "ratingsAt": "2026-10-27T08:05:24.698Z",
    "city": "Oslo"
   },
@@ -5283,7 +5232,6 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.8",
-   "imdbId": "tt37287335",
    "ratingsAt": "2026-10-27T08:05:24.756Z",
    "city": "Oslo"
   },
@@ -5372,7 +5320,6 @@
    "year": "",
    "rt": "50%",
    "imdb": "6.3",
-   "imdbId": "tt0093771",
    "ratingsAt": "2026-10-27T08:05:25.040Z",
    "city": "Oslo"
   },
@@ -5534,7 +5481,6 @@
    "year": "",
    "rt": "54%",
    "imdb": "",
-   "imdbId": "tt37510326",
    "ratingsAt": "2026-10-27T08:05:25.313Z",
    "city": "Oslo"
   },
@@ -5567,7 +5513,6 @@
    "year": "",
    "rt": "78%",
    "imdb": "7.4",
-   "imdbId": "tt0117571",
    "ratingsAt": "2026-10-27T08:05:25.372Z",
    "city": "Oslo"
   },
@@ -5601,7 +5546,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt32429174",
    "ratingsAt": "2026-10-27T08:05:25.430Z",
    "city": "Oslo"
   },
@@ -5635,7 +5579,6 @@
    "year": "",
    "rt": "86%",
    "imdb": "6.7",
-   "imdbId": "tt26657236",
    "ratingsAt": "2026-10-27T08:05:25.495Z",
    "city": "Oslo"
   },
@@ -5739,7 +5682,6 @@
    "year": "",
    "rt": "100%",
    "imdb": "7.0",
-   "imdbId": "tt34347792",
    "ratingsAt": "2026-10-27T08:05:25.764Z",
    "city": "Oslo"
   },
@@ -5801,7 +5743,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt33318732",
    "ratingsAt": "2026-10-27T08:05:26.033Z",
    "city": "Oslo"
   },
@@ -5824,7 +5765,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Utekstet",
-     "u": "https://www.nfkino.no/screening/2439/deedf2ec-0f3c-4caa-8b95-0719f0b9f873"
+     "u": "https://2fwww.nfkino.no/screening/2439/deedf2ec-0f3c-4caa-8b95-0719f0b9f873"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100003305-1000034517.mp4",
@@ -5834,7 +5775,6 @@
    "year": "",
    "rt": "86%",
    "imdb": "8.7",
-   "imdbId": "tt34206385",
    "ratingsAt": "2026-10-27T08:05:26.090Z",
    "city": "Oslo"
   },
@@ -5865,7 +5805,6 @@
    "year": "",
    "rt": "75%",
    "imdb": "8.4",
-   "imdbId": "tt0081505",
    "ratingsAt": "2026-10-27T08:05:26.148Z",
    "city": "Oslo"
   },
@@ -5898,7 +5837,6 @@
    "year": "",
    "rt": "89%",
    "imdb": "7.1",
-   "imdbId": "tt32246771",
    "ratingsAt": "2026-10-27T08:05:26.205Z",
    "city": "Oslo"
   },
@@ -5921,7 +5859,7 @@
      "c": "Vika",
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst, Halloween",
-     "u": "https://www.nfkino.no/screening/2612/90a05373-6543-4d0c-8d62-c2f04fb08a1a"
+     "u": "https://2fwww.nfkino.no/screening/2612/90a05373-6543-4d0c-8d62-c2f04fb08a1a"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-04/gmnt-b8526367e3-176574-vst-69eb6fb54bd7e.mp4",
@@ -5931,7 +5869,6 @@
    "year": "",
    "rt": "90%",
    "imdb": "6.6",
-   "imdbId": "tt35672862",
    "ratingsAt": "2026-10-27T08:05:26.260Z",
    "city": "Oslo"
   },
@@ -5962,7 +5899,6 @@
    "year": "",
    "rt": "70%",
    "imdb": "6.3",
-   "imdbId": "tt31170389",
    "ratingsAt": "2026-10-27T08:05:26.317Z",
    "city": "Oslo"
   },
@@ -5996,7 +5932,6 @@
    "year": "",
    "rt": "57%",
    "imdb": "6.2",
-   "imdbId": "tt32393988",
    "ratingsAt": "2026-10-27T08:05:26.374Z",
    "city": "Oslo"
   },
@@ -6029,7 +5964,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt39368552",
    "ratingsAt": "2026-10-27T08:05:26.432Z",
    "city": "Oslo"
   },
@@ -6156,7 +6090,6 @@
    "year": "",
    "rt": "85%",
    "imdb": "8.2",
-   "imdbId": "tt0084787",
    "ratingsAt": "2026-10-27T08:05:27.132Z",
    "city": "Oslo"
   },
@@ -6181,7 +6114,7 @@
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tekst, Kinostalgi",
-     "u": "https://www.nfkino.no/screening/2439/efb405bd-4ea5-49ab-adc6-891185674d14"
+     "u": "https://2fwww.nfkino.no/screening/2439/efb405bd-4ea5-49ab-adc6-891185674d14"
     }
    ],
    "trailer": "",
@@ -6191,7 +6124,6 @@
    "year": "",
    "rt": "99%",
    "imdb": "7.6",
-   "imdbId": "tt23289160",
    "ratingsAt": "2026-10-27T08:05:27.192Z",
    "city": "Oslo"
   },
@@ -6214,7 +6146,7 @@
      "c": "Vika",
      "r": "4",
      "v": "2D, UR, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/2612/bdd5ef1f-7d62-44a7-9d83-60866d5cdc3a"
+     "u": "https://2fwww.nfkino.no/screening/2612/bdd5ef1f-7d62-44a7-9d83-60866d5cdc3a"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100003363-1000034683.mp4",
@@ -6224,7 +6156,6 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "imdbId": "tt14606262",
    "ratingsAt": "2026-10-27T08:05:27.248Z",
    "city": "Oslo"
   }
@@ -11503,7 +11434,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-27T07:00:00.000Z"
+  "time": "2026-10-27T08:00:00.000Z"
  },
  "loppis": [
   {
