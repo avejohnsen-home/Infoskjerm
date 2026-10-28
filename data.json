@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-28T10:55:03.620Z",
+ "updated": "2026-10-28T11:52:56.176Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-28",
-   "h": 11,
-   "temp": 10,
-   "wind": 3,
-   "sym": "fair_day",
+   "h": 12,
+   "temp": 11,
+   "wind": 4,
+   "sym": "clearsky_day",
    "rain": 0,
    "span": 1
   },
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-10-28",
-      "h": 11,
-      "temp": 10,
-      "wind": 3,
-      "sym": "fair_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-28",
       "h": 12,
       "temp": 11,
       "wind": 4,
-      "sym": "fair_day",
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 1
      },
@@ -189,7 +180,7 @@
      {
       "date": "2026-10-29",
       "h": 5,
-      "temp": 7,
+      "temp": 8,
       "wind": 1,
       "sym": "fog",
       "rain": 0,
@@ -234,7 +225,7 @@
      {
       "date": "2026-10-29",
       "h": 10,
-      "temp": 8,
+      "temp": 7,
       "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
@@ -297,7 +288,7 @@
      {
       "date": "2026-10-29",
       "h": 17,
-      "temp": 10,
+      "temp": 11,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -351,7 +342,7 @@
      {
       "date": "2026-10-29",
       "h": 23,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -432,7 +423,7 @@
      {
       "date": "2026-10-30",
       "h": 7,
-      "temp": 7,
+      "temp": 8,
       "wind": 1,
       "sym": "fair_night",
       "rain": 0,
@@ -1082,30 +1073,6 @@
    "shows": [
     {
      "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2439/cc7d0d9a-bacc-46e3-b693-d448dd66ea22"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2583/3d5a7c74-5abe-4a30-98b7-a1214f762182"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/1002/a7f44ca8-2425-4e77-80fc-863ae99b3e01"
-    },
-    {
-     "d": "2026-10-28",
      "t": "13:00",
      "c": "Saga",
      "r": "2",
@@ -1267,18 +1234,18 @@
     {
      "d": "2026-10-29",
      "t": "17:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/c104a0be-c108-44fd-8ba0-e8cb57facb7b"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/f81bc850-1624-40fb-a6d7-2f6f1844cff7"
     },
     {
      "d": "2026-10-29",
@@ -1299,6 +1266,14 @@
     {
      "d": "2026-10-30",
      "t": "12:00",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/3e3e606f-e771-4d70-930c-22ecfb320eac"
+    },
+    {
+     "d": "2026-10-30",
+     "t": "12:00",
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Babykino",
@@ -1311,14 +1286,6 @@
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/7dc65785-18fd-41a6-8722-4009ff443768"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "12:00",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/3e3e606f-e771-4d70-930c-22ecfb320eac"
     },
     {
      "d": "2026-10-30",
@@ -1355,18 +1322,18 @@
     {
      "d": "2026-10-30",
      "t": "15:00",
-     "c": "Klingenberg",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/7e7f5937-453c-43eb-8fd6-cdf6c7d9eff8"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "15:00",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2590/e971910d-22b8-4c6d-a3d2-807b34aab46e"
+    },
+    {
+     "d": "2026-10-30",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/7e7f5937-453c-43eb-8fd6-cdf6c7d9eff8"
     },
     {
      "d": "2026-10-30",
@@ -1435,18 +1402,18 @@
     {
      "d": "2026-10-31",
      "t": "14:45",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/4bfdb878-c75c-4dae-bb2a-2920ef6f3530"
-    },
-    {
-     "d": "2026-10-31",
-     "t": "14:45",
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1001/032257dd-52dc-4d17-ac5c-e1f8a28de3d1"
+    },
+    {
+     "d": "2026-10-31",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/4bfdb878-c75c-4dae-bb2a-2920ef6f3530"
     },
     {
      "d": "2026-10-31",
@@ -1659,18 +1626,18 @@
     {
      "d": "2026-11-03",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/cc5ff86d-354b-409c-b2c1-6a5897379339"
-    },
-    {
-     "d": "2026-11-03",
-     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/5eccfb55-c960-4551-ab75-0471070d25d2"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/cc5ff86d-354b-409c-b2c1-6a5897379339"
     },
     {
      "d": "2026-11-03",
@@ -1699,18 +1666,18 @@
     {
      "d": "2026-11-03",
      "t": "14:45",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/d36c25ce-fa93-4b56-8de2-0b4cfc9f97fe"
-    },
-    {
-     "d": "2026-11-03",
-     "t": "14:45",
      "c": "Saga",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1001/35ad4aa9-1792-4f81-a931-aec1b8c1dbaf"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/d36c25ce-fa93-4b56-8de2-0b4cfc9f97fe"
     },
     {
      "d": "2026-11-03",
@@ -1747,6 +1714,14 @@
     {
      "d": "2026-11-04",
      "t": "12:00",
+     "c": "Saga",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/2d20140f-db43-4a19-843a-5ded1db4de41"
+    },
+    {
+     "d": "2026-11-04",
+     "t": "12:00",
      "c": "Ringen",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
@@ -1759,14 +1734,6 @@
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/7702eeb8-5089-4739-9c4f-207404b5e4b6"
-    },
-    {
-     "d": "2026-11-04",
-     "t": "12:00",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/2d20140f-db43-4a19-843a-5ded1db4de41"
     },
     {
      "d": "2026-11-04",
@@ -1835,6 +1802,14 @@
     {
      "d": "2026-11-05",
      "t": "12:00",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/b8a89a1e-5365-4a12-bf60-9a9b958ac8d5"
+    },
+    {
+     "d": "2026-11-05",
+     "t": "12:00",
      "c": "Ringen",
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
@@ -1847,14 +1822,6 @@
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/1002/bc600bdb-003e-4f18-8518-9e027f6ba8ed"
-    },
-    {
-     "d": "2026-11-05",
-     "t": "12:00",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/b8a89a1e-5365-4a12-bf60-9a9b958ac8d5"
     },
     {
      "d": "2026-11-05",
@@ -1971,15 +1938,7 @@
      "t": "11:30",
      "c": "Symra",
      "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2590/0f026cbd-a11e-4630-80e7-21a78f51c2cb"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "11:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2590/0f026cbd-a11e-4630-80e7-21a78f51c2cb"
     },
     {
@@ -4068,22 +4027,6 @@
    "shows": [
     {
      "d": "2026-10-28",
-     "t": "12:30",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1002/91c702b2-556b-4e3f-85a4-10be5f9b6429"
-    },
-    {
-     "d": "2026-10-28",
-     "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2439/a0bfa240-7bae-4962-8c40-aa8c59d6ec50"
-    },
-    {
-     "d": "2026-10-28",
      "t": "13:15",
      "c": "Saga",
      "r": "3",
@@ -4716,14 +4659,6 @@
    "shows": [
     {
      "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2439/60525f5a-b182-4a88-8106-a3f9670a33e3"
-    },
-    {
-     "d": "2026-10-28",
      "t": "20:15",
      "c": "Vika",
      "r": "2",
@@ -4829,14 +4764,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/1002/994e7573-4275-47eb-a139-e2a79c81cf2f"
-    },
     {
      "d": "2026-10-28",
      "t": "17:45",
@@ -5377,14 +5304,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst, Babykino",
-     "u": "https://www.nfkino.no/screening/2439/f551db14-4ce2-47b4-8521-43a4f4dac740"
-    },
     {
      "d": "2026-10-28",
      "t": "15:15",
@@ -6244,14 +6163,6 @@
    ],
    "shows": [
     {
-     "d": "2026-10-28",
-     "t": "12:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/ed298db9-cbc9-41c7-a1b3-af7852e3a9fd"
-    },
-    {
      "d": "2026-10-29",
      "t": "12:15",
      "c": "Ringen",
@@ -6437,14 +6348,6 @@
    "shows": [
     {
      "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Org. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/31f2b38a-33f6-4671-b6fc-fd874ad2a898"
-    },
-    {
-     "d": "2026-10-28",
      "t": "13:15",
      "c": "Saga",
      "r": "4",
@@ -6494,18 +6397,18 @@
     {
      "d": "2026-10-29",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Org. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/3c3995c1-8a00-4d20-9de3-72e438723cf9"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "12:00",
      "c": "Ringen",
      "r": "3",
      "v": "2D, Org. tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2439/dfa63c19-f2ce-4391-8ac2-ff82ad736f32"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3c3995c1-8a00-4d20-9de3-72e438723cf9"
     },
     {
      "d": "2026-10-29",
@@ -6574,18 +6477,18 @@
     {
      "d": "2026-10-31",
      "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Org. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/d415a78c-64cf-43b1-8171-692f4bcfe64a"
-    },
-    {
-     "d": "2026-10-31",
-     "t": "12:00",
      "c": "Vika",
      "r": "4",
      "v": "2D, Org. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2612/49c9a7ad-f41e-4e40-afac-07ee1f94adc1"
+    },
+    {
+     "d": "2026-10-31",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/d415a78c-64cf-43b1-8171-692f4bcfe64a"
     },
     {
      "d": "2026-10-31",
@@ -6952,14 +6855,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/2aeaa69e-828f-40f9-911e-2fab42bfc4bf"
-    },
     {
      "d": "2026-10-28",
      "t": "14:30",
@@ -7790,14 +7685,6 @@
    "shows": [
     {
      "d": "2026-10-28",
-     "t": "12:45",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/9b2402bb-f03b-4aac-abb2-75fb163d872e"
-    },
-    {
-     "d": "2026-10-28",
      "t": "18:30",
      "c": "Saga",
      "r": "5",
@@ -7843,6 +7730,149 @@
    "orig": "Harila - Nådeløse fjell",
    "year": "",
    "ratingsAt": "2026-10-28T01:09:19.766Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "JAK ZYC ZEBY NIE ZWARIOWAC",
+   "url": "https://www.nfkino.no/film/jak-zyc-zeby-nie-zwariowac",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003459-1000034507.png?itok=KMAG97o3",
+   "genres": [
+    "Komedie"
+   ],
+   "len": "1 time 42 min",
+   "age": "15 år",
+   "cinemas": [
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-31",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Org. tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/1001/9f2437f0-625a-4ad8-9977-6e156275ffd5"
+    }
+   ],
+   "trailer": "",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "JAK ZYC ZEBY NIE ZWARIOWAC",
+   "year": "",
+   "ratingsAt": "2026-10-28T01:09:19.446Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Obsession",
+   "url": "https://www.nfkino.no/film/obsession",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
+   "genres": [
+    "Horror"
+   ],
+   "len": "1 time 49 min",
+   "age": "15 år",
+   "cinemas": [
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-01",
+     "t": "20:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Halloween",
+     "u": "https://www.nfkino.no/screening/2612/033ea000-dd81-4687-8a0a-392f5a61d63b"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002174-1000026556.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Obsession",
+   "year": "",
+   "rt": "93%",
+   "imdb": "7.8",
+   "ratingsAt": "2026-10-28T01:09:19.503Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Fjord",
+   "url": "https://www.nfkino.no/film/fjord",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-20b98bce87-176680-vst-6adb4241357fa.jpeg?itok=rpU9g4WQ",
+   "genres": [
+    "Drama"
+   ],
+   "len": "2 timer 19 min",
+   "age": "9 år",
+   "cinemas": [
+    "Klingenberg",
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-28",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/4012ddba-e1d4-4462-b868-47bfe16cd273"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/0cd66d11-901b-460e-980c-a0745156308e"
+    },
+    {
+     "d": "2026-10-30",
+     "t": "15:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/292d2603-995a-4690-aed4-b58bbe39c701"
+    },
+    {
+     "d": "2026-10-31",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/73a4b725-8d94-4f21-96e7-843282044d08"
+    },
+    {
+     "d": "2026-11-01",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/d3513f0d-f022-4698-ab30-61d15e5270e2"
+    },
+    {
+     "d": "2026-11-02",
+     "t": "11:30",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/1001/b7135159-73d8-4b56-89d3-b48e9768f624"
+    },
+    {
+     "d": "2026-11-02",
+     "t": "17:15",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, RO, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/0f38305c-3b1c-4368-b0c9-dff9407aaed2"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-08/gmnt-635117d5a3-176680-vst-6a82caef506cc.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Fjord",
+   "year": "",
+   "rt": "91%",
+   "imdb": "7.6",
+   "ratingsAt": "2026-10-28T01:09:19.555Z",
    "city": "Oslo"
   },
   {
@@ -7987,149 +8017,6 @@
    "rt": "",
    "imdb": "",
    "ratingsAt": "2026-10-28T01:09:19.234Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "JAK ZYC ZEBY NIE ZWARIOWAC",
-   "url": "https://www.nfkino.no/film/jak-zyc-zeby-nie-zwariowac",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003459-1000034507.png?itok=KMAG97o3",
-   "genres": [
-    "Komedie"
-   ],
-   "len": "1 time 42 min",
-   "age": "15 år",
-   "cinemas": [
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-31",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Org. tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/1001/9f2437f0-625a-4ad8-9977-6e156275ffd5"
-    }
-   ],
-   "trailer": "",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "JAK ZYC ZEBY NIE ZWARIOWAC",
-   "year": "",
-   "ratingsAt": "2026-10-28T01:09:19.446Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Obsession",
-   "url": "https://www.nfkino.no/film/obsession",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
-   "genres": [
-    "Horror"
-   ],
-   "len": "1 time 49 min",
-   "age": "15 år",
-   "cinemas": [
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-01",
-     "t": "20:30",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Halloween",
-     "u": "https://www.nfkino.no/screening/2612/033ea000-dd81-4687-8a0a-392f5a61d63b"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002174-1000026556.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Obsession",
-   "year": "",
-   "rt": "93%",
-   "imdb": "7.8",
-   "ratingsAt": "2026-10-28T01:09:19.503Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Fjord",
-   "url": "https://www.nfkino.no/film/fjord",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-20b98bce87-176680-vst-6adb4241357fa.jpeg?itok=rpU9g4WQ",
-   "genres": [
-    "Drama"
-   ],
-   "len": "2 timer 19 min",
-   "age": "9 år",
-   "cinemas": [
-    "Klingenberg",
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-28",
-     "t": "17:30",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/4012ddba-e1d4-4462-b868-47bfe16cd273"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "17:30",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/0cd66d11-901b-460e-980c-a0745156308e"
-    },
-    {
-     "d": "2026-10-30",
-     "t": "15:30",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/292d2603-995a-4690-aed4-b58bbe39c701"
-    },
-    {
-     "d": "2026-10-31",
-     "t": "14:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/73a4b725-8d94-4f21-96e7-843282044d08"
-    },
-    {
-     "d": "2026-11-01",
-     "t": "14:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/d3513f0d-f022-4698-ab30-61d15e5270e2"
-    },
-    {
-     "d": "2026-11-02",
-     "t": "11:30",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1001/b7135159-73d8-4b56-89d3-b48e9768f624"
-    },
-    {
-     "d": "2026-11-02",
-     "t": "17:15",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, RO, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2583/0f38305c-3b1c-4368-b0c9-dff9407aaed2"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-08/gmnt-635117d5a3-176680-vst-6a82caef506cc.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Fjord",
-   "year": "",
-   "rt": "91%",
-   "imdb": "7.6",
-   "ratingsAt": "2026-10-28T01:09:19.555Z",
    "city": "Oslo"
   },
   {
@@ -8922,14 +8809,6 @@
    ],
    "shows": [
     {
-     "d": "2026-10-28",
-     "t": "12:00",
-     "c": "Klingenberg",
-     "r": "4",
-     "v": "2D, SV, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/b5eeff80-4540-4a8f-8e59-0609ab02d872"
-    },
-    {
      "d": "2026-10-29",
      "t": "12:00",
      "c": "Klingenberg",
@@ -9612,34 +9491,6 @@
    "orig": "Kvinde ukendt",
    "year": "",
    "ratingsAt": "2026-10-28T01:09:21.607Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Avengers: Endgame Encore",
-   "url": "https://www.nfkino.no/film/avengers-endgame-encore",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003113-1000031445.jpg?itok=PVCUd-DP",
-   "genres": [],
-   "len": "3 timer 5 min",
-   "age": "12 år",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-28",
-     "t": "12:30",
-     "c": "Ringen",
-     "r": "2",
-     "v": "4DX 2D, Eng. tale, Norsk tekst, Infinity Vision",
-     "u": "https://www.nfkino.no/screening/2439/19af9d84-c3f7-4190-8601-5f9165f78eea"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100003113-1000031448.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Avengers: Endgame Encore",
-   "year": "",
-   "ratingsAt": "2026-10-28T01:09:21.825Z",
    "city": "Oslo"
   },
   {
@@ -15306,7 +15157,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-28T10:00:00.000Z"
+  "time": "2026-10-28T11:00:00.000Z"
  },
  "loppis": [
   {
@@ -15666,7 +15517,7 @@
    "from": null,
    "to": null,
    "about": "",
-   "hint": "InnsiktIntroduksjon til CabaretGratisMads Sjøgård Pettersenm om bruk av videoSjå alle tilgjengelege datoar",
+   "hint": "InnsiktIntroduksjon til CabaretGratisMads Sjøgård Pettersen om bruk av videoSjå alle tilgjengelege datoar",
    "city": "Oslo"
   },
   {
@@ -16873,18 +16724,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Gåte",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1447461091?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Gate_311026_Billettsalg&utm_campaign=NO_Rockefeller_Gate_311026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_FYzAMuQ4g?tr=w-600",
-   "times": [
-    "2026-10-31T19:00"
-   ],
-   "hint": "folk rock",
-   "about": "Med sitt særegne møte mellom nordisk folkemusikk, tung rock og elektroniske elementer har Gåte i over to tiår vært blant Norges mest spennende liveband. Nå er de aktuelle med *Sigil*, som har høstet sterke anmeldelser bå",
-   "city": "Oslo"
-  },
-  {
    "title": "Sa_G",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1835054434?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sa_G_311026_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sa_G_311026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16894,6 +16733,18 @@
    ],
    "hint": "hiphop rap",
    "about": "«FESTIVALSOMMEREN ER KANSKJE OVER – MEN DRONNINGEN SKAL BACK ON TOUR Sa_G inviterer til GUNHILD & SONJA TOUR – en turné hvor du får oppleve hennes helt eget royal universe i all sin prakt. Hælene er høye, hennes bitches ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Gåte",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1447461091?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Gate_311026_Billettsalg&utm_campaign=NO_Rockefeller_Gate_311026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_FYzAMuQ4g?tr=w-600",
+   "times": [
+    "2026-10-31T19:00"
+   ],
+   "hint": "folk rock",
+   "about": "Med sitt særegne møte mellom nordisk folkemusikk, tung rock og elektroniske elementer har Gåte i over to tiår vært blant Norges mest spennende liveband. Nå er de aktuelle med *Sigil*, som har høstet sterke anmeldelser bå",
    "city": "Oslo"
   },
   {
@@ -16921,6 +16772,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Warren Zeiders",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1541653382?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Warren_Zeiders_021126_Billettsalg&utm_campaign=NO_Rockefeller_Warren_Zeiders_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i8AeBGO9K?tr=w-600",
+   "times": [
+    "2026-11-02T19:00"
+   ],
+   "hint": "country singersongwriter",
+   "about": "Zeiders slapp sitt foreløpig siste studioalbum *Relapse* i 2024, og nå er han aktuell med deluxe-utgaven av albumet *Relapse, Lies, & Betrayal*. Mandag 2. november 2026 kommer country-stjerneskuddet tilbake til Sentrum S",
+   "city": "Oslo"
+  },
+  {
    "title": "Westside Cowboy",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1346276358?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16942,18 +16805,6 @@
    ],
    "hint": "metalcore alternativemetal experimental",
    "about": "I september i fjor slapp de debut-EP-en *King of Terrors*, som nærmer seg 80 millioner streams. Nå er det maskerte bandet aktuelle med den nye singelen «DOOMLOOP», og de slipper sitt debutalbum *BLOOD OF YOUR EMPIRE* 4. ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Warren Zeiders",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1541653382?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Warren_Zeiders_021126_Billettsalg&utm_campaign=NO_Rockefeller_Warren_Zeiders_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i8AeBGO9K?tr=w-600",
-   "times": [
-    "2026-11-02T19:00"
-   ],
-   "hint": "country singersongwriter",
-   "about": "Zeiders slapp sitt foreløpig siste studioalbum *Relapse* i 2024, og nå er han aktuell med deluxe-utgaven av albumet *Relapse, Lies, & Betrayal*. Mandag 2. november 2026 kommer country-stjerneskuddet tilbake til Sentrum S",
    "city": "Oslo"
   },
   {
@@ -16993,18 +16844,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Hammok",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/514415770?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hammok_051126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hammok_051126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_njNyuLGxl?tr=w-600",
-   "times": [
-    "2026-11-05T19:00"
-   ],
-   "hint": "hardcore punk rock",
-   "about": "Oslo-trioen Hammok er aktuell med det kritikerroste albumet *When Does This Place Become Our Scene*, som har fått strålende omtaler for kombinasjonen av intens noise rock og melodiske hardcore-hooks. Blant annet har Kerr",
-   "city": "Oslo"
-  },
-  {
    "title": "Stephen Wilson Jr.",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/645560860?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Stephen_Wilson_Jr_051126_Billettsalg&utm_campaign=NO_Rockefeller_Stephen_Wilson_Jr_051126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17014,6 +16853,18 @@
    ],
    "hint": "singersongwriter country rock",
    "about": "Han slapp sitt hyllede debutalbum *søn of dad* i 2023 – et gripende dobbeltalbum dedikert til hans avdøde far. Det havnet på årsbestelistene hos en rekke kritikere. I oppveksten hørte han like mye på Soundgarden og Nirva",
+   "city": "Oslo"
+  },
+  {
+   "title": "Hammok",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/514415770?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hammok_051126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hammok_051126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_njNyuLGxl?tr=w-600",
+   "times": [
+    "2026-11-05T19:00"
+   ],
+   "hint": "hardcore punk rock",
+   "about": "Oslo-trioen Hammok er aktuell med det kritikerroste albumet *When Does This Place Become Our Scene*, som har fått strålende omtaler for kombinasjonen av intens noise rock og melodiske hardcore-hooks. Blant annet har Kerr",
    "city": "Oslo"
   },
   {
@@ -17041,15 +16892,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Kristian Kristensen",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/526852156?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kristian_Kristensen_071126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kristian_Kristensen_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OHryUwWEq?tr=w-600",
+   "title": "Ezhel",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/871035029?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Ezhel_071126_Billettsalg&utm_campaign=NO_Rockefeller_Ezhel_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_SOZn6oiJQ?tr=w-600",
    "times": [
     "2026-11-07T19:00"
    ],
-   "hint": "singersongwriter",
-   "about": "Kristian Kristensen har preget det norske poplandskapet i over ti år med sin enorme vokalrekkevidde og emosjonelle kraft. Med udødelige hits som «Kan du lære mæ» og «Du ga mæ viljestyrke», samt utsolgte konsertsaler over",
+   "hint": "hiphop rap trap",
+   "about": "Billettkjøpere mottar informasjon på e-post fra post@mail.rockefeller.no til e-postadressen som er tilknyttet billettkjøperens Ticketmaster-konto. Sjekk spam-mappen dersom du ikke finner e-posten. -- Ezhel kommer tilbake",
    "city": "Oslo"
   },
   {
@@ -17065,15 +16916,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Ezhel",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/871035029?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Ezhel_071126_Billettsalg&utm_campaign=NO_Rockefeller_Ezhel_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_SOZn6oiJQ?tr=w-600",
+   "title": "Kristian Kristensen",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/526852156?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kristian_Kristensen_071126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kristian_Kristensen_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OHryUwWEq?tr=w-600",
    "times": [
     "2026-11-07T19:00"
    ],
-   "hint": "hiphop rap trap",
-   "about": "Billettkjøpere mottar informasjon på e-post fra post@mail.rockefeller.no til e-postadressen som er tilknyttet billettkjøperens Ticketmaster-konto. Sjekk spam-mappen dersom du ikke finner e-posten. -- Ezhel kommer tilbake",
+   "hint": "singersongwriter",
+   "about": "Kristian Kristensen har preget det norske poplandskapet i over ti år med sin enorme vokalrekkevidde og emosjonelle kraft. Med udødelige hits som «Kan du lære mæ» og «Du ga mæ viljestyrke», samt utsolgte konsertsaler over",
    "city": "Oslo"
   },
   {
@@ -17125,18 +16976,6 @@
    "city": "Oslo"
   },
   {
-   "title": "KNEECAP",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/46385530?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kneecap_101126__Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kneecap_101126__Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_uWyQHPxp_?tr=w-600",
-   "times": [
-    "2026-11-10T19:00"
-   ],
-   "hint": "rap hiphop",
-   "about": "Irske Kneecap har markert seg som en av de mest omtalte nye aktørene innen europeisk hiphop, og har de siste årene fått betydelig internasjonal oppmerksomhet, både for sin musikalske profil og for tydelige politiske ytri",
-   "city": "Oslo"
-  },
-  {
    "title": "Josiah and the Bonnevilles",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1394852303?brand=johndee&camefrom=CFC_NO_Rockefeller_Josiah_and_the_Bonnevilles_101126_Billettsalg&utm_campaign=NO_Rockefeller_Josiah_and_the_Bonnevilles_101126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17149,15 +16988,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Tayc",
+   "title": "KNEECAP",
    "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1822319412?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_QGvPFB6yr?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/46385530?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kneecap_101126__Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kneecap_101126__Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_uWyQHPxp_?tr=w-600",
    "times": [
-    "2026-11-11T19:00"
+    "2026-11-10T19:00"
    ],
-   "hint": "R&B afrotrap hiphop",
-   "about": "Julien Franck Bouadjie, bedre kjent som Tayc, ble født i Marseille av kamerunske foreldre. Før han for alvor slo gjennom, hadde han allerede gitt ut en rekke singler, mixtapes og album. Det store gjennombruddet kom i 202",
+   "hint": "rap hiphop",
+   "about": "Irske Kneecap har markert seg som en av de mest omtalte nye aktørene innen europeisk hiphop, og har de siste årene fått betydelig internasjonal oppmerksomhet, både for sin musikalske profil og for tydelige politiske ytri",
    "city": "Oslo"
   },
   {
@@ -17173,15 +17012,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Bleachers",
+   "title": "Tayc",
    "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/469995767?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Bleachers_121126_Billettsalg&utm_campaign=NO_Rockefeller_Bleachers_121126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Dl7iFbhoO?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/1822319412?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_QGvPFB6yr?tr=w-600",
    "times": [
-    "2026-11-12T19:00"
+    "2026-11-11T19:00"
    ],
-   "hint": "rock alternativerock indie",
-   "about": "Bleachers frontes av singer-songwriter, multiinstrumentalist og stjerneprodusent Jack Antonoff, som har vunnet hele tretten Grammy-priser. Bandet slapp nettopp den nye singelen «the van», som blir å finne sammen med «you",
+   "hint": "R&B afrotrap hiphop",
+   "about": "Julien Franck Bouadjie, bedre kjent som Tayc, ble født i Marseille av kamerunske foreldre. Før han for alvor slo gjennom, hadde han allerede gitt ut en rekke singler, mixtapes og album. Det store gjennombruddet kom i 202",
    "city": "Oslo"
   },
   {
@@ -17197,15 +17036,15 @@
    "city": "Oslo"
   },
   {
-   "title": "The Good The Bad and The Zugly",
+   "title": "Bleachers",
    "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1178382539?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_GBZ_131126_Billettsalg&utm_campaign=NO_Rockefeller_GBZ_131126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_1bTnchxyV?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/469995767?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Bleachers_121126_Billettsalg&utm_campaign=NO_Rockefeller_Bleachers_121126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Dl7iFbhoO?tr=w-600",
    "times": [
-    "2026-11-13T19:00"
+    "2026-11-12T19:00"
    ],
-   "hint": "punk rock punkrock",
-   "about": "**The Good The Bad and The Zugly** (GBZ) startet som bastardbarnet fra 90-tallets punkscene i Oslo – unge sjeler som bar faklen videre etter Turbonegro, Gluecifer og Anal Babes. De minnet oss på en tid da punkrock var et",
+   "hint": "rock alternativerock indie",
+   "about": "Bleachers frontes av singer-songwriter, multiinstrumentalist og stjerneprodusent Jack Antonoff, som har vunnet hele tretten Grammy-priser. Bandet slapp nettopp den nye singelen «the van», som blir å finne sammen med «you",
    "city": "Oslo"
   },
   {
@@ -17231,6 +17070,18 @@
    ],
    "hint": "poprock",
    "about": "«Vi har spilt 88 ganger på Rockefeller og takk til alle dere som har vært med oss på denne fantastiske reisen siden starten i 1986. Det startet med *Suser avgårde*. Nå feirer vår favorittklubb 40 år og det gjør også vårt",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Good The Bad and The Zugly",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1178382539?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_GBZ_131126_Billettsalg&utm_campaign=NO_Rockefeller_GBZ_131126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_1bTnchxyV?tr=w-600",
+   "times": [
+    "2026-11-13T19:00"
+   ],
+   "hint": "punk rock punkrock",
+   "about": "**The Good The Bad and The Zugly** (GBZ) startet som bastardbarnet fra 90-tallets punkscene i Oslo – unge sjeler som bar faklen videre etter Turbonegro, Gluecifer og Anal Babes. De minnet oss på en tid da punkrock var et",
    "city": "Oslo"
   },
   {
@@ -17345,18 +17196,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Side Brok",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/659195043?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_aGcx_5XwY?tr=w-600",
-   "times": [
-    "2026-11-20T19:00"
-   ],
-   "hint": "hiphop rap",
-   "about": "Rett etter at dei sleppte singelen «Kjærleik er kjærleik» i juni, stod dei på scena framfor eit mildt sagt ekstatisk publikum på Bergenfest. Bygdalarm og Balestrand Badeklubb var naturlege stopp på vegen, før festivalsom",
-   "city": "Oslo"
-  },
-  {
    "title": "The Dogs",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/589353665?brand=johndee&camefrom=CFC_NO_Rockefeller_The%2BDogs_JD201126_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller_The%2BDogs_JD201126_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17367,6 +17206,18 @@
    ],
    "hint": "rock",
    "about": "**The Dogs er tilbake igjen!** Ny skive med The Dogs kommer rett over sommeren, så selvsagt skal det turneres litt også! Vi lar frontmann Kristopher Schau redegjøre for overskriften: Sure gamle gubber på turné er kanskje",
+   "city": "Oslo"
+  },
+  {
+   "title": "Side Brok",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/659195043?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_aGcx_5XwY?tr=w-600",
+   "times": [
+    "2026-11-20T19:00"
+   ],
+   "hint": "hiphop rap",
+   "about": "Rett etter at dei sleppte singelen «Kjærleik er kjærleik» i juni, stod dei på scena framfor eit mildt sagt ekstatisk publikum på Bergenfest. Bygdalarm og Balestrand Badeklubb var naturlege stopp på vegen, før festivalsom",
    "city": "Oslo"
   },
   {
@@ -17382,18 +17233,6 @@
    "city": "Oslo"
   },
   {
-   "title": "CC Cowboys",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/409018573?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_c1tBayQ0Q?tr=w-600",
-   "times": [
-    "2026-11-21T19:00"
-   ],
-   "hint": "poprock rock",
-   "about": "CC Cowboys har i over tre tiår vært en bauta i norsk musikkliv og er et av landets mest betydningsfulle rockeband. Siden starten i Fredrikstad i 1989 har bandet satt et tydelig avtrykk på norsk rock og bygget opp et stor",
-   "city": "Oslo"
-  },
-  {
    "title": "Aktiv Dödshjelp",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/2017832082",
@@ -17403,6 +17242,18 @@
    ],
    "hint": "punk rock",
    "about": "Etter å ha sluppet det Spellemann-nominerte albumet *Send Dudes* i 2024, har de overbevist over 30.000 publikummere i inn- og utland om sin velfortjente plass på den norske punk-scenen. I kjølvannet av albumsuksessen sol",
+   "city": "Oslo"
+  },
+  {
+   "title": "CC Cowboys",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/409018573?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_c1tBayQ0Q?tr=w-600",
+   "times": [
+    "2026-11-21T19:00"
+   ],
+   "hint": "poprock rock",
+   "about": "CC Cowboys har i over tre tiår vært en bauta i norsk musikkliv og er et av landets mest betydningsfulle rockeband. Siden starten i Fredrikstad i 1989 har bandet satt et tydelig avtrykk på norsk rock og bygget opp et stor",
    "city": "Oslo"
   },
   {
@@ -17479,18 +17330,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Stein Torleif Bjella",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/68839469?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o0o4-E8h0?tr=w-600",
-   "times": [
-    "2026-11-27T19:00"
-   ],
-   "hint": "singersongwriter rock folk",
-   "about": "*Velkomen skodde* er et nytt musikalsk kapittel for Bjella, som alltid har vært en mester i å skildre det nære og gjenkjennelige. Plata åpner nye dører, både musikalsk og tematisk, med varme impulser fra latinamerikanske",
-   "city": "Oslo"
-  },
-  {
    "title": "Roy Khan",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1458563090?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_campaign=NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17500,6 +17339,18 @@
    ],
    "hint": "powermetal symphonicmetal",
    "about": "*One Cold Winter’s Night* ble opprinnelig spilt inn i Oslo i 2006, og fanget et definerende øyeblikk – ikke bare i Roy Khans karriere, men for hele sjangeren. Albumet har siden blitt et referanseverk for liveopptredener,",
+   "city": "Oslo"
+  },
+  {
+   "title": "Stein Torleif Bjella",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/68839469?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o0o4-E8h0?tr=w-600",
+   "times": [
+    "2026-11-27T19:00"
+   ],
+   "hint": "singersongwriter rock folk",
+   "about": "*Velkomen skodde* er et nytt musikalsk kapittel for Bjella, som alltid har vært en mester i å skildre det nære og gjenkjennelige. Plata åpner nye dører, både musikalsk og tematisk, med varme impulser fra latinamerikanske",
    "city": "Oslo"
   },
   {
@@ -17515,18 +17366,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Klovner i Kamp",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1731246360?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Klovner_i_Kamp_281126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Klovner_i_Kamp_281126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_E-ukzJErU?tr=w-600",
-   "times": [
-    "2026-11-28T19:00"
-   ],
-   "hint": "hiphop rap",
-   "about": "For første og siste gang i år, for tolvte året på rad, fyller KIK Oslos storstue med elegant gutteprat på rim, store følelser, tunge beats og sløy 90-tallsnostalgi – og takker sommeren av. -- **Billetter:** Dette arrange",
-   "city": "Oslo"
-  },
-  {
    "title": "Bjørn Hellfuck",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1845206123?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Bjorn_Hellfuck_281126_Billettsalg&utm_campaign=NO_Rockefeller_Bjorn_Hellfuck_281126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17536,6 +17375,18 @@
    ],
    "hint": "poprock festmusikk",
    "about": "Bjørn Hellfuck er en norsk artist utenom det vanlige, kjent for sin unike blanding av humor, satire og fengende melodier. Han tok Norge med storm i 2009 med suksessalbumet *Innforjævlig* og hitsingelen «Krabbeklo». Nå er",
+   "city": "Oslo"
+  },
+  {
+   "title": "Klovner i Kamp",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1731246360?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Klovner_i_Kamp_281126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Klovner_i_Kamp_281126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_E-ukzJErU?tr=w-600",
+   "times": [
+    "2026-11-28T19:00"
+   ],
+   "hint": "hiphop rap",
+   "about": "For første og siste gang i år, for tolvte året på rad, fyller KIK Oslos storstue med elegant gutteprat på rim, store følelser, tunge beats og sløy 90-tallsnostalgi – og takker sommeren av. -- **Billetter:** Dette arrange",
    "city": "Oslo"
   },
   {
@@ -17636,18 +17487,6 @@
    "city": "Oslo"
   },
   {
-   "title": "MNEK",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/253804702?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_MNEK_031226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_MNEK_031226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OWXbvYYHx?tr=w-600",
-   "times": [
-    "2026-12-03T19:00"
-   ],
-   "hint": "dancepop edm r&b",
-   "about": "-- MNEK har siden tenårene markert seg som en av Storbritannias mest ettertraktede låtskrivere og produsenter. Han har skrevet og produsert musikk for en rekke artister, samtidig som han har bygget en solid solokarriere ",
-   "city": "Oslo"
-  },
-  {
    "title": "Hellbillies",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/157138180?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hellbillies_SS031226_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Hellbillies_SS031226_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17657,6 +17496,18 @@
    ],
    "hint": "folkrock roots americana",
    "about": "Få har bidratt med så mange låter til den norske sangskatten som Hellbillies. Atten album, en rekke hitlåter og en mannsalder med musikkformidling til hver krik og krok av landet. Gjennom hele karrieren har Hellbillies b",
+   "city": "Oslo"
+  },
+  {
+   "title": "MNEK",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/253804702?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_MNEK_031226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_MNEK_031226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OWXbvYYHx?tr=w-600",
+   "times": [
+    "2026-12-03T19:00"
+   ],
+   "hint": "dancepop edm r&b",
+   "about": "-- MNEK har siden tenårene markert seg som en av Storbritannias mest ettertraktede låtskrivere og produsenter. Han har skrevet og produsert musikk for en rekke artister, samtidig som han har bygget en solid solokarriere ",
    "city": "Oslo"
   },
   {
@@ -17699,18 +17550,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Thomas Dybdahl",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1414556261?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_T95qXKit9J?tr=w-600",
-   "times": [
-    "2026-12-05T19:00"
-   ],
-   "hint": "singersongwriter folkpop indiefolk",
-   "about": "Dybdahl debuterte som soloartist med *That Great October Sound*, og tok hjem Spellemannprisen for innsatsen. Siden har han levert ytterligere kritikerroste album som blant annet *Stray Dogs*, *One Day You’ll Dance For Me",
-   "city": "Oslo"
-  },
-  {
    "title": "Caliban Sessions 2026",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1354562854?brand=johndee&camefrom=CFC_NO_Rockefeller_Caliban_051226_Billettsalg&utm_campaign=NO_Rockefeller_Caliban_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17720,6 +17559,18 @@
    ],
    "hint": "rock",
    "about": "Denne årelange tradisjonen startet tilbake i 2002, og vi kan se tilbake på mang en fantastisk festkveld. Foreløpig bekreftede artister: **BLACK DEBBATH** Black Debbath er i studio og jobber med album nr. 11, men tar en t",
+   "city": "Oslo"
+  },
+  {
+   "title": "Thomas Dybdahl",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1414556261?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_T95qXKit9J?tr=w-600",
+   "times": [
+    "2026-12-05T19:00"
+   ],
+   "hint": "singersongwriter folkpop indiefolk",
+   "about": "Dybdahl debuterte som soloartist med *That Great October Sound*, og tok hjem Spellemannprisen for innsatsen. Siden har han levert ytterligere kritikerroste album som blant annet *Stray Dogs*, *One Day You’ll Dance For Me",
    "city": "Oslo"
   },
   {
@@ -17755,15 +17606,16 @@
     "2026-12-07T19:00"
    ],
    "hint": "folk tribute covers",
-   "about": "Tradisjonen tro – for syttende gang – feirer Blow og musikalske gjester ham på John Dee på bursdagen hans! **Foreløpig bekreftede gjesteartister:** **– Kristofer Hivju** Kristofer Hivju er internasjonalt kanskje mest kje",
+   "about": "Tradisjonen tro – for syttende gang – feirer Blow og musikalske gjester ham på John Dee på bursdagen hans! **Foreløpig bekreftede gjesteartister:** **– Kristofer Hivju** **– Nora Legrand** Kristofer Hivju er internasjona",
    "city": "Oslo"
   },
   {
    "title": "Et juleshow med Jonis Josef og Stenar “Fenomenet” Hallert",
    "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/2057444431?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jonis_Josef_Steinar_Hallert_091226_tidlig_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jonis_Josef_Steinar_Hallert_091226_tidlig_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "url": "https://www.ticketmaster.no/event/1376748951?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jonis_Josef_Steinar_Hallert_081226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Jonis_Josef_Steinar_Hallert_081226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event__dQK1053hP?tr=w-600",
    "times": [
+    "2026-12-08T19:00",
     "2026-12-09T17:00",
     "2026-12-09T20:00"
    ],
@@ -17781,18 +17633,6 @@
    ],
    "hint": "choir pop christmas",
    "about": "Dette er ikke en vanlig konsert – her er det publikum som skaper opplevelsen. Tusenvis av fremmede blir til et gigantisk julekor som løfter taket og gir gåsehud og julestemning, med noen overraskelser underveis! En perfe",
-   "city": "Oslo"
-  },
-  {
-   "title": "Anne Fagermo",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1723339799?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_6IP0PAeaqc?tr=w-600",
-   "times": [
-    "2026-12-10T19:00"
-   ],
-   "hint": "americana countryrock",
-   "about": "Artisten fra Midt-Telemark inntok den norske musikkscenen med fullt trøkk da hun ga ut sitt etterlengtede debutalbum *Spillet er i gang* i fjor. Singelen «Hele byen» ble raskt en publikumsfavoritt, og albumet markerte st",
    "city": "Oslo"
   },
   {
@@ -17820,15 +17660,15 @@
    "city": "Oslo"
   },
   {
-   "title": "The Cruel Intentions",
+   "title": "Anne Fagermo",
    "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/153279701?brand=johndee",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o99s-E3SK?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/1723339799?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Anne_Fagermo_101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_6IP0PAeaqc?tr=w-600",
    "times": [
-    "2026-12-11T19:00"
+    "2026-12-10T19:00"
    ],
-   "hint": "glamrock sleazerock hardrock",
-   "about": "**The Cruel Intentions** Med kritikerrost nytt album ute og etter konserter i USA, Europa og Sverige avslutter The Cruel Intentions året med et brak på John Dee 11. desember. Albumet *All Hail Hypocrisy* har høstet inn u",
+   "hint": "americana countryrock",
+   "about": "Artisten fra Midt-Telemark inntok den norske musikkscenen med fullt trøkk da hun ga ut sitt etterlengtede debutalbum *Spillet er i gang* i fjor. Singelen «Hele byen» ble raskt en publikumsfavoritt, og albumet markerte st",
    "city": "Oslo"
   },
   {
@@ -17842,6 +17682,18 @@
    ],
    "hint": "poprock",
    "about": "Førjulskonsertene på Sentrum Scene har blitt en fast tradisjon og blir år etter år utsolgt. I dag består Di Derre av Jo Nesbø (vokal, gitar), Magnus Larsen jr. (bass), Espen Stenhammer (trommer), Halvor Holter (tangenter",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Cruel Intentions",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/153279701?brand=johndee",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o99s-E3SK?tr=w-600",
+   "times": [
+    "2026-12-11T19:00"
+   ],
+   "hint": "glamrock sleazerock hardrock",
+   "about": "**The Cruel Intentions** Med kritikerrost nytt album ute og etter konserter i USA, Europa og Sverige avslutter The Cruel Intentions året med et brak på John Dee 11. desember. Albumet *All Hail Hypocrisy* har høstet inn u",
    "city": "Oslo"
   },
   {
@@ -18499,18 +18351,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Gundelach",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1075066283?camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gundelach_SS170227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gundelach_SS170227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_YhZl9FBWA?tr=w-600",
-   "times": [
-    "2027-02-19T19:00"
-   ],
-   "hint": "Indie Electronica",
-   "about": "Gundelach har skapt sitt helt eget musikalske univers, der elementer fra klubbmusikk, ambient og country møtes. Med sin karakteristiske falsett, særegne gitarspill og elektroniske lydbilde beveger han seg sømløst mellom ",
-   "city": "Oslo"
-  },
-  {
    "title": "Uncle Acid and the Deadbeats",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1551932915?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -18520,6 +18360,18 @@
    ],
    "hint": "psychedelicrock doom stoner",
    "about": "Etter debuten i 2010 kom gjennombruddet med *Blood Lust* i 2011, og både fans og kritikere har fortsatt å juble over bandets utgivelser. Uncle Acid and the Deadbeats, som også er kjent for sine fantastiske livekonserter,",
+   "city": "Oslo"
+  },
+  {
+   "title": "Gundelach",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1075066283?camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gundelach_SS170227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gundelach_SS170227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_YhZl9FBWA?tr=w-600",
+   "times": [
+    "2027-02-19T19:00"
+   ],
+   "hint": "Indie Electronica",
+   "about": "Gundelach har skapt sitt helt eget musikalske univers, der elementer fra klubbmusikk, ambient og country møtes. Med sin karakteristiske falsett, særegne gitarspill og elektroniske lydbilde beveger han seg sømløst mellom ",
    "city": "Oslo"
   },
   {
@@ -18547,18 +18399,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Bernth",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/artist/bernth-billetter/1206513?venueId=4757&camefrom=CFC_NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_campaign=NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5CkjlK4XI?tr=w-600",
-   "times": [
-    "2027-02-21T19:00"
-   ],
-   "hint": "rock metal prog",
-   "about": "Den østerrikske gitaristen, komponisten og kreatøren Bernth har beveget seg mellom ekstrem metal, soundtrackarbeid, sessionjobber og virtuos instrumentalmusikk. Han har turnert med Belphegor, spilt inn gitar for Seiler u",
-   "city": "Oslo"
-  },
-  {
    "title": "Amble",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/537509382?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Amble_210227_Billettsalg&utm_campaign=NO_Rockefeller_Amble_210227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -18568,6 +18408,18 @@
    ],
    "hint": "folk",
    "about": "De slapp sitt etterlengtede debutalbum *Reverie* i mai 2025, og fulgte opp med EP-en *Hand Me Downs* senere på året. Nå har de nettopp sluppet singelen «Moral Victory», og mer ny musikk er på vei! Amble består av Robbie ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Bernth",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/artist/bernth-billetter/1206513?venueId=4757&camefrom=CFC_NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_campaign=NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5CkjlK4XI?tr=w-600",
+   "times": [
+    "2027-02-21T19:00"
+   ],
+   "hint": "rock metal prog",
+   "about": "Den østerrikske gitaristen, komponisten og kreatøren Bernth har beveget seg mellom ekstrem metal, soundtrackarbeid, sessionjobber og virtuos instrumentalmusikk. Han har turnert med Belphegor, spilt inn gitar for Seiler u",
    "city": "Oslo"
   },
   {
@@ -18631,6 +18483,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Beth Orton",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
+   "times": [
+    "2027-02-27T19:00"
+   ],
+   "hint": "folk electronica singersongwriter",
+   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
+   "city": "Oslo"
+  },
+  {
    "title": "KALEO",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/551960807?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -18642,18 +18506,6 @@
    ],
    "hint": "rock bluesrock folkrock",
    "about": "Siden gjennombruddet med albumet *A/B* i 2016 har KALEO etablert seg som et av Islands største internasjonale rockeband. Med sin særegne blanding av bluesrock, folk og stemningsfull rock har de opparbeidet seg et stort p",
-   "city": "Oslo"
-  },
-  {
-   "title": "Beth Orton",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
-   "times": [
-    "2027-02-27T19:00"
-   ],
-   "hint": "folk electronica singersongwriter",
-   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
    "city": "Oslo"
   },
   {
@@ -19826,7 +19678,7 @@
    "times": [
     "2026-12-19T23:00"
    ],
-   "hint": "muzik",
+   "hint": "breakbeat techno bass",
    "about": "Blending UK bass, jungle, trance and R&B sensuality with the pulse of club, his sound is real life filtered through imagination, building cinematic dreamscapes that moves between intimacy and scale",
    "city": "Oslo"
   },
@@ -21827,6 +21679,19 @@
    ],
    "hint": "kultur",
    "about": "Med Kringkastingsorkestret",
+   "city": "Oslo"
+  },
+  {
+   "title": "Oslo-filharmonien | Sansesymfoni",
+   "venue": "Oslo Konserthus, Store sal",
+   "url": "https://billetter.okh.no/nb/buyingflow/tickets/51225/",
+   "img": "",
+   "times": [
+    "2027-04-14T18:00",
+    "2027-04-14T19:00"
+   ],
+   "hint": "klassisk",
+   "about": "",
    "city": "Oslo"
   },
   {
@@ -24553,6 +24418,10 @@
   "https://christianiateaterscene.no/isabelskolmen": {
    "p": [],
    "at": 1792742051656
+  },
+  "https://billetter.okh.no/nb/buyingflow/tickets/51225/": {
+   "p": [],
+   "at": 1793188550310
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45360/": {
    "p": [],
