@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-29T07:06:08.309Z",
+ "updated": "2026-10-29T08:09:19.768Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-29",
-   "h": 7,
+   "h": 9,
    "temp": 9,
-   "wind": 1,
-   "sym": "fog",
+   "wind": 2,
+   "sym": "partlycloudy_day",
    "rain": 0,
    "span": 1
   },
@@ -17,46 +17,28 @@
     "hours": [
      {
       "date": "2026-10-29",
-      "h": 7,
-      "temp": 9,
-      "wind": 1,
-      "sym": "fog",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-29",
-      "h": 8,
-      "temp": 9,
-      "wind": 1,
-      "sym": "clearsky_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-10-29",
       "h": 9,
       "temp": 9,
       "wind": 2,
-      "sym": "clearsky_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-29",
       "h": 10,
-      "temp": 9,
+      "temp": 10,
       "wind": 2,
-      "sym": "clearsky_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-10-29",
       "h": 11,
-      "temp": 10,
+      "temp": 11,
       "wind": 2,
-      "sym": "clearsky_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -117,7 +99,7 @@
      {
       "date": "2026-10-29",
       "h": 18,
-      "temp": 11,
+      "temp": 10,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -189,7 +171,7 @@
      {
       "date": "2026-10-30",
       "h": 1,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
@@ -315,7 +297,7 @@
      {
       "date": "2026-10-30",
       "h": 15,
-      "temp": 11,
+      "temp": 10,
       "wind": 0,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -394,7 +376,7 @@
       "span": 1
      }
     ],
-    "max": 11,
+    "max": 10,
     "min": 6,
     "rain": 0,
     "sym": "cloudy"
@@ -495,7 +477,7 @@
      {
       "date": "2026-10-31",
       "h": 10,
-      "temp": 6,
+      "temp": 7,
       "wind": 2,
       "sym": "fair_day",
       "rain": 0,
@@ -1053,7 +1035,7 @@
  "films": [
   {
    "title": "Pensjonskuppet",
-   "url": "https://www.nfkino.no/film/pensjonskuppet",
+   "url": "https://www.nfkino.no/film/pensjonskuppet?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000896-1000030027.jpg?itok=VgUzpQ4E",
    "genres": [
     "Komedie",
@@ -1815,12 +1797,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:50.202Z",
+   "imdbId": "tt39453840",
+   "ratingsAt": "2026-10-29T08:10:40.042Z",
    "city": "Oslo"
   },
   {
    "title": "Markens grøde",
-   "url": "https://www.nfkino.no/film/markens-grode",
+   "url": "https://www.nfkino.no/film/markens-grode?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-582449c8bc-176680-vst-6adb40a70a5de.jpeg?itok=YCvjkzXe",
    "genres": [
     "Drama"
@@ -2162,15 +2145,7 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2439/610e13b8-34ac-4b0c-b196-f9db74e8a488"
-    },
-    {
-     "d": "2026-11-02",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Babykino",
+     "v": "2D, Norsk tale, Norsk tekst, Babykino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/610e13b8-34ac-4b0c-b196-f9db74e8a488"
     },
     {
@@ -2258,7 +2233,15 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/2ba36881-6320-40ba-b21a-f6b7f24ac242"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2439/2ba36881-6320-40ba-b21a-f6b7f24ac242"
     },
     {
@@ -2549,12 +2532,13 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-10-28T20:53:50.267Z",
+   "imdbId": "tt0011440",
+   "ratingsAt": "2026-10-29T08:10:40.096Z",
    "city": "Oslo"
   },
   {
    "title": "Mysteriepakken",
-   "url": "https://www.nfkino.no/film/mysteriepakken",
+   "url": "https://www.nfkino.no/film/mysteriepakken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000817-1000034711.png?itok=YZrPJb7X",
    "genres": [],
    "len": "1 time 20 min",
@@ -2925,12 +2909,12 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:50.527Z",
+   "ratingsAt": "2026-10-29T08:10:40.331Z",
    "city": "Oslo"
   },
   {
    "title": "Wildwood",
-   "url": "https://www.nfkino.no/film/wildwood",
+   "url": "https://www.nfkino.no/film/wildwood?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002807-1000034192.jpg?itok=ChVdapzT",
    "genres": [
     "Familiefilm",
@@ -3443,12 +3427,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:50.595Z",
+   "imdbId": "tt37968648",
+   "ratingsAt": "2026-10-29T08:10:40.390Z",
    "city": "Oslo"
   },
   {
    "title": "Clayface",
-   "url": "https://www.nfkino.no/film/clayface",
+   "url": "https://www.nfkino.no/film/clayface?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142799-1000033418.jpg?itok=0Mw1bDZ_",
    "genres": [
     "Drama",
@@ -3737,12 +3722,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:50.650Z",
+   "imdbId": "tt6492922",
+   "ratingsAt": "2026-10-29T08:10:40.444Z",
    "city": "Oslo"
   },
   {
    "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
    "genres": [
     "Familiefilm"
@@ -4037,12 +4023,13 @@
    "year": "",
    "rt": "99%",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:50.714Z",
+   "imdbId": "tt36841161",
+   "ratingsAt": "2026-10-29T08:10:40.499Z",
    "city": "Oslo"
   },
   {
    "title": "Julenissens verksted",
-   "url": "https://www.nfkino.no/film/julenissens-verksted",
+   "url": "https://www.nfkino.no/film/julenissens-verksted?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1071483-1000029551.jpg?itok=aWL-pjNw",
    "genres": [
     "Familiefilm"
@@ -4087,12 +4074,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.124Z",
+   "imdbId": "tt41475646",
+   "ratingsAt": "2026-10-29T08:10:40.556Z",
    "city": "Oslo"
   },
   {
    "title": "Other Mommy",
-   "url": "https://www.nfkino.no/film/other-mommy",
+   "url": "https://www.nfkino.no/film/other-mommy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001429-1000033333.jpg?itok=R-YInt2V",
    "genres": [
     "Horror"
@@ -4226,12 +4214,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:50.776Z",
+   "imdbId": "tt36586020",
+   "ratingsAt": "2026-10-29T08:10:40.608Z",
    "city": "Oslo"
   },
   {
    "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
    "genres": [
     "Familiefilm"
@@ -4444,12 +4433,12 @@
    "origChecked": true,
    "orig": "Lille spøkelset Laban skøyer igjen",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:51.025Z",
+   "ratingsAt": "2026-10-29T08:10:40.810Z",
    "city": "Oslo"
   },
   {
    "title": "En nasjon i sjakk",
-   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk",
+   "url": "https://www.nfkino.no/film/en-nasjon-i-sjakk?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-a2909fe488-176680-vst-6a9e9ca16e263.jpeg?itok=AVMD2-vR",
    "genres": [
     "Action",
@@ -4501,12 +4490,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:51.089Z",
+   "imdbId": "tt32375006",
+   "ratingsAt": "2026-10-29T08:10:40.864Z",
    "city": "Oslo"
   },
   {
    "title": "Monster Mia",
-   "url": "https://www.nfkino.no/film/monster-mia",
+   "url": "https://www.nfkino.no/film/monster-mia?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002582-1000030015.jpg?itok=DbT0lQjR",
    "genres": [
     "Komedie"
@@ -4712,12 +4702,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:51.149Z",
+   "imdbId": "tt38807889",
+   "ratingsAt": "2026-10-29T08:10:40.919Z",
    "city": "Oslo"
   },
   {
    "title": "Drapet på Benjamin Hermansen",
-   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen",
+   "url": "https://www.nfkino.no/film/drapet-pa-benjamin-hermansen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1035849-1000033876.jpg?itok=qOdiq4My",
    "genres": [
     "Drama"
@@ -4985,12 +4976,12 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:51.384Z",
+   "ratingsAt": "2026-10-29T08:10:41.125Z",
    "city": "Oslo"
   },
   {
    "title": "Verity",
-   "url": "https://www.nfkino.no/film/verity",
+   "url": "https://www.nfkino.no/film/verity?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002608-1000030788.jpg?itok=O-kK-Vnu",
    "genres": [
     "Thriller",
@@ -5195,12 +5186,13 @@
    "year": "",
    "rt": "31%",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:51.446Z",
+   "imdbId": "tt32261958",
+   "ratingsAt": "2026-10-29T08:10:41.183Z",
    "city": "Oslo"
   },
   {
    "title": "NAZA",
-   "url": "https://www.nfkino.no/film/naza",
+   "url": "https://www.nfkino.no/film/naza?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003335-1000034863.jpg?itok=mX7QuWrX",
    "genres": [
     "Dokumentar"
@@ -5310,12 +5302,13 @@
    "year": "",
    "rt": "100%",
    "imdb": "7.9",
-   "ratingsAt": "2026-10-28T20:53:51.508Z",
+   "imdbId": "tt44766123",
+   "ratingsAt": "2026-10-29T08:10:41.235Z",
    "city": "Oslo"
   },
   {
    "title": "Tony",
-   "url": "https://www.nfkino.no/film/tony",
+   "url": "https://www.nfkino.no/film/tony?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
    "genres": [
     "Drama"
@@ -5577,12 +5570,13 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:51.581Z",
+   "imdbId": "tt33095251",
+   "ratingsAt": "2026-10-29T08:10:41.291Z",
    "city": "Oslo"
   },
   {
    "title": "Minions & monstre",
-   "url": "https://www.nfkino.no/film/minions-monstre",
+   "url": "https://www.nfkino.no/film/minions-monstre?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1169964-1000027978.jpg?itok=p1uoz6pa",
    "genres": [],
    "len": "1 time 25 min",
@@ -5607,12 +5601,13 @@
    "year": "",
    "rt": "89%",
    "imdb": "6.3",
-   "ratingsAt": "2026-10-28T20:53:51.641Z",
+   "imdbId": "tt32890033",
+   "ratingsAt": "2026-10-29T08:10:41.343Z",
    "city": "Oslo"
   },
   {
    "title": "The Odyssey",
-   "url": "https://www.nfkino.no/film/odyssey",
+   "url": "https://www.nfkino.no/film/odyssey?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
    "genres": [],
    "len": "2 timer 52 min",
@@ -5637,12 +5632,13 @@
    "year": "",
    "rt": "94%",
    "imdb": "8.4",
-   "ratingsAt": "2026-10-28T20:53:51.711Z",
+   "imdbId": "tt33764258",
+   "ratingsAt": "2026-10-29T08:10:41.397Z",
    "city": "Oslo"
   },
   {
    "title": "Sense and Sensibility",
-   "url": "https://www.nfkino.no/film/sense-and-sensibility",
+   "url": "https://www.nfkino.no/film/sense-and-sensibility?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-67eec5dff3-176680-vst-6adb40c7ad1fb.jpeg?itok=zwrhYKol",
    "genres": [
     "Drama",
@@ -5737,12 +5733,13 @@
    "year": "",
    "rt": "97%",
    "imdb": "7.7",
-   "ratingsAt": "2026-10-28T20:53:51.774Z",
+   "imdbId": "tt0114388",
+   "ratingsAt": "2026-10-29T08:10:41.450Z",
    "city": "Oslo"
   },
   {
    "title": "Resident Evil",
-   "url": "https://www.nfkino.no/film/resident-evil",
+   "url": "https://www.nfkino.no/film/resident-evil?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
    "genres": [
     "Horror",
@@ -5844,12 +5841,13 @@
    "year": "",
    "rt": "36%",
    "imdb": "6.6",
-   "ratingsAt": "2026-10-28T20:53:51.834Z",
+   "imdbId": "tt0120804",
+   "ratingsAt": "2026-10-29T08:10:41.503Z",
    "city": "Oslo"
   },
   {
    "title": "Sangen fra skogene",
-   "url": "https://www.nfkino.no/film/sangen-fra-skogene",
+   "url": "https://www.nfkino.no/film/sangen-fra-skogene?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002619-1000031742.jpg?itok=kdA9ZJFm",
    "genres": [
     "Dokumentar"
@@ -6167,12 +6165,12 @@
    "origChecked": true,
    "orig": "Le chant des forêts",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:52.121Z",
+   "ratingsAt": "2026-10-29T08:10:41.714Z",
    "city": "Oslo"
   },
   {
    "title": "Rammstein - Live in Mexico City",
-   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city",
+   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003304-1000032830.jpg?itok=hL8xFfwF",
    "genres": [
     "Musikkfilm"
@@ -6207,12 +6205,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:52.184Z",
+   "imdbId": "tt46000907",
+   "ratingsAt": "2026-10-29T08:10:41.769Z",
    "city": "Oslo"
   },
   {
    "title": "Glemselens øy",
-   "url": "https://www.nfkino.no/film/glemselens-oy",
+   "url": "https://www.nfkino.no/film/glemselens-oy?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-09/gmnt-f10a5b083d-176680-vst-6a9e7d9281104.jpeg?itok=dQgQOxNd",
    "genres": [],
    "len": "1 time 49 min",
@@ -6262,12 +6261,13 @@
    "year": "",
    "rt": "95%",
    "imdb": "7.7",
-   "ratingsAt": "2026-10-28T20:53:52.244Z",
+   "imdbId": "tt36583977",
+   "ratingsAt": "2026-10-29T08:10:41.824Z",
    "city": "Oslo"
   },
   {
    "title": "Godzilla Minus Zero",
-   "url": "https://www.nfkino.no/film/godzilla-minus-zero",
+   "url": "https://www.nfkino.no/film/godzilla-minus-zero?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002954-1000034054.jpg?itok=AwRgcTOF",
    "genres": [
     "Drama",
@@ -6296,12 +6296,13 @@
    "year": "",
    "rt": "97%",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:52.422Z",
+   "imdbId": "tt34384661",
+   "ratingsAt": "2026-10-29T08:10:41.978Z",
    "city": "Oslo"
   },
   {
    "title": "Street Fighter",
-   "url": "https://www.nfkino.no/film/street-fighter",
+   "url": "https://www.nfkino.no/film/street-fighter?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001806-1000033657.jpg?itok=QH1QWrLl",
    "genres": [
     "Action"
@@ -6418,12 +6419,13 @@
    "year": "",
    "rt": "20%",
    "imdb": "4.2",
-   "ratingsAt": "2026-10-28T20:53:52.479Z",
+   "imdbId": "tt0111301",
+   "ratingsAt": "2026-10-29T08:10:42.033Z",
    "city": "Oslo"
   },
   {
    "title": "Monsterfabrikken",
-   "url": "https://www.nfkino.no/film/monsterfabrikken",
+   "url": "https://www.nfkino.no/film/monsterfabrikken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002380-1000031574.jpg?itok=H3q9gcy1",
    "genres": [],
    "len": "1 time 31 min",
@@ -6499,12 +6501,13 @@
    "year": "",
    "rt": "69%",
    "imdb": "5.8",
-   "ratingsAt": "2026-10-28T20:53:52.538Z",
+   "imdbId": "tt26720001",
+   "ratingsAt": "2026-10-29T08:10:42.088Z",
    "city": "Oslo"
   },
   {
    "title": "Tulpiniai. Lemtinga klaida",
-   "url": "https://www.nfkino.no/film/tulpiniai-lemtinga-klaida",
+   "url": "https://www.nfkino.no/film/tulpiniai-lemtinga-klaida?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003235-1000032226.png?itok=caYRVgZj",
    "genres": [
     "Dokumentar"
@@ -6529,12 +6532,12 @@
    "origChecked": true,
    "orig": "Tulpiniai. Lemtinga klaida",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:52.771Z",
+   "ratingsAt": "2026-10-29T08:10:42.305Z",
    "city": "Oslo"
   },
   {
    "title": "Paw Patrol: Dinofilmen",
-   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen",
+   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001602-1000026005.jpg?itok=HJuT8zuG",
    "genres": [],
    "len": "1 time 28 min",
@@ -6589,12 +6592,12 @@
    "origChecked": true,
    "orig": "Paw Patrol Dino Movie",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:53.008Z",
+   "ratingsAt": "2026-10-29T08:10:42.520Z",
    "city": "Oslo"
   },
   {
    "title": "Rose",
-   "url": "https://www.nfkino.no/film/rose-0",
+   "url": "https://www.nfkino.no/film/rose-0?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002620-1000034616.jpg?itok=yWQ2yfQk",
    "genres": [
     "Drama"
@@ -6743,12 +6746,13 @@
    "year": "",
    "rt": "",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:53.075Z",
+   "imdbId": "tt2043979",
+   "ratingsAt": "2026-10-29T08:10:42.582Z",
    "city": "Oslo"
   },
   {
    "title": "Heart of the Beast",
-   "url": "https://www.nfkino.no/film/heart-beast",
+   "url": "https://www.nfkino.no/film/heart-beast?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002327-1000031679.jpg?itok=eFGsYId6",
    "genres": [
     "Action"
@@ -6817,12 +6821,13 @@
    "year": "",
    "rt": "85%",
    "imdb": "7.5",
-   "ratingsAt": "2026-10-28T20:53:53.134Z",
+   "imdbId": "tt7526136",
+   "ratingsAt": "2026-10-29T08:10:42.640Z",
    "city": "Oslo"
   },
   {
    "title": "The Ring",
-   "url": "https://www.nfkino.no/film/ring-1",
+   "url": "https://www.nfkino.no/film/ring-1?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-16373-1000030218.jpg?itok=uQQ1xvp8",
    "genres": [
     "Thriller"
@@ -6849,12 +6854,13 @@
    "year": "",
    "rt": "72%",
    "imdb": "7.1",
-   "ratingsAt": "2026-10-28T20:53:53.194Z",
+   "imdbId": "tt0298130",
+   "ratingsAt": "2026-10-29T08:10:42.699Z",
    "city": "Oslo"
   },
   {
    "title": "Suser avgårde",
-   "url": "https://www.nfkino.no/film/suser-avgarde",
+   "url": "https://www.nfkino.no/film/suser-avgarde?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100000645-1000034180.jpg?itok=GJm4lG7C",
    "genres": [
     "Drama",
@@ -7058,12 +7064,12 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:53.436Z",
+   "ratingsAt": "2026-10-29T08:10:42.904Z",
    "city": "Oslo"
   },
   {
    "title": "Primetime",
-   "url": "https://www.nfkino.no/film/primetime",
+   "url": "https://www.nfkino.no/film/primetime?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003305-1000034515.jpg?itok=udnRnitM",
    "genres": [
     "Drama"
@@ -7148,12 +7154,13 @@
    "year": "",
    "rt": "86%",
    "imdb": "8.7",
-   "ratingsAt": "2026-10-28T20:53:53.499Z",
+   "imdbId": "tt34206385",
+   "ratingsAt": "2026-10-29T08:10:42.961Z",
    "city": "Oslo"
   },
   {
    "title": "Ozzy & Black Sabbath: Back To The Beginning",
-   "url": "https://www.nfkino.no/film/ozzy-black-sabbath-back-beginning",
+   "url": "https://www.nfkino.no/film/ozzy-black-sabbath-back-beginning?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003310-1000032859.jpg?itok=MOEwv18x",
    "genres": [],
    "len": "2 timer 27 min",
@@ -7186,12 +7193,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:53.570Z",
+   "imdbId": "tt46055956",
+   "ratingsAt": "2026-10-29T08:10:43.018Z",
    "city": "Oslo"
   },
   {
    "title": "Whalefall",
-   "url": "https://www.nfkino.no/film/whalefall",
+   "url": "https://www.nfkino.no/film/whalefall?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-740642-1000034635.jpg?itok=vTRiWb6L",
    "genres": [
     "Thriller"
@@ -7218,12 +7226,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:53.632Z",
+   "imdbId": "tt28535715",
+   "ratingsAt": "2026-10-29T08:10:43.070Z",
    "city": "Oslo"
   },
   {
    "title": "Coyote vs. Acme - Per Ulv på saken",
-   "url": "https://www.nfkino.no/film/coyote-vs-acme-ulv-pa-saken",
+   "url": "https://www.nfkino.no/film/coyote-vs-acme-ulv-pa-saken?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002860-1000032594.jpg?itok=rOcKOc-P",
    "genres": [
     "Komedie"
@@ -7258,12 +7267,13 @@
    "year": "",
    "rt": "96%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:53.692Z",
+   "imdbId": "tt1756855",
+   "ratingsAt": "2026-10-29T08:10:43.128Z",
    "city": "Oslo"
   },
   {
    "title": "George Michael: The Faith Tour",
-   "url": "https://www.nfkino.no/film/george-michael-faith-tour",
+   "url": "https://www.nfkino.no/film/george-michael-faith-tour?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002866-1000031928.jpg?itok=l9x1Em-g",
    "genres": [
     "Dokumentar",
@@ -7291,12 +7301,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.156Z",
+   "imdbId": "tt40564737",
+   "ratingsAt": "2026-10-29T08:10:43.185Z",
    "city": "Oslo"
   },
   {
    "title": "JAK ZYC ZEBY NIE ZWARIOWAC",
-   "url": "https://www.nfkino.no/film/jak-zyc-zeby-nie-zwariowac",
+   "url": "https://www.nfkino.no/film/jak-zyc-zeby-nie-zwariowac?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003459-1000034507.png?itok=KMAG97o3",
    "genres": [
     "Komedie"
@@ -7321,12 +7332,12 @@
    "origChecked": true,
    "orig": "JAK ZYC ZEBY NIE ZWARIOWAC",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:53.928Z",
+   "ratingsAt": "2026-10-29T08:10:43.383Z",
    "city": "Oslo"
   },
   {
    "title": "Obsession",
-   "url": "https://www.nfkino.no/film/obsession",
+   "url": "https://www.nfkino.no/film/obsession?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
    "genres": [
     "Horror"
@@ -7353,12 +7364,13 @@
    "year": "",
    "rt": "93%",
    "imdb": "7.8",
-   "ratingsAt": "2026-10-28T20:53:54.006Z",
+   "imdbId": "tt37287335",
+   "ratingsAt": "2026-10-29T08:10:43.442Z",
    "city": "Oslo"
   },
   {
    "title": "Fjord",
-   "url": "https://www.nfkino.no/film/fjord",
+   "url": "https://www.nfkino.no/film/fjord?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-20b98bce87-176680-vst-6adb4241357fa.jpeg?itok=rpU9g4WQ",
    "genres": [
     "Drama"
@@ -7426,12 +7438,58 @@
    "year": "",
    "rt": "91%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:54.074Z",
+   "imdbId": "tt35410859",
+   "ratingsAt": "2026-10-29T08:10:43.496Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Harila - Nådeløse fjell",
+   "url": "https://www.nfkino.no/film/harila-nadelose-fjell?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002157-1000034673.jpg?itok=Zlm29rrD",
+   "genres": [],
+   "len": "1 time 40 min",
+   "age": "9 år",
+   "cinemas": [
+    "Saga",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-10-29",
+     "t": "13:20",
+     "c": "Saga",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/11a4e8cd-5399-4d5b-8892-ac9938c3b1bb"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "18:30",
+     "c": "Saga",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/4d65605e-9bb1-43e6-adaf-c844c3f08130"
+    },
+    {
+     "d": "2026-10-29",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/23c65a6f-168b-4dd5-9d41-cd7fff8a23a6"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002157-1000032263.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Harila - Nådeløse fjell",
+   "year": "",
+   "ratingsAt": "2026-10-29T08:10:43.705Z",
    "city": "Oslo"
   },
   {
    "title": "Kjærast",
-   "url": "https://www.nfkino.no/film/kjaerast",
+   "url": "https://www.nfkino.no/film/kjaerast?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001978-1000033012.jpg?itok=JMQCyw_T",
    "genres": [],
    "len": "1 time 54 min",
@@ -7554,12 +7612,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:54.136Z",
+   "imdbId": "tt31451181",
+   "ratingsAt": "2026-10-29T08:10:43.761Z",
    "city": "Oslo"
   },
   {
    "title": "Butterfly",
-   "url": "https://www.nfkino.no/film/butterfly",
+   "url": "https://www.nfkino.no/film/butterfly?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1149699-1000033360.jpg?itok=yqYP3hlm",
    "genres": [
     "Drama"
@@ -7747,12 +7806,13 @@
    "year": "",
    "rt": "96%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:54.200Z",
+   "imdbId": "tt0188030",
+   "ratingsAt": "2026-10-29T08:10:43.818Z",
    "city": "Oslo"
   },
   {
    "title": "HEX - En film om fenomenet Witch Club Satan",
-   "url": "https://www.nfkino.no/film/hex-en-film-om-fenomenet-witch-club-satan",
+   "url": "https://www.nfkino.no/film/hex-en-film-om-fenomenet-witch-club-satan?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001277-1000032705.jpg?itok=1xCx2bnq",
    "genres": [
     "Dokumentar"
@@ -7850,12 +7910,12 @@
    "origChecked": true,
    "orig": "HEX - En film om fenomenet Witch Club Satan",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:54.451Z",
+   "ratingsAt": "2026-10-29T08:10:44.021Z",
    "city": "Oslo"
   },
   {
    "title": "Franz",
-   "url": "https://www.nfkino.no/film/franz",
+   "url": "https://www.nfkino.no/film/franz?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002132-1000025141.jpg?itok=V5vwr94h",
    "genres": [
     "Drama"
@@ -7939,12 +7999,13 @@
    "year": "",
    "rt": "75%",
    "imdb": "6.5",
-   "ratingsAt": "2026-10-28T20:53:54.510Z",
+   "imdbId": "tt0205073",
+   "ratingsAt": "2026-10-29T08:10:44.076Z",
    "city": "Oslo"
   },
   {
    "title": "Et lite stykke Finland",
-   "url": "https://www.nfkino.no/film/et-lite-stykke-finland",
+   "url": "https://www.nfkino.no/film/et-lite-stykke-finland?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002734-1000033788.jpg?itok=oDCerTze",
    "genres": [
     "Dokumentar"
@@ -8140,12 +8201,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:54.575Z",
+   "imdbId": "tt31995671",
+   "ratingsAt": "2026-10-29T08:10:44.129Z",
    "city": "Oslo"
   },
   {
    "title": "Reisen til Piemonte",
-   "url": "https://www.nfkino.no/film/reisen-til-piemonte",
+   "url": "https://www.nfkino.no/film/reisen-til-piemonte?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002857-1000033371.jpg?itok=mmbKNc5K",
    "genres": [],
    "len": "1 time 51 min",
@@ -8179,12 +8241,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:54.634Z",
+   "imdbId": "tt38890302",
+   "ratingsAt": "2026-10-29T08:10:44.185Z",
    "city": "Oslo"
   },
   {
    "title": "Dette er ikke et eple",
-   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple",
+   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002655-1000031464.jpg?itok=811S3937",
    "genres": [
     "Dokumentar"
@@ -8209,57 +8272,12 @@
    "origChecked": true,
    "orig": "Dette er ikke et eple",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:54.855Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Harila - Nådeløse fjell",
-   "url": "https://www.nfkino.no/film/harila-nadelose-fjell",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002157-1000034673.jpg?itok=Zlm29rrD",
-   "genres": [],
-   "len": "1 time 40 min",
-   "age": "9 år",
-   "cinemas": [
-    "Saga",
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-10-29",
-     "t": "13:20",
-     "c": "Saga",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/11a4e8cd-5399-4d5b-8892-ac9938c3b1bb"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "18:30",
-     "c": "Saga",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/4d65605e-9bb1-43e6-adaf-c844c3f08130"
-    },
-    {
-     "d": "2026-10-29",
-     "t": "20:15",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2612/23c65a6f-168b-4dd5-9d41-cd7fff8a23a6"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002157-1000032263.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Harila - Nådeløse fjell",
-   "year": "",
-   "ratingsAt": "2026-10-28T20:53:55.086Z",
+   "ratingsAt": "2026-10-29T08:10:44.383Z",
    "city": "Oslo"
   },
   {
    "title": "The Conjuring",
-   "url": "https://www.nfkino.no/film/conjuring-0",
+   "url": "https://www.nfkino.no/film/conjuring-0?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-762c382531-176680-vst-6acf5bcd82803.png?itok=ZAhW0fTm",
    "genres": [
     "Thriller"
@@ -8286,12 +8304,13 @@
    "year": "",
    "rt": "86%",
    "imdb": "7.5",
-   "ratingsAt": "2026-10-28T20:53:55.147Z",
+   "imdbId": "tt1457767",
+   "ratingsAt": "2026-10-29T08:10:44.437Z",
    "city": "Oslo"
   },
   {
    "title": "HOKUM",
-   "url": "https://www.nfkino.no/film/hokum",
+   "url": "https://www.nfkino.no/film/hokum?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002363-1000027231.jpg?itok=bzCj9SMj",
    "genres": [
     "Horror"
@@ -8318,12 +8337,13 @@
    "year": "",
    "rt": "90%",
    "imdb": "6.6",
-   "ratingsAt": "2026-10-28T20:53:55.206Z",
+   "imdbId": "tt35672862",
+   "ratingsAt": "2026-10-29T08:10:44.489Z",
    "city": "Oslo"
   },
   {
    "title": "A Prayer for the Dying",
-   "url": "https://www.nfkino.no/film/prayer-dying",
+   "url": "https://www.nfkino.no/film/prayer-dying?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002811-1000030332.jpg?itok=c-ywjuMD",
    "genres": [
     "Drama",
@@ -8352,12 +8372,13 @@
    "year": "",
    "rt": "50%",
    "imdb": "6.3",
-   "ratingsAt": "2026-10-28T20:53:55.266Z",
+   "imdbId": "tt0093771",
+   "ratingsAt": "2026-10-29T08:10:44.544Z",
    "city": "Oslo"
   },
   {
    "title": "Digger",
-   "url": "https://www.nfkino.no/film/digger",
+   "url": "https://www.nfkino.no/film/digger?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1142789-1000032301.jpg?itok=dbmbaDZi",
    "genres": [
     "Drama",
@@ -8441,12 +8462,13 @@
    "year": "",
    "rt": "70%",
    "imdb": "7.4",
-   "ratingsAt": "2026-10-28T20:53:55.327Z",
+   "imdbId": "tt9389916",
+   "ratingsAt": "2026-10-29T08:10:44.599Z",
    "city": "Oslo"
   },
   {
    "title": "The Social Reckoning",
-   "url": "https://www.nfkino.no/film/social-reckoning",
+   "url": "https://www.nfkino.no/film/social-reckoning?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002677-1000034219.jpg?itok=qSODOFx2",
    "genres": [
     "Drama",
@@ -8531,12 +8553,13 @@
    "year": "",
    "rt": "54%",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:55.384Z",
+   "imdbId": "tt37510326",
+   "ratingsAt": "2026-10-29T08:10:44.656Z",
    "city": "Oslo"
   },
   {
    "title": "Scream (1996)",
-   "url": "https://www.nfkino.no/film/scream-1996",
+   "url": "https://www.nfkino.no/film/scream-1996?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-588067-1000027967.jpg?itok=nRpXqnJj",
    "genres": [
     "Horror"
@@ -8563,12 +8586,13 @@
    "year": "",
    "rt": "78%",
    "imdb": "7.4",
-   "ratingsAt": "2026-10-28T20:53:55.441Z",
+   "imdbId": "tt0117571",
+   "ratingsAt": "2026-10-29T08:10:44.712Z",
    "city": "Oslo"
   },
   {
    "title": "Málagagaten",
-   "url": "https://www.nfkino.no/film/malagagaten",
+   "url": "https://www.nfkino.no/film/malagagaten?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002184-1000034178.jpg?itok=dC5oReiU",
    "genres": [
     "Drama",
@@ -8596,12 +8620,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:55.497Z",
+   "imdbId": "tt32429174",
+   "ratingsAt": "2026-10-29T08:10:44.767Z",
    "city": "Oslo"
   },
   {
    "title": "Backrooms",
-   "url": "https://www.nfkino.no/film/backrooms",
+   "url": "https://www.nfkino.no/film/backrooms?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002351-1000027931.jpg?itok=GLj1iaGD",
    "genres": [
     "Thriller",
@@ -8629,12 +8654,13 @@
    "year": "",
    "rt": "86%",
    "imdb": "6.7",
-   "ratingsAt": "2026-10-28T20:53:55.561Z",
+   "imdbId": "tt26657236",
+   "ratingsAt": "2026-10-29T08:10:44.821Z",
    "city": "Oslo"
   },
   {
    "title": "Everybody Digs Bill Evans",
-   "url": "https://www.nfkino.no/film/everybody-digs-bill-evans",
+   "url": "https://www.nfkino.no/film/everybody-digs-bill-evans?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002636-1000032352.jpg?itok=pjfKHkJn",
    "genres": [
     "Drama"
@@ -8661,12 +8687,13 @@
    "year": "",
    "rt": "100%",
    "imdb": "7.0",
-   "ratingsAt": "2026-10-29T01:06:11.193Z",
+   "imdbId": "tt34347792",
+   "ratingsAt": "2026-10-29T08:10:44.877Z",
    "city": "Oslo"
   },
   {
    "title": "La fjella leve",
-   "url": "https://www.nfkino.no/film/la-fjella-leve",
+   "url": "https://www.nfkino.no/film/la-fjella-leve?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001923-1000028765.jpg?itok=SKzMTQmb",
    "genres": [
     "Dokumentar"
@@ -8779,12 +8806,12 @@
    "origChecked": true,
    "orig": "La fjella leve",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:55.808Z",
+   "ratingsAt": "2026-10-29T08:10:45.079Z",
    "city": "Oslo"
   },
   {
    "title": "Kvinne ukjent",
-   "url": "https://www.nfkino.no/film/kvinne-ukjent-0",
+   "url": "https://www.nfkino.no/film/kvinne-ukjent-0?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003015-1000032748.jpg?itok=UVcwA8pQ",
    "genres": [
     "Drama"
@@ -8818,12 +8845,12 @@
    "origChecked": true,
    "orig": "Kvinde ukendt",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:56.045Z",
+   "ratingsAt": "2026-10-29T08:10:45.285Z",
    "city": "Oslo"
   },
   {
    "title": "No Good Men",
-   "url": "https://www.nfkino.no/film/no-good-men",
+   "url": "https://www.nfkino.no/film/no-good-men?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002248-1000031256.jpg?itok=q6TgiNEw",
    "genres": [
     "Drama",
@@ -8852,12 +8879,13 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-10-28T20:53:56.108Z",
+   "imdbId": "tt13868840",
+   "ratingsAt": "2026-10-29T08:10:45.339Z",
    "city": "Oslo"
   },
   {
    "title": "Jailer 2",
-   "url": "https://www.nfkino.no/film/jailer-2",
+   "url": "https://www.nfkino.no/film/jailer-2?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003400-1000033610.jpg?itok=uiJ3u6lE",
    "genres": [
     "Drama",
@@ -8901,12 +8929,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:56.165Z",
+   "imdbId": "tt33318732",
+   "ratingsAt": "2026-10-29T08:10:45.391Z",
    "city": "Oslo"
   },
   {
    "title": "Ramayana: Rise of a Legend",
-   "url": "https://www.nfkino.no/film/ramayana-rise-legend",
+   "url": "https://www.nfkino.no/film/ramayana-rise-legend?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003230-1000034942.jpg?itok=Q3-x1rOE",
    "genres": [
     "Action",
@@ -8932,12 +8961,12 @@
    "origChecked": true,
    "orig": "Ramayana: Rise of a Legend",
    "year": "",
-   "ratingsAt": "2026-10-29T01:06:11.368Z",
+   "ratingsAt": "2026-10-29T08:10:45.599Z",
    "city": "Oslo"
   },
   {
    "title": "Jailer 2 - Hindi Film",
-   "url": "https://www.nfkino.no/film/jailer-2-hindi-film",
+   "url": "https://www.nfkino.no/film/jailer-2-hindi-film?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003488-1000034797.jpg?itok=SjLSG-UX",
    "genres": [
     "Action",
@@ -8995,12 +9024,12 @@
    "origChecked": true,
    "orig": "Jailer 2 - Hindi Film",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:56.402Z",
+   "ratingsAt": "2026-10-29T08:10:45.804Z",
    "city": "Oslo"
   },
   {
    "title": "Bring Her Back",
-   "url": "https://www.nfkino.no/film/bring-her-back",
+   "url": "https://www.nfkino.no/film/bring-her-back?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001018-1000013829.jpg?itok=PrqemgP3",
    "genres": [
     "Horror"
@@ -9027,12 +9056,13 @@
    "year": "",
    "rt": "89%",
    "imdb": "7.1",
-   "ratingsAt": "2026-10-28T20:53:56.462Z",
+   "imdbId": "tt32246771",
+   "ratingsAt": "2026-10-29T08:10:45.858Z",
    "city": "Oslo"
   },
   {
    "title": "Evil Dead Burn",
-   "url": "https://www.nfkino.no/film/evil-dead-burn",
+   "url": "https://www.nfkino.no/film/evil-dead-burn?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002664-1000029808.jpg?itok=nMCOlEQw",
    "genres": [],
    "len": "1 time 50 min",
@@ -9057,12 +9087,13 @@
    "year": "",
    "rt": "70%",
    "imdb": "6.3",
-   "ratingsAt": "2026-10-28T20:53:56.520Z",
+   "imdbId": "tt31170389",
+   "ratingsAt": "2026-10-29T08:10:45.911Z",
    "city": "Oslo"
   },
   {
    "title": "Insidious: Out of the Further",
-   "url": "https://www.nfkino.no/film/insidious-out-further",
+   "url": "https://www.nfkino.no/film/insidious-out-further?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1144899-1000031317.jpg?itok=L1XDVUaO",
    "genres": [
     "Thriller",
@@ -9090,12 +9121,13 @@
    "year": "",
    "rt": "57%",
    "imdb": "6.2",
-   "ratingsAt": "2026-10-28T20:53:56.583Z",
+   "imdbId": "tt32393988",
+   "ratingsAt": "2026-10-29T08:10:45.970Z",
    "city": "Oslo"
   },
   {
    "title": "Siri Hustvedt - Dansen rundt selvet",
-   "url": "https://www.nfkino.no/film/siri-hustvedt-dansen-rundt-selvet",
+   "url": "https://www.nfkino.no/film/siri-hustvedt-dansen-rundt-selvet?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002670-1000029508.jpg?itok=jaj5lKTm",
    "genres": [
     "Dokumentar"
@@ -9122,12 +9154,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-28T20:53:56.652Z",
+   "imdbId": "tt39368552",
+   "ratingsAt": "2026-10-29T08:10:46.024Z",
    "city": "Oslo"
   },
   {
    "title": "Lave forventninger",
-   "url": "https://www.nfkino.no/film/lave-forventninger",
+   "url": "https://www.nfkino.no/film/lave-forventninger?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001151-1000032754.jpg?itok=oSZwRJQ2",
    "genres": [
     "Drama"
@@ -9256,12 +9289,45 @@
    "origChecked": true,
    "orig": "Lave forventninger",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:56.884Z",
+   "ratingsAt": "2026-10-29T08:10:46.221Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Hexe: det magiske riket",
+   "url": "https://www.nfkino.no/film/hexe-det-magiske-riket?city=oslo",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001702-1000034511.jpg?itok=wslAIyWr",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 min",
+   "age": "TBC",
+   "cinemas": [
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-04",
+     "t": "17:30",
+     "c": "Saga",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Event, Regissørbesøk",
+     "u": "https://www.nfkino.no/screening/1001/1c0b55e8-9079-4b3f-afa1-372be19157b6"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001702-1000028841.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Hexed",
+   "year": "",
+   "rt": "9%",
+   "imdb": "5.5",
+   "imdbId": "tt0107107",
+   "ratingsAt": "2026-10-29T08:10:46.273Z",
    "city": "Oslo"
   },
   {
    "title": "Rosemary's Baby (1968)",
-   "url": "https://www.nfkino.no/film/rosemarys-baby-1968",
+   "url": "https://www.nfkino.no/film/rosemarys-baby-1968?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-43458-1000018636.jpg?itok=1W_RK51X",
    "genres": [
     "Horror"
@@ -9286,12 +9352,12 @@
    "origChecked": true,
    "orig": "Rosemary's Baby (1968)",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:57.128Z",
+   "ratingsAt": "2026-10-29T08:10:46.470Z",
    "city": "Oslo"
   },
   {
    "title": "The Thing",
-   "url": "https://www.nfkino.no/film/thing-1",
+   "url": "https://www.nfkino.no/film/thing-1?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-10/gmnt-15f30c36da-176680-vst-6adf4d9049b97.png?itok=zrSs5sWv",
    "genres": [],
    "len": "1 time 49 min",
@@ -9316,12 +9382,13 @@
    "year": "",
    "rt": "85%",
    "imdb": "8.2",
-   "ratingsAt": "2026-10-28T20:53:57.193Z",
+   "imdbId": "tt0084787",
+   "ratingsAt": "2026-10-29T08:10:46.535Z",
    "city": "Oslo"
   },
   {
    "title": "Godzilla Minus One",
-   "url": "https://www.nfkino.no/film/godzilla-minus-one-0",
+   "url": "https://www.nfkino.no/film/godzilla-minus-one-0?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1040940-1041752.jpg?itok=qwyD4H89",
    "genres": [
     "Drama",
@@ -9350,12 +9417,13 @@
    "year": "",
    "rt": "99%",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-28T20:53:57.259Z",
+   "imdbId": "tt23289160",
+   "ratingsAt": "2026-10-29T08:10:46.587Z",
    "city": "Oslo"
   },
   {
    "title": "Kalangarai- Tamilfilm",
-   "url": "https://www.nfkino.no/film/kalangarai-tamilfilm",
+   "url": "https://www.nfkino.no/film/kalangarai-tamilfilm?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003425-1000034723.jpg?itok=76TJCBKn",
    "genres": [
     "Drama"
@@ -9380,12 +9448,12 @@
    "origChecked": true,
    "orig": "Kalangarai- Tamilfilm",
    "year": "",
-   "ratingsAt": "2026-10-28T20:53:57.489Z",
+   "ratingsAt": "2026-10-29T08:10:46.792Z",
    "city": "Oslo"
   },
   {
    "title": "The Meltdown",
-   "url": "https://www.nfkino.no/film/meltdown",
+   "url": "https://www.nfkino.no/film/meltdown?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003046-1000034894.jpg?itok=TXrBFiPP",
    "genres": [
     "Drama"
@@ -9412,12 +9480,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.395Z",
+   "imdbId": "tt23079794",
+   "ratingsAt": "2026-10-29T08:10:46.846Z",
    "city": "Oslo"
   },
   {
    "title": "Ghost in the Cell",
-   "url": "https://www.nfkino.no/film/ghost-cell",
+   "url": "https://www.nfkino.no/film/ghost-cell?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003223-1000033483.jpg?itok=Ga51IYQf",
    "genres": [
     "Komedie",
@@ -9445,12 +9514,13 @@
    "year": "",
    "rt": "100%",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.422Z",
+   "imdbId": "tt9000310",
+   "ratingsAt": "2026-10-29T08:10:46.902Z",
    "city": "Oslo"
   },
   {
    "title": "Isabel",
-   "url": "https://www.nfkino.no/film/isabel",
+   "url": "https://www.nfkino.no/film/isabel?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003373-1000033491.jpg?itok=QDJawzIo",
    "genres": [
     "Drama",
@@ -9478,12 +9548,13 @@
    "year": "",
    "rt": "",
    "imdb": "5.9",
-   "ratingsAt": "2026-10-29T01:06:11.451Z",
+   "imdbId": "tt0063140",
+   "ratingsAt": "2026-10-29T08:10:46.953Z",
    "city": "Oslo"
   },
   {
    "title": "Journey There",
-   "url": "https://www.nfkino.no/film/journey-there",
+   "url": "https://www.nfkino.no/film/journey-there?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003394-1000033584.jpg?itok=l08wHivo",
    "genres": [
     "Drama",
@@ -9511,12 +9582,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.551Z",
+   "imdbId": "tt37970522",
+   "ratingsAt": "2026-10-29T08:10:47.105Z",
    "city": "Oslo"
   },
   {
    "title": "Knife: The Attempted Murder of Salman Rushdie",
-   "url": "https://www.nfkino.no/film/knife-attempted-murder-salman-rushdie",
+   "url": "https://www.nfkino.no/film/knife-attempted-murder-salman-rushdie?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002920-1000034888.jpg?itok=gOQJFOJF",
    "genres": [
     "Dokumentar"
@@ -9543,12 +9615,13 @@
    "year": "",
    "rt": "97%",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.579Z",
+   "imdbId": "tt32534849",
+   "ratingsAt": "2026-10-29T08:10:47.160Z",
    "city": "Oslo"
   },
   {
    "title": "Ky Nam Inn",
-   "url": "https://www.nfkino.no/film/ky-nam-inn",
+   "url": "https://www.nfkino.no/film/ky-nam-inn?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003374-1000033494.jpg?itok=8UU560JM",
    "genres": [
     "Drama"
@@ -9575,12 +9648,13 @@
    "year": "",
    "rt": "",
    "imdb": "7.9",
-   "ratingsAt": "2026-10-29T01:06:11.663Z",
+   "imdbId": "tt36616095",
+   "ratingsAt": "2026-10-29T08:10:47.310Z",
    "city": "Oslo"
   },
   {
    "title": "Pepita the Gunslinger",
-   "url": "https://www.nfkino.no/film/pepita-gunslinger",
+   "url": "https://www.nfkino.no/film/pepita-gunslinger?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003401-1000034779.jpg?itok=zFjw4q_H",
    "genres": [
     "Drama",
@@ -9608,12 +9682,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.721Z",
+   "imdbId": "tt29943166",
+   "ratingsAt": "2026-10-29T08:10:47.362Z",
    "city": "Oslo"
   },
   {
    "title": "The Samurai and the Prisoner",
-   "url": "https://www.nfkino.no/film/samurai-and-prisoner",
+   "url": "https://www.nfkino.no/film/samurai-and-prisoner?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003386-1000033537.jpg?itok=aJveMzsh",
    "genres": [
     "Drama",
@@ -9641,12 +9716,13 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-10-29T01:06:11.784Z",
+   "imdbId": "tt39602215",
+   "ratingsAt": "2026-10-29T08:10:47.418Z",
    "city": "Oslo"
   },
   {
    "title": "The Secret Reading Club of Kabul",
-   "url": "https://www.nfkino.no/film/secret-reading-club-kabul",
+   "url": "https://www.nfkino.no/film/secret-reading-club-kabul?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002951-1000034770.jpg?itok=KJaMVueN",
    "genres": [
     "Dokumentar"
@@ -9673,12 +9749,13 @@
    "year": "",
    "rt": "",
    "imdb": "7.6",
-   "ratingsAt": "2026-10-29T01:06:11.810Z",
+   "imdbId": "tt40754698",
+   "ratingsAt": "2026-10-29T08:10:47.469Z",
    "city": "Oslo"
   },
   {
    "title": "Scene - Tamil",
-   "url": "https://www.nfkino.no/film/scene-tamil",
+   "url": "https://www.nfkino.no/film/scene-tamil?city=oslo",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003492-1000034926.jpg?itok=T4PyEGui",
    "genres": [
     "Drama",
@@ -9708,7 +9785,7 @@
    "rt": "",
    "imdb": "8.2",
    "imdbId": "tt19064880",
-   "ratingsAt": "2026-10-29T07:06:33.938Z",
+   "ratingsAt": "2026-10-29T08:10:47.527Z",
    "city": "Oslo"
   }
  ],
