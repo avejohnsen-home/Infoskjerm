@@ -922,8 +922,10 @@ setInterval(()=>{if(DATA){renderInfo();renderSlm()}},5*60*1000);
 // ---------- SLM Oslo ----------
 const SLM_DAYS=90; // hvor langt fram lista viser
 const slmList=()=>((DATA&&DATA.slm)||[]).map(e=>({...e,t:new Date(e.start)})).filter(e=>e.t>=new Date(Date.now()-3*36e5));
+// SLM vises bare på din egen lenke: …/Infoskjerm/?ave
+const SHOW_SLM=new URLSearchParams(location.search).has("ave");
 function renderSlm(){
-  const bar=document.getElementById("slmbar"),list=slmList();if(!list.length){bar.hidden=true;return}
+  const bar=document.getElementById("slmbar"),list=slmList();if(!SHOW_SLM||!list.length){bar.hidden=true;return}
   const n=list[0],tonight=ymdOf(n.t)===ymdOf(new Date());
   bar.hidden=false;bar.classList.toggle("tonight",tonight);
   bar.innerHTML=`<span class="qi">🎟️</span><span><b>SLM${tonight?" i kveld":""}: ${esc(n.title)}</b><span class="s">${tonight?"kl. "+hm(n.t):dayLabel(ymdOf(n.t))+" kl. "+hm(n.t)} · trykk for alle arrangementer</span></span>`;
