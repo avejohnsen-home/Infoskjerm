@@ -1,42 +1,24 @@
 {
- "updated": "2026-10-31T22:43:21.559Z",
+ "updated": "2026-10-31T23:45:02.069Z",
  "errors": [],
  "weather": {
   "now": {
-   "date": "2026-10-31",
-   "h": 23,
+   "date": "2026-11-01",
+   "h": 0,
    "temp": 9,
-   "wind": 1,
+   "wind": 2,
    "sym": "cloudy",
    "rain": 0,
    "span": 1
   },
   "days": [
    {
-    "date": "2026-10-31",
-    "hours": [
-     {
-      "date": "2026-10-31",
-      "h": 23,
-      "temp": 9,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     }
-    ],
-    "max": 9,
-    "min": 9,
-    "rain": 0,
-    "sym": "cloudy"
-   },
-   {
     "date": "2026-11-01",
     "hours": [
      {
       "date": "2026-11-01",
       "h": 0,
-      "temp": 8,
+      "temp": 9,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -99,7 +81,7 @@
      {
       "date": "2026-11-01",
       "h": 7,
-      "temp": 8,
+      "temp": 9,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -279,7 +261,7 @@
      {
       "date": "2026-11-02",
       "h": 2,
-      "temp": 7,
+      "temp": 6,
       "wind": 4,
       "sym": "clearsky_night",
       "rain": 0,
@@ -713,6 +695,51 @@
     "min": 3,
     "rain": 0,
     "sym": "partlycloudy_day"
+   },
+   {
+    "date": "2026-11-07",
+    "hours": [
+     {
+      "date": "2026-11-07",
+      "h": 1,
+      "temp": 3,
+      "wind": 1,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-07",
+      "h": 7,
+      "temp": 3,
+      "wind": 1,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-07",
+      "h": 13,
+      "temp": 4,
+      "wind": 1,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-07",
+      "h": 19,
+      "temp": 3,
+      "wind": 1,
+      "sym": "partlycloudy_night",
+      "rain": 0,
+      "span": 6
+     }
+    ],
+    "max": 4,
+    "min": 3,
+    "rain": 0,
+    "sym": "cloudy"
    }
   ]
  },
@@ -3326,7 +3353,7 @@
      "t": "13:30",
      "c": "Colosseum",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen, Barnefilm",
      "u": "https://www.nfkino.no/screening/1002/ae6056fd-edac-4103-97f6-00bcb45c8b44"
     },
     {
@@ -8855,13 +8882,13 @@
   },
   {
    "title": "Snøfall",
-   "venue": "Centralteatret",
+   "venue": "Oslo Nye Teater",
    "url": "https://oslonye.no/forestillinger/snofall/",
    "img": "https://oslonye.no/wp-content/uploads/Snofall-2026-Arff-oppsett_Solveig-scaled.jpg",
    "imgSrc": "og",
-   "from": null,
-   "to": null,
-   "about": "",
+   "from": "2026-11-12",
+   "to": "2026-11-28",
+   "about": "10 forestillinger de neste ukene",
    "hint": "Snøfall",
    "city": "Oslo"
   },
@@ -8871,9 +8898,9 @@
    "url": "https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/",
    "img": "https://oslonye.no/wp-content/uploads/SnekkerAndersen_Plakatbilde-2026-scaled.jpg",
    "imgSrc": "og",
-   "from": null,
-   "to": null,
-   "about": "",
+   "from": "2026-11-14",
+   "to": "2026-11-28",
+   "about": "4 forestillinger de neste ukene",
    "hint": "Jul med Prøysen og snekker Andersen",
    "city": "Oslo"
   },
@@ -8895,8 +8922,8 @@
    "url": "https://oslonye.no/forestillinger/its-britney-bitch/",
    "img": "https://oslonye.no/wp-content/uploads/Plakat-ItsBritneyBitch_OsloNyeTeater2026-2-scaled.jpg",
    "imgSrc": "og",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
+   "from": "2026-11-13",
+   "to": "2026-11-13",
    "about": "",
    "hint": "It’s Britney, Bitch!",
    "city": "Oslo"
@@ -8979,8 +9006,8 @@
    "url": "https://oslonye.no/forestillinger/homofil-homofob/",
    "img": "https://oslonye.no/wp-content/uploads/IMG_0114.jpeg",
    "imgSrc": "og",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
+   "from": null,
+   "to": null,
    "about": "",
    "hint": "Homofil Homofob",
    "city": "Oslo"
@@ -8998,51 +9025,183 @@
    "city": "Oslo"
   },
   {
-   "title": "Cabaret Club",
+   "title": "To kjærester som ikke er kjærester",
    "venue": "Centralteatret, Teaterkjelleren",
-   "url": "https://oslonye.no/forestillinger/cabaret-club/",
-   "img": "https://oslonye.no/wp-content/uploads/Cabaret-Club-2400x135039-1-scaled.jpg",
+   "url": "https://oslonye.no/forestillinger/to-kjaerester-som-ikke-er-kjaerester/",
+   "img": "https://oslonye.no/wp-content/uploads/Liggende-plakat-u-tekst81-to-kjaerester.jpg",
    "imgSrc": "og",
-   "from": "2027-10-10",
-   "to": "2027-10-10",
+   "from": "2026-11-03",
+   "to": "2026-11-03",
    "about": "",
-   "hint": "Cabaret Club",
+   "hint": "To kjærester som ikke er kjærester",
    "city": "Oslo"
   },
   {
-   "title": "Club Seduction: Halloween Edition",
+   "title": "Siren Stories Sex Worker Project",
    "venue": "Centralteatret, Teaterkjelleren",
-   "url": "https://oslonye.no/forestillinger/club-seduction-halloween-edition/",
-   "img": "https://oslonye.no/wp-content/uploads/7-club-seduction--scaled.jpg",
+   "url": "https://oslonye.no/forestillinger/siren-stories/",
+   "img": "https://oslonye.no/wp-content/uploads/DSC_0024-scaled.jpeg",
    "imgSrc": "og",
-   "from": "2027-10-24",
-   "to": "2027-10-24",
-   "about": "",
-   "hint": "Club Seduction: Halloween Edition",
+   "from": "2026-11-04",
+   "to": "2026-11-25",
+   "about": "2 forestillinger de neste ukene",
+   "hint": "Siren Stories Sex Worker Project",
    "city": "Oslo"
   },
   {
-   "title": "ROLLESPILL LIVE, MED GRUVAR OG DRAGAR ER TILBAKE! EN HALLOWEEN SPESIAL!",
+   "title": "Utbrent av den hellige ånd",
    "venue": "Centralteatret, Teaterkjelleren",
-   "url": "https://oslonye.no/forestillinger/sesongfinale-gruvar-og-dragar-live-one-night-only/",
-   "img": "https://oslonye.no/wp-content/uploads/gruvar.jpg",
+   "url": "https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/",
+   "img": "https://oslonye.no/wp-content/uploads/2400x1350-Utbrentavdenhellige-and-scaled.jpg",
    "imgSrc": "og",
-   "from": "2027-10-27",
-   "to": "2027-10-27",
+   "from": "2026-11-05",
+   "to": "2026-11-05",
    "about": "",
-   "hint": "ROLLESPILL LIVE, MED GRUVAR OG DRAGAR ER TILBAKE! EN HALLOWEEN SPESIAL!",
+   "hint": "Utbrent av den hellige ånd",
    "city": "Oslo"
   },
   {
-   "title": "Er du med på leken?",
+   "title": "Mette - Prinsesse på evig prøve",
    "venue": "Centralteatret, Teaterkjelleren",
-   "url": "https://oslonye.no/forestillinger/er-du-med-pa-leken/",
-   "img": "https://oslonye.no/wp-content/uploads/Hilde-Nygard-scaled.jpg",
+   "url": "https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/",
+   "img": "https://oslonye.no/wp-content/uploads/Kopi-av-METTE-HEADER-MED-TITTEL-2-scaled.jpeg",
    "imgSrc": "og",
-   "from": "2027-10-29",
-   "to": "2027-10-29",
+   "from": "2026-11-06",
+   "to": "2026-11-21",
+   "about": "3 forestillinger de neste ukene",
+   "hint": "Mette - Prinsesse på evig prøve",
+   "city": "Oslo"
+  },
+  {
+   "title": "Quiet when I’m coming home",
+   "venue": "Centralteatret, Caféscenen",
+   "url": "https://oslonye.no/forestillinger/quiet-when-im-coming-home/",
+   "img": "https://oslonye.no/wp-content/uploads/harrulling-kopi.jpeg",
+   "imgSrc": "og",
+   "from": "2026-11-07",
+   "to": "2026-11-07",
    "about": "",
-   "hint": "Er du med på leken?",
+   "hint": "Quiet when I’m coming home",
+   "city": "Oslo"
+  },
+  {
+   "title": "Kiki’s Burly Q",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/kikis-burly-q/",
+   "img": "https://oslonye.no/wp-content/uploads/KikisBurlyQ-2026100-scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-07",
+   "to": "2026-11-07",
+   "about": "",
+   "hint": "Kiki’s Burly Q",
+   "city": "Oslo"
+  },
+  {
+   "title": "BESTEMORUNGEN",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/bestemorungen/",
+   "img": "https://oslonye.no/wp-content/uploads/Trivelig-clean-bestemor.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-10",
+   "to": "2026-11-10",
+   "about": "",
+   "hint": "BESTEMORUNGEN",
+   "city": "Oslo"
+  },
+  {
+   "title": "FINANS",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/finans/",
+   "img": "https://oslonye.no/wp-content/uploads/FINANS-fotograf-Morten-Bruun24-scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-11",
+   "to": "2026-11-12",
+   "about": "2 forestillinger de neste ukene",
+   "hint": "FINANS",
+   "city": "Oslo"
+  },
+  {
+   "title": "Dracula",
+   "venue": "Centralteatret, Caféscenen",
+   "url": "https://oslonye.no/forestillinger/dracula/",
+   "img": "https://oslonye.no/wp-content/uploads/dracula.-cafescenen-scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-12",
+   "to": "2026-11-14",
+   "about": "3 forestillinger de neste ukene",
+   "hint": "Dracula",
+   "city": "Oslo"
+  },
+  {
+   "title": "Sara utfordrer teatret",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/sara-utfordrer-teatret/",
+   "img": "https://oslonye.no/wp-content/uploads/SaraPromobilder%E2%92%B8BjorkEllingsbo_Facebook-7880-scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-13",
+   "to": "2026-11-13",
+   "about": "",
+   "hint": "Sara utfordrer teatret",
+   "city": "Oslo"
+  },
+  {
+   "title": "Fri Da Ahmad — arabiske sanger med Frida Marida og Ahmad",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/fri-da-tarab-arabiske-sanger-med-frida-marida-og-ahmad/",
+   "img": "https://oslonye.no/wp-content/uploads/Acoustic-group-pic-.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-14",
+   "to": "2026-11-14",
+   "about": "",
+   "hint": "Fri Da Ahmad — arabiske sanger med Frida Marida og Ahmad",
+   "city": "Oslo"
+  },
+  {
+   "title": "VI VAR / VI BLE - SISTE FORESTILLING OG TEPPEFALLS!!",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/vi-var-vi-ble-teppefallsfest/",
+   "img": "https://oslonye.no/wp-content/uploads/plakat-jorgen--scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-18",
+   "to": "2026-11-18",
+   "about": "",
+   "hint": "VI VAR / VI BLE - SISTE FORESTILLING OG TEPPEFALLS!!",
+   "city": "Oslo"
+  },
+  {
+   "title": "Askefast",
+   "venue": "Centralteatret, Caféscenen",
+   "url": "https://oslonye.no/forestillinger/askefast/",
+   "img": "https://oslonye.no/wp-content/uploads/promobilde3-scaled.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-19",
+   "to": "2026-11-19",
+   "about": "",
+   "hint": "Askefast",
+   "city": "Oslo"
+  },
+  {
+   "title": "Success Story",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/success-story/",
+   "img": "https://oslonye.no/wp-content/uploads/Facebook_Header-expanded-face-middle-.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-26",
+   "to": "2026-11-26",
+   "about": "",
+   "hint": "Success Story",
+   "city": "Oslo"
+  },
+  {
+   "title": "Tipsy Ibsen",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/tipsy-ibsen-2/",
+   "img": "https://oslonye.no/wp-content/uploads/Tipsy_Dukkehjem_2048-1152.jpg",
+   "imgSrc": "og",
+   "from": "2026-11-27",
+   "to": "2026-11-27",
+   "about": "",
+   "hint": "Tipsy Ibsen",
    "city": "Oslo"
   },
   {
@@ -9051,8 +9210,8 @@
    "url": "https://oslonye.no/forestillinger/purple-underground/",
    "img": "https://oslonye.no/wp-content/uploads/diskklubb.jpeg",
    "imgSrc": "og",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
+   "from": "2026-11-28",
+   "to": "2026-11-28",
    "about": "",
    "hint": "Purple Underground",
    "city": "Oslo"
@@ -9633,28 +9792,6 @@
  ],
  "neuf": [
   {
-   "title": "CHICAGO",
-   "venue": "Chateau Neuf",
-   "url": "https://neuf.no/arrangementer/chicago",
-   "img": "https://cms.neuf.no/media/original_images/TM_Artistbilde_2426x1365_F3W93EU.jpg?v=604b22ff",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
-   "about": "Flere forestillinger. Se alle datoer på nettsiden.",
-   "hint": "CHICAGOThe Musical31. oktober6.—7. november+13Mer om arrangementet CHICAGO ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Halloween på Neuf",
-   "venue": "Chateau Neuf",
-   "url": "https://neuf.no/arrangementer/halloween-pa-neuf-26",
-   "img": "https://cms.neuf.no/media/original_images/HALLOWEEN.png?v=2731667f",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
-   "about": "",
-   "hint": "Halloween på NeufLiveshow, skrekkfilm og fest31. oktoberMer om arrangementet Halloween på Neuf ",
-   "city": "Oslo"
-  },
-  {
    "title": "An Evening with Fran Lebowitz",
    "venue": "Chateau Neuf",
    "url": "https://neuf.no/arrangementer/an-evening-with-fran-lebowitz-2026",
@@ -9707,6 +9844,17 @@
    "to": "2026-11-05",
    "about": "",
    "hint": "Konsert med desVerresupport fra Pastelljudas5. novemberMer om arrangementet Konsert med desVerre ",
+   "city": "Oslo"
+  },
+  {
+   "title": "CHICAGO",
+   "venue": "Chateau Neuf",
+   "url": "https://neuf.no/arrangementer/chicago",
+   "img": "https://cms.neuf.no/media/original_images/TM_Artistbilde_2426x1365_F3W93EU.jpg?v=604b22ff",
+   "from": "2026-11-06",
+   "to": "2026-11-06",
+   "about": "Flere forestillinger. Se alle datoer på nettsiden.",
+   "hint": "CHICAGOThe Musical6.—7. november13.—14. november+11Mer om arrangementet CHICAGO ",
    "city": "Oslo"
   },
   {
@@ -10284,7 +10432,7 @@
    "city": "Oslo"
   }
  ],
- "artUpdated": "2026-10-24T23:36:25.394Z",
+ "artUpdated": "2026-10-31T23:45:25.469Z",
  "art": [
   {
    "title": "Water Lilies",
@@ -12945,11 +13093,6 @@
  },
  "sun": [
   {
-   "date": "2026-10-30",
-   "rise": "2026-10-30T07:33+01:00",
-   "set": "2026-10-30T16:26+01:00"
-  },
-  {
    "date": "2026-10-31",
    "rise": "2026-10-31T07:36+01:00",
    "set": "2026-10-31T16:24+01:00"
@@ -12963,6 +13106,11 @@
    "date": "2026-11-02",
    "rise": "2026-11-02T07:41+01:00",
    "set": "2026-11-02T16:18+01:00"
+  },
+  {
+   "date": "2026-11-03",
+   "rise": "2026-11-03T07:43+01:00",
+   "set": "2026-11-03T16:16+01:00"
   }
  ],
  "latter": [
@@ -13245,25 +13393,18 @@
  "waste": [
   {
    "type": "Restavfall",
-   "next": "2026-11-02",
+   "next": "2026-11-01",
    "freq": "3 ganger i uken",
-   "estimated": false
+   "estimated": true
   },
   {
    "type": "Papir",
    "next": "2026-11-02",
    "freq": "hver uke",
-   "estimated": false
+   "estimated": true
   }
  ],
  "slm": [
-  {
-   "title": "Fetish Night+Chaps",
-   "start": "2026-10-31T22:00",
-   "url": "https://slmoslo.no/event/fetish-nightchaps-7/",
-   "price": "170 Kr",
-   "about": ""
-  },
   {
    "title": "SLM on Sunday",
    "start": "2026-11-01T16:00",
@@ -14025,20 +14166,9 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-31T22:00:00.000Z"
+  "time": "2026-10-31T23:00:00.000Z"
  },
  "loppis": [
-  {
-   "title": "Vestkanttorvet antikk- og bruktmarked",
-   "dates": [
-    "2026-10-31",
-    "2026-11-07"
-   ],
-   "time": "9–17",
-   "place": "Amaldus Nielsens plass, hjørnet Professor Dahls gate / Neuberggata",
-   "url": "https://www.loppi.no/loppemarked/225c5da5-35c9-48fd-8d37-9bc75eb7fb36",
-   "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-misc.jpg"
-  },
   {
    "title": "Birkelunden Marked",
    "dates": [
@@ -14114,6 +14244,17 @@
    "time": "12–17",
    "place": "Kulturhuset, Youngs gate 6",
    "url": "https://www.loppi.no/loppemarked/5eaa7bde-7039-4e94-9211-f45392d65db9",
+   "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-misc.jpg"
+  },
+  {
+   "title": "Vestkanttorvet antikk- og bruktmarked",
+   "dates": [
+    "2026-11-07",
+    "2026-11-14"
+   ],
+   "time": "9–17",
+   "place": "Amaldus Nielsens plass, hjørnet Professor Dahls gate / Neuberggata",
+   "url": "https://www.loppi.no/loppemarked/225c5da5-35c9-48fd-8d37-9bc75eb7fb36",
    "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-misc.jpg"
   },
   {
@@ -14504,17 +14645,6 @@
    "city": "Bergen"
   },
   {
-   "title": "Bjørnov tar det piano",
-   "venue": "Grieghallen",
-   "url": "https://www.grieghallen.no/arrangementer/bjoernov-tar-det-piano",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1762333124/ingrid-bjoernov-tar-det-piano-2000x1000.jpg?",
-   "from": "2026-10-31",
-   "to": "2026-10-31",
-   "about": "",
-   "hint": " Få billetter Bjørnov tar det piano Arrangør: Backstage Management og Produksjon & STARWORKS 31. oktober 2026 18:00 LES MER",
-   "city": "Bergen"
-  },
-  {
    "title": "Bryllupsdryss 2026",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/bryllupsdryss-2026",
@@ -14529,7 +14659,7 @@
    "title": "Ukraina - En vinterreise, Foredrag med Erika Fatland",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/ukraina-en-vinterreise-foredrag-med-erika-fatland",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1788766376/erika-fatland-sentrert-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788766376/erika-fatland-sentrert-2000x1000.png?",
    "from": "2026-11-02",
    "to": "2026-11-02",
    "about": "",
@@ -14540,7 +14670,7 @@
    "title": "Høstens Smakstrender",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/hoestens-smakstrender-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1790061990/smakstrender-hoesten-2026.jpeg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790061990/smakstrender-hoesten-2026.jpeg?",
    "from": "2026-11-06",
    "to": "2026-11-06",
    "about": "",
@@ -14548,25 +14678,25 @@
    "city": "Bergen"
   },
   {
+   "title": "Kristian Valen - Bare VisVas",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/kristian-valen-bare-visvas",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1769416427/kristian-valen-2000x1000.png?",
+   "from": "2026-11-06",
+   "to": "2026-11-07",
+   "about": "",
+   "hint": " Utsolgt Kristian Valen - Bare VisVas Arrangør: Deepwater Entertainment 4 forestillinger 06. - 07. november 2026 LES MER",
+   "city": "Bergen"
+  },
+  {
    "title": "Bergen Nasjonale Opera – Jubileumsforestilling",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/bergen-nasjonale-opera-jubileumsforestilling-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781184525/jubileumsforestilling-grieghallen-web-2000x1000.jpg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781184525/jubileumsforestilling-grieghallen-web-2000x1000.jpg?",
    "from": "2026-11-07",
    "to": "2026-11-13",
    "about": "",
    "hint": " Bergen Nasjonale Opera – Jubileumsforestilling Arrangør: Bergen Nasjonale Opera 4 forestillinger 07. - 13. november 2026 LES MER",
-   "city": "Bergen"
-  },
-  {
-   "title": "Triggersystemet",
-   "venue": "Grieghallen",
-   "url": "https://www.grieghallen.no/arrangementer/triggersystemet",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1786356949/filmplakat-triggersystemet-2026-2000x1000-griegformat-liggende-v4.jpg?",
-   "from": "2026-11-11",
-   "to": "2026-11-14",
-   "about": "",
-   "hint": " Triggersystemet Arrangør: Transiteateret og Den Nationale Scene 8 forestillinger 11. - 14. november 2026 LES MER",
    "city": "Bergen"
   },
   {
@@ -14581,6 +14711,17 @@
    "city": "Bergen"
   },
   {
+   "title": "Fargespill Bergen – Gjengen min",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/fargespill-bergen-presenterer-gjengen-min",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1788258314/fargespill-bergen.jpg?",
+   "from": "2026-11-15",
+   "to": "2026-11-15",
+   "about": "",
+   "hint": " Fargespill Bergen – Gjengen min Arrangør: Fargespill Bergen 15. november 2026 17:00 LES MER",
+   "city": "Bergen"
+  },
+  {
    "title": "Edward Gardner dirigerer Mendelssohn",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/edward-gardner-dirigerer-mendelssohn",
@@ -14589,17 +14730,6 @@
    "to": "2026-11-19",
    "about": "",
    "hint": " Edward Gardner dirigerer Mendelssohn Bergen Filharmoniske Orkester 19. november 2026 18:30 LES MER",
-   "city": "Bergen"
-  },
-  {
-   "title": "Årskonferansen og Årsmiddagen 2026",
-   "venue": "Grieghallen",
-   "url": "https://www.grieghallen.no/arrangementer/aarskonferansen-og-aarsmiddagen-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790672951/a-rskonferansen-og-a-rsmiddagen-2026-2000x1000.png?",
-   "from": "2026-11-20",
-   "to": "2026-11-20",
-   "about": "",
-   "hint": " Årskonferansen og Årsmiddagen 2026 Arrangør: Bergen Næringsråd 20. november 2026 08:00 LES MER",
    "city": "Bergen"
   },
   {
@@ -14683,7 +14813,7 @@
    "title": "Maria Mena",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/maria-mena-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1763973573/maria-mena-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1763973573/maria-mena-2000x1000.png?",
    "from": "2026-12-02",
    "to": "2026-12-02",
    "about": "",
@@ -14694,7 +14824,7 @@
    "title": "SFMK – Swinging Christmas med Frode Vassel og Sinne Eeg",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/sfmk-swinging-christmas-med-frode-vassel-og-sinne-eeg",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1790151019/swinging-christmas-2026-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1790151019/swinging-christmas-2026-2000x1000.png?",
    "from": "2026-12-03",
    "to": "2026-12-03",
    "about": "",
@@ -14705,7 +14835,7 @@
    "title": "Mahlers sjette symfoni",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/mahlers-sjette-symfoni",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781785098/kahchun-wong-a-photo-by-angie-kremer.webp?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781785098/kahchun-wong-a-photo-by-angie-kremer.webp?",
    "from": "2026-12-03",
    "to": "2026-12-04",
    "about": "",
@@ -14716,7 +14846,7 @@
    "title": "Wallmans On Tour 2026 Dinnershow",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/wallmans-on-tour-2026-dinnershow",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1774618897/vaar-2026-bilde-til-arrangement-2000x1000-1.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1774618897/vaar-2026-bilde-til-arrangement-2000x1000-1.png?",
    "from": "2026-12-04",
    "to": "2026-12-05",
    "about": "",
@@ -14771,7 +14901,7 @@
    "title": "Bugge Wesseltoft – It's Snowing on my piano",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/bugge-wesseltoft-it-s-snowing-on-my-piano-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781777370/bugge-2000x1000-2026.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781777370/bugge-2000x1000-2026.png?",
    "from": "2026-12-06",
    "to": "2026-12-06",
    "about": "",
@@ -14782,7 +14912,7 @@
    "title": "Julekonsert med Helene Bøksle 2026 – «Det hev ei rose sprunge»",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/julekonsert-med-helene-boeksle-2026-det-hev-ei-rose-sprunge",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1792134706/fb-banner-bergen.jpg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1792134706/fb-banner-bergen.jpg?",
    "from": "2026-12-07",
    "to": "2026-12-07",
    "about": "",
@@ -14793,7 +14923,7 @@
    "title": "Sissels Jul 2026",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/sissels-jul-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1774625237/sissels-jul-2026-2000x1000-2.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1774625237/sissels-jul-2026-2000x1000-2.png?",
    "from": "2026-12-08",
    "to": "2026-12-08",
    "about": "",
@@ -14804,7 +14934,7 @@
    "title": "The Nutcracker: Symphony of Lights",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/noetteknekkeren-grand-kyiv-ballet",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1769500881/nutcracker-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1769500881/nutcracker-2000x1000.png?",
    "from": "2026-12-09",
    "to": "2026-12-09",
    "about": "",
@@ -14859,7 +14989,7 @@
    "title": "Christel Alsos – I den kalde vinteren 2026",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/christel-alsos-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1765527974/christel-alsos-2000-x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1765527974/christel-alsos-2000-x1000.png?",
    "from": "2026-12-12",
    "to": "2026-12-12",
    "about": "",
@@ -14870,7 +15000,7 @@
    "title": "Jag är Carola - En musikalsk livsberättelse",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/jag-aer-carola",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1786443426/carola-2026-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1786443426/carola-2026-2000x1000.png?",
    "from": "2026-12-13",
    "to": "2026-12-13",
    "about": "",
@@ -14881,7 +15011,7 @@
    "title": "Didrik Solli-Tangen – O Helga Natt",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/didrik-solli-tangen-o-helga-natt-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1738748304/2025-didrik-solli-tangen-o-helga-natt-2000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1738748304/2025-didrik-solli-tangen-o-helga-natt-2000x1000.png?",
    "from": "2026-12-13",
    "to": "2026-12-13",
    "about": "",
@@ -14892,7 +15022,7 @@
    "title": "Snekker Andersen og Julenissen",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/snekker-andersen-og-julenissen",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1792574064/snekker-andersen-og-julenissen.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1792574064/snekker-andersen-og-julenissen.png?",
    "from": "2026-12-14",
    "to": "2026-12-15",
    "about": "",
@@ -14947,7 +15077,7 @@
    "title": "Kurt Nilsen - Julekonsert 2026",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/kurt-nilsen-julekonsert-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1771231500/kurt-nilsen-20262000x1000.png?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1771231500/kurt-nilsen-20262000x1000.png?",
    "from": "2026-12-19",
    "to": "2026-12-22",
    "about": "",
@@ -14958,7 +15088,7 @@
    "title": "Bad Brooks - Country Christmas 2026",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/bad-brooks-country-christmas-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1749022166/country-christmas-2000x1000px.jpg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1749022166/country-christmas-2000x1000px.jpg?",
    "from": "2026-12-19",
    "to": "2026-12-19",
    "about": "",
@@ -14969,7 +15099,7 @@
    "title": "Eikanger-Bjørsvik : Nyttårskonsert på sjølvaste nyttårsaften",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/eikanger-bjoersvik-nyttaarskonsert-paa-sjoelvaste-nyttaarsaften-2026",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1781076460/eikanger-bjoersvik-nyttar26-2000x1000.jpg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1781076460/eikanger-bjoersvik-nyttar26-2000x1000.jpg?",
    "from": "2026-12-31",
    "to": "2026-12-31",
    "about": "",
@@ -14980,7 +15110,7 @@
    "title": "Nyttårskonserten 2027 – med Bergen Filharmoniske Orkester",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/nyttaarskonserten-2027",
-   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1780477770/alondra-de-la-parra-by-felix-broede-09-1440x960.jpg?",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/379x257/1780477770/alondra-de-la-parra-by-felix-broede-09-1440x960.jpg?",
    "from": "2027-01-07",
    "to": "2027-01-08",
    "about": "",
@@ -15487,18 +15617,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Westside Cowboy",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1346276358?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_CFKrOey1oQ?tr=w-600",
-   "times": [
-    "2026-11-02T19:00"
-   ],
-   "hint": "indierock alternativerock",
-   "about": "Med en eksplosiv miks av catchy gitarriff, støvete americana og en urokkelig DIY-mentalitet har Westside Cowboy tatt internasjonale scener med storm. Etter to hyllede EP-er slapp Manchester-kvartetten endelig debutalbume",
-   "city": "Oslo"
-  },
-  {
    "title": "PRESIDENT",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/761108475?brand=rockefeller&camefrom=CFC_NO_Rockefeller_PRESIDENT_021126_Billettsalg&utm_campaign=NO_Rockefeller_PRESIDENT_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15508,6 +15626,18 @@
    ],
    "hint": "metalcore alternativemetal experimental",
    "about": "I september i fjor slapp de debut-EP-en *King of Terrors*, som nærmer seg 80 millioner streams. Nå er det maskerte bandet aktuelle med den nye singelen «DOOMLOOP», og de slipper sitt debutalbum *BLOOD OF YOUR EMPIRE* 4. ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Westside Cowboy",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1346276358?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Westside_Cowboy_021126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_CFKrOey1oQ?tr=w-600",
+   "times": [
+    "2026-11-02T19:00"
+   ],
+   "hint": "indierock alternativerock",
+   "about": "Med en eksplosiv miks av catchy gitarriff, støvete americana og en urokkelig DIY-mentalitet har Westside Cowboy tatt internasjonale scener med storm. Etter to hyllede EP-er slapp Manchester-kvartetten endelig debutalbume",
    "city": "Oslo"
   },
   {
@@ -15607,15 +15737,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Ezhel",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/871035029?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Ezhel_071126_Billettsalg&utm_campaign=NO_Rockefeller_Ezhel_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_SOZn6oiJQ?tr=w-600",
+   "title": "Mammoth",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/794665397?brand=johndee&camefrom=CFC_NO_Rockefeller_Mammoth_071126_Billettsalg&utm_campaign=NO_Rockefeller_Mammoth_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i4dCjEp9M?tr=w-600",
    "times": [
     "2026-11-07T19:00"
    ],
-   "hint": "hiphop rap trap",
-   "about": "Billettkjøpere mottar informasjon på e-post fra post@mail.rockefeller.no til e-postadressen som er tilknyttet billettkjøperens Ticketmaster-konto. Sjekk spam-mappen dersom du ikke finner e-posten. -- Ezhel kommer tilbake",
+   "hint": "hardrock",
+   "about": "Bandet har vært i stødig vekst helt siden starten, og det nyeste albumet, *The End*, viser tydelig hvorfor suksessen har vært uunngåelig. Med sitt helt egne uttrykk og sound har Mammoth bygget opp en dedikert fanskare ve",
    "city": "Oslo"
   },
   {
@@ -15631,15 +15761,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Mammoth",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/794665397?brand=johndee&camefrom=CFC_NO_Rockefeller_Mammoth_071126_Billettsalg&utm_campaign=NO_Rockefeller_Mammoth_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i4dCjEp9M?tr=w-600",
+   "title": "Ezhel",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/871035029?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Ezhel_071126_Billettsalg&utm_campaign=NO_Rockefeller_Ezhel_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_SOZn6oiJQ?tr=w-600",
    "times": [
     "2026-11-07T19:00"
    ],
-   "hint": "hardrock",
-   "about": "Bandet har vært i stødig vekst helt siden starten, og det nyeste albumet, *The End*, viser tydelig hvorfor suksessen har vært uunngåelig. Med sitt helt egne uttrykk og sound har Mammoth bygget opp en dedikert fanskare ve",
+   "hint": "hiphop rap trap",
+   "about": "Billettkjøpere mottar informasjon på e-post fra post@mail.rockefeller.no til e-postadressen som er tilknyttet billettkjøperens Ticketmaster-konto. Sjekk spam-mappen dersom du ikke finner e-posten. -- Ezhel kommer tilbake",
    "city": "Oslo"
   },
   {
@@ -15667,18 +15797,6 @@
    "city": "Oslo"
   },
   {
-   "title": "An evening with Nicko McBrain",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1355843985?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nicko_McBrain_091126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nicko_McBrain_091126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0eHz9OsWj?tr=w-600",
-   "times": [
-    "2026-11-09T19:00"
-   ],
-   "hint": "spokenword",
-   "about": "Etter den nylige annonseringen av *Hello Boys and Girls!*, Nicko McBrains spennende, morsomme og dypt personlige selvbiografi, som lanseres 22. oktober, legger den folkekjære trommeslageren nå ut på veien med et helt spe",
-   "city": "Oslo"
-  },
-  {
    "title": "Beth Hart",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1612773534?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_Beth_Hart_201025_Billettsalg&utm_campaign=NO_Rockefeller_Beth_Hart_201025_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15688,6 +15806,18 @@
    ],
    "hint": "bluesrock soul",
    "about": "Beth Hart har en stemme som får nakkehårene til å reise seg, hjertet til å slå et ekstra slag og tiden til å stoppe opp – 9. november 2026 kommer hun tilbake til Sentrum Scene! *Dette er ny dato for den flyttede konserte",
+   "city": "Oslo"
+  },
+  {
+   "title": "An evening with Nicko McBrain",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1355843985?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nicko_McBrain_091126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nicko_McBrain_091126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0eHz9OsWj?tr=w-600",
+   "times": [
+    "2026-11-09T19:00"
+   ],
+   "hint": "spokenword",
+   "about": "Etter den nylige annonseringen av *Hello Boys and Girls!*, Nicko McBrains spennende, morsomme og dypt personlige selvbiografi, som lanseres 22. oktober, legger den folkekjære trommeslageren nå ut på veien med et helt spe",
    "city": "Oslo"
   },
   {
@@ -15776,18 +15906,6 @@
    "city": "Oslo"
   },
   {
-   "title": "The Good The Bad and The Zugly",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1178382539?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_GBZ_131126_Billettsalg&utm_campaign=NO_Rockefeller_GBZ_131126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_1bTnchxyV?tr=w-600",
-   "times": [
-    "2026-11-13T19:00"
-   ],
-   "hint": "punk rock punkrock",
-   "about": "**The Good The Bad and The Zugly** (GBZ) startet som bastardbarnet fra 90-tallets punkscene i Oslo – unge sjeler som bar faklen videre etter Turbonegro, Gluecifer og Anal Babes. De minnet oss på en tid da punkrock var et",
-   "city": "Oslo"
-  },
-  {
    "title": "Gareth",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/2054024933?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gareth_131126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Gareth_131126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15797,6 +15915,18 @@
    ],
    "hint": "country singersongwriter",
    "about": "Gareth, som kommer fra Castlederg i Nord-Irland og nå har base i Nashville, har på kort tid etablert seg som et av de mest spennende nye navnene innen moderne country. Med en særegen blanding av nordirske røtter, histori",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Good The Bad and The Zugly",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1178382539?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_GBZ_131126_Billettsalg&utm_campaign=NO_Rockefeller_GBZ_131126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_1bTnchxyV?tr=w-600",
+   "times": [
+    "2026-11-13T19:00"
+   ],
+   "hint": "punk rock punkrock",
+   "about": "**The Good The Bad and The Zugly** (GBZ) startet som bastardbarnet fra 90-tallets punkscene i Oslo – unge sjeler som bar faklen videre etter Turbonegro, Gluecifer og Anal Babes. De minnet oss på en tid da punkrock var et",
    "city": "Oslo"
   },
   {
@@ -15861,18 +15991,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Archspire",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/2052213861?brand=johndee&camefrom=CFC_NO_Rockefeller_Archspire_140626_Billettsalg&utm_campaign=NO_Rockefeller_Archspire_140626_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OR1DiRXgxZ?tr=w-600",
-   "times": [
-    "2026-11-18T19:00"
-   ],
-   "hint": "deathmetal technicalmetal",
-   "about": "*Too Fast To Die* følger opp det kritikerroste og prisvinnende albumet *Bleed the Future* (2021), og markerer bandets første fullstendig uavhengige utgivelse. Albumet representerer et nytt kapittel for Archspire. Nå står",
-   "city": "Oslo"
-  },
-  {
    "title": "Susanne Sundfør",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/296394551?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Susanne_Sundfor_181126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Susanne_Sundfor_181126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15884,6 +16002,18 @@
    ],
    "hint": "bluegrass country",
    "about": "«Jeg gleder meg til å dele scene med noen av Norges beste musikere i sommer og i høst, hvor vi skal kle om musikken min i en ny countrydrakt. Det blir god gammeldags bluegrass, men også innslag av country, godt inspirert",
+   "city": "Oslo"
+  },
+  {
+   "title": "Archspire",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/2052213861?brand=johndee&camefrom=CFC_NO_Rockefeller_Archspire_140626_Billettsalg&utm_campaign=NO_Rockefeller_Archspire_140626_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_OR1DiRXgxZ?tr=w-600",
+   "times": [
+    "2026-11-18T19:00"
+   ],
+   "hint": "deathmetal technicalmetal",
+   "about": "*Too Fast To Die* følger opp det kritikerroste og prisvinnende albumet *Bleed the Future* (2021), og markerer bandets første fullstendig uavhengige utgivelse. Albumet representerer et nytt kapittel for Archspire. Nå står",
    "city": "Oslo"
   },
   {
@@ -15911,18 +16041,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Side Brok",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/659195043?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_aGcx_5XwY?tr=w-600",
-   "times": [
-    "2026-11-20T19:00"
-   ],
-   "hint": "hiphop rap",
-   "about": "Rett etter at dei sleppte singelen «Kjærleik er kjærleik» i juni, stod dei på scena framfor eit mildt sagt ekstatisk publikum på Bergenfest. Bygdalarm og Balestrand Badeklubb var naturlege stopp på vegen, før festivalsom",
-   "city": "Oslo"
-  },
-  {
    "title": "Dirty Oppland",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1909151456?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Dirty_Oppland_201126_Billettsalg&utm_campaign=NO_Rockefeller_Dirty_Oppland_201126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -15932,6 +16050,18 @@
    ],
    "hint": "hiphop rap",
    "about": "**– Dirty Oppland** -- Bill. kr. 455,- + bill.avg. 18 års aldersgrense med legitimasjonsplikt. Ingen vergeordning. Gyldig legitimasjon er fysisk nasjonalt ID-kort, pass, fysisk førerkort eller bankkort med bilde. Digital",
+   "city": "Oslo"
+  },
+  {
+   "title": "Side Brok",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/659195043?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Side_Brok_201126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_aGcx_5XwY?tr=w-600",
+   "times": [
+    "2026-11-20T19:00"
+   ],
+   "hint": "hiphop rap",
+   "about": "Rett etter at dei sleppte singelen «Kjærleik er kjærleik» i juni, stod dei på scena framfor eit mildt sagt ekstatisk publikum på Bergenfest. Bygdalarm og Balestrand Badeklubb var naturlege stopp på vegen, før festivalsom",
    "city": "Oslo"
   },
   {
@@ -15948,18 +16078,6 @@
    "city": "Oslo"
   },
   {
-   "title": "CC Cowboys",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/409018573?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_c1tBayQ0Q?tr=w-600",
-   "times": [
-    "2026-11-21T19:00"
-   ],
-   "hint": "poprock rock",
-   "about": "CC Cowboys har i over tre tiår vært en bauta i norsk musikkliv og er et av landets mest betydningsfulle rockeband. Siden starten i Fredrikstad i 1989 har bandet satt et tydelig avtrykk på norsk rock og bygget opp et stor",
-   "city": "Oslo"
-  },
-  {
    "title": "Aktiv Dödshjelp",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/2017832082",
@@ -15969,6 +16087,18 @@
    ],
    "hint": "punk rock",
    "about": "Etter å ha sluppet det Spellemann-nominerte albumet *Send Dudes* i 2024, har de overbevist over 30.000 publikummere i inn- og utland om sin velfortjente plass på den norske punk-scenen. I kjølvannet av albumsuksessen sol",
+   "city": "Oslo"
+  },
+  {
+   "title": "CC Cowboys",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/409018573?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_CC_Cowboys_211126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_c1tBayQ0Q?tr=w-600",
+   "times": [
+    "2026-11-21T19:00"
+   ],
+   "hint": "poprock rock",
+   "about": "CC Cowboys har i over tre tiår vært en bauta i norsk musikkliv og er et av landets mest betydningsfulle rockeband. Siden starten i Fredrikstad i 1989 har bandet satt et tydelig avtrykk på norsk rock og bygget opp et stor",
    "city": "Oslo"
   },
   {
@@ -16045,6 +16175,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Roy Khan",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1458563090?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_campaign=NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_KpqRjyTkM?tr=w-600",
+   "times": [
+    "2026-11-27T19:00"
+   ],
+   "hint": "powermetal symphonicmetal",
+   "about": "*One Cold Winter’s Night* ble opprinnelig spilt inn i Oslo i 2006, og fanget et definerende øyeblikk – ikke bare i Roy Khans karriere, men for hele sjangeren. Albumet har siden blitt et referanseverk for liveopptredener,",
+   "city": "Oslo"
+  },
+  {
    "title": "Stein Torleif Bjella",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/68839469?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Stein_Torleif_Bjella_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16066,18 +16208,6 @@
    ],
    "hint": "postpunk indierock",
    "about": "Gurriers er blant de mest eksplosive nye navnene fra Irland akkurat nå, og slipper sitt etterlengtede andre album, *Nobody’s Coming To Save You*, 25. september. Tittelsporet, med tilhørende musikkvideo, er ute nå! Med en",
-   "city": "Oslo"
-  },
-  {
-   "title": "Roy Khan",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1458563090?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_campaign=NO_Rockefeller_Roy_Khan_271126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_KpqRjyTkM?tr=w-600",
-   "times": [
-    "2026-11-27T19:00"
-   ],
-   "hint": "powermetal symphonicmetal",
-   "about": "*One Cold Winter’s Night* ble opprinnelig spilt inn i Oslo i 2006, og fanget et definerende øyeblikk – ikke bare i Roy Khans karriere, men for hele sjangeren. Albumet har siden blitt et referanseverk for liveopptredener,",
    "city": "Oslo"
   },
   {
@@ -16276,6 +16406,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Thomas Dybdahl",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1414556261?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_T95qXKit9J?tr=w-600",
+   "times": [
+    "2026-12-05T19:00"
+   ],
+   "hint": "singersongwriter folkpop indiefolk",
+   "about": "Dybdahl debuterte som soloartist med *That Great October Sound*, og tok hjem Spellemannprisen for innsatsen. Siden har han levert ytterligere kritikerroste album som blant annet *Stray Dogs*, *One Day You’ll Dance For Me",
+   "city": "Oslo"
+  },
+  {
    "title": "Valentourettes",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1302079729?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Valentourettes_051226_Billettsalg&utm_campaign=NO_Rockefeller_Valentourettes_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16286,18 +16428,6 @@
    ],
    "hint": "rock tribute covers",
    "about": "De har spilt i hvert hjørne av landet, men det er på Rockefeller bandet virkelig hører hjemme. En konsert med Valentourettes er så nært man kan komme Jokke uten at Jokke selv bidrar. Dette er bandmedlemmer og venner som ",
-   "city": "Oslo"
-  },
-  {
-   "title": "Thomas Dybdahl",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1414556261?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Thomas_Dybdahl_051226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_T95qXKit9J?tr=w-600",
-   "times": [
-    "2026-12-05T19:00"
-   ],
-   "hint": "singersongwriter folkpop indiefolk",
-   "about": "Dybdahl debuterte som soloartist med *That Great October Sound*, og tok hjem Spellemannprisen for innsatsen. Siden har han levert ytterligere kritikerroste album som blant annet *Stray Dogs*, *One Day You’ll Dance For Me",
    "city": "Oslo"
   },
   {
@@ -16363,6 +16493,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Valter Nilsson",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/45255925?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Valter_Nilsson_101226_Billettsalg&utm_campaign=NO_Rockefeller_Valter_Nilsson_101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_9ApJE37DI?tr=w-600",
+   "times": [
+    "2026-12-10T19:00"
+   ],
+   "hint": "singersongwriter poprock",
+   "about": "Han hadde i praksis gitt opp popdrømmen og var nyutdannet sjøoffiser da musikkarrieren, etter mange omveier, plutselig skjøt fart med albumet *Bland de gyllene och de allmänt brända* i 2025. Her la Valter engelsken bak s",
+   "city": "Oslo"
+  },
+  {
    "title": "Makosir",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1697283505?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Makosir_SS101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16384,18 +16526,6 @@
    ],
    "hint": "americana countryrock",
    "about": "Artisten fra Midt-Telemark inntok den norske musikkscenen med fullt trøkk da hun ga ut sitt etterlengtede debutalbum *Spillet er i gang* i fjor. Singelen «Hele byen» ble raskt en publikumsfavoritt, og albumet markerte st",
-   "city": "Oslo"
-  },
-  {
-   "title": "Valter Nilsson",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/45255925?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Valter_Nilsson_101226_Billettsalg&utm_campaign=NO_Rockefeller_Valter_Nilsson_101226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_9ApJE37DI?tr=w-600",
-   "times": [
-    "2026-12-10T19:00"
-   ],
-   "hint": "singersongwriter poprock",
-   "about": "Han hadde i praksis gitt opp popdrømmen og var nyutdannet sjøoffiser da musikkarrieren, etter mange omveier, plutselig skjøt fart med albumet *Bland de gyllene och de allmänt brända* i 2025. Her la Valter engelsken bak s",
    "city": "Oslo"
   },
   {
@@ -16545,6 +16675,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Juletrefest med Ronny Pøbel",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/847021649?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Wfe04JzZ8?tr=w-600",
+   "times": [
+    "2026-12-18T19:00"
+   ],
+   "hint": "punk rock",
+   "about": "Fra ingenmannsland dukket blikkenslageren Ronny Pøbel plutselig opp i Oslos rockemiljø i 2005. Han markerte seg og vakte oppsikt umiddelbart med å utnevne seg selv til *Samfunnshater nr. 1*, med slagordet og parolen *Føk",
+   "city": "Oslo"
+  },
+  {
    "title": "Seigmen",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1901629445?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Seigmen_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16557,15 +16699,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Juletrefest med Ronny Pøbel",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/847021649?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Ronny_Pobel_181226_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Wfe04JzZ8?tr=w-600",
+   "title": "Bigbang",
+   "venue": "Sentrum Scene",
+   "url": "https://www.ticketmaster.no/event/1440280819",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0IFgqLIp1?tr=w-600",
    "times": [
-    "2026-12-18T19:00"
+    "2026-12-19T19:00"
    ],
-   "hint": "punk rock",
-   "about": "Fra ingenmannsland dukket blikkenslageren Ronny Pøbel plutselig opp i Oslos rockemiljø i 2005. Han markerte seg og vakte oppsikt umiddelbart med å utnevne seg selv til *Samfunnshater nr. 1*, med slagordet og parolen *Føk",
+   "hint": "rock",
+   "about": "Det er lett å glemme at Bigbang er en trio, at alt man hører og ser kommer fra kun tre musikere. Der de aller fleste rockband trenger fire eller gjerne fem medlemmer for å holde skuta flytende, lener den klassiske trioen",
    "city": "Oslo"
   },
   {
@@ -16591,18 +16733,6 @@
    ],
    "hint": "rock",
    "about": "Når nettene blir lengre og høstens mørke slør legger seg over det gamle landet, skrus rampelyset på i dunkle kjellere, ryddige kulturhus og rølpete rockepuber. Over fjell, gjennom daler, langs hav, fjorder, dyrket mark o",
-   "city": "Oslo"
-  },
-  {
-   "title": "Bigbang",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/1440280819",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_0IFgqLIp1?tr=w-600",
-   "times": [
-    "2026-12-19T19:00"
-   ],
-   "hint": "rock",
-   "about": "Det er lett å glemme at Bigbang er en trio, at alt man hører og ser kommer fra kun tre musikere. Der de aller fleste rockband trenger fire eller gjerne fem medlemmer for å holde skuta flytende, lener den klassiske trioen",
    "city": "Oslo"
   },
   {
@@ -16703,18 +16833,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Kanaan",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1415369907?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kanaan_150127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kanaan_150127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_kRwD-6A_J?tr=w-600",
-   "times": [
-    "2027-01-15T19:00"
-   ],
-   "hint": "psychedelicrock stonerrock",
-   "about": "Med sitt storslåtte og eklektiske nye album, borer Kanaan seg enda dypere ned i de forskjellige stilartene som til sammen har utgjort musikken deres. De melodiske partiene har sterke nynne-vennlige kvaliteter, de psykede",
-   "city": "Oslo"
-  },
-  {
    "title": "Hannah Storm",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1836966895?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_campaign=NO_Rockefeller_Hannah_Storm_170126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16737,6 +16855,18 @@
    ],
    "hint": "pop synthpop",
    "about": "Siden gjennombruddet i 2009 har Donkeyboy levert noen av Norges største poplåter, med klassikere som «Ambitions», «Sometimes», «City Boy» og «Crazy Something Normal» som har satt lydspor til utallige minner. Med sine sto",
+   "city": "Oslo"
+  },
+  {
+   "title": "Kanaan",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1415369907?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kanaan_150127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kanaan_150127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_kRwD-6A_J?tr=w-600",
+   "times": [
+    "2027-01-15T19:00"
+   ],
+   "hint": "psychedelicrock stonerrock",
+   "about": "Med sitt storslåtte og eklektiske nye album, borer Kanaan seg enda dypere ned i de forskjellige stilartene som til sammen har utgjort musikken deres. De melodiske partiene har sterke nynne-vennlige kvaliteter, de psykede",
    "city": "Oslo"
   },
   {
@@ -16778,18 +16908,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Erlend Ropstad",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/883452271?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o3IjksqZ0e?tr=w-600",
-   "times": [
-    "2027-01-22T19:00"
-   ],
-   "hint": "rock singersongwriter",
-   "about": "Ropstad har siden gjennombruddet etablert seg som en av landets markante rockartister, med en rekke kritikerroste utgivelser og en stadig voksende fanskare. På det nye albumet vender Ropstad tilbake til rocken etter året",
-   "city": "Oslo"
-  },
-  {
    "title": "The Black Dahlia Murder",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1843671206?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Black_Dahlia_Murder_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16799,6 +16917,18 @@
    ],
    "hint": "metal melodicdeathmetal",
    "about": "Siden starten i Michigan i 2001 har The Black Dahlia Murder vært blant de mest markante navnene innen melodisk death metal. Med sin kompromissløse kombinasjon av ekstrem intensitet, teknisk presisjon og sterke melodier h",
+   "city": "Oslo"
+  },
+  {
+   "title": "Erlend Ropstad",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/883452271?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Erlend_Ropstad_220127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_o3IjksqZ0e?tr=w-600",
+   "times": [
+    "2027-01-22T19:00"
+   ],
+   "hint": "rock singersongwriter",
+   "about": "Ropstad har siden gjennombruddet etablert seg som en av landets markante rockartister, med en rekke kritikerroste utgivelser og en stadig voksende fanskare. På det nye albumet vender Ropstad tilbake til rocken etter året",
    "city": "Oslo"
   },
   {
@@ -16826,18 +16956,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Trollfest",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/755311741?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_t16Rj-Lf4?tr=w-600",
-   "times": [
-    "2027-01-29T19:00"
-   ],
-   "hint": "folkmetal",
-   "about": "Med seg har de Vanvidd, som lover en trolsk og dansbar start på det som ligger an til å bli en heidundrende folk metal-kveld i Oslo. Her er det bare å lade partybatteriene til randen og gjøre seg klar for hæla i taket! -",
-   "city": "Oslo"
-  },
-  {
    "title": "Stavangerkameratene",
    "venue": "Rockefeller",
    "url": " https://www.ticketmaster.no/event/224117616?brand=rockefeller",
@@ -16847,6 +16965,18 @@
    ],
    "hint": "poprock",
    "about": "Stavangerkameratene har for lengst etablert seg som en publikumsmagnet på konsertscener og festivaler over hele landet. Med monsterhiten «Bare så du vett det», en Spellemann-nominasjon og flere album bak seg har de bygge",
+   "city": "Oslo"
+  },
+  {
+   "title": "Trollfest",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/755311741?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Trollfest_290127_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_t16Rj-Lf4?tr=w-600",
+   "times": [
+    "2027-01-29T19:00"
+   ],
+   "hint": "folkmetal",
+   "about": "Med seg har de Vanvidd, som lover en trolsk og dansbar start på det som ligger an til å bli en heidundrende folk metal-kveld i Oslo. Her er det bare å lade partybatteriene til randen og gjøre seg klar for hæla i taket! -",
    "city": "Oslo"
   },
   {
@@ -17102,18 +17232,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Uncle Acid and the Deadbeats",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1551932915?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ZkR4dxBgT?tr=w-600",
-   "times": [
-    "2027-02-19T19:00"
-   ],
-   "hint": "psychedelicrock doom stoner",
-   "about": "Etter debuten i 2010 kom gjennombruddet med *Blood Lust* i 2011, og både fans og kritikere har fortsatt å juble over bandets utgivelser. Uncle Acid and the Deadbeats, som også er kjent for sine fantastiske livekonserter,",
-   "city": "Oslo"
-  },
-  {
    "title": "Triosphere + Invasion",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/event/1969857241?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Triosphere_Invasion_190227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Triosphere_Invasion_190227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17123,6 +17241,18 @@
    ],
    "hint": "heavymetal",
    "about": "**Triosphere** har siden starten i 2004 etablert seg som et av Norges sterkeste navn innen melodisk metal. Med en kraftfull blanding av heavy metal, hardrock, prog og thrash har bandet turnert med W.A.S.P., Arch Enemy, J",
+   "city": "Oslo"
+  },
+  {
+   "title": "Uncle Acid and the Deadbeats",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1551932915?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Uncle_Acid_and_the_Deadbeats_190227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_ZkR4dxBgT?tr=w-600",
+   "times": [
+    "2027-02-19T19:00"
+   ],
+   "hint": "psychedelicrock doom stoner",
+   "about": "Etter debuten i 2010 kom gjennombruddet med *Blood Lust* i 2011, og både fans og kritikere har fortsatt å juble over bandets utgivelser. Uncle Acid and the Deadbeats, som også er kjent for sine fantastiske livekonserter,",
    "city": "Oslo"
   },
   {
@@ -17150,18 +17280,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Amble",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/537509382?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Amble_210227_Billettsalg&utm_campaign=NO_Rockefeller_Amble_210227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_4tevkyqfx?tr=w-600",
-   "times": [
-    "2027-02-21T19:00"
-   ],
-   "hint": "folk",
-   "about": "De slapp sitt etterlengtede debutalbum *Reverie* i mai 2025, og fulgte opp med EP-en *Hand Me Downs* senere på året. Nå har de nettopp sluppet singelen «Moral Victory», og mer ny musikk er på vei! Amble består av Robbie ",
-   "city": "Oslo"
-  },
-  {
    "title": "Bernth",
    "venue": "John Dee",
    "url": "https://www.ticketmaster.no/artist/bernth-billetter/1206513?venueId=4757&camefrom=CFC_NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_campaign=NO_Rockefeller_Bernth_210227_samle_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17171,6 +17289,18 @@
    ],
    "hint": "rock metal prog",
    "about": "Den østerrikske gitaristen, komponisten og kreatøren Bernth har beveget seg mellom ekstrem metal, soundtrackarbeid, sessionjobber og virtuos instrumentalmusikk. Han har turnert med Belphegor, spilt inn gitar for Seiler u",
+   "city": "Oslo"
+  },
+  {
+   "title": "Amble",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/537509382?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Amble_210227_Billettsalg&utm_campaign=NO_Rockefeller_Amble_210227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_4tevkyqfx?tr=w-600",
+   "times": [
+    "2027-02-21T19:00"
+   ],
+   "hint": "folk",
+   "about": "De slapp sitt etterlengtede debutalbum *Reverie* i mai 2025, og fulgte opp med EP-en *Hand Me Downs* senere på året. Nå har de nettopp sluppet singelen «Moral Victory», og mer ny musikk er på vei! Amble består av Robbie ",
    "city": "Oslo"
   },
   {
@@ -17234,18 +17364,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Beth Orton",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
-   "times": [
-    "2027-02-27T19:00"
-   ],
-   "hint": "folk electronica singersongwriter",
-   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
-   "city": "Oslo"
-  },
-  {
    "title": "KALEO",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/551960807?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Kaleo_Ekstra_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17257,6 +17375,18 @@
    ],
    "hint": "rock bluesrock folkrock",
    "about": "Siden gjennombruddet med albumet *A/B* i 2016 har KALEO etablert seg som et av Islands største internasjonale rockeband. Med sin særegne blanding av bluesrock, folk og stemningsfull rock har de opparbeidet seg et stort p",
+   "city": "Oslo"
+  },
+  {
+   "title": "Beth Orton",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/1087254231?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Beth_Orton_270227_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wrEeen_Ny?tr=w-600",
+   "times": [
+    "2027-02-27T19:00"
+   ],
+   "hint": "folk electronica singersongwriter",
+   "about": "Beth Orton fikk sitt store gjennombrudd på midten av 90-tallet, da hun samarbeidet med artister som William Orbit, The Chemical Brothers og Red Snapper – samarbeid som ble startpunktet for en imponerende solokarriere med",
    "city": "Oslo"
   },
   {
@@ -17380,18 +17510,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Getdown Services",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1130841808?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Getdown_Services_090327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Getdown_Services_090327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_vNT1ByjQ-?tr=w-600",
-   "times": [
-    "2027-03-09T19:00"
-   ],
-   "hint": "indierock",
-   "about": "På *Massive Champion* går barndomsvennene Josh Law og Ben Sadler enda dypere inn i det særegne universet de har bygget sammen de siste fem årene. Med debutalbumet *Crisps* (2023) traff de blink med sin uimotståelige miks",
-   "city": "Oslo"
-  },
-  {
    "title": "Passenger",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/725136044?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Passenger_090327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Passenger_090327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17404,15 +17522,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Saint Etienne",
+   "title": "Getdown Services",
    "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1151246004?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_WsuurbIdD0?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/1130841808?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Getdown_Services_090327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Getdown_Services_090327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_vNT1ByjQ-?tr=w-600",
    "times": [
-    "2027-03-10T19:00"
+    "2027-03-09T19:00"
    ],
-   "hint": "pop electronica",
-   "about": "Saint Etienne ble dannet i Croydon i 1990 av Bob Stanley og Pete Wiggs, og fikk raskt oppmerksomhet med sin versjon av Neil Youngs «Only Love Can Break Your Heart», som ble en klubbfavoritt. Med vokalist Sarah Cracknell,",
+   "hint": "indierock",
+   "about": "På *Massive Champion* går barndomsvennene Josh Law og Ben Sadler enda dypere inn i det særegne universet de har bygget sammen de siste fem årene. Med debutalbumet *Crisps* (2023) traff de blink med sin uimotståelige miks",
    "city": "Oslo"
   },
   {
@@ -17428,15 +17546,27 @@
    "city": "Oslo"
   },
   {
-   "title": "Senjahopen",
+   "title": "Saint Etienne",
    "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1106210117?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Senjahopen_110327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Senjahopen_110327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_X1Eh5syneT?tr=w-600",
+   "url": "https://www.ticketmaster.no/event/1151246004?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Sain_Etienne_100327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_WsuurbIdD0?tr=w-600",
+   "times": [
+    "2027-03-10T19:00"
+   ],
+   "hint": "pop electronica",
+   "about": "Saint Etienne ble dannet i Croydon i 1990 av Bob Stanley og Pete Wiggs, og fikk raskt oppmerksomhet med sin versjon av Neil Youngs «Only Love Can Break Your Heart», som ble en klubbfavoritt. Med vokalist Sarah Cracknell,",
+   "city": "Oslo"
+  },
+  {
+   "title": "Audrey Horne",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/59102719?brand=johndee&camefrom=CFC_NO_Rockefeller_Audrey_Horne_030926_Billettsalg&utm_campaign=NO_Rockefeller_Audrey_Horne_030926_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3W4nA_HN7?tr=w-600",
    "times": [
     "2027-03-11T19:00"
    ],
-   "hint": "rock",
-   "about": "De har gitt ut en god stabel med låter som mer eller mindre beskriver et liv du enten skulle ønske at du levde eller som du er glad for at du slipper, og hvis du reiser hjem etter en konsert med dette orkesteret uten å h",
+   "hint": "hardrock",
+   "about": "Audrey Horne serverer klassisk hardrock med røttene solid plantet i tradisjonen til Thin Lizzy, Iron Maiden og Led Zeppelin, kombinert med den mørkere tyngden og melodiske nerven man kjenner fra Alice in Chains og Soundg",
    "city": "Oslo"
   },
   {
@@ -17454,15 +17584,15 @@
    "city": "Oslo"
   },
   {
-   "title": "Audrey Horne",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/59102719?brand=johndee&camefrom=CFC_NO_Rockefeller_Audrey_Horne_030926_Billettsalg&utm_campaign=NO_Rockefeller_Audrey_Horne_030926_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3W4nA_HN7?tr=w-600",
+   "title": "Senjahopen",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1106210117?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Senjahopen_110327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Senjahopen_110327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_X1Eh5syneT?tr=w-600",
    "times": [
     "2027-03-11T19:00"
    ],
-   "hint": "hardrock",
-   "about": "Audrey Horne serverer klassisk hardrock med røttene solid plantet i tradisjonen til Thin Lizzy, Iron Maiden og Led Zeppelin, kombinert med den mørkere tyngden og melodiske nerven man kjenner fra Alice in Chains og Soundg",
+   "hint": "rock",
+   "about": "De har gitt ut en god stabel med låter som mer eller mindre beskriver et liv du enten skulle ønske at du levde eller som du er glad for at du slipper, og hvis du reiser hjem etter en konsert med dette orkesteret uten å h",
    "city": "Oslo"
   },
   {
@@ -17526,18 +17656,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Bokassa",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/249200124?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_9AwISbkQd?tr=w-600",
-   "times": [
-    "2027-03-20T19:00"
-   ],
-   "hint": "Rock",
-   "about": "Punkmetal-trioen har i en årrekke fusjonert flere av rockens undersjangre til sitt helt egne sound. Med fire kritikerroste album bak seg har de turnert med band som Clutch, Lagwagon, Mastodon, Therapy? og Metallica, og s",
-   "city": "Oslo"
-  },
-  {
    "title": "Nessa Barrett",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/867823729?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Nessa_Barrett_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17547,6 +17665,18 @@
    ],
    "hint": "alternativepop darkpop deltalder",
    "about": "Musikalsk bygger *Tough Love* videre på det mørke, triphop-inspirerte fundamentet hun har utviklet siden *Aftercare*-turneen og EP-en *Jesus Loves a Primadonna*. Inspirasjonskildene kommer tydelig til uttrykk på albumet,",
+   "city": "Oslo"
+  },
+  {
+   "title": "Bokassa",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/249200124?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Bokassa_200327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_9AwISbkQd?tr=w-600",
+   "times": [
+    "2027-03-20T19:00"
+   ],
+   "hint": "Rock",
+   "about": "Punkmetal-trioen har i en årrekke fusjonert flere av rockens undersjangre til sitt helt egne sound. Med fire kritikerroste album bak seg har de turnert med band som Clutch, Lagwagon, Mastodon, Therapy? og Metallica, og s",
    "city": "Oslo"
   },
   {
@@ -17562,18 +17692,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Eve",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1958764140?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Eve_121026_Billettsalg&utm_campaign=NO_Rockefeller_Eve_121026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_IM1tag5PI?tr=w-600",
-   "times": [
-    "2027-03-23T19:00"
-   ],
-   "hint": "hiphop rap",
-   "about": "Med hits som «Who’s That Girl» og den Grammy-vinnende «Let Me Blow Ya Mind», tok *Scorpion* verden med storm og toppet albumlister verden over. Albumet befestet posisjonen hennes blant de aller største, og hadde et impon",
-   "city": "Oslo"
-  },
-  {
    "title": "Palaye Royale",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/854370510?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Palaye_Royale_230327_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17583,6 +17701,18 @@
    ],
    "hint": "avantgarde rock deltalder",
    "about": "På den kommende turneen skal brødrene Remington Leith, Sebastian Danzig og Emerson Barrett fylle arenaer verden over og spille for over 80.000 publikummere. Det nye albumet slippes 22. januar, og første smakebit, «Lost I",
+   "city": "Oslo"
+  },
+  {
+   "title": "Eve",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1958764140?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Eve_121026_Billettsalg&utm_campaign=NO_Rockefeller_Eve_121026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_IM1tag5PI?tr=w-600",
+   "times": [
+    "2027-03-23T19:00"
+   ],
+   "hint": "hiphop rap",
+   "about": "Med hits som «Who’s That Girl» og den Grammy-vinnende «Let Me Blow Ya Mind», tok *Scorpion* verden med storm og toppet albumlister verden over. Albumet befestet posisjonen hennes blant de aller største, og hadde et impon",
    "city": "Oslo"
   },
   {
@@ -17673,18 +17803,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Svarttjern",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/155275392?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svarttjern_080427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svarttjern_080427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Ae4RyGILe?tr=w-600",
-   "times": [
-    "2027-04-08T19:00"
-   ],
-   "hint": "blackmetal",
-   "about": "I spissen står Svarttjern – bandet som gjennom årevis med turnering og konserter verden over har bygget seg et navn som en av scenens mest solide og respekterte krefter. Nå kommer de hjem for å presentere sitt nye album ",
-   "city": "Oslo"
-  },
-  {
    "title": "Duo Jatekok",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/1638213796?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Duo_Jatekok_080427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Duo_Jatekok_080427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17694,6 +17812,18 @@
    ],
    "hint": "Piano Classic",
    "about": "Pianistene Adélaïde Panaget og Naïri Badal henter inspirasjon fra to tilsynelatende svært forskjellige verdener: erfaringene fra Rammsteins verdensturneer og den minimalistiske musikken til komponister som Philip Glass, ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Svarttjern",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/155275392?brand=johndee&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svarttjern_080427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Svarttjern_080427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Ae4RyGILe?tr=w-600",
+   "times": [
+    "2027-04-08T19:00"
+   ],
+   "hint": "blackmetal",
+   "about": "I spissen står Svarttjern – bandet som gjennom årevis med turnering og konserter verden over har bygget seg et navn som en av scenens mest solide og respekterte krefter. Nå kommer de hjem for å presentere sitt nye album ",
    "city": "Oslo"
   },
   {
@@ -17709,18 +17839,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Petra Marklund",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/2019520801?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Petra_Marklund_160427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Petra_Marklund_160427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_LrkjrYstL?tr=w-600",
-   "times": [
-    "2027-04-16T19:00"
-   ],
-   "hint": "pop",
-   "about": "Petra Marklund har gitt oss noen av svensk pops mest gjenkjennelige refrenger. Som September slo hun gjennom internasjonalt med «Cry for You», før hun under eget navn ga ut allsangfavoritten «Händerna mot himlen». I somm",
-   "city": "Oslo"
-  },
-  {
    "title": "RY X",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1938295720?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_RY_X_160427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_RY_X_160427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17730,6 +17848,18 @@
    ],
    "hint": "singersongwriter indiefolk alternativepop",
    "about": "Den populære australske singer-songwriteren har passert 1 milliard streams på musikken sin, og har turnert og opptrådt verden over – på noen av klodens mest ikoniske scener. Han har samarbeidet med orkestre og institusjo",
+   "city": "Oslo"
+  },
+  {
+   "title": "Petra Marklund",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/2019520801?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Petra_Marklund_160427_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Petra_Marklund_160427_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_LrkjrYstL?tr=w-600",
+   "times": [
+    "2027-04-16T19:00"
+   ],
+   "hint": "pop",
+   "about": "Petra Marklund har gitt oss noen av svensk pops mest gjenkjennelige refrenger. Som September slo hun gjennom internasjonalt med «Cry for You», før hun under eget navn ga ut allsangfavoritten «Händerna mot himlen». I somm",
    "city": "Oslo"
   },
   {
@@ -18059,18 +18189,6 @@
   }
  ],
  "k_blaa": [
-  {
-   "title": "Príncipe 15th year anniversary",
-   "venue": "Blå",
-   "url": "https://www.ticketmaster.no/event/1976174466",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_KNAJhqC6o?tr=w-600",
-   "times": [
-    "2026-10-31T23:00"
-   ],
-   "hint": "techno batida",
-   "about": "With support from Liveurope and the Norwegian Arts Council.",
-   "city": "Oslo"
-  },
   {
    "title": "Frank Znort Quartet",
    "venue": "Blå",
@@ -21907,31 +22025,6 @@
    "p": [],
    "at": 1793141244303
   },
-  "https://oslonye.no/forestillinger/its-britney-bitch/": {
-   "p": [],
-   "at": 1793102304641
-  },
-  "https://oslonye.no/forestillinger/homofil-homofob/": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 410
-    }
-   ],
-   "at": 1793102304641
-  },
-  "https://oslonye.no/forestillinger/purple-underground/": {
-   "p": [],
-   "at": 1793102304641
-  },
-  "https://neuf.no/arrangementer/chicago": {
-   "p": [],
-   "at": 1793141244303
-  },
-  "https://neuf.no/arrangementer/halloween-pa-neuf-26": {
-   "p": [],
-   "at": 1793376130415
-  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/thomas-stronens-extended-ground-feat-fredrik-hoyer-og-havard": {
    "p": [],
    "at": 1793141244303
@@ -21952,6 +22045,15 @@
     }
    ],
    "at": 1793141244303
+  },
+  "https://oslonye.no/forestillinger/to-kjaerester-som-ikke-er-kjaerester/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 275
+    }
+   ],
+   "at": 1793490472782
   },
   "https://neuf.no/arrangementer/gratis-tirsdag-impro-workshop-w-impro-neuf-2": {
    "p": [],
@@ -21977,6 +22079,10 @@
   "https://www.nationaltheatret.no/forestillinger/relaext-julefortelling": {
    "p": [],
    "at": 1793141244303
+  },
+  "https://oslonye.no/forestillinger/siren-stories/": {
+   "p": [],
+   "at": 1793490472782
   },
   "https://neuf.no/arrangementer/free-wednesday-improv-show-w-impro-neuf-6": {
    "p": [
@@ -22021,6 +22127,10 @@
    "p": [],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/": {
+   "p": [],
+   "at": 1793490472782
+  },
   "https://neuf.no/arrangementer/konsert-med-desverre": {
    "p": [
     {
@@ -22046,6 +22156,19 @@
    "p": [],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 345
+    }
+   ],
+   "at": 1793490472782
+  },
+  "https://neuf.no/arrangementer/chicago": {
+   "p": [],
+   "at": 1793141244303
+  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/huun-huur-tu": {
    "p": [],
    "at": 1793144755473
@@ -22065,6 +22188,24 @@
   "https://www.nationaltheatret.no/forestillinger/affekt": {
    "p": [],
    "at": 1793144755473
+  },
+  "https://oslonye.no/forestillinger/quiet-when-im-coming-home/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 375
+    }
+   ],
+   "at": 1793490472782
+  },
+  "https://oslonye.no/forestillinger/kikis-burly-q/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 315
+    }
+   ],
+   "at": 1793490472782
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/lizz-wright": {
    "p": [],
@@ -22103,6 +22244,15 @@
    ],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/bestemorungen/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 375
+    }
+   ],
+   "at": 1793490472782
+  },
   "https://latter.no/forestillinger/harm-hegseth-10-%C3%A5r-med-podd-panikk-og-psykiatri": {
    "p": [],
    "at": 1793036789533
@@ -22128,6 +22278,15 @@
    "p": [],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/finans/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 245
+    }
+   ],
+   "at": 1793490472782
+  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/bugge-bang-oppsummerer-2026-2": {
    "p": [],
    "at": 1793144755473
@@ -22139,6 +22298,28 @@
   "https://oslo.rotary.no/no/musikkurset-2026-2027": {
    "p": [],
    "at": 1793144755473
+  },
+  "https://oslonye.no/forestillinger/snofall/": {
+   "p": [
+    {
+     "l": "OBOS",
+     "kr": 650
+    },
+    {
+     "l": "Ordinær",
+     "kr": 810
+    }
+   ],
+   "at": 1793286447606
+  },
+  "https://oslonye.no/forestillinger/dracula/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 325
+    }
+   ],
+   "at": 1793490472782
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/true-loves": {
    "p": [],
@@ -22152,6 +22333,19 @@
    "p": [],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/its-britney-bitch/": {
+   "p": [],
+   "at": 1793102304641
+  },
+  "https://oslonye.no/forestillinger/sara-utfordrer-teatret/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 305
+    }
+   ],
+   "at": 1793490472782
+  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/nubiyan-twist": {
    "p": [],
    "at": 1793144755473
@@ -22163,6 +22357,19 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/47984/": {
    "p": [],
    "at": 1793144755473
+  },
+  "https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/": {
+   "p": [],
+   "at": 1793102304641
+  },
+  "https://oslonye.no/forestillinger/fri-da-tarab-arabiske-sanger-med-frida-marida-og-ahmad/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 275
+    }
+   ],
+   "at": 1793490472782
   },
   "https://latter.no/forestillinger/b%C3%A5nnslam": {
    "p": [
@@ -22233,6 +22440,15 @@
    "p": [],
    "at": 1793144755473
   },
+  "https://oslonye.no/forestillinger/vi-var-vi-ble-teppefallsfest/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 120
+    }
+   ],
+   "at": 1793490472782
+  },
   "https://latter.no/forestillinger/verdens-beste-jenter": {
    "p": [
     {
@@ -22249,6 +22465,15 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/46206/": {
    "p": [],
    "at": 1793144755473
+  },
+  "https://oslonye.no/forestillinger/askefast/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 275
+    }
+   ],
+   "at": 1793490472782
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/verdens-beste-show-3": {
    "p": [],
@@ -22345,6 +22570,10 @@
    "p": [],
    "at": 1793149880585
   },
+  "https://oslonye.no/forestillinger/success-story/": {
+   "p": [],
+   "at": 1793490472782
+  },
   "https://cosmopolite.no/program/belleville/2026/november/taraf-og-hersleb-visekollektiv": {
    "p": [],
    "at": 1793149880585
@@ -22360,6 +22589,10 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/46208/": {
    "p": [],
    "at": 1793149880585
+  },
+  "https://oslonye.no/forestillinger/tipsy-ibsen-2/": {
+   "p": [],
+   "at": 1793490472782
   },
   "https://neuf.no/arrangementer/ferske-fjes-h26": {
    "p": [],
@@ -22382,6 +22615,10 @@
    "p": [],
    "at": 1793149880585
   },
+  "https://oslonye.no/forestillinger/purple-underground/": {
+   "p": [],
+   "at": 1793102304641
+  },
   "https://neuf.no/arrangementer/cold-harbours": {
    "p": [],
    "at": 1793027805424
@@ -22392,7 +22629,7 @@
   },
   "https://christianiateaterscene.no/blaafjell": {
    "p": [],
-   "at": 1792885132308
+   "at": 1793490472782
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46514/": {
    "p": [],
@@ -23258,15 +23495,6 @@
    "p": [],
    "at": 1793159813634
   },
-  "https://oslonye.no/forestillinger/cabaret-club/": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 305
-    }
-   ],
-   "at": 1793404042055
-  },
   "https://latter.no/forestillinger/cranium-of-curiosities": {
    "p": [
     {
@@ -23275,33 +23503,6 @@
     }
    ],
    "at": 1793102304641
-  },
-  "https://oslonye.no/forestillinger/club-seduction-halloween-edition/": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 365
-    }
-   ],
-   "at": 1793404042055
-  },
-  "https://oslonye.no/forestillinger/sesongfinale-gruvar-og-dragar-live-one-night-only/": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 245
-    }
-   ],
-   "at": 1793404042055
-  },
-  "https://oslonye.no/forestillinger/er-du-med-pa-leken/": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 325
-    }
-   ],
-   "at": 1793404042055
   },
   "https://latter.no/forestillinger/heino-hansen-de-kalder-mig-heino": {
    "p": [
@@ -23317,23 +23518,6 @@
    "at": 1793102304641
   },
   "https://oslonye.no/forestillinger/tejaterjam/": {
-   "p": [],
-   "at": 1793102304641
-  },
-  "https://oslonye.no/forestillinger/snofall/": {
-   "p": [
-    {
-     "l": "OBOS",
-     "kr": 650
-    },
-    {
-     "l": "Ordinær",
-     "kr": 810
-    }
-   ],
-   "at": 1793286447606
-  },
-  "https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/": {
    "p": [],
    "at": 1793102304641
   },
@@ -23408,6 +23592,15 @@
   },
   "https://oslonye.no/forestillinger/allsang-i-grensen-3/": {
    "p": [],
+   "at": 1793102304641
+  },
+  "https://oslonye.no/forestillinger/homofil-homofob/": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 410
+    }
+   ],
    "at": 1793102304641
   },
   "https://oslonye.no/forestillinger/jeg-tror-jeg-elsker-deg-nora/": {
