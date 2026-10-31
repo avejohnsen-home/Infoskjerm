@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-31T17:41:41.763Z",
+ "updated": "2026-10-31T18:52:31.487Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-10-31",
-   "h": 18,
+   "h": 19,
    "temp": 8,
    "wind": 1,
    "sym": "cloudy",
@@ -15,15 +15,6 @@
    {
     "date": "2026-10-31",
     "hours": [
-     {
-      "date": "2026-10-31",
-      "h": 18,
-      "temp": 8,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-10-31",
       "h": 19,
@@ -252,7 +243,7 @@
      {
       "date": "2026-11-01",
       "h": 19,
-      "temp": 9,
+      "temp": 8,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -414,7 +405,7 @@
      {
       "date": "2026-11-02",
       "h": 12,
-      "temp": 8,
+      "temp": 9,
       "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
@@ -723,7 +714,6 @@
    "url": "https://christianiateaterscene.no/80",
    "img": "https://cdn.sanity.io/images/g24jximr/production/d87cd56fb506a8dd10ff359cf019c16514f8d812-1850x1850.jpg?h=400&auto=format",
    "times": [
-    "2026-10-31T19:00",
     "2026-11-06T19:00",
     "2026-11-07T19:00",
     "2026-11-13T19:00",
@@ -1060,22 +1050,6 @@
    "shows": [
     {
      "d": "2026-10-31",
-     "t": "19:30",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2612/cb4841f6-5cef-4af0-a19b-ce4e9f41c9ad"
-    },
-    {
-     "d": "2026-10-31",
-     "t": "19:45",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2581/c70e830f-85d6-424c-94fc-794d3359a964"
-    },
-    {
-     "d": "2026-10-31",
      "t": "20:15",
      "c": "Saga",
      "r": "1",
@@ -1117,14 +1091,6 @@
     {
      "d": "2026-11-01",
      "t": "14:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2612/b672104c-a568-4924-81d1-8bbdb6325618"
-    },
-    {
-     "d": "2026-11-01",
-     "t": "14:00",
      "c": "Klingenberg",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
@@ -1137,6 +1103,14 @@
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/91dda58f-0876-45ce-bb86-8ac41785959f"
+    },
+    {
+     "d": "2026-11-01",
+     "t": "14:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/b672104c-a568-4924-81d1-8bbdb6325618"
     },
     {
      "d": "2026-11-01",
@@ -1253,18 +1227,18 @@
     {
      "d": "2026-11-02",
      "t": "20:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2612/31c81f12-4deb-473c-8bac-977ff17ee21e"
-    },
-    {
-     "d": "2026-11-02",
-     "t": "20:00",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/1002/f32d3706-983e-48bd-8aa9-62f0f0a3ad74"
+    },
+    {
+     "d": "2026-11-02",
+     "t": "20:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/31c81f12-4deb-473c-8bac-977ff17ee21e"
     },
     {
      "d": "2026-11-02",
@@ -1303,7 +1277,15 @@
      "t": "12:00",
      "c": "Symra",
      "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb, 70mm",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, 70mm",
+     "u": "https://www.nfkino.no/screening/2590/5970bbbd-4c1c-4e72-90d4-a6100ea64186"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "12:00",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2590/5970bbbd-4c1c-4e72-90d4-a6100ea64186"
     },
     {
@@ -1319,7 +1301,7 @@
      "t": "14:15",
      "c": "Symra",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Seniorkino",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2590/14b79911-7879-4991-bc61-b75134aa87f7"
     },
     {
@@ -1349,18 +1331,18 @@
     {
      "d": "2026-11-03",
      "t": "20:00",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2612/e7f5758c-8ffa-4573-aae6-975093008422"
-    },
-    {
-     "d": "2026-11-03",
-     "t": "20:00",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/1002/ca83f379-6bdf-4041-9ba6-0f9336aa9ac5"
+    },
+    {
+     "d": "2026-11-03",
+     "t": "20:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/e7f5758c-8ffa-4573-aae6-975093008422"
     },
     {
      "d": "2026-11-03",
@@ -3383,7 +3365,7 @@
      "t": "10:20",
      "c": "Saga",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen, Barnefilm",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
      "u": "https://www.nfkino.no/screening/1001/5e42cf09-bc8b-430e-aa85-55b0067c8604"
     },
     {
@@ -3407,7 +3389,7 @@
      "t": "13:30",
      "c": "Colosseum",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen, Barnefilm",
      "u": "https://www.nfkino.no/screening/1002/ae6056fd-edac-4103-97f6-00bcb45c8b44"
     },
     {
@@ -4568,6 +4550,85 @@
    "city": "Oslo"
   },
   {
+   "title": "Rammstein - Live in Mexico City",
+   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003304-1000032830.jpg?itok=hL8xFfwF",
+   "genres": [
+    "Musikkfilm"
+   ],
+   "len": "1 time 50 min",
+   "age": "15 år",
+   "cinemas": [
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-04",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Konsert",
+     "u": "https://www.nfkino.no/screening/2439/2dbd561f-df2e-4854-9d04-ef565e441470"
+    },
+    {
+     "d": "2026-11-06",
+     "t": "20:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Konsert",
+     "u": "https://www.nfkino.no/screening/2439/fc5c1617-a5a9-4cb9-bcf3-c67e4d37a4ae"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-10/gmnt-d5385f3510-19959-vst-6ae09d15b39db.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Rammstein - Live in Mexico City",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-10-31T11:46:52.675Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Odyssey",
+   "url": "https://www.nfkino.no/film/odyssey",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
+   "genres": [],
+   "len": "2 timer 52 min",
+   "age": "12 år",
+   "cinemas": [
+    "Colosseum",
+    "Symra"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-07",
+     "t": "20:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/2590/0fecbfcc-0896-46df-9bdf-b5295fc2cd05"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "21:30",
+     "c": "Colosseum",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/1002/32c22acf-b819-4b28-a810-5384a8049f8e"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1122855-1000027083.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "The Odyssey",
+   "year": "",
+   "rt": "94%",
+   "imdb": "8.4",
+   "ratingsAt": "2026-10-31T11:46:52.723Z",
+   "city": "Oslo"
+  },
+  {
    "title": "Resident Evil",
    "url": "https://www.nfkino.no/film/resident-evil",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
@@ -4689,85 +4750,6 @@
    "rt": "36%",
    "imdb": "6.6",
    "ratingsAt": "2026-10-31T11:46:52.626Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Rammstein - Live in Mexico City",
-   "url": "https://www.nfkino.no/film/rammstein-live-mexico-city",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003304-1000032830.jpg?itok=hL8xFfwF",
-   "genres": [
-    "Musikkfilm"
-   ],
-   "len": "1 time 50 min",
-   "age": "15 år",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-04",
-     "t": "20:30",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Konsert",
-     "u": "https://www.nfkino.no/screening/2439/2dbd561f-df2e-4854-9d04-ef565e441470"
-    },
-    {
-     "d": "2026-11-06",
-     "t": "20:00",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Konsert",
-     "u": "https://www.nfkino.no/screening/2439/fc5c1617-a5a9-4cb9-bcf3-c67e4d37a4ae"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-10/gmnt-d5385f3510-19959-vst-6ae09d15b39db.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Rammstein - Live in Mexico City",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-10-31T11:46:52.675Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "The Odyssey",
-   "url": "https://www.nfkino.no/film/odyssey",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-1122855-1000029999.jpg?itok=bc6PDmOO",
-   "genres": [],
-   "len": "2 timer 52 min",
-   "age": "12 år",
-   "cinemas": [
-    "Colosseum",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-07",
-     "t": "20:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/2590/0fecbfcc-0896-46df-9bdf-b5295fc2cd05"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "21:30",
-     "c": "Colosseum",
-     "r": "1",
-     "v": "2D, Eng. tale, Norsk tekst, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/1002/32c22acf-b819-4b28-a810-5384a8049f8e"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1122855-1000027083.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "The Odyssey",
-   "year": "",
-   "rt": "94%",
-   "imdb": "8.4",
-   "ratingsAt": "2026-10-31T11:46:52.723Z",
    "city": "Oslo"
   },
   {
@@ -6632,38 +6614,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Obsession",
-   "url": "https://www.nfkino.no/film/obsession",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
-   "genres": [
-    "Horror"
-   ],
-   "len": "1 time 49 min",
-   "age": "15 år",
-   "cinemas": [
-    "Vika"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-01",
-     "t": "20:30",
-     "c": "Vika",
-     "r": "3",
-     "v": "2D, Eng. tale, Norsk tekst, Halloween",
-     "u": "https://www.nfkino.no/screening/2612/033ea000-dd81-4687-8a0a-392f5a61d63b"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002174-1000026556.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Obsession",
-   "year": "",
-   "rt": "93%",
-   "imdb": "7.8",
-   "ratingsAt": "2026-10-31T11:46:54.443Z",
-   "city": "Oslo"
-  },
-  {
    "title": "Rose",
    "url": "https://www.nfkino.no/film/rose-0",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002620-1000034616.jpg?itok=yWQ2yfQk",
@@ -7106,6 +7056,38 @@
    "orig": "Hunger Games 1-5 maraton",
    "year": "",
    "ratingsAt": "2026-10-31T11:46:55.547Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Obsession",
+   "url": "https://www.nfkino.no/film/obsession",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002174-1000026289.jpg?itok=zn3INUvh",
+   "genres": [
+    "Horror"
+   ],
+   "len": "1 time 49 min",
+   "age": "15 år",
+   "cinemas": [
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-01",
+     "t": "20:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst, Halloween",
+     "u": "https://www.nfkino.no/screening/2612/033ea000-dd81-4687-8a0a-392f5a61d63b"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002174-1000026556.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Obsession",
+   "year": "",
+   "rt": "93%",
+   "imdb": "7.8",
+   "ratingsAt": "2026-10-31T11:46:54.443Z",
    "city": "Oslo"
   },
   {
@@ -10255,12 +10237,36 @@
  ],
  "chatnoir": [
   {
+   "title": "IREN REPPEN - Sexy nok",
+   "venue": "Chat Noir",
+   "url": "https://www.ticketmaster.no/event/1960937083",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_D9p0spq69?tr=w-600",
+   "times": [
+    "2026-11-01T19:00"
+   ],
+   "hint": "Iren_Reppen",
+   "about": "Iren sier: Det krever litt av en voksen dame å si «Hei, mitt navn er Iren Reppen og jeg er sexy nok. Ganske mye faktisk. Sånt sier man ikke. Jeg sier det aldri. Bare på konserten. Unikt. Jeg kan ikke by på modellkropp, j",
+   "city": "Oslo"
+  },
+  {
+   "title": "Til deg",
+   "venue": "Chat Noir",
+   "url": "https://www.ticketmaster.no/event/1099755286",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3LYeL1MlY?tr=w-600",
+   "times": [
+    "2026-11-03T19:30",
+    "2026-11-24T19:30"
+   ],
+   "hint": "Teater",
+   "about": "Det kan være vanskelig å innrømme at man både er svært følsom og kanskje også ganske ensom, i en verden der alle skal være frigjorte og selvstendige. «Til deg» er en forestilling til alle dem som alltid går med hjertet f",
+   "city": "Oslo"
+  },
+  {
    "title": "TOTAL AVSPORING - En kriminalkomedie i høy hastighet",
    "venue": "Chat Noir",
-   "url": "https://www.ticketmaster.no/event/1197334405",
+   "url": "https://www.ticketmaster.no/event/61043707",
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_O9YCNdX-f?tr=w-600",
    "times": [
-    "2026-10-31T18:00",
     "2026-11-04T19:30",
     "2026-11-05T19:30",
     "2026-11-06T19:30",
@@ -10291,31 +10297,6 @@
    ],
    "hint": "Komedie Chat_Noir",
    "about": "På scenen står Hege Schøyen, Jan Gunnar Røise, Bjarte Hjelmeland og Hilde Louise Asbjørnsen – fire erfarne stjerneskuespillere som tar på seg over 100 roller i denne elleville forestillingen. Med lynraske skift, fysisk k",
-   "city": "Oslo"
-  },
-  {
-   "title": "IREN REPPEN - Sexy nok",
-   "venue": "Chat Noir",
-   "url": "https://www.ticketmaster.no/event/1960937083",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_D9p0spq69?tr=w-600",
-   "times": [
-    "2026-11-01T19:00"
-   ],
-   "hint": "Iren_Reppen",
-   "about": "Iren sier: Det krever litt av en voksen dame å si «Hei, mitt navn er Iren Reppen og jeg er sexy nok. Ganske mye faktisk. Sånt sier man ikke. Jeg sier det aldri. Bare på konserten. Unikt. Jeg kan ikke by på modellkropp, j",
-   "city": "Oslo"
-  },
-  {
-   "title": "Til deg",
-   "venue": "Chat Noir",
-   "url": "https://www.ticketmaster.no/event/1099755286",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_3LYeL1MlY?tr=w-600",
-   "times": [
-    "2026-11-03T19:30",
-    "2026-11-24T19:30"
-   ],
-   "hint": "Teater",
-   "about": "Det kan være vanskelig å innrømme at man både er svært følsom og kanskje også ganske ensom, i en verden der alle skal være frigjorte og selvstendige. «Til deg» er en forestilling til alle dem som alltid går med hjertet f",
    "city": "Oslo"
   },
   {
@@ -14323,7 +14304,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-10-31T17:00:00.000Z"
+  "time": "2026-10-31T18:00:00.000Z"
  },
  "loppis": [
   {
@@ -21896,12 +21877,22 @@
  ],
  "nyehjorten": [
   {
+   "title": "Saturday Swing",
+   "venue": "Nye Hjorten Teater, Foaje",
+   "url": "https://nyehjortenteater.no/program/saturday-swing-med-dr-bekken",
+   "img": "https://cdn.sanity.io/images/w3qmm82w/production/92d743eeb01bdc6cb58f6c151691d00d6dd68fc1-2250x2250.jpg?w=2100&fit=max&auto=format",
+   "times": [
+    "2026-10-31T22:00"
+   ],
+   "hint": "Saturday Swing",
+   "city": "Trondheim"
+  },
+  {
    "title": "Elling og Kjell Bjarne",
    "venue": "Nye Hjorten Teater, Hovedscenen",
    "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
    "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
    "times": [
-    "2026-10-31T19:30",
     "2026-11-05T19:30",
     "2026-11-06T19:30",
     "2026-11-07T19:30",
@@ -21923,17 +21914,6 @@
     "2027-02-13T19:30"
    ],
    "hint": "Elling og Kjell Bjarne",
-   "city": "Trondheim"
-  },
-  {
-   "title": "Saturday Swing",
-   "venue": "Nye Hjorten Teater, Foaje",
-   "url": "https://nyehjortenteater.no/program/saturday-swing-med-dr-bekken",
-   "img": "https://cdn.sanity.io/images/w3qmm82w/production/92d743eeb01bdc6cb58f6c151691d00d6dd68fc1-2250x2250.jpg?w=2100&fit=max&auto=format",
-   "times": [
-    "2026-10-31T22:00"
-   ],
-   "hint": "Saturday Swing",
    "city": "Trondheim"
   },
   {
@@ -22328,10 +22308,6 @@
    "p": [],
    "at": 1793141244303
   },
-  "https://christianiateaterscene.no/80": {
-   "p": [],
-   "at": 1792935780236
-  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/thomas-stronens-extended-ground-feat-fredrik-hoyer-og-havard": {
    "p": [],
    "at": 1793141244303
@@ -22389,7 +22365,7 @@
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/bill-frisell-trio": {
    "p": [],
-   "at": 1792867528094
+   "at": 1793472908118
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/47896/": {
    "p": [],
@@ -22427,6 +22403,10 @@
   "https://cosmopolite.no/program/cosmopolite/2026/november/huun-huur-tu": {
    "p": [],
    "at": 1793144755473
+  },
+  "https://christianiateaterscene.no/80": {
+   "p": [],
+   "at": 1792935780236
   },
   "https://www.rockefeller.no/events/jcp-28-ar/pbfZtNSctF": {
    "p": [],
