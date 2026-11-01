@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-01T05:53:30.974Z",
+ "updated": "2026-11-01T07:08:02.283Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-11-01",
-   "h": 6,
+   "h": 7,
    "temp": 9,
    "wind": 1,
    "sym": "cloudy",
@@ -15,15 +15,6 @@
    {
     "date": "2026-11-01",
     "hours": [
-     {
-      "date": "2026-11-01",
-      "h": 6,
-      "temp": 9,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-11-01",
       "h": 7,
@@ -46,8 +37,8 @@
       "date": "2026-11-01",
       "h": 9,
       "temp": 9,
-      "wind": 1,
-      "sym": "cloudy",
+      "wind": 2,
+      "sym": "fog",
       "rain": 0,
       "span": 1
      },
@@ -55,7 +46,7 @@
       "date": "2026-11-01",
       "h": 10,
       "temp": 9,
-      "wind": 1,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -137,16 +128,16 @@
       "h": 19,
       "temp": 8,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-01",
       "h": 20,
-      "temp": 9,
+      "temp": 8,
       "wind": 3,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -154,7 +145,7 @@
       "date": "2026-11-01",
       "h": 21,
       "temp": 8,
-      "wind": 4,
+      "wind": 5,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -171,7 +162,7 @@
      {
       "date": "2026-11-01",
       "h": 23,
-      "temp": 8,
+      "temp": 7,
       "wind": 5,
       "sym": "clearsky_night",
       "rain": 0,
@@ -179,7 +170,7 @@
      }
     ],
     "max": 9,
-    "min": 8,
+    "min": 7,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -190,7 +181,7 @@
       "date": "2026-11-02",
       "h": 0,
       "temp": 7,
-      "wind": 5,
+      "wind": 4,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -208,7 +199,7 @@
       "date": "2026-11-02",
       "h": 2,
       "temp": 6,
-      "wind": 4,
+      "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -234,7 +225,7 @@
      {
       "date": "2026-11-02",
       "h": 5,
-      "temp": 5,
+      "temp": 6,
       "wind": 3,
       "sym": "clearsky_night",
       "rain": 0,
@@ -261,7 +252,7 @@
      {
       "date": "2026-11-02",
       "h": 8,
-      "temp": 4,
+      "temp": 5,
       "wind": 3,
       "sym": "clearsky_day",
       "rain": 0,
@@ -288,7 +279,7 @@
      {
       "date": "2026-11-02",
       "h": 11,
-      "temp": 7,
+      "temp": 8,
       "wind": 2,
       "sym": "clearsky_day",
       "rain": 0,
@@ -343,7 +334,7 @@
       "date": "2026-11-02",
       "h": 17,
       "temp": 6,
-      "wind": 1,
+      "wind": 2,
       "sym": "clearsky_night",
       "rain": 0,
       "span": 1
@@ -360,7 +351,7 @@
      {
       "date": "2026-11-02",
       "h": 19,
-      "temp": 4,
+      "temp": 5,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -495,7 +486,7 @@
      {
       "date": "2026-11-03",
       "h": 9,
-      "temp": 4,
+      "temp": 3,
       "wind": 0,
       "sym": "clearsky_day",
       "rain": 0,
@@ -1182,7 +1173,15 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Babykino, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/610e13b8-34ac-4b0c-b196-f9db74e8a488"
+    },
+    {
+     "d": "2026-11-02",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/610e13b8-34ac-4b0c-b196-f9db74e8a488"
     },
     {
@@ -1462,7 +1461,15 @@
      "t": "11:30",
      "c": "Symra",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2590/c132d3f1-4bc3-4f66-9149-81c9ad266809"
+    },
+    {
+     "d": "2026-11-05",
+     "t": "11:30",
+     "c": "Symra",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2590/c132d3f1-4bc3-4f66-9149-81c9ad266809"
     },
     {
@@ -1582,7 +1589,15 @@
      "t": "17:30",
      "c": "Ringen",
      "r": "6",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Den Store Kinodagen",
+     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/2439/bab5de7e-a867-4d68-9d86-dcfc2e9140c2"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/bab5de7e-a867-4d68-9d86-dcfc2e9140c2"
     },
     {
@@ -3310,7 +3325,7 @@
      "t": "10:20",
      "c": "Saga",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen, Barnefilm",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
      "u": "https://www.nfkino.no/screening/1001/5e42cf09-bc8b-430e-aa85-55b0067c8604"
     },
     {
@@ -7931,7 +7946,7 @@
      "c": "Symra",
      "r": "2",
      "v": "2D, Tamil tale, Eng. tekst",
-     "u": "https://www.kinowww.nfkino.no/screening/2590/c8b48b80-cb4b-4c44-9e22-05fbf1b28155"
+     "u": "https://www.nfkino.no/screening/2590/c8b48b80-cb4b-4c44-9e22-05fbf1b28155"
     }
    ],
    "trailer": "",
@@ -12998,42 +13013,6 @@
   "hours": [
    {
     "date": "2026-11-01",
-    "h": 1,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 2,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 3,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 4,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 5,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 6,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-01",
     "h": 7,
     "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
@@ -13054,7 +13033,7 @@
     "date": "2026-11-01",
     "h": 10,
     "aqi": 1.4,
-    "main": "ozon"
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-01",
@@ -13077,20 +13056,20 @@
    {
     "date": "2026-11-01",
     "h": 14,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
     "date": "2026-11-01",
     "h": 15,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
     "date": "2026-11-01",
     "h": 16,
     "aqi": 1.5,
-    "main": "fint svevestøv (PM2,5)"
+    "main": "ozon"
    },
    {
     "date": "2026-11-01",
@@ -13119,37 +13098,37 @@
    {
     "date": "2026-11-01",
     "h": 21,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-01",
-    "h": 22,
     "aqi": 1.7,
     "main": "ozon"
    },
    {
     "date": "2026-11-01",
-    "h": 23,
+    "h": 22,
     "aqi": 1.8,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-01",
+    "h": 23,
+    "aqi": 1.9,
     "main": "ozon"
    },
    {
     "date": "2026-11-02",
     "h": 0,
-    "aqi": 1.8,
+    "aqi": 1.9,
     "main": "ozon"
    },
    {
     "date": "2026-11-02",
     "h": 1,
-    "aqi": 1.8,
+    "aqi": 1.9,
     "main": "ozon"
    },
    {
     "date": "2026-11-02",
     "h": 2,
-    "aqi": 1.8,
+    "aqi": 1.9,
     "main": "ozon"
    },
    {
@@ -13197,7 +13176,7 @@
    {
     "date": "2026-11-02",
     "h": 10,
-    "aqi": 1.6,
+    "aqi": 1.7,
     "main": "ozon"
    },
    {
@@ -13209,7 +13188,7 @@
    {
     "date": "2026-11-02",
     "h": 12,
-    "aqi": 1.7,
+    "aqi": 1.8,
     "main": "ozon"
    },
    {
@@ -13233,55 +13212,55 @@
    {
     "date": "2026-11-02",
     "h": 16,
-    "aqi": 1.7,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
     "date": "2026-11-02",
     "h": 17,
-    "aqi": 1.4,
-    "main": "ozon"
+    "aqi": 1.5,
+    "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-11-02",
     "h": 18,
-    "aqi": 1.4,
+    "aqi": 1.5,
     "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-11-02",
     "h": 19,
-    "aqi": 1.4,
+    "aqi": 1.5,
     "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-11-02",
     "h": 20,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-11-02",
     "h": 21,
-    "aqi": 1.5,
-    "main": "NO₂ (eksos)"
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-02",
     "h": 22,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-02",
     "h": 23,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-03",
     "h": 0,
-    "aqi": 1.5,
+    "aqi": 1.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -13305,13 +13284,13 @@
    {
     "date": "2026-11-03",
     "h": 4,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-03",
     "h": 5,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -13327,9 +13306,45 @@
     "main": "svevestøv (PM10)"
    },
    {
+    "date": "2026-11-03",
+    "h": 8,
+    "aqi": 1.7,
+    "main": "svevestøv (PM10)"
+   },
+   {
+    "date": "2026-11-03",
+    "h": 9,
+    "aqi": 1.5,
+    "main": "svevestøv (PM10)"
+   },
+   {
+    "date": "2026-11-03",
+    "h": 10,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-03",
+    "h": 11,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-03",
+    "h": 12,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-03",
+    "h": 13,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
     "date": "2026-11-02",
     "h": 0,
-    "aqi": 1.8,
+    "aqi": 1.9,
     "main": "ozon"
    }
   ]
@@ -14409,7 +14424,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-01T05:00:00.000Z"
+  "time": "2026-11-01T07:00:00.000Z"
  },
  "loppis": [
   {
