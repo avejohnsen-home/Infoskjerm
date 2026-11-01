@@ -82,6 +82,16 @@ body{
 .quizbar span.s{font-size:13px;color:var(--muted)}
 .quizbar.tonight{outline:2px solid var(--signal)}
 .slmbar{margin-top:8px}
+.carbat{display:block;height:6px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden}
+.carbat i{display:block;height:100%;border-radius:3px}
+.carbat.big{height:30px;border-radius:8px;position:relative;margin:4px 0 10px}
+.carbat.big span{position:absolute;inset:0;display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.carmap{border-radius:10px;overflow:hidden;aspect-ratio:16/10;background:var(--line)}
+.carmap iframe{width:100%;height:100%;border:0}
+.cartemp{display:flex;align-items:center;gap:10px;margin:6px 0 10px}
+.cartemp span{flex:1}
+.cartemp b{min-width:44px;text-align:center;font-size:18px}
+.carbtns .mfav:disabled{opacity:.5}
 .slmrow{display:block;text-decoration:none;color:inherit;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
 .slmrow b{display:block}
 .slmrow small{color:var(--muted)}
@@ -326,6 +336,7 @@ body{background:var(--bg);color:var(--ink)}
   <section class="transit" id="transit" aria-label="Avganger"></section>
   <button class="quizbar" id="quizbar" hidden></button>
   <button class="quizbar slmbar" id="slmbar" hidden></button>
+  <button class="quizbar slmbar" id="carbar" hidden></button>
 
   <p class="demo" id="banner" hidden></p>
 
@@ -973,6 +984,84 @@ function renderStandup(){
     b.addEventListener("click",()=>openShow(s));el.appendChild(card(b,s._t,s))});
   document.getElementById("srcS").textContent=list.length?`Kilde: Latter, Chat Noir, Chateau Neuf, Cosmopolite m.fl. ${shown.length} forestillinger.`:"Fant ingen stand-up ennå.";
 }
+
+// ---------- Bil (Nissan Leaf) – bare på din egen lenke: …/?ave#k=nøkkel ----------
+// Dataene ligger kryptert i bil.enc.json. Nøkkelen står bare i lenken (etter #), som aldri sendes til noen server.
+const REPO="avejohnsen-home/Infoskjerm";
+const CAR_K=new URLSearchParams(location.hash.slice(1)).get("k")||"";
+const CAR_ON=SHOW_SLM&&CAR_K.length>=40;
+let CAR=null,carKeyObj=null,carPending=null,carPollT=null;
+let carTemp=21;try{carTemp=Number(localStorage.getItem("infoskjerm:biltemp"))||21}catch{}
+async function carKey(){if(!carKeyObj){const s=CAR_K.replace(/-/g,"+").replace(/_/g,"/");const raw=Uint8Array.from(atob(s+"=".repeat((4-s.length%4)%4)),c=>c.charCodeAt(0));
+  carKeyObj=await crypto.subtle.importKey("raw",raw,"AES-GCM",false,["decrypt"])}return carKeyObj}
+async function carDecrypt(box){const b=x=>Uint8Array.from(atob(x),c=>c.charCodeAt(0));
+  const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(box.iv)},await carKey(),b(box.ct));return JSON.parse(new TextDecoder().decode(pt))}
+async function loadCar(){
+  if(!CAR_ON)return;
+  try{let r;
+    if(CAR&&CAR.token)r=await fetch(`https://api.github.com/repos/${REPO}/contents/bil.enc.json?ref=main&t=${Date.now()}`,{headers:{Authorization:"Bearer "+CAR.token,Accept:"application/vnd.github.raw+json"},cache:"no-store"});
+    if(!r||!r.ok)r=await fetch("bil.enc.json?"+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw new Error("ingen bildata ennå");
+    CAR=await carDecrypt(await r.json());renderCar();
+  }catch(e){console.log("Bil:",e.message)}
+}
+const ago=iso=>{if(!iso)return"";const m=Math.round((Date.now()-new Date(iso))/6e4);return m<1?"nå nettopp":m<60?`for ${m} min siden`:m<1440?`for ${Math.round(m/60)} t siden`:fmtDT(new Date(iso))};
+const socColor=p=>p==null?"var(--muted)":p<20?"#D63B3B":p<50?"#E9B437":"#3F9F41";
+function renderCar(){
+  const bar=document.getElementById("carbar");if(!bar)return;const c=CAR&&CAR.car;
+  if(!CAR_ON||!c||c.soc==null){bar.hidden=true;return}
+  const bits=[c.range!=null?`${c.range} km`:"",c.charging?"⚡ Lader":c.plugged?"🔌 Tilkoblet":"",c.hvacOn?"❄️ Klima på":"",c.cabinTemp!=null?`🌡️ ${c.cabinTemp}° inne`:""].filter(Boolean);
+  bar.hidden=false;bar.classList.toggle("tonight",!!(c.charging||c.hvacOn||carPending));
+  bar.innerHTML=`<span class="qi">🚗</span><span style="flex:1"><b>${esc(c.name||"Leaf")}: ${c.soc} %</b><span class="s">${bits.join(" · ")}${carPending?" · ⏳ venter på bilen …":""}</span>
+    <span class="carbat"><i style="width:${Math.max(3,Math.min(100,c.soc))}%;background:${socColor(c.soc)}"></i></span></span>`;
+  if(modal.open&&modal.dataset.car==="1")carBody();
+}
+function carBody(){
+  const c=CAR.car,la=CAR.lastAction,row=(k,v)=>v===""||v==null?"":`<div class="irow"><span>${k}</span><b>${v}</b></div>`;
+  let h="";
+  if(c.lat!=null&&c.lon!=null){const d=.004;h+=`<div class="carmap"><iframe loading="lazy" title="Kart" src="https://www.openstreetmap.org/export/embed.html?bbox=${c.lon-d*2},${c.lat-d},${c.lon+d*2},${c.lat+d}&layer=mapnik&marker=${c.lat},${c.lon}"></iframe></div>
+    <p class="pnote" style="margin:4px 0 10px">Posisjon ${esc(ago(c.locUpdated))}</p>`}
+  h+=`<div class="carbat big"><i style="width:${Math.max(3,Math.min(100,c.soc||0))}%;background:${socColor(c.soc)}"></i><span>${c.soc??"?"} %</span></div>`;
+  h+=row("🔋 Rekkevidde",c.range!=null?`${c.range} km`+(c.rangeHvacOn!=null?` (${c.rangeHvacOn} km med klima)`:""):null);
+  h+=row("⚡ Lading",c.charging?`Lader${c.toFull?` · ca. ${Math.floor(c.toFull/60)} t ${c.toFull%60} min til fullt`:""}`:c.plugged?"Tilkoblet, lader ikke":"Ikke tilkoblet");
+  h+=row("❄️ Klima",c.hvacOn==null?null:c.hvacOn?"På":"Av");
+  h+=row("🌡️ Inne i bilen",c.cabinTemp!=null?`${c.cabinTemp}°`:null);
+  h+=row("🔋 Batteritemperatur",c.batteryTemp!=null?`${c.batteryTemp}°`:null);
+  h+=row("🔒 Dører",c.locked==null?null:c.locked?"Låst":"Ulåst");
+  h+=row("🛣️ Kilometerstand",c.mileage!=null?`${c.mileage.toLocaleString("nb-NO")} km`:null);
+  h+=row("Batteristatus fra bilen",esc(ago(c.battUpdated)));
+  h+=`<div class="ihead">Fjernstyring</div>
+    <div class="cartemp"><span>Temperatur</span><button class="chip" data-t="-1">−</button><b id="carT">${carTemp}°</b><button class="chip" data-t="1">+</button></div>
+    <div class="carbtns"><button class="mfav" data-a="hvac-start">❄️🔥 Start klima</button><button class="mfav" data-a="hvac-stop">Stopp klima</button>
+    <button class="mfav" data-a="refresh">🔄 Hent fersk status fra bilen</button>${c.plugged&&!c.charging?`<button class="mfav" data-a="charge-start">⚡ Start lading</button>`:""}</div>`;
+  if(carPending)h+=`<p class="pnote">⏳ ${esc(ACT_TXT[carPending.a]||carPending.a)} er sendt. Det tar vanligvis 1–2 minutter før bilen svarer.</p>`;
+  else if(la)h+=`<p class="pnote">Sist: ${esc(ACT_TXT[la.name]||la.name)} ${la.ok?"✔":"✖ feilet"} ${esc(ago(la.at))}${la.error?" – "+esc(la.error):""}</p>`;
+  if(!CAR.token)h+=`<p class="pnote">Fjernstyring er ikke satt opp ennå (mangler BIL_TOKEN).</p>`;
+  const el=document.getElementById("mdesc");el.innerHTML=h;
+  el.querySelectorAll("[data-t]").forEach(b=>b.addEventListener("click",()=>{carTemp=Math.min(26,Math.max(16,carTemp+Number(b.dataset.t)));try{localStorage.setItem("infoskjerm:biltemp",carTemp)}catch{}document.getElementById("carT").textContent=carTemp+"°"}));
+  el.querySelectorAll("[data-a]").forEach(b=>{b.disabled=!!carPending||!CAR.token;b.addEventListener("click",()=>carSend(b.dataset.a))});
+}
+const ACT_TXT={"hvac-start":"Start klima","hvac-stop":"Stopp klima","refresh":"Oppdatering","charge-start":"Start lading"};
+async function carSend(a){
+  if(!CAR||!CAR.token||carPending)return;
+  carPending={a,at:Date.now()};renderCar();
+  try{const r=await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/bil.yml/dispatches`,{method:"POST",
+      headers:{Authorization:"Bearer "+CAR.token,Accept:"application/vnd.github+json","Content-Type":"application/json"},body:JSON.stringify({ref:"main",inputs:{action:a,temp:String(carTemp)}})});
+    if(r.status!==204)throw new Error("GitHub svarte "+r.status);
+  }catch(e){carPending=null;renderCar();alertCar("Kunne ikke sende: "+e.message);return}
+  clearInterval(carPollT);let n=0;
+  carPollT=setInterval(async()=>{n++;await loadCar();
+    if((CAR.lastAction&&new Date(CAR.lastAction.at)>carPending.at-5000)||n>18){clearInterval(carPollT);carPending=null;renderCar()}},20000);
+}
+function alertCar(t){const el=document.getElementById("mdesc");if(modal.open&&modal.dataset.car==="1")el.insertAdjacentHTML("afterbegin",`<p class="pnote" style="color:#D63B3B">${esc(t)}</p>`)}
+setTimeout(()=>{ // venter til vinduet (modal) er definert lenger ned
+document.getElementById("carbar").addEventListener("click",()=>{if(!CAR)return;const c=CAR.car;
+  const link=c.lat!=null?`https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lon}`:"https://www.nissan.no/";
+  fill(c.name||"Nissan Leaf","background:linear-gradient(135deg,#1F3A5F,#3F9F41)","",[],link,c.lat!=null?"Åpne posisjonen i Google Maps":"Nissan");
+  modal.dataset.car="1";carBody();});
+modal.addEventListener("close",()=>{modal.dataset.car=""});
+if(CAR_ON){loadCar();setInterval(loadCar,5*60*1000)}
+},0);
 
 // ---------- Faner (ingen automatisk bytting) ----------
 const tabs=[...document.querySelectorAll(".tab")],slides=[0,1,2,3,4,5].map(i=>document.getElementById("s"+i));
