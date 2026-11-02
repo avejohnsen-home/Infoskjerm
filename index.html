@@ -641,7 +641,7 @@ async function load(){
   prepStatus();LIVE={};renderWeather(DATA.weather);renderTheatre();renderFilms();renderQuiz();renderConcerts();renderVink();renderWatch();renderInfo();renderStandup();renderSlm();
   const u=new Date(DATA.updated);
   document.getElementById("updated").textContent=`Oppdatert ${fmtDT(u)}`;
-  const bn=document.getElementById("banner");bn.textContent=DATA.errors&&DATA.errors.length?"Noen kilder kunne ikke hentes sist, viser forrige data.":"";bn.hidden=!bn.textContent;
+  const bn=document.getElementById("banner");bn.textContent="";bn.hidden=true; // feil fra hentejobben står fortsatt i data.json ("errors"), men vises ikke på skjermen
 }
 load();setInterval(load,30*60*1000);
 
