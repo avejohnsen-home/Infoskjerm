@@ -1,11 +1,13 @@
 {
- "updated": "2026-11-02T19:58:46.252Z",
- "errors": [],
+ "updated": "2026-11-02T20:52:54.162Z",
+ "errors": [
+  "films: fetch failed"
+ ],
  "weather": {
   "now": {
    "date": "2026-11-02",
-   "h": 20,
-   "temp": 5,
+   "h": 21,
+   "temp": 4,
    "wind": 1,
    "sym": "clearsky_night",
    "rain": 0,
@@ -15,15 +17,6 @@
    {
     "date": "2026-11-02",
     "hours": [
-     {
-      "date": "2026-11-02",
-      "h": 20,
-      "temp": 5,
-      "wind": 1,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-11-02",
       "h": 21,
@@ -52,7 +45,7 @@
       "span": 1
      }
     ],
-    "max": 5,
+    "max": 4,
     "min": 4,
     "rain": 0,
     "sym": "clearsky_night"
@@ -13194,7 +13187,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-02T19:00:00.000Z"
+  "time": "2026-11-02T20:00:00.000Z"
  },
  "loppis": [
   {
