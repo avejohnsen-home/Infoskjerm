@@ -92,6 +92,14 @@ body{
 .cartemp span{flex:1}
 .cartemp b{min-width:44px;text-align:center;font-size:18px}
 .carbtns .mfav:disabled{opacity:.5}
+.scootmap{border-radius:10px;overflow:hidden;aspect-ratio:1/1;max-height:46vh;width:100%;background:var(--line);margin-bottom:8px}
+.scootops{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 6px}
+.scootops .chip{cursor:default}
+.scootrow{display:grid;grid-template-columns:14px 1fr auto auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.scootrow .dot{width:12px;height:12px;border-radius:50%}
+.scootrow .d{font-weight:700;font-variant-numeric:tabular-nums}
+.scootrow small{color:var(--muted);font-size:13px}
+.scootrow .b{font-variant-numeric:tabular-nums;font-size:13px;text-align:right;min-width:52px}
 .slmrow{display:block;text-decoration:none;color:inherit;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
 .slmrow b{display:block}
 .slmrow small{color:var(--muted)}
@@ -337,6 +345,7 @@ body{background:var(--bg);color:var(--ink)}
   <button class="quizbar" id="quizbar" hidden></button>
   <button class="quizbar slmbar" id="slmbar" hidden></button>
   <button class="quizbar slmbar" id="carbar" hidden></button>
+  <button class="quizbar slmbar" id="scootbar" hidden></button>
 
   <p class="demo" id="banner" hidden></p>
 
@@ -1061,6 +1070,90 @@ document.getElementById("carbar").addEventListener("click",()=>{if(!CAR)return;c
   modal.dataset.car="1";carBody();});
 modal.addEventListener("close",()=>{modal.dataset.car=""});
 if(CAR_ON){loadCar();setInterval(loadCar,5*60*1000)}
+},0);
+
+// ---------- Sparkesykler (Entur Mobility, sanntid) – bare på din egen lenke ----------
+// Hjemmeadressen står bare i lenken etter #, f.eks. …/?ave#k=…&hjem=Gatenavn+12
+// (eller &hjem=59.9234,10.7590). Den sendes aldri til GitHub og står ikke i koden.
+const SC_RANGE=300; // meter rundt hjemme
+const SC_HJEM=(new URLSearchParams(location.hash.slice(1)).get("hjem")||"").trim();
+const SC_ON=SHOW_SLM;
+const SC_COL={Voi:"#F26961",Bolt:"#34D186",Ryde:"#4FA3F7"};
+let SC=null,SC_HOME=null,scMap=null,scLayer=null;
+const scOp=v=>{const n=((((v.system||{}).operator||{}).name||{}).translation||[]).map(t=>t.value).join(" ")||((v.system||{}).id||"");
+  return /voi/i.test(n)?"Voi":/bolt/i.test(n)?"Bolt":/ryde/i.test(n)?"Ryde":n.replace(/\s*oslo\s*/i,"")||"Ukjent"};
+const scCol=o=>SC_COL[o]||"#B9A27A";
+function scDist(a,b,c,d){const R=6371e3,r=x=>x*Math.PI/180,dl=r(c-a),dn=r(d-b);
+  const h=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+function scDir(a,b,c,d){const y=Math.sin((d-b)*Math.PI/180)*Math.cos(c*Math.PI/180),x=Math.cos(a*Math.PI/180)*Math.sin(c*Math.PI/180)-Math.sin(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.cos((d-b)*Math.PI/180);
+  return ["nord","nordøst","øst","sørøst","sør","sørvest","vest","nordvest"][Math.round(((Math.atan2(y,x)*180/Math.PI)+360)%360/45)%8]}
+async function scHome(){
+  if(SC_HOME)return SC_HOME;
+  const m=SC_HJEM.match(/^(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$/);
+  if(m)return SC_HOME={lat:+m[1],lon:+m[2],label:"Hjemme"};
+  if(!SC_HJEM){ // reserve til vi har adressen: Olaf Ryes plass
+    return SC_HOME={lat:59.9228,lon:10.7579,label:"Olaf Ryes plass",fallback:true}}
+  const key="infoskjerm:hjem:"+SC_HJEM;
+  try{const c=JSON.parse(localStorage.getItem(key)||"null");if(c)return SC_HOME=c}catch{}
+  const r=await fetch("https://api.entur.io/geocoder/v1/autocomplete?"+new URLSearchParams({text:SC_HJEM+" Oslo",size:"5",layers:"address",lang:"no"}),{headers:EH});
+  const f=((await r.json()).features||[])[0];if(!f)throw new Error("fant ikke adressen");
+  SC_HOME={lat:f.geometry.coordinates[1],lon:f.geometry.coordinates[0],label:f.properties.label||f.properties.name||SC_HJEM};
+  try{localStorage.setItem(key,JSON.stringify(SC_HOME))}catch{}
+  return SC_HOME;
+}
+const SCQ=`query($lat:Float!,$lon:Float!,$range:Int!){vehicles(lat:$lat,lon:$lon,range:$range,count:200){id lat lon currentFuelPercent currentRangeMeters vehicleType{formFactor} system{id operator{name{translation{value}}}}}}`;
+async function loadScoot(){
+  if(!SC_ON||isNight())return;
+  try{const h=await scHome();
+    const r=await fetch("https://api.entur.io/mobility/v2/graphql",{method:"POST",headers:{...EH,"Content-Type":"application/json"},body:JSON.stringify({query:SCQ,variables:{lat:h.lat,lon:h.lon,range:SC_RANGE}})});
+    const j=await r.json();if(j.errors&&!j.data)throw new Error(j.errors[0].message);
+    SC=((j.data||{}).vehicles||[]).filter(v=>/SCOOTER/i.test((v.vehicleType||{}).formFactor||"")).map(v=>{
+      let p=v.currentFuelPercent;if(p!=null&&p<=1)p=p*100;
+      return {id:v.id,lat:v.lat,lon:v.lon,op:scOp(v),pct:p==null?null:Math.round(p),km:v.currentRangeMeters!=null?Math.round(v.currentRangeMeters/1000):null,
+        m:Math.round(scDist(h.lat,h.lon,v.lat,v.lon)),dir:scDir(h.lat,h.lon,v.lat,v.lon)}}).filter(v=>v.m<=SC_RANGE).sort((a,b)=>a.m-b.m);
+    SC.at=Date.now();
+  }catch(e){console.log("Sparkesykler:",e.message);if(!SC)SC={err:e.message}}
+  renderScoot();
+}
+function renderScoot(){
+  const bar=document.getElementById("scootbar");if(!SC_ON||!SC){bar.hidden=true;return}
+  bar.hidden=false;
+  if(SC.err){bar.innerHTML=`<span class="qi">🛴</span><span><b>Sparkesykler utilgjengelig nå</b><span class="s">${esc(SC.err)}</span></span>`;return}
+  const per={};SC.forEach(v=>per[v.op]=(per[v.op]||0)+1);
+  const n=SC[0];
+  bar.innerHTML=`<span class="qi">🛴</span><span style="flex:1"><b>${SC.length?`${SC.length} ledige sparkesykler innen ${SC_RANGE} m`:`Ingen ledige sparkesykler innen ${SC_RANGE} m`}</b><span class="s">${SC.length?`Nærmest: ${esc(n.op)} ${n.m} m ${esc(n.dir)}${n.pct!=null?` (${n.pct} %)`:""} · `+Object.entries(per).sort((a,b)=>b[1]-a[1]).map(([o,c])=>`${esc(o)} ${c}`).join(", "):"Trykk for kart"}${SC_HOME&&SC_HOME.fallback?" · fra Olaf Ryes plass":""}</span></span>`;
+  if(modal.open&&modal.dataset.scoot==="1")scootBody();
+}
+function scLeaflet(){return window.L?Promise.resolve():new Promise((ok,no)=>{
+  const c=document.createElement("link");c.rel="stylesheet";c.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";document.head.appendChild(c);
+  const s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+async function scootBody(){
+  const el=document.getElementById("mdesc"),h=SC_HOME,list=(SC&&!SC.err)?SC:[];
+  const per={};list.forEach(v=>per[v.op]=(per[v.op]||0)+1);
+  let rows=list.slice(0,40).map(v=>`<div class="scootrow"><span class="dot" style="background:${scCol(v.op)}"></span><span><b>${esc(v.op)}</b> <small>${esc(v.dir)}</small></span><span class="d">${v.m} m</span><span class="b">${v.pct!=null?`<span style="color:${socColor(v.pct)}">${v.pct} %</span>`:""}${v.km!=null?`<br><small>${v.km} km</small>`:""}</span></div>`).join("");
+  if(!list.length)rows=`<p class="pnote">Ingen ledige sparkesykler innen ${SC_RANGE} m akkurat nå.</p>`;
+  const head=`<div class="scootops">${Object.entries(per).sort((a,b)=>b[1]-a[1]).map(([o,c])=>`<span class="chip"><span style="color:${scCol(o)}">●</span> ${esc(o)} ${c}</span>`).join("")}</div>`;
+  const note=`<p class="pnote">Fra ${esc(h?h.label:"hjemme")}${h&&h.fallback?" – legg til &hjem=din adresse i lenken for å bruke hjemmet ditt":""}. Oppdatert ${esc(ago(SC&&SC.at?new Date(SC.at).toISOString():""))}. Kilde: Entur.</p>`;
+  if(!document.getElementById("scmap")){
+    el.innerHTML=`<div class="scootmap" id="scmap"></div><div id="sclist"></div>`;
+    try{await scLeaflet();if(!document.getElementById("scmap"))return;
+      scMap=L.map("scmap",{zoomControl:false,attributionControl:true}).setView([h.lat,h.lon],16);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap"}).addTo(scMap);
+      L.circle([h.lat,h.lon],{radius:SC_RANGE,color:"#E9B437",weight:2,fillOpacity:.06}).addTo(scMap);
+      L.circleMarker([h.lat,h.lon],{radius:8,color:"#140E0A",weight:3,fillColor:"#E9B437",fillOpacity:1}).addTo(scMap).bindTooltip("🏠");
+      scLayer=L.layerGroup().addTo(scMap);
+      setTimeout(()=>scMap&&scMap.invalidateSize(),150);
+    }catch(e){document.getElementById("scmap").remove()}
+  }
+  if(scLayer){scLayer.clearLayers();list.forEach(v=>L.circleMarker([v.lat,v.lon],{radius:7,color:"#fff",weight:2,fillColor:scCol(v.op),fillOpacity:1}).addTo(scLayer).bindTooltip(`${esc(v.op)} · ${v.m} m${v.pct!=null?` · ${v.pct} %`:""}`))}
+  document.getElementById("sclist").innerHTML=head+rows+note;
+}
+setTimeout(()=>{ // venter til vinduet (modal) er definert lenger ned
+document.getElementById("scootbar").addEventListener("click",()=>{if(!SC||!SC_HOME)return;
+  fill("Sparkesykler i nærheten","background:linear-gradient(135deg,#2A1F14,#3F6F5A)","",[],"https://ruter.no/flere-transporttilbud/sykkel-og-elsparkesykkel/kjore-i-appen","Lei i Ruter-appen eller operatørens app");
+  modal.dataset.scoot="1";scootBody();loadScoot();});
+modal.addEventListener("close",()=>{modal.dataset.scoot="";if(scMap){scMap.remove();scMap=null;scLayer=null}});
+if(SC_ON){loadScoot();setInterval(loadScoot,60*1000)}
 },0);
 
 // ---------- Faner (ingen automatisk bytting) ----------
