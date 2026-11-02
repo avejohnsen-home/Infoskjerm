@@ -82,6 +82,12 @@ body{
 .quizbar span.s{font-size:13px;color:var(--muted)}
 .quizbar.tonight{outline:2px solid var(--signal)}
 .slmbar{margin-top:8px}
+/* Quiz + SLM til venstre, Leaf + sparkesykler til høyre. En tom kolonne skjules, så den andre tar hele bredden. */
+.bars{display:flex;gap:10px;margin-top:10px;align-items:stretch}
+.barcol{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px}
+.barcol:not(:has(> :not([hidden]))){display:none}
+.bars .quizbar{margin:0;flex:1 1 auto}
+.bars .quizbar>span:not(.qi){min-width:0}
 .carbat{display:block;height:6px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden}
 .carbat i{display:block;height:100%;border-radius:3px}
 .carbat.big{height:30px;border-radius:8px;position:relative;margin:4px 0 10px}
@@ -342,10 +348,16 @@ body{background:var(--bg);color:var(--ink)}
   <div class="days" id="days"></div>
   <button class="infoline" id="infoline" aria-label="Luft, sol, måne og søppel – trykk for detaljer"></button>
   <section class="transit" id="transit" aria-label="Avganger"></section>
-  <button class="quizbar" id="quizbar" hidden></button>
-  <button class="quizbar slmbar" id="slmbar" hidden></button>
-  <button class="quizbar slmbar" id="carbar" hidden></button>
-  <button class="quizbar slmbar" id="scootbar" hidden></button>
+  <div class="bars">
+    <div class="barcol">
+      <button class="quizbar" id="quizbar" hidden></button>
+      <button class="quizbar slmbar" id="slmbar" hidden></button>
+    </div>
+    <div class="barcol">
+      <button class="quizbar slmbar" id="carbar" hidden></button>
+      <button class="quizbar slmbar" id="scootbar" hidden></button>
+    </div>
+  </div>
 
   <p class="demo" id="banner" hidden></p>
 
