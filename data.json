@@ -1,6 +1,9 @@
 {
- "updated": "2026-11-04T11:24:11.938Z",
- "errors": [],
+ "updated": "2026-11-04T13:14:40.705Z",
+ "errors": [
+  "weather: Unterminated string in JSON at position 1175 (line 1 column 1176)",
+  "films: fetch failed"
+ ],
  "weather": {
   "now": {
    "date": "2026-11-04",
@@ -13292,26 +13295,6 @@
  ],
  "kilden": [
   {
-   "title": "Heavy Breathers",
-   "venue": "Kilden",
-   "url": "https://kilden.com/program/42808-heavy-breathers/",
-   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42808%2Fsquare.webp?version=ImpaqZ7xtLHe2W+6X1LyIg==",
-   "times": [
-    "2026-11-04T12:00",
-    "2026-11-05T19:00",
-    "2026-11-06T19:00",
-    "2026-11-07T18:00",
-    "2026-11-10T19:00",
-    "2026-11-11T19:00",
-    "2026-11-12T19:00",
-    "2026-11-13T19:00",
-    "2026-11-14T18:00"
-   ],
-   "hint": "Teater U30 av Susie Wang",
-   "about": "av Susie Wang",
-   "city": "Kristiansand"
-  },
-  {
    "title": "Kort og klassisk: Sibelius' mest populære symfoni",
    "venue": "Kilden",
    "url": "https://kilden.com/program/47209-kort-og-klassisk-sibelius-mest-populaere-symfoni/",
@@ -13359,6 +13342,25 @@
    ],
    "hint": "Klassisk Konsert KSO med Kristiansand Symfoniorkester",
    "about": "med Kristiansand Symfoniorkester",
+   "city": "Kristiansand"
+  },
+  {
+   "title": "Heavy Breathers",
+   "venue": "Kilden",
+   "url": "https://kilden.com/program/42808-heavy-breathers/",
+   "img": "https://storage.googleapis.com/pim-ambio.appspot.com/clients%2FVRGxPdlyrQnBe9dD6DxX%2Fproductions%2F42808%2Fsquare.webp?version=ImpaqZ7xtLHe2W+6X1LyIg==",
+   "times": [
+    "2026-11-05T19:00",
+    "2026-11-06T19:00",
+    "2026-11-07T18:00",
+    "2026-11-10T19:00",
+    "2026-11-11T19:00",
+    "2026-11-12T19:00",
+    "2026-11-13T19:00",
+    "2026-11-14T18:00"
+   ],
+   "hint": "Teater U30 av Susie Wang",
+   "about": "av Susie Wang",
    "city": "Kristiansand"
   },
   {
@@ -14155,7 +14157,7 @@
     "2027-02-25T19:30",
     "2027-02-26T19:30"
    ],
-   "hint": "Teater U30 av Petter Width Kristiansen",
+   "hint": "Teater av Petter Width Kristiansen",
    "about": "av Petter Width Kristiansen",
    "city": "Kristiansand"
   },
@@ -15543,42 +15545,6 @@
   "hours": [
    {
     "date": "2026-11-04",
-    "h": 7,
-    "aqi": 1.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
-    "h": 8,
-    "aqi": 1.9,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
-    "h": 9,
-    "aqi": 1.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
-    "h": 10,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
-    "h": 11,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
-    "h": 12,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-04",
     "h": 13,
     "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
@@ -15604,19 +15570,19 @@
    {
     "date": "2026-11-04",
     "h": 17,
-    "aqi": 2.1,
+    "aqi": 2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-04",
     "h": 18,
-    "aqi": 2.6,
+    "aqi": 2.3,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-04",
     "h": 19,
-    "aqi": 2.9,
+    "aqi": 2.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15634,13 +15600,13 @@
    {
     "date": "2026-11-04",
     "h": 22,
-    "aqi": 3,
+    "aqi": 3.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-04",
     "h": 23,
-    "aqi": 2.8,
+    "aqi": 2.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15652,37 +15618,37 @@
    {
     "date": "2026-11-05",
     "h": 1,
-    "aqi": 2.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-05",
-    "h": 2,
     "aqi": 2.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
+    "h": 2,
+    "aqi": 2.8,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-05",
     "h": 3,
-    "aqi": 2.4,
+    "aqi": 2.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
     "h": 4,
-    "aqi": 1.9,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
     "h": 5,
-    "aqi": 1.6,
+    "aqi": 1.8,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
     "h": 6,
-    "aqi": 1.4,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15700,8 +15666,8 @@
    {
     "date": "2026-11-05",
     "h": 9,
-    "aqi": 1.5,
-    "main": "NO₂ (eksos)"
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
@@ -15718,7 +15684,7 @@
    {
     "date": "2026-11-05",
     "h": 12,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15730,7 +15696,7 @@
    {
     "date": "2026-11-05",
     "h": 14,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15748,7 +15714,7 @@
    {
     "date": "2026-11-05",
     "h": 17,
-    "aqi": 2.3,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15760,19 +15726,19 @@
    {
     "date": "2026-11-05",
     "h": 19,
-    "aqi": 2.3,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
     "h": 20,
-    "aqi": 2.3,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-05",
     "h": 21,
-    "aqi": 2.2,
+    "aqi": 2.3,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15784,25 +15750,25 @@
    {
     "date": "2026-11-05",
     "h": 23,
-    "aqi": 1.9,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-06",
-    "h": 0,
     "aqi": 1.8,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-06",
+    "h": 0,
+    "aqi": 1.7,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-06",
     "h": 1,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-06",
     "h": 2,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15826,13 +15792,13 @@
    {
     "date": "2026-11-06",
     "h": 6,
-    "aqi": 1.4,
+    "aqi": 1.3,
     "main": "ozon"
    },
    {
     "date": "2026-11-06",
     "h": 7,
-    "aqi": 1.4,
+    "aqi": 1.3,
     "main": "NO₂ (eksos)"
    },
    {
@@ -15844,13 +15810,13 @@
    {
     "date": "2026-11-06",
     "h": 9,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "NO₂ (eksos)"
    },
    {
     "date": "2026-11-06",
     "h": 10,
-    "aqi": 1.8,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -15868,7 +15834,43 @@
    {
     "date": "2026-11-06",
     "h": 13,
+    "aqi": 1.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 14,
     "aqi": 1.3,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 15,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 16,
+    "aqi": 1.3,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 17,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 18,
+    "aqi": 1.9,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-06",
+    "h": 19,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -16958,7 +16960,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-04T11:00:00.000Z"
+  "time": "2026-11-04T12:00:00.000Z"
  },
  "loppis": [
   {
@@ -24280,138 +24282,6 @@
    "about": "",
    "hint": "XTZ Impro Impro Kjøp billettXTZ IMPRO 10 ÅR5. februar Kjøp billett",
    "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-0",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005.png?h=1a020742&itok=17k61R99",
-   "from": "2027-02-11",
-   "to": "2027-02-11",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth11. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005_0.png?itok=rpsCydTg",
-   "from": "2027-02-12",
-   "to": "2027-02-12",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth12. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Balletak på bransjen - Et standupshow av og med Henrik Fladseth",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-1",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/fladseth-balletak-1920x1005_1.png?itok=8vkw7Sf1",
-   "from": "2027-02-13",
-   "to": "2027-02-13",
-   "about": "",
-   "hint": "Vivant Humor Kjøp billettBalletak på bransjen - Et standupshow av og med Henrik Fladseth13. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Candura",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/candura",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/R1-07176-033A-3.jpeg?itok=QmrCz7UA",
-   "from": "2027-02-27",
-   "to": "2027-02-27",
-   "about": "",
-   "hint": "Cosmopolite Scene Bossanova Kjøp billettCandura27. februar Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Madison McFerrin",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/madison-mcferrin",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/_MG_4741.jpg?h=59da4e48&itok=kI19PHSp",
-   "from": "2027-03-04",
-   "to": "2027-03-04",
-   "about": "",
-   "hint": "Cosmopolite Scene Jazz R&B Neo-soul Kjøp billettMadison McFerrin4. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "The Breath",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/breath",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/The%20Breath%202048x1366%20PH%20pic%202%20July2023%20%281%29.jpg?itok=CjeJx5mK",
-   "from": "2027-03-05",
-   "to": "2027-03-05",
-   "about": "",
-   "hint": "Cosmopolite Scene Folk Jazz Kjøp billettThe Breath 5. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Sūn Byrd",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/sun-byrd",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-11/SB7%20Credits-Jorgen_Kasbo.JPG?itok=m5xZPbCC",
-   "from": "2027-03-13",
-   "to": "2027-03-13",
-   "about": "",
-   "hint": "Cosmopolite Scene Soul R&B Kjøp billettSūn Byrd 13. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Orchestra Baobab",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/orchestra-baobab",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/image001.jpg.png?h=e9b6ce66&itok=vGaG8sxt",
-   "from": "2027-03-18",
-   "to": "2027-03-18",
-   "about": "",
-   "hint": "Cosmopolite Scene Afrokubansk jazz Kjøp billettOrchestra Baobab18. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "TRINA The New Room album release",
-   "venue": "Cosmopolite, Belleville",
-   "url": "https://cosmopolite.no/program/belleville/2027/april/trina-new-room-album-release",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/The%20New%20Room%20Concerts_8608.jpg?itok=Xhfm6o6P",
-   "from": "2027-04-01",
-   "to": "2027-04-01",
-   "about": "",
-   "hint": "Trina Coleman Music Studio Jazz Soul Kjøp billettTRINA The New Room album release1. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "MARIAM: Amadou & Mariam",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/mariam-amadou-mariam",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/mariam%20sings.png?h=208c9346&itok=ZF_7wfiL",
-   "from": "2027-04-02",
-   "to": "2027-04-02",
-   "about": "",
-   "hint": "Cosmopolite Scene Afro-pop Blues Kjøp billettMARIAM: Amadou & Mariam2. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Disco Fever",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/disco-fever",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/Cosmopolite_83173397881368_6661298493319896890_Backdrop%20.png?itok=IVOB5CPh",
-   "from": "2027-04-03",
-   "to": "2027-04-03",
-   "about": "",
-   "hint": "Romsås Janitsjar Disco Storband Kjøp billettDisco Fever3. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Justin Adams & Mauro Durante",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/justin-adams-mauro-durante",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/RAY_2948.jpg?itok=LiXNdB_Q",
-   "from": "2027-04-09",
-   "to": "2027-04-09",
-   "about": "",
-   "hint": "Cosmopolite Scene Ørkenblues Kjøp billettJustin Adams & Mauro Durante9. april Kjøp billett",
-   "city": "Oslo"
   }
  ],
  "nyehjorten": [
@@ -25861,14 +25731,6 @@
    ],
    "at": 1793196607194
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-0": {
-   "p": [],
-   "at": 1793783360080
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth": {
-   "p": [],
-   "at": 1793783360080
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/49020/": {
    "p": [],
    "at": 1793761257590
@@ -25876,10 +25738,6 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/48865/": {
    "p": [],
    "at": 1793761257590
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/balletak-pa-bransjen-et-standupshow-av-og-med-henrik-fladseth-1": {
-   "p": [],
-   "at": 1793783360080
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46782/": {
    "p": [],
@@ -25959,10 +25817,6 @@
    "p": [],
    "at": 1793761257590
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/februar/candura": {
-   "p": [],
-   "at": 1793783360080
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/49435/": {
    "p": [],
    "at": 1793761257590
@@ -25983,14 +25837,6 @@
     }
    ],
    "at": 1793642857675
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/madison-mcferrin": {
-   "p": [],
-   "at": 1793783360080
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/breath": {
-   "p": [],
-   "at": 1793787329008
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49723/": {
    "p": [],
@@ -26025,14 +25871,6 @@
    "p": [],
    "at": 1793765104421
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/sun-byrd": {
-   "p": [],
-   "at": 1793787329008
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/orchestra-baobab": {
-   "p": [],
-   "at": 1793787329008
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46227/": {
    "p": [],
    "at": 1793765104421
@@ -26041,21 +25879,9 @@
    "p": [],
    "at": 1793765104421
   },
-  "https://cosmopolite.no/program/belleville/2027/april/trina-new-room-album-release": {
-   "p": [],
-   "at": 1793787329008
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46229/": {
    "p": [],
    "at": 1793765104421
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/mariam-amadou-mariam": {
-   "p": [],
-   "at": 1793787329008
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/disco-fever": {
-   "p": [],
-   "at": 1793787329008
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46698/": {
    "p": [],
@@ -26081,10 +25907,6 @@
    "p": [],
    "at": 1793765104421
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/justin-adams-mauro-durante": {
-   "p": [],
-   "at": 1793787329008
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46592/": {
    "p": [],
    "at": 1793765104421
@@ -26108,7 +25930,7 @@
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/51225/": {
    "p": [],
-   "at": 1793188550310
+   "at": 1793798300899
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/45360/": {
    "p": [],
