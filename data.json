@@ -1,35 +1,17 @@
 {
- "updated": "2026-11-04T22:56:06.873Z",
+ "updated": "2026-11-04T23:50:17.847Z",
  "errors": [],
  "weather": {
   "now": {
-   "date": "2026-11-04",
-   "h": 23,
+   "date": "2026-11-05",
+   "h": 0,
    "temp": 2,
-   "wind": 0,
+   "wind": 1,
    "sym": "clearsky_night",
    "rain": 0,
    "span": 1
   },
   "days": [
-   {
-    "date": "2026-11-04",
-    "hours": [
-     {
-      "date": "2026-11-04",
-      "h": 23,
-      "temp": 2,
-      "wind": 0,
-      "sym": "clearsky_night",
-      "rain": 0,
-      "span": 1
-     }
-    ],
-    "max": 2,
-    "min": 2,
-    "rain": 0,
-    "sym": "clearsky_night"
-   },
    {
     "date": "2026-11-05",
     "hours": [
@@ -45,7 +27,7 @@
      {
       "date": "2026-11-05",
       "h": 1,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -351,7 +333,7 @@
      {
       "date": "2026-11-06",
       "h": 10,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "clearsky_day",
       "rain": 0,
@@ -540,7 +522,7 @@
      {
       "date": "2026-11-07",
       "h": 6,
-      "temp": 0,
+      "temp": 1,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -575,7 +557,7 @@
      }
     ],
     "max": 3,
-    "min": 0,
+    "min": 1,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -711,6 +693,51 @@
     ],
     "max": 3,
     "min": 1,
+    "rain": 0,
+    "sym": "cloudy"
+   },
+   {
+    "date": "2026-11-11",
+    "hours": [
+     {
+      "date": "2026-11-11",
+      "h": 1,
+      "temp": 2,
+      "wind": 1,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-11",
+      "h": 7,
+      "temp": 3,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-11",
+      "h": 13,
+      "temp": 4,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     },
+     {
+      "date": "2026-11-11",
+      "h": 19,
+      "temp": 3,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
+      "span": 6
+     }
+    ],
+    "max": 4,
+    "min": 2,
     "rain": 0,
     "sym": "cloudy"
    }
@@ -1654,6 +1681,14 @@
     {
      "d": "2026-11-05",
      "t": "12:00",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/b8a89a1e-5365-4a12-bf60-9a9b958ac8d5"
+    },
+    {
+     "d": "2026-11-05",
+     "t": "12:00",
      "c": "Colosseum",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
@@ -1666,14 +1701,6 @@
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2439/11191dd0-daa7-4363-a105-db1085315533"
-    },
-    {
-     "d": "2026-11-05",
-     "t": "12:00",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/b8a89a1e-5365-4a12-bf60-9a9b958ac8d5"
     },
     {
      "d": "2026-11-05",
@@ -2014,18 +2041,18 @@
     {
      "d": "2026-11-10",
      "t": "15:00",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/29169fdc-75a8-4d21-920a-addb8639d9af"
-    },
-    {
-     "d": "2026-11-10",
-     "t": "15:00",
      "c": "Symra",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2590/fcc2e42e-896e-4fd9-b165-06590fb1e8a9"
+    },
+    {
+     "d": "2026-11-10",
+     "t": "15:00",
+     "c": "Colosseum",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/29169fdc-75a8-4d21-920a-addb8639d9af"
     },
     {
      "d": "2026-11-10",
@@ -9939,7 +9966,7 @@
      "t": "16:15",
      "c": "Vika",
      "r": "4",
-     "v": "2D, FA, Eng. tekst, Film fra Sør, Valgfri plass, Engelsk Tekst",
+     "v": "2D, FA, Eng. tekst, Valgfri plass, Engelsk Tekst, Film fra Sør",
      "u": "https://www.nfkino.no/screening/2612/2ebfb1da-3a88-480d-aafa-e91f355b81aa"
     }
    ],
@@ -10674,18 +10701,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Siren Stories Sex Worker Project",
-   "venue": "Centralteatret, Teaterkjelleren",
-   "url": "https://oslonye.no/forestillinger/siren-stories/",
-   "img": "https://oslonye.no/wp-content/uploads/DSC_0024-scaled.jpeg",
-   "imgSrc": "og",
-   "from": "2026-11-04",
-   "to": "2026-11-25",
-   "about": "2 forestillinger de neste ukene",
-   "hint": "Siren Stories Sex Worker Project",
-   "city": "Oslo"
-  },
-  {
    "title": "Utbrent av den hellige ånd",
    "venue": "Centralteatret, Teaterkjelleren",
    "url": "https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/",
@@ -10803,6 +10818,18 @@
    "to": "2026-11-19",
    "about": "",
    "hint": "Askefast",
+   "city": "Oslo"
+  },
+  {
+   "title": "Siren Stories Sex Worker Project",
+   "venue": "Centralteatret, Teaterkjelleren",
+   "url": "https://oslonye.no/forestillinger/siren-stories/",
+   "img": "https://oslonye.no/wp-content/uploads/DSC_0024-scaled.jpeg",
+   "imgSrc": "og",
+   "from": "2026-11-25",
+   "to": "2026-11-25",
+   "about": "",
+   "hint": "Siren Stories Sex Worker Project",
    "city": "Oslo"
   },
   {
@@ -11388,17 +11415,6 @@
  ],
  "neuf": [
   {
-   "title": "Wednesday Show - Impro Neuf!",
-   "venue": "Chateau Neuf",
-   "url": "https://neuf.no/arrangementer/free-wednesday-improv-show-w-impro-neuf-6",
-   "img": "https://cms.neuf.no/media/original_images/OPEN_WORKSHOP_A6LRi7t.jpg?v=af962b15",
-   "from": "2026-11-04",
-   "to": "2026-11-04",
-   "about": "Flere forestillinger. Se alle datoer på nettsiden.",
-   "hint": "Wednesday Show - Impro Neuf!4. november11. november+5Mer om arrangementet Wednesday Show - Impro Neuf! ",
-   "city": "Oslo"
-  },
-  {
    "title": "Konsert med desVerre",
    "venue": "Chateau Neuf",
    "url": "https://neuf.no/arrangementer/konsert-med-desverre",
@@ -11440,6 +11456,17 @@
    "to": "2026-11-10",
    "about": "Flere forestillinger. Se alle datoer på nettsiden.",
    "hint": "Gratis åpne improtirsdager!10. november17. november+4Mer om arrangementet Gratis åpne improtirsdager! ",
+   "city": "Oslo"
+  },
+  {
+   "title": "Wednesday Show - Impro Neuf!",
+   "venue": "Chateau Neuf",
+   "url": "https://neuf.no/arrangementer/free-wednesday-improv-show-w-impro-neuf-6",
+   "img": "https://cms.neuf.no/media/original_images/OPEN_WORKSHOP_A6LRi7t.jpg?v=af962b15",
+   "from": "2026-11-11",
+   "to": "2026-11-11",
+   "about": "Flere forestillinger. Se alle datoer på nettsiden.",
+   "hint": "Wednesday Show - Impro Neuf!11. november18. november+4Mer om arrangementet Wednesday Show - Impro Neuf! ",
    "city": "Oslo"
   },
   {
@@ -14877,11 +14904,6 @@
  },
  "sun": [
   {
-   "date": "2026-11-03",
-   "rise": "2026-11-03T07:43+01:00",
-   "set": "2026-11-03T16:16+01:00"
-  },
-  {
    "date": "2026-11-04",
    "rise": "2026-11-04T07:46+01:00",
    "set": "2026-11-04T16:13+01:00"
@@ -14895,6 +14917,11 @@
    "date": "2026-11-06",
    "rise": "2026-11-06T07:51+01:00",
    "set": "2026-11-06T16:08+01:00"
+  },
+  {
+   "date": "2026-11-07",
+   "rise": "2026-11-07T07:53+01:00",
+   "set": "2026-11-07T16:06+01:00"
   }
  ],
  "latter": [
@@ -15954,31 +15981,9 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-04T22:00:00.000Z"
+  "time": "2026-11-04T23:00:00.000Z"
  },
  "loppis": [
-  {
-   "title": "Brukt & Grønt - gjenbruksmarked i Hauketo-Prinsdal kirke",
-   "dates": [
-    "2026-11-04",
-    "2026-11-10",
-    "2026-11-11"
-   ],
-   "time": "16–20",
-   "place": "Lerdalsfaret 7",
-   "url": "https://www.loppi.no/loppemarked/4259c4c2-e394-4b4d-9103-913b3a894aaf",
-   "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-everyday.jpg"
-  },
-  {
-   "title": "Clothing Swap på Kulturhuset",
-   "dates": [
-    "2026-11-04"
-   ],
-   "time": "18–21",
-   "place": "Kulturhuset, Youngs gate 6",
-   "url": "https://www.loppi.no/loppemarked/232279b6-33eb-4a86-a901-47653d685569",
-   "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-misc.jpg"
-  },
   {
    "title": "Bruktmarked i Haugerud kirke",
    "dates": [
@@ -16053,6 +16058,19 @@
    "place": "Brenneriveien 9",
    "url": "https://www.loppi.no/loppemarked/7e01e4d4-cc6e-460c-89fa-673c74d2ef75",
    "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-misc.jpg"
+  },
+  {
+   "title": "Brukt & Grønt - gjenbruksmarked i Hauketo-Prinsdal kirke",
+   "dates": [
+    "2026-11-10",
+    "2026-11-11",
+    "2026-11-17",
+    "2026-11-18"
+   ],
+   "time": "16–20",
+   "place": "Lerdalsfaret 7",
+   "url": "https://www.loppi.no/loppemarked/4259c4c2-e394-4b4d-9103-913b3a894aaf",
+   "img": "https://plgmsvctbrbsnmmiaagz.supabase.co/storage/v1/object/public/shop-images/placeholders/loppi-everyday.jpg"
   },
   {
    "title": "Loppemarked på Høyenhall skole (Manglerud og Høyenhall skolekorps)",
@@ -16366,7 +16384,7 @@
    "venue": "Den Nationale Scene, Kipo Askøy / Fana kulturhus",
    "url": "https://dns.no/forestillinger/legenden-om-narnia-loven-heksa-og-klesskapet/",
    "img": "https://dns.no/wp-content/uploads/2026-dnsno-Narnia.jpg.webp",
-   "from": "2026-11-04",
+   "from": "2026-11-05",
    "to": null,
    "about": "Premiere 30. oktober",
    "hint": "Kipo Askøy / Fana kulturhus Premiere 30. oktober",
@@ -16399,7 +16417,7 @@
    "venue": "Den Nationale Scene, Marinehagen",
    "url": "https://dns.no/forestillinger/1349-det-kom-et-skip-til-bjorgvin/",
    "img": "https://dns.no/wp-content/uploads/1349-dns.no_.png.webp",
-   "from": "2026-11-04",
+   "from": "2026-11-05",
    "to": null,
    "about": "Urpremiere 24. oktober",
    "hint": "Marinehagen Urpremiere 24. oktober",
@@ -17448,18 +17466,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Mammoth",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/794665397?brand=johndee&camefrom=CFC_NO_Rockefeller_Mammoth_071126_Billettsalg&utm_campaign=NO_Rockefeller_Mammoth_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i4dCjEp9M?tr=w-600",
-   "times": [
-    "2026-11-07T19:00"
-   ],
-   "hint": "hardrock",
-   "about": "Bandet har vært i stødig vekst helt siden starten, og det nyeste albumet, *The End*, viser tydelig hvorfor suksessen har vært uunngåelig. Med sitt helt egne uttrykk og sound har Mammoth bygget opp en dedikert fanskare ve",
-   "city": "Oslo"
-  },
-  {
    "title": "Ezhel",
    "venue": "Rockefeller",
    "url": "https://www.ticketmaster.no/event/871035029?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Ezhel_071126_Billettsalg&utm_campaign=NO_Rockefeller_Ezhel_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17481,6 +17487,18 @@
    ],
    "hint": "singersongwriter",
    "about": "Kristian Kristensen har preget det norske poplandskapet i over ti år med sin enorme vokalrekkevidde og emosjonelle kraft. Med udødelige hits som «Kan du lære mæ» og «Du ga mæ viljestyrke», samt utsolgte konsertsaler over",
+   "city": "Oslo"
+  },
+  {
+   "title": "Mammoth",
+   "venue": "John Dee",
+   "url": "https://www.ticketmaster.no/event/794665397?brand=johndee&camefrom=CFC_NO_Rockefeller_Mammoth_071126_Billettsalg&utm_campaign=NO_Rockefeller_Mammoth_071126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_i4dCjEp9M?tr=w-600",
+   "times": [
+    "2026-11-07T19:00"
+   ],
+   "hint": "hardrock",
+   "about": "Bandet har vært i stødig vekst helt siden starten, og det nyeste albumet, *The End*, viser tydelig hvorfor suksessen har vært uunngåelig. Med sitt helt egne uttrykk og sound har Mammoth bygget opp en dedikert fanskare ve",
    "city": "Oslo"
   },
   {
@@ -17556,18 +17574,6 @@
    "city": "Oslo"
   },
   {
-   "title": "The Wallflowers",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1356208476?brand=rockefeller&camefrom=CFC_NO_Rockefeller_The_Wallflower_111126_Billettsalg&utm_campaign=NO_Rockefeller_The_Wallflower_111126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5MB7aSuQV?tr=w-600",
-   "times": [
-    "2026-11-11T19:00"
-   ],
-   "hint": "rock alternativerock",
-   "about": "Denne turneen markerer første gang bandet spiller *Bringing Down the Horse* i sin helhet, i anledning albumets 30-årsjubileum. Publikum over hele Europa kan vente seg en helt unik konsertopplevelse. «Coming back after su",
-   "city": "Oslo"
-  },
-  {
    "title": "Tayc",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/1822319412?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_Tayc_111126_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -17577,6 +17583,18 @@
    ],
    "hint": "R&B afrotrap hiphop",
    "about": "Julien Franck Bouadjie, bedre kjent som Tayc, ble født i Marseille av kamerunske foreldre. Før han for alvor slo gjennom, hadde han allerede gitt ut en rekke singler, mixtapes og album. Det store gjennombruddet kom i 202",
+   "city": "Oslo"
+  },
+  {
+   "title": "The Wallflowers",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/1356208476?brand=rockefeller&camefrom=CFC_NO_Rockefeller_The_Wallflower_111126_Billettsalg&utm_campaign=NO_Rockefeller_The_Wallflower_111126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_5MB7aSuQV?tr=w-600",
+   "times": [
+    "2026-11-11T19:00"
+   ],
+   "hint": "rock alternativerock",
+   "about": "Denne turneen markerer første gang bandet spiller *Bringing Down the Horse* i sin helhet, i anledning albumets 30-årsjubileum. Publikum over hele Europa kan vente seg en helt unik konsertopplevelse. «Coming back after su",
    "city": "Oslo"
   },
   {
@@ -23731,19 +23749,6 @@
    "p": [],
    "at": 1793746689136
   },
-  "https://oslonye.no/forestillinger/siren-stories/": {
-   "p": [],
-   "at": 1793490472782
-  },
-  "https://neuf.no/arrangementer/free-wednesday-improv-show-w-impro-neuf-6": {
-   "p": [
-    {
-     "l": "Ordinær",
-     "kr": 70
-    }
-   ],
-   "at": 1793746689136
-  },
   "https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/": {
    "p": [],
    "at": 1793490472782
@@ -23938,6 +23943,15 @@
     }
    ],
    "at": 1793490472782
+  },
+  "https://neuf.no/arrangementer/free-wednesday-improv-show-w-impro-neuf-6": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 70
+    }
+   ],
+   "at": 1793746689136
   },
   "https://cosmopolite.no/program/cosmopolite/2026/november/bugge-bang-oppsummerer-2026-2": {
    "p": [],
@@ -24217,6 +24231,10 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/48244/": {
    "p": [],
    "at": 1793755054594
+  },
+  "https://oslonye.no/forestillinger/siren-stories/": {
+   "p": [],
+   "at": 1793490472782
   },
   "https://neuf.no/arrangementer/jan-p-syses-dag": {
    "p": [],
