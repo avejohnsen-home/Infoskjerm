@@ -1,12 +1,14 @@
 {
- "updated": "2026-11-06T18:04:41.654Z",
- "errors": [],
+ "updated": "2026-11-06T19:00:46.756Z",
+ "errors": [
+  "slm: fant ingen oppføringer"
+ ],
  "weather": {
   "now": {
    "date": "2026-11-06",
-   "h": 18,
-   "temp": 2,
-   "wind": 1,
+   "h": 19,
+   "temp": 1,
+   "wind": 2,
    "sym": "partlycloudy_night",
    "rain": 0,
    "span": 1
@@ -15,15 +17,6 @@
    {
     "date": "2026-11-06",
     "hours": [
-     {
-      "date": "2026-11-06",
-      "h": 18,
-      "temp": 2,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-11-06",
       "h": 19,
@@ -47,7 +40,7 @@
       "h": 21,
       "temp": 1,
       "wind": 2,
-      "sym": "cloudy",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -56,7 +49,7 @@
       "h": 22,
       "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -65,12 +58,12 @@
       "h": 23,
       "temp": 1,
       "wind": 1,
-      "sym": "fog",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      }
     ],
-    "max": 2,
+    "max": 1,
     "min": 1,
     "rain": 0,
     "sym": "partlycloudy_night"
@@ -81,9 +74,9 @@
      {
       "date": "2026-11-07",
       "h": 0,
-      "temp": 1,
+      "temp": 0,
       "wind": 1,
-      "sym": "fog",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -91,8 +84,8 @@
       "date": "2026-11-07",
       "h": 1,
       "temp": 0,
-      "wind": 0,
-      "sym": "fog",
+      "wind": 1,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
@@ -101,14 +94,14 @@
       "h": 2,
       "temp": 0,
       "wind": 1,
-      "sym": "fog",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-07",
       "h": 3,
-      "temp": 0,
+      "temp": -1,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -145,7 +138,7 @@
       "date": "2026-11-07",
       "h": 7,
       "temp": -1,
-      "wind": 2,
+      "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -153,7 +146,7 @@
      {
       "date": "2026-11-07",
       "h": 8,
-      "temp": -1,
+      "temp": -2,
       "wind": 2,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -162,9 +155,9 @@
      {
       "date": "2026-11-07",
       "h": 9,
-      "temp": -1,
-      "wind": 2,
-      "sym": "partlycloudy_day",
+      "temp": -2,
+      "wind": 1,
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -189,8 +182,8 @@
      {
       "date": "2026-11-07",
       "h": 12,
-      "temp": 2,
-      "wind": 1,
+      "temp": 1,
+      "wind": 0,
       "sym": "clearsky_day",
       "rain": 0,
       "span": 1
@@ -198,9 +191,9 @@
      {
       "date": "2026-11-07",
       "h": 13,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -243,8 +236,8 @@
      {
       "date": "2026-11-07",
       "h": 18,
-      "temp": 2,
-      "wind": 1,
+      "temp": 1,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -253,7 +246,7 @@
       "date": "2026-11-07",
       "h": 19,
       "temp": 1,
-      "wind": 0,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -261,8 +254,8 @@
      {
       "date": "2026-11-07",
       "h": 20,
-      "temp": 1,
-      "wind": 0,
+      "temp": 0,
+      "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -270,7 +263,7 @@
      {
       "date": "2026-11-07",
       "h": 21,
-      "temp": 1,
+      "temp": 0,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -280,7 +273,7 @@
       "date": "2026-11-07",
       "h": 22,
       "temp": 1,
-      "wind": 1,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 1
@@ -296,9 +289,9 @@
      }
     ],
     "max": 3,
-    "min": -1,
+    "min": -2,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "fair_day"
    },
    {
     "date": "2026-11-08",
@@ -306,18 +299,18 @@
      {
       "date": "2026-11-08",
       "h": 0,
-      "temp": 0,
+      "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-08",
       "h": 1,
-      "temp": 0,
+      "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -326,7 +319,7 @@
       "h": 2,
       "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -334,8 +327,8 @@
       "date": "2026-11-08",
       "h": 3,
       "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_night",
+      "wind": 0,
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -344,15 +337,15 @@
       "h": 4,
       "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-08",
       "h": 5,
-      "temp": 1,
-      "wind": 2,
+      "temp": 2,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -360,7 +353,7 @@
      {
       "date": "2026-11-08",
       "h": 6,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -370,7 +363,7 @@
       "date": "2026-11-08",
       "h": 7,
       "temp": 2,
-      "wind": 2,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -396,7 +389,7 @@
      {
       "date": "2026-11-08",
       "h": 10,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -423,8 +416,8 @@
      {
       "date": "2026-11-08",
       "h": 13,
-      "temp": 3,
-      "wind": 1,
+      "temp": 4,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -514,14 +507,14 @@
       "date": "2026-11-08",
       "h": 23,
       "temp": 4,
-      "wind": 0,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
      }
     ],
     "max": 4,
-    "min": 0,
+    "min": 1,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -531,8 +524,8 @@
      {
       "date": "2026-11-09",
       "h": 0,
-      "temp": 3,
-      "wind": 0,
+      "temp": 4,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -540,8 +533,8 @@
      {
       "date": "2026-11-09",
       "h": 1,
-      "temp": 3,
-      "wind": 0,
+      "temp": 4,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -723,7 +716,6 @@
    "url": "https://christianiateaterscene.no/80",
    "img": "https://cdn.sanity.io/images/g24jximr/production/d87cd56fb506a8dd10ff359cf019c16514f8d812-1850x1850.jpg?h=400&auto=format",
    "times": [
-    "2026-11-06T19:00",
     "2026-11-07T19:00",
     "2026-11-13T19:00",
     "2026-11-14T19:00",
@@ -1578,22 +1570,6 @@
    "shows": [
     {
      "d": "2026-11-06",
-     "t": "19:30",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2590/bd3fb646-c5ae-48ed-a6a8-1dd9318f114d"
-    },
-    {
-     "d": "2026-11-06",
-     "t": "19:45",
-     "c": "Colosseum",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/c06ef955-3356-4b6c-9c09-8c20181e99ab"
-    },
-    {
-     "d": "2026-11-06",
      "t": "20:15",
      "c": "Klingenberg",
      "r": "1",
@@ -1747,18 +1723,18 @@
     {
      "d": "2026-11-09",
      "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/8523f52e-a2c6-4cc9-9f6c-67feab78020d"
-    },
-    {
-     "d": "2026-11-09",
-     "t": "12:00",
      "c": "Ringen",
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst, Babykino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/f9026724-b9a7-4e38-9689-7925919b8108"
+    },
+    {
+     "d": "2026-11-09",
+     "t": "12:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/1002/8523f52e-a2c6-4cc9-9f6c-67feab78020d"
     },
     {
      "d": "2026-11-09",
@@ -1827,18 +1803,18 @@
     {
      "d": "2026-11-10",
      "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/e42d2f94-5b15-4ecd-8f3a-97c85ae06b9e"
-    },
-    {
-     "d": "2026-11-10",
-     "t": "12:00",
      "c": "Ringen",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Babykino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/942df14f-be34-4aa7-9d12-61187821b64b"
+    },
+    {
+     "d": "2026-11-10",
+     "t": "12:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/1002/e42d2f94-5b15-4ecd-8f3a-97c85ae06b9e"
     },
     {
      "d": "2026-11-10",
@@ -1853,7 +1829,7 @@
      "t": "13:30",
      "c": "Gimle",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Seniorkino",
      "u": "https://www.nfkino.no/screening/2581/3f1fd9c5-24fb-4f62-9161-895bc19add42"
     },
     {
@@ -1907,18 +1883,18 @@
     {
      "d": "2026-11-11",
      "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/77cca0d3-115c-4925-8b6a-68adc1e11728"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "12:00",
      "c": "Ringen",
      "r": "5",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2439/91c3d09c-bd1b-4344-8480-1740e1bf021c"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "12:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/1002/77cca0d3-115c-4925-8b6a-68adc1e11728"
     },
     {
      "d": "2026-11-11",
@@ -5793,14 +5769,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-11-06",
-     "t": "19:30",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Hindi tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/1001/d7467d64-3edc-42d5-854a-69f593c339df"
-    },
     {
      "d": "2026-11-06",
      "t": "23:30",
@@ -16591,18 +16559,6 @@
  ],
  "k_rockefeller": [
   {
-   "title": "vinni",
-   "venue": "Sentrum Scene",
-   "url": "https://www.ticketmaster.no/event/714226185?brand=sentrumscene&camefrom=CFC_NO_Rockefeller_vinni_SS061126_ordinaer_Billettsalg&utm_campaign=NO_Rockefeller_vinni_SS061126_ordinaer_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_2vV4xSGLG?tr=w-600",
-   "times": [
-    "2026-11-06T19:00"
-   ],
-   "hint": "hiphop pop",
-   "about": "Med sitt ferske album *Shivas Dans*, samt singlene «Håpløs» (med Roc Boyz) og «Papirposepust» (med Bertine Zetlitz) er det få artister i Norge som er mer produktive enn vinni for tiden. Øyvind Sauvik, aka vinni, har satt",
-   "city": "Oslo"
-  },
-  {
    "title": "JCP 28 år",
    "venue": "Rockefeller",
    "url": "https://www.rockefeller.no/events/jcp-28-ar/pbfZtNSctF",
@@ -19188,18 +19144,6 @@
  ],
  "k_blaa": [
   {
-   "title": "Sondre Klavenes Band",
-   "venue": "Blå",
-   "url": "https://www.ticketmaster.no/event/441887107",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_YxvHPYQBw?tr=w-600",
-   "times": [
-    "2026-11-06T19:00"
-   ],
-   "hint": "sondre klavenes band",
-   "about": "Sondre Klavenes Band tar med seg bandet og kommer tilbake med band på Himmel på Blå for tredje gang! Sterkere enn før, flere enn før, men kvaliteten på produktet er den samme. Foruten at denne gang blir det såklart semi-",
-   "city": "Oslo"
-  },
-  {
    "title": "FDC DJs (UTSOLGT)",
    "venue": "Blå",
    "url": "https://www.ticketmaster.no/event/195159711",
@@ -19646,18 +19590,6 @@
  ],
  "k_vulkan": [
   {
-   "title": "Terje Tysland",
-   "venue": "Vulkan Arena",
-   "url": "https://www.ticketmaster.no/event/812656031?brand=vulkanarena",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_JE5vKBINP?tr=w-600",
-   "times": [
-    "2026-11-06T19:00"
-   ],
-   "hint": "Folk rock Trønderrock",
-   "about": "20:00: Show start _____________________ Terje Tysland til Vulkan Arena den 6.november 2026! Et halvt århundre etter scenedebuten legger Terje Tysland ut på sin aller siste turné med fult band! I 2026 feirer han både 75-å",
-   "city": "Oslo"
-  },
-  {
    "title": "Loveshack",
    "venue": "Vulkan Arena",
    "url": "https://www.ticketmaster.no/event/1507915055?brand=vulkanarena",
@@ -20073,7 +20005,6 @@
    "url": "https://billetter.okh.no/nb/buyingflow/tickets/46203/",
    "img": "https://cdn.mustasj.dev/okh/production/bilder/47584409/Feature_46203-v1789470271_2714657282f6038b708bd13864fd5f3f.jpg",
    "times": [
-    "2026-11-06T19:00",
     "2026-11-06T21:00"
    ],
    "hint": "klassisk",
@@ -21841,17 +21772,6 @@
  ],
  "k_cosmopolite": [
   {
-   "title": "HUUN-HUUR-TU",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2026/november/huun-huur-tu",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-05/Bandfoto2025%20%281%29.jpg?itok=D3F8G2EB",
-   "from": "2026-11-06",
-   "to": "2026-11-06",
-   "about": "",
-   "hint": "Cosmopolite Scene Strupesang Få billetterHUUN-HUUR-TU6. november Få billetter",
-   "city": "Oslo"
-  },
-  {
    "title": "Lizz Wright",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/november/lizz-wright",
@@ -21970,6 +21890,17 @@
    "to": "2026-11-14",
    "about": "",
    "hint": "Cosmopolite Scene | Film Fra Sør Jazz Kjøp billettAlune Wade 14. november Kjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Alceu Valença",
+   "venue": "Cosmopolite",
+   "url": "https://cosmopolite.no/program/cosmopolite/2026/november/alceu-valenca",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-04/AlceuValenca_04.jpg?itok=d9HqtWM6",
+   "from": "2026-11-15",
+   "to": "2026-11-15",
+   "about": "",
+   "hint": "Atrevivents | Cosmopolite MPB Få billetterAlceu Valença15. november Få billetter",
    "city": "Oslo"
   },
   {
@@ -22629,7 +22560,6 @@
    "url": "https://nyehjortenteater.no/program/elling-og-kjell-bjarne",
    "img": "https://cdn.sanity.io/images/w3qmm82w/production/dd7ab49bf1c4b2fc596601c9d6fab69d6967ed55-4500x4500.jpg?w=2100&fit=max&auto=format",
    "times": [
-    "2026-11-06T19:30",
     "2026-11-07T19:30",
     "2027-01-07T19:30",
     "2027-01-08T19:30",
@@ -23032,19 +22962,11 @@
    ],
    "at": 1793642857675
   },
-  "https://cosmopolite.no/program/cosmopolite/2026/november/huun-huur-tu": {
+  "https://www.rockefeller.no/events/jcp-28-ar/pbfZtNSctF": {
    "p": [],
    "at": 1793749791181
-  },
-  "https://christianiateaterscene.no/80": {
-   "p": [],
-   "at": 1793541471951
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46203/": {
-   "p": [],
-   "at": 1793749791181
-  },
-  "https://www.rockefeller.no/events/jcp-28-ar/pbfZtNSctF": {
    "p": [],
    "at": 1793749791181
   },
@@ -23085,6 +23007,10 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/48702/": {
    "p": [],
    "at": 1793749791181
+  },
+  "https://christianiateaterscene.no/80": {
+   "p": [],
+   "at": 1793541471951
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46605/": {
    "p": [],
@@ -23275,6 +23201,15 @@
     }
    ],
    "at": 1793749791181
+  },
+  "https://cosmopolite.no/program/cosmopolite/2026/november/alceu-valenca": {
+   "p": [
+    {
+     "l": "Ordinær",
+     "kr": 740
+    }
+   ],
+   "at": 1793991786164
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/44042/": {
    "p": [],
