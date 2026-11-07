@@ -1,10 +1,12 @@
 {
- "updated": "2026-11-07T08:09:11.810Z",
- "errors": [],
+ "updated": "2026-11-07T08:58:24.040Z",
+ "errors": [
+  "waste: Geonorge svarte 502"
+ ],
  "weather": {
   "now": {
    "date": "2026-11-07",
-   "h": 8,
+   "h": 9,
    "temp": 0,
    "wind": 1,
    "sym": "fair_day",
@@ -15,15 +17,6 @@
    {
     "date": "2026-11-07",
     "hours": [
-     {
-      "date": "2026-11-07",
-      "h": 8,
-      "temp": 0,
-      "wind": 1,
-      "sym": "fair_day",
-      "rain": 0,
-      "span": 1
-     },
      {
       "date": "2026-11-07",
       "h": 9,
@@ -90,7 +83,7 @@
      {
       "date": "2026-11-07",
       "h": 16,
-      "temp": 3,
+      "temp": 2,
       "wind": 0,
       "sym": "fair_night",
       "rain": 0,
@@ -108,7 +101,7 @@
      {
       "date": "2026-11-07",
       "h": 18,
-      "temp": 2,
+      "temp": 1,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -252,7 +245,7 @@
      {
       "date": "2026-11-08",
       "h": 9,
-      "temp": 1,
+      "temp": 0,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -369,7 +362,7 @@
      {
       "date": "2026-11-08",
       "h": 22,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -441,7 +434,7 @@
      {
       "date": "2026-11-09",
       "h": 5,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -450,7 +443,7 @@
      {
       "date": "2026-11-09",
       "h": 6,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -558,7 +551,7 @@
      {
       "date": "2026-11-10",
       "h": 13,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -574,7 +567,7 @@
       "span": 6
      }
     ],
-    "max": 1,
+    "max": 2,
     "min": 0,
     "rain": 0,
     "sym": "cloudy"
@@ -603,7 +596,7 @@
      {
       "date": "2026-11-11",
       "h": 13,
-      "temp": 2,
+      "temp": 1,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -612,14 +605,14 @@
      {
       "date": "2026-11-11",
       "h": 19,
-      "temp": 4,
-      "wind": 2,
+      "temp": 2,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 4,
+    "max": 2,
     "min": 0,
     "rain": 0,
     "sym": "cloudy"
@@ -630,25 +623,25 @@
      {
       "date": "2026-11-12",
       "h": 1,
-      "temp": 4,
-      "wind": 3,
-      "sym": "rain",
-      "rain": 2.3,
+      "temp": 3,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-12",
       "h": 7,
-      "temp": 5,
-      "wind": 3,
-      "sym": "rain",
-      "rain": 2.2,
+      "temp": 3,
+      "wind": 2,
+      "sym": "cloudy",
+      "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-12",
       "h": 13,
-      "temp": 4,
+      "temp": 3,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -657,16 +650,16 @@
      {
       "date": "2026-11-12",
       "h": 19,
-      "temp": 3,
+      "temp": 2,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 5,
-    "min": 3,
-    "rain": 4.5,
+    "max": 3,
+    "min": 2,
+    "rain": 0,
     "sym": "cloudy"
    },
    {
@@ -675,7 +668,7 @@
      {
       "date": "2026-11-13",
       "h": 1,
-      "temp": 2,
+      "temp": 1,
       "wind": 2,
       "sym": "fair_night",
       "rain": 0,
@@ -694,8 +687,8 @@
       "date": "2026-11-13",
       "h": 13,
       "temp": 4,
-      "wind": 3,
-      "sym": "fair_day",
+      "wind": 2,
+      "sym": "clearsky_day",
       "rain": 0,
       "span": 6
      },
@@ -704,7 +697,7 @@
       "h": 19,
       "temp": 1,
       "wind": 2,
-      "sym": "clearsky_night",
+      "sym": "fair_night",
       "rain": 0,
       "span": 6
      }
@@ -712,7 +705,7 @@
     "max": 4,
     "min": 0,
     "rain": 0,
-    "sym": "fair_day"
+    "sym": "clearsky_day"
    }
   ]
  },
@@ -1644,15 +1637,7 @@
      "t": "19:45",
      "c": "Vika",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/2612/56c42d00-fc9d-49b0-b8f8-472dd369ce1d"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "19:45",
-     "c": "Vika",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Den Store Kinodagen",
      "u": "https://www.nfkino.no/screening/2612/56c42d00-fc9d-49b0-b8f8-472dd369ce1d"
     },
     {
@@ -3693,14 +3678,6 @@
    "shows": [
     {
      "d": "2026-11-07",
-     "t": "09:20",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/2590/6925c42a-c1ef-42f5-aef2-323f0c5d7e91"
-    },
-    {
-     "d": "2026-11-07",
      "t": "10:00",
      "c": "Colosseum",
      "r": "2",
@@ -5212,68 +5189,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Paw Patrol: Dinofilmen",
-   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001602-1000026005.jpg?itok=HJuT8zuG",
-   "genres": [],
-   "len": "1 time 28 min",
-   "age": "Alle",
-   "cinemas": [
-    "Colosseum",
-    "Ringen",
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-07",
-     "t": "10:00",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/2439/5c0f2499-4331-4309-852c-1a943465bec4"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "10:30",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/1001/7ca4e31f-7407-4989-8b04-4a18c059d044"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/1002/a31a60ce-89be-4d01-83ae-de9af8a3e62a"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "12:30",
-     "c": "Ringen",
-     "r": "6",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/2439/bbbcbdc2-fb65-4e55-bb67-a8d290dda72f"
-    },
-    {
-     "d": "2026-11-07",
-     "t": "14:20",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
-     "u": "https://www.nfkino.no/screening/1002/3e38ef4d-1f1c-490f-96fc-dc634a2d605a"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001602-1000029012.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Paw Patrol Dino Movie",
-   "year": "",
-   "ratingsAt": "2026-11-07T07:10:20.717Z",
-   "city": "Oslo"
-  },
-  {
    "title": "Everybody Digs Bill Evans",
    "url": "https://www.nfkino.no/film/everybody-digs-bill-evans",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002636-1000035787.jpg?itok=R4pviBbC",
@@ -5766,6 +5681,68 @@
    "orig": "Dette er ikke et eple",
    "year": "",
    "ratingsAt": "2026-11-07T07:10:21.287Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Paw Patrol: Dinofilmen",
+   "url": "https://www.nfkino.no/film/paw-patrol-dinofilmen",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001602-1000026005.jpg?itok=HJuT8zuG",
+   "genres": [],
+   "len": "1 time 28 min",
+   "age": "Alle",
+   "cinemas": [
+    "Colosseum",
+    "Ringen",
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-07",
+     "t": "10:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/2439/5c0f2499-4331-4309-852c-1a943465bec4"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "10:30",
+     "c": "Saga",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/1001/7ca4e31f-7407-4989-8b04-4a18c059d044"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "12:00",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/1002/a31a60ce-89be-4d01-83ae-de9af8a3e62a"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "12:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/2439/bbbcbdc2-fb65-4e55-bb67-a8d290dda72f"
+    },
+    {
+     "d": "2026-11-07",
+     "t": "14:20",
+     "c": "Colosseum",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm, Den Store Kinodagen",
+     "u": "https://www.nfkino.no/screening/1002/3e38ef4d-1f1c-490f-96fc-dc634a2d605a"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001602-1000029012.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Paw Patrol Dino Movie",
+   "year": "",
+   "ratingsAt": "2026-11-07T07:10:20.717Z",
    "city": "Oslo"
   },
   {
