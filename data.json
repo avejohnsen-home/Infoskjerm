@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-08T13:56:23.865Z",
+ "updated": "2026-11-08T14:48:58.309Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-11-08",
-   "h": 14,
-   "temp": 0,
+   "h": 15,
+   "temp": 1,
    "wind": 1,
-   "sym": "partlycloudy_day",
+   "sym": "cloudy",
    "rain": 0,
    "span": 1
   },
@@ -17,19 +17,10 @@
     "hours": [
      {
       "date": "2026-11-08",
-      "h": 14,
-      "temp": 0,
-      "wind": 1,
-      "sym": "partlycloudy_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-08",
       "h": 15,
       "temp": 1,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -38,7 +29,7 @@
       "h": 16,
       "temp": 0,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -47,14 +38,14 @@
       "h": 17,
       "temp": 0,
       "wind": 1,
-      "sym": "partlycloudy_night",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-08",
       "h": 18,
-      "temp": -1,
+      "temp": 0,
       "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -99,7 +90,7 @@
      {
       "date": "2026-11-08",
       "h": 23,
-      "temp": 0,
+      "temp": -1,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -109,7 +100,7 @@
     "max": 1,
     "min": -1,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "cloudy"
    },
    {
     "date": "2026-11-09",
@@ -261,7 +252,7 @@
      {
       "date": "2026-11-09",
       "h": 16,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -270,7 +261,7 @@
      {
       "date": "2026-11-09",
       "h": 17,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -279,7 +270,7 @@
      {
       "date": "2026-11-09",
       "h": 18,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "fog",
       "rain": 0,
@@ -331,7 +322,7 @@
       "span": 1
      }
     ],
-    "max": 4,
+    "max": 3,
     "min": 0,
     "rain": 0,
     "sym": "cloudy"
@@ -342,7 +333,7 @@
      {
       "date": "2026-11-10",
       "h": 0,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -360,7 +351,7 @@
      {
       "date": "2026-11-10",
       "h": 2,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -459,7 +450,7 @@
      {
       "date": "2026-11-10",
       "h": 13,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -1509,14 +1500,6 @@
    "shows": [
     {
      "d": "2026-11-08",
-     "t": "15:45",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/2581/b231b2ef-4b75-49d5-886a-32a62940f108"
-    },
-    {
-     "d": "2026-11-08",
      "t": "16:30",
      "c": "Colosseum",
      "r": "1",
@@ -1720,15 +1703,7 @@
      "t": "12:00",
      "c": "Colosseum",
      "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
-     "u": "https://www.nfkino.no/screening/1002/77cca0d3-115c-4925-8b6a-68adc1e11728"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "12:00",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/1002/77cca0d3-115c-4925-8b6a-68adc1e11728"
     },
     {
@@ -1890,14 +1865,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-11-08",
-     "t": "15:15",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, SV, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/92d72d4b-2bd9-4e27-9444-9910c010ec27"
-    },
     {
      "d": "2026-11-08",
      "t": "18:00",
@@ -2078,38 +2045,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-11-08",
-     "t": "15:00",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1001/cb9f0d43-0ef3-4cd9-9fa6-bbad41b53f28"
-    },
-    {
-     "d": "2026-11-08",
-     "t": "15:00",
-     "c": "Symra",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2590/f37da8f6-459f-4941-af95-d0ff44fc4042"
-    },
-    {
-     "d": "2026-11-08",
-     "t": "15:30",
-     "c": "Colosseum",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1002/5124e816-46df-4e7a-a977-089ef74ab67e"
-    },
-    {
-     "d": "2026-11-08",
-     "t": "15:30",
-     "c": "Ringen",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/9915b45c-07c9-48f4-9614-62381a41b61e"
-    },
     {
      "d": "2026-11-08",
      "t": "17:00",
@@ -3985,36 +3920,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
-   "genres": [
-    "Familiefilm"
-   ],
-   "len": "1 time 1 min",
-   "age": "Alle",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-11",
-     "t": "15:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/bfa5bb2c-f59b-4712-98c9-bf7700dc1f95"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Lille spøkelset Laban skøyer igjen",
-   "year": "",
-   "ratingsAt": "2026-11-08T11:50:44.896Z",
-   "city": "Oslo"
-  },
-  {
    "title": "Tony",
    "url": "https://www.nfkino.no/film/tony",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
@@ -4110,14 +4015,6 @@
     "Symra"
    ],
    "shows": [
-    {
-     "d": "2026-11-08",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/ce0029f5-6860-4b6a-bf97-577539eea64d"
-    },
     {
      "d": "2026-11-09",
      "t": "12:00",
@@ -4249,6 +4146,36 @@
    "city": "Oslo"
   },
   {
+   "title": "Lille spøkelset Laban skøyer igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 time 1 min",
+   "age": "Alle",
+   "cinemas": [
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-11",
+     "t": "15:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/bfa5bb2c-f59b-4712-98c9-bf7700dc1f95"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Lille spøkelset Laban skøyer igjen",
+   "year": "",
+   "ratingsAt": "2026-11-08T11:50:44.896Z",
+   "city": "Oslo"
+  },
+  {
    "title": "Monster Mia",
    "url": "https://www.nfkino.no/film/monster-mia",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002582-1000030015.jpg?itok=DbT0lQjR",
@@ -4366,103 +4293,6 @@
    "rt": "",
    "imdb": "",
    "ratingsAt": "2026-11-08T11:50:45.041Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
-   "genres": [
-    "Familiefilm"
-   ],
-   "len": "1 time 21 min",
-   "age": "Alle",
-   "cinemas": [
-    "Saga",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-08",
-     "t": "15:15",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/2590/aa6b512b-106b-4baf-9801-8333eea8f4aa"
-    },
-    {
-     "d": "2026-11-09",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/b0d615ae-1250-4eba-bb11-02c27bea4731"
-    },
-    {
-     "d": "2026-11-09",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/03fb971f-3758-4966-bb72-f0d2ebd96fb5"
-    },
-    {
-     "d": "2026-11-10",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/2b266b9d-dfc1-4b92-a715-4d28d5658495"
-    },
-    {
-     "d": "2026-11-10",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/97e0c17c-d994-4308-a13f-10c6aaa5a739"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/9489a863-af70-41d1-87ab-132e3b6a645e"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/6d6197e9-7455-486a-8f5d-eae84a75f62e"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/3946bea2-487d-4d0a-85c5-13b6ac7ce61c"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/4815a796-ab4d-49eb-bd5c-f924cc86e962"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001358-1000032345.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Shaun the Sheep: The Beast of Mossy Bottom",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-11-08T11:50:44.253Z",
    "city": "Oslo"
   },
   {
@@ -4887,14 +4717,6 @@
    "shows": [
     {
      "d": "2026-11-08",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/bab2dfcc-b015-4ddd-99f5-934b62073db0"
-    },
-    {
-     "d": "2026-11-08",
      "t": "18:00",
      "c": "Ringen",
      "r": "5",
@@ -5066,6 +4888,94 @@
    "city": "Oslo"
   },
   {
+   "title": "Sauen Shaun - Gårdens fårbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 time 21 min",
+   "age": "Alle",
+   "cinemas": [
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-09",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/b0d615ae-1250-4eba-bb11-02c27bea4731"
+    },
+    {
+     "d": "2026-11-09",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/03fb971f-3758-4966-bb72-f0d2ebd96fb5"
+    },
+    {
+     "d": "2026-11-10",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/2b266b9d-dfc1-4b92-a715-4d28d5658495"
+    },
+    {
+     "d": "2026-11-10",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/97e0c17c-d994-4308-a13f-10c6aaa5a739"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/9489a863-af70-41d1-87ab-132e3b6a645e"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/6d6197e9-7455-486a-8f5d-eae84a75f62e"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/3946bea2-487d-4d0a-85c5-13b6ac7ce61c"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/4815a796-ab4d-49eb-bd5c-f924cc86e962"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001358-1000032345.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Shaun the Sheep: The Beast of Mossy Bottom",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-11-08T11:50:44.253Z",
+   "city": "Oslo"
+  },
+  {
    "title": "Velkommen til familien",
    "url": "https://www.nfkino.no/film/velkommen-til-familien",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002109-1000034968.png?itok=zBSPTync",
@@ -5221,26 +5131,9 @@
    "len": "1 time 35 min",
    "age": "12 år",
    "cinemas": [
-    "Klingenberg",
     "Saga"
    ],
    "shows": [
-    {
-     "d": "2026-11-08",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, FI, Norsk tekst, Event",
-     "u": "https://www.nfkino.no/screening/2583/530d9903-e058-4ce8-809d-5fd15c9af6ca"
-    },
-    {
-     "d": "2026-11-08",
-     "t": "15:30",
-     "c": "Saga",
-     "r": "6",
-     "v": "2D, FI, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/468bbb22-46f5-4fe5-bb62-6058d03ef7c0"
-    },
     {
      "d": "2026-11-08",
      "t": "18:30",
@@ -13056,7 +12949,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-08T13:00:00.000Z"
+  "time": "2026-11-08T14:00:00.000Z"
  },
  "loppis": [
   {
@@ -20183,105 +20076,6 @@
    "about": "",
    "hint": "Cosmopolite Scene Folk Jazz Kjøp billettThe Breath 5. mars Kjøp billett",
    "city": "Oslo"
-  },
-  {
-   "title": "Sūn Byrd",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/sun-byrd",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-11/SB7%20Credits-Jorgen_Kasbo.JPG?itok=m5xZPbCC",
-   "from": "2027-03-13",
-   "to": "2027-03-13",
-   "about": "",
-   "hint": "Cosmopolite Scene Soul R&B Kjøp billettSūn Byrd 13. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Orchestra Baobab",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mars/orchestra-baobab",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/image001.jpg.png?h=e9b6ce66&itok=vGaG8sxt",
-   "from": "2027-03-18",
-   "to": "2027-03-18",
-   "about": "",
-   "hint": "Cosmopolite Scene Afrokubansk jazz Kjøp billettOrchestra Baobab18. mars Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "TRINA The New Room album release",
-   "venue": "Cosmopolite, Belleville",
-   "url": "https://cosmopolite.no/program/belleville/2027/april/trina-new-room-album-release",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-08/The%20New%20Room%20Concerts_8608.jpg?itok=Xhfm6o6P",
-   "from": "2027-04-01",
-   "to": "2027-04-01",
-   "about": "",
-   "hint": "Trina Coleman Music Studio Jazz Soul Kjøp billettTRINA The New Room album release1. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "MARIAM: Amadou & Mariam",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/mariam-amadou-mariam",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/mariam%20sings.png?h=208c9346&itok=ZF_7wfiL",
-   "from": "2027-04-02",
-   "to": "2027-04-02",
-   "about": "",
-   "hint": "Cosmopolite Scene Afro-pop Blues Kjøp billettMARIAM: Amadou & Mariam2. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Disco Fever",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/disco-fever",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/Cosmopolite_83173397881368_6661298493319896890_Backdrop%20.png?itok=IVOB5CPh",
-   "from": "2027-04-03",
-   "to": "2027-04-03",
-   "about": "",
-   "hint": "Romsås Janitsjar Disco Storband Kjøp billettDisco Fever3. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Justin Adams & Mauro Durante",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/justin-adams-mauro-durante",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-10/RAY_2948.jpg?itok=LiXNdB_Q",
-   "from": "2027-04-09",
-   "to": "2027-04-09",
-   "about": "",
-   "hint": "Cosmopolite Scene Ørkenblues Kjøp billettJustin Adams & Mauro Durante9. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Jan Akkerman & Band: My Focus",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/april/jan-akkerman-band-my-focus",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/Jan%20Akkerman2019-1345_by%20Paul%20Bergen.jpg?itok=xM7hvRL5",
-   "from": "2027-04-28",
-   "to": "2027-04-28",
-   "about": "",
-   "hint": "Cancan Live Rock Progrock Jazz Kjøp billettJan Akkerman & Band: My Focus28. april Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Rodrigo Y Gabriela",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/program/cosmopolite/2027/mai/rodrigo-y-gabriela",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-06/RyG-FKPwebb-1800x1200.jpg?itok=t2QolQd8",
-   "from": "2027-05-03",
-   "to": "2027-05-03",
-   "about": "",
-   "hint": "FKP Scorpio Klassisk Rock Flamenco Metal Kjøp billettRodrigo Y Gabriela3. mai Kjøp billett",
-   "city": "Oslo"
-  },
-  {
-   "title": "Adrian Cox Trio - Something to Say",
-   "venue": "Cosmopolite",
-   "url": "https://cosmopolite.no/en/program/cosmopolite/2027/may/adrian-cox-trio-something-say",
-   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-09/Adrian%20Cox%20trio%20by%20Peter%20Eriksson%20highres%20%285%20av%205%29.jpg?h=1d579955&itok=XpQu32bu",
-   "from": null,
-   "to": null,
-   "about": "",
-   "hint": "Adrian Cox Music Jazz Kjøp billettAdrian Cox Trio - Something to Say 9. mai Kjøp billett",
-   "city": "Oslo"
   }
  ],
  "nyehjorten": [
@@ -21809,17 +21603,9 @@
    "p": [],
    "at": 1793765104421
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/sun-byrd": {
-   "p": [],
-   "at": 1793885048765
-  },
   "https://www.nationaltheatret.no/forestillinger/gjengangere": {
    "p": [],
    "at": 1793956197316
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/mars/orchestra-baobab": {
-   "p": [],
-   "at": 1793885048765
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46227/": {
    "p": [],
@@ -21829,21 +21615,9 @@
    "p": [],
    "at": 1793765104421
   },
-  "https://cosmopolite.no/program/belleville/2027/april/trina-new-room-album-release": {
-   "p": [],
-   "at": 1793885048765
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46229/": {
    "p": [],
    "at": 1793765104421
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/mariam-amadou-mariam": {
-   "p": [],
-   "at": 1793885048765
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/disco-fever": {
-   "p": [],
-   "at": 1793885048765
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46698/": {
    "p": [],
@@ -21872,10 +21646,6 @@
   "https://christianiateaterscene.no/dramatisk": {
    "p": [],
    "at": 1793765104421
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/justin-adams-mauro-durante": {
-   "p": [],
-   "at": 1793885048765
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46592/": {
    "p": [],
@@ -21930,10 +21700,6 @@
    "p": [],
    "at": 1793642857675
   },
-  "https://cosmopolite.no/program/cosmopolite/2027/april/jan-akkerman-band-my-focus": {
-   "p": [],
-   "at": 1793885048765
-  },
   "https://billetter.okh.no/nb/buyingflow/tickets/46234/": {
    "p": [],
    "at": 1793765104421
@@ -21953,10 +21719,6 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/51048/": {
    "p": [],
    "at": 1793611035886
-  },
-  "https://cosmopolite.no/program/cosmopolite/2027/mai/rodrigo-y-gabriela": {
-   "p": [],
-   "at": 1793906202484
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/49440/": {
    "p": [],
@@ -22552,10 +22314,6 @@
   "https://cosmopolite.no/program/cosmopolite/2027/january/djangofestivalen-2027": {
    "p": [],
    "at": 1793787329008
-  },
-  "https://cosmopolite.no/en/program/cosmopolite/2027/may/adrian-cox-trio-something-say": {
-   "p": [],
-   "at": 1793906202484
   }
  }
 }
