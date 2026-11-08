@@ -1,11 +1,13 @@
 {
- "updated": "2026-11-08T18:53:23.092Z",
- "errors": [],
+ "updated": "2026-11-08T19:51:46.591Z",
+ "errors": [
+  "films: fetch failed"
+ ],
  "weather": {
   "now": {
    "date": "2026-11-08",
-   "h": 19,
-   "temp": 1,
+   "h": 20,
+   "temp": 2,
    "wind": 1,
    "sym": "partlycloudy_night",
    "rain": 0,
@@ -17,17 +19,8 @@
     "hours": [
      {
       "date": "2026-11-08",
-      "h": 19,
-      "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-08",
       "h": 20,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -45,7 +38,7 @@
      {
       "date": "2026-11-08",
       "h": 22,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -351,7 +344,7 @@
      {
       "date": "2026-11-10",
       "h": 6,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -360,7 +353,7 @@
      {
       "date": "2026-11-10",
       "h": 7,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -486,7 +479,7 @@
      {
       "date": "2026-11-10",
       "h": 21,
-      "temp": 2,
+      "temp": 3,
       "wind": 0,
       "sym": "cloudy",
       "rain": 0,
@@ -522,7 +515,7 @@
      {
       "date": "2026-11-11",
       "h": 0,
-      "temp": 3,
+      "temp": 2,
       "wind": 0,
       "sym": "cloudy",
       "rain": 0,
@@ -531,7 +524,7 @@
      {
       "date": "2026-11-11",
       "h": 1,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -565,7 +558,7 @@
       "span": 6
      }
     ],
-    "max": 3,
+    "max": 2,
     "min": 1,
     "rain": 0,
     "sym": "cloudy"
@@ -7576,21 +7569,6 @@
  ],
  "operaen": [
   {
-   "title": "Ingebjørg Bratland",
-   "venue": "Operaen",
-   "url": "https://www.operaen.no/forestillinger/ingebjorg-bratland-konsert/",
-   "img": "https://www.operaen.no/globalassets/forestillinger/26-27/konsert-gs/ingebjorg-bratland/foto--marthe-vannebo.jpg",
-   "next": "2026-11-08T20:00",
-   "genres": [
-    "konsert",
-    "annet"
-   ],
-   "from": null,
-   "to": null,
-   "about": "",
-   "city": "Oslo"
-  },
-  {
    "title": "Anna Karenina",
    "venue": "Operaen",
    "url": "https://www.operaen.no/forestillinger/anna-karenina-ballett/",
@@ -11198,42 +11176,6 @@
   "hours": [
    {
     "date": "2026-11-08",
-    "h": 13,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 14,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 15,
-    "aqi": 1.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 16,
-    "aqi": 2.1,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 17,
-    "aqi": 3,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 18,
-    "aqi": 2.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
     "h": 19,
     "aqi": 2.5,
     "main": "fint svevestøv (PM2,5)"
@@ -11247,25 +11189,25 @@
    {
     "date": "2026-11-08",
     "h": 21,
-    "aqi": 2.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-08",
-    "h": 22,
     "aqi": 2.3,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-08",
+    "h": 22,
+    "aqi": 2.2,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-08",
     "h": 23,
-    "aqi": 2.5,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 0,
-    "aqi": 2.4,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -11283,187 +11225,187 @@
    {
     "date": "2026-11-09",
     "h": 3,
-    "aqi": 1.8,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 4,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 5,
+    "aqi": 1.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 6,
+    "aqi": 1.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 7,
+    "aqi": 1.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 8,
+    "aqi": 1.7,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 9,
+    "aqi": 2.1,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 10,
+    "aqi": 1.7,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 11,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 12,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 13,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 14,
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 15,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 16,
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 17,
+    "aqi": 1.8,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-09",
+    "h": 18,
     "aqi": 1.9,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
-    "h": 5,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 6,
-    "aqi": 1.5,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 7,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 8,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 9,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 10,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 11,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 12,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 13,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 14,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 15,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 16,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 17,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
-    "h": 18,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-09",
     "h": 19,
-    "aqi": 1.8,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 20,
-    "aqi": 1.8,
+    "aqi": 2.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 21,
-    "aqi": 1.7,
+    "aqi": 1.8,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 22,
-    "aqi": 1.8,
+    "aqi": 1.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 23,
-    "aqi": 1.8,
+    "aqi": 1.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 0,
-    "aqi": 1.8,
+    "aqi": 1.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 1,
-    "aqi": 1.8,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 2,
-    "aqi": 1.8,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 3,
-    "aqi": 1.8,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 4,
-    "aqi": 1.7,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 5,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 6,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 7,
-    "aqi": 1.7,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 8,
-    "aqi": 1.7,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 9,
-    "aqi": 1.7,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -11475,61 +11417,103 @@
    {
     "date": "2026-11-10",
     "h": 11,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 12,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 13,
-    "aqi": 1.4,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 14,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 15,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 16,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 17,
     "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
+    "h": 15,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 16,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 17,
+    "aqi": 1.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
     "h": 18,
-    "aqi": 1.7,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 19,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 20,
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 21,
+    "aqi": 1.7,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 22,
     "aqi": 1.8,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 23,
+    "aqi": 1.9,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-11",
+    "h": 0,
+    "aqi": 2.1,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-11",
+    "h": 1,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-09",
     "h": 0,
-    "aqi": 2.7,
+    "aqi": 2.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 0,
+    "aqi": 2.2,
     "main": "fint svevestøv (PM2,5)"
    }
   ]
@@ -12610,7 +12594,7 @@
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-08T18:00:00.000Z"
+  "time": "2026-11-08T19:00:00.000Z"
  },
  "loppis": [
   {
@@ -14013,30 +13997,6 @@
   }
  ],
  "k_rockefeller": [
-  {
-   "title": "STVW",
-   "venue": "John Dee",
-   "url": "https://www.ticketmaster.no/event/65512505?brand=johndee&camefrom=CFC_NO_Rockefeller_STVW_151026_Billettsalg&utm_campaign=NO_Rockefeller_STVW_151026_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_U0VpGm1s4?tr=w-600",
-   "times": [
-    "2026-11-08T19:00"
-   ],
-   "hint": "punkrave dance",
-   "about": "Gjennom samarbeid med artister som Electric Callboy, Breathe Carolina, Timmy Trumpet, W&W og poptrioen Cheat Codes har han samlet flere millioner streams. Artister og band som Simple Plan, blink-182, Machine Gun Kelly, G",
-   "city": "Oslo"
-  },
-  {
-   "title": "Eagles of Death Metal",
-   "venue": "Rockefeller",
-   "url": "https://www.ticketmaster.no/event/1079851209?brand=rockefeller&camefrom=CFC_NO_Rockefeller_Eagles_of_Death_Metal_081126_Billettsalg&utm_campaign=NO_Rockefeller_Eagles_of_Death_Metal_081126_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_PTDJBbY5x?tr=w-600",
-   "times": [
-    "2026-11-08T19:00"
-   ],
-   "hint": "garagerock hardrock alternativerock",
-   "about": "Eagles of Death Metal ble dannet i Palm Desert, California i 1998 av bestekompisene Jesse Hughes og Josh Homme (Queens of the Stone Age). Siden den gang har en rekke musikere vært innom både på studioinnspillinger og tur",
-   "city": "Oslo"
-  },
   {
    "title": "Beth Hart",
    "venue": "Sentrum Scene",
@@ -16947,18 +16907,6 @@
   }
  ],
  "k_vulkan": [
-  {
-   "title": "Nemzzz",
-   "venue": "Vulkan Arena",
-   "url": "https://www.ticketmaster.no/event/2046490716?brand=vulkanarena",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_CD9K2tyDz?tr=w-600",
-   "times": [
-    "2026-11-08T19:00"
-   ],
-   "hint": "UK rap Rap",
-   "about": "Den britiske rapperen Nemzzz kommer til Norge for én eksklusiv konsert på Vulkan Arena i Oslo søndag 8. november 2026. Bare 22 år gammel har Manchester-rapperen etablert seg som en av de mest markante stemmene i den nye ",
-   "city": "Oslo"
-  },
   {
    "title": "Napalm Death, Master, Brat & Goat Burner",
    "venue": "Vulkan Arena",
@@ -21703,15 +21651,6 @@
   "https://oslonye.no/forestillinger/jeg-tror-jeg-elsker-deg-nora/": {
    "p": [],
    "at": 1793707114756
-  },
-  "https://www.operaen.no/forestillinger/ingebjorg-bratland-konsert/": {
-   "p": [
-    {
-     "l": "Fra",
-     "kr": 625
-    }
-   ],
-   "at": 1793769124002
   },
   "https://www.operaen.no/forestillinger/anna-karenina-ballett/": {
    "p": [
