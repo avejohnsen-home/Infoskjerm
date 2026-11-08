@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T08:10:12.625Z",
+ "updated": "2026-11-08T08:58:32.239Z",
  "errors": [],
  "weather": {
   "now": {
@@ -7,7 +7,7 @@
    "h": 9,
    "temp": -1,
    "wind": 1,
-   "sym": "clearsky_day",
+   "sym": "cloudy",
    "rain": 0,
    "span": 1
   },
@@ -20,7 +20,7 @@
       "h": 9,
       "temp": -1,
       "wind": 1,
-      "sym": "clearsky_day",
+      "sym": "cloudy",
       "rain": 0,
       "span": 1
      },
@@ -29,7 +29,7 @@
       "h": 10,
       "temp": 0,
       "wind": 1,
-      "sym": "clearsky_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -38,16 +38,16 @@
       "h": 11,
       "temp": 1,
       "wind": 1,
-      "sym": "clearsky_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
      {
       "date": "2026-11-08",
       "h": 12,
-      "temp": 2,
+      "temp": 1,
       "wind": 1,
-      "sym": "clearsky_day",
+      "sym": "fair_day",
       "rain": 0,
       "span": 1
      },
@@ -81,7 +81,7 @@
      {
       "date": "2026-11-08",
       "h": 16,
-      "temp": 2,
+      "temp": 1,
       "wind": 1,
       "sym": "clearsky_night",
       "rain": 0,
@@ -171,7 +171,7 @@
      {
       "date": "2026-11-09",
       "h": 1,
-      "temp": 2,
+      "temp": 1,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -198,7 +198,7 @@
      {
       "date": "2026-11-09",
       "h": 4,
-      "temp": 3,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -252,7 +252,7 @@
      {
       "date": "2026-11-09",
       "h": 10,
-      "temp": 4,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -468,7 +468,7 @@
      {
       "date": "2026-11-10",
       "h": 9,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -513,7 +513,7 @@
      {
       "date": "2026-11-10",
       "h": 19,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -521,7 +521,7 @@
      }
     ],
     "max": 4,
-    "min": 1,
+    "min": 2,
     "rain": 0,
     "sym": "cloudy"
    },
@@ -577,8 +577,8 @@
       "date": "2026-11-12",
       "h": 1,
       "temp": 2,
-      "wind": 2,
-      "sym": "cloudy",
+      "wind": 1,
+      "sym": "sleet",
       "rain": 0,
       "span": 6
      },
@@ -594,8 +594,8 @@
      {
       "date": "2026-11-12",
       "h": 13,
-      "temp": 3,
-      "wind": 2,
+      "temp": 2,
+      "wind": 3,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -605,12 +605,12 @@
       "h": 19,
       "temp": 1,
       "wind": 3,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 3,
+    "max": 2,
     "min": 1,
     "rain": 0,
     "sym": "cloudy"
@@ -622,8 +622,8 @@
       "date": "2026-11-13",
       "h": 1,
       "temp": 1,
-      "wind": 2,
-      "sym": "fair_night",
+      "wind": 3,
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      },
@@ -631,7 +631,7 @@
       "date": "2026-11-13",
       "h": 7,
       "temp": 0,
-      "wind": 2,
+      "wind": 3,
       "sym": "fair_day",
       "rain": 0,
       "span": 6
@@ -648,9 +648,9 @@
      {
       "date": "2026-11-13",
       "h": 19,
-      "temp": 0,
+      "temp": 1,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "clearsky_night",
       "rain": 0,
       "span": 6
      }
@@ -668,15 +668,15 @@
       "h": 1,
       "temp": 0,
       "wind": 2,
-      "sym": "fair_night",
+      "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-14",
       "h": 7,
-      "temp": -1,
-      "wind": 1,
+      "temp": 0,
+      "wind": 2,
       "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
@@ -684,7 +684,7 @@
      {
       "date": "2026-11-14",
       "h": 13,
-      "temp": 3,
+      "temp": 4,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -693,15 +693,15 @@
      {
       "date": "2026-11-14",
       "h": 19,
-      "temp": 2,
-      "wind": 2,
+      "temp": 4,
+      "wind": 3,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 3,
-    "min": -1,
+    "max": 4,
+    "min": 0,
     "rain": 0,
     "sym": "cloudy"
    }
@@ -1608,7 +1608,15 @@
      "t": "12:00",
      "c": "Ringen",
      "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst, Babykino, Kinoklubb",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/f9026724-b9a7-4e38-9689-7925919b8108"
+    },
+    {
+     "d": "2026-11-09",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/f9026724-b9a7-4e38-9689-7925919b8108"
     },
     {
