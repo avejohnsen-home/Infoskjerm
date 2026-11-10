@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-10T01:30:23.163Z",
+ "updated": "2026-11-10T09:49:42.455Z",
  "errors": [],
  "weather": {
   "now": {
    "date": "2026-11-10",
-   "h": 2,
-   "temp": 2,
+   "h": 10,
+   "temp": 1,
    "wind": 1,
-   "sym": "partlycloudy_night",
+   "sym": "partlycloudy_day",
    "rain": 0,
    "span": 1
   },
@@ -17,78 +17,6 @@
     "hours": [
      {
       "date": "2026-11-10",
-      "h": 2,
-      "temp": 2,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 3,
-      "temp": 2,
-      "wind": 0,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 4,
-      "temp": 2,
-      "wind": 0,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 5,
-      "temp": 2,
-      "wind": 0,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 6,
-      "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 7,
-      "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_night",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 8,
-      "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
-      "h": 9,
-      "temp": 1,
-      "wind": 1,
-      "sym": "partlycloudy_day",
-      "rain": 0,
-      "span": 1
-     },
-     {
-      "date": "2026-11-10",
       "h": 10,
       "temp": 1,
       "wind": 1,
@@ -99,7 +27,7 @@
      {
       "date": "2026-11-10",
       "h": 11,
-      "temp": 1,
+      "temp": 2,
       "wind": 1,
       "sym": "partlycloudy_day",
       "rain": 0,
@@ -119,7 +47,7 @@
       "h": 13,
       "temp": 2,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -128,7 +56,7 @@
       "h": 14,
       "temp": 2,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -137,7 +65,7 @@
       "h": 15,
       "temp": 2,
       "wind": 1,
-      "sym": "cloudy",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 1
      },
@@ -163,7 +91,7 @@
       "date": "2026-11-10",
       "h": 18,
       "temp": 2,
-      "wind": 0,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -181,7 +109,7 @@
       "date": "2026-11-10",
       "h": 20,
       "temp": 2,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -191,8 +119,8 @@
       "h": 21,
       "temp": 2,
       "wind": 0,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightsleet",
+      "rain": 0.1,
       "span": 1
      },
      {
@@ -200,24 +128,24 @@
       "h": 22,
       "temp": 2,
       "wind": 0,
-      "sym": "cloudy",
-      "rain": 0,
+      "sym": "lightsleet",
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-11-10",
       "h": 23,
       "temp": 2,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
+      "wind": 0,
+      "sym": "lightsleet",
+      "rain": 0.2,
       "span": 1
      }
     ],
     "max": 2,
     "min": 1,
-    "rain": 0,
-    "sym": "cloudy"
+    "rain": 0.4,
+    "sym": "partlycloudy_day"
    },
    {
     "date": "2026-11-11",
@@ -226,16 +154,16 @@
       "date": "2026-11-11",
       "h": 0,
       "temp": 2,
-      "wind": 1,
-      "sym": "cloudy",
-      "rain": 0,
+      "wind": 0,
+      "sym": "lightsleet",
+      "rain": 0.1,
       "span": 1
      },
      {
       "date": "2026-11-11",
       "h": 1,
       "temp": 2,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -244,7 +172,7 @@
       "date": "2026-11-11",
       "h": 2,
       "temp": 2,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -253,7 +181,7 @@
       "date": "2026-11-11",
       "h": 3,
       "temp": 2,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -289,7 +217,7 @@
       "date": "2026-11-11",
       "h": 7,
       "temp": 3,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -297,8 +225,8 @@
      {
       "date": "2026-11-11",
       "h": 8,
-      "temp": 2,
-      "wind": 1,
+      "temp": 3,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -306,7 +234,7 @@
      {
       "date": "2026-11-11",
       "h": 9,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -316,7 +244,7 @@
       "date": "2026-11-11",
       "h": 10,
       "temp": 3,
-      "wind": 1,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -325,7 +253,7 @@
       "date": "2026-11-11",
       "h": 11,
       "temp": 3,
-      "wind": 0,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -333,7 +261,7 @@
      {
       "date": "2026-11-11",
       "h": 12,
-      "temp": 3,
+      "temp": 4,
       "wind": 0,
       "sym": "cloudy",
       "rain": 0,
@@ -342,7 +270,7 @@
      {
       "date": "2026-11-11",
       "h": 13,
-      "temp": 3,
+      "temp": 4,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -351,7 +279,7 @@
      {
       "date": "2026-11-11",
       "h": 14,
-      "temp": 3,
+      "temp": 4,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -360,8 +288,8 @@
      {
       "date": "2026-11-11",
       "h": 15,
-      "temp": 3,
-      "wind": 1,
+      "temp": 4,
+      "wind": 0,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -369,7 +297,7 @@
      {
       "date": "2026-11-11",
       "h": 16,
-      "temp": 3,
+      "temp": 4,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -378,7 +306,7 @@
      {
       "date": "2026-11-11",
       "h": 17,
-      "temp": 3,
+      "temp": 4,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -387,7 +315,7 @@
      {
       "date": "2026-11-11",
       "h": 18,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -396,7 +324,7 @@
      {
       "date": "2026-11-11",
       "h": 19,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -405,8 +333,8 @@
      {
       "date": "2026-11-11",
       "h": 20,
-      "temp": 2,
-      "wind": 2,
+      "temp": 3,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -414,8 +342,8 @@
      {
       "date": "2026-11-11",
       "h": 21,
-      "temp": 2,
-      "wind": 2,
+      "temp": 3,
+      "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -423,7 +351,7 @@
      {
       "date": "2026-11-11",
       "h": 22,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -432,16 +360,16 @@
      {
       "date": "2026-11-11",
       "h": 23,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
      }
     ],
-    "max": 3,
+    "max": 4,
     "min": 2,
-    "rain": 0,
+    "rain": 0.1,
     "sym": "cloudy"
    },
    {
@@ -450,7 +378,7 @@
      {
       "date": "2026-11-12",
       "h": 0,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -459,7 +387,7 @@
      {
       "date": "2026-11-12",
       "h": 1,
-      "temp": 2,
+      "temp": 3,
       "wind": 1,
       "sym": "cloudy",
       "rain": 0,
@@ -468,7 +396,7 @@
      {
       "date": "2026-11-12",
       "h": 2,
-      "temp": 2,
+      "temp": 3,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -477,8 +405,8 @@
      {
       "date": "2026-11-12",
       "h": 3,
-      "temp": 2,
-      "wind": 1,
+      "temp": 3,
+      "wind": 2,
       "sym": "cloudy",
       "rain": 0,
       "span": 1
@@ -486,7 +414,7 @@
      {
       "date": "2026-11-12",
       "h": 4,
-      "temp": 2,
+      "temp": 3,
       "wind": 2,
       "sym": "cloudy",
       "rain": 0,
@@ -495,53 +423,143 @@
      {
       "date": "2026-11-12",
       "h": 5,
-      "temp": 2,
-      "wind": 2,
+      "temp": 3,
+      "wind": 3,
+      "sym": "sleet",
+      "rain": 0.7,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 6,
+      "temp": 3,
+      "wind": 4,
+      "sym": "heavysleet",
+      "rain": 1.2,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 7,
+      "temp": 3,
+      "wind": 5,
+      "sym": "sleet",
+      "rain": 0.9,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 8,
+      "temp": 3,
+      "wind": 5,
       "sym": "sleet",
       "rain": 0.8,
       "span": 1
      },
      {
       "date": "2026-11-12",
-      "h": 6,
-      "temp": 2,
-      "wind": 2,
-      "sym": "sleet",
-      "rain": 0.6,
+      "h": 9,
+      "temp": 3,
+      "wind": 4,
+      "sym": "heavysleet",
+      "rain": 1.5,
       "span": 1
      },
      {
       "date": "2026-11-12",
-      "h": 7,
-      "temp": 2,
-      "wind": 3,
+      "h": 10,
+      "temp": 3,
+      "wind": 5,
       "sym": "sleet",
-      "rain": 3.8,
-      "span": 6
+      "rain": 1,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 11,
+      "temp": 3,
+      "wind": 6,
+      "sym": "sleet",
+      "rain": 0.9,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 12,
+      "temp": 3,
+      "wind": 6,
+      "sym": "heavysleet",
+      "rain": 1.1,
+      "span": 1
      },
      {
       "date": "2026-11-12",
       "h": 13,
       "temp": 3,
-      "wind": 4,
-      "sym": "cloudy",
-      "rain": 0,
-      "span": 6
+      "wind": 7,
+      "sym": "sleet",
+      "rain": 0.8,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 14,
+      "temp": 3,
+      "wind": 6,
+      "sym": "lightsleet",
+      "rain": 0.4,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 15,
+      "temp": 3,
+      "wind": 5,
+      "sym": "sleet",
+      "rain": 0.4,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 16,
+      "temp": 3,
+      "wind": 6,
+      "sym": "sleet",
+      "rain": 0.4,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 17,
+      "temp": 3,
+      "wind": 6,
+      "sym": "lightsleet",
+      "rain": 0.2,
+      "span": 1
+     },
+     {
+      "date": "2026-11-12",
+      "h": 18,
+      "temp": 3,
+      "wind": 6,
+      "sym": "lightsleet",
+      "rain": 0.1,
+      "span": 1
      },
      {
       "date": "2026-11-12",
       "h": 19,
-      "temp": 4,
+      "temp": 3,
       "wind": 6,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 4,
-    "min": 2,
-    "rain": 5.2,
-    "sym": "cloudy"
+    "max": 3,
+    "min": 3,
+    "rain": 10.4,
+    "sym": "sleet"
    },
    {
     "date": "2026-11-13",
@@ -558,16 +576,16 @@
      {
       "date": "2026-11-13",
       "h": 7,
-      "temp": 1,
+      "temp": 3,
       "wind": 5,
-      "sym": "fair_day",
+      "sym": "partlycloudy_day",
       "rain": 0,
       "span": 6
      },
      {
       "date": "2026-11-13",
       "h": 13,
-      "temp": 4,
+      "temp": 5,
       "wind": 4,
       "sym": "clearsky_day",
       "rain": 0,
@@ -583,7 +601,7 @@
       "span": 6
      }
     ],
-    "max": 4,
+    "max": 5,
     "min": 1,
     "rain": 0,
     "sym": "clearsky_day"
@@ -595,7 +613,7 @@
       "date": "2026-11-14",
       "h": 1,
       "temp": -1,
-      "wind": 1,
+      "wind": 2,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
@@ -605,7 +623,7 @@
       "h": 7,
       "temp": -1,
       "wind": 1,
-      "sym": "partlycloudy_day",
+      "sym": "cloudy",
       "rain": 0,
       "span": 6
      },
@@ -621,14 +639,14 @@
      {
       "date": "2026-11-14",
       "h": 19,
-      "temp": 6,
-      "wind": 5,
+      "temp": 5,
+      "wind": 4,
       "sym": "partlycloudy_night",
       "rain": 0,
       "span": 6
      }
     ],
-    "max": 6,
+    "max": 5,
     "min": -1,
     "rain": 0,
     "sym": "partlycloudy_day"
@@ -639,7 +657,7 @@
      {
       "date": "2026-11-15",
       "h": 1,
-      "temp": 6,
+      "temp": 5,
       "wind": 5,
       "sym": "partlycloudy_night",
       "rain": 0,
@@ -658,8 +676,8 @@
       "date": "2026-11-15",
       "h": 13,
       "temp": 6,
-      "wind": 4,
-      "sym": "partlycloudy_day",
+      "wind": 6,
+      "sym": "cloudy",
       "rain": 0,
       "span": 6
      },
@@ -667,7 +685,7 @@
       "date": "2026-11-15",
       "h": 19,
       "temp": 6,
-      "wind": 3,
+      "wind": 4,
       "sym": "cloudy",
       "rain": 0,
       "span": 6
@@ -676,7 +694,7 @@
     "max": 6,
     "min": 5,
     "rain": 0,
-    "sym": "partlycloudy_day"
+    "sym": "cloudy"
    },
    {
     "date": "2026-11-16",
@@ -684,7 +702,7 @@
      {
       "date": "2026-11-16",
       "h": 1,
-      "temp": 4,
+      "temp": 5,
       "wind": 3,
       "sym": "cloudy",
       "rain": 0,
@@ -702,25 +720,25 @@
      {
       "date": "2026-11-16",
       "h": 13,
-      "temp": 5,
+      "temp": 4,
       "wind": 3,
       "sym": "rain",
-      "rain": 2.7,
+      "rain": 3.1,
       "span": 6
      },
      {
       "date": "2026-11-16",
       "h": 19,
-      "temp": 6,
+      "temp": 5,
       "wind": 3,
       "sym": "rain",
-      "rain": 2.8,
+      "rain": 3.5,
       "span": 6
      }
     ],
-    "max": 6,
+    "max": 5,
     "min": 4,
-    "rain": 5.5,
+    "rain": 6.6,
     "sym": "rain"
    }
   ]
@@ -1098,6 +1116,7 @@
    "cinemas": [
     "Colosseum",
     "Gimle",
+    "Klingenberg",
     "Ringen",
     "Saga",
     "Symra"
@@ -1361,11 +1380,91 @@
     },
     {
      "d": "2026-11-13",
+     "t": "11:50",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/eb604b72-6483-45f3-bbe1-456e6f03739b"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/1c259f49-d209-4dc2-8a48-dbc8b791f1a8"
+    },
+    {
+     "d": "2026-11-13",
      "t": "13:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/625fccd4-6e0c-4fb7-af6a-c2bf23a3f425"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/c3149cd4-917f-497b-8b5e-6dc142683f57"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/ad0734f7-1ae9-4ec5-b1bf-cf3161f0c709"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/251d7a23-f3ec-4c6d-a175-200f6fdaff9e"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e8683c44-ef7f-420c-96f6-732f1a5e9b29"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:50",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3208d503-7a74-48ad-b36c-f71501eb496c"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e71d22ee-1273-473c-9fe4-340bfc94b173"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/50f4aaf7-7b86-4a55-b616-65e44915c3e1"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/288414b0-2d19-4d3f-a555-2d6c65667623"
     },
     {
      "d": "2026-11-14",
@@ -1377,11 +1476,67 @@
     },
     {
      "d": "2026-11-15",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/0cb54dc9-f796-4ed2-96bf-bab2d2cd2620"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "11:50",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/11505b33-652b-4872-8743-a61ff3c11edd"
+    },
+    {
+     "d": "2026-11-15",
      "t": "13:00",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/b783d589-fab5-4198-8e09-2da80e93ba94"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/d8631820-d6a0-4fa2-9468-411174fdf3c5"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/27d28714-0748-4036-9b9c-79a4b31877eb"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/158102e8-bec1-4418-935b-e7adccc09162"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/359a392b-ea0d-4f0f-a985-c6eabb82f8f3"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "11:50",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/30e3a3ed-1402-4bcc-9e2e-6d6af269b9aa"
     },
     {
      "d": "2026-11-16",
@@ -1392,12 +1547,108 @@
      "u": "https://www.nfkino.no/screening/2439/fc7682e1-48e1-41aa-a06c-b9246400ed0a"
     },
     {
+     "d": "2026-11-16",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/47c1ef28-c673-4dca-abf2-1a0abaed2315"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/2cccfe7f-ef07-4486-a5f7-707c64580b45"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/05295764-72d3-45af-abb8-d57806d53962"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2b25b066-d935-4921-acf8-97527fa50513"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "11:50",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/4c416c9f-f5f2-4ecd-a6e4-4c9dcb04fda8"
+    },
+    {
      "d": "2026-11-17",
      "t": "13:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
      "u": "https://www.nfkino.no/screening/2581/f5652ce6-e4a6-4908-b41e-a57a4b4aa40b"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2ed410d1-7e65-4a77-9799-641375511593"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/3487b1c1-fd16-406d-9d57-65299167cee6"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/44620250-346d-429f-981c-abcb3d01de9e"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/1bf8a98d-a22c-4209-8be0-cbd0fa85f8ff"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/02789734-65ad-4cae-9664-17b293381918"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:40",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/96c19e7d-1087-4f36-a7b0-2c9fbfafd323"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0c65037a-c4f2-4dca-a8ff-7afeeb14496f"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000896-1000030483.mp4",
@@ -1407,7 +1658,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:37.993Z",
+   "ratingsAt": "2026-11-10T09:49:49.987Z",
+   "imdbId": "tt39453840",
    "city": "Oslo"
   },
   {
@@ -1424,7 +1676,8 @@
     "Gimle",
     "Klingenberg",
     "Ringen",
-    "Symra"
+    "Symra",
+    "Vika"
    ],
    "shows": [
     {
@@ -1592,7 +1845,7 @@
      "t": "13:30",
      "c": "Gimle",
      "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb, Seniorkino",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2581/eccaaa80-33c0-47e4-a944-55c4c4d40988"
     },
     {
@@ -1636,6 +1889,30 @@
      "u": "https://www.nfkino.no/screening/2583/59a37838-9b4a-4a77-a231-34ce74d0ffb1"
     },
     {
+     "d": "2026-11-13",
+     "t": "17:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/43fb99ad-2798-4dfe-b292-76e5fac11bb1"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/c4bc2442-eb41-4443-a344-9de16eaa24e8"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/3d29f457-d960-46fb-b598-8418f77f10c7"
+    },
+    {
      "d": "2026-11-14",
      "t": "13:00",
      "c": "Gimle",
@@ -1644,12 +1921,76 @@
      "u": "https://www.nfkino.no/screening/2581/dcf9467b-7b81-4ced-9116-73f52c9a37e2"
     },
     {
+     "d": "2026-11-14",
+     "t": "15:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/ccabd3c4-55c3-4c20-86d6-06937b8f9b6e"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/1c94b126-f7a5-4a76-bad2-2f09108a6cf7"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/c7c3e94c-9fa4-401b-81a1-b5488cc6614f"
+    },
+    {
      "d": "2026-11-15",
      "t": "16:00",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2581/40147f35-5cdc-4d1b-b2fa-26b3b783ba45"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "16:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/3aa0d9e0-b8e1-48b4-ad49-ee93cca50413"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/4ac26dd9-3943-4315-8e09-92766afa0af8"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/539da56b-86cb-4b95-9e48-7ec234b3d45a"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/ee620496-56a5-43a1-b661-5758d048fc01"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/700a932b-94dc-49cf-9489-6f6ef7015adc"
     },
     {
      "d": "2026-11-17",
@@ -1661,11 +2002,35 @@
     },
     {
      "d": "2026-11-17",
+     "t": "16:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/d15d82de-8354-4ab7-9c2d-2840f3315834"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/0a5920e1-7343-4f61-8f1a-5ea953fe9426"
+    },
+    {
+     "d": "2026-11-17",
      "t": "17:30",
      "c": "Klingenberg",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2583/a9db43cf-8470-4438-a507-924d1d80f101"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/70bb1bdf-6688-4554-9a48-c31d61a58961"
     },
     {
      "d": "2026-11-18",
@@ -1677,11 +2042,43 @@
     },
     {
      "d": "2026-11-18",
+     "t": "16:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/f5c43443-8f6e-4c82-9bbc-9448360294de"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2439/0d301f93-9cb9-443e-972f-c92dbf97de57"
+    },
+    {
+     "d": "2026-11-18",
      "t": "17:00",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2581/a561eea3-d89b-442b-b4e9-cc160cb70d96"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/7766f1c3-de68-4774-8146-e04bb2f7e3d8"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2583/900977c1-4789-4af1-8733-c9e3dd93984f"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001856-1000031158.mp4",
@@ -1691,7 +2088,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-11-09T06:27:38.060Z",
+   "ratingsAt": "2026-11-10T09:49:50.070Z",
+   "imdbId": "tt0011440",
    "city": "Oslo"
   },
   {
@@ -1710,7 +2108,8 @@
     "Klingenberg",
     "Ringen",
     "Saga",
-    "Symra"
+    "Symra",
+    "Vika"
    ],
    "shows": [
     {
@@ -1818,12 +2217,92 @@
      "u": "https://www.nfkino.no/screening/2439/14a7eba2-7013-4212-98c8-ff29817af34d"
     },
     {
+     "d": "2026-11-13",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/ba1ccc19-e714-4fdb-b1ca-f125e59899e2"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/77cde81e-7813-455b-a1d6-03a881549bac"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a3485bb4-df68-4491-893e-730fc78abbd2"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/3177e9c7-cd16-4ae3-a06f-f23544cb13e4"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/fb4c72fe-f163-4527-8019-ed32f0ccb13b"
+    },
+    {
      "d": "2026-11-15",
      "t": "19:45",
      "c": "Gimle",
      "r": "1",
      "v": "2D, SV, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/deaf3fff-ce39-4457-bf1b-9f542223b586"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/96c38676-4d71-43a5-bbd8-0486e6f98b49"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/b12efc4c-620a-4e3b-baeb-b658b05504d7"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/714fce2c-38fd-49b5-a2bc-c8bbd4e941a6"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/46f4b8a7-f86c-43f9-a21c-bdd5ab46919c"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/9da70554-0de5-4b2d-bf79-5666d6dc12a8"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002858-1000034508.mp4",
@@ -1833,7 +2312,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:38.122Z",
+   "ratingsAt": "2026-11-10T09:49:50.154Z",
+   "imdbId": "tt34587446",
    "city": "Oslo"
   },
   {
@@ -1853,14 +2333,6 @@
     "Vika"
    ],
    "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "10:30",
-     "c": "Saga",
-     "r": "1",
-     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
-     "u": "https://www.nfkino.no/screening/1001/69c89831-e78c-4188-b4cb-dadfad4cf6d9"
-    },
     {
      "d": "2026-11-10",
      "t": "12:15",
@@ -2063,6 +2535,22 @@
     },
     {
      "d": "2026-11-13",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/2811047d-5d77-4931-8061-a502c4990900"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/c89f2a60-3e45-48cd-901f-1938cab14b47"
+    },
+    {
+     "d": "2026-11-13",
      "t": "17:00",
      "c": "Saga",
      "r": "2",
@@ -2087,11 +2575,51 @@
     },
     {
      "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/3f8781de-38f8-4ec5-8419-1feedf4d009e"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/19811b12-6586-4f7f-9f7b-068c3c75824a"
+    },
+    {
+     "d": "2026-11-14",
      "t": "12:00",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/fcd6b8dd-6b9e-4792-9a66-cb3fbf9daaba"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "13:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/a023454f-ef2a-43c2-bcef-a0c0838a3715"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/5c27a189-ca00-4c5c-ac83-cd6989489eb2"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/fbb78114-61f0-4890-9230-d9309ea00956"
     },
     {
      "d": "2026-11-15",
@@ -2104,10 +2632,74 @@
     {
      "d": "2026-11-15",
      "t": "12:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/f62b4fbc-fcae-49a1-a996-91f6a143c769"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "12:00",
      "c": "Colosseum",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/c0036e05-3ad5-4e8f-a1cf-30b0deea5382"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:00",
+     "c": "Vika",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/cdb63971-d8df-4348-b3c7-e887dcdd9ce4"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/15162a2f-a3fb-4a02-97de-442d4682c806"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/05bcb92e-10f6-47fa-a6d4-48ba5287c2ab"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/14671b42-5984-416b-b8a8-f165f37b8278"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/0307a12c-92b2-4aac-84b9-5d890de3876c"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/0b861b1b-314b-4cdb-ac94-96d301c6d535"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/c05abed4-a0ba-458d-8a1e-1b1ae4f9068b"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1071483-1000033195.mp4",
@@ -2117,7 +2709,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:38.187Z",
+   "ratingsAt": "2026-11-10T09:49:50.232Z",
+   "imdbId": "tt41475646",
    "city": "Oslo"
   },
   {
@@ -2144,6 +2737,22 @@
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/37ce9db5-e819-4e28-b299-ce7c8c7f596c"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/d5e57d0a-6bfc-4afb-b296-fc3ff6ba1bb7"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/ddd731af-4ee1-4ddf-b17c-9234567ab5d0"
     },
     {
      "d": "2026-11-13",
@@ -2186,12 +2795,108 @@
      "u": "https://www.nfkino.no/screening/1002/147159c1-0df9-4eca-a53e-2c45811eb37a"
     },
     {
+     "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/649575e8-ff6c-4791-8392-54ea882e6341"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/0ff5524d-0a62-4a8d-b0d6-b67aafe248e9"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "11:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/4802036c-2a38-4b6a-91fa-190e6e99adb1"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:15",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/3af47d70-15bf-454f-a7e6-fe7cfabccd74"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:15",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/6edca86c-ffff-471d-a2e5-f5fbfe71edab"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/12a6e96a-d5a6-43cd-821d-464b30e507d1"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/32691769-a922-4ea3-8027-5e9256e7b127"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/3dd6eaae-0a49-4a88-8e4d-045465e18193"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7b6f9077-b787-4454-b2c3-87e21c506e21"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/711a71e6-4497-42ec-b38a-6a8b59ce787d"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:50",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/d9021cca-0699-444d-a3f8-089e69c46772"
+    },
+    {
      "d": "2026-11-18",
      "t": "12:00",
      "c": "Ringen",
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/6b680477-be59-4d1a-a43b-5d7ab77ef6c4"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/0a9b07cc-8f87-45c7-bfb8-827fd01e7380"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002085-1000033842.mp4",
@@ -2201,7 +2906,8 @@
    "year": "",
    "rt": "",
    "imdb": "5.6",
-   "ratingsAt": "2026-11-09T06:27:38.375Z",
+   "ratingsAt": "2026-11-10T09:49:50.309Z",
+   "imdbId": "tt0133727",
    "city": "Oslo"
   },
   {
@@ -2339,7 +3045,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:38.317Z",
+   "ratingsAt": "2026-11-10T09:49:50.396Z",
+   "imdbId": "tt32558705",
    "city": "Oslo"
   },
   {
@@ -2357,14 +3064,6 @@
     "Saga"
    ],
    "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "10:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/c3540496-1e6c-4e92-b01c-8950fcebbca1"
-    },
     {
      "d": "2026-11-10",
      "t": "14:15",
@@ -2460,6 +3159,142 @@
      "r": "4",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/0c97f6a2-5ec9-4dd1-9c9b-d1c773e566e0"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/41fc1dc6-3f25-4ab4-b14c-8ec4b711187a"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/59775ac0-365b-4e6a-b524-e2401bce2f57"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/5ee9d87f-867d-42b2-adc6-25860ba30f8a"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8aef67e8-9151-42bd-8eff-4d015ed89dbb"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/b79f3714-4016-44a1-a239-3c946311ed7e"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/9dd5ede0-cea6-49f6-a404-6a6176cc1679"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "11:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/6309aa97-a1c0-4153-a795-10cb1743b311"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/1c7eb74c-f729-49f9-ba5d-6ca7dbd0e44a"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/9db44197-9d92-48ab-9276-ad7395e5d11c"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/71dca3e9-9b0b-45f9-8da3-b95e89869d6c"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7af3e7b9-d8f1-451a-ae1f-6b4371b02f81"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/23a7026f-edd5-4e8e-aa74-b1d779cb7d9e"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c1c487a2-f4ef-4a24-912b-c6ec85c6f013"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/f7ed79f8-979d-4ded-9f30-1fa21638b004"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/d86a56c8-42ad-493e-af22-0ef5b56ab5bc"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/047ad4ba-2613-4ad8-8341-fa9e5c792f31"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/a3f96022-540e-4689-900e-d217ad739ef1"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002807-1000033730.mp4",
@@ -2469,7 +3304,8 @@
    "year": "",
    "rt": "",
    "imdb": "8.7",
-   "ratingsAt": "2026-11-09T06:27:38.250Z",
+   "ratingsAt": "2026-11-10T09:49:50.470Z",
+   "imdbId": "tt2056785",
    "city": "Oslo"
   },
   {
@@ -2560,6 +3396,22 @@
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/dbce28fd-aec6-4835-b593-b38b5dafa1c1"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/884741cd-3ebf-40c8-95e9-31940df89fb8"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e1abfc8b-20a0-43d7-87d7-59c78bb0d0c9"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142799-1000033534.mp4",
@@ -2569,7 +3421,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-11-09T06:27:38.433Z",
+   "ratingsAt": "2026-11-10T09:49:50.546Z",
+   "imdbId": "tt34890576",
    "city": "Oslo"
   },
   {
@@ -2651,6 +3504,54 @@
      "r": "4",
      "v": "2D, Japansk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/ff9542f9-9fa8-4108-912d-26b334b8ee2d"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/35f25333-eb3e-4827-9695-c21891fb0f16"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e4da1af3-9e3d-4d0e-a750-ad49b615bfdb"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/18d63721-0185-4c57-a8a9-b7818e639161"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/a2c2a7da-73a6-4b1a-97da-252be47a662f"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/5653bd32-e87e-415d-a33b-3be8f76d2138"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Japansk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/b551c5ce-d373-404c-9276-ce9595187798"
     }
    ],
    "trailer": "",
@@ -2660,7 +3561,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:38.631Z",
+   "ratingsAt": "2026-11-10T09:49:50.850Z",
+   "imdbId": "tt34384661",
    "city": "Oslo"
   },
   {
@@ -2747,6 +3649,102 @@
      "r": "4",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/26c393cf-affe-4ae3-a923-93cd4d82b86d"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/5da6a2d7-d3e7-40e1-a276-88be5e621522"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/6b05bcbe-350f-449c-aff1-e64d3924d245"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/0ccbda25-f06a-410e-b0bf-4a66f89b5c6d"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/bbb02ff6-70e6-43e7-b52a-9d65df221955"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/0bb89aec-c0cb-46ed-8ade-97ea85e33382"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "11:45",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c0ff8901-ce3b-4eb0-a98e-84e18b2f461e"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/1da42826-46d9-4888-bc97-ddcfa0d0066f"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "15:45",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/99e6875a-6096-44c4-baad-aca1bbea10d5"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/30215c0c-b3ac-427c-b2a0-53bce255a78a"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7c97ec1a-327b-459d-a48b-4a3ff4cd9ead"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/c08514c5-9bd2-4450-81ab-f2e4a429aa19"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/edb0dc82-526a-45f5-a36c-0eb1719c3ae3"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000817-1000032719.mp4",
@@ -2754,7 +3752,7 @@
    "origChecked": true,
    "orig": "Mysteriepakken",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:39.114Z",
+   "ratingsAt": "2026-11-10T09:49:51.107Z",
    "city": "Oslo"
   },
   {
@@ -2771,7 +3769,8 @@
     "Gimle",
     "Ringen",
     "Saga",
-    "Symra"
+    "Symra",
+    "Vika"
    ],
    "shows": [
     {
@@ -2845,6 +3844,22 @@
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
      "u": "https://www.nfkino.no/screening/2581/de085c83-68d4-4963-a284-1683f285273e"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/154d7042-389b-4e80-add6-8463eaa5a361"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst, Kinoklubb",
+     "u": "https://www.nfkino.no/screening/2612/480d45ac-1586-4eb6-a1af-47450d719bc5"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002151-1000031524.mp4",
@@ -2875,11 +3890,51 @@
    "shows": [
     {
      "d": "2026-11-13",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/601fa43c-8475-44d4-9e6f-afbd943a815c"
+    },
+    {
+     "d": "2026-11-13",
      "t": "19:15",
      "c": "Saga",
      "r": "2",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1001/5ebcdd1f-69a6-4a39-bfa4-eb1cf969ed60"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/26e169b4-0cca-41a0-a031-4cc581d95d1c"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/58189a2c-19f4-4161-a76a-e30795ab089b"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/31fcda9e-df90-4db1-ac28-b2ed9cc8d035"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e73d5fb7-3f51-4bd8-8a49-796559d73224"
     },
     {
      "d": "2026-11-16",
@@ -2888,6 +3943,38 @@
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst, Babykino",
      "u": "https://www.nfkino.no/screening/2439/d229d577-7ac9-4651-b16d-6b5064928cf9"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e2ac0dbb-4d25-4232-b9fa-8ad5cd97ca90"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/1033a3d6-047b-4beb-a957-ff7b28ed861f"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/144c8a09-6f82-4525-afa1-5a9dfd0c7d99"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e7ecd2a5-e536-4981-b97e-b56c0b58d5c1"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002675-1000032956.mp4",
@@ -2929,6 +4016,38 @@
      "r": "5",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/9dc19379-ee8c-44d3-ae90-72fd2e5233ad"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/2b549834-663c-4266-8be9-b7e967571143"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/079a2b01-6a59-43dc-b851-12b58c0898d2"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/cf58ed6c-9dcc-4c32-84e3-c1a9f5a091e2"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/203fa3cb-f183-4e94-9de9-f6a620c83c67"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002608-1000030845.mp4",
@@ -2938,7 +4057,196 @@
    "year": "",
    "rt": "31%",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:38.871Z",
+   "ratingsAt": "2026-11-10T09:49:51.181Z",
+   "imdbId": "tt32261958",
+   "city": "Oslo"
+  },
+  {
+   "title": "Velkommen til familien",
+   "url": "https://www.nfkino.no/film/velkommen-til-familien",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002109-1000034968.png?itok=zBSPTync",
+   "genres": [
+    "Drama",
+    "Komedie"
+   ],
+   "len": "1 time 35 min",
+   "age": "9 år",
+   "cinemas": [
+    "Klingenberg",
+    "Ringen",
+    "Saga"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-13",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/366b491a-af8f-4e1b-895b-e7e254df9744"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "18:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1001/c1f98c7a-2b2d-4036-a688-9e8ddf6cc006"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/9ee298be-b679-4148-9ebb-52dfc79e7be2"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/35788d61-dd82-4ad9-b327-a320b795c44b"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8a34193c-7950-4bf6-acbb-2eca5b0c25b4"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/ace5ab63-43cc-4edf-9f3b-18b63cfafd7f"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/76f9f5bf-8794-41fb-b107-804e2a7fce2c"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/ebf54395-d8f0-4fbc-8915-0c7520b50ce2"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/12e853f5-6d75-4236-af88-3921587c01e8"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/fdeae42a-c3ea-416e-822c-dc95c068b1c0"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7558b471-e888-4b68-b1af-bbd8ce7f5629"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/a823b83a-eeec-4ae0-92e9-908569a478f0"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/f5398e91-7b35-4305-992a-aaa5ef2cabdd"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/ae692ba4-7aba-4acf-828c-14c9688b7a73"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/57664c61-490d-4152-8865-296868c2770b"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/7110a06e-1af2-4c4e-891a-e94f29729adb"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/6f08dc1f-7390-4514-be7e-4979023a19fe"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/4875fb48-793f-48cc-9cc5-1ce3e1541c63"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/32b55801-58ba-4347-a159-873e6a5508f7"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/6ece8421-cd1a-4ead-8318-1c81346de26b"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002109-1000034940.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Small talk",
+   "year": "",
+   "rt": "",
+   "imdb": "7.6",
+   "ratingsAt": "2026-11-10T09:49:51.255Z",
+   "imdbId": "tt6041174",
    "city": "Oslo"
   },
   {
@@ -3003,6 +4311,54 @@
      "r": "2",
      "v": "2D, HE, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/b318f293-4768-45b6-9cd7-3bb5e675003e"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a221e67c-4372-431e-a17a-813a0bca32a2"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/517ea627-6e80-4c01-a23f-1a8722a4b169"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/45b9986b-a011-4a98-a348-9e911a6e9c0e"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0a7d68f0-6b71-4a45-a667-a4e06b84ffca"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/c7caf900-f863-41ab-81da-df46b5566e96"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, HE, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/7276e9b0-292d-44e8-b28a-0cd3efae00d6"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100003335-1000033946.mp4",
@@ -3012,7 +4368,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.9",
-   "ratingsAt": "2026-11-09T06:27:38.689Z",
+   "ratingsAt": "2026-11-10T09:49:51.343Z",
+   "imdbId": "tt44766123",
    "city": "Oslo"
   },
   {
@@ -3093,12 +4450,52 @@
      "u": "https://www.nfkino.no/screening/2439/35f27629-cfd4-4159-9ac5-7d638f57386e"
     },
     {
+     "d": "2026-11-13",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Utekstet",
+     "u": "https://www.nfkino.no/screening/2439/892a8429-0863-4d90-8f47-53ea9fe89a3e"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Utekstet",
+     "u": "https://www.nfkino.no/screening/2439/a667912a-a812-4686-9213-ae26a7c4df68"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Utekstet",
+     "u": "https://www.nfkino.no/screening/2439/2b5a5953-58de-4f0e-ba2f-78ddeaf5b9b8"
+    },
+    {
      "d": "2026-11-17",
      "t": "12:00",
      "c": "Ringen",
      "r": "1",
      "v": "2D, Eng. tale, Babykino, Utekstet",
      "u": "https://www.nfkino.no/screening/2439/ab0751ba-6073-480c-a5f6-2f6cd68b3ea6"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:30",
+     "c": "Ringen",
+     "r": "1",
+     "v": "2D, Eng. tale, Utekstet",
+     "u": "https://www.nfkino.no/screening/2439/b804aa33-772a-48bf-9ce0-b7fa839233aa"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Utekstet",
+     "u": "https://www.nfkino.no/screening/2439/e0fc4549-6b11-4078-8ba9-59fcc91bdc0e"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100003305-1000034517.mp4",
@@ -3108,7 +4505,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.0",
-   "ratingsAt": "2026-11-09T06:27:38.748Z",
+   "ratingsAt": "2026-11-10T09:49:51.418Z",
+   "imdbId": "tt34206385",
    "city": "Oslo"
   },
   {
@@ -3174,12 +4572,60 @@
      "u": "https://www.nfkino.no/screening/2439/45727463-b4b4-4c7d-9680-541f437a9ef8"
     },
     {
+     "d": "2026-11-13",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8c9af308-4139-435e-97b2-c059ec1c8647"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/35c92deb-b658-451c-ac9d-b151e8337e24"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/af7b9b89-71f1-44e6-a45f-ae9902d8d737"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "15:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/43d9b7be-dfde-4e0c-84f3-6e0cd270e38e"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/36b50d0d-8717-48ea-b153-7d4fbe6714bc"
+    },
+    {
      "d": "2026-11-18",
      "t": "13:00",
      "c": "Colosseum",
      "r": "2",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/1002/be179261-cf23-42c6-839e-d15218c018fa"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:45",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/9ade6aa2-e4fb-40aa-bd17-5ea08b069e3e"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1035849-1000028330.mp4",
@@ -3187,7 +4633,216 @@
    "origChecked": true,
    "orig": "Drapet på Benjamin Hermansen",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:39.351Z",
+   "ratingsAt": "2026-11-10T09:49:51.681Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Lille spøkelset Laban skøyer igjen",
+   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 time 1 min",
+   "age": "Alle",
+   "cinemas": [
+    "Ringen",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-11",
+     "t": "15:30",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2439/bfa5bb2c-f59b-4712-98c9-bf7700dc1f95"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "15:15",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/d4d2346c-b22c-4c86-88d3-4eb83f1e5ddb"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "11:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Barnefilm",
+     "u": "https://www.nfkino.no/screening/2612/951cf7cf-f21a-4788-9ec4-f266a3d94854"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Lille spøkelset Laban skøyer igjen",
+   "year": "",
+   "ratingsAt": "2026-11-10T09:49:51.944Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Sauen Shaun - Gårdens fårbannelse",
+   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
+   "genres": [
+    "Familiefilm"
+   ],
+   "len": "1 time 21 min",
+   "age": "Alle",
+   "cinemas": [
+    "Ringen",
+    "Saga",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-10",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/97e0c17c-d994-4308-a13f-10c6aaa5a739"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/9489a863-af70-41d1-87ab-132e3b6a645e"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/6d6197e9-7455-486a-8f5d-eae84a75f62e"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "10:45",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/3946bea2-487d-4d0a-85c5-13b6ac7ce61c"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "13:00",
+     "c": "Saga",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/1001/4815a796-ab4d-49eb-bd5c-f924cc86e962"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/abdcac65-d237-471a-98fa-9593f3e796f3"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2439/3976e0af-7fda-48c5-9dc6-d39b12d35e2e"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "13:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale",
+     "u": "https://www.nfkino.no/screening/2612/48189fb0-ca73-4d81-9b67-27fcef687aae"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001358-1000032345.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Shaun the Sheep: The Beast of Mossy Bottom",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-11-10T09:49:52.019Z",
+   "imdbId": "tt36841161",
+   "city": "Oslo"
+  },
+  {
+   "title": "Charlie Harper",
+   "url": "https://www.nfkino.no/film/charlie-harper",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002903-1000031122.jpg?itok=_O1JY6xD",
+   "genres": [],
+   "len": "1 time 41 min",
+   "age": "12 år",
+   "cinemas": [
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-13",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c7801a2b-48d7-4514-9bf0-00374c262e13"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/8b6abbd2-9d6d-46fa-8682-7792dc74f138"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:30",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/e78ea09c-4f75-4ad5-bfcf-fee91b9f07a7"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/f7ed4b83-848f-4ad9-b0d3-9a2ff3367475"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "18:00",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/c521c421-a98c-458c-b473-ba3c7c08f045"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:45",
+     "c": "Ringen",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/882074bf-9967-4e8f-8bcd-74387afedc72"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002903-1000032971.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Charlie Harper",
+   "year": "",
+   "rt": "59%",
+   "imdb": "7.8",
+   "imdbId": "tt27739255",
+   "ratingsAt": "2026-11-10T09:49:52.092Z",
    "city": "Oslo"
   },
   {
@@ -3270,12 +4925,84 @@
      "u": "https://www.nfkino.no/screening/2583/80743457-5568-43ae-b0dd-3758f801490c"
     },
     {
+     "d": "2026-11-13",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/89292987-c7b7-4ff2-b578-d1d55bcdd22b"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/b9c72797-4316-449e-90d5-b094c1c1e167"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0e31c9e0-4849-4ee9-8b21-967476dd6f4c"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/c5055f7b-3011-40d8-8280-da3781b6bc27"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/050a1907-f8f8-4ef6-99bf-19cd36a30d13"
+    },
+    {
      "d": "2026-11-16",
      "t": "16:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Org. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/a2ff25fd-7aa6-4df5-a521-3eb425287798"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/e1b21668-084e-4c3b-a1df-c87d4268df43"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/570cf384-f9a9-4ef1-8eb2-eaf2446df821"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "21:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/20648e88-6f5d-463b-ae4c-8bb3c5addfdf"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0a2b86c3-e56d-43e2-80eb-0e5a0dad6373"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002619-1000031161.mp4",
@@ -3283,7 +5010,7 @@
    "origChecked": true,
    "orig": "Le chant des forêts",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:39.651Z",
+   "ratingsAt": "2026-11-10T09:49:52.348Z",
    "city": "Oslo"
   },
   {
@@ -3348,279 +5075,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:39.410Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Lille spøkelset Laban skøyer igjen",
-   "url": "https://www.nfkino.no/film/lille-spokelset-laban-skoyer-igjen",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002905-1000032454.jpg?itok=pJ_IsQnA",
-   "genres": [
-    "Familiefilm"
-   ],
-   "len": "1 time 1 min",
-   "age": "Alle",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-11",
-     "t": "15:30",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Barnefilm",
-     "u": "https://www.nfkino.no/screening/2439/bfa5bb2c-f59b-4712-98c9-bf7700dc1f95"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002905-1000030674.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Lille spøkelset Laban skøyer igjen",
-   "year": "",
-   "ratingsAt": "2026-11-09T06:27:40.249Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Velkommen til familien",
-   "url": "https://www.nfkino.no/film/velkommen-til-familien",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002109-1000034968.png?itok=zBSPTync",
-   "genres": [
-    "Drama",
-    "Komedie"
-   ],
-   "len": "1 time 35 min",
-   "age": "9 år",
-   "cinemas": [
-    "Ringen",
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-13",
-     "t": "17:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/366b491a-af8f-4e1b-895b-e7e254df9744"
-    },
-    {
-     "d": "2026-11-13",
-     "t": "18:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1001/c1f98c7a-2b2d-4036-a688-9e8ddf6cc006"
-    },
-    {
-     "d": "2026-11-16",
-     "t": "12:00",
-     "c": "Ringen",
-     "r": "4",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/7558b471-e888-4b68-b1af-bbd8ce7f5629"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002109-1000034940.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Small talk",
-   "year": "",
-   "rt": "",
-   "imdb": "7.6",
-   "ratingsAt": "2026-11-09T06:27:41.240Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Tony",
-   "url": "https://www.nfkino.no/film/tony",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
-   "genres": [
-    "Drama"
-   ],
-   "len": "1 time 46 min",
-   "age": "12 år",
-   "cinemas": [
-    "Klingenberg",
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "20:30",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/f81d87f7-def8-4538-b9b7-19d8481dd17d"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "20:30",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/4a57e78e-f0a4-407b-a021-1ef0619a65a2"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "15:15",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2439/734a93e3-1429-4a1a-92f4-fd77dc17dbba"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "17:45",
-     "c": "Klingenberg",
-     "r": "2",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/b462a096-42d8-4ff1-bd7d-a160d860e9f1"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002865-1000030535.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Tony",
-   "year": "",
-   "rt": "",
-   "imdb": "7.6",
-   "ratingsAt": "2026-11-09T06:27:39.716Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Sauen Shaun - Gårdens fårbannelse",
-   "url": "https://www.nfkino.no/film/sauen-shaun-gardens-farbannelse",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100001358-1000025812.jpg?itok=fGJVXwzv",
-   "genres": [
-    "Familiefilm"
-   ],
-   "len": "1 time 21 min",
-   "age": "Alle",
-   "cinemas": [
-    "Saga"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/2b266b9d-dfc1-4b92-a715-4d28d5658495"
-    },
-    {
-     "d": "2026-11-10",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/97e0c17c-d994-4308-a13f-10c6aaa5a739"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/9489a863-af70-41d1-87ab-132e3b6a645e"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/6d6197e9-7455-486a-8f5d-eae84a75f62e"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "10:45",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/3946bea2-487d-4d0a-85c5-13b6ac7ce61c"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "13:00",
-     "c": "Saga",
-     "r": "4",
-     "v": "2D, Norsk tale",
-     "u": "https://www.nfkino.no/screening/1001/4815a796-ab4d-49eb-bd5c-f924cc86e962"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001358-1000032345.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Shaun the Sheep: The Beast of Mossy Bottom",
-   "year": "",
-   "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:41.178Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Dette er ikke et eple",
-   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002655-1000031464.jpg?itok=811S3937",
-   "genres": [
-    "Dokumentar"
-   ],
-   "len": "1 time 27 min",
-   "age": "9 år",
-   "cinemas": [
-    "Klingenberg",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/9878246b-dc25-4cd5-b4d8-a30d1396337f"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "14:20",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/fab3010d-110f-4ff1-bd2f-d2cec5668b70"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/e781c4cb-ab03-4fc6-a726-30839ccf3014"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "15:00",
-     "c": "Klingenberg",
-     "r": "3",
-     "v": "2D, Norsk tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2583/a4cb856b-c211-41c8-8a0d-bd6f8b0923a1"
-    },
-    {
-     "d": "2026-11-14",
-     "t": "18:00",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Norsk tale, Norsk tekst, Med Besøk",
-     "u": "https://www.nfkino.no/screening/2590/839fc7de-9197-4691-accf-eb1a2d7d34dc"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002655-1000035737.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Dette er ikke et eple",
-   "year": "",
-   "ratingsAt": "2026-11-09T06:27:39.951Z",
+   "ratingsAt": "2026-11-10T09:49:52.423Z",
+   "imdbId": "tt36586020",
    "city": "Oslo"
   },
   {
@@ -3636,7 +5092,8 @@
     "Colosseum",
     "Gimle",
     "Klingenberg",
-    "Ringen"
+    "Ringen",
+    "Vika"
    ],
    "shows": [
     {
@@ -3720,12 +5177,100 @@
      "u": "https://www.nfkino.no/screening/2439/df4d6030-91df-4eab-9dfb-2d56ab908e6d"
     },
     {
+     "d": "2026-11-13",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2dba4bdd-5f69-45a5-b187-f1f2505f4338"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "16:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/f6e77f2c-e344-4165-8399-cdc77762df76"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/ee7d5e94-8118-4d07-ab2a-e1497ad0fdc9"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "16:00",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/7e5882e6-6bdb-469a-b5a4-f086e6830e14"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/590b3ab3-1075-47ef-924e-60bff892c4a8"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "16:00",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/a07cbc84-6853-4401-b519-29759d7be868"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2dff926d-1d18-4cac-93ba-28a6cfcd67bc"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/b7d59671-47ef-4448-97b2-0b4815256e1c"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3a5809fa-8553-4a1f-a094-81ae2aaa2042"
+    },
+    {
      "d": "2026-11-17",
      "t": "20:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/3a38ce8e-9556-4d1e-adc4-0c5d370f3d66"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/7fcd93c4-993d-4621-a8bf-e3f46da1625d"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "16:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/1ef192ee-1ccd-4e67-b46e-64ab4a54eecc"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-10/gmnt-ef0c159616-176680-vst-6adb2c9a92f84.mp4",
@@ -3735,7 +5280,440 @@
    "year": "",
    "rt": "",
    "imdb": "7.0",
-   "ratingsAt": "2026-11-09T06:27:40.010Z",
+   "ratingsAt": "2026-11-10T09:49:52.499Z",
+   "imdbId": "tt34347792",
+   "city": "Oslo"
+  },
+  {
+   "title": "Tony",
+   "url": "https://www.nfkino.no/film/tony",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002865-1000030655.jpg?itok=teCgeK7k",
+   "genres": [
+    "Drama"
+   ],
+   "len": "1 time 46 min",
+   "age": "12 år",
+   "cinemas": [
+    "Klingenberg",
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-10",
+     "t": "20:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/f81d87f7-def8-4538-b9b7-19d8481dd17d"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "20:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/4a57e78e-f0a4-407b-a021-1ef0619a65a2"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "15:15",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/734a93e3-1429-4a1a-92f4-fd77dc17dbba"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "17:45",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/b462a096-42d8-4ff1-bd7d-a160d860e9f1"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/260cdee0-ed5b-4b4a-8c93-4f6f8f0c650a"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0509778e-7bfa-4926-bcb3-92a3f4505515"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/cf307daa-ca60-4974-9a2e-9fc227a1a094"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "19:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/32b3fa05-07ca-4f06-9e81-92da671b42c5"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2baadd2a-3c45-487c-a80f-0ca0f343b369"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/17d8068f-c4f7-4121-9e95-3bc9d338bc8a"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002865-1000030535.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Tony",
+   "year": "",
+   "rt": "",
+   "imdb": "7.6",
+   "ratingsAt": "2026-11-10T09:49:52.582Z",
+   "imdbId": "tt33095251",
+   "city": "Oslo"
+  },
+  {
+   "title": "Ramayana: Rise of a Legend",
+   "url": "https://www.nfkino.no/film/ramayana-rise-legend",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003230-1000034942.jpg?itok=Q3-x1rOE",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "len": "3 timer 30 min",
+   "age": "12 år",
+   "cinemas": [
+    "Saga",
+    "Symra",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-10",
+     "t": "19:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/1001/4f94b03b-9e72-4c69-9f4f-e30c6eb82310"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "19:00",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Tamil tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2590/a5f922b2-12c4-4fab-badf-d00cf270e2e5"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "19:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/1001/292dbca8-9cd7-4940-9be5-0f85e45b353b"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "19:30",
+     "c": "Saga",
+     "r": "2",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/1001/7ecee6df-2b8c-4a94-9f8f-d73baf67ff1f"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "19:00",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2612/2bc77549-560e-4a25-8ed8-ad3e74978e2a"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "18:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2612/f5acab51-4d6e-4e26-9898-1fe62bea95c1"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "18:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2612/b1b50add-6a68-48aa-a3a1-f39cf952b60b"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "15:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2612/ee9bb0aa-94b9-4afc-a40c-4d41c74a8bc1"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "19:00",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Hindi tale, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2612/3d12c9a0-3b7c-4ad8-89c1-ae9d005a10f8"
+    }
+   ],
+   "trailer": "",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Ramayana: Rise of a Legend",
+   "year": "",
+   "ratingsAt": "2026-11-10T09:49:52.864Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Málagagaten",
+   "url": "https://www.nfkino.no/film/malagagaten",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002184-1000034178.jpg?itok=dC5oReiU",
+   "genres": [
+    "Drama",
+    "Komedie"
+   ],
+   "len": "1 time 56 min",
+   "age": "6 år",
+   "cinemas": [
+    "Gimle",
+    "Ringen",
+    "Vika"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-13",
+     "t": "17:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/cc70ad70-e0ea-4631-a4f5-d1af6b3b72a4"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "16:45",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2581/b1a1e5c2-7703-477f-861b-13bf63c3a3a2"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Vika",
+     "r": "2",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/4547dc8e-762e-4a7b-840c-3ecff147ee1c"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "18:00",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/59735a49-bcb2-4ace-b56f-dfb7504b6442"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "19:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/23119594-ed91-4669-9fd0-1f9b743bfbcb"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "12:00",
+     "c": "Ringen",
+     "r": "3",
+     "v": "2D, ES, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2439/2f6b1983-2435-4e25-b90e-43b8310a5d06"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:45",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/166e6703-89db-4050-9505-df522cf4d755"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "13:30",
+     "c": "Gimle",
+     "r": "1",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2581/b65a132c-2256-4b4b-9296-ca9117545c8b"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:40",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, ES, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/1d79b13b-2fba-4e3c-b165-165bf14d71bc"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002184-1000034530.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Calle Málaga",
+   "year": "",
+   "rt": "",
+   "imdb": "",
+   "ratingsAt": "2026-11-10T09:49:52.941Z",
+   "imdbId": "tt32429174",
+   "city": "Oslo"
+  },
+  {
+   "title": "Dette er ikke et eple",
+   "url": "https://www.nfkino.no/film/dette-er-ikke-et-eple",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002655-1000031464.jpg?itok=811S3937",
+   "genres": [
+    "Dokumentar"
+   ],
+   "len": "1 time 27 min",
+   "age": "9 år",
+   "cinemas": [
+    "Klingenberg",
+    "Symra"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-10",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/9878246b-dc25-4cd5-b4d8-a30d1396337f"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "14:20",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/fab3010d-110f-4ff1-bd2f-d2cec5668b70"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/e781c4cb-ab03-4fc6-a726-30839ccf3014"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "15:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a4cb856b-c211-41c8-8a0d-bd6f8b0923a1"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "18:00",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Norsk tale, Norsk tekst, Med Besøk",
+     "u": "https://www.nfkino.no/screening/2590/839fc7de-9197-4691-accf-eb1a2d7d34dc"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002655-1000035737.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Dette er ikke et eple",
+   "year": "",
+   "ratingsAt": "2026-11-10T09:49:53.203Z",
+   "city": "Oslo"
+  },
+  {
+   "title": "Resident Evil",
+   "url": "https://www.nfkino.no/film/resident-evil",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
+   "genres": [
+    "Horror",
+    "Sci-fi"
+   ],
+   "len": "1 time 33 min",
+   "age": "15 år",
+   "cinemas": [
+    "Colosseum",
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-10",
+     "t": "20:30",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/41bdd530-4ff5-4962-b1a3-6f18cecd0a39"
+    },
+    {
+     "d": "2026-11-11",
+     "t": "20:30",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/01978d6c-d29c-430d-a734-adf53a29330a"
+    },
+    {
+     "d": "2026-11-12",
+     "t": "20:30",
+     "c": "Colosseum",
+     "r": "4",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/1002/178afd4e-b08f-4a76-9dcb-57ef82655965"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/bc416777-4c05-45f2-ad18-695d85bc0e30"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2439/5ac0b093-a43c-457c-b282-5509da406036"
+    }
+   ],
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002676-1000030139.mp4",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "Resident Evil",
+   "year": "",
+   "rt": "36%",
+   "imdb": "6.6",
+   "ratingsAt": "2026-11-09T06:27:40.441Z",
    "city": "Oslo"
   },
   {
@@ -3844,6 +5822,14 @@
      "u": "https://www.nfkino.no/screening/2581/04fdab79-db62-4e7b-8b9b-73dc66d40741"
     },
     {
+     "d": "2026-11-15",
+     "t": "20:45",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/4dec3fd0-e63e-40c9-bb78-e134f9b44ec8"
+    },
+    {
      "d": "2026-11-17",
      "t": "17:30",
      "c": "Ringen",
@@ -3852,12 +5838,28 @@
      "u": "https://www.nfkino.no/screening/2439/76878acf-8769-48c7-9ec7-81030c4cd42d"
     },
     {
+     "d": "2026-11-17",
+     "t": "20:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/891fa87c-44e2-41d1-8939-3ffa2f1f7399"
+    },
+    {
      "d": "2026-11-18",
      "t": "20:30",
      "c": "Gimle",
      "r": "1",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2581/8607f2ad-1463-4f79-bab1-c4f7cfbff3d4"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:30",
+     "c": "Vika",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/7ebd6aea-a612-4983-81ec-8e04be303249"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100000645-1000027877.mp4",
@@ -3865,7 +5867,7 @@
    "origChecked": true,
    "orig": "Suser avgårde",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:40.672Z",
+   "ratingsAt": "2026-11-10T09:49:53.478Z",
    "city": "Oslo"
   },
   {
@@ -3961,63 +5963,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:40.310Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Ramayana: Rise of a Legend",
-   "url": "https://www.nfkino.no/film/ramayana-rise-legend",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100003230-1000034942.jpg?itok=Q3-x1rOE",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "len": "3 timer 30 min",
-   "age": "12 år",
-   "cinemas": [
-    "Saga",
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "19:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Hindi tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/1001/4f94b03b-9e72-4c69-9f4f-e30c6eb82310"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "19:00",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Tamil tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/2590/a5f922b2-12c4-4fab-badf-d00cf270e2e5"
-    },
-    {
-     "d": "2026-11-11",
-     "t": "19:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Hindi tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/1001/292dbca8-9cd7-4940-9be5-0f85e45b353b"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "19:30",
-     "c": "Saga",
-     "r": "2",
-     "v": "2D, Hindi tale, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/1001/7ecee6df-2b8c-4a94-9f8f-d73baf67ff1f"
-    }
-   ],
-   "trailer": "",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Ramayana: Rise of a Legend",
-   "year": "",
-   "ratingsAt": "2026-11-09T06:27:41.499Z",
+   "ratingsAt": "2026-11-10T09:49:53.553Z",
+   "imdbId": "tt38807889",
    "city": "Oslo"
   },
   {
@@ -4049,106 +5996,171 @@
    "origChecked": true,
    "orig": "Dune + Dune: Part Two",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:41.728Z",
+   "ratingsAt": "2026-11-10T09:49:53.816Z",
    "city": "Oslo"
   },
   {
-   "title": "Málagagaten",
-   "url": "https://www.nfkino.no/film/malagagaten",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002184-1000034178.jpg?itok=dC5oReiU",
+   "title": "Rose",
+   "url": "https://www.nfkino.no/film/rose-0",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002620-1000034616.jpg?itok=yWQ2yfQk",
    "genres": [
-    "Drama",
-    "Komedie"
+    "Drama"
    ],
-   "len": "1 time 56 min",
-   "age": "6 år",
+   "len": "1 time 33 min",
+   "age": "12 år",
    "cinemas": [
-    "Gimle",
-    "Ringen"
+    "Klingenberg",
+    "Symra",
+    "Vika"
    ],
    "shows": [
     {
+     "d": "2026-11-12",
+     "t": "14:30",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/5a4a7206-3ef0-4e0a-87a7-b897d282cb1d"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/b9c95dbf-6146-4507-bfd9-b2450d56030c"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/cbe5222f-bea7-486d-8178-393876765bc3"
+    },
+    {
      "d": "2026-11-14",
-     "t": "16:45",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, ES, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2581/b1a1e5c2-7703-477f-861b-13bf63c3a3a2"
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/86288e1a-3a98-4ec3-95f6-01b853cf214e"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "13:40",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/5d5cde41-46e1-493b-88a8-4999a55ed6e0"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "13:30",
+     "c": "Vika",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2612/4a0b8ed0-7782-43e9-a27f-a33bcded8828"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/d395c118-8528-43a2-a7f0-8b15253119d4"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/51275db7-1576-4a23-98f9-dbcb107044e3"
     },
     {
      "d": "2026-11-17",
      "t": "12:00",
-     "c": "Ringen",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/f7c3d373-d2ae-4a54-af3d-a768a7746a18"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "20:20",
+     "c": "Klingenberg",
      "r": "3",
-     "v": "2D, ES, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2439/2f6b1983-2435-4e25-b90e-43b8310a5d06"
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/79648551-8a92-4bf7-8870-fcb0fb167a9e"
     },
     {
      "d": "2026-11-18",
-     "t": "13:30",
-     "c": "Gimle",
-     "r": "1",
-     "v": "2D, ES, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/2581/b65a132c-2256-4b4b-9296-ca9117545c8b"
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/ab135729-ce26-4142-a396-fac535e11e4b"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "20:15",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/992f1283-2541-4bd6-86f2-e392a6306a91"
     }
    ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002184-1000034530.mp4",
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002620-1000030965.mp4",
    "trailerChecked": true,
    "origChecked": true,
-   "orig": "Calle Málaga",
+   "orig": "Rose",
    "year": "",
    "rt": "",
-   "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:41.790Z",
+   "imdb": "7.6",
+   "ratingsAt": "2026-11-10T09:49:53.898Z",
+   "imdbId": "tt2043979",
    "city": "Oslo"
   },
   {
-   "title": "Resident Evil",
-   "url": "https://www.nfkino.no/film/resident-evil",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002676-1000033025.jpg?itok=q3Npx6b7",
+   "title": "Franz",
+   "url": "https://www.nfkino.no/film/franz",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002132-1000025141.jpg?itok=V5vwr94h",
    "genres": [
-    "Horror",
-    "Sci-fi"
+    "Drama"
    ],
-   "len": "1 time 33 min",
+   "len": "2 timer 7 min",
    "age": "15 år",
    "cinemas": [
-    "Colosseum"
+    "Klingenberg",
+    "Symra"
    ],
    "shows": [
     {
      "d": "2026-11-10",
-     "t": "20:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/41bdd530-4ff5-4962-b1a3-6f18cecd0a39"
+     "t": "14:45",
+     "c": "Symra",
+     "r": "2",
+     "v": "2D, Org. tale, Norsk tekst, Seniorkino",
+     "u": "https://www.nfkino.no/screening/2590/6db17b03-7c17-4f07-b6b9-26980953871e"
     },
     {
-     "d": "2026-11-11",
-     "t": "20:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/01978d6c-d29c-430d-a734-adf53a29330a"
-    },
-    {
-     "d": "2026-11-12",
-     "t": "20:30",
-     "c": "Colosseum",
-     "r": "4",
-     "v": "2D, Eng. tale, Norsk tekst",
-     "u": "https://www.nfkino.no/screening/1002/178afd4e-b08f-4a76-9dcb-57ef82655965"
+     "d": "2026-11-14",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/6c9cb515-0037-4839-b84a-55284a900de6"
     }
    ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002676-1000030139.mp4",
+   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-10/gmnt-d3e824b380-176680-vst-6ad0d94d9eb9a.mp4",
    "trailerChecked": true,
    "origChecked": true,
-   "orig": "Resident Evil",
+   "orig": "Franz",
    "year": "",
-   "rt": "36%",
-   "imdb": "6.6",
-   "ratingsAt": "2026-11-09T06:27:40.441Z",
+   "rt": "75%",
+   "imdb": "6.5",
+   "ratingsAt": "2026-11-09T06:27:41.858Z",
    "city": "Oslo"
   },
   {
@@ -4204,6 +6216,54 @@
      "r": "5",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2439/9514a405-3e70-45eb-b06e-611e8dca9711"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/5ee1f117-f82a-4deb-a6da-57b56c176f09"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/2a434bed-3d7d-4ddb-aaae-d4594479a28d"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/edce49a4-960b-4134-bbf4-95f66bcd7eca"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/73040973-0eab-4bd6-878a-0cfe7ad88fb4"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/239c4afa-c0d4-48c7-ab50-a5376b4a8251"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/637360e8-8ec1-4bb1-8a9e-f33167c3161c"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1149699-1000033833.mp4",
@@ -4282,38 +6342,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Franz",
-   "url": "https://www.nfkino.no/film/franz",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002132-1000025141.jpg?itok=V5vwr94h",
-   "genres": [
-    "Drama"
-   ],
-   "len": "2 timer 7 min",
-   "age": "15 år",
-   "cinemas": [
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-10",
-     "t": "14:45",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Org. tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/6db17b03-7c17-4f07-b6b9-26980953871e"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/video-thumbnails/2026-10/gmnt-d3e824b380-176680-vst-6ad0d94d9eb9a.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Franz",
-   "year": "",
-   "rt": "75%",
-   "imdb": "6.5",
-   "ratingsAt": "2026-11-09T06:27:41.858Z",
-   "city": "Oslo"
-  },
-  {
    "title": "Et lite stykke Finland",
    "url": "https://www.nfkino.no/film/et-lite-stykke-finland",
    "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002734-1000033788.jpg?itok=oDCerTze",
@@ -4382,39 +6410,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:41.924Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "Rose",
-   "url": "https://www.nfkino.no/film/rose-0",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/movie-posters/poster-100002620-1000034616.jpg?itok=yWQ2yfQk",
-   "genres": [
-    "Drama"
-   ],
-   "len": "1 time 33 min",
-   "age": "12 år",
-   "cinemas": [
-    "Symra"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-12",
-     "t": "14:30",
-     "c": "Symra",
-     "r": "2",
-     "v": "2D, Org. tale, Norsk tekst, Seniorkino",
-     "u": "https://www.nfkino.no/screening/2590/5a4a7206-3ef0-4e0a-87a7-b897d282cb1d"
-    }
-   ],
-   "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002620-1000030965.mp4",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "Rose",
-   "year": "",
-   "rt": "",
-   "imdb": "7.6",
-   "ratingsAt": "2026-11-09T06:27:40.988Z",
+   "ratingsAt": "2026-11-10T09:49:53.990Z",
+   "imdbId": "tt31995671",
    "city": "Oslo"
   },
   {
@@ -4447,7 +6444,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:41.985Z",
+   "ratingsAt": "2026-11-10T09:49:54.064Z",
+   "imdbId": "tt40564737",
    "city": "Oslo"
   },
   {
@@ -4481,7 +6479,52 @@
    "year": "",
    "rt": "",
    "imdb": "8.2",
-   "ratingsAt": "2026-11-09T06:27:42.202Z",
+   "ratingsAt": "2026-11-10T09:49:54.271Z",
+   "imdbId": "tt3153634",
+   "city": "Oslo"
+  },
+  {
+   "title": "HADOOTA",
+   "url": "https://www.nfkino.no/film/hadoota",
+   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-11/gmnt-f15839c9c4-176680-vst-6aec8ad0ca954.jpeg?itok=gMyzQvm-",
+   "genres": [],
+   "len": "2 timer",
+   "age": "12 år",
+   "cinemas": [
+    "Ringen"
+   ],
+   "shows": [
+    {
+     "d": "2026-11-12",
+     "t": "20:45",
+     "c": "Ringen",
+     "r": "5",
+     "v": "2D, AR, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2439/6e1f457c-8b2b-477b-890f-7201040f01b6"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, AR, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2439/922fc0b1-f92e-420f-9cd7-b9e96d96665e"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "21:00",
+     "c": "Ringen",
+     "r": "6",
+     "v": "2D, AR, Eng. tekst",
+     "u": "https://www.nfkino.no/screening/2439/116aab0c-ba32-4b20-8de1-ee53325b5a46"
+    }
+   ],
+   "trailer": "",
+   "trailerChecked": true,
+   "origChecked": true,
+   "orig": "HADOOTA",
+   "year": "",
+   "ratingsAt": "2026-11-10T09:49:54.526Z",
    "city": "Oslo"
   },
   {
@@ -4518,6 +6561,14 @@
      "r": "2",
      "v": "4DX 2D, Norsk tale, Norsk tekst, Familiefilm",
      "u": "https://www.nfkino.no/screening/2439/67f3f520-ee62-4b7a-93b2-16df6a52afff"
+    },
+    {
+     "d": "2026-11-13",
+     "t": "12:15",
+     "c": "Ringen",
+     "r": "2",
+     "v": "4DX 2D, Norsk tale, Norsk tekst, Familiefilm",
+     "u": "https://www.nfkino.no/screening/2439/32c1f947-fc4d-484b-9f98-e6ef442dcaf5"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1169964-1000027267.mp4",
@@ -4527,7 +6578,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.3",
-   "ratingsAt": "2026-11-09T06:27:42.849Z",
+   "ratingsAt": "2026-11-10T09:49:54.601Z",
+   "imdbId": "tt32890033",
    "city": "Oslo"
   },
   {
@@ -4572,6 +6624,46 @@
      "r": "3",
      "v": "2D, Norsk tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/ddcff7b7-7a52-4045-ad38-b5ac60167678"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a2c32d50-4d5b-4d6b-aa19-097b1f107579"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/3b52b97f-0b44-4fc6-94ce-8637b2d09db9"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "14:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/d0f2a4e7-39ea-4578-90d2-9e381a60a9ed"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/682dca8c-242c-4bb1-8a51-76cb9a0be37f"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Norsk tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/750bb8fb-cb71-48b6-bec7-306a9f3142c0"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100001978-1000026851.mp4",
@@ -4581,7 +6673,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:43.276Z",
+   "ratingsAt": "2026-11-10T09:49:54.675Z",
+   "imdbId": "tt31451181",
    "city": "Oslo"
   },
   {
@@ -4619,7 +6712,7 @@
    "origChecked": true,
    "orig": "HEX - En film om fenomenet Witch Club Satan",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:42.436Z",
+   "ratingsAt": "2026-11-10T09:49:54.939Z",
    "city": "Oslo"
   },
   {
@@ -4640,6 +6733,22 @@
      "r": "2",
      "v": "2D, SV, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/57642af1-79c1-4bb1-a504-7fb524c2223e"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "12:00",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/44c7fc8a-0018-4847-9c91-30ed31755441"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "2",
+     "v": "2D, SV, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/71f48ffb-e77c-4904-b246-242e417fbc0c"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002857-1000031528.mp4",
@@ -4649,7 +6758,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:42.495Z",
+   "ratingsAt": "2026-11-10T09:49:55.010Z",
+   "imdbId": "tt38890302",
    "city": "Oslo"
   },
   {
@@ -4691,35 +6801,8 @@
    "year": "",
    "rt": "",
    "imdb": "8.2",
-   "ratingsAt": "2026-11-09T06:27:48.511Z",
-   "city": "Oslo"
-  },
-  {
-   "title": "HADOOTA",
-   "url": "https://www.nfkino.no/film/hadoota",
-   "img": "https://www.nfkino.no/sites/nfkino.no/files/styles/movie_poster/public/media-images/2026-11/gmnt-f15839c9c4-176680-vst-6aec8ad0ca954.jpeg?itok=gMyzQvm-",
-   "genres": [],
-   "len": "2 timer",
-   "age": "12 år",
-   "cinemas": [
-    "Ringen"
-   ],
-   "shows": [
-    {
-     "d": "2026-11-12",
-     "t": "20:45",
-     "c": "Ringen",
-     "r": "5",
-     "v": "2D, AR, Eng. tekst",
-     "u": "https://www.nfkino.no/screening/2439/6e1f457c-8b2b-477b-890f-7201040f01b6"
-    }
-   ],
-   "trailer": "",
-   "trailerChecked": true,
-   "origChecked": true,
-   "orig": "HADOOTA",
-   "year": "",
-   "ratingsAt": "2026-11-09T06:27:42.724Z",
+   "ratingsAt": "2026-11-10T09:49:55.086Z",
+   "imdbId": "tt19064880",
    "city": "Oslo"
   },
   {
@@ -4752,7 +6835,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.6",
-   "ratingsAt": "2026-11-09T06:27:42.788Z",
+   "ratingsAt": "2026-11-10T09:49:55.161Z",
+   "imdbId": "tt0366908",
    "city": "Oslo"
   },
   {
@@ -4785,7 +6869,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.0",
-   "ratingsAt": "2026-11-09T06:27:42.925Z",
+   "ratingsAt": "2026-11-10T09:49:55.236Z",
+   "imdbId": "tt37853455",
    "city": "Oslo"
   },
   {
@@ -4833,7 +6918,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-11-09T06:27:42.985Z",
+   "ratingsAt": "2026-11-10T09:49:55.315Z",
+   "imdbId": "tt7526136",
    "city": "Oslo"
   },
   {
@@ -4869,7 +6955,7 @@
    "origChecked": true,
    "orig": "Harila - Nådeløse fjell",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:43.215Z",
+   "ratingsAt": "2026-11-10T09:49:55.565Z",
    "city": "Oslo"
   },
   {
@@ -4899,7 +6985,7 @@
    "origChecked": true,
    "orig": "Lave forventninger",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:43.504Z",
+   "ratingsAt": "2026-11-10T09:49:55.823Z",
    "city": "Oslo"
   },
   {
@@ -4929,7 +7015,7 @@
    "origChecked": true,
    "orig": "The Met Opera: CARMEN (Bizet) – ENCORE",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:43.740Z",
+   "ratingsAt": "2026-11-10T09:49:56.079Z",
    "city": "Oslo"
   },
   {
@@ -4969,6 +7055,22 @@
      "r": "3",
      "v": "2D, Eng. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/58413c28-6a84-44c3-aaa0-1f72c30d7a23"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/a6cfd516-1ebd-4fa1-850c-ff2538f639a6"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "20:20",
+     "c": "Klingenberg",
+     "r": "3",
+     "v": "2D, Eng. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/40eac45b-32b7-42d8-adba-feaaa8bc14a8"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-1142789-1000029846.mp4",
@@ -5010,7 +7112,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:43.860Z",
+   "ratingsAt": "2026-11-10T09:49:56.152Z",
+   "imdbId": "tt32888226",
    "city": "Oslo"
   },
   {
@@ -5100,11 +7203,51 @@
    "shows": [
     {
      "d": "2026-11-13",
-     "t": "17:30",
+     "t": "17:40",
      "c": "Klingenberg",
      "r": "4",
      "v": "2D, Org. tale, Norsk tekst",
      "u": "https://www.nfkino.no/screening/2583/1733befe-30b6-47e9-bc72-7d0eabb319f8"
+    },
+    {
+     "d": "2026-11-14",
+     "t": "17:40",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/0128ae27-4d62-44f3-bd70-78797106eeff"
+    },
+    {
+     "d": "2026-11-15",
+     "t": "17:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/5344e291-2a4f-4660-894d-f4c843d4fa18"
+    },
+    {
+     "d": "2026-11-16",
+     "t": "17:30",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/84e698ae-2a29-4a5b-98b9-c5dcf775ed98"
+    },
+    {
+     "d": "2026-11-17",
+     "t": "17:45",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/8c1ecd17-cc38-41d6-ba24-bccb759a33d7"
+    },
+    {
+     "d": "2026-11-18",
+     "t": "17:40",
+     "c": "Klingenberg",
+     "r": "4",
+     "v": "2D, Org. tale, Norsk tekst",
+     "u": "https://www.nfkino.no/screening/2583/753cb8bc-6df5-454e-b085-f09fa1d34cee"
     }
    ],
    "trailer": "https://www.nfkino.no/sites/nfkino.no/files/movie-trailers/video-100002958-1000035054.mp4",
@@ -5114,7 +7257,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-11-09T06:27:43.986Z",
+   "ratingsAt": "2026-11-10T09:49:56.225Z",
+   "imdbId": "tt39382808",
    "city": "Oslo"
   },
   {
@@ -5148,7 +7292,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-11-09T06:27:44.049Z",
+   "ratingsAt": "2026-11-10T09:49:56.300Z",
+   "imdbId": "tt13868840",
    "city": "Oslo"
   },
   {
@@ -5212,7 +7357,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:44.182Z",
+   "ratingsAt": "2026-11-10T09:49:56.372Z",
+   "imdbId": "tt3210562",
    "city": "Oslo"
   },
   {
@@ -5244,7 +7390,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.0",
-   "ratingsAt": "2026-11-09T06:27:44.368Z",
+   "ratingsAt": "2026-11-10T09:49:56.586Z",
+   "imdbId": "tt41592995",
    "city": "Oslo"
   },
   {
@@ -5275,7 +7422,7 @@
    "origChecked": true,
    "orig": "Amadou et Mariam : Sons du Mali",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:44.599Z",
+   "ratingsAt": "2026-11-10T09:49:56.858Z",
    "city": "Oslo"
   },
   {
@@ -5307,7 +7454,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.6",
-   "ratingsAt": "2026-11-09T06:27:44.658Z",
+   "ratingsAt": "2026-11-10T09:49:56.931Z",
+   "imdbId": "tt39920935",
    "city": "Oslo"
   },
   {
@@ -5341,7 +7489,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:44.723Z",
+   "ratingsAt": "2026-11-10T09:49:57.005Z",
+   "imdbId": "tt32272953",
    "city": "Oslo"
   },
   {
@@ -5405,7 +7554,7 @@
    "origChecked": true,
    "orig": "Ben'Imana",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:45.140Z",
+   "ratingsAt": "2026-11-10T09:49:57.255Z",
    "city": "Oslo"
   },
   {
@@ -5438,7 +7587,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.5",
-   "ratingsAt": "2026-11-09T06:27:45.313Z",
+   "ratingsAt": "2026-11-10T09:49:57.454Z",
+   "imdbId": "tt34385135",
    "city": "Oslo"
   },
   {
@@ -5471,7 +7621,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:45.480Z",
+   "ratingsAt": "2026-11-10T09:49:57.655Z",
+   "imdbId": "tt10358950",
    "city": "Oslo"
   },
   {
@@ -5504,7 +7655,8 @@
    "year": "",
    "rt": "",
    "imdb": "8.3",
-   "ratingsAt": "2026-11-09T06:27:45.652Z",
+   "ratingsAt": "2026-11-10T09:49:57.858Z",
+   "imdbId": "tt29279937",
    "city": "Oslo"
   },
   {
@@ -5544,7 +7696,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:45.713Z",
+   "ratingsAt": "2026-11-10T09:49:57.931Z",
+   "imdbId": "tt38809417",
    "city": "Oslo"
   },
   {
@@ -5577,7 +7730,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.2",
-   "ratingsAt": "2026-11-09T06:27:45.775Z",
+   "ratingsAt": "2026-11-10T09:49:58.005Z",
+   "imdbId": "tt0119097",
    "city": "Oslo"
   },
   {
@@ -5610,7 +7764,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:45.839Z",
+   "ratingsAt": "2026-11-10T09:49:58.079Z",
+   "imdbId": "tt9000310",
    "city": "Oslo"
   },
   {
@@ -5642,7 +7797,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.4",
-   "ratingsAt": "2026-11-09T06:27:46.012Z",
+   "ratingsAt": "2026-11-10T09:49:58.284Z",
+   "imdbId": "tt39793111",
    "city": "Oslo"
   },
   {
@@ -5675,7 +7831,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.4",
-   "ratingsAt": "2026-11-09T06:27:46.074Z",
+   "ratingsAt": "2026-11-10T09:49:58.356Z",
+   "imdbId": "tt39149197",
    "city": "Oslo"
   },
   {
@@ -5715,7 +7872,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:46.135Z",
+   "ratingsAt": "2026-11-10T09:49:58.427Z",
+   "imdbId": "tt34996428",
    "city": "Oslo"
   },
   {
@@ -5748,7 +7906,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:46.330Z",
+   "ratingsAt": "2026-11-10T09:49:58.627Z",
+   "imdbId": "tt37970522",
    "city": "Oslo"
   },
   {
@@ -5812,7 +7971,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.8",
-   "ratingsAt": "2026-11-09T06:27:46.462Z",
+   "ratingsAt": "2026-11-10T09:49:58.700Z",
+   "imdbId": "tt12349818",
    "city": "Oslo"
   },
   {
@@ -5844,7 +8004,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:46.529Z",
+   "ratingsAt": "2026-11-10T09:49:58.774Z",
+   "imdbId": "tt39311354",
    "city": "Oslo"
   },
   {
@@ -5877,7 +8038,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.4",
-   "ratingsAt": "2026-11-09T06:27:46.770Z",
+   "ratingsAt": "2026-11-10T09:49:58.982Z",
+   "imdbId": "tt10579952",
    "city": "Oslo"
   },
   {
@@ -5911,7 +8073,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.1",
-   "ratingsAt": "2026-11-09T06:27:46.830Z",
+   "ratingsAt": "2026-11-10T09:49:59.059Z",
+   "imdbId": "tt37670940",
    "city": "Oslo"
   },
   {
@@ -5944,7 +8107,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:46.960Z",
+   "ratingsAt": "2026-11-10T09:49:59.135Z",
+   "imdbId": "tt29943166",
    "city": "Oslo"
   },
   {
@@ -5992,7 +8156,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.4",
-   "ratingsAt": "2026-11-09T06:27:47.021Z",
+   "ratingsAt": "2026-11-10T09:49:59.208Z",
+   "imdbId": "tt41593500",
    "city": "Oslo"
   },
   {
@@ -6024,7 +8189,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:47.089Z",
+   "ratingsAt": "2026-11-10T09:49:59.280Z",
+   "imdbId": "tt37813097",
    "city": "Oslo"
   },
   {
@@ -6056,7 +8222,8 @@
    "year": "",
    "rt": "",
    "imdb": "3.8",
-   "ratingsAt": "2026-11-09T06:27:47.148Z",
+   "ratingsAt": "2026-11-10T09:49:59.352Z",
+   "imdbId": "tt0811003",
    "city": "Oslo"
   },
   {
@@ -6121,7 +8288,8 @@
    "year": "",
    "rt": "",
    "imdb": "",
-   "ratingsAt": "2026-11-09T06:27:47.377Z",
+   "ratingsAt": "2026-11-10T09:49:59.422Z",
+   "imdbId": "tt39602215",
    "city": "Oslo"
   },
   {
@@ -6153,7 +8321,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.5",
-   "ratingsAt": "2026-11-09T06:27:47.971Z",
+   "ratingsAt": "2026-11-10T09:49:59.630Z",
+   "imdbId": "tt37661885",
    "city": "Oslo"
   },
   {
@@ -6183,7 +8352,8 @@
    "year": "",
    "rt": "",
    "imdb": "6.6",
-   "ratingsAt": "2026-11-09T06:27:48.032Z",
+   "ratingsAt": "2026-11-10T09:49:59.702Z",
+   "imdbId": "tt4482980",
    "city": "Oslo"
   },
   {
@@ -6215,7 +8385,8 @@
    "year": "",
    "rt": "",
    "imdb": "7.9",
-   "ratingsAt": "2026-11-09T06:27:48.206Z",
+   "ratingsAt": "2026-11-10T09:49:59.903Z",
+   "imdbId": "tt41101797",
    "city": "Oslo"
   },
   {
@@ -6243,7 +8414,7 @@
    "origChecked": true,
    "orig": "League of Legends Worlds 26 | Finals in Cinema",
    "year": "",
-   "ratingsAt": "2026-11-09T06:27:48.763Z",
+   "ratingsAt": "2026-11-10T09:50:00.168Z",
    "city": "Oslo"
   }
  ],
@@ -10111,62 +12282,26 @@
   "hours": [
    {
     "date": "2026-11-10",
-    "h": 1,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 2,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 3,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 4,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 5,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 6,
-    "aqi": 1.6,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
     "h": 7,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "ozon"
    },
    {
     "date": "2026-11-10",
     "h": 8,
     "aqi": 1.5,
-    "main": "ozon"
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 9,
     "aqi": 1.5,
-    "main": "ozon"
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 10,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -10178,8 +12313,8 @@
    {
     "date": "2026-11-10",
     "h": 12,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
+    "aqi": 1.5,
+    "main": "ozon"
    },
    {
     "date": "2026-11-10",
@@ -10190,61 +12325,61 @@
    {
     "date": "2026-11-10",
     "h": 14,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "ozon"
    },
    {
     "date": "2026-11-10",
     "h": 15,
-    "aqi": 1.4,
-    "main": "ozon"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 16,
-    "aqi": 1.4,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 17,
     "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
-    "h": 18,
-    "aqi": 1.7,
+    "h": 16,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
-    "h": 19,
-    "aqi": 1.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 20,
-    "aqi": 1.8,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-10",
-    "h": 21,
+    "h": 17,
     "aqi": 1.9,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
+    "h": 18,
+    "aqi": 2.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 19,
+    "aqi": 2.3,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 20,
+    "aqi": 2.4,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
+    "h": 21,
+    "aqi": 2.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-10",
     "h": 22,
-    "aqi": 2,
+    "aqi": 2.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-10",
     "h": 23,
-    "aqi": 2,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -10256,19 +12391,19 @@
    {
     "date": "2026-11-11",
     "h": 1,
-    "aqi": 2.2,
+    "aqi": 2,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 2,
-    "aqi": 2.4,
+    "aqi": 1.9,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 3,
-    "aqi": 1.9,
+    "aqi": 1.7,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -10280,19 +12415,19 @@
    {
     "date": "2026-11-11",
     "h": 5,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 6,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 7,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -10304,49 +12439,49 @@
    {
     "date": "2026-11-11",
     "h": 9,
-    "aqi": 1.4,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 10,
-    "aqi": 1.5,
+    "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 11,
-    "aqi": 1.6,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 12,
-    "aqi": 1.6,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 13,
-    "aqi": 1.6,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 14,
-    "aqi": 1.6,
-    "main": "fint svevestøv (PM2,5)"
+    "aqi": 1.4,
+    "main": "ozon"
    },
    {
     "date": "2026-11-11",
     "h": 15,
-    "aqi": 1.5,
-    "main": "fint svevestøv (PM2,5)"
+    "aqi": 1.4,
+    "main": "ozon"
    },
    {
     "date": "2026-11-11",
     "h": 16,
-    "aqi": 1.5,
+    "aqi": 1.4,
     "main": "fint svevestøv (PM2,5)"
    },
    {
@@ -10358,32 +12493,32 @@
    {
     "date": "2026-11-11",
     "h": 18,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-11",
-    "h": 19,
-    "aqi": 1.7,
-    "main": "fint svevestøv (PM2,5)"
-   },
-   {
-    "date": "2026-11-11",
-    "h": 20,
     "aqi": 1.6,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
+    "h": 19,
+    "aqi": 1.6,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-11",
+    "h": 20,
+    "aqi": 1.5,
+    "main": "fint svevestøv (PM2,5)"
+   },
+   {
+    "date": "2026-11-11",
     "h": 21,
-    "aqi": 1.4,
+    "aqi": 1.5,
     "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
     "h": 22,
     "aqi": 1.4,
-    "main": "ozon"
+    "main": "fint svevestøv (PM2,5)"
    },
    {
     "date": "2026-11-11",
@@ -10406,7 +12541,7 @@
    {
     "date": "2026-11-12",
     "h": 2,
-    "aqi": 1.7,
+    "aqi": 1.6,
     "main": "ozon"
    },
    {
@@ -10424,7 +12559,7 @@
    {
     "date": "2026-11-12",
     "h": 5,
-    "aqi": 1.6,
+    "aqi": 1.7,
     "main": "ozon"
    },
    {
@@ -10440,9 +12575,45 @@
     "main": "ozon"
    },
    {
+    "date": "2026-11-12",
+    "h": 8,
+    "aqi": 1.4,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-12",
+    "h": 9,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-12",
+    "h": 10,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-12",
+    "h": 11,
+    "aqi": 1.5,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-12",
+    "h": 12,
+    "aqi": 1.6,
+    "main": "ozon"
+   },
+   {
+    "date": "2026-11-12",
+    "h": 13,
+    "aqi": 1.6,
+    "main": "ozon"
+   },
+   {
     "date": "2026-11-11",
     "h": 0,
-    "aqi": 2.4,
+    "aqi": 2.1,
     "main": "fint svevestøv (PM2,5)"
    }
   ]
@@ -11508,11 +13679,22 @@
    "about": ""
   }
  ],
- "alerts": [],
+ "alerts": [
+  {
+   "event": "snow",
+   "title": "Snø",
+   "level": "gult",
+   "desc": "Fra torsdag morgen til torsdag kveld er det ventet omkring 5-15 cm snø. Nær kysten kan en del av det komme som sludd. Plassering av de største mengdene er fortsatt usikker.",
+   "advice": "Lokalt vanskelige kjøreforhold: Beregn ekstra tid til transport og kjøring. Bruk riktige dekk og kjør etter forholdene. Sjekk veimeldinger på vegvesen.no/trafikk. Forsinkelser ved reise: Følg råd og sjekk status fra transportaktører. ",
+   "area": "Store deler av Akershus, Oslo, Østfold, Vestfold og nedre Buskerud",
+   "from": "2026-11-12T05:00:00+00:00",
+   "to": "2026-11-12T20:00:00+00:00"
+  }
+ ],
  "snow": {
   "station": "Tryvannshøgda",
   "cm": null,
-  "time": "2026-11-10T01:00:00.000Z"
+  "time": "2026-11-10T09:00:00.000Z"
  },
  "loppis": [
   {
@@ -11795,7 +13977,7 @@
    "from": null,
    "to": null,
    "about": "",
-   "hint": "Ein ­midtsommar­nattsdraumav William ShakespeareKjøp billett",
+   "hint": "Ein ­midtsommar­nattsdraumShakespeares udøyelege kjærleikskomedie.Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -11887,17 +14069,6 @@
    "city": "Oslo"
   },
   {
-   "title": "Helgas auge",
-   "venue": "Det Norske Teatret",
-   "url": "https://www.detnorsketeatret.no/framsyningar/helgas-auge",
-   "img": "https://detnorsketeatret.imgix.net/framsyningar/helgas-auge/DSC7957-rosa_16-9.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
-   "from": null,
-   "to": null,
-   "about": "",
-   "hint": "Helgas augeav Goksøyr & MartensKjøp billett",
-   "city": "Oslo"
-  },
-  {
    "title": "Molotov kjærleik",
    "venue": "Det Norske Teatret",
    "url": "https://www.detnorsketeatret.no/framsyningar/molotov-kjaerleik",
@@ -11906,6 +14077,17 @@
    "to": null,
    "about": "",
    "hint": "Molotov kjærleikav Simen Formo Hay og Oda RadoorKjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Helgas auge",
+   "venue": "Det Norske Teatret",
+   "url": "https://www.detnorsketeatret.no/framsyningar/helgas-auge",
+   "img": "https://detnorsketeatret.imgix.net/framsyningar/helgas-auge/DSC7957-rosa_16-9.jpg?auto=format&crop=crop%3Dfocalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=203&ixlib=php-3.3.1&w=365",
+   "from": null,
+   "to": null,
+   "about": "",
+   "hint": "Helgas augeav Goksøyr & MartensKjøp billett",
    "city": "Oslo"
   },
   {
@@ -12173,7 +14355,7 @@
    "from": "2026-11-11",
    "to": "2026-11-14",
    "about": "",
-   "hint": " Utsolgt Triggersystemet Arrangør: Transiteateret og Den Nationale Scene 8 forestillinger 11. - 14. november 2026 LES MER",
+   "hint": " Utsolgt Triggersystemet Arrangør: Transiteateret og Den Nationale Scene 4 forestillinger 11. - 14. november 2026 LES MER",
    "city": "Bergen"
   },
   {
@@ -12338,7 +14520,7 @@
    "from": "2026-12-05",
    "to": "2026-12-05",
    "about": "",
-   "hint": " Eva Weel Skram - Falle til ro Arrangør: Stageway og All Things Live 05. desember 2026 19:00 LES MER",
+   "hint": " Få billetter Eva Weel Skram - Falle til ro Arrangør: Stageway og All Things Live 05. desember 2026 19:00 LES MER",
    "city": "Bergen"
   },
   {
@@ -12969,6 +15151,17 @@
    "city": "Bergen"
   },
   {
+   "title": "Festspillene i Bergen: Nadia B Was Here m/Det Norske Kammerorkester",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-nadia-b-was-here-m-det-norske-kammerorkester",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1794298174/grieghallen-det-norske-kammerorkester-2027.jpg?",
+   "from": "2027-05-28",
+   "to": "2027-05-28",
+   "about": "",
+   "hint": " Festspillene i Bergen: Nadia B Was Here m/Det Norske Kammerorkester Festspillene i Bergen 28. mai 2027 18:30 LES MER",
+   "city": "Bergen"
+  },
+  {
    "title": "Festspillene i Bergen: Anne Pedersdotter",
    "venue": "Grieghallen",
    "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-anne-pedersdotter",
@@ -12988,6 +15181,39 @@
    "to": "2027-05-30",
    "about": "",
    "hint": " Festspillene i Bergen: Operakor & singalong Festspillene i Bergen 30. mai 2027 16:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Stikk innom",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-stikk-innom-3",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1794297877/grieghallen-stikk-innom-2027.jpg?",
+   "from": "2027-05-31",
+   "to": "2027-06-12",
+   "about": "",
+   "hint": " Festspillene i Bergen: Stikk innom Festspillene i Bergen 15 forestillinger 31. mai 2027 - 12. jun 2027 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Amalie Stalheim m/unge cellister",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-amalie-stalheim-m-unge-cellister",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1794297011/grieghallen-amalie-stalheim-unge-cellister-2027.jpg?",
+   "from": "2027-06-06",
+   "to": "2027-06-06",
+   "about": "",
+   "hint": " Festspillene i Bergen: Amalie Stalheim m/unge cellister Festspillene i Bergen 06. juni 2027 15:00 LES MER",
+   "city": "Bergen"
+  },
+  {
+   "title": "Festspillene i Bergen: Øyvind Torvund & Bergen Big Band",
+   "venue": "Grieghallen",
+   "url": "https://www.grieghallen.no/arrangementer/festspillene-i-bergen-oeyvind-torvund-bergen-big-band",
+   "img": "https://st-3e7unmpj5a.nf.cdn.netflexapp.com/media/rc/608x335/1794298670/grieghallen-oeyvind-torvund-2027.jpg?",
+   "from": "2027-06-06",
+   "to": "2027-06-06",
+   "about": "",
+   "hint": " Festspillene i Bergen: Øyvind Torvund & Bergen Big Band Festspillene i Bergen 06. juni 2027 17:30 LES MER",
    "city": "Bergen"
   },
   {
@@ -15485,6 +17711,18 @@
    "city": "Oslo"
   },
   {
+   "title": "D’Sound",
+   "venue": "Rockefeller",
+   "url": "https://www.ticketmaster.no/event/115909795?brand=rockefeller&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_D_Sound_040927_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_D_Sound_040927_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_UIMZOVmkl?tr=w-600",
+   "times": [
+    "2027-09-04T19:00"
+   ],
+   "hint": "pop soul funk",
+   "about": "D’Sound ble startet i Oslo i 1993 og slo for alvor gjennom med debutalbumet *Spice of Life* i 1997. Med sin særegne blanding av soul, funk, R&amp;B, acid jazz og pop skapte de et lydbilde som raskt begeistret både publik",
+   "city": "Oslo"
+  },
+  {
    "title": "The Chats",
    "venue": "Sentrum Scene",
    "url": "https://www.ticketmaster.no/event/488871979?brand=sentrumscene&camefrom=CFC_NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Chats_120927_Billettsalg&utm_campaign=NO_Rockefeller%2BSentrum%2BScene%2BJohn%2BDee_The_Chats_120927_Billettsalg&utm_content=NO&utm_medium=referral&utm_source=Website",
@@ -16220,6 +18458,18 @@
    "city": "Oslo"
   },
   {
+   "title": "Klubb Millennium",
+   "venue": "Vulkan Arena",
+   "url": "https://www.ticketmaster.no/event/134293648 ",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_I7Tt3XZrJ?tr=w-600",
+   "times": [
+    "2027-02-06T20:00"
+   ],
+   "hint": "00s Electronic/ Dance R&B",
+   "about": "Klubb Millennium er DJ-kvelden for alle som savner de ekte klubbkveldene fra 2000- tallet. Tiden før smarttelefoner og algoritmer styrte alt, da man møttes ute fordi det faktisk var der ting skjedde. Det var tiden for ko",
+   "city": "Oslo"
+  },
+  {
    "title": "Starkus & Radzevičius",
    "venue": "Vulkan Arena",
    "url": "https://www.ticketmaster.no/event/1056430163?brand=vulkanarena",
@@ -16459,7 +18709,7 @@
    "title": "De fire årstidene",
    "venue": "Oslo Konserthus, Lille sal",
    "url": "https://billetter.okh.no/nb/buyingflow/tickets/46781/",
-   "img": "https://cdn.mustasj.dev/okh/production/bilder/48019122/Feature_46781-v1790331561_2714657282f6038b708bd13864fd5f3f.jpg",
+   "img": "https://cdn.mustasj.dev/okh/production/bilder/49866976/Feature_46781-v1794295235_2714657282f6038b708bd13864fd5f3f.jpg",
    "times": [
     "2026-11-14T13:00",
     "2026-11-14T14:00",
@@ -17990,6 +20240,32 @@
    "city": "Oslo"
   },
   {
+   "title": "Ungdommens Fredskonferanse 2027",
+   "venue": "Oslo Konserthus, Lille sal",
+   "url": "https://s2pu.com/",
+   "img": "https://cdn.mustasj.dev/okh/production/bilder/27572975/Ventebilde_416x416_2714657282f6038b708bd13864fd5f3f.jpg",
+   "times": [
+    "2027-05-19T09:00",
+    "2027-05-19T15:00"
+   ],
+   "hint": "events_foredrag",
+   "about": "",
+   "city": "Oslo"
+  },
+  {
+   "title": "Youth Charity and Peace Concert",
+   "venue": "Oslo Konserthus, Store sal",
+   "url": "https://billetter.okh.no/nb/buyingflow/tickets/51234/",
+   "img": "https://cdn.mustasj.dev/okh/production/bilder/49866343/Feature_51234-v1793609391_2714657282f6038b708bd13864fd5f3f.jpg",
+   "times": [
+    "2027-05-19T19:00",
+    "2027-05-19T21:00"
+   ],
+   "hint": "pop",
+   "about": "",
+   "city": "Oslo"
+  },
+  {
    "title": "Oslo-filharmonien | Tveitt, Sibelius og Svendsen",
    "venue": "Oslo Konserthus, Store sal",
    "url": "https://billetter.okh.no/nb/buyingflow/tickets/46236/",
@@ -18161,6 +20437,17 @@
    "to": "2026-11-12",
    "about": "",
    "hint": "Cosmopolite Scene Funk Soul Kjøp billettTrue Loves12. november Kjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Jubileumsforestilling",
+   "venue": "Cosmopolite, Belleville",
+   "url": "https://cosmopolite.no/program/belleville/2026/november/jubileumsforestilling",
+   "img": "",
+   "from": "2026-11-13",
+   "to": "2026-11-13",
+   "about": "",
+   "hint": "Unge Viken Teater Teater Kjøp billettJubileumsforestilling13. november Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -18483,6 +20770,17 @@
    "city": "Oslo"
   },
   {
+   "title": "Jul på Romsdalsk",
+   "venue": "Cosmopolite, Belleville",
+   "url": "https://cosmopolite.no/program/belleville/2026/desember/jul-pa-romsdalsk",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-11/2L0A0843%202.jpg?itok=5L7asx6D",
+   "from": "2026-12-11",
+   "to": "2026-12-11",
+   "about": "",
+   "hint": "Jul på Romsdalsk Jazz Jul Kjøp billettJul på Romsdalsk11. desember Kjøp billett",
+   "city": "Oslo"
+  },
+  {
    "title": "ULD",
    "venue": "Cosmopolite",
    "url": "https://cosmopolite.no/program/cosmopolite/2026/desember/uld-1",
@@ -18535,6 +20833,17 @@
    "to": "2026-12-15",
    "about": "",
    "hint": "Cosmopolite Scene Kjøp billettThe Organ Club: Julespesial15. desember Kjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Julileumskonsert",
+   "venue": "Cosmopolite, Belleville",
+   "url": "https://cosmopolite.no/program/belleville/2026/desember/julileumskonsert",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-11/15082.jpg?h=7fb08c90&itok=RvrHAXco",
+   "from": "2026-12-16",
+   "to": "2026-12-16",
+   "about": "",
+   "hint": "Vokalgruppen Host Pop Jul Kjøp billettJulileumskonsert16. desember Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -18689,6 +20998,17 @@
    "to": "2027-02-06",
    "about": "",
    "hint": "Skedsmo Storband Soul Funk Disco Kjøp billettSoul Pop Funk Experiance 20276. februar Kjøp billett",
+   "city": "Oslo"
+  },
+  {
+   "title": "Soul Pop Funk Experience 2027",
+   "venue": "Cosmopolite",
+   "url": "https://cosmopolite.no/program/cosmopolite/2027/februar/soul-pop-funk-experience-2027",
+   "img": "https://cosmopolite.no/sites/default/files/styles/event_overview/public/2026-11/ASkedsmoStorband2%20%282%29.jpg?itok=PMT2QxpH",
+   "from": "2027-02-06",
+   "to": "2027-02-06",
+   "about": "",
+   "hint": "Skedsmo Storband Soul Pop Funk Jazz Storband Kjøp billettSoul Pop Funk Experience 20276. februar Kjøp billett",
    "city": "Oslo"
   },
   {
@@ -19357,6 +21677,10 @@
    "p": [],
    "at": 1793746689136
   },
+  "https://cosmopolite.no/program/belleville/2026/november/jubileumsforestilling": {
+   "p": [],
+   "at": 1794304370539
+  },
   "https://cosmopolite.no/program/cosmopolite/2026/november/nubiyan-twist": {
    "p": [],
    "at": 1793749791181
@@ -19869,6 +22193,10 @@
    "p": [],
    "at": 1793758402563
   },
+  "https://cosmopolite.no/program/belleville/2026/desember/jul-pa-romsdalsk": {
+   "p": [],
+   "at": 1794304370539
+  },
   "https://billetter.okh.no/nb/buyingflow/tickets/45502/": {
    "p": [],
    "at": 1793758402563
@@ -19935,6 +22263,10 @@
   "https://cosmopolite.no/program/cosmopolite/2026/desember/organ-club-julespesial": {
    "p": [],
    "at": 1793783360080
+  },
+  "https://cosmopolite.no/program/belleville/2026/desember/julileumskonsert": {
+   "p": [],
+   "at": 1794304370539
   },
   "https://cosmopolite.no/program/cosmopolite/2026/desember/verdens-beste-show-3-2": {
    "p": [],
@@ -20150,6 +22482,10 @@
   "https://cosmopolite.no/program/cosmopolite/2027/februar/soul-pop-funk-experiance-2027": {
    "p": [],
    "at": 1794245485831
+  },
+  "https://cosmopolite.no/program/cosmopolite/2027/februar/soul-pop-funk-experience-2027": {
+   "p": [],
+   "at": 1794304370539
   },
   "https://billetter.okh.no/nb/buyingflow/package/924/": {
    "p": [],
@@ -20521,6 +22857,14 @@
   "https://billetter.okh.no/nb/buyingflow/tickets/51123/": {
    "p": [],
    "at": 1793956197316
+  },
+  "https://s2pu.com/": {
+   "p": [],
+   "at": 1794304370539
+  },
+  "https://billetter.okh.no/nb/buyingflow/tickets/51234/": {
+   "p": [],
+   "at": 1794304370539
   },
   "https://billetter.okh.no/nb/buyingflow/tickets/46236/": {
    "p": [],
@@ -21051,11 +23395,11 @@
    "p": [],
    "at": 1794181711626
   },
-  "https://www.detnorsketeatret.no/framsyningar/helgas-auge": {
+  "https://www.detnorsketeatret.no/framsyningar/molotov-kjaerleik": {
    "p": [],
    "at": 1794274399830
   },
-  "https://www.detnorsketeatret.no/framsyningar/molotov-kjaerleik": {
+  "https://www.detnorsketeatret.no/framsyningar/helgas-auge": {
    "p": [],
    "at": 1794274399830
   },
