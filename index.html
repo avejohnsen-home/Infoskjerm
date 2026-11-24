@@ -955,7 +955,9 @@ setInterval(()=>{if(DATA){renderInfo();renderSlm()}},5*60*1000);
 const SLM_DAYS=90; // hvor langt fram lista viser
 const slmList=()=>((DATA&&DATA.slm)||[]).map(e=>({...e,t:new Date(e.start)})).filter(e=>e.t>=new Date(Date.now()-3*36e5));
 // SLM vises bare på din egen lenke: …/Infoskjerm/?ave
-const SHOW_SLM=new URLSearchParams(location.search).has("ave");
+const AVE=new URLSearchParams(location.search).has("ave");
+// ?ave&utenslm = min versjon uten SLM (til å vise fram). Bil og sparkesykler er med som før.
+const SHOW_SLM=AVE&&!new URLSearchParams(location.search).has("utenslm");
 function renderSlm(){
   const bar=document.getElementById("slmbar"),list=slmList();if(!SHOW_SLM||!list.length){bar.hidden=true;return}
   const n=list[0],tonight=ymdOf(n.t)===ymdOf(new Date());
@@ -1010,7 +1012,7 @@ function renderStandup(){
 // Dataene ligger kryptert i bil.enc.json. Nøkkelen står bare i lenken (etter #), som aldri sendes til noen server.
 const REPO="avejohnsen-home/Infoskjerm";
 const CAR_K=new URLSearchParams(location.hash.slice(1)).get("k")||"";
-const CAR_ON=SHOW_SLM&&CAR_K.length>=40;
+const CAR_ON=AVE&&CAR_K.length>=40;
 let CAR=null,carKeyObj=null,carPending=null,carPollT=null;
 let carTemp=21;try{carTemp=Number(localStorage.getItem("infoskjerm:biltemp"))||21}catch{}
 async function carKey(){if(!carKeyObj){const s=CAR_K.replace(/-/g,"+").replace(/_/g,"/");const raw=Uint8Array.from(atob(s+"=".repeat((4-s.length%4)%4)),c=>c.charCodeAt(0));
@@ -1089,7 +1091,7 @@ if(CAR_ON){loadCar();setInterval(loadCar,5*60*1000)}
 // (eller &hjem=59.9234,10.7590). Den sendes aldri til GitHub og står ikke i koden.
 const SC_RANGE=300; // meter rundt hjemme
 const SC_HJEM=(new URLSearchParams(location.hash.slice(1)).get("hjem")||"").trim();
-const SC_ON=SHOW_SLM;
+const SC_ON=AVE;
 const SC_COL={Voi:"#F26961",Bolt:"#34D186",Ryde:"#4FA3F7"};
 let SC=null,SC_HOME=null,scMap=null,scLayer=null;
 const scOp=v=>{const n=((((v.system||{}).operator||{}).name||{}).translation||[]).map(t=>t.value).join(" ")||((v.system||{}).id||"");
